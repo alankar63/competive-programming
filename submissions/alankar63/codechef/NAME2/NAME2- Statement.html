@@ -1,0 +1,297 @@
+<div id="node-2324672" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>In an attempt to control the rise in population, <strong>Archer</strong> was asked to come up with a plan. This time he is targeting marriages. Archer, being as intelligent as he is, came up with the following plan:</p> 
+  <p>A man with name <strong>M</strong> is allowed to marry a woman with name <strong>W</strong>, only if <strong>M</strong> is a <a href="http://en.wikipedia.org/wiki/Subsequence">subsequence</a> of <strong>W</strong> or <strong>W</strong> is a subsequence of <strong>M</strong>.</p> 
+  <p><strong>A</strong> is said to be a subsequence of <strong>B</strong>, if <strong>A</strong> can be obtained by deleting some elements of <strong>B</strong> without changing the order of the remaining elements.</p> 
+  <p>Your task is to determine whether a couple is allowed to marry or not, according to Archer's rule.</p> 
+  <h3>Input</h3> 
+  <p>The first line contains an integer <strong>T</strong>, the number of test cases. <strong>T</strong> test cases follow. Each test case contains two space separated strings <strong>M</strong> and <strong>W</strong>.</p> 
+  <h3>Output</h3> 
+  <p>For each test case print <code>"YES"</code> if they are allowed to marry, else print <code>"NO"</code>. (quotes are meant for clarity, please don't print them)</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1 ? T ? 100</b></li> 
+   <li><b>1 ? |M|, |W| ? 25000 (|A| denotes the length of the string A.)</b></li> 
+   <li>All names consist of lowercase English letters only.</li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+3
+john johanna
+ira ira
+kayla jayla
+
+<b>Output:</b>
+YES
+YES
+NO
+</pre>
+  <h3>Explanation</h3> 
+  <p><strong>Case 1:</strong> Consider <strong>S = "johanna"</strong>. So, <strong>S[0] = 'j', S[1] = 'o', S[2] = 'h'</strong> and so on. If we remove the indices [3, 4, 6] or [3, 5, 6] from S, it becomes <strong>"john"</strong>. Hence <strong>"john"</strong> is a subsequence of <strong>S</strong>, so the answer is "YES".</p> 
+  <p><strong>Case 2:</strong> Any string is a subsequence of it self, as it is formed after removing <strong>"0"</strong> characters. Hence the answer is <strong>"YES"</strong>.</p> 
+  <p><strong>Case 3:</strong> <strong>"jayla"</strong> can not be attained from <strong>"kayla"</strong> as removing any character from <strong>"kayla"</strong> would make the string length smaller than <strong>"jayla"</strong>, also there is no <strong>'j'</strong> in <strong>"kayla"</strong>. Similar reasoning can be applied to see why <strong>"kayla"</strong> can't be attained from <strong>"jayla"</strong>. Hence the answer is "NO".</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/kaushik_iska">kaushik_iska</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/pieguy">pieguy</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/NAME2">http://discuss.codechef.com/problems/NAME2</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/kaushik_iska"> kaushik_iska </a><a class="problem-tag-small " href="/tags/problems/may13"> may13 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>27-03-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/NAME2">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-71193"></a> 
+ <div id="c71193" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-71193" class="active">can anyone tell me where i am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dipupooja5">dipupooja5</a></strong>
+   <span style="color:#828282"> @ 18 Jan 2014 02:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone tell me where i am getting wrong answer. my code is running well on ideone and on my machine .. #include #include int main() { char a[25001],b[25001]; int t,i,j,m,n,count; scanf("%d",&amp;t); while(t&gt;0) { scanf("%s%s",&amp;a,&amp;b); m=strlen(a); n=strlen(b); count=0; j=0; if(m&gt;n) { for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71220"></a> 
+ <div id="c71220" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-71220" class="active">whats the problem in my code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rachitmanit">rachitmanit</a></strong>
+   <span style="color:#828282"> @ 19 Jan 2014 09:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    whats the problem in my code :/
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-76465"></a> 
+ <div id="c76465" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-76465" class="active">How does taking array size as</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shaswatrungta">shaswatrungta</a></strong>
+   <span style="color:#828282"> @ 9 Apr 2014 08:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    How does taking array size as 25001 give WA but 25010 gives AC for the same code??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78155"></a> 
+ <div id="c78155" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-78155" class="active">m new here .. i am getting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/manisha1895">manisha1895</a></strong>
+   <span style="color:#828282"> @ 15 May 2014 09:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    m new here .. i am getting sigsegv error .. where is the fault in my program ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78218"></a> 
+ <div id="c78218" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-78218" class="active">@manish1895 ----</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/badmood">badmood</a></strong>
+   <span style="color:#828282"> @ 17 May 2014 08:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @manish1895 ---- 
+    <a href="http://www.codechef.com/wiki/faq#Why_do_I_get_a_SIGSEGV" title="http://www.codechef.com/wiki/faq#Why_do_I_get_a_SIGSEGV">http://www.codechef.com/wiki/faq#Why_do_I_get_a_SIGSEGV</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79336"></a> 
+ <div id="c79336" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-79336" class="active">bad constraints given... i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/simararorarox9">simararorarox9</a></strong>
+   <span style="color:#828282"> @ 11 Jun 2014 08:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    bad constraints given... i took character array of 25000 which was giving wa... but the same for 25010 gives correct answer....pls.. atleast mention the constraints right .. :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83243"></a> 
+ <div id="c83243" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-83243" class="active">@simararorarox9, you near an</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mahesh123">mahesh123</a></strong>
+   <span style="color:#828282"> @ 6 Aug 2014 10:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @simararorarox9, you near an extra byte for the null character(' ') I am sure it will work fine with 25001.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83858"></a> 
+ <div id="c83858" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-83858" class="active">@ Codechef . Please do not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/thegooglerlm10">thegooglerlm10</a></strong>
+   <span style="color:#828282"> @ 23 Aug 2014 12:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ Codechef . Please do not include unnecessary test cases which give out wa.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84808"></a> 
+ <div id="c84808" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-84808" class="active">what is suppose to print in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vipin14119">vipin14119</a></strong>
+   <span style="color:#828282"> @ 6 Sep 2014 10:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is suppose to print in output is subsequence is starting from mid of the sequence for ex x=ANISHAT Y=NISHA ??tell me ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85665"></a> 
+ <div id="c85665" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-85665" class="active">@vipin14119 your mentioned</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rishabhprsd7">rishabhprsd7</a></strong>
+   <span style="color:#828282"> @ 25 Sep 2014 11:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vipin14119 your mentioned test case should print YES.. For such problems you may select one solved program and test random cases on your compiler or on ideone.com
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92234"></a> 
+ <div id="c92234" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-92234" class="active">@manisha1895-same thing</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ysfali78">ysfali78</a></strong>
+   <span style="color:#828282"> @ 24 Dec 2014 01:22 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @manisha1895-same thing happened with me
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-96200"></a> 
+ <div id="c96200" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-96200" class="active">admin plzz tell me the what's</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gauravhasiza">gauravhasiza</a></strong>
+   <span style="color:#828282"> @ 9 Feb 2015 12:45 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    admin plzz tell me the what's problem in my code #include int main() { int test,i,j,k=0,count=0,countb=0; char a[25005],b[25005]; scanf("%d",&amp;test); for(i=0;i=countb) { for(j=0;a[j]!=' ';j++) { if(b[k]==a[j]) k++; } if(b[k]!=' ') { printf("NOn"); }else printf("YESn"); } else { for(j=0;b[j]!=' ';j++) { if(a[k]==b[j]) k++; } if(a[k]!=' ') { printf("NOn"); }else printf("YESn"); } } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-96245"></a> 
+ <div id="c96245" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-96245" class="active">@admin plzz check my code ..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gauravhasiza">gauravhasiza</a></strong>
+   <span style="color:#828282"> @ 9 Feb 2015 01:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin plzz check my code ..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-96988"></a> 
+ <div id="c96988" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-96988" class="active">I'm getting wrong answer with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dhruvsinghal">dhruvsinghal</a></strong>
+   <span style="color:#828282"> @ 17 Feb 2015 11:15 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I'm getting wrong answer with my submission url:http://www.codechef.com/viewsolution/6303646 please can anybody point out the fault in my code and if possible also specify the test case where the code doesn't give expected output...?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-98595"></a> 
+ <div id="c98595" class="comment clear-block"> 
+  <h3><a href="/problems/NAME2#comment-98595" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rdfan19">rdfan19</a></strong>
+   <span style="color:#828282"> @ 6 Mar 2015 09:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6406445" title="http://www.codechef.com/viewsolution/6406445">http://www.codechef.com/viewsolution/6406445</a>. Getting WA.I am using a library function I want to know that Is this function allowed?if yes then what's wrong in my code? I am not able to find out on which test case is my code failing.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

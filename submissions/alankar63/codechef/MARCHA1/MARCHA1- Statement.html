@@ -1,0 +1,2834 @@
+<div id="node-1637" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <h3>A tutorial for this problem is now available on our blog. Click <a href="http://blog.codechef.com/2009/07/09/tutorial-for-problem-paying-up/">here</a> to read it. </h3> 
+  <p><strong>The following problem appeared in the <a href="http://www.codechef.com/MARCH09/">CodeChef March '09 Challenge</a></strong></p> 
+  <p>In the mysterious country of Byteland, everything is quite different from what you'd </p> 
+  <p>normally expect. In most places, if you were approached by two mobsters in a dark alley, they would </p> 
+  <p>probably tell you to give them all the money that you have. If you refused, or didn't have any - </p> 
+  <p>they might even beat you up.</p> 
+  <p> In Byteland the government decided that even the slightest chance of someone getting injured has to be ruled out. So, they introduced a strict policy. When a mobster approaches you in a dark </p> 
+  <p>alley, he asks you for a specific amount of money. You are obliged to show him all the money that </p> 
+  <p>you have, but you only need to pay up if he can find a subset of your banknotes whose total value </p> 
+  <p>matches his demand. Since banknotes in Byteland can have any positive integer value smaller than </p> 
+  <p>one thousand you are quite likely to get off without paying.</p> 
+  <p>Both the citizens and the gangsters of Byteland have very positive feelings about the system. No one ever </p> 
+  <p>gets hurt, the gangsters don't lose their jobs, and there are quite a few rules that minimize that<br> probability of getting mugged (the first one is: don't go into dark alleys - and this one is said to work in other places also).</p> 
+  <h3>Input</h3> 
+  <p> The first line contains integer <i>t</i>, the number of test cases (about 100). Then <i>t</i> test cases follow. Each test case starts with <i>n</i>, the </p> 
+  <p>number of banknotes in your wallet, and <i>m</i>, the amount of money the muggers asked of you. Then <i>n</i> </p> 
+  <p>numbers follow, representing values of your banknotes. Your wallet does not hold more than 20 banknotes, and the value of a single banknote is never more than 1000.</p> 
+  <h3>Output</h3> 
+  <p> For each test case output a single line with the word 'Yes' if there is a subset of your banknotes that sums to <i>m</i>, and 'No' otherwise.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+5
+3 3
+1
+1
+1
+5 11
+1
+2
+4
+8
+16
+5 23
+1
+2
+4
+8
+16
+5 13
+1
+5
+5
+10
+10
+20 132
+17
+6
+4
+998
+254
+137
+259
+153
+154
+3
+28
+19
+123
+542
+857
+23
+687
+35
+99
+999
+
+<b>Output:</b>
+Yes
+Yes
+Yes
+No
+Yes
+</pre>
+  <p><br><br></p> 
+  <p><b>Explanation:</b> For example, in the last case you have to pay up, since: 6+3+123=132.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/admin">admin</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/admin"> admin </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>17-03-2009</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>7 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/MARCHA1">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-71"></a> 
+ <div id="c71" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-71" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/virai">virai</a></strong>
+   <span style="color:#828282"> @ 31 May 2009 07:17 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I dunno wat d problem seems to be im gettin perfect output for the sample input given and iv even tested other cases.. y does it give wrong answer iv implemented all conditions like bank notes must be less than 20 and currency &lt;=1000</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-248"></a> 
+ <div id="c248" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-248" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/universe">universe</a></strong>
+   <span style="color:#828282"> @ 26 Jun 2009 02:56 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>My program is giving output perfectly fine. Still it is suggesting me as wrong answer. Unable to understand whats wrong.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-249"></a> 
+ <div id="c249" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-249" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/i0exception">i0exception</a></strong>
+   <span style="color:#828282"> @ 26 Jun 2009 04:53 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The test cases are correct. You should spend some more time in going over the problem statement and trying to find corner cases where your code might fail.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-259"></a> 
+ <div id="c259" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-259" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/universe">universe</a></strong>
+   <span style="color:#828282"> @ 28 Jun 2009 05:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@aniruddha. I have tried all possible test cases and its working fine from my side. Cant we get a copy of some of the test cases? Not all but some would definitely work out. And since its a practice session, it shouldnt matter much. Thanks</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-493"></a> 
+ <div id="c493" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-493" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nvteja">nvteja</a></strong>
+   <span style="color:#828282"> @ 25 Jul 2009 03:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>No matter how many test cases i try, this problem keeps on giving me wrong answer error !</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-574"></a> 
+ <div id="c574" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-574" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akashag1001">akashag1001</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2009 12:51 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Initially I was getting a time limit exceed error. After some optimization it started giving run-time error while I have checked all the example test cases along with some other. May I know, which test case fails?</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-578"></a> 
+ <div id="c578" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-578" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2009 12:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Nope, figuring that out yourself is the most important part of solving a problem :)</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-600"></a> 
+ <div id="c600" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-600" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atulbansal128">atulbansal128</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2009 04:45 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>what could be the possible corner cases? is m=0 a valid proposition?<br> though i didnt get right answer even after allowing for m=0.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-601"></a> 
+ <div id="c601" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-601" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atulbansal128">atulbansal128</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2009 04:47 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>OH MY GOD. I WAS PRINTING YES IN PLACE OF Yes. SILLY</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-821"></a> 
+ <div id="c821" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-821" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nishantb">nishantb</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2009 05:13 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>please,provide someone provide details about dynamic programming.<br> regards</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-824"></a> 
+ <div id="c824" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-824" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2009 05:17 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Yes, something to that effect will be put up soon :)</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1317"></a> 
+ <div id="c1317" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1317" class="active">&nbsp; &nbsp;&nbsp;&nbsp; Hi Guys, Am getting WA.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/javasoul">javasoul</a></strong>
+   <span style="color:#828282"> @ 31 Aug 2009 11:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>&nbsp;</p> 
+    <div>
+     <font size="2">&nbsp;&nbsp;&nbsp; Hi Guys, Am getting WA. donno wots the problem in my code. Can any of you help me find it out? Thanks. Here is my code,</font>
+    </div> 
+    <div>
+     <font size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include&amp;lt;iostream&amp;gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include &amp;lt;algorithm&amp;gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &amp;lt;cmath&amp;gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include&amp;lt;cstring&amp;gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &amp;lt;list&amp;gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &amp;lt;iterator&amp;gt; </font>
+    </div> 
+    <div>
+     &nbsp;
+    </div> 
+    <div>
+     <font size="2">using namespace std;</font>
+    </div> 
+    <div>
+     &nbsp;
+    </div> 
+    <div>
+     <font size="2">int cal(int* a,int noc,int index)<br> {<br> int sum=0;<br> for(int i=0;i&amp;lt;noc;i++)<br> {<br> if(index &amp; (1&amp;lt;&amp;lt;i))<br> {<br> sum+=a[i];<br> }<br> }<br> return sum;<br> }</font>
+    </div> 
+    <div>
+     <font size="2">int main()<br> {<br> int t,i,j,noc,mon;<br> cin&amp;gt;&amp;gt;t;<br> while(t–)<br> {<br> bool found=false;<br> cin&amp;gt;&amp;gt;noc;<br> cin&amp;gt;&amp;gt;mon;<br> int c[noc];<br> for(i=0;i&amp;lt;noc;i++) {cin&amp;gt;&amp;gt;c[i];}<br> int start=0,end=(int)pow(2,(float)noc);</font>
+    </div> 
+    <div>
+     <font size="2">while(start&amp;lt;=end)<br> {<br> int val=cal(c,noc,start);<br> if(val==mon) {found=true;break;}<br> start++;<br> }</font>
+    </div> 
+    <div>
+     <font size="2">if(found) cout&amp;lt;&amp;lt;”Yes”;<br> else cout&amp;lt;&amp;lt;”No”;<br> }<br> //cin&amp;gt;&amp;gt;t;<br> return 0;<br> }</font>
+    </div> 
+    <div>
+     &nbsp;
+    </div>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1318"></a> 
+ <div id="c1318" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1318" class="active">&nbsp; 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /*sorry guys..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/javasoul">javasoul</a></strong>
+   <span style="color:#828282"> @ 31 Aug 2009 11:45 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>&nbsp;</p> 
+    <div>
+     <font size="2">1.</font>
+     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+     <font size="2">/*sorry guys.. here i replaced the &amp;lt; with &lt; and &amp;gt with &gt; */<br> #include&lt;iostream&gt;<br> #include &lt;algorithm&gt;<br> #include &lt;cmath&gt;<br> #include&lt;cstring&gt;<br> #include &lt;list&gt;<br> #include &lt;iterator&gt; </font>
+    </div> 
+    <div>
+     <font size="2">using namespace std;</font>
+    </div> 
+    <div>
+     <font size="2">int cal(int* a,int noc,int index)<br> {<br> int sum=0;<br> for(int i=0;i&lt;noc;i++)<br> {<br> if(index &amp; (1&lt;&lt;i))<br> {<br> sum+=a[i];<br> }<br> }<br> return sum;<br> }</font>
+    </div> 
+    <div>
+     <font size="2">int main()<br> {<br> int t,i,j,noc,mon;<br> cin&gt;&gt;t;<br> while(t–)<br> {<br> bool found=false;<br> cin&gt;&gt;noc;<br> cin&gt;&gt;mon;<br> int c[noc];<br> for(i=0;i&lt;noc;i++) {cin&gt;&gt;c[i];}<br> int start=0,end=(int)pow(2,(float)noc);</font>
+    </div> 
+    <div>
+     <font size="2">while(start&lt;=end)<br> {<br> int val=cal(c,noc,start);<br> if(val==mon) {found=true;break;}<br> start++;<br> }</font>
+    </div> 
+    <div>
+     <font size="2">if(found) cout&lt;&lt;”Yes”;<br> else cout&lt;&lt;”No”;<br> }<br> //cin&gt;&gt;t;<br> return 0;<br> }</font>
+    </div> 
+    <div>
+     &nbsp;
+    </div>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1326"></a> 
+ <div id="c1326" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1326" class="active">The pow() function is not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 31 Aug 2009 01:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The pow() function is not always very precise. You should probably use end = (1&lt;&lt;noc) instead of the function pow(). </p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1397"></a> 
+ <div id="c1397" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1397" class="active">&nbsp; Hi Drupal, Thanks for ur</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/javasoul">javasoul</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2009 11:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>&nbsp;</p> 
+    <p>Hi Drupal, Thanks for ur reply but "end = (1&lt;&lt;noc)" did not fix it. still am getting WA.</p> 
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any idea ?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1407"></a> 
+ <div id="c1407" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1407" class="active">Well, for one, you appear to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2009 01:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Well, for one, you appear to be printing YesYesYesNoYes for the sample input, rather than what you are meant to print.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1416"></a> 
+ <div id="c1416" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1416" class="active">oh my god...&nbsp;missing endl</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/javasoul">javasoul</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2009 02:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>oh my god...&nbsp;missing endl made it -&nbsp;WA !!!</p> 
+    <p>Thanks Stephen, Thank you very much.</p> 
+    <p>After i put endl in the cout, it got accepted.</p> 
+    <p>Thanks!</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1417"></a> 
+ <div id="c1417" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1417" class="active">There is also a tutorial for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/red_dragon">red_dragon</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2009 03:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>There is also a tutorial for this problem: <a href="http://blog.codechef.com/2009/07/09/tutorial-for-problem-paying-up/">blog.codechef.com/2009/07/09/tutorial-for-problem-paying-up/</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1570"></a> 
+ <div id="c1570" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1570" class="active">How to handle the case when</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sidharth">sidharth</a></strong>
+   <span style="color:#828282"> @ 6 Sep 2009 02:45 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>How to handle the case when number of notes&gt;20 or the following value is &gt;1000 are we supposed to exit </p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1572"></a> 
+ <div id="c1572" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1572" class="active">The problem says the number</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 6 Sep 2009 03:32 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The problem says the number of banknotes will be &lt;= 20&nbsp; and the value is &lt;= 1000. </p> 
+    <p>It doesn't say 'sometimes that is true, the rest of the time it isn't'..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1592"></a> 
+ <div id="c1592" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1592" class="active">@tryingtocode Such a case</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 7 Sep 2009 02:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@tryingtocode Such a case will not be there in the input </p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1976"></a> 
+ <div id="c1976" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1976" class="active">don't you think we should get</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mukul_alld">mukul_alld</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2009 08:19 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    don't you think we should get the test case also with our code in the mail we get from codechef for which my solution failed because i am trying to figure out input for which my program failed and i am not able to find the test case . Can you please suggest some border testcases ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1979"></a> 
+ <div id="c1979" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1979" class="active">Of course you shouldn't be</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2009 08:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Of course you shouldn't be emailed it, a large part of solving problems is figuring out why your code isn't working yourself :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1985"></a> 
+ <div id="c1985" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1985" class="active">Also, if we did that, it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2009 02:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Also, if we did that, it would be possible for people to hard code the test cases and output the answers. :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1989"></a> 
+ <div id="c1989" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1989" class="active">What will be the output for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anithab">anithab</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2009 05:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>What will be the output for the following 3 cases ?</p> 
+    <p>a) 0 0</p> 
+    <p>b) 0 13</p> 
+    <p>c) 2 0</p> 
+    <p>&nbsp;&nbsp; 1</p> 
+    <p>&nbsp;&nbsp; 1</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1995"></a> 
+ <div id="c1995" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-1995" class="active">Please read the tutorial for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2009 07:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Please read the tutorial for this problem</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2030"></a> 
+ <div id="c2030" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-2030" class="active">can the value of a banknote</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ayan_2587">ayan_2587</a></strong>
+   <span style="color:#828282"> @ 26 Sep 2009 01:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can the value of a banknote be 0 ?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2031"></a> 
+ <div id="c2031" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-2031" class="active">hello guyz... take into</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ayan_2587">ayan_2587</a></strong>
+   <span style="color:#828282"> @ 26 Sep 2009 02:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>hello guyz... take into consideration that the value of m(amount of money the mugger asks for) can also be 0... i got correct answer on including this condition</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2391"></a> 
+ <div id="c2391" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-2391" class="active">I've made multiple attempts</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Philanthropist">Philanthropist</a></strong>
+   <span style="color:#828282"> @ 11 Oct 2009 04:35 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I've made multiple attempts at this now, and the results seem very accurate to me. Anitha's advice was helpful. However, even accounting for these situations, it's still not certain what the answer SHOULD be in those cases. My program gives the following results to each condition you proposed:</p> 
+    <p>a. Yes</p> 
+    <p>b. No</p> 
+    <p>c. Yes</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2825"></a> 
+ <div id="c2825" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-2825" class="active">I wrote the code for the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bezgin">bezgin</a></strong>
+   <span style="color:#828282"> @ 30 Oct 2009 07:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I wrote the code for the explained algorithm and i got a correct answer but for an input file where the answer is No for all test cases, my program runs in about 13 secs.</p> 
+    <p>&nbsp;</p> 
+    <p>Thus the algorithm provided in the tutorial is not efficient enough, and the control mechanism is not strict enough. I shouldn't have gotten a 'correct answer' response by any means.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-3674"></a> 
+ <div id="c3674" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-3674" class="active">I am getting runtime error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/keedap">keedap</a></strong>
+   <span style="color:#828282"> @ 25 Nov 2009 03:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I am getting runtime error everytime i uplaod the code ..</p> 
+    <p>its running perfectly fine on my system</p> 
+    <p>..</p> 
+    <p>can anyone help me why i am getting runtime error ...</p> 
+    <p>...</p> 
+    <p>the code is as below...</p> 
+    <p>-----------------------------------------------------</p> 
+    <p><br>#include &lt;stdio.h&gt;<br>#include &lt;stdlib.h&gt;<br><br>int notes[100][20] = {0};<br>int mask[20] = {0};<br>int isSum(int caseNum,int sumReq,int notesAv);<br>int main()<br>{<br> int numCases;<br> int reqSum[20],availNotes[20];<br><br> int LoopCount,i;<br> int result;<br> scanf("%d",&amp;numCases);<br><br> for(LoopCount=0; LoopCount&lt;numCases; LoopCount++)<br> {<br> scanf("%d",&amp;availNotes[LoopCount]);<br> scanf("%d",&amp;reqSum[LoopCount]);<br> for(i=0; i&lt;availNotes[LoopCount]; i++)<br> {<br> scanf("%d",&amp;notes[LoopCount][i]);<br> }<br> }<br><br> mask[0] = 1;<br> for(i=1;i&lt;20;i++)<br> {<br> mask[i] = mask[i-1]&lt;&lt;1;<br> }<br><br> for( LoopCount=0;LoopCount&lt;numCases;LoopCount++)&nbsp;&nbsp;&nbsp; <br> {<br> result = isSum(LoopCount,reqSum[LoopCount],availNotes[LoopCount]);<br> if(result == 1)<br> printf("Yesn",result);<br> else<br> printf("Non",result);<br> }<br> return 0;<br>}<br><br>int isSum(int caseNum,int sumReq,int notesAv)<br>{<br> int loopLim;<br> int i,j,sum;<br><br> //loopLim = pow(2,notesAv);<br> loopLim = 1&lt;&lt;notesAv;<br><br> for(i=1;i&lt;loopLim;i++)<br> {<br> sum = 0;<br> for(j=0;j&lt;notesAv;j++)<br> {<br> if((mask[j] &amp; i) != 0)<br> sum = sum + notes[caseNum][j];<br> }<br> if(sum == sumReq)<br> return 1;<br> }<br> return 0;<br>}<br><br></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-3675"></a> 
+ <div id="c3675" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-3675" class="active">It is not working perfectly</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 25 Nov 2009 04:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>It is not working perfectly fine on your system. You just aren't testing it properly.</p> 
+    <p>Have you tried any input with 100 test cases like the problem says will happen?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4001"></a> 
+ <div id="c4001" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-4001" class="active">do we need to check the case</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ankit0311">ankit0311</a></strong>
+   <span style="color:#828282"> @ 8 Dec 2009 10:30 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>do we need to check the case when any of&nbsp;t,n or m is negative? if not, then can anyone please tell me wt's wrong with this code?</p> 
+    <p>&nbsp;</p> 
+    <ol> 
+     <li> 
+      <div class="de1">
+       <span class="co2">#include&lt;stdio.h&gt;</span>
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       main
+       <span class="br0">(</span>
+       <span class="br0">)</span>
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       <span class="br0">{</span>
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       <span class="kw4">int</span> t,n,m,i,j,sum,flag;
+      </div> </li> 
+     <li class="li2"> 
+      <div class="de2">
+       <span class="kw4">int</span> val;
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/scanf.html"><span class="kw3"><span>scanf</span></span></a>
+       <span class="br0">(</span>
+       <span class="st0">"%d"</span>,&amp;t
+       <span class="br0">)</span>;
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       <span class="kw1">if</span>
+       <span class="br0">(</span>t&lt;=
+       <span class="nu0">100</span>
+       <span class="br0">)</span>
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       <span class="br0">{</span>
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp; 
+       <span class="kw1">for</span>
+       <span class="br0">(</span>j=
+       <span class="nu0">0</span>;j&lt;t;j++
+       <span class="br0">)</span>
+      </div> </li> 
+     <li class="li2"> 
+      <div class="de2">
+       &nbsp; 
+       <span class="br0">{</span>
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp; sum=
+       <span class="nu0">0</span>;&nbsp;&nbsp;
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp; flag=
+       <span class="nu0">0</span>;
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp; 
+       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/scanf.html"><span class="kw3"><span>scanf</span></span></a>
+       <span class="br0">(</span>
+       <span class="st0">"%d %d"</span>,&amp;n,&amp;m
+       <span class="br0">)</span>;
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp; 
+       <span class="kw1">if</span>
+       <span class="br0">(</span>n&lt;=
+       <span class="nu0">20</span>
+       <span class="br0">)</span>
+      </div> </li> 
+     <li class="li2"> 
+      <div class="de2">
+       &nbsp;&nbsp; 
+       <span class="br0">{</span>
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp;&nbsp; 
+       <span class="kw1">for</span>
+       <span class="br0">(</span>i=
+       <span class="nu0">0</span>;i&lt;n;i++
+       <span class="br0">)</span>
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp;&nbsp; 
+       <span class="br0">{</span>&nbsp;&nbsp;&nbsp;
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp;&nbsp;&nbsp; 
+       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/scanf.html"><span class="kw3"><span>scanf</span></span></a>
+       <span class="br0">(</span>
+       <span class="st0">"%d"</span>,&amp;val
+       <span class="br0">)</span>;
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp;&nbsp;&nbsp; 
+       <span class="kw1">if</span>
+       <span class="br0">(</span>val&lt;=
+       <span class="nu0">1000</span>
+       <span class="br0">)</span>
+      </div> </li> 
+     <li class="li2"> 
+      <div class="de2">
+       &nbsp;&nbsp;&nbsp;&nbsp; sum=sum+val;&nbsp;&nbsp;
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp;&nbsp;&nbsp; 
+       <span class="kw1">if</span>
+       <span class="br0">(</span>sum==m
+       <span class="br0">)</span>
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp;&nbsp;&nbsp; flag=
+       <span class="nu0">1</span>;
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp;&nbsp; 
+       <span class="br0">}</span>
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp;&nbsp; 
+       <span class="kw1">if</span>
+       <span class="br0">(</span>flag!=
+       <span class="nu0">1</span>
+       <span class="br0">)</span>
+      </div> </li> 
+     <li class="li2"> 
+      <div class="de2">
+       &nbsp;&nbsp;&nbsp; 
+       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3"><span>printf</span></span></a>
+       <span class="br0">(</span>
+       <span class="st0">"No<span class="es0">n</span>"</span>
+       <span class="br0">)</span>;
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp;&nbsp; 
+       <span class="kw1">else</span>
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp;&nbsp; 
+       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3"><span>printf</span></span></a>
+       <span class="br0">(</span>
+       <span class="st0">"Yes<span class="es0">n</span>"</span>
+       <span class="br0">)</span>;
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp;&nbsp; 
+       <span class="br0">}</span>
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       &nbsp; 
+       <span class="br0">}</span>
+      </div> </li> 
+     <li class="li2"> 
+      <div class="de2">
+       <span class="br0">}</span>
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       <span class="kw1">return</span> 
+       <span class="nu0">0</span>;
+      </div> </li> 
+     <li> 
+      <div class="de1">
+       <span class="br0">}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      </div> </li> 
+    </ol>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4002"></a> 
+ <div id="c4002" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-4002" class="active">it's printf("No\n") and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ankit0311">ankit0311</a></strong>
+   <span style="color:#828282"> @ 8 Dec 2009 10:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>it's printf("Non") and printf("Yesn") in the code that i have submitted...dont know what happened while copying it here...</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4060"></a> 
+ <div id="c4060" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-4060" class="active">i may have asked something</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ankit0311">ankit0311</a></strong>
+   <span style="color:#828282"> @ 11 Dec 2009 07:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i may have asked something really silly...but someone please help..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4063"></a> 
+ <div id="c4063" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-4063" class="active">Well, your code will</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 12 Dec 2009 05:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Well, your code will obviously not work if there are 101 test cases. It will also fail on most test cases; for example, if the correct sum is made up of the first and last numbers and nothing else.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4107"></a> 
+ <div id="c4107" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-4107" class="active">i know...thank you so</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ankit0311">ankit0311</a></strong>
+   <span style="color:#828282"> @ 15 Dec 2009 07:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i know...thank you so much...i misunderstood the problem...should have read the tutorial first...</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4388"></a> 
+ <div id="c4388" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-4388" class="active">can smone fnd error in my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gauravgaba">gauravgaba</a></strong>
+   <span style="color:#828282"> @ 1 Jan 2010 01:59 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can smone fnd error in my code i dnt kno why it's giving wrong answer...............</p> 
+    <p>pls</p> 
+    <p>#include&lt;stdio.h&gt;</p> 
+    <p>int main(void) {<br><br>int t,n,m;<br>int i,j,s,a[20];<br><br><br>scanf("%d",&amp;t);<br><br>while(t--) {<br><br>scanf("%d %d",&amp;n,&amp;m);<br><br>for(i=0;i&lt;n;i++)<br> scanf("%d",&amp;a[i]);<br><br>for(i=1;i&lt;(1&lt;&lt;n);i++) {<br><br>s=0;<br><br>for(j=0;j&lt;n;j++)<br> if(i&amp;(1&lt;&lt;j)&gt;0)<br> s=s+a[j];<br><br>if(s==m) {<br> printf("YESn");<br> goto end;<br>}<br><br><br>}<br><br><br>printf("NOn");<br><br>end : continue;<br><br>}<br>return 0;<br>}</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4846"></a> 
+ <div id="c4846" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-4846" class="active">will there be test cases only</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Dalchand">Dalchand</a></strong>
+   <span style="color:#828282"> @ 15 Jan 2010 11:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>will there be test cases only with n &lt;= 20 or we have to take any 20 banknotes out of n ??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4977"></a> 
+ <div id="c4977" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-4977" class="active">what does the Source limit</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shaurya">shaurya</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2010 01:22 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>what does the Source limit 50000 means</p> 
+    <p>is it 50000 byte or something else</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4981"></a> 
+ <div id="c4981" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-4981" class="active">@ Dal - the problem statement</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2010 02:12 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@ Dal - the problem statement tells you n can be at most 20.</p> 
+    <p>@ Shaurya - yes.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4987"></a> 
+ <div id="c4987" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-4987" class="active">&nbsp; What's wrong in this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codegambler">codegambler</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2010 09:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>&nbsp;</p> 
+    <p>What's wrong in this procedure ???</p> 
+    <p>int solve(int note[],int m,int i){<br> if(i&lt;0) return 0;<br> if(m&lt;note[i])return solve(note,m,i-1);<br> else return max(solve(note,m,i-1), note[i]+solve(note,m-note[i],i-1));<br> }</p> 
+    <p>. . . . . . .</p> 
+    <p>if(m == solve(note,m,n-1)) puts("YES");</p> 
+    <p>else puts("NO");</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4988"></a> 
+ <div id="c4988" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-4988" class="active">oh!! sorry i figure out my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codegambler">codegambler</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2010 10:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>oh!! sorry i figure out my problem..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5667"></a> 
+ <div id="c5667" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-5667" class="active">Tell me what's the problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dileep98490">dileep98490</a></strong>
+   <span style="color:#828282"> @ 9 Feb 2010 07:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Tell me what's the problem with my code,in my computer it is giving f9 output</p> 
+    <p>#include&lt;iostream.h&gt;<br>int main()<br>{int ban,mug,test;<br>int a[20],i=0,p=0,l=0;int m[100];<br>cin&gt;&gt;test;<br>while(test)<br>{cin&gt;&gt;ban&gt;&gt;mug;<br>while(ban)<br>{cin&gt;&gt;a[i];<br>i++;<br>ban--;}<br>i--;<br>while(i+1)<br>{p=p+a[i];<br>i--;<br>}<br>if(p==mug)<br>m[l]=1;<br>else<br>m[l]=0;<br>test--;i=0;p=0;l++;}<br>i=l;<br>l=0;<br>while(l!=i)<br>{if(m[l]==1)<br>cout&lt;&lt;"Yes";<br>else<br>cout&lt;&lt;"No";<br>cout&lt;&lt;"n";<br>l++;}<br>return 0;<br>}</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5668"></a> 
+ <div id="c5668" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-5668" class="active">It is showing that my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dileep98490">dileep98490</a></strong>
+   <span style="color:#828282"> @ 9 Feb 2010 07:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>It is showing that my programme compiled successfully,but lacks the desired output</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5818"></a> 
+ <div id="c5818" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-5818" class="active">if we have a note that</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/illuminatus">illuminatus</a></strong>
+   <span style="color:#828282"> @ 14 Feb 2010 05:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>if we have a note that matches the value of m, then will be considered as the subset or is it necessary that the sum of a certain number of notes equals the value of m???</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-6432"></a> 
+ <div id="c6432" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-6432" class="active">import</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rohitkg">rohitkg</a></strong>
+   <span style="color:#828282"> @ 8 Mar 2010 12:39 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p> </p>
+    <p> </p>
+    <p>import java.util.*;</p> 
+    <p>&nbsp;</p> 
+    <p>public class PayingUp {</p> 
+    <p><span> </span>public static Scanner s=new Scanner(System.in);</p> 
+    <p><span> </span>public static void main(String[] args) {</p> 
+    <p><span> </span>int t;</p> 
+    <p><span> </span>t=s.nextInt();</p> 
+    <p><span> </span>ArrayList&lt;String&gt; res=new ArrayList&lt;String&gt;();</p> 
+    <p><span> </span>for(int i=0;i&lt;t;i++) {</p> 
+    <p><span> </span>int n=s.nextInt();</p> 
+    <p><span> </span>int sum=s.nextInt();</p> 
+    <p><span> </span>int[] elements=new int[n];</p> 
+    <p><span> </span>for(int j=0;j&lt;n;j++)</p> 
+    <p><span> </span>elements[j]=s.nextInt();</p> 
+    <p><span> </span>if(solve(elements,sum))</p> 
+    <p><span> </span>res.add("Yes");</p> 
+    <p><span> </span>else</p> 
+    <p><span> </span>res.add("No");<span> </span></p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>for(int i=0;i&lt;res.size();i++)</p> 
+    <p><span> </span>System.out.println(res.get(i));</p> 
+    <p><span> </span>}<span> </span></p> 
+    <p><span> </span>public static boolean solve(int[] arr,int sum) {</p> 
+    <p><span> </span>int n=(int)Math.pow(2,arr.length);</p> 
+    <p><span> </span>for(int i=1;i&lt;=n;i++) {</p> 
+    <p><span> </span>int temp=0;</p> 
+    <p><span> </span>int k=1;</p> 
+    <p><span> </span>for(int j=arr.length-1;j&gt;=0;j--) {</p> 
+    <p><span> </span>if((k&amp;i)!=0)</p> 
+    <p><span> </span>temp+=arr[j];</p> 
+    <p><span> </span>k=k&lt;&lt;1;<span> </span></p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>if(temp==sum)</p> 
+    <p><span> </span>return true;</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>return false;</p> 
+    <p><span> </span>}<span> </span></p> 
+    <p>}</p> 
+    <p>can anyone check, what's wrong in this code snippet? it's according to that tutorial.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8872"></a> 
+ <div id="c8872" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-8872" class="active">my code is giving correct</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/deathsmoke">deathsmoke</a></strong>
+   <span style="color:#828282"> @ 9 Jun 2010 07:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>my code is giving correct outpit but im getting a runtime error on submission, please help</p> 
+    <p>is algorithm library allowed?</p> 
+    <p>im using codeblocks in windows</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8938"></a> 
+ <div id="c8938" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-8938" class="active">plz somebody help me to get</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Nikhil Agrawal">Nikhil Agrawal</a></strong>
+   <span style="color:#828282"> @ 12 Jun 2010 07:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>plz somebody help me to get rid of Non-zero exit code runtime errror.</p> 
+    <p>plz help....here is my code...</p> 
+    <p>&nbsp;</p> 
+    <p> </p>
+    <p>import java.io.*;</p> 
+    <p>import java.util.*;</p> 
+    <p>class Main</p> 
+    <p>{</p> 
+    <p><span> </span>public static void main(String args[])throws IOException</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>int m=0,t,x,i,flag=1,c,p;</p> 
+    <p><span> </span></p> 
+    <p><span> </span>Scanner in=new Scanner(System.in);</p> 
+    <p><span> </span>t=in.nextInt();</p> 
+    <p><span> </span></p> 
+    <p><span> </span>if(t&gt;=1 &amp;&amp; t&lt;=1000000)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>for(p=1;p&lt;=t;p++)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>m=0;</p> 
+    <p><span> </span>flag=1;<span> </span></p> 
+    <p><span> </span>x=in.nextInt();</p> 
+    <p><span> </span>if(x&gt;1 &amp;&amp; x&lt;=1000000000)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>int a[]=new int[x];</p> 
+    <p><span> </span></p> 
+    <p><span> </span>for(i=0;i&lt;x;i++)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>a[i]=i+1;</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span></p> 
+    <p><span> </span>while(flag==1)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>for(c=1;c&lt;x;c=c+2)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>a[m]=a[c];</p> 
+    <p><span> </span>m++;<span> </span></p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>if(m==1)</p> 
+    <p><span> </span>{flag=0;</p> 
+    <p><span> </span></p> 
+    <p><span> </span>break;}</p> 
+    <p><span> </span></p> 
+    <p><span> </span>else</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>x=m;</p> 
+    <p><span> </span>m=0;</p> 
+    <p><span> </span>continue;</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span> System.out.println(a[0]);</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>else if(x==1)</p> 
+    <p><span> </span> <span> </span>System.out.println(x);</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span></p> 
+    <p><span> </span>}</p> 
+    <p>}</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9487"></a> 
+ <div id="c9487" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-9487" class="active">hey got a idea!! &nbsp; Can some1</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/AnoopNarang">AnoopNarang</a></strong>
+   <span style="color:#828282"> @ 12 Jul 2010 01:38 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>hey got a idea!!</p> 
+    <p>&nbsp;</p> 
+    <p>Can some1 submit a solution in php, perl , java (watever makes the following possible... ) to write the test cases of any specific problem to a file present in any server .. :D</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9696"></a> 
+ <div id="c9696" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-9696" class="active">Full Nulled Script English &amp;</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rssvb">rssvb</a></strong>
+   <span style="color:#828282"> @ 25 Jul 2010 09:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><a href="http://www.rssvb.com">Full Nulled Script English &amp; Arabic Scripts</a></p> 
+    <p>&nbsp;</p> 
+    <p>#include&lt;iostream.h&gt;<br>int main()<br>{int ban,mug,test;<br>int a[20],i=0,p=0,l=0;int m[100];<br>cin&gt;&gt;test;<br>while(test)<br>{cin&gt;&gt;ban&gt;&gt;mug;<br>while(ban)<br>{cin&gt;&gt;a[i];<br>i++;<br>ban--;}<br>i--;<br>while(i+1)<br>{p=p+a[i];<br>i--;<br>}<br>if(p==mug)<br>m[l]=1;<br>else<br>m[l]=0;<br>test--;i=0;p=0;l++;}<br>i=l;<br>l=0;<br>while(l!=i)<br>{if(m[l]==1)<br>cout&lt;&lt;"Yes";<br>else<br>cout&lt;&lt;"No";<br>cout&lt;&lt;"n";<br>l++;}<br>return 0;<br>}</p> 
+    <p>&nbsp;</p> 
+    <p>&nbsp;</p> 
+    <p>it's ok</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9777"></a> 
+ <div id="c9777" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-9777" class="active">can anybody help me wid this?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/credo">credo</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2010 11:55 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can anybody help me wid this? i get wrong answer though it's working fine wid my gcc compiler!</p> 
+    <p>thanx...!</p> 
+    <p>/*paying up*/<br>#include&lt;stdio.h&gt;<br>int main(){<br> unsigned int i,j,flag,k,sum,inputs,m,n,notes[20];<br> scanf("%d",&amp;inputs);<br> for(i=0;i&lt;inputs;i++){<br> scanf("%d%d",&amp;n,&amp;m);<br> for(j=0;j&lt;n;j++)scanf("%d",&amp;notes[j]);<br> for(j=0;j&lt;(1&lt;&lt;n);j++){<br> sum=0;<br> flag=0;<br> for(k=0;k&lt;n;k++){<br> if((j&amp;(1&lt;&lt;k))&gt;0)<br> sum+=notes[k];<br> }<br> if(sum==m){<br> flag=1;<br> break;<br> }<br> }<br> if(flag)printf("Yes");<br> else printf("Non");<br> }<br> return 0;<br>}</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9855"></a> 
+ <div id="c9855" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-9855" class="active">please someone help me with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aabidhasan">aabidhasan</a></strong>
+   <span style="color:#828282"> @ 4 Aug 2010 10:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>please someone help me with the code... I don't understand what's the problem</p> 
+    <p>&nbsp;</p> 
+    <p> </p>
+    <p>#include&lt;stdio.h&gt;</p> 
+    <p>#include&lt;math.h&gt;</p> 
+    <p>&nbsp;</p> 
+    <p>long binary[105000][21],input[21];</p> 
+    <p>long i,j,n,m,nn,it1,it2,p,sum;</p> 
+    <p>&nbsp;</p> 
+    <p>int main(){</p> 
+    <p><span> </span>freopen("input.txt","r",stdin);</p> 
+    <p><span> </span>scanf("%ld",&amp;nn);</p> 
+    <p><span> </span>for(it1=0; it1&lt;nn; it1++){</p> 
+    <p><span> </span>scanf("%ld %ld",&amp;n, &amp;m);</p> 
+    <p><span> </span>for(it2=0; it2&lt;n; it2++)scanf("%ld",&amp;input[it2]);</p> 
+    <p>&nbsp;</p> 
+    <p><span> </span>for(i=1; i&lt;pow(2,n); i++){</p> 
+    <p><span> </span>p=i;</p> 
+    <p><span> </span>for(j=0; j&lt;n; j++){</p> 
+    <p><span> </span>binary[i][j]=p%2;</p> 
+    <p><span> </span>p=p/2;</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>}</p> 
+    <p>&nbsp;</p> 
+    <p><span> </span>for(i=1; i&lt;pow(2,n); i++){</p> 
+    <p><span> </span>sum=0;</p> 
+    <p><span> </span>for(j=0; j&lt;n; j++){</p> 
+    <p><span> </span>if(binary[i][j]&gt;0){</p> 
+    <p><span> </span>sum = sum+input[j];</p> 
+    <p><span> </span>if(sum == m){</p> 
+    <p><span> </span>printf("Yesn");goto end;</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>printf("Non");</p> 
+    <p>end: continue;</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>return 0;</p> 
+    <p>}</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10401"></a> 
+ <div id="c10401" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-10401" class="active">@Admin I have a perfectly</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Logan2588">Logan2588</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2010 05:13 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Admin</p> 
+    <p>I have a perfectly working DP solution for the problem, but still it is giving wrong answer. Can you post some test cases apart from the ones given in the problem?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10506"></a> 
+ <div id="c10506" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-10506" class="active">Why do we need 7 seconds</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/goharshady">goharshady</a></strong>
+   <span style="color:#828282"> @ 4 Sep 2010 02:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Why do we need 7 seconds for?</p> 
+    <p>Are we going to check all possibilities?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11306"></a> 
+ <div id="c11306" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-11306" class="active">Hey Everyone, Its working</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anmol_gulati">anmol_gulati</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2010 01:02 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Hey Everyone,</p> 
+    <p>Its working fine on my computer but the compiler shows "RUNTIME ERROR"....</p> 
+    <p>My sol. is -&gt;&nbsp;<a href="http://www.codechef.com/viewsolution/357265">http://www.codechef.com/viewsolution/357265</a></p> 
+    <p>Please tell me whats going wrong!!!</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11310"></a> 
+ <div id="c11310" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-11310" class="active">What is the largest index of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2010 06:12 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>What is the largest index of b you access?</p> 
+    <p>What is the largest index of b you can access?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11329"></a> 
+ <div id="c11329" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-11329" class="active">@Stephen - Thank you very</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anmol_gulati">anmol_gulati</a></strong>
+   <span style="color:#828282"> @ 14 Oct 2010 07:26 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Stephen - Thank you very much...I got it...</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11471"></a> 
+ <div id="c11471" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-11471" class="active">admin- please check for any</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/asheybo">asheybo</a></strong>
+   <span style="color:#828282"> @ 19 Oct 2010 11:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>admin-</p> 
+    <p>please check for any error in my code...!!!</p> 
+    <p>i am not able to get hold of it!!!</p> 
+    <p>the sumbission id is -- 362123</p> 
+    <pre>--thank you<br></pre>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11497"></a> 
+ <div id="c11497" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-11497" class="active">im gving an example.can any1</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/knightyau">knightyau</a></strong>
+   <span style="color:#828282"> @ 20 Oct 2010 08:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>im gving an example.can any1 tell me whats wrong with it?</p> 
+    <p>&nbsp;</p> 
+    <p>#include &lt;iostream&gt;<br>using namespace std;<br>int main()<br>{<br> int a[2] = {1,2};<br> int sum = 0;<br> for(int i=1;i&lt;4;i++)<br> {&nbsp;&nbsp;&nbsp; <br> sum = 0;<br> for(int j=0;j&lt;2;j++)<br> {<br> if(i&amp;(1&lt;&lt;j)!=0)<br> {<br> sum += a[j];<br> }<br> }<br> cout &lt;&lt; sum &lt;&lt;" ";<br> }<br>}</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11500"></a> 
+ <div id="c11500" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-11500" class="active">You aren't meant to hardcode</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 21 Oct 2010 01:53 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>You aren't meant to hardcode a test case in your program, you're meant to read it from standard input! Read the <a href="/freelinking/FAQ" class="freelinking">FAQ</a>.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12299"></a> 
+ <div id="c12299" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-12299" class="active">var t:integer; nb:integer; </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/opelhoward">opelhoward</a></strong>
+   <span style="color:#828282"> @ 10 Dec 2010 06:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p> </p>
+    <p>var</p> 
+    <p><span> </span>t:integer;</p> 
+    <p><span> </span>nb:integer;</p> 
+    <p><span> </span>m:integer;</p> 
+    <p><span> </span>bc:integer;</p> 
+    <p><span> </span>b:array [1..25] of integer;</p> 
+    <p><span> </span>r:array [1..100] of boolean;</p> 
+    <p><span> </span>l:integer;</p> 
+    <p><span> </span>z,y:integer;</p> 
+    <p>function grd(n,i:integer):boolean;</p> 
+    <p>var x,temp:integer;</p> 
+    <p><span> </span>bo:boolean;</p> 
+    <p>begin</p> 
+    <p><span> </span>temp:=n-b[i];</p> 
+    <p><span> </span>if temp&lt;0 then</p> 
+    <p><span> </span>grd:=false</p> 
+    <p><span> </span>else if temp=0 then</p> 
+    <p><span> </span>grd:=true</p> 
+    <p><span> </span>else</p> 
+    <p><span> </span>begin</p> 
+    <p><span> </span>x:=i-1;</p> 
+    <p><span> </span>bo:=false;</p> 
+    <p><span> </span>while (x&gt;0) and (not bo) do</p> 
+    <p><span> </span>begin</p> 
+    <p><span> </span>bo:=grd(temp,x);</p> 
+    <p><span> </span>x:=x-1;</p> 
+    <p><span> </span>end;</p> 
+    <p><span> </span>grd:=bo;</p> 
+    <p><span> </span>end;</p> 
+    <p>end;</p> 
+    <p>function chk(i:integer):boolean;</p> 
+    <p>var</p> 
+    <p><span> </span>x:integer;</p> 
+    <p><span> </span>temp:boolean;</p> 
+    <p>begin</p> 
+    <p><span> </span>temp:=false;</p> 
+    <p><span> </span>x:=i;</p> 
+    <p><span> </span>while (x&gt;0) and (not temp) do</p> 
+    <p><span> </span>begin</p> 
+    <p><span> </span>temp:=grd(m,x);</p> 
+    <p><span> </span>x:=x-1;</p> 
+    <p><span> </span>end;</p> 
+    <p><span> </span>chk:=temp;</p> 
+    <p>end;</p> 
+    <p>begin</p> 
+    <p><span> </span>readln(t);</p> 
+    <p><span> </span>for z:=1 to t do</p> 
+    <p><span> </span>begin</p> 
+    <p><span> </span>readln(nb,m);</p> 
+    <p><span> </span>l:=0;</p> 
+    <p><span> </span>for y:=1 to nb do</p> 
+    <p><span> </span>begin</p> 
+    <p><span> </span>readln(bc);</p> 
+    <p><span> </span>if bc&lt;=m then</p> 
+    <p><span> </span>begin</p> 
+    <p><span> </span>l:=l+1;</p> 
+    <p><span> </span>b[l]:=bc;</p> 
+    <p><span> </span>end;</p> 
+    <p><span> </span>end;</p> 
+    <p><span> </span>r[z]:=chk(l);</p> 
+    <p><span> </span>end;</p> 
+    <p><span> </span>for z:=1 to t do</p> 
+    <p><span> </span>if r[z] then</p> 
+    <p><span> </span>writeln('Yes')</p> 
+    <p><span> </span>else</p> 
+    <p><span> </span>writeln('No');</p> 
+    <p>end.</p> 
+    <div>
+     why is my execution time is 0.00 ???!!!
+     <br>language: PASCAL
+    </div> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12531"></a> 
+ <div id="c12531" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-12531" class="active">@Admin: My solution is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajneesh2k10">rajneesh2k10</a></strong>
+   <span style="color:#828282"> @ 25 Dec 2010 11:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Admin: My solution is working fine with the provided test cases and I think it should work fine with any possible test case, still I am getting Wrong Answer. Pleaes provide me with the test case on which my solution is failing. Have a look at my solution here: <a href="http://www.codechef.com/viewsolution/406574" title="http://www.codechef.com/viewsolution/406574">http://www.codechef.com/viewsolution/406574</a></p> 
+    <p>If you can figure out any mistake from looking at the solution, it'll be of a great help.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12537"></a> 
+ <div id="c12537" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-12537" class="active">12 12 1</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 25 Dec 2010 03:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><code>1<br>2 1<br>2 1</code></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12577"></a> 
+ <div id="c12577" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-12577" class="active">@Stephen: You drive everyone</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajneesh2k10">rajneesh2k10</a></strong>
+   <span style="color:#828282"> @ 27 Dec 2010 03:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Stephen: You drive everyone crazy!!! You are the BOND! Thank you so much!!</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12731"></a> 
+ <div id="c12731" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-12731" class="active">wat shud be done if n&gt;20 and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sundar3755">sundar3755</a></strong>
+   <span style="color:#828282"> @ 3 Jan 2011 04:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>wat shud be done if n&gt;20 and value&gt;1000.....no clear explanations given in description</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12751"></a> 
+ <div id="c12751" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-12751" class="active">The description is very</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 4 Jan 2011 01:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The description is very clear.. it tells you that n&lt;=20 and value&lt;=1000 always.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13255"></a> 
+ <div id="c13255" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-13255" class="active">@admin: i ve checked all the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akash_d_learner">akash_d_learner</a></strong>
+   <span style="color:#828282"> @ 27 Jan 2011 12:23 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin: i ve checked all the test cases and followed the tutorial but still i am getting runtime error. please look at my code and tell me where i am using memory.</p> 
+    <p>url:&nbsp;<a href="http://www.codechef.com/viewsolution/435048">http://www.codechef.com/viewsolution/435048</a></p> 
+    <p>I am facing same problem for my other solution. Pls help me.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13276"></a> 
+ <div id="c13276" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-13276" class="active">@admin m getting wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tj91">tj91</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 01:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin m getting wrong answer please help!!</p> 
+    <p>#include&lt;stdio.h&gt;<br>#include&lt;conio.h&gt;<br> main()<br>{<br> int t,a[25],m,s,u,j,n,temp,y,i,v; <br> scanf("%d",&amp;t);<br> while(t&gt;0)<br> {<br> <br> s=0;<br> scanf("%d",&amp;n); <br> scanf("%d",&amp;m);<br> for(y=1;y&lt;=n;y++)<br> scanf("%d",&amp;a[y]); <br> for(i=1;i&lt;n;i++)<br> {<br> <br> for(v=i+1;v&lt;=n;v++)<br> {<br> if(a[v]&lt;a[i])<br> {<br> temp=a[i];<br> a[i]=a[v];<br> a[v]=temp;<br> }<br> }<br> } <br> for(u=n;u&gt;0;u--) <br> {<br> for(j=u;j&gt;0;j--)<br> {<br> if(s+a[j]&gt;m)<br> continue;<br> if(s+a[j]&lt;m) <br> s+=a[j]; <br> else<br> {<br> s+=a[j]; <br> break;<br> } <br> }//j<br> if(s==m) <br> break;<br> s=0; <br> }// u<br> <br> if(s==m)<br> {<br> printf("Yesn");<br> }<br> else<br> printf("Non"); <br> t--;<br> <br> } <br> getch();<br> }<br><br></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13277"></a> 
+ <div id="c13277" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-13277" class="active">it was \n &nbsp; but it shows Non</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tj91">tj91</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 01:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>it was n &nbsp; but it shows Non &nbsp;WHY</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13278"></a> 
+ <div id="c13278" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-13278" class="active">back slash n</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tj91">tj91</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 01:37 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>back slash n</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13284"></a> 
+ <div id="c13284" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-13284" class="active">Because, like the FAQ says,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 04:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Because, like the <a href="/freelinking/FAQ" class="freelinking">FAQ</a> says, you aren't supposed to post code here.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13291"></a> 
+ <div id="c13291" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-13291" class="active">@ stephen plz go through the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tj91">tj91</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 02:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@ stephen plz go through the code and pleeez tell me y its nt woking in code chef</p> 
+    <p>it works on my pc</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13292"></a> 
+ <div id="c13292" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-13292" class="active">@ stephen the faq tells about</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tj91">tj91</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 02:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@ stephen the faq tells about testing a code using a txt file</p> 
+    <p>java test &lt; in.txt &gt; out.txt<br><br>or<br><br>test.exe &lt; in.txt &gt; out.txt</p> 
+    <p>&nbsp;</p> 
+    <p>I USE C I DONT KNOW JAVA HELP</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13293"></a> 
+ <div id="c13293" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-13293" class="active">@ STEPHEN OR TELL me the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tj91">tj91</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 02:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@ STEPHEN OR TELL me the command for doing this</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13294"></a> 
+ <div id="c13294" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-13294" class="active">@stephen we are told here to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tj91">tj91</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 02:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@stephen we are told here to write a code for say t cases</p> 
+    <p>now what i do is print the output for every case as soon as the output is calculated (u can see that in the code post above)</p> 
+    <p>OR PLEASE SUGGEST</p> 
+    <p>another approach is to store all outputs and in the end display them....</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13295"></a> 
+ <div id="c13295" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-13295" class="active">@stephen i got it READ THE</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tj91">tj91</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 02:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @stephen i got it READ THE FAQ BUT HELP ME WITH THE CODE POSTED @admin provide something to delete the posts
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-14898"></a> 
+ <div id="c14898" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-14898" class="active">Is the DP approach not good</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vinayneekhra">vinayneekhra</a></strong>
+   <span style="color:#828282"> @ 7 Mar 2011 11:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Is the DP approach not good for this problem?</p> 
+    <p>I have implemented DP and it is giving "Time Limit Exceeded" :(</p> 
+    <p>or i will try tutorial's approach.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-14904"></a> 
+ <div id="c14904" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-14904" class="active">Hi, I have used recursion in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vinayneekhra">vinayneekhra</a></strong>
+   <span style="color:#828282"> @ 8 Mar 2011 05:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi, I have used recursion in my program. Though it is giving correct results, on submission it gives "Time Limit Exceeded". I have read the tutorial, and their runtime is O(2^n) which is very large, while i have implemented a polynomial algo, i am getting time limit error. Please point out my error. Here is the code 
+    <a href="http://www.codechef.com/viewsolution/483085" title="http://www.codechef.com/viewsolution/483085">http://www.codechef.com/viewsolution/483085</a> I don't understand how the tutorial's algo is working under the time limit, we have 2^20 subsets, and it need a huge calculation. :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15089"></a> 
+ <div id="c15089" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-15089" class="active">Umm, i really think my logic</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anantc">anantc</a></strong>
+   <span style="color:#828282"> @ 18 Mar 2011 07:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Umm, i really think my logic and solution is correct. Can somebody please check my solution ?</p> 
+    <p><a href="http://www.codechef.com/viewsolution/491186">http://www.codechef.com/viewsolution/491186</a></p> 
+    <p>Help will be appreciated</p> 
+    <p>&nbsp;</p> 
+    <p>&nbsp;</p> 
+    <p>Thanks :D</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15260"></a> 
+ <div id="c15260" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-15260" class="active">Solved it. Thanks anyways :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anantc">anantc</a></strong>
+   <span style="color:#828282"> @ 26 Mar 2011 12:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Solved it. Thanks anyways :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15263"></a> 
+ <div id="c15263" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-15263" class="active">hi, I submitted this. But I</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atmostrahul">atmostrahul</a></strong>
+   <span style="color:#828282"> @ 27 Mar 2011 01:45 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>hi, I submitted this. But I am getting a "wrong answer". Can anyone please tell me what's wrong with my program?</p> 
+    <p>&nbsp;</p> 
+    <p> </p>
+    <p>#include&lt;stdio.h&gt;</p> 
+    <p>#include&lt;math.h&gt;</p> 
+    <p>&nbsp;</p> 
+    <p>int main()</p> 
+    <p>{</p> 
+    <p><span> </span>int m, n, sum;</p> 
+    <p><span> </span>int notes[30], test[30];</p> 
+    <p><span> </span>int i, j;</p> 
+    <p><span> </span>int count=0, t, k;</p> 
+    <p><span> </span></p> 
+    <p><span> </span>scanf("%d", &amp;t);</p> 
+    <p><span> </span></p> 
+    <p><span> </span>while(count&lt;t)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>scanf("%d %d", &amp;n , &amp;m);</p> 
+    <p><span> </span></p> 
+    <p><span> </span>for(k=0; k&lt;n; k++)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>scanf("%d", &amp;notes[k]);</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span></p> 
+    <p><span> </span> for(j=1; j&lt;pow(2, n); j++)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>sum=0;</p> 
+    <p><span> </span>for(i=0; i&lt;n; i++)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>if((unsigned)j &amp; (0x1&lt;&lt;i))</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>sum = sum + notes[i];</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span></p> 
+    <p><span> </span>if(sum==m)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>test[count]=1;</p> 
+    <p><span> </span>}<span> </span></p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>count++;</p> 
+    <p><span> </span></p> 
+    <p><span> </span>}</p> 
+    <p><span> </span></p> 
+    <p><span> </span>for(k=0; k&lt;t; k++)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>if(test[k] == 1)</p> 
+    <p><span> </span>printf("Yesn");</p> 
+    <p><span> </span>else</p> 
+    <p><span> </span>printf("Non");</p> 
+    <p><span> </span></p> 
+    <p><span> </span>}</p> 
+    <p><span> </span></p> 
+    <p><span> </span>return(0);</p> 
+    <p>}</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15427"></a> 
+ <div id="c15427" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-15427" class="active">please help me i am getting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amnsinghl">amnsinghl</a></strong>
+   <span style="color:#828282"> @ 7 Apr 2011 09:47 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>please help me</p> 
+    <p>i am getting runtime error</p> 
+    <p><a href="http://www.codechef.com/viewsolution/509357">http://www.codechef.com/viewsolution/509357</a></p> 
+    <p>but in my compiler i m getting all answers are correct</p> 
+    <p>please somebody help me</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15650"></a> 
+ <div id="c15650" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-15650" class="active">@Admin: Here is my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajaditya_m">rajaditya_m</a></strong>
+   <span style="color:#828282"> @ 12 Apr 2011 01:15 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Admin:</p> 
+    <p>Here is my solution.....it works fine for all the given testcases (plus 3/4 more that i designed on my own)...can you please tell me why its showing wrong answer? Thanks a lot</p> 
+    <p><a href="http://www.codechef.com/viewsolution/519056">http://www.codechef.com/viewsolution/519056</a></p> 
+    <p>&nbsp;</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15983"></a> 
+ <div id="c15983" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-15983" class="active">@Admin and @Stephen Posting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/smasher">smasher</a></strong>
+   <span style="color:#828282"> @ 19 Apr 2011 08:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Admin and @Stephen</p> 
+    <p>Posting for the 1st time<b>. </b>Please if you people can tell me some test case where my solution would fail. The submission link is:</p> 
+    <p><a href="http://www.codechef.com/viewsolution/528086" title="http://www.codechef.com/viewsolution/528086">http://www.codechef.com/viewsolution/528086</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15993"></a> 
+ <div id="c15993" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-15993" class="active">Got the test case where my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/smasher">smasher</a></strong>
+   <span style="color:#828282"> @ 20 Apr 2011 01:24 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Got the test case where my solution would fail:</p> 
+    <p>4 7</p> 
+    <p>1 3 3 5</p> 
+    <p>More importantly figured out the classical theoretical mistake of my solution :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16620"></a> 
+ <div id="c16620" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-16620" class="active">can anybody find problem with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anshul19">anshul19</a></strong>
+   <span style="color:#828282"> @ 5 Jun 2011 03:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anybody find problem with this code.It is giving right output in dev c. but showing wrong answer here //Paying up #include int main() { int t,sum,d[21],i,j,l,n,m,a=1; // n=number of notes ,d=array of notes // m=money to match scanf("%d",&amp;t); while(t--) { scanf("%d%d",&amp;n,&amp;m); for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16903"></a> 
+ <div id="c16903" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-16903" class="active">please can anybody check out</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rijul007">rijul007</a></strong>
+   <span style="color:#828282"> @ 18 Jun 2011 03:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please can anybody check out my code it is satisfying all the test cases that i am running... but on submission it is giving wrong answer,.... import java.io.*; import java.lang.*; class March1 { public static void main(String[] args) throws Exception { BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); PrintWriter pw = new PrintWriter(System.out,true); int a=0; int b=0; boolean bool = false; int n = Integer.parseInt(br.readLine()); for(int i=0;i=i+1;l--) { if(sum + m[l]
+    <b sum="" bool="=true)" else=""></b>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17088"></a> 
+ <div id="c17088" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-17088" class="active">0 0 Yes 0 1 No 1 0 0 Yes 1</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/netex">netex</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2011 02:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    0 0 Yes 0 1 No 1 0 0 Yes 1 0 1 Yes 0 5 No 4 7 1 3 3 5 Yes 4 15 5 5 5 6 Yes 5 9 5 8 4 16 20 Yes Here are my some of tries.But eventually i get wrong answer when i submit.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17098"></a> 
+ <div id="c17098" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-17098" class="active">my algorithm fails at this: 4</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/netex">netex</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2011 07:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my algorithm fails at this: 4 20 4 6 9 10 answer should be 'Yes' as 10+6+4.Someone else has stated it before on forums.I wanted to enter it here if it helps other ones whose algorithm fails too.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17471"></a> 
+ <div id="c17471" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-17471" class="active">I am using the bitset for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hollgam">hollgam</a></strong>
+   <span style="color:#828282"> @ 9 Jul 2011 03:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am using the bitset for this and it times out in C++. Can it be improved using somw way by following an approach similar to the tutorial? My solution is here: 
+    <a href="http://www.codechef.com/viewsolution/596281" title="http://www.codechef.com/viewsolution/596281">http://www.codechef.com/viewsolution/596281</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18109"></a> 
+ <div id="c18109" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-18109" class="active">I am getting a WA can anyone</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rockjiten">rockjiten</a></strong>
+   <span style="color:#828282"> @ 11 Aug 2011 11:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting a WA can anyone help.. it runs for 0 0 YES 1 0 YES 0 1 N0 code is here 
+    <a href="http://www.codechef.com/viewsolution/624002" title="http://www.codechef.com/viewsolution/624002">http://www.codechef.com/viewsolution/624002</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18984"></a> 
+ <div id="c18984" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-18984" class="active">Note for C++ Users: If you</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/lazy_digger">lazy_digger</a></strong>
+   <span style="color:#828282"> @ 25 Sep 2011 07:14 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Note for C++ Users: If you want to follow the permutation technique explained in the tutorial, take a look at "next_permutation ()" in the header "algorithm" for fast permutation generation.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19716"></a> 
+ <div id="c19716" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-19716" class="active">hi , i solved the problem as</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nathanmelfoy">nathanmelfoy</a></strong>
+   <span style="color:#828282"> @ 28 Oct 2011 11:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hi , i solved the problem as explained in tutorial by finding all subsets . can someone explain dynamic approach or any optimum approach for it. thanks in advance .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-20117"></a> 
+ <div id="c20117" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-20117" class="active">Everytime I am submitting a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dineshsingh">dineshsingh</a></strong>
+   <span style="color:#828282"> @ 27 Nov 2011 07:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Everytime I am submitting a solution, I am encountering runtime error. @Admin, please help me if you can, by letting me know the exact cause of the error. here is the link to my solution 
+    <a href="http://www.codechef.com/viewsolution/739791" title="http://www.codechef.com/viewsolution/739791">http://www.codechef.com/viewsolution/739791</a> it is working fine in my computer.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-20714"></a> 
+ <div id="c20714" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-20714" class="active">package trial; import</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kartik maheshwari">kartik maheshwari</a></strong>
+   <span style="color:#828282"> @ 21 Dec 2011 03:30 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    package trial; import java.io.BufferedReader; import java.io.InputStreamReader; import java.util.Arrays; import java.util.StringTokenizer; public class Trial { public static boolean sum (int[] notes,int a,int m) { if (notes[a]==-1) return false; if (notes[a]==m) return true; if (notes[a]0) Arrays.sort(notes,0,n-1); if(sum(notes,0,m)) System.out.println("Yes"); else System.out.println("No"); } } catch (Exception e) { System.err.println("Error:" + e.getMessage()); } } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-21287"></a> 
+ <div id="c21287" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-21287" class="active">@admin please give the test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashishnegi001">ashishnegi001</a></strong>
+   <span style="color:#828282"> @ 17 Jan 2012 10:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin please give the test case for which i failed. I really want to do this correctly. please see program id 797852 
+    <a href="http://www.codechef.com/viewsolution/797852" title="http://www.codechef.com/viewsolution/797852">http://www.codechef.com/viewsolution/797852</a> if m = 0 then i think since n=0 means beating up then No should come also no subset of my bank notes can make 0 can we have null sub set ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25269"></a> 
+ <div id="c25269" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-25269" class="active">backtracking is the best</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hellodear">hellodear</a></strong>
+   <span style="color:#828282"> @ 4 Apr 2012 11:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    backtracking is the best solution
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-26419"></a> 
+ <div id="c26419" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-26419" class="active">atulbansal128, looks like</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/wtq4er">wtq4er</a></strong>
+   <span style="color:#828282"> @ 5 May 2012 11:44 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    atulbansal128, looks like this is the most difficult part of this task - i've spent some hours trying to find this error. Thank you for your comment!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-26837"></a> 
+ <div id="c26837" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-26837" class="active">lol, do test with all limits.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/makandriaco">makandriaco</a></strong>
+   <span style="color:#828282"> @ 16 May 2012 08:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    lol, do test with all limits. I spent hours getting correct results on my PC and getting WA, later to discover my code failed with 20 bank notes because I had dimmed the variable x[19] (remember C++ dims the array with the number of elements not the highest index). Stupid me....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-26856"></a> 
+ <div id="c26856" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-26856" class="active">I solved this out by testing</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bogz13092">bogz13092</a></strong>
+   <span style="color:#828282"> @ 18 May 2012 02:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I solved this out by testing the given test cases/inputs mention in the problem..I got it all right. But it still gives me an error regarding the class name of the java file. I used javac 1.7.0_04..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28177"></a> 
+ <div id="c28177" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-28177" class="active">now wats dis???if my output i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bishu1">bishu1</a></strong>
+   <span style="color:#828282"> @ 7 Jun 2012 11:38 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    now wats dis???if my output i s "YES" or "NO" instead of "Yes" or "No"...it gave wrong answer...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28656"></a> 
+ <div id="c28656" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-28656" class="active">Nice Problem... learned</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/evilnesa">evilnesa</a></strong>
+   <span style="color:#828282"> @ 18 Jun 2012 02:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Nice Problem... learned something
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28673"></a> 
+ <div id="c28673" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-28673" class="active">can anybody tell me what is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aruneshpa">aruneshpa</a></strong>
+   <span style="color:#828282"> @ 19 Jun 2012 02:56 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anybody tell me what is problem with my code? it is giving correct answer in all possible cases.... #include #include int main() { int tc,k,m=0,i; scanf("%d",&amp;tc); int arr[101]; for(i=0;i20) exit(0); if(n==0 &amp;&amp; num==0) { arr[k]=1; } else { //printf("%d",arr[k]); int a[21]; for(i=0;i1000) exit(0); } for(i=0;ia[j]) { temp=a[j]; a[j]=a[j+1]; a[j+1]=temp; } } } for(i=0;i0) { p=p-a[m]; } } if(ch==1) break; } if(ch==1) break; } if(ch==1) arr[k]=1; else arr[k]=0; } //hell: //arr[k]=1; } for(k=0;k
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28674"></a> 
+ <div id="c28674" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-28674" class="active">#include //#include void</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pritybhudolia">pritybhudolia</a></strong>
+   <span style="color:#828282"> @ 19 Jun 2012 10:12 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include //#include void sort(int a[],int size) { int x,y,temp; for(x=0; x0 &amp;&amp; x0) {if((need-a[i])&gt;=0) need=need-a[i]; } } if(need==0) {flag=1; return flag;} else return check(a,x+1,size,req); } if(need!=0) return flag;} int main() { int count,size,req,i,a[20]; int sum=0,m=0; scanf("%d",&amp;count); while(count--) {scanf("%d %d",&amp;size,&amp;req); for(i=0;ireq) { sort(a,size); if(check(a,m,size,req)==1) printf("Yesn"); else printf("Non"); }else if(sum==req) printf("Yesn"); else printf("Non"); sum=0;} // getch(); return 0; } this code is working fine according to the question, but not accepted on codechef...can somebody help me out plz?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29490"></a> 
+ <div id="c29490" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-29490" class="active">can n and m be equal to 0? if</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sikander_nsit">sikander_nsit</a></strong>
+   <span style="color:#828282"> @ 27 Jul 2012 04:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can n and m be equal to 0? if yes what should be the output in that case?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-33121"></a> 
+ <div id="c33121" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-33121" class="active">I have used stl vectors in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sid1607">sid1607</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2012 07:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I have used stl vectors in c++ instead of arrays to solve this problem. It works perfectly for the example given here, and a few more examples of my own, but it gave me wrong answer here. What could be wrong? The logic used here is similar to the one appearing in the tutorial page. The code is:- 
+    <a href="http://www.codechef.com/viewsolution/1469369" title="http://www.codechef.com/viewsolution/1469369">http://www.codechef.com/viewsolution/1469369</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-33182"></a> 
+ <div id="c33182" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-33182" class="active">Hello I have solved this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mancoolgunda">mancoolgunda</a></strong>
+   <span style="color:#828282"> @ 16 Oct 2012 05:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hello I have solved this problem using backtracking algorithm!! but I am getting runtime error SIGSEGV I runs perfectly on my system May I know if anything is wrong if I use the backtracking algo which is causing runtime error???? My solution is 
+    <a href="http://www.codechef.com/viewsolution/1470335" title="http://www.codechef.com/viewsolution/1470335">http://www.codechef.com/viewsolution/1470335</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-33231"></a> 
+ <div id="c33231" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-33231" class="active">can anyone please tell whats</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/wowman">wowman</a></strong>
+   <span style="color:#828282"> @ 21 Oct 2012 12:24 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone please tell whats wrong in this code working for all sample inputs 
+    <a href="http://www.codechef.com/viewsolution/1485226" title="http://www.codechef.com/viewsolution/1485226">http://www.codechef.com/viewsolution/1485226</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35949"></a> 
+ <div id="c35949" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-35949" class="active">Brilliant Logic.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/greenhorn">greenhorn</a></strong>
+   <span style="color:#828282"> @ 10 Jan 2013 10:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Brilliant Logic.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36127"></a> 
+ <div id="c36127" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-36127" class="active">oh...... MY GOD..........</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hack24hrs">hack24hrs</a></strong>
+   <span style="color:#828282"> @ 13 Jan 2013 06:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    oh...... MY GOD.......... same mistake as atulbansal128 did...............................
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36665"></a> 
+ <div id="c36665" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-36665" class="active">My solution is giving correct</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/adarshhsingh">adarshhsingh</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2013 04:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My solution is giving correct output for the sample inputs mentioned. But i am getting Wrong Answer. I have used Backtrack . Please check it. 
+    <a href="http://www.codechef.com/viewsolution/1755141" title="http://www.codechef.com/viewsolution/1755141">http://www.codechef.com/viewsolution/1755141</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-44381"></a> 
+ <div id="c44381" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-44381" class="active">i hv submittd d prog both</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/varun_kalra73">varun_kalra73</a></strong>
+   <span style="color:#828282"> @ 8 Jun 2013 10:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i hv submittd d prog both using c and c++...however d code for both f dem are same excpt d syntx chnges ,in c++ it is giving wrong answer whereas with c it is giving runtime error!!!!can someone tell me the reason for this
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46407"></a> 
+ <div id="c46407" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-46407" class="active">all this while i had been</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhi011">abhi011</a></strong>
+   <span style="color:#828282"> @ 23 Jun 2013 10:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    all this while i had been printing YES and NO instead of Yes and No. Damnnnnn
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-51843"></a> 
+ <div id="c51843" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-51843" class="active">I habe written code like</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kailasandhale">kailasandhale</a></strong>
+   <span style="color:#828282"> @ 16 Aug 2013 02:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I habe written code like this, but its giving, 'Wrong Answer' #include #include int comp (const void * a, const void * b) { return ( *(int*)a - *(int*)b ); } int main() { int i=0,j=0; int t,n,m; scanf("%d",&amp;t); for(i=0;i=0;j--) { if(m&gt;=arr[j]) { m=m-arr[j]; } } if(m==0) printf("YES"); else printf("NO"); } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-52983"></a> 
+ <div id="c52983" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-52983" class="active">can anyone help me. i am not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chomu1850">chomu1850</a></strong>
+   <span style="color:#828282"> @ 22 Aug 2013 04:28 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone help me. i am not getting the logic of this problem, can someone explain dynamic programming and backtracking method
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-56704"></a> 
+ <div id="c56704" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-56704" class="active">@admin-sir, will you please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ritu1">ritu1</a></strong>
+   <span style="color:#828282"> @ 29 Sep 2013 05:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin-sir, will you please help me in optimizing my approach?time limit exceeded is the problem i am unable to remove.Here is my link 
+    <a href="http://www.codechef.com/viewsolution/2731509" title="http://www.codechef.com/viewsolution/2731509">http://www.codechef.com/viewsolution/2731509</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-59242"></a> 
+ <div id="c59242" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-59242" class="active">This question taught me a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mitshubh">mitshubh</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2013 02:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    This question taught me a LOT!! Thanks for the awesome tutorial:)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-62048"></a> 
+ <div id="c62048" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-62048" class="active">There seem to be some</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mathiasbogsted">mathiasbogsted</a></strong>
+   <span style="color:#828282"> @ 31 Oct 2013 11:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    There seem to be some unfortunate whitespace in the input. I had a solution that didn't work - After removing whitespace it's working. I've seen the same behavior on another assignment. Is this a deliberate part of the challenges?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-64107"></a> 
+ <div id="c64107" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-64107" class="active">0-1 DP !! Perfect Example :D</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tf141">tf141</a></strong>
+   <span style="color:#828282"> @ 12 Nov 2013 01:38 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    0-1 DP !! Perfect Example :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65290"></a> 
+ <div id="c65290" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-65290" class="active">frustrated..checked all the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vijay_7_ganesh">vijay_7_ganesh</a></strong>
+   <span style="color:#828282"> @ 21 Nov 2013 10:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    frustrated..checked all the possible combinations yet it shows wrong answers..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65367"></a> 
+ <div id="c65367" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-65367" class="active">What is the algorithm being</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nishantlakhara">nishantlakhara</a></strong>
+   <span style="color:#828282"> @ 25 Nov 2013 05:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What is the algorithm being used in the problem?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75887"></a> 
+ <div id="c75887" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-75887" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codejam1995">codejam1995</a></strong>
+   <span style="color:#828282"> @ 30 Mar 2014 12:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/3656441" title="http://www.codechef.com/viewsolution/3656441">http://www.codechef.com/viewsolution/3656441</a> Individually the test cases give the correct answer but when entered as whole gives a wrong answer. Please help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-77211"></a> 
+ <div id="c77211" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-77211" class="active">Can anyone tell me what is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/menonsahab">menonsahab</a></strong>
+   <span style="color:#828282"> @ 27 Apr 2014 07:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone tell me what is wrong with the following code? #include void bubbleSort(int *,int); int main() { int T,N,M,i,resd; scanf("%dn",&amp;T); while(T--) { scanf("%d %d",&amp;N,&amp;M); int ar[N],loc[N]; for(i=0;i=ar[i]) { resd=resd-ar[i]; loc[i]=1; } } if(resd==0) { printf("Yesn"); } else { printf("Non"); } } return 0; } void bubbleSort(int *ar,int N) { int i,j,nswaps; int temp; for(j=0;j
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78203"></a> 
+ <div id="c78203" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-78203" class="active">I need a little help guys</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aragar">aragar</a></strong>
+   <span style="color:#828282"> @ 16 May 2014 09:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I need a little help guys 
+    <a href="http://www.codechef.com/viewsolution/3912302" title="http://www.codechef.com/viewsolution/3912302">http://www.codechef.com/viewsolution/3912302</a> :
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78552"></a> 
+ <div id="c78552" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-78552" class="active">Can Some body plz help me ...</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/k1i011">k1i011</a></strong>
+   <span style="color:#828282"> @ 27 May 2014 05:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can Some body plz help me ... I am having runtime Error everytime .. its been 3 days since i m on this problem ... i m really seriously frusterated. 
+    <a href="http://www.codechef.com/viewsolution/3949016" title="http://www.codechef.com/viewsolution/3949016">http://www.codechef.com/viewsolution/3949016</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79957"></a> 
+ <div id="c79957" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-79957" class="active">#include #include void</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chugh">chugh</a></strong>
+   <span style="color:#828282"> @ 24 Jun 2014 12:49 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include void subsets(int arr[],int len,int sum) { int nos=1&lt;0) { if((bitmask &amp; 1)==1) s+=arr[pos]; bitmask&gt;&gt;=1; pos++; } if(s==sum) { f=1; break; } } f==1?printf("Yes"):printf("No"); } int main() { int i,len,sum,arr[30],j; scanf("%d",&amp;j); while(j){ scanf("%d%d",&amp;len,&amp;sum); for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79958"></a> 
+ <div id="c79958" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-79958" class="active">its showing wrong answer ,can</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chugh">chugh</a></strong>
+   <span style="color:#828282"> @ 24 Jun 2014 12:50 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    its showing wrong answer ,can someone please help,here is the code: 
+    <a href="http://www.codechef.com/viewsolution/4136510" title="http://www.codechef.com/viewsolution/4136510">http://www.codechef.com/viewsolution/4136510</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80051"></a> 
+ <div id="c80051" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-80051" class="active">Great tutorial... A must see</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahulverma95">rahulverma95</a></strong>
+   <span style="color:#828282"> @ 27 Jun 2014 02:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Great tutorial... A must see for Beginners
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80157"></a> 
+ <div id="c80157" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-80157" class="active">Admin could u check my code i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sac5894_nitkkr">sac5894_nitkkr</a></strong>
+   <span style="color:#828282"> @ 30 Jun 2014 10:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Admin could u check my code i cant find why its showing wrong ans. my sol. Id is 4150836. Thanks
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80222"></a> 
+ <div id="c80222" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-80222" class="active">whats wrong in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dragonwarior">dragonwarior</a></strong>
+   <span style="color:#828282"> @ 4 Jul 2014 02:37 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    whats wrong in it.............. ................................................................. #include #include int cmpfunc (const void * a, const void * b) { return ( *(int*)a - *(int*)b ); } main() { int i,m,g,j,t,f,n,max,pie[30]; scanf("%d",&amp;t); while(t--) { scanf("%d %d",&amp;n,&amp;m); g=m; for(i=0;i=0;i--) { if(pie[i]&lt;=m) { m-=pie[i]; if(m==0) { f=1; break; } } } if((n==0&amp;&amp;g!=0)) printf("nNo"); else if((f==0&amp;&amp;(n!=0&amp;&amp;g!=0))||n&gt;20||max&gt;1000) printf("nNo"); else if(n!=0&amp;&amp;g==0) printf("nYes"); else if(f==1||(n==0&amp;&amp;g==0)) printf("nYes"); } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80223"></a> 
+ <div id="c80223" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-80223" class="active">i have used greedy above</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dragonwarior">dragonwarior</a></strong>
+   <span style="color:#828282"> @ 4 Jul 2014 02:39 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i have used greedy above ...and the print statement while pasting some how changed "nNo" to "nNo"
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81389"></a> 
+ <div id="c81389" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-81389" class="active">I need a little help, pl if</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhishek010594">abhishek010594</a></strong>
+   <span style="color:#828282"> @ 11 Jul 2014 04:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I need a little help, pl if someone could tell if my logic is correct or not 
+    <a href="http://www.codechef.com/viewsolution/4298129" title="http://www.codechef.com/viewsolution/4298129">http://www.codechef.com/viewsolution/4298129</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83864"></a> 
+ <div id="c83864" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-83864" class="active">Runs perfectly well on my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akshunya">akshunya</a></strong>
+   <span style="color:#828282"> @ 23 Aug 2014 05:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Runs perfectly well on my compiler, but showing runtime error here (NZEC). 
+    <a href="http://www.codechef.com/viewsolution/4606938" title="http://www.codechef.com/viewsolution/4606938">http://www.codechef.com/viewsolution/4606938</a> Whats wrong with this C# Code??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84452"></a> 
+ <div id="c84452" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-84452" class="active">what is wrong with my code? I</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shivamishra">shivamishra</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2014 12:02 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is wrong with my code? I tried so many times but of no use. Getting same error: wrong answer X package codechef; import java.io.*; import java.util.Arrays; public class Paying_up { public static void main(String args[])throws IOException { BufferedReader in = new BufferedReader(new InputStreamReader(System.in)); PrintWriter out=new PrintWriter(new BufferedOutputStream(System.out)); int test = Integer.parseInt(in.readLine()); String[] s; while(test&gt;0) { s = in.readLine().split(" "); int note = Integer.parseInt(s[0]); int arr[] = new int[note]; int demand = Integer.parseInt(s[1]); int i=0; while(i=0; x--) { if(answer+arr[x] &lt; demand) { answer+=arr[x]; if(answer == demand) { out.println("yes"); flag = 1; break; } } else if(answer+arr[x] == demand) { out.println("yes"); flag = 1; break; } } if(flag==0) out.println("no"); test--; } out.flush(); } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-87761"></a> 
+ <div id="c87761" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-87761" class="active">First dp! :D</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/niharika1k29_9">niharika1k29_9</a></strong>
+   <span style="color:#828282"> @ 10 Oct 2014 10:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    First dp! :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88298"></a> 
+ <div id="c88298" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-88298" class="active">In which test i am getting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/c_4034">c_4034</a></strong>
+   <span style="color:#828282"> @ 17 Oct 2014 03:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    In which test i am getting wrong please help to find it out the link of my code is 
+    <a href="http://ideone.com/iwMctP" title="http://ideone.com/iwMctP">http://ideone.com/iwMctP</a> please help me soon
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88568"></a> 
+ <div id="c88568" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-88568" class="active">#include void merge(int [],</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s10ky18">s10ky18</a></strong>
+   <span style="color:#828282"> @ 19 Oct 2014 03:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include void merge(int [], int , int , int ); void part(int [], int , int ); int main() { int t; scanf("%d",&amp;t); while(t--) { int n,m,ar[100000],i,flag=0; scanf("%d%d",&amp;n,&amp;m); for(i=0;i=ar[n]) { m=m-ar[n]; if(m==0) { flag=1; break; } } } if(flag==1) printf("Yesn"); else printf("Non"); } return(0); } void part(int arr[], int min,int max) { int mid; if(minmid) { for(k=m; k&lt;=max; k++) { temp[i]=arr[k]; i++; } } else { for(k=j; k&lt;=mid; k++) { temp[i]=arr[k]; i++; } } for(k=min; k&lt;=max; k++) arr[k]=temp[k]; } please point outmy mistake i m getting WA but giving correct answer for test cases
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89644"></a> 
+ <div id="c89644" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-89644" class="active">my code is this.Well running</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/knpakash">knpakash</a></strong>
+   <span style="color:#828282"> @ 7 Nov 2014 08:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my code is this.Well running with test cases but giving wrong answer, can u please help me #include void sort(int a[],int low,int up) { if(low&gt;=up) { return; } int i,j,k,pivot=a[low]; i=low+1; j=up; while(i&lt;=j) { while(a[i]pivot) j--; if(i=0;i--) { if(b[i]m) continue; else if(a[i]==m) { m=0; break; } else { c[++top]=i; m=m-a[i]; } } if(m==0) printf("Yesn"); else printf("Non"); } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91567"></a> 
+ <div id="c91567" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-91567" class="active">No matter whatever you try,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iamkode_chef">iamkode_chef</a></strong>
+   <span style="color:#828282"> @ 9 Dec 2014 06:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    No matter whatever you try, your code will TLE if you submit in Python 2.7
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91879"></a> 
+ <div id="c91879" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-91879" class="active">ac in one go !! loved it !!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coolsduy">coolsduy</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2014 12:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    ac in one go !! loved it !! found a new way of using bits !!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91956"></a> 
+ <div id="c91956" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-91956" class="active">OPEN CHALLENGE TO ALL . JUST</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhinav_rai">abhinav_rai</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2014 08:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    OPEN CHALLENGE TO ALL . JUST TELL ME THE TEST CASE WHICH IS NOT SATISFYING. link : 
+    <a href="http://www.codechef.com/viewsolution/5610698" title="http://www.codechef.com/viewsolution/5610698">http://www.codechef.com/viewsolution/5610698</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92220"></a> 
+ <div id="c92220" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-92220" class="active">i used dp for solving this,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anil0004">anil0004</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2014 05:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i used dp for solving this, got time = 0.02.Even putting code of topper (c code) getting time = 0.02.why this is so? my code 
+    <a href="http://www.codechef.com/viewsolution/5638857" title="http://www.codechef.com/viewsolution/5638857">http://www.codechef.com/viewsolution/5638857</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92437"></a> 
+ <div id="c92437" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-92437" class="active">I'm getting WA for this code.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shivakant">shivakant</a></strong>
+   <span style="color:#828282"> @ 30 Dec 2014 07:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I'm getting WA for this code. Any Suggestions? #include int a[200]; int b[200]; int comparator(const void *p, const void *q); int main() { int t,n,m,k,f=0,i,j,h,l,u; scanf("%d",&amp;t); while(t--) { j=0; h=0; k=-1; f=0; scanf("%d%d",&amp;n,&amp;m); for(i=0;i=0) { u=m; j=h; while(u&gt;=0 &amp;&amp; j&gt;=0) { if(u&gt;=b[j]) // printf("%dn",b[j]); u-=b[j]; // printf("%dn",u); if(!u) { f=1; break; } //printf("%dn",f); j--; } //printf("%dn",f); if(f) { printf("Yesn"); break; } //h--; else h--; } if(!f) printf("Non"); //else // printf("Yesn"); } } return 0; } int comparator(const void *p, const void *q) { // Get the values at given addresses int l = *(const int *)p; int r = *(const int *)q; return l&gt;r; } /*int search(int b[],int m,long int l) { for(i=m;i&gt;0;i++) { if(b[i]&lt;=l) y=search(b,l-b[i]); } if (y==0) return 1; else return 0; }*/ /* int search1(int b[],int k) { for(i=0;i pivot) j--; if (i &lt;= j) { tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp; i++; j--; } } /* recursion */ /*if (left &lt; j) quickSort(arr, left, j); if (i &lt; right) quickSort(arr, i, right); }*/
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-96251"></a> 
+ <div id="c96251" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-96251" class="active">A good problem,must try for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nisha112r">nisha112r</a></strong>
+   <span style="color:#828282"> @ 9 Feb 2015 02:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    A good problem,must try for beginners :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97513"></a> 
+ <div id="c97513" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-97513" class="active">I was getting right answers</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ravigarg29">ravigarg29</a></strong>
+   <span style="color:#828282"> @ 24 Feb 2015 02:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I was getting right answers for all the sample testcases but whenever i submitted it showed wrong answer. After some thinking and discussing with a friend i found that my algo was not considering the following testcase 1 4 1000 100 500 500 600
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99705"></a> 
+ <div id="c99705" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-99705" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/somesh1995">somesh1995</a></strong>
+   <span style="color:#828282"> @ 20 Mar 2015 09:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6554947" title="http://www.codechef.com/viewsolution/6554947">http://www.codechef.com/viewsolution/6554947</a> i dont understand why i am getting wrong answer even though all my sample cases run perfectly.Unable to find any faults. Please help.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102007"></a> 
+ <div id="c102007" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-102007" class="active">How do we solve this using</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bholagabbar">bholagabbar</a></strong>
+   <span style="color:#828282"> @ 18 Apr 2015 04:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    How do we solve this using the knapsack DP method? That method stores only the largest sum for each state. Any ideas?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102008"></a> 
+ <div id="c102008" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-102008" class="active">done silly mistake first time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ritwikenator">ritwikenator</a></strong>
+   <span style="color:#828282"> @ 18 Apr 2015 05:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    done silly mistake first time :D AC another chance
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102218"></a> 
+ <div id="c102218" class="comment clear-block"> 
+  <h3><a href="/problems/MARCHA1#comment-102218" class="active">@admin..it would be helpful</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ace_29">ace_29</a></strong>
+   <span style="color:#828282"> @ 21 Apr 2015 03:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin..it would be helpful if you could give us the test cases as input.in file or a text file to download and test our code..for corner cases..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

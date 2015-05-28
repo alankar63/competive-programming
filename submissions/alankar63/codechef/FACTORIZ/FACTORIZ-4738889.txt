@@ -1,0 +1,42 @@
+factors =[]
+count=0
+t=int(raw_input())
+ 
+while t>0:
+    i=2
+    mul=1
+    l=0
+    n=int(raw_input())
+    p=n
+    while (i<= 23000 and n>=i):
+        if n % i:
+            if l == 0:
+               i += 1
+               l=1
+               
+            elif l == 1:
+                i=i+2
+                l=2
+            else:
+                if i==5:
+                    i=i+2
+                    l=2
+                else:    
+                 i=i+4
+                 l=1
+                
+        else:
+            n =n/ i
+            factors.append(i)
+            count+=1
+    if n > 1:
+        factors.append(n)
+        count=count+1
+   
+    print count
+    for i in factors:
+        print i
+    i=2
+    count=0
+    del factors[:]
+    t-=1

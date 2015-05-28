@@ -1,0 +1,333 @@
+<div id="node-2346482" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p style="text-align:justify">Chef is playing a game on a sequence of <b>N</b> positive integers, say <b>A<sub>1</sub>, A<sub>2</sub>, ... A<sub>N</sub></b>. The game is played as follows.</p> 
+  <ul> 
+   <li>If all the numbers are equal, the game ends.</li> 
+   <li>Otherwise 
+    <ul> 
+     <li>Select two numbers which are unequal</li> 
+     <li>Subtract the smaller number from the larger number</li> 
+     <li>Replace the larger number with the result from above (see the explanation section for clarity)</li> 
+    </ul> </li> 
+  </ul> 
+  <p style="text-align:justify">Chef has already figured out that the game <b>always terminates</b>. He also knows, for a given sequence of integers, the game will always terminate on the <b>same value</b>, no matter how the game is played. Chef wants you to simulate the game for him and tell him on which value will the game terminate for a given sequence of integers.</p> 
+  <h3>Input</h3> 
+  <p style="text-align:justify">The first line of the input contains an integer <b>T</b>, the number of test cases. Then follow the description of <b>T</b> test cases. The first line of each test case contains a single integer <b>N</b>, the length of the sequence. The second line contains <b>N</b> positive integers, each separated by a single space.</p> 
+  <h3>Output</h3> 
+  <p style="text-align:justify">For each test case, <b>output a single integer</b> - the value of all the numbers when they are <b>equal</b> (and the game terminates), on a line by itself.</p> 
+  <h3>Constraints</h3> 
+  <p> <b>1 ? T ? 100</b><br> <b>1 ? N ? 1000</b><br> <b>1 ? A<sub>i</sub> ? 10<sup>9</sup></b> </p> 
+  <h3>Sample</h3> 
+  <pre>
+<b>Input</b>
+3
+2
+10 12
+2
+5 9
+3
+6 10 15
+
+<b>Output</b>
+2
+1
+1
+
+</pre>
+  <h3>Explanation</h3> 
+  <p style="text-align:justify"><b>Test Case 1:</b> Since there are only two numbers, the operations are forced.</p> 
+  <ul> 
+   <li>{ 10, 12 } =&gt; Replace 12 with ( 12 - 10 = 2 ) =&gt; { 10, 2 }</li> 
+   <li>{ 10, 2 } =&gt; Replace 10 with ( 10 - 2 = 8 ) =&gt; { 8, 2 }</li> 
+   <li>{ 8, 2 } =&gt; Replace 8 with ( 8 - 2 = 6 ) =&gt; { 6, 2 }</li> 
+   <li>{ 6, 2 } =&gt; Replace 6 with ( 6 - 2 = 4 ) =&gt; { 4, 2 }</li> 
+   <li>{ 4, 2 } =&gt; Replace 4 with ( 4 - 2 = 2 ) =&gt; { 2, 2 }</li> 
+  </ul> 
+  <p style="text-align:justify">The value of all the numbers when the game ends is <b>2</b>.</p> 
+  <p style="text-align:justify"><b>Test Case 2:</b> Since there are only two numbers, the operations are forced.</p> 
+  <ul> 
+   <li>{ 5, 9 } =&gt; Replace 9 with ( 9 - 5 = 4 ) =&gt; { 5, 4 }</li> 
+   <li>{ 5, 4 } =&gt; Replace 5 with ( 5 - 4 = 1 ) =&gt; { 1, 4 }</li> 
+   <li>{ 1, 4 } =&gt; Replace 4 with ( 4 - 1 = 3 ) =&gt; { 1, 3 }</li> 
+   <li>{ 1, 3 } =&gt; Replace 3 with ( 3 - 1 = 2 ) =&gt; { 1, 2 }</li> 
+   <li>{ 1, 2 } =&gt; Replace 2 with ( 2 - 1 = 1 ) =&gt; { 1, 1 }</li> 
+  </ul> 
+  <p style="text-align:justify">The value of all the numbers when the game ends is <b>1</b>.</p> 
+  <p style="text-align:justify"><b>Test Case 3:</b> One way to play the game is</p> 
+  <ul> 
+   <li>{ 6, 10, 15 } =&gt; Replace 15 with ( 15 - 6 = 9 ) =&gt; { 6, 10, 9 }</li> 
+   <li>{ 6, 10, 9 } =&gt; Replace 10 with ( 10 - 6 = 4 ) =&gt; { 6, 4, 9 }</li> 
+   <li>{ 6, 4, 9 } =&gt; Replace 9 with ( 9 - 6 = 3 ) =&gt; { 6, 4, 3 }</li> 
+   <li>{ 6, 4, 3 } =&gt; Replace 6 with ( 6 - 4 = 2 ) =&gt; { 2, 4, 3 }</li> 
+   <li>{ 2, 4, 3 } =&gt; Replace 3 with ( 3 - 2 = 1 ) =&gt; { 2, 4, 1 }</li> 
+   <li>{ 2, 4, 1 } =&gt; Replace 4 with ( 4 - 2 = 2 ) =&gt; { 2, 2, 1 }</li> 
+   <li>{ 2, 2, 1 } =&gt; Replace first 2 with ( 2 - 1 = 1 ) =&gt; { 1, 2, 1 }</li> 
+   <li>{ 1, 2, 1 } =&gt; Replace 2 with ( 2 - 1 = 1 ) =&gt; { 1, 1, 1 }</li> 
+  </ul> 
+  <p style="text-align:justify">The value of all the numbers when the game ends is <b>1</b>. You may try to play the game differently and observe that <b>the game will always end when all the values are 1</b>.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/satej ">satej </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/gamabunta">gamabunta</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/AMSGAME1">http://discuss.codechef.com/problems/AMSGAME1</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/cook34"> cook34 </a><a class="problem-tag-small " href="/tags/problems/gcd"> gcd </a><a class="problem-tag-small " href="/tags/problems/satej "> satej </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>11-05-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/AMSGAME1">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-43896"></a> 
+ <div id="c43896" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-43896" class="active">so codechef... wrong test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rambhakt">rambhakt</a></strong>
+   <span style="color:#828282"> @ 7 Jun 2013 10:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    so codechef... wrong test cases...well this is embarrasing!!! you are accepting wrong solution but rejecting correct solution...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-47955"></a> 
+ <div id="c47955" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-47955" class="active">Think Different!!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/danglin_pointr">danglin_pointr</a></strong>
+   <span style="color:#828282"> @ 8 Jul 2013 10:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Think Different!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49117"></a> 
+ <div id="c49117" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-49117" class="active">anyone pls ans..top solutions</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/u1z9_3">u1z9_3</a></strong>
+   <span style="color:#828282"> @ 20 Jul 2013 12:54 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    anyone pls ans..top solutions of this problem are outputting 1 when n=1 whereas i think ans should be the array element but atill accepted ...and one more ques how these codes are accessing value of a[1] when n is equal to 1..this should give error but instead its working can anybody tell me how ????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49119"></a> 
+ <div id="c49119" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-49119" class="active">@rambhakt, @u1z9_3 &gt;&gt; You</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bugkiller">bugkiller</a></strong>
+   <span style="color:#828282"> @ 20 Jul 2013 08:44 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @rambhakt, @u1z9_3 &gt;&gt; You might want to check the editorial for this problem. 
+    <a href="http://discuss.codechef.com/problems/AMSGAME1" title="http://discuss.codechef.com/problems/AMSGAME1">http://discuss.codechef.com/problems/AMSGAME1</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49138"></a> 
+ <div id="c49138" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-49138" class="active">@bugkiller I checked both</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/u1z9_3">u1z9_3</a></strong>
+   <span style="color:#828282"> @ 20 Jul 2013 08:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @bugkiller I checked both the solutions(tester's and setter's) both are outputting the value of array element not 1 like codersan's solutions..btw can u tell me why compiler isn't giving error on accessing a[1] while array size is itself 1 ???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78825"></a> 
+ <div id="c78825" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-78825" class="active">this is the algorithm upon</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prem_93">prem_93</a></strong>
+   <span style="color:#828282"> @ 6 Jun 2014 11:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    this is the algorithm upon which ihave formed my code..if(n&gt;1) then, if atleast 1 odd number is present in the sequence then the output is 1 .if all the numbers are even then output is 2. if n=1,then the output is the input itself...but im getting wrong anwer ...sum1 pls help....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78870"></a> 
+ <div id="c78870" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-78870" class="active">@prem_93 i have already</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nanda19">nanda19</a></strong>
+   <span style="color:#828282"> @ 7 Jun 2014 10:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @prem_93 i have already posted in discuss forums, you can look at the test cases given there for you
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79278"></a> 
+ <div id="c79278" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-79278" class="active">Easy one, used Euclid's</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhishek971">abhishek971</a></strong>
+   <span style="color:#828282"> @ 10 Jun 2014 09:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Easy one, used Euclid's formula for GCD :P
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82216"></a> 
+ <div id="c82216" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-82216" class="active">@prem_93 . Your assumptions</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/venkateshs1989">venkateshs1989</a></strong>
+   <span style="color:#828282"> @ 30 Jul 2014 05:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @prem_93 . Your assumptions are wrong.. If atleast 1 odd number : 5 10 20 =&gt; ans should be 5 and not 1 All numbers are even : 4 8 =&gt; ans should be 4 and not 2.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85785"></a> 
+ <div id="c85785" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-85785" class="active">Yo!! accepted :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/swapnil1996">swapnil1996</a></strong>
+   <span style="color:#828282"> @ 28 Sep 2014 09:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Yo!! accepted :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88088"></a> 
+ <div id="c88088" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-88088" class="active">Mine too...!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubham1532">shubham1532</a></strong>
+   <span style="color:#828282"> @ 12 Oct 2014 08:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Mine too...!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92467"></a> 
+ <div id="c92467" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-92467" class="active">why does my code shows time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dev987">dev987</a></strong>
+   <span style="color:#828282"> @ 31 Dec 2014 02:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why does my code shows time limit exeeded 
+    <a href="http://www.codechef.com/viewsolution/5667075" title="http://www.codechef.com/viewsolution/5667075">http://www.codechef.com/viewsolution/5667075</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92481"></a> 
+ <div id="c92481" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-92481" class="active">Great! Good chance to study</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/limasdf">limasdf</a></strong>
+   <span style="color:#828282"> @ 1 Jan 2015 11:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Great! Good chance to study GCD again. a^(n+1)*b^(m+1) - a^(n) * b ^(m) = a^m*b^n(1-ab). that means we need to find GCD to get the answer.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-98343"></a> 
+ <div id="c98343" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-98343" class="active">my code is giving runtime</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ak1a2">ak1a2</a></strong>
+   <span style="color:#828282"> @ 4 Mar 2015 07:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my code is giving runtime error.i dont know why.it's working fine at my system.can anyone help me with this 
+    <a href="http://www.codechef.com/viewsolution/6391282" title="http://www.codechef.com/viewsolution/6391282">http://www.codechef.com/viewsolution/6391282</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102300"></a> 
+ <div id="c102300" class="comment clear-block"> 
+  <h3><a href="/problems/AMSGAME1#comment-102300" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mastain_3002">mastain_3002</a></strong>
+   <span style="color:#828282"> @ 22 Apr 2015 11:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6807362" title="http://www.codechef.com/viewsolution/6807362">http://www.codechef.com/viewsolution/6807362</a> I, get wrong answer for this code, can any one explain pls..?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

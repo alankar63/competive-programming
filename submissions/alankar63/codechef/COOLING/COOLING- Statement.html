@@ -1,0 +1,1380 @@
+<div id="node-454312" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>The chef has just finished baking several pies, and it's time to place them on cooling racks.<br> The chef has exactly as many cooling racks as pies. Each cooling rack can only hold one pie, and each pie may only be held by one cooling rack,<br> but the chef isn't confident that the cooling racks can support the weight of the pies.<br> The chef knows the weight of each pie,<br> and has assigned each cooling rack a maximum weight limit.<br> What is the maximum number of pies the chef can cool on the racks?</p> 
+  <h3>Input:</h3> 
+  <p>Input begins with an integer T?30, the number of test cases.<br> Each test case consists of 3 lines.<br> The first line of each test case contains a positive integer N?30,<br> the number of pies (and also the number of racks).<br> The second and third lines each contain exactly positive N integers not exceeding 100.<br> The integers on the second line are the weights of the pies, and the integers on the third line<br> are the weight limits of the cooling racks.</p> 
+  <h3>Output:</h3> 
+  <p>For each test case, output on a line the maximum number of pies the chef can place on the racks.</p> 
+  <h3>Sample input:</h3> 
+  <pre>2
+3
+10 30 20
+30 10 20
+5
+9 7 16 4 8
+8 3 14 10 10
+ </pre>
+  <h3>Sample output:</h3> 
+  <pre>3
+4
+ </pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/pieguy">pieguy</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/maksflow">maksflow</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/COOLING">http://discuss.codechef.com/problems/COOLING</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook03"> cook03 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/pieguy"> pieguy </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>27-09-2010</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/COOLING">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-12354"></a> 
+ <div id="c12354" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-12354" class="active">Can some one explain me why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vinaymajety">vinaymajety</a></strong>
+   <span style="color:#828282"> @ 14 Dec 2010 08:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Can some one explain me why this is a wrong answer???</p> 
+    <p>&nbsp;</p> 
+    <p><br>#include&lt;stdio.h&gt;<br>#include&lt;stdlib.h&gt;<br><br><br><br>typedef struct _case<br>{<br> int pies;<br> int * pieweights;<br> int *panweights;<br>}cases;<br><br><br>int main()<br>{<br> int i=0,j=0,k=0,l=0,t=0,sum=0;<br> int tcases=0,index=0;<br> int *temp = NULL;<br> cases *allcases;<br>//&nbsp;&nbsp;&nbsp; printf("Enter no of test casesn");<br> scanf("%d",&amp;tcases);<br> allcases = (cases *)malloc(tcases*sizeof(cases));<br> for(i=0;i&lt;tcases;i++)<br> {<br> sum=0;<br> printf("Enter the case details----no of piesn");<br> scanf("%d",&amp;(allcases[i].pies));<br> allcases[i].pieweights = (int *)malloc((allcases[i].pies)*sizeof(int));<br> allcases[i].panweights = (int *)malloc((allcases[i].pies)*sizeof(int));<br> temp=(int *)realloc(temp, allcases[i].pies*sizeof(int));<br><br>//&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; printf("nEnter pie weights");<br> for(j=0;j&lt;allcases[i].pies;j++)<br> {<br> scanf("%d",&amp;(allcases[i].pieweights[j]));<br> temp[j]=-1;<br> }<br>//&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; printf("n Enter pan weights");<br> for(j=0;j&lt;allcases[i].pies;j++)<br> scanf("%d",&amp;(allcases[i].panweights[j]));<br><br> for(k=0;k&lt;allcases[i].pies;k++)<br> {<br> t=0;<br> for(l=0;l&lt;allcases[i].pies;l++)<br> {<br> if(allcases[i].pieweights[k]&lt;=allcases[i].panweights[l])<br> {<br> if((t&lt;(allcases[i].panweights[l]))&amp;&amp;temp[l]!=0)<br> {<br> t=allcases[i].panweights[l];<br> index=l;<br> }<br> }<br> }<br> temp[index]=0;<br> }<br><br> for(l=0;l&lt;allcases[i].pies;l++)<br> {<br> if(temp[l]==0)<br> sum++;<br> }<br> //&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; printf("No of possible placings for this case is %d",sum);<br><br><br> }<br><br><br> return 0;<br>}<br><br><br></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13378"></a> 
+ <div id="c13378" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-13378" class="active">@admin plz..........tell me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/satya_patel">satya_patel</a></strong>
+   <span style="color:#828282"> @ 31 Jan 2011 04:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin</p> 
+    <p><br>plz..........tell me for which test case my code generate wrongh output????</p> 
+    <p>thanks in advance...........</p> 
+    <p>#include&lt;stdio.h&gt;<br><br>int pie[100],rack[100];<br><br>void bubble_sort(int a[], int size)<br>{<br> int switched = 1;<br> int hold = 0;<br> int i = 0;<br> int j = 0;<br><br> size -= 1;<br><br> for(i = 0; i &lt; size &amp;&amp; switched; i++)<br> {<br> switched = 0;<br> for(j = 0; j &lt; size - i; j++)<br> {<br> if(a[j] &gt; a[j+1])<br> {<br> switched = 1;<br> hold = a[j];<br> a[j] = a[j + 1];<br> a[j + 1] = hold;<br> }<br> }<br> }<br>}<br><br><br>int solve(int max)<br>{<br> int c=0,j,k;<br> j=max-1;<br> k=max-1;<br> while(j&gt;=0&amp;&amp;k&gt;=0)<br> {<br> if(pie[j]&lt;=rack[k])<br> {<br> j--;<br> k--;<br> c++;<br> }<br> else<br> j--;<br> }<br><br> return c;<br><br><br>}<br><br>int main()<br>{<br> int ans,i,t,m;<br> scanf("%d",&amp;t);<br> while(t--)<br> {<br> scanf("%d",&amp;m);<br> for(i=0;i&lt;m;i++)<br> scanf("%d",&amp;pie[i]);<br> for(i=0;i&lt;m;i++)<br> scanf("%d",&amp;rack[i]);<br> bubble_sort(pie,m);<br> bubble_sort(rack,m);<br> ans=solve(m);<br> printf("%d",ans);<br> }<br> return 0;<br><br>}</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13379"></a> 
+ <div id="c13379" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-13379" class="active">Please do NOT post your code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajneesh2k10">rajneesh2k10</a></strong>
+   <span style="color:#828282"> @ 31 Jan 2011 04:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Please do NOT post your code here. Read FAQ. You can post the link to your code. :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16450"></a> 
+ <div id="c16450" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-16450" class="active">plzzzzzz help !!!!!!!! whats</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/k.sampath kumar">k.sampath kumar</a></strong>
+   <span style="color:#828282"> @ 30 May 2011 09:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plzzzzzz help !!!!!!!! whats wrong with my code.it is giving correct answer for given inputs. #include int i,b[30],j,k=0,count=0; void merge_sort(int *,int,int); void sort(int *,int,int,int); void main() { int T,N,*a1,*b1; int left,right,mid; scanf("%d",&amp;T); while(T) { scanf("%d",&amp;N); a1=(int *)malloc(N*sizeof(int)); b1=(int *)malloc(N*sizeof(int)); for(i=0;imid) { for(k=j;k&lt;=right;k++) { b[i]=a[k]; i++; } } else { for(k=l;k&lt;=mid;k++) { b[i]=a[k]; i++; } } for(k=left;k&lt;=right;k++) { a[k]=b[k]; } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16920"></a> 
+ <div id="c16920" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-16920" class="active">#include void main() { int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pprateek">pprateek</a></strong>
+   <span style="color:#828282"> @ 19 Jun 2011 01:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include void main() { int t,n,i,x,y,a[100],b[100],flag,temp,j,count; scanf("%d",&amp;t); while(t--) { x=0;y=0; scanf("%d",&amp;n); for(i=0;i=a[i]) count=count+1; } if(count&gt;=i+1-x) y=y+1; else if(count==0&amp;&amp;y==0) x=x+1; } printf("%dn",y); } } SIR, PLEASE TELL FOR WHICH INPUTS MY CODE WENT WRONG...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17127"></a> 
+ <div id="c17127" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-17127" class="active">Can someone explain why this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/munishgoyal">munishgoyal</a></strong>
+   <span style="color:#828282"> @ 23 Jun 2011 03:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone explain why this is wrong 
+    <a href="http://www.codechef.com/viewsolution/582106" title="http://www.codechef.com/viewsolution/582106">http://www.codechef.com/viewsolution/582106</a> Sort both pies and racks arrays. then advance pies index only if it matches (count++ here) with current rack. rack index is always advanced. this is straightfwd and my local testing seems fine, still got wrong solution.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19103"></a> 
+ <div id="c19103" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-19103" class="active">@Admin: When I submit, the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ambeco">ambeco</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2011 04:39 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin: When I submit, the "Successful Submission" says "Running" for many minutes. When I click "My Submissions" it says "No recent Activity." It has been at least five minutes.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19782"></a> 
+ <div id="c19782" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-19782" class="active">My code is working fine on my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mygaurav">mygaurav</a></strong>
+   <span style="color:#828282"> @ 31 Oct 2011 10:37 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My code is working fine on my system but here it shows "time limit exceeded". Plz tell what error am i commiting ....http://www.codechef.com/viewsolution/717996
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19994"></a> 
+ <div id="c19994" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-19994" class="active">Plz somebody help : My code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mygaurav">mygaurav</a></strong>
+   <span style="color:#828282"> @ 13 Nov 2011 01:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Plz somebody help : My code is working fine on my system but here it shows "time limit exceeded". Plz tell what error am i commiting ... 
+    <a href="http://www.codechef.com/viewsolution/717996" title="http://www.codechef.com/viewsolution/717996">http://www.codechef.com/viewsolution/717996</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-21223"></a> 
+ <div id="c21223" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-21223" class="active">please anyone post such more</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubhammnnit">shubhammnnit</a></strong>
+   <span style="color:#828282"> @ 15 Jan 2012 12:49 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please anyone post such more test cases so that i can identify that in which case my code produce wrong answer..i am still not able too find error in my code..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-21224"></a> 
+ <div id="c21224" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-21224" class="active">please anyone post such more</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubhammnnit">shubhammnnit</a></strong>
+   <span style="color:#828282"> @ 15 Jan 2012 12:50 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please anyone post such more test cases so that i can identify that in which case my code produce wrong answer..i am still not able too find error in my code..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25604"></a> 
+ <div id="c25604" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-25604" class="active">OK My code works with the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/crystalshardz">crystalshardz</a></strong>
+   <span style="color:#828282"> @ 11 Apr 2012 09:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    OK My code works with the test cases provided. I've also tried cases where I have a value of 0 for the weight limit and/or the pie's weight AND checked negative values. Everything works fine on my system (even rote out what the answers should be on pen and paper to check against) but on here it says its wrong...anyone help please? 
+    <a href="http://www.codechef.com/viewsolution/977117" title="http://www.codechef.com/viewsolution/977117">http://www.codechef.com/viewsolution/977117</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25619"></a> 
+ <div id="c25619" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-25619" class="active">@shubhammnnit - Try altering</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/crystalshardz">crystalshardz</a></strong>
+   <span style="color:#828282"> @ 12 Apr 2012 01:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @shubhammnnit - Try altering the way you filter your pies. Also, use for loops as they seem to be quicker than while loops. Try to nest 2 loops into 1 for processing the pies (would need 3 if you include the loop to process the incoming input)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27010"></a> 
+ <div id="c27010" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-27010" class="active">need more test cases...</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhinav1592">abhinav1592</a></strong>
+   <span style="color:#828282"> @ 22 May 2012 01:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    need more test cases...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-30970"></a> 
+ <div id="c30970" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-30970" class="active">Easiest one (apart from Life</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 24 Aug 2012 02:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Easiest one (apart from Life Universe and Everything).
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31850"></a> 
+ <div id="c31850" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-31850" class="active">can someone please help.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/crystalshardz">crystalshardz</a></strong>
+   <span style="color:#828282"> @ 11 Sep 2012 11:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can someone please help. What's wrong with my submittion? I've tried everything in my test cases and get the right answer yet on here, its wrong...Submittion: 
+    <a href="http://www.codechef.com/viewsolution/1348933" title="http://www.codechef.com/viewsolution/1348933">http://www.codechef.com/viewsolution/1348933</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31943"></a> 
+ <div id="c31943" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-31943" class="active">An interesting addition to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bozouser">bozouser</a></strong>
+   <span style="color:#828282"> @ 20 Sep 2012 08:32 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    An interesting addition to this problem can be what if each cooling rack can hold more than one pie but the weight still exists. for ex: weights of pies - 9 7 16 4 8 weights limits - 8 3 14 10 10 Now you can place pies of weights 9,4 on rack 14. So now you have to remanage your weight limits after every iteration of placing the pies
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-34886"></a> 
+ <div id="c34886" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-34886" class="active">#include void solve(); int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sonali4893">sonali4893</a></strong>
+   <span style="color:#828282"> @ 7 Dec 2012 11:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include void solve(); int main() {int t,i; scanf("%d",&amp;t); for(i=0;iar2[j]) j++; if(ar1[i]&lt;=ar2[j]) {count++; break; } } } printf("%dn",count); } my code is running on codeblock but it gives a wrong answer here..wats wrong in tis code?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-34887"></a> 
+ <div id="c34887" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-34887" class="active">#include void solve(); int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sonali4893">sonali4893</a></strong>
+   <span style="color:#828282"> @ 7 Dec 2012 11:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include void solve(); int main() {int t,i; scanf("%d",&amp;t); for(i=0;iar2[j]) j++; if(ar1[i]&lt;=ar2[j]) {count++; break; } } } printf("%dn",count); }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35123"></a> 
+ <div id="c35123" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-35123" class="active">I find run time error in my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/uttom">uttom</a></strong>
+   <span style="color:#828282"> @ 21 Dec 2012 12:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I find run time error in my code. please help to solve this provlem. #include int main() { int i,n,a[20]={0},j,k,l,b[20]={0},t,temp; scanf("%d",&amp;t); while(t!=0) { scanf("%d",&amp;n); for(i=1;i&lt;=n;i++) { scanf("%d",&amp;a[i]); } for(j=1;j&lt;=n;j++) { scanf("%d",&amp;b[j]); } for(j=1;j&lt;=n;j++) { for(k=1;k&lt;=n-j;k++) { if(b[k]&gt;b[k+1]) { temp=b[k]; b[k]=b[k+1]; b[k+1]=temp; } } } l=0; for(i=1;i&lt;=n;i++) { for(j=1;j&lt;=n;j++) { if(b[i]&gt;=a[j]&amp;&amp;a[j]!=0) { a[j]=0; l++; break; } } } printf("%dn",l); t--; } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38516"></a> 
+ <div id="c38516" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-38516" class="active">i am getting run time error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dasavickey">dasavickey</a></strong>
+   <span style="color:#828282"> @ 23 Feb 2013 01:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am getting run time error pls help me #include int main() { int i,j,temp,a[20],b[20],t,n,count; scanf("%d",&amp;t); while(t--) { scanf("%d",&amp;n); for(i=0;ia[j+1]) { temp=a[j]; a[j]=a[j+1]; a[j+1]=temp; } } } for(i=0;ib[j+1]) { temp=b[j]; b[j]=b[j+1]; b[j+1]=temp; } } } count=n-1; for(i=n-1;i&gt;=0;i++) { if(b[count]&gt;=a[i]) count--; } printf("%d",(n-(count+1))); return 0; } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38525"></a> 
+ <div id="c38525" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-38525" class="active">@dasavickey : Read the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 23 Feb 2013 05:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @dasavickey : Read the problem statement input section carefully . It says : The first line of each test case contains a positive integer N?30, the number of pies (and also the number of racks). Your arrays a and b are of size 20 , hence you will end up accessing array entries outside the range , and hence will get a runtime exception .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38618"></a> 
+ <div id="c38618" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-38618" class="active">@admin- how the hell on earth</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aviraltrivedi">aviraltrivedi</a></strong>
+   <span style="color:#828282"> @ 28 Feb 2013 02:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin- how the hell on earth this gives wrong answer?? 
+    <a href="http://www.codechef.com/viewplaintext/1867066" title="http://www.codechef.com/viewplaintext/1867066">http://www.codechef.com/viewplaintext/1867066</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39344"></a> 
+ <div id="c39344" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-39344" class="active">what's the range of the pie's</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harsha_badass">harsha_badass</a></strong>
+   <span style="color:#828282"> @ 9 Mar 2013 09:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what's the range of the pie's weights and the limits?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40016"></a> 
+ <div id="c40016" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-40016" class="active">Getting wrong answer:</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/guptakeshav94">guptakeshav94</a></strong>
+   <span style="color:#828282"> @ 22 Mar 2013 10:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Getting wrong answer: 
+    <a href="http://www.codechef.com/viewsolution/1956776" title="http://www.codechef.com/viewsolution/1956776">http://www.codechef.com/viewsolution/1956776</a> Please help.. :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40022"></a> 
+ <div id="c40022" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-40022" class="active">@guptakeshav94 You logic is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 23 Mar 2013 03:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @guptakeshav94 You logic is wrong : Consider the input 1 ( number of test cases ) 2 ( number of racks ) 2 2 (weights of pies ) 4 1 ( limits of racks ) Your answer is 2 . The correct answer is 1. There are more test cases on which your code also fails for different reasons .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40023"></a> 
+ <div id="c40023" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-40023" class="active">@aviraltrivedi : Your answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 23 Mar 2013 03:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @aviraltrivedi : Your answer is wrong when there is more than one test case . You are ending the line after printing the answer . So if first test case has answer 12 and second test case has answer 15 your are printing 1215 while you should print 12 ( end of line ) 15 ( end of line ) . Also please use good words whether referring to admin's or others .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40190"></a> 
+ <div id="c40190" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-40190" class="active">i've tested my code for 1(t)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mr1holmes">mr1holmes</a></strong>
+   <span style="color:#828282"> @ 29 Mar 2013 10:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i've tested my code for 1(t) 2(n) 2 2 4 1. it is giving correct output=1. 
+    <a href="http://www.codechef.com/viewsolution/1970596" title="http://www.codechef.com/viewsolution/1970596">http://www.codechef.com/viewsolution/1970596</a> any more test cases ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40203"></a> 
+ <div id="c40203" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-40203" class="active">plzzz..can anyone help</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sandeep1994">sandeep1994</a></strong>
+   <span style="color:#828282"> @ 30 Mar 2013 04:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plzzz..can anyone help me..http://www.codechef.com/viewsolution/1971505 on which case this code is going wrong ??..bcoz i can't identify why its giving a WA on submission..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40227"></a> 
+ <div id="c40227" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-40227" class="active">@admin , could you check it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vigneshng">vigneshng</a></strong>
+   <span style="color:#828282"> @ 2 Apr 2013 10:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin , could you check it out, i am getting a wrong answer for the following solution 
+    <a href="http://www.codechef.com/viewsolution/1974579" title="http://www.codechef.com/viewsolution/1974579">http://www.codechef.com/viewsolution/1974579</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40229"></a> 
+ <div id="c40229" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-40229" class="active">@vigneshng : Consider the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 3 Apr 2013 01:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vigneshng : Consider the test case , 1 ( number of test cases ) 2 (number of racks/pies) 20 20 (weight of pies ) 10 30 ( limits of racks ) Your answer is 2 . The correct answer is 1 . You are storing whether a rack is used in a boolean variable , but when assigning a rack to a new pie you are not checking among unused racks only .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40230"></a> 
+ <div id="c40230" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-40230" class="active">^ I corrected that mistake,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vigneshng">vigneshng</a></strong>
+   <span style="color:#828282"> @ 3 Apr 2013 03:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    ^ I corrected that mistake, but still getting wrong answer 
+    <a href="http://www.codechef.com/viewsolution/1974594" title="http://www.codechef.com/viewsolution/1974594">http://www.codechef.com/viewsolution/1974594</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43465"></a> 
+ <div id="c43465" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-43465" class="active">Please anyone explain me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ned_stark">ned_stark</a></strong>
+   <span style="color:#828282"> @ 19 May 2013 12:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please anyone explain me this.. If i remove the else break statement at last, i get AC.. but this code gets gets WA. WHY?? Anyone, Someone, please??? 
+    <a href="http://www.codechef.com/viewsolution/2167729" title="http://www.codechef.com/viewsolution/2167729">http://www.codechef.com/viewsolution/2167729</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43506"></a> 
+ <div id="c43506" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-43506" class="active">Because you break the for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rotsen24154">rotsen24154</a></strong>
+   <span style="color:#828282"> @ 20 May 2013 04:53 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Because you break the for loop and you can not keep doing comparisons, use continue instead of break.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46339"></a> 
+ <div id="c46339" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-46339" class="active">the sample example is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhishekham">abhishekham</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2013 09:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    the sample example is wrong.... in the second case , the number of racks will be 3 instead of 4
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46346"></a> 
+ <div id="c46346" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-46346" class="active">just replaced 'cin&gt;&gt;' in C++</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aviraltrivedi">aviraltrivedi</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2013 04:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    just replaced 'cin&gt;&gt;' in C++ with scanf("%d",..) in C; and 'cout&lt;&lt;' in C++ with printf("%d",..) in C; and changed iostream to stdio.h accordingly; and baamm!!.. got the correct answer...; HOW THE HELL IS THIS POSSIBLE..??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-48543"></a> 
+ <div id="c48543" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-48543" class="active">Getting wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/asachin">asachin</a></strong>
+   <span style="color:#828282"> @ 12 Jul 2013 02:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Getting wrong answer 
+    <a href="http://www.codechef.com/viewsolution/2361682" title="http://www.codechef.com/viewsolution/2361682">http://www.codechef.com/viewsolution/2361682</a> please help :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49083"></a> 
+ <div id="c49083" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-49083" class="active">y m gttng wrong answer while</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rakhisingh1">rakhisingh1</a></strong>
+   <span style="color:#828282"> @ 18 Jul 2013 06:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    y m gttng wrong answer while on my compiler it z giving right.. 
+    <a href="http://www.codechef.com/viewsolution/2387321" title="http://www.codechef.com/viewsolution/2387321">http://www.codechef.com/viewsolution/2387321</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49084"></a> 
+ <div id="c49084" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-49084" class="active">plzzzzzzzzz any 1 suggst the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rakhisingh1">rakhisingh1</a></strong>
+   <span style="color:#828282"> @ 18 Jul 2013 06:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plzzzzzzzzz any 1 suggst the crrctn....:(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-53301"></a> 
+ <div id="c53301" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-53301" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhinav_jain">abhinav_jain</a></strong>
+   <span style="color:#828282"> @ 24 Aug 2013 09:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/2571972" title="http://www.codechef.com/viewsolution/2571972">http://www.codechef.com/viewsolution/2571972</a> I dont know, what's wrong with my code? I am getting desired outputs, bt still, it is showing wrong answer!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-53923"></a> 
+ <div id="c53923" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-53923" class="active">I have successly submittted</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jakelong00">jakelong00</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2013 10:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I have successly submittted my solution in n^2 time. Is there any better solution ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-55454"></a> 
+ <div id="c55454" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-55454" class="active">why i am getting runtime</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rsoni5519">rsoni5519</a></strong>
+   <span style="color:#828282"> @ 14 Sep 2013 03:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why i am getting runtime error plz tell me..... 
+    <a href="http://www.codechef.com/viewsolution/2666513" title="http://www.codechef.com/viewsolution/2666513">http://www.codechef.com/viewsolution/2666513</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-59292"></a> 
+ <div id="c59292" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-59292" class="active">This question really didn't</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mitshubh">mitshubh</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2013 01:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    This question really didn't involve any thinking :|
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68084"></a> 
+ <div id="c68084" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-68084" class="active">if we find the minimum weight</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/k3k33">k3k33</a></strong>
+   <span style="color:#828282"> @ 18 Dec 2013 02:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    if we find the minimum weight amngst the weight of the pies and then find how many weight limits of cooling racks are less than that minimum weight and finally subtract those many racks from N , won't that work?????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68182"></a> 
+ <div id="c68182" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-68182" class="active">the second test case is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/francissalva06">francissalva06</a></strong>
+   <span style="color:#828282"> @ 21 Dec 2013 08:26 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    the second test case is wrong. How come it became 4 when you try it manually its just 3.. explain please.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68851"></a> 
+ <div id="c68851" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-68851" class="active">Can the weight of pie and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/venky2834">venky2834</a></strong>
+   <span style="color:#828282"> @ 29 Dec 2013 03:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can the weight of pie and strength of rack be 0? If then what is to be done in the case a. Weight of pie is zero b. Strength of rack is zero
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68854"></a> 
+ <div id="c68854" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-68854" class="active">Can the weight of pie and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/venky2834">venky2834</a></strong>
+   <span style="color:#828282"> @ 29 Dec 2013 03:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can the weight of pie and strength of rack be 0? If then what is to be done in the case a. Weight of pie is zero b. Strength of rack is zero
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68931"></a> 
+ <div id="c68931" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-68931" class="active">why it is showing wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Ankit Aggarwal">Ankit Aggarwal</a></strong>
+   <span style="color:#828282"> @ 31 Dec 2013 11:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why it is showing wrong answer after submission??? import java.util.Arrays; import java.util.*; class Cooling { public static void main(String args[]) { Scanner s=new Scanner(System.in); int a=s.nextInt(); int ans[]=new int[50]; int count=0; int ans1=0; for(int i=0;i
+    <a int="" b="s.nextInt();" new="" j="0;j<b;j++)" k="0;k<a;k++)" count="0;"></a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-70198"></a> 
+ <div id="c70198" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-70198" class="active">i have one doubt.... is there</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/stndlkr200">stndlkr200</a></strong>
+   <span style="color:#828282"> @ 6 Jan 2014 11:32 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i have one doubt.... is there any limit on weight of a pie?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-72999"></a> 
+ <div id="c72999" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-72999" class="active">can someone plz check whats</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhijain123">abhijain123</a></strong>
+   <span style="color:#828282"> @ 13 Feb 2014 01:08 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can someone plz check whats the error in my code i am getting a runtime error my user id is 3399584
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75928"></a> 
+ <div id="c75928" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-75928" class="active">Getting wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kcolrehs">kcolrehs</a></strong>
+   <span style="color:#828282"> @ 31 Mar 2014 08:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Getting wrong answer 
+    <a href="http://www.codechef.com/viewsolution/3661496" title="http://www.codechef.com/viewsolution/3661496">http://www.codechef.com/viewsolution/3661496</a> please help :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78345"></a> 
+ <div id="c78345" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-78345" class="active">i don't know why i am getting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/conceptcodeur">conceptcodeur</a></strong>
+   <span style="color:#828282"> @ 21 May 2014 06:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i don't know why i am getting a wrong answer.. even though i think the algo is correct and also satisfies the given test cases.. somebody help !! here is a link to it 
+    <a href="http://www.codechef.com/viewsolution/3930349" title="http://www.codechef.com/viewsolution/3930349">http://www.codechef.com/viewsolution/3930349</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78651"></a> 
+ <div id="c78651" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-78651" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ash29795">ash29795</a></strong>
+   <span style="color:#828282"> @ 3 Jun 2014 09:09 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/3965953" title="http://www.codechef.com/viewsolution/3965953">http://www.codechef.com/viewsolution/3965953</a> please help someone,my code is running correctly in codeblocks but not in codechef's computer.The link to my code is given above
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79175"></a> 
+ <div id="c79175" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-79175" class="active">I'm getting correct answers</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/midhunadarvin">midhunadarvin</a></strong>
+   <span style="color:#828282"> @ 9 Jun 2014 01:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I'm getting correct answers for the test cases given. Can anyone suggest any test case that would help to figure out the error in my code?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79420"></a> 
+ <div id="c79420" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-79420" class="active">can somebody help me, i am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/the_glory">the_glory</a></strong>
+   <span style="color:#828282"> @ 13 Jun 2014 08:36 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can somebody help me, i am getting wrong answer but the code works fine on my machine for all inputs i have tried. Here is the code 
+    <a href="http://www.codechef.com/viewsolution/4074637" title="http://www.codechef.com/viewsolution/4074637">http://www.codechef.com/viewsolution/4074637</a> please tell me what is the possible input that is giving wrong answer.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80028"></a> 
+ <div id="c80028" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-80028" class="active">i am getting NZEC - non zero</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kishorer747">kishorer747</a></strong>
+   <span style="color:#828282"> @ 26 Jun 2014 03:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am getting NZEC - non zero exit code error.. please help inp = [int(x) for x in input().split()] n = inp.pop(0) # no. of Test Cases while n &gt; 0: s = inp.pop(0) # no. of Cookies or Cooling Racks rw = inp[s:s+s] cw = inp[:s] inp = inp[2*s:] initial_rw = len(rw) initial_cw = len(cw) #rw = [int(x) for x in input().split()] #print (cw) #print (rw) #print (inp) cw.sort() rw.sort() for i in range( len(cw) ): for j in range( len(rw) ): if cw[i] &lt;= rw[j]: rw.pop(j) break #print (cw) #print (rw) print (initial_rw - len(rw)) n = n-1 # few test cases # 1 5 10 10 10 10 10 10 14 1 1 1 # 5 9 7 16 4 8 8 3 14 10 10 # 10 30 20 30 10 20 # 2 5 9 7 16 4 8 8 3 14 10 10 3 10 30 20 30 10 20 # 1 5 10 10 10 10 10 10 14 1 1 1
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80196"></a> 
+ <div id="c80196" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-80196" class="active">i have sorted the weight of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/imds">imds</a></strong>
+   <span style="color:#828282"> @ 2 Jul 2014 05:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i have sorted the weight of the pies and the weight that the racks can hold in descending order and then compared them logically the answer seems to be fine at my end but it says wrong answer can somebody please help 
+    <a href="http://www.codechef.com/viewsolution/4172765" title="http://www.codechef.com/viewsolution/4172765">http://www.codechef.com/viewsolution/4172765</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82156"></a> 
+ <div id="c82156" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-82156" class="active">dear admin, hey,in my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/madhuka">madhuka</a></strong>
+   <span style="color:#828282"> @ 28 Jul 2014 09:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    dear admin, hey,in my solution i have sorted the two: pies and racks,so that i get the optimal answer........works fine with sample code and plenty of others.but says wrong answer.can u help 
+    <a href="http://www.codechef.com/viewsolution/4398174" title="http://www.codechef.com/viewsolution/4398174">http://www.codechef.com/viewsolution/4398174</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83451"></a> 
+ <div id="c83451" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-83451" class="active">I keep getting runtime</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/melvis">melvis</a></strong>
+   <span style="color:#828282"> @ 10 Aug 2014 02:37 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I keep getting runtime error(NZEC), I tried everything to fix this but I'm not sure how to fix it. Here are all my tried to fix this error :( 
+    <a href="http://www.codechef.com/status/COOLING,melvis" title="http://www.codechef.com/status/COOLING,melvis">http://www.codechef.com/status/COOLING,melvis</a> . plz help.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83632"></a> 
+ <div id="c83632" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-83632" class="active">My code is running absolutely</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vipsy">vipsy</a></strong>
+   <span style="color:#828282"> @ 11 Aug 2014 06:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My code is running absolutely correct everywhere but Codechef. Why? 
+    <a href="http://www.codechef.com/viewsolution/4549459" title="http://www.codechef.com/viewsolution/4549459">http://www.codechef.com/viewsolution/4549459</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83764"></a> 
+ <div id="c83764" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-83764" class="active">My code shows SIGSEV.I have</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sjan1109">sjan1109</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2014 06:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My code shows SIGSEV.I have gone through it and have no idea whatsoever as to what is causing this error.Kindly help me out.I have taken both the rows of each input and stored them in two arrays,then merge sorted them in non-increasing order.After that I have simply checked as to how many pies can be fit into the cooling racks.Here is my code. 
+    <a href="http://www.codechef.com/viewsolution/4573299" title="http://www.codechef.com/viewsolution/4573299">http://www.codechef.com/viewsolution/4573299</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83827"></a> 
+ <div id="c83827" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-83827" class="active">i used quick sort to arrange</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/z1a9_3">z1a9_3</a></strong>
+   <span style="color:#828282"> @ 22 Aug 2014 12:38 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i used quick sort to arrange numbers, but i got error SIGSEGV . i do not able to understand what is wrong in my program here is my solution 
+    <a href="http://www.codechef.com/viewsolution/4599627" title="http://www.codechef.com/viewsolution/4599627">http://www.codechef.com/viewsolution/4599627</a> anybody plz help.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84140"></a> 
+ <div id="c84140" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-84140" class="active">can you explain why this is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/agarwal.ayushi">agarwal.ayushi</a></strong>
+   <span style="color:#828282"> @ 27 Aug 2014 11:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can you explain why this is wrong #include #include int calc(int n, int w[], int r[]); void sort(int w[], int n); int main() { int test, i, n, weight[30], racks[30],j; scanf("%d", &amp;test); for(i=0;i=0;i--) { for(j=0;j=w[i]) { no++; r[j]=0; break; } } } return no; } void sort(int w[], int n) { int i,j,temp; for(i=0;i0;j--) { if(w[j]
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85636"></a> 
+ <div id="c85636" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-85636" class="active">need some help with my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/RAJAT PANDEY">RAJAT PANDEY</a></strong>
+   <span style="color:#828282"> @ 24 Sep 2014 05:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    need some help with my solution to this problem, I'm geeting a runtime error on codechef "SIGSEGV". Can't make sense of this error. view my code here 
+    <a href="http://www.codechef.com/viewsolution/4890309" title="http://www.codechef.com/viewsolution/4890309">http://www.codechef.com/viewsolution/4890309</a> thanks for the help.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85916"></a> 
+ <div id="c85916" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-85916" class="active">http://ideone.com/kyqHV1 plz</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/priya_bansal">priya_bansal</a></strong>
+   <span style="color:#828282"> @ 28 Sep 2014 06:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://ideone.com/kyqHV1" title="http://ideone.com/kyqHV1">http://ideone.com/kyqHV1</a> plz tell , what is the problem with my code ?? it runs properly with the test cases given. But it is showing a wrong answer.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86086"></a> 
+ <div id="c86086" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-86086" class="active">PLZZ HELP WHATS WRONG IN</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prabhcool1180">prabhcool1180</a></strong>
+   <span style="color:#828282"> @ 30 Sep 2014 09:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    PLZZ HELP WHATS WRONG IN THIS: 
+    <a href="http://www.codechef.com/viewsolution/4936252" title="http://www.codechef.com/viewsolution/4936252">http://www.codechef.com/viewsolution/4936252</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86098"></a> 
+ <div id="c86098" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-86098" class="active">please help i have tried all</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amandhapola">amandhapola</a></strong>
+   <span style="color:#828282"> @ 30 Sep 2014 10:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please help i have tried all the test cases but it still doesnt work 
+    <a href="http://ideone.com/n7jhVz" title="http://ideone.com/n7jhVz">http://ideone.com/n7jhVz</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86167"></a> 
+ <div id="c86167" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-86167" class="active">I cant seem to figure out why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ExCode">ExCode</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2014 10:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I cant seem to figure out why is this giving me a wrong answer ! please help 
+    <a href="http://www.codechef.com/viewsolution/4943341" title="http://www.codechef.com/viewsolution/4943341">http://www.codechef.com/viewsolution/4943341</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-87730"></a> 
+ <div id="c87730" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-87730" class="active">need more sample test cases</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Alexi@Code99">Alexi@Code99</a></strong>
+   <span style="color:#828282"> @ 10 Oct 2014 05:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    need more sample test cases because the answers are correct as per the given test cases but then on submissions it gives "wrong answer"
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88005"></a> 
+ <div id="c88005" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-88005" class="active">@admin please help me with my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Alexi@Code99">Alexi@Code99</a></strong>
+   <span style="color:#828282"> @ 12 Oct 2014 01:09 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin please help me with my solution: 
+    <a href="http://www.codechef.com/viewsolution/5124217" title="http://www.codechef.com/viewsolution/5124217">http://www.codechef.com/viewsolution/5124217</a> the above test cases are matching but then again I am getting wrong answer on submitting.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88250"></a> 
+ <div id="c88250" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-88250" class="active">what's wrong with this code?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gauri1995">gauri1995</a></strong>
+   <span style="color:#828282"> @ 15 Oct 2014 05:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what's wrong with this code? i am getting a wrong answer. please help! 
+    <a href="http://www.codechef.com/viewsolution/5152444" title="http://www.codechef.com/viewsolution/5152444">http://www.codechef.com/viewsolution/5152444</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89026"></a> 
+ <div id="c89026" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-89026" class="active">cant we write the code in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/satish9040">satish9040</a></strong>
+   <span style="color:#828282"> @ 26 Oct 2014 10:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    cant we write the code in c#???????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90740"></a> 
+ <div id="c90740" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-90740" class="active">#include void ascend(int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aroranaman12">aroranaman12</a></strong>
+   <span style="color:#828282"> @ 21 Nov 2014 02:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include void ascend(int *a,int n) { int i,j,temp; for(i=0;ia[j+1]) { temp=a[j]; a[j]=a[j+1]; a[j+1]=temp; } } } } void result(int *p, int *r,int n) { int i,count_p=0,count_r=0,output=0; for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91087"></a> 
+ <div id="c91087" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-91087" class="active">why I m getting wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akhileshydv20">akhileshydv20</a></strong>
+   <span style="color:#828282"> @ 2 Dec 2014 11:27 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why I m getting wrong answer...please help.. link to my code is 
+    <a href="http://www.codechef.com/view" title="http://www.codechef.com/view">http://www.codechef.com/view</a> solution/5478875 :-(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91088"></a> 
+ <div id="c91088" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-91088" class="active">link:</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akhileshydv20">akhileshydv20</a></strong>
+   <span style="color:#828282"> @ 2 Dec 2014 11:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    link: 
+    <a href="http://www.codechef.com/viewsolution/5478875" title="http://www.codechef.com/viewsolution/5478875">http://www.codechef.com/viewsolution/5478875</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91160"></a> 
+ <div id="c91160" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-91160" class="active">@Admin, Where am i wrong i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhinav_rai">abhinav_rai</a></strong>
+   <span style="color:#828282"> @ 5 Dec 2014 12:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin, Where am i wrong i have been solving this for 1.5 days and i am too much frustated with it now. Please tell where am i wrong or give a test case which is not following. My solution is 
+    <a href="http://www.codechef.com/viewsolution/5489026" title="http://www.codechef.com/viewsolution/5489026">http://www.codechef.com/viewsolution/5489026</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91697"></a> 
+ <div id="c91697" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-91697" class="active">Doing well in ideone, here</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mkmishra1997">mkmishra1997</a></strong>
+   <span style="color:#828282"> @ 11 Dec 2014 07:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Doing well in ideone, here runtime error -_-
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91920"></a> 
+ <div id="c91920" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-91920" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhinav_rai">abhinav_rai</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2014 09:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/5606780" title="http://www.codechef.com/viewsolution/5606780">http://www.codechef.com/viewsolution/5606780</a> @ admin PLEASE TELL WHICH CASES IS IT NOT SATISFYING. I CAN ASSURE YOU THAT MY LOGIC IS CORRECT. PLEASE HELP by telling test cases which my code is not satisfying.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91985"></a> 
+ <div id="c91985" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-91985" class="active">my code having link</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/deeksha_garg">deeksha_garg</a></strong>
+   <span style="color:#828282"> @ 19 Dec 2014 12:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my code having link 
+    <a href="http://www.codechef.com/viewsolution/5615526" title="http://www.codechef.com/viewsolution/5615526">http://www.codechef.com/viewsolution/5615526</a> is showing wrong ans but it is running and showing the right output on my computer.... please tell what is wrong in my code
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92415"></a> 
+ <div id="c92415" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-92415" class="active">can anyone pls tell whats</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hide_me">hide_me</a></strong>
+   <span style="color:#828282"> @ 29 Dec 2014 09:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone pls tell whats wrong with the code. It shows correct output for sample test cases provided. Still showing WRONG ANSWER. 
+    <a href="http://www.codechef.com/viewsolution/5667906" title="http://www.codechef.com/viewsolution/5667906">http://www.codechef.com/viewsolution/5667906</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95635"></a> 
+ <div id="c95635" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-95635" class="active">@admin what is wrong in this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pd17">pd17</a></strong>
+   <span style="color:#828282"> @ 6 Feb 2015 02:54 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin what is wrong in this code 
+    <a href="http://www.codechef.com/viewsolution/6098740" title="http://www.codechef.com/viewsolution/6098740">http://www.codechef.com/viewsolution/6098740</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-96257"></a> 
+ <div id="c96257" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-96257" class="active">@admin...i run my code for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/boltstrike">boltstrike</a></strong>
+   <span style="color:#828282"> @ 9 Feb 2015 04:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin...i run my code for sample test cases...its showing the right results..can u please tell me why it is giving me wrong answer on submission....http://www.codechef.com/viewsolution/6179782
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-96840"></a> 
+ <div id="c96840" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-96840" class="active">Hello admin, Please explain</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vishala5s5r5">vishala5s5r5</a></strong>
+   <span style="color:#828282"> @ 15 Feb 2015 07:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hello admin, Please explain me the test case for which my code is failing? 
+    <a href="http://www.codechef.com/viewsolution/6278321" title="http://www.codechef.com/viewsolution/6278321">http://www.codechef.com/viewsolution/6278321</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97034"></a> 
+ <div id="c97034" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-97034" class="active">On using Arrays.sort()</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhaytibrewal7">abhaytibrewal7</a></strong>
+   <span style="color:#828282"> @ 18 Feb 2015 09:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    On using Arrays.sort() function from java util package,the elements of array values becomes 0. What is the problm?!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97616"></a> 
+ <div id="c97616" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-97616" class="active">@Admin, Where am i wrong i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ns_20">ns_20</a></strong>
+   <span style="color:#828282"> @ 26 Feb 2015 12:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin, Where am i wrong i have been solving this for 1.5 days and i am too much frustated with it now. Please tell where am i wrong or give a test case which is not following. My solution is 
+    <a href="http://www.codechef.com/viewsolution/6352240" title="http://www.codechef.com/viewsolution/6352240">http://www.codechef.com/viewsolution/6352240</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97618"></a> 
+ <div id="c97618" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-97618" class="active">@Admin, Where am i wrong i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ns_20">ns_20</a></strong>
+   <span style="color:#828282"> @ 26 Feb 2015 12:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin, Where am i wrong i have been solving this for 1.5 days and i am too much frustated with it now. Please tell where am i wrong or give a test case which is not following. My solution is 
+    <a href="http://www.codechef.com/viewsolution/6352240" title="http://www.codechef.com/viewsolution/6352240">http://www.codechef.com/viewsolution/6352240</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99899"></a> 
+ <div id="c99899" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-99899" class="active">@admin or @anyone can you</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/edwinharly">edwinharly</a></strong>
+   <span style="color:#828282"> @ 26 Mar 2015 07:59 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin or @anyone can you tell me where was wrong with my code ? here's the link 
+    <a href="http://www.codechef.com/viewsolution/6580680" title="http://www.codechef.com/viewsolution/6580680">http://www.codechef.com/viewsolution/6580680</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99900"></a> 
+ <div id="c99900" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-99900" class="active">Or email me on</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/edwinharly">edwinharly</a></strong>
+   <span style="color:#828282"> @ 26 Mar 2015 08:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Or email me on 
+    <a href="mailto:edwinharly@live.com">edwinharly@live.com</a> Thanks.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101829"></a> 
+ <div id="c101829" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-101829" class="active">@admin, i was able to get</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shashank1995">shashank1995</a></strong>
+   <span style="color:#828282"> @ 14 Apr 2015 07:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin, i was able to get successful answer for the test cases given as example by you. I am quite confident regarding my code that i have coded right well,but codechef compiler giving my answer as wrong,plz help me where i am wrong 
+    <a href="http://www.codechef.com/viewsolution/6776837" title="http://www.codechef.com/viewsolution/6776837">http://www.codechef.com/viewsolution/6776837</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104104"></a> 
+ <div id="c104104" class="comment clear-block"> 
+  <h3><a href="/problems/COOLING#comment-104104" class="active">can someone tell whats wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rocode0001">rocode0001</a></strong>
+   <span style="color:#828282"> @ 20 May 2015 10:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can someone tell whats wrong with this submission- 
+    <a href="http://www.codechef.com/viewsolution/6986513" title="http://www.codechef.com/viewsolution/6986513">http://www.codechef.com/viewsolution/6986513</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

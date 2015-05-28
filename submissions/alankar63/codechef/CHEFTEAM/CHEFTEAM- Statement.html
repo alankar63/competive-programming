@@ -1,0 +1,336 @@
+<div id="node-527241" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>Chef has <b>N</b> subordinates. In order to complete a very important order he will choose exactly <b>K</b> of them. He can't choose less than <b>K</b> since it will be not enough to complete the order in time. On the other hand if he chooses more than <b>K</b> subordinates he can't control them during the operation. Help him to find the number of ways he can choose the team to complete this very important order.</p> 
+  <h3>Input</h3> 
+  <p> The first line contains a single positive integer <b>T &lt;= 100</b>, the number of test cases. <b>T</b> test cases follow. The only line of each test case contains two integers <b>N</b> and <b>K</b>, where <b>0 &lt;= N, K &lt; 2^64</b>. It is guaranteed that the answer will be less than <b>2^64</b>.</p> 
+  <h3>Output</h3> 
+  <p> For each test case, output a single line containing the number of ways to choose the required team.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+3
+2 1
+3 3
+10 5
+
+<b>Output:</b>
+2
+1
+252
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/anton_lunyov">anton_lunyov</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/friggstad">friggstad</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CHEFTEAM">http://discuss.codechef.com/problems/CHEFTEAM</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/anton_lunyov"> anton_lunyov </a><a class="problem-tag-small " href="/tags/problems/cook06"> cook06 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>14-01-2011</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CHEFTEAM">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-13361"></a> 
+ <div id="c13361" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-13361" class="active">anybody help plz i am getting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sahilsingla">sahilsingla</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2011 08:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>anybody help plz</p> 
+    <p>i am getting runtime error NZEC all the time i run follwing code</p> 
+    <p><a href="http://www.codechef.com/viewsolution/439140" title="http://www.codechef.com/viewsolution/439140">http://www.codechef.com/viewsolution/439140</a></p> 
+    <p>I am losing my interest...help!!</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13806"></a> 
+ <div id="c13806" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-13806" class="active">import</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/desire">desire</a></strong>
+   <span style="color:#828282"> @ 16 Feb 2011 01:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p> </p>
+    <p>import java.util.Scanner;</p> 
+    <p>&nbsp;</p> 
+    <p>public class Main {</p> 
+    <p>public static void main(String args[]) {</p> 
+    <p>Scanner s = new Scanner(System.in);</p> 
+    <p>int t = s.nextInt();</p> 
+    <p>while (t != 0) {</p> 
+    <p>t--;</p> 
+    <p>long n = s.nextLong();</p> 
+    <p>long r = s.nextLong();</p> 
+    <p>long c = combination(n, r);</p> 
+    <p>System.out.println(c);</p> 
+    <p>}</p> 
+    <p>}</p> 
+    <p>&nbsp;</p> 
+    <p>private static long combination(long n, long r) {</p> 
+    <p>if (r &gt; n) {</p> 
+    <p>return 0;</p> 
+    <p>} else if (r == n) {</p> 
+    <p>return 1;</p> 
+    <p>}</p> 
+    <p>if (r &gt; n - r) {</p> 
+    <p>r = n - r;</p> 
+    <p>}</p> 
+    <p>long ans = 1;</p> 
+    <p>for (long i = 1; i &lt;= r; i++) {</p> 
+    <p>long l = gcd(ans, i);</p> 
+    <p>ans = ans / i;</p> 
+    <p>ans *= (n - i + 1) / (i / l);</p> 
+    <p>}</p> 
+    <p>&nbsp;</p> 
+    <p>return ans;</p> 
+    <p>}</p> 
+    <p>&nbsp;</p> 
+    <p>private static long gcd(long a, long b) {</p> 
+    <p>if (b == 0)</p> 
+    <p>return a;</p> 
+    <p>else</p> 
+    <p>return gcd(b, a % b);</p> 
+    <p>}</p> 
+    <p>&nbsp;</p> 
+    <p>}</p> 
+    <div></div> 
+    <div></div> 
+    <div>
+     I m getting runtime. what can be the reason .i m using long which has enough size to hold data upto 2^64
+    </div> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16418"></a> 
+ <div id="c16418" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-16418" class="active">i am getting the output,, i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sunny_patel">sunny_patel</a></strong>
+   <span style="color:#828282"> @ 28 May 2011 10:38 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am getting the output,, i dont know where it is wrong,anybody seeing some mistake here? pls help //coded by Sunny Patel import java.io.*; import java.math.*; class codechef9{ public static void main(String args[]) throws Exception{ try{ BufferedReader br=new BufferedReader(new InputStreamReader(System.in)); int i=0; int n=Integer.parseInt(br.readLine()); while (i!=n){ String input[]=br.readLine().split(" "); int p= Integer.parseInt(input[0]); int q =Integer.parseInt(input[1]); BigInteger a=fact (p); BigInteger b = fact (q); BigInteger c=fact (p-q); BigInteger k=b.multiply(c); BigInteger s=a.divide(k); System.out.println(s); i++; } } catch(Exception e){ System.out.println(e.getMessage()); }} public static BigInteger fact (int a){ BigInteger fact=new BigInteger("1"); for (int temp=a;temp&gt;=1;temp--){ fact = fact.multiply(new BigInteger(""+temp)); } return fact; } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17860"></a> 
+ <div id="c17860" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-17860" class="active">I give up :(</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vijayanand_p">vijayanand_p</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2011 10:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I give up :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31693"></a> 
+ <div id="c31693" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-31693" class="active">I'm getting "Runtime Error"</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 7 Sep 2012 11:49 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I'm getting "Runtime Error" too. Can't find anything wrong with the code.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-32097"></a> 
+ <div id="c32097" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-32097" class="active">Now, I'm getting WA. :(</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 24 Sep 2012 05:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Now, I'm getting WA. :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36415"></a> 
+ <div id="c36415" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-36415" class="active">A simple combination</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hack_artist">hack_artist</a></strong>
+   <span style="color:#828282"> @ 21 Jan 2013 10:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    A simple combination problem def fact(num): ans=1 while (num &gt; 0): ans=ans*num num=num-1 return ans n=int(raw_input("N:")) k=int(raw_input("K:")) ans= fact(n) / (fact(k) * fact(n-k)) print ans
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40194"></a> 
+ <div id="c40194" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-40194" class="active">Please can someone explain</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/quandray">quandray</a></strong>
+   <span style="color:#828282"> @ 30 Mar 2013 01:24 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please can someone explain why 
+    <a href="http://www.codechef.com/viewsolution/1970598" title="http://www.codechef.com/viewsolution/1970598">http://www.codechef.com/viewsolution/1970598</a> gives AC but 
+    <a href="http://www.codechef.com/viewsolution/1970592" title="http://www.codechef.com/viewsolution/1970592">http://www.codechef.com/viewsolution/1970592</a> gives TLE?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-51673"></a> 
+ <div id="c51673" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-51673" class="active">Ok all of you , here are the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pranavr93">pranavr93</a></strong>
+   <span style="color:#828282"> @ 11 Aug 2013 04:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Ok all of you , here are the possible reasons why your solutions are not getting accepted, make sure you do all of the following 1. long long is not enough for this problem , you need unsigned long long 2. Include the condition where k can be greater than n. ( n choose k where k&gt;n ) , in this condition , print 1.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78609"></a> 
+ <div id="c78609" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-78609" class="active">can some one explain the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aaashu">aaashu</a></strong>
+   <span style="color:#828282"> @ 31 May 2014 01:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can some one explain the logic of the pblm? thanks in advnce.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78630"></a> 
+ <div id="c78630" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-78630" class="active">on 8th try .. AC with PYTHON</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ab13123002">ab13123002</a></strong>
+   <span style="color:#828282"> @ 2 Jun 2014 01:04 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    on 8th try .. AC with PYTHON :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79777"></a> 
+ <div id="c79777" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-79777" class="active">Time limit exceeded..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shad0wc0der">shad0wc0der</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2014 10:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Time limit exceeded.. help............. 
+    <a href="http://www.codechef.com/viewsolution/4122755" title="http://www.codechef.com/viewsolution/4122755">http://www.codechef.com/viewsolution/4122755</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85611"></a> 
+ <div id="c85611" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-85611" class="active">@all , make sure you consider</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/empty_life">empty_life</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2014 11:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @all , make sure you consider the case where k&gt;n . in such cases answer should be 0.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92491"></a> 
+ <div id="c92491" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-92491" class="active">Why i m getting runtime error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/markland">markland</a></strong>
+   <span style="color:#828282"> @ 1 Jan 2015 08:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why i m getting runtime error again and again??? MY CODE IS :- #include unsigned long long choose_p(unsigned long long n, unsigned long long p) { unsigned long long t,temp,x,i,j; t=n-p; if(p0) { scanf("%llu %llu",&amp;n,&amp;k); x=choose_p(n,k); printf("%llun",x); } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95548"></a> 
+ <div id="c95548" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFTEAM#comment-95548" class="active">i'm getting time limit</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rsourav">rsourav</a></strong>
+   <span style="color:#828282"> @ 5 Feb 2015 11:19 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i'm getting time limit exceeded.. is it hapenning for my slow internet??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

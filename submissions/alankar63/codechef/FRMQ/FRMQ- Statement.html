@@ -1,0 +1,111 @@
+<div id="node-8001520" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/APRIL15/mandarin/FRMQ.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/APRIL15/russian/FRMQ.pdf">Russian</a>.</h3> 
+  <p>Chef has an array <b>A[]</b> of <b>N</b> elements denoted by <b>A<sub>0</sub>, A<sub>1</sub>, ..., A<sub>N-1</sub></b>.</p> 
+  <p>He thinks about <b>M</b> questions of following kind: "What is the maximum element among <b>A<sub>i</sub></b> where <b>i</b> lies between <b>min{x, y}</b> and <b>max{x, y}</b> both inclusive?"</p> 
+  <p>You have to help Chef to find out sum of answers of all the <b>M</b> questions.</p> 
+  <p><i><b>Method of generation of values <b>x</b> and <b>y</b> for all <b>M</b> questions:</b></i> </p> 
+  <p>You are given two integers <b>x<sub>1</sub></b> and <b>y<sub>1</sub></b> denoting values of <b>x</b> and <b>y</b> for the first question. </p> 
+  <p>For the next questions, values of <b>x<sub>i</sub></b> and <b>y<sub>i</sub></b> are generated in the following way:</p> 
+  <pre>
+for <b>i = 2</b> to <b>M</b>:
+	<b>x<sub>i</sub></b> = <b>(x<sub>i-1</sub> + 7) mod (N - 1)</b>
+	<b>y<sub>i</sub></b> = <b>(y<sub>i-1</sub> + 11) mod N</b>
+</pre>
+  <p> </p> 
+  <p>Here <b>a mod b</b> denotes the remainder of division of <b>a</b> by <b>b</b>.</p> 
+  <h3>Input</h3> 
+  <p>The first line contains a single integer <b>N</b>, denoting the number of elements in the array.</p> 
+  <p>The second line contains <b>N</b> space-separated integers, denoting <b>A<sub>0</sub></b>, <b>A<sub>1</sub></b>, ..., <b>A<sub>N-1</sub></b>. </p> 
+  <p>The third line contains three space-separated integers <b>M</b>, <b>x<sub>1</sub></b> and <b>y<sub>1</sub></b>.</p> 
+  <h3>Output</h3> 
+  <p>Output a single integer denoting the <b>sum</b> of the answers to the questions.</p> 
+  <h3>Constraints and Subtasks</h3> 
+  <ul> 
+   <li><b>2</b> ? <b>N</b> ? <b>10<sup>5</sup></b></li> 
+   <li><b>1</b> ? <b>M</b> ? <b>10<sup>8</sup></b></li> 
+   <li><b>1</b> ? <b>A<sub>i</sub></b> ? <b>10<sup>9</sup></b></li> 
+   <li><b>0</b> ? <b>x<sub>1</sub>, y<sub>1</sub></b> ? <b>N-1</b></li> 
+  </ul> 
+  <p></p> 
+  <p><b>Subtask 1: (20 points)</b></p> 
+  <ul> 
+   <li><b>N, M ? 10<sup>3</sup></b>; <b>1</b> ? <b>A<sub>i</sub></b> ? <b>10<sup>5</sup></b></li> 
+  </ul> 
+  <p></p> 
+  <p><b>Subtask 2: (50 points)</b></p> 
+  <ul> 
+   <li><b>N, M ? 10<sup>5</sup></b></li> 
+  </ul> 
+  <p></p> 
+  <p><b>Subtask 3: (30 points)</b></p> 
+  <ul> 
+   <li>Original constraints</li> 
+  </ul> 
+  <p></p> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+3
+1 2 3
+3 0 1
+
+<b>Output:</b>
+7
+</pre>
+  <h3>Explanation</h3> 
+  <li>The first question: <b>x<sub>1</sub></b> = 0, <b>y<sub>1</sub></b> = 1 &nbsp;&nbsp; =&gt; &nbsp;&nbsp; <b>ans<sub>1</sub></b> = 2</li> 
+  <li>The second question: <b>x<sub>2</sub></b> = (0 + 7) mod 2 = 1, <b>y<sub>2</sub></b> = (1 + 11) mod 3 = 0 &nbsp;&nbsp; =&gt; &nbsp;&nbsp; <b>ans<sub>2</sub></b> = 2</li> 
+  <li>The third question: <b>x<sub>3</sub></b> = (1 + 7) mod 2 = 0, <b>y<sub>3</sub></b> = (0 + 11) mod 3 = 2 &nbsp;&nbsp; =&gt; &nbsp;&nbsp; <b>ans<sub>3</sub></b> = 3</li> 
+  <p> </p> 
+  <p>As <b>ans<sub>1</sub></b> + <b>ans<sub>2</sub></b> + <b>ans<sub>3</sub></b> = 2 + 2 + 3 = 7. So you have to print <b>7</b>.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/antoniuk1">antoniuk1</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/xcwgf666">xcwgf666</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/FRMQ">http://discuss.codechef.com/problems/FRMQ</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/antoniuk1"> antoniuk1 </a><a class="problem-tag-small " href="/tags/problems/april15"> april15 </a><a class="problem-tag-small " href="/tags/problems/rmq"> rmq </a><a class="problem-tag-small " href="/tags/problems/sparse-tables"> sparse-tables </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>17-07-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/FRMQ">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div>

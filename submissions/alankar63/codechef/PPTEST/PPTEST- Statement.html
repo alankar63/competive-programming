@@ -1,0 +1,140 @@
+<div id="node-3721101" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in Russian <a target="_blank" href="http://www.codechef.com/download/translated/COOK39/russian/PPTEST.pdf">here</a></h3> 
+  <p>Polo, the Penguin, has a lot of tests tomorrow at the university.</p> 
+  <p>He knows that there are <b>N</b> different questions that will be on the tests. For each question <b>i</b> (<b>i = 1..N</b>), he knows <b>C[i]</b> - the number of tests that will contain this question, <b>P[i]</b> - the number of points that he will get for correctly answering this question on each of tests and <b>T[i]</b> - the amount of time (in minutes) that he needs to spend to learn this question.</p> 
+  <p>Unfortunately, the amount of free time that Polo has is limited to <b>W</b> minutes. Help him to find the maximal possible total number of points he can get for all tests if he studies for no more than <b>W</b> minutes.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows. The first line of each test case contains the pair of integers <b>N</b> and <b>W</b>, separated by a space. The following <b>N</b> lines contain three space-separated integers <b>C[i]</b>, <b>P[i]</b> and <b>T[i]</b> (<b>i = 1..N</b>).</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing the answer to the corresponding test case.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ? <b>T</b> ? <b>100</b></li> 
+   <li><b>1</b> ? <b>N</b> ? <b>100</b></li> 
+   <li><b>1</b> ? <b>C[i], P[i], T[i]</b> ? <b>100</b> </li>
+   <li><b>1</b> ? <b>W</b> ? <b>100</b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+1
+3 7
+1 2 3
+2 3 5
+3 3 3
+
+<b>Output:</b>
+11
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Example case 1.</b> The best choice is to learn the first and the third questions and get <b>1*2 + 3*3 = 11</b> points.</p> 
+  <p>&nbsp;</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/witua">witua</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/rustinpiece">rustinpiece</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/PPTEST">http://discuss.codechef.com/problems/PPTEST</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook39"> cook39 </a><a class="problem-tag-small " href="/tags/problems/dp"> dp </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/witua"> witua </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>23-09-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/PPTEST">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-70541"></a> 
+ <div id="c70541" class="comment clear-block"> 
+  <h3><a href="/problems/PPTEST#comment-70541" class="active">Hint: knapsack 0-1 algorithm</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/silent_killer">silent_killer</a></strong>
+   <span style="color:#828282"> @ 8 Jan 2014 05:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hint: knapsack 0-1 algorithm will help in this problem....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79660"></a> 
+ <div id="c79660" class="comment clear-block"> 
+  <h3><a href="/problems/PPTEST#comment-79660" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/monishak">monishak</a></strong>
+   <span style="color:#828282"> @ 16 Jun 2014 10:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/4106938" title="http://www.codechef.com/viewsolution/4106938">http://www.codechef.com/viewsolution/4106938</a> My code gives correct solution for the same test case. I used greedy approach. But the submission got failed telling 'Wrong Answer' . what is the problem with my code?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101970"></a> 
+ <div id="c101970" class="comment clear-block"> 
+  <h3><a href="/problems/PPTEST#comment-101970" class="active">My first DP problem out of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bholagabbar">bholagabbar</a></strong>
+   <span style="color:#828282"> @ 18 Apr 2015 03:19 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My first DP problem out of many more to come :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104482"></a> 
+ <div id="c104482" class="comment clear-block"> 
+  <h3><a href="/problems/PPTEST#comment-104482" class="active">Can u pls explain the test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nishantm">nishantm</a></strong>
+   <span style="color:#828282"> @ 24 May 2015 03:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can u pls explain the test case?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

@@ -1,0 +1,182 @@
+<div id="node-3407167" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <p>You are given a simple code of a function and you would like to know what it will return. </p> 
+  <pre><code>
+ F(<b>N, K, Answer, Operator, A[N]</b>) returns int;
+  begin
+      for <b>i</b>=1..<b>K</b> do
+         for <b>j</b>=1..<b>N</b> do
+            <b>Answer</b>=(<b>Answer</b> operator <b>A<sub>j</sub></b>)
+       return <b>Answer</b>
+  end
+</code></pre>
+  <p><br> <br></p> 
+  <p>Here <b>N, K, Answer</b> and the value returned by the function <b>F</b> are integers; <b>A</b> is an array of <b>N</b> integers numbered from <b>1</b> to <b>N</b>; <b>Operator</b> can be one of the binary operators <b>XOR, AND</b> or <b>OR</b>. If you are not familiar with these terms then better have a look at following articles: <a href="http://en.wikipedia.org/wiki/Bitwise_operation#XOR">XOR</a>, <a href="http://en.wikipedia.org/wiki/Bitwise_operation#OR">OR</a>, <a href="http://en.wikipedia.org/wiki/Bitwise_operation#AND">AND</a>.</p> 
+  <h3>Input</h3> 
+  <p>The first line of input contains an integer <b>T</b> - the number of test cases in file. Description of each test case consists of three lines. The first one contains three integers <b>N, K</b> and initial <b>Answer</b>. Array <b>A</b> is given in the second line and <b>Operator</b> is situated on the third one. Operators are given as strings, of capital letters. It is guaranteed that there will be no whitespaces before or after <b>Operator</b>. </p> 
+  <h3>Output</h3> 
+  <p>Output one line for each test case - the value that is returned by described function with given arguments.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1?T?100 </b></li>
+   <li><b>1?N?1000<br> </b></li>
+   <li><b>0?Answer, K, A<sub>i</sub>?10<sup>9</sup></b></li> 
+   <li> <b>Operator</b> is one of these: <b>"AND", "XOR", "OR"</b>. </li>
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+3
+3 1 0
+1 2 3
+XOR
+3 1 0
+1 2 3
+AND
+3 1 0
+1 2 3
+OR
+<b>Output:</b>
+0
+0
+3
+</pre>
+  <p>&nbsp;</p> 
+  <h3>Explanation</h3> 
+  <p> 0 xor 1 xor 2 xor 3 = 0<br><br> 0 and 1 and 2 and 3 = 0<br><br> 0 or 1 or 2 or 3 = 3<br> </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/Rubanenko">Rubanenko</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/utkarsh_lath">utkarsh_lath</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/RRCODE">http://discuss.codechef.com/problems/RRCODE</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/Rubanenko"> Rubanenko </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/cook38"> cook38 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>19-09-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/RRCODE">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-56181"></a> 
+ <div id="c56181" class="comment clear-block"> 
+  <h3><a href="/problems/RRCODE#comment-56181" class="active">Am I mis-thinking or is there</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/stefanpochmann">stefanpochmann</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2013 12:24 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Am I mis-thinking or is there an error in the input? I went from "Wrong Answer" to "Accepted" by doing Operator=input().rstrip() instead of just Operator = input(). Looks like there *is* whitespace after an operator, despite the guarantee that this won't be the case.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-56187"></a> 
+ <div id="c56187" class="comment clear-block"> 
+  <h3><a href="/problems/RRCODE#comment-56187" class="active">a simple strip() at end</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sayan_paul">sayan_paul</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2013 12:37 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    a simple strip() at end caused a lot of silly WA. Wish i would've seen this during the contest
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71854"></a> 
+ <div id="c71854" class="comment clear-block"> 
+  <h3><a href="/problems/RRCODE#comment-71854" class="active">Important: Note that k can be</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/k1026501">k1026501</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2014 08:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Important: Note that k can be 0. It caused me a lot of trouble.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75405"></a> 
+ <div id="c75405" class="comment clear-block"> 
+  <h3><a href="/problems/RRCODE#comment-75405" class="active">what's k??</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/helix">helix</a></strong>
+   <span style="color:#828282"> @ 17 Mar 2014 05:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what's k??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85637"></a> 
+ <div id="c85637" class="comment clear-block"> 
+  <h3><a href="/problems/RRCODE#comment-85637" class="active">why k is needed????</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ajitesh69">ajitesh69</a></strong>
+   <span style="color:#828282"> @ 24 Sep 2014 06:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why k is needed????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-98781"></a> 
+ <div id="c98781" class="comment clear-block"> 
+  <h3><a href="/problems/RRCODE#comment-98781" class="active">why k is needed?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harendra123">harendra123</a></strong>
+   <span style="color:#828282"> @ 8 Mar 2015 09:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why k is needed?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

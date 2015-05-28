@@ -1,0 +1,443 @@
+<div id="node-1640317" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p style="text-align:justify"> The Little Elephant from the Zoo of Lviv has an array <b>A</b> that consists of <b>N</b> positive integers. Let <b>A[i]</b> be the <b>i</b>-th number in this array (<b>i = 1, 2, ..., N</b>).</p> 
+  <p style="text-align:justify"> Find the minimal number <b>x &gt; 1</b> such that <b>x</b> is a divisor of all integers from array <b>A</b>. More formally, this <b>x</b> should satisfy the following relations: </p> 
+  <p style="text-align:center"> <b>A[1] mod x = 0</b>, <b>A[2] mod x = 0</b>, ..., <b>A[N] mod x = 0</b>, </p> 
+  <p style="text-align:justify"> where <b>mod</b> stands for the modulo operation. For example, <b> 8 mod 3 = 2</b>, <b> 2 mod 2 = 0</b>, <b>100 mod 5 = 0</b> and so on. If such number does not exist, output <b>-1</b>.</p> 
+  <h3>Input</h3> 
+  <p style="text-align:justify"> The first line of the input contains a single integer <b>T</b>, the number of test cases. <b>T</b> test cases follow. The first line of each test case contains a single integer <b>N</b>, the size of the array <b>A</b> for the corresponding test case. The second line contains <b>N</b> space separated integers <b>A[1]</b>, <b>A[2]</b>, ..., <b>A[N]</b>. </p> 
+  <h3>Output</h3> 
+  <p style="text-align:justify"> For each test case output a single line containing the answer for the corresponding test case. </p> 
+  <h3>Constraints</h3> 
+  <p style="text-align:justify"> <b>1</b> ? <b>T</b> ? <b>100000</b></p> 
+  <p><b>1</b> ? <b>N</b> ? <b>100000</b></p> 
+  <p>The sum of values of <b>N</b> in each test file does not exceed <b>100000</b></p> 
+  <p><b>1</b> ? <b>A[i]</b> ? <b>100000</b> </p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+2
+3
+2 4 8
+3
+4 7 5
+
+<b>Output:</b>
+2
+-1
+
+</pre>
+  <h3>Explanation</h3> 
+  <p style="text-align:justify"> <b>Case 1.</b> Clearly 2 is a divisor of each of the numbers 2, 4 and 8. Since 2 is the least number greater than 1 then it is the answer. </p> 
+  <p style="text-align:justify"> <b>Case 2.</b> Let's perform check for several first values of <b>x</b>. </p> 
+  <p style="text-align:justify"> </p>
+  <table width="50%" border="1"> 
+   <tbody>
+    <tr> 
+     <td><b>x</b></td> 
+     <td><b>4 mod x</b></td> 
+     <td><b>7 mod x</b></td> 
+     <td><b>5 mod x</b></td> 
+    </tr> 
+    <tr> 
+     <td>2</td> 
+     <td>0</td> 
+     <td>1</td> 
+     <td>1</td> 
+    </tr> 
+    <tr> 
+     <td>3</td> 
+     <td>1</td> 
+     <td>1</td> 
+     <td>2</td> 
+    </tr> 
+    <tr> 
+     <td>4</td> 
+     <td>0</td> 
+     <td>3</td> 
+     <td>1</td> 
+    </tr> 
+    <tr> 
+     <td>5</td> 
+     <td>4</td> 
+     <td>2</td> 
+     <td>0</td> 
+    </tr> 
+    <tr> 
+     <td>6</td> 
+     <td>4</td> 
+     <td>1</td> 
+     <td>5</td> 
+    </tr> 
+    <tr> 
+     <td>7</td> 
+     <td>4</td> 
+     <td>0</td> 
+     <td>5</td> 
+    </tr> 
+    <tr> 
+     <td>8</td> 
+     <td>4</td> 
+     <td>7</td> 
+     <td>5</td> 
+    </tr> 
+    <tr> 
+     <td>9</td> 
+     <td>4</td> 
+     <td>7</td> 
+     <td>5</td> 
+    </tr> 
+   </tbody>
+  </table> 
+  <p></p> 
+  <p style="text-align:justify"> As we see each number up to 9 does not divide all of the numbers in the array. Clearly all larger numbers also will fail to do this. So there is no such number <b>x &gt; 1</b> and the answer is <b>-1</b>. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/witua">witua</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/LEDIV">http://discuss.codechef.com/problems/LEDIV</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook28"> cook28 </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a><a class="problem-tag-small " href="/tags/problems/simple-math"> simple-math </a><a class="problem-tag-small " href="/tags/problems/witua"> witua </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>20-10-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/LEDIV">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-34357"></a> 
+ <div id="c34357" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-34357" class="active">soy ruka</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/boxer2012">boxer2012</a></strong>
+   <span style="color:#828282"> @ 20 Nov 2012 07:17 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    soy ruka
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36642"></a> 
+ <div id="c36642" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-36642" class="active">Can anyone tell me whats the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yashvardhan90">yashvardhan90</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2013 12:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone tell me whats the issue with this code, why its wrong answer I have checked for so many test cases and I don't see any discrepancy. #include #include long a[100000]; int main() { long t,n,i,j,c,max;int flag; scanf("%d",&amp;t); while(t--) { c=0;flag=1; scanf("%d",&amp;n); for (i=0;imax) max =a[i];} for (j=2;j
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36643"></a> 
+ <div id="c36643" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-36643" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yashvardhan90">yashvardhan90</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2013 12:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/1754844" title="http://www.codechef.com/viewsolution/1754844">http://www.codechef.com/viewsolution/1754844</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36646"></a> 
+ <div id="c36646" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-36646" class="active">@yashvardhan90 : Consider</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2013 12:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @yashvardhan90 : Consider the test case : 1 3 6 9 24 Your answer is -1 . The correct answer is = 3 . There are two errors in your code . 1. Consider this line of code " for (j=2;j &lt; ceil(sqrt(max)) ; j++) " The condition should be j&lt;= ceil(sqrt(max)) Since supposed max = 36 . You also want to keep j = 6 . Currently it will go only till 5. 2. You have reinitialize the value of c to 0 before the start of above loop . Because for each candidate factor you have to count again from 0 , how many numbers are divisible by it .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36647"></a> 
+ <div id="c36647" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-36647" class="active">@yashvardhan90 : In the above</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2013 12:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @yashvardhan90 : In the above comment , test case is : 1 ( number of test cases ) 3 ( the number of numbers in the arrays ) 6 9 24 ( the array entries ) . I wrote them on seperate lines , but when I posted it all came on single line . So for clarity i am writing this again .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36653"></a> 
+ <div id="c36653" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-36653" class="active">@vineetpaliwal : thanks for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yashvardhan90">yashvardhan90</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2013 01:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vineetpaliwal : thanks for that correction but I am still getting wrong answer on submission.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36654"></a> 
+ <div id="c36654" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-36654" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yashvardhan90">yashvardhan90</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2013 01:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/1754961" title="http://www.codechef.com/viewsolution/1754961">http://www.codechef.com/viewsolution/1754961</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36656"></a> 
+ <div id="c36656" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-36656" class="active">@yashvardhan90 : Consider the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2013 02:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @yashvardhan90 : Consider the test case : 1 ( number of test cases ) 3 ( number of numbers ) 7 7 7 ( the actual numbers ) . Your answer is -1 . The correct answer is 7 . Its okay to check till sqrt(max) for factors but also check max for factor seperately .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36661"></a> 
+ <div id="c36661" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-36661" class="active">@vineetpaliwal : no</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yashvardhan90">yashvardhan90</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2013 03:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vineetpaliwal : no joy 
+    <a href="http://www.codechef.com/viewsolution/1755069" title="http://www.codechef.com/viewsolution/1755069">http://www.codechef.com/viewsolution/1755069</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36662"></a> 
+ <div id="c36662" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-36662" class="active">@yashvardhan90 : Sorry , I</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2013 04:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @yashvardhan90 : Sorry , I forgot to mention it earlier . It does not help to check till sqrt(max) unless you check the corresponding factor also in the loop . So max = 36 , sqrt(max) = 6 . And say example is , 1 (number of test case ) 2 (number of numbers) 12 36 ( actual numbers ) . You will check till 6 and then check 36 and output -1 which is wrong . For each j = 2 to sqrt(max) if ((max%j)==0) also check max/j for being a possible answer . Note unlike j which is increasing max/j is decreasing , so the first answer found is not necessarily the answer .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46591"></a> 
+ <div id="c46591" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-46591" class="active">@vineetpaliwal how can the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashishtilokani">ashishtilokani</a></strong>
+   <span style="color:#828282"> @ 26 Jun 2013 06:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vineetpaliwal how can the answer for 1 3 6 9 24 be 3...3 does not divide 1
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46607"></a> 
+ <div id="c46607" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-46607" class="active">@ashishtilokani - actually</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kashish55">kashish55</a></strong>
+   <span style="color:#828282"> @ 27 Jun 2013 12:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ashishtilokani - actually its is ..1 - test case ,3 .. N , and 6 9 24 are the inputs, so ans is 3
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-56225"></a> 
+ <div id="c56225" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-56225" class="active">could someone tell me the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sansid">sansid</a></strong>
+   <span style="color:#828282"> @ 24 Sep 2013 11:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    could someone tell me the error in my code 
+    <a href="http://www.codechef.com/viewsolution/2711088" title="http://www.codechef.com/viewsolution/2711088">http://www.codechef.com/viewsolution/2711088</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68487"></a> 
+ <div id="c68487" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-68487" class="active">Can someone point out the bug</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prkshverma09">prkshverma09</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2013 10:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone point out the bug in my code, I am getting wrong answer, have I missed any edge case, thanks in advance: 
+    <a href="http://www.codechef.com/viewsolution/3126193" title="http://www.codechef.com/viewsolution/3126193">http://www.codechef.com/viewsolution/3126193</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78320"></a> 
+ <div id="c78320" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-78320" class="active">can anyone tell me what i am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anurag89sharma">anurag89sharma</a></strong>
+   <span style="color:#828282"> @ 19 May 2014 05:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone tell me what i am missing in my code.... I am getting wrong answer... every time. Thanks in advance. Here is my link for the code 
+    <a href="http://www.codechef.com/viewsolution/3925193" title="http://www.codechef.com/viewsolution/3925193">http://www.codechef.com/viewsolution/3925193</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80666"></a> 
+ <div id="c80666" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-80666" class="active">anyone plzz check what the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hmnshgpt455">hmnshgpt455</a></strong>
+   <span style="color:#828282"> @ 6 Jul 2014 08:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    anyone plzz check what the problem is in my code...i am getting correct answer for the test cases but on submission its giving wrong answer...plzz anyone help ... 
+    <a href="http://www.codechef.com/viewsolution/4233382" title="http://www.codechef.com/viewsolution/4233382">http://www.codechef.com/viewsolution/4233382</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80674"></a> 
+ <div id="c80674" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-80674" class="active">i have tried to correct my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hmnshgpt455">hmnshgpt455</a></strong>
+   <span style="color:#828282"> @ 6 Jul 2014 08:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i have tried to correct my code but getting wrong answer plz...anybody plz check... 
+    <a href="http://www.codechef.com/viewsolution/4233761" title="http://www.codechef.com/viewsolution/4233761">http://www.codechef.com/viewsolution/4233761</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82131"></a> 
+ <div id="c82131" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-82131" class="active">How can you write at the end?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/singh_abhinav">singh_abhinav</a></strong>
+   <span style="color:#828282"> @ 27 Jul 2014 08:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    How can you write at the end? that all other numbers greater will fail to do so?? as in the case of 22,33,77 this can't be said!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85521"></a> 
+ <div id="c85521" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-85521" class="active">whats the problem with my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nemo11">nemo11</a></strong>
+   <span style="color:#828282"> @ 20 Sep 2014 10:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    whats the problem with my code?? it is giving wrong ans..plzz help.. #include #include #include long int gcd(long int,long int); int main() { long int t,i,n,x,p; scanf("%ld",&amp;t); while(t--) { p=0; scanf("%ld",&amp;n); long int arr[n]; for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86052"></a> 
+ <div id="c86052" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-86052" class="active">@nemo11 GCD is greatest</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pranjalranjan">pranjalranjan</a></strong>
+   <span style="color:#828282"> @ 30 Sep 2014 08:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @nemo11 GCD is greatest common divisor. Here minimal common divisor is asked. Suppose input case is 4 8 12, then gcd is 4(which ur code will give). However the minimum number required is 2(satisfies this condition as per question).
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92075"></a> 
+ <div id="c92075" class="comment clear-block"> 
+  <h3><a href="/problems/LEDIV#comment-92075" class="active">@admin where is my submission</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jainshraddha">jainshraddha</a></strong>
+   <span style="color:#828282"> @ 21 Dec 2014 08:18 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin where is my submission failing? 
+    <a href="http://www.codechef.com/viewsolution/5625053" title="http://www.codechef.com/viewsolution/5625053">http://www.codechef.com/viewsolution/5625053</a> can you please provide with the test case
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

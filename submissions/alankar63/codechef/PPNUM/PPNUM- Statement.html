@@ -1,0 +1,146 @@
+<div id="node-3721098" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in Russian <a target="_blank" href="http://www.codechef.com/download/translated/COOK39/russian/PPNUM.pdf">here</a></h3> 
+  <p>Polo, the Penguin, likes numbers. He says that the goodness of a number is itself multiplied by the number of digits in it's decimal representation. For example, the goodness of the integer <b>474</b> is <b>474*3 = 1422</b>.</p> 
+  <p>Help him to count the sum of goodness of all integers from <b>L</b> to <b>R</b>, inclusive. Since the answer can be too large, output it modulo <b>1,000,000,007 (10^9+7)</b>.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows. The only line of each test case contains the pair of integers <b>L</b> and <b>R</b>, separated by a single space.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing the answer to the corresponding test case.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ? <b>T</b> ? <b>1,000</b></li> 
+   <li><b>1</b> ? <b>L</b> ? <b>R</b> ? <b>1,000,000,000 (10^9)</b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+1
+9 12
+
+<b>Output:</b>
+75
+
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Example case 1.</b> The answer is <b>9*1 + 10*2 + 11*2 + 12*2 = 75</b>.</p> 
+  <p>&nbsp;</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/witua">witua</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/PPNUM">http://discuss.codechef.com/problems/PPNUM</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/cook39"> cook39 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/witua"> witua </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>23-09-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/PPNUM">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-60903"></a> 
+ <div id="c60903" class="comment clear-block"> 
+  <h3><a href="/problems/PPNUM#comment-60903" class="active">I am getting wrong answer on</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jaspal1329">jaspal1329</a></strong>
+   <span style="color:#828282"> @ 21 Oct 2013 09:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting wrong answer on this code. Please suggest some test case for which this might not be working import java.io.*; class Main { public static void main(String args[])throws IOException { BufferedReader br=new BufferedReader(new InputStreamReader(System.in)); int testcase=Integer.parseInt(br.readLine()); String str=br.readLine(); String str1[]=str.split(" "); long sum=0l; long mod=1000000007l; long a=Long.parseLong(str1[0]); long b=Long.parseLong(str1[1]); for(long i=a;i&lt;=b;i++) { String as=String.valueOf(i); long aslength=as.length(); sum+=aslength*i; } System.out.println((sum%mod)); } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-61141"></a> 
+ <div id="c61141" class="comment clear-block"> 
+  <h3><a href="/problems/PPNUM#comment-61141" class="active">Good question</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/avinashnb141">avinashnb141</a></strong>
+   <span style="color:#828282"> @ 25 Oct 2013 10:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Good question
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65412"></a> 
+ <div id="c65412" class="comment clear-block"> 
+  <h3><a href="/problems/PPNUM#comment-65412" class="active">I have a problem with my code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/achrafmam2">achrafmam2</a></strong>
+   <span style="color:#828282"> @ 28 Nov 2013 08:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I have a problem with my code can anyone fix it please: #include int ndigits( unsigned long long int num ) { int digits = 0; while( num ) { digits++; num /= 10; } return digits; } int main( void ) { int num_cases, digits; unsigned long long int good_num, /* goodness of the number */ left, right; scanf("%i", &amp;num_cases); while( num_cases-- ) { scanf("%llu %llu", &amp;left, &amp;right); good_num = 0; digits = ndigits(left); while( left &lt;= right ) { good_num += (left * digits) % 1000000007 ; good_num %= 1000000007; left++; if( (left % 10) == 0 ) digits++; } printf("%llun", good_num); } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93749"></a> 
+ <div id="c93749" class="comment clear-block"> 
+  <h3><a href="/problems/PPNUM#comment-93749" class="active">why this code is giving wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rohit1gupta3_6">rohit1gupta3_6</a></strong>
+   <span style="color:#828282"> @ 16 Jan 2015 05:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why this code is giving wrong answer 
+    <a href="http://www.codechef.com/viewsolution/5915880" title="http://www.codechef.com/viewsolution/5915880">http://www.codechef.com/viewsolution/5915880</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104087"></a> 
+ <div id="c104087" class="comment clear-block"> 
+  <h3><a href="/problems/PPNUM#comment-104087" class="active">Wow. Dividing with / and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bholagabbar">bholagabbar</a></strong>
+   <span style="color:#828282"> @ 20 May 2015 05:15 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Wow. Dividing with / and typecasting it to int in python gives WA and dividing by // directly gives AC. I got so many WA's because of this. Am i missing something?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

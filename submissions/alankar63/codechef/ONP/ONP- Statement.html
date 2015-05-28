@@ -1,0 +1,1909 @@
+<div id="node-1604" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p align="justify"></p> 
+  <p>Reverse Polish Notation (RPN) is a mathematical notation where every operator follows all of its operands. For instance, to add three and four, one would write "3 4 +" rather than "3 + 4". If there are multiple operations, the operator is given immediately after its second operand; so the expression written "3 ? 4 + 5" would be written "3 4 ? 5 +" first subtract 4 from 3, then add 5 to that.</p> 
+  <p> Transform the algebraic expression with brackets into RPN form. </p> 
+  <p> You can assume that for the test cases below only single letters will be used, brackets [] will not be used and each expression has only one RPN form (no expressions like a*b*c)</p> 
+  <h3>Input</h3> 
+  <p align="left"> The first line contains t, the number of test cases (less then 100). </p> 
+  <p> Followed by t lines, containing an expression to be translated to RPN form, where the length of the expression is less then 400. </p> 
+  <h3>Output</h3> 
+  <pre>
+The <em>expression</em>s in RPN form, one per line.
+</pre> 
+  <h3>Example</h3> 
+  <pre>
+Input:
+3
+(a+(b*c))
+((a+b)*(z+x))
+((a+t)*((b+(a+c))^(c+d)))
+
+Output:
+abc*+
+ab+zx+*
+at+bac++cd+^*
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/admin">admin</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/admin"> admin </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>1-12-2008</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>5 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/ONP">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-62"></a> 
+ <div id="c62" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-62" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/skydiploma">skydiploma</a></strong>
+   <span style="color:#828282"> @ 26 May 2009 07:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I think that this problem should give out a list of 'symbols' like ,-,*, etc.<br> As it didnt mention that any non alphabet is to be considered as a symbol.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-187"></a> 
+ <div id="c187" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-187" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sanjay_ankur">sanjay_ankur</a></strong>
+   <span style="color:#828282"> @ 14 Jun 2009 03:50 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>a simple infix to postfix transformation????</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-439"></a> 
+ <div id="c439" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-439" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/diamondback">diamondback</a></strong>
+   <span style="color:#828282"> @ 19 Jul 2009 09:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Does anyone know if the ^ operator is for Exponent or binary XOr? They have different precedence.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-447"></a> 
+ <div id="c447" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-447" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 20 Jul 2009 06:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>It's the power operation.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-473"></a> 
+ <div id="c473" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-473" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anshu_ranjan">anshu_ranjan</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2009 07:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Is it needed to take care of precedence of the operators?? It is not mentioned in the problem.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-476"></a> 
+ <div id="c476" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-476" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2009 06:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>From what I can see, the operators are completely paranthesized.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-705"></a> 
+ <div id="c705" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-705" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/swirve">swirve</a></strong>
+   <span style="color:#828282"> @ 7 Aug 2009 02:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>if you assume that everything is parenthesized, and that everything not a lower case letter or a parenthesis is an operator, then you will solve the problem.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1044"></a> 
+ <div id="c1044" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-1044" class="active">very funny but it compiles</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sharath">sharath</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2009 12:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    very funny but it compiles and executes fine on my linux c++ and g++ compiler, and here i get a SIGSEGV error?? any ideas why this happening?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1045"></a> 
+ <div id="c1045" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-1045" class="active">A SIGSEGV is usually caused</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2009 02:28 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>A SIGSEGV is usually caused if you try to access memory that is not available to your program. It is a segfault. Check the FAQ for more information.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1201"></a> 
+ <div id="c1201" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-1201" class="active">Do we have to consider the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aseem_pandey">aseem_pandey</a></strong>
+   <span style="color:#828282"> @ 23 Aug 2009 02:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Do we have to consider the inputs like : (a+((b+c)*(e+f))-(i+j)). because it transforms to (m+(n*o)- p)? Also please tell me that a expression like (a+(b+(c))) is valid ???? Summarily, should the no. of closing parenthesis be equal to no operators in the complete expression as in the sample input???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1202"></a> 
+ <div id="c1202" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-1202" class="active">please read the last line</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aseem_pandey">aseem_pandey</a></strong>
+   <span style="color:#828282"> @ 23 Aug 2009 02:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please read the last line like this- "Summarily, should the no. of closing parenthesis be equal to no. of operators in the complete expression as in the sample input?"
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1205"></a> 
+ <div id="c1205" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-1205" class="active">All inputs are fully</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 23 Aug 2009 06:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>All inputs are fully parantetized. I see nothing wrong with the inputs you have given. They perfectly fit the input definition provided in the statement and as such are valid. </p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1285"></a> 
+ <div id="c1285" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-1285" class="active">Is there any special case in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/himanshu mishra">himanshu mishra</a></strong>
+   <span style="color:#828282"> @ 28 Aug 2009 04:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><span>Is there any special case in this too? Because for sample inputs I am getting correct output, but when I submit, it says wrong answer. I have considered operators +,-,/,*,^ .</span></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1286"></a> 
+ <div id="c1286" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-1286" class="active">The code is tested against</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 28 Aug 2009 04:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The code is tested against test cases other than the sample ones.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1804"></a> 
+ <div id="c1804" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-1804" class="active">Is an expression like (a+b+c)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sumitdas083">sumitdas083</a></strong>
+   <span style="color:#828282"> @ 16 Sep 2009 12:13 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Is an expression like (a+b+c) valid?</p> 
+    <p>&nbsp;</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1980"></a> 
+ <div id="c1980" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-1980" class="active">are there any exceptional</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/muneer">muneer</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2009 11:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    are there any exceptional cases in the programme
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1986"></a> 
+ <div id="c1986" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-1986" class="active">No, the test cases are in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2009 02:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>No, the test cases are in accordance with the format specified.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2605"></a> 
+ <div id="c2605" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-2605" class="active">this is one of the problems</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jcomeau_ictx">jcomeau_ictx</a></strong>
+   <span style="color:#828282"> @ 22 Oct 2009 06:27 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>this is one of the problems where using psyco with Python makes sense, though it's still way slower than a C program with the algorithm I used.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2734"></a> 
+ <div id="c2734" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-2734" class="active">I dont know why I am still</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/srinivasan__">srinivasan__</a></strong>
+   <span style="color:#828282"> @ 25 Oct 2009 10:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I dont know why I am still getting "SIGSEGV" error while I try to submit for ONP problem. Can anybody help me out?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2737"></a> 
+ <div id="c2737" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-2737" class="active">SIGSEGV indicates a segfault.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 26 Oct 2009 01:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>SIGSEGV indicates a segfault. Check the <a href="/freelinking/FAQ" class="freelinking">FAQ</a> and <a href="http://www.codechef.com/wiki" title="www.codechef.com/wiki">www.codechef.com/wiki</a> for more details. You might want to check for areas in the code where you might be accessing memory you are not supposed to or which doesn't exist.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2745"></a> 
+ <div id="c2745" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-2745" class="active">are there more operators</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sanjayk">sanjayk</a></strong>
+   <span style="color:#828282"> @ 27 Oct 2009 11:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>are there more operators apart from <span class="Apple-style-span">+,-,/,*,^ ?<br></span></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2747"></a> 
+ <div id="c2747" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-2747" class="active">No.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 27 Oct 2009 11:27 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>No.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-3216"></a> 
+ <div id="c3216" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-3216" class="active">Just pointing out a small</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Alexander Supertramp">Alexander Supertramp</a></strong>
+   <span style="color:#828282"> @ 14 Nov 2009 04:55 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Just pointing out a small spelling error...</p> 
+    <p>In the 'Input' section of the problem description, it should be 'less than', not 'less then'.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4032"></a> 
+ <div id="c4032" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-4032" class="active">anybody has input data for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mosiesrm">mosiesrm</a></strong>
+   <span style="color:#828282"> @ 9 Dec 2009 10:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>anybody has input data for testing this problem?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5650"></a> 
+ <div id="c5650" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-5650" class="active">I think the problem statement</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/a2ms">a2ms</a></strong>
+   <span style="color:#828282"> @ 8 Feb 2010 06:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I think the problem statement needs to be a little more specific, like if we have to consider upper and lower case to the single letters and which operations are supported. Is it just the ones showed as example (+ - *) or the complete basic operations (+ - * /) or does it even include more symbols like exponentiation (^) or left (-)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5651"></a> 
+ <div id="c5651" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-5651" class="active">of course i'm blind and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/a2ms">a2ms</a></strong>
+   <span style="color:#828282"> @ 8 Feb 2010 07:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>of course i'm blind and didn't saw that the exponentiation is actually included...</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5868"></a> 
+ <div id="c5868" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-5868" class="active">do v have to put input like</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sahilkalra">sahilkalra</a></strong>
+   <span style="color:#828282"> @ 17 Feb 2010 04:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>do v have to put input like abc or the numerical value and get the answer?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-6126"></a> 
+ <div id="c6126" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-6126" class="active">For u who working with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jod4ta">jod4ta</a></strong>
+   <span style="color:#828282"> @ 1 Mar 2010 02:02 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>For u who working with python, my esperrience below might help.</p> 
+    <p>I always get "runtime error" for this task, today i submit, and still get "runtime error" and then i submit my second code for the purpose to get at least "wrong answer" :</p> 
+    <p>for i in range(t_input):<br> infix=raw_input()<br> print 'wtf'</p> 
+    <p>I am shock when i get "correct answer" with time 0.78 s. Then i submit again my wrong submission and finally get "wrong answer". Then i go to my account and look into my "RECENT ACTIVITY FOR THIS USER" and get check mark for first submission and get cross mark for the other.</p> 
+    <p>I know i'm newbie but this is too weird for me. Can someone explain it to me?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-7768"></a> 
+ <div id="c7768" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-7768" class="active">i cannot use getche() to get</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saurabh167">saurabh167</a></strong>
+   <span style="color:#828282"> @ 9 Apr 2010 08:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i cannot use getche() to get my input... ????</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8146"></a> 
+ <div id="c8146" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-8146" class="active">In the Sample problems we</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/darkmonk">darkmonk</a></strong>
+   <span style="color:#828282"> @ 29 Apr 2010 02:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>In the Sample problems we don't need to check the operator precedence.. are there other cases in which it is required.. as m getting wrong answer but have tried many combinations according to the sample cases given.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8147"></a> 
+ <div id="c8147" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-8147" class="active">That is already mentioned in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 29 Apr 2010 04:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>That is already mentioned in earlier comments.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8354"></a> 
+ <div id="c8354" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-8354" class="active">its saying wrong answer pls</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ni8mare">ni8mare</a></strong>
+   <span style="color:#828282"> @ 11 May 2010 09:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>its saying wrong answer pls help me</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8355"></a> 
+ <div id="c8355" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-8355" class="active">still wrong answer pls help</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ni8mare">ni8mare</a></strong>
+   <span style="color:#828282"> @ 11 May 2010 09:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>still wrong answer pls help</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8419"></a> 
+ <div id="c8419" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-8419" class="active">Does "Time Limit Exceeded"</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Sand33Prakash">Sand33Prakash</a></strong>
+   <span style="color:#828282"> @ 16 May 2010 02:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Does "Time Limit Exceeded" mean that the solution was correct but only the time limit was not met?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8420"></a> 
+ <div id="c8420" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-8420" class="active">FAQ</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 16 May 2010 04:15 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><a href="/freelinking/FAQ" class="freelinking">FAQ</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8425"></a> 
+ <div id="c8425" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-8425" class="active">@Stephen Merriman :</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Sand33Prakash">Sand33Prakash</a></strong>
+   <span style="color:#828282"> @ 16 May 2010 04:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@<b>Stephen Merriman</b> : Thanks</p> 
+    <p>With respect to the post from "<b>Aseem Kumar</b> - 23rd Aug,2009 14:52:48.", in reply to which "<b>Admin</b> - 23rd Aug,2009 18:03:51" says that expression of the form (m+(n*o)- p) is totally valid expression. This expression further transforms to (m+x-p). I wonder as to how this can be correct as it is stated in the question that "(no expressions like a*b*c)". Should we handle these kind of expressions as well?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8426"></a> 
+ <div id="c8426" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-8426" class="active">@Stephen Merriman :</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Sand33Prakash">Sand33Prakash</a></strong>
+   <span style="color:#828282"> @ 16 May 2010 04:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@<b>Stephen Merriman</b> : Thanks<br></p>
+    <p>With respect to the post from "<b>Aseem Kumar</b> - 23rd Aug,2009 14:52:48.", in reply to which "<b>Admin</b> - 23rd Aug,2009 18:03:51" says that expression of the form (m+(n*o)- p) is totally valid expression. This expression further transforms to (m+x-p). I wonder as to how this can be correct as it is stated in the question that "(no expressions like a*b*c)". Should we handle these kind of expressions as well?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8430"></a> 
+ <div id="c8430" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-8430" class="active">Does the "SUCCESSFUL</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Sand33Prakash">Sand33Prakash</a></strong>
+   <span style="color:#828282"> @ 16 May 2010 08:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Does the "SUCCESSFUL SUBMISSIONS FOR THIS PROBLEM:" contain only the 1st correct submission only is it? I submitted my solution which took 0.45 Sec and later I improved my algorithm (offcourse seeing the implementation in other language) and reduced the runtime to 0.19. I do not see an entry for this.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8472"></a> 
+ <div id="c8472" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-8472" class="active">Can anyone help me out with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tlgylmz">tlgylmz</a></strong>
+   <span style="color:#828282"> @ 19 May 2010 07:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Can anyone help me out with my solution. It says :"wrong answer". But I could not point out the problem on my own.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8473"></a> 
+ <div id="c8473" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-8473" class="active">here it goes</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tlgylmz">tlgylmz</a></strong>
+   <span style="color:#828282"> @ 19 May 2010 07:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>here it goes :&nbsp;http://www.codechef.com/viewsolution/243885</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8948"></a> 
+ <div id="c8948" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-8948" class="active">Are there any exceptional</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ronzii">ronzii</a></strong>
+   <span style="color:#828282"> @ 13 Jun 2010 10:21 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Are there any exceptional test cases?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9592"></a> 
+ <div id="c9592" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-9592" class="active">I hve solved problems in my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rafaftahsin">rafaftahsin</a></strong>
+   <span style="color:#828282"> @ 19 Jul 2010 10:59 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I hve solved problems in my computer using Turbo C++ IDE...it gives correct solutions...but when i submit it...it sayz error...!!! I can't fix the problem...!!!</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9593"></a> 
+ <div id="c9593" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-9593" class="active">You haven't made any</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 19 Jul 2010 01:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>You haven't made any submissions to this problem. Did you mean Small Factorials instead? If so, you should read the <a href="/freelinking/FAQ" class="freelinking">FAQ</a>. Also, your most recent submission doesn't work for any large inputs - try some.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9709"></a> 
+ <div id="c9709" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-9709" class="active">my program is working</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/divyark">divyark</a></strong>
+   <span style="color:#828282"> @ 27 Jul 2010 12:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>my program is working perfectly fine for single infix expression.... i am using gets function to collect the infix expression...... but to collect the number of infix expressions ie the first input i cant use scanf bec gets doesnt work wen used after scanf plz guide me............</p> 
+    <p>printf("enter the number of expressions to convert:n);</p> 
+    <p>scanf("%d",&amp;y);??</p> 
+    <p>k=1;</p> 
+    <p>while(k&lt;=y)</p> 
+    <p>{</p> 
+    <p>&nbsp;printf(" enter the infix expression:n");</p> 
+    <p>gets(infix);????</p> 
+    <p>&nbsp;</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9710"></a> 
+ <div id="c9710" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-9710" class="active">Why not just continue to use</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 27 Jul 2010 01:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Why not just continue to use scanf then? Much simpler than trying to use gets.</p> 
+    <p>(By the way, your output must be exactly what the problem statement tells you to print out.. it doesn't start with the word 'enter'..)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9712"></a> 
+ <div id="c9712" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-9712" class="active">i will remove the print f s</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/divyark">divyark</a></strong>
+   <span style="color:#828282"> @ 27 Jul 2010 01:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i will remove the print f s while submitting in code chef...... in case i want 2 use scanf while taking in the infix expression i should give only fixed length infix expressions or i should be taking an input of size of the infix exp every time.........</p> 
+    <p>like</p> 
+    <p>for(i=0;i&lt;=4;i++)</p> 
+    <p>scanf("%c",&amp;infix[i]); // for giving (2+3) this is fine... but for giving ((2*3)-(1*2)) i hav 2 change the i&lt;=4 to i&lt;=14..... i cant do this 4 each input?......</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9713"></a> 
+ <div id="c9713" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-9713" class="active">Respected admin, I have 2</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Illusion03">Illusion03</a></strong>
+   <span style="color:#828282"> @ 27 Jul 2010 02:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Respected admin, I have 2 Question 2 ask?</p> 
+    <p>1) From the above given comments, I m not sure whether to check for Precedence of Operators or not b'cause there are already present inside parenthesis?</p> 
+    <p>2)which operators should i check for ... i have taken all the other ASCII characters as operators xcept (97-122,a-z) and (41 , 42 i.e (, ) )....or should i check for only basic operations like +,-,*,^,/ ?</p> 
+    <p>PLease Help as soon as possible .. I have submitted my code 6 times and all time wrong answer ! U can also have a look at my code !</p> 
+    <p>Thanks ! :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9722"></a> 
+ <div id="c9722" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-9722" class="active">Respected Admin, Sir I have</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Illusion03">Illusion03</a></strong>
+   <span style="color:#828282"> @ 28 Jul 2010 07:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><b>Respected Admin,</b></p> 
+    <p><b>Sir I have completed this Problem but before that i got about 6 wrong answers and they were only due to i used link-list for making stacks, but this time i used array for making stack and voila it was a correct submission...Can u just clear my doubt why i was getting wrong answer when i was using link-list,Although it was giving correct answer for every possible INFIX notation in DEVC++.</b></p> 
+    <p><b>Thanks ! :)<br></b></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9775"></a> 
+ <div id="c9775" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-9775" class="active">can anyone plz tell me what's</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/credo">credo</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2010 11:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can anyone plz tell me what's wrong wid this code? i'm getting the right output on ma gcc compiler!</p> 
+    <p>thanx :)</p> 
+    <p>#include&lt;stdio.h&gt;<br>#include&lt;string.h&gt;<br>#define MAX 20<br>char stack[MAX];<br>int top=-1;<br>char pop();<br>void push(char item);<br>int prcd(char symbol)<br>{<br> switch(symbol)<br> {<br> case '+':<br> case '-':return 2;<br> case '*':<br> case '/':return 4;<br> case '^':<br> case '$':return 6;<br> case '(':<br> case ')':<br> case '#':return 1;<br> }<br> }<br>int isoperator(char symbol)<br>{<br> switch(symbol)<br> {<br> case '+':<br> case '-':<br> case '*':<br> case '/':<br> case '^':<br> case '$':<br> case '(':<br> case ')':return 1;<br> default:return 0;<br> }<br> }<br>void convertip(char infix[],char postfix[]){<br> int i,symbol,j=0;<br> char test[MAX];<br> stack[++top]='#';<br> for(i=0;i&lt;strlen(infix);i++){<br> symbol=infix[i];<br> if(isoperator(symbol)==0){<br> postfix[j]=symbol;<br> j++;<br> }<br> else{<br> if(symbol=='(')push(symbol);<br> else if(symbol==')'){<br> while(stack[top]!='('){<br> postfix[j]=pop();<br> j++;<br> }<br> pop();//pop out (.<br> }<br> else{<br> if(prcd(symbol)&gt;prcd(stack[top]))<br> push(symbol);<br> else{<br> while(prcd(symbol)&lt;=prcd(stack[top])){<br> postfix[j]=pop();<br> j++;<br> }<br> push(symbol);<br> }//end of else.<br> }//end of else.<br> }//end of else.<br> }//end of for.<br> while(stack[top]!='#')<br> {<br> postfix[j]=pop();<br> j++;<br> }<br> postfix[j]=' ';//null terminate string.<br> }<br><br>void push(char item){<br> top++;<br> stack[top]=item;<br> }<br>char pop(){<br> char a;<br> a=stack[top];<br> top--;<br> return a;<br> }<br><br>int main(){<br> unsigned int inputs,i;<br> char infix[400],postfix[400];<br> scanf("%d",&amp;inputs);<br> for(i=0;i&lt;inputs;i++){<br> scanf("%s",infix);<br> convertip(infix,postfix);<br> printf("%s",postfix); <br> }<br> return 0;<br>}<br><br><br></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9937"></a> 
+ <div id="c9937" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-9937" class="active">hi I've submitted the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shwetanka_19">shwetanka_19</a></strong>
+   <span style="color:#828282"> @ 9 Aug 2010 03:04 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>hi</p> 
+    <p>I've submitted the solution many times but everytime I'm getting a wrong answer. I've tried different ways to solve but nothing seems working. Can I find out what I'm missing. Thanks</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10112"></a> 
+ <div id="c10112" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-10112" class="active">#include&lt;stdio.h&gt;#include&lt;std</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/padmaja_39">padmaja_39</a></strong>
+   <span style="color:#828282"> @ 20 Aug 2010 07:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>#include&lt;stdio.h&gt;<br>#include&lt;stdlib.h&gt;<br>#define stacksize 100 <br>#include&lt;string.h&gt;<br>int top=-1;<br>char st[stacksize];<br>void push(char a);<br>char pop();<br>char peek();<br>void push(char a)<br>{<br>&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp; if(top==(stacksize-1))<br>&nbsp;&nbsp;&nbsp;&nbsp; printf("stack full");<br>&nbsp;&nbsp;&nbsp;&nbsp; else<br>&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ++top;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //printf("hi%d",top);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; st[top]=a;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }}<br>char pop()<br>{<br>&nbsp;&nbsp;&nbsp; if(top==-1)<br>&nbsp;&nbsp;&nbsp; return 0;<br>&nbsp;&nbsp;&nbsp; else<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //top = top-1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return st[top--];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>char peek()<br>{<br>&nbsp;&nbsp;&nbsp; if(top==-1)<br>&nbsp;&nbsp;&nbsp; return 0;<br>&nbsp;&nbsp;&nbsp; else<br>&nbsp;&nbsp;&nbsp; return st[top];<br>&nbsp;&nbsp;&nbsp; }<br>char p[8][2]={{'(',-1},{'+',1},{'-',1},{'*',2},{'/',2},{'%',2},{'^',3},{')',4}};<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>int ch,i,j,m,k=0,n,test;<br>char a[400];char pd[100][400];char expr[400];char a1[400];</p> 
+    <p>//printf("enter expression");<br>scanf("%d",&amp;test);<br>//printf("%s",a);</p> 
+    <p>//for(i=0;a[i]!=' ';i++)<br>//printf("%c",a[i]);<br>if(test &lt; 100)<br>{<br>for(m=0;m&lt;test;m++)<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf("%s",a1);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; strcpy(pd[m],a1);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }}<br>for(m=0;m&lt;test;m++)<br>{<br>strcpy(a,pd[m]);<br>for( i=0;a[i]!=' ';i++)<br>{<br>&nbsp;&nbsp;&nbsp; //printf("%c",a[i]);<br>&nbsp;&nbsp;&nbsp;&nbsp; if(a[i] == '(')<br>&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //printf("one");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; push(a[i]);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else if(a[i]&gt;='a' &amp;&amp; a[i]&lt;='z')<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //printf("two");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; expr[k++] = a[i];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else if(a[i] == ')')<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //printf("three");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char item;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; item=pop();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while(item!='(')<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; expr[k++] = item;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; item = pop();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //printf("four");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int precedence;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for( j=0;j&lt;8;j++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(p[j][0] == a[i])<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; precedence = p[j][1];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //printf("%d",precedence);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int precedence1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char rj = peek();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for( j=0;j&lt;8;j++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(p[j][0] == rj)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; precedence1 = p[j][1];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //printf("%d",precedence1);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(precedence1 &gt;= precedence)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char rt = pop();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; expr[k++] = rt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; push(a[i]);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n=k;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(i=0;i&lt;n;i++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("%c",expr[i]);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("n"); <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; k=0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> 
+    <p>return 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10113"></a> 
+ <div id="c10113" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-10113" class="active">my code is not getting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/padmaja_39">padmaja_39</a></strong>
+   <span style="color:#828282"> @ 20 Aug 2010 07:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>my code is not getting accepted.It shows run time error.How can i resolve it?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10828"></a> 
+ <div id="c10828" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-10828" class="active">http://en.wikipedia.org/wiki/</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/default1130">default1130</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2010 08:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://en.wikipedia.org/wiki/Shunting-yard_algorithm" title="http://en.wikipedia.org/wiki/Shunting-yard_algorithm">http://en.wikipedia.org/wiki/Shunting-yard_algorithm</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10830"></a> 
+ <div id="c10830" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-10830" class="active">i m getting runtime error for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sarathsat">sarathsat</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2010 09:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i m getting runtime error for my code. But it s working perfectly in my pc.. plz help me in resolving it.. #include #include void compute(char a[]); char b[100][400]; int main() { int n=0; int i,end; scanf("%d",&amp;n); for( i=0;i=97&amp;&amp; (int)b[i][h] &lt;=122) { operand[j]=b[i][h];j++; } else { operator[k]=b[i][h]; if(operator[k]==')') { k--; do { operand[j++]=operator[k--]; }while(operator[k]!='('); k--; } k++; } h++; } for(h=0;h
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10831"></a> 
+ <div id="c10831" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-10831" class="active">#include #include void</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sarathsat">sarathsat</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2010 09:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include void compute(char a[]); char b[100][400]; int main() { int n=0; int i,end; scanf("%d",&amp;n); for( i=0;i=97&amp;&amp; (int)b[i][h] &lt;=122) { operand[j]=b[i][h];j++; } else { operator[k]=b[i][h]; if(operator[k]==')') { k--; do { operand[j++]=operator[k--]; }while(operator[k]!='('); k--; } k++; } h++; } for(h=0;h
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11434"></a> 
+ <div id="c11434" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-11434" class="active">@admin: On my system I'm</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codu2009">codu2009</a></strong>
+   <span style="color:#828282"> @ 16 Oct 2010 06:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin:</p> 
+    <p>On my system I'm getting correct answer for many test cases I've created and also for the sample input given in the problem. May I know what is going wrong. My solution is : <a href="http://www.codechef.com/viewsolution/360251" title="http://www.codechef.com/viewsolution/360251">http://www.codechef.com/viewsolution/360251</a></p> 
+    <p>Thank you.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11536"></a> 
+ <div id="c11536" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-11536" class="active">how can i challenge my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tarun_kumar">tarun_kumar</a></strong>
+   <span style="color:#828282"> @ 23 Oct 2010 09:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>how can i challenge my friends on facebook.</p> 
+    <p>when i click on the link i cant see my friends list</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11897"></a> 
+ <div id="c11897" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-11897" class="active">I just found out that not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Anirudh Kishan">Anirudh Kishan</a></strong>
+   <span style="color:#828282"> @ 11 Nov 2010 07:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I just found out that not returning 0 in main will produce a Runtime Error!!!!</p> 
+    <p>&nbsp;</p> 
+    <p>Is it a convention or necessity to return 0? Logically, if a program runs successfully shouldn't it return 1?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11902"></a> 
+ <div id="c11902" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-11902" class="active">It is a necessity to return 0</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 12 Nov 2010 01:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>It is a necessity to return 0 (as mentioned in the <a href="/freelinking/FAQ" class="freelinking">FAQ</a>). Returning anything else is exactly what signals a runtime error.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11913"></a> 
+ <div id="c11913" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-11913" class="active">Thanks!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Anirudh Kishan">Anirudh Kishan</a></strong>
+   <span style="color:#828282"> @ 12 Nov 2010 06:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Thanks!</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12106"></a> 
+ <div id="c12106" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-12106" class="active">@admin: y cannt i submit</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/neoahead">neoahead</a></strong>
+   <span style="color:#828282"> @ 30 Nov 2010 11:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin: y cannt i submit solution to this problem???? tryin it from morning.... it says cannt submit solution itseems :(</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12107"></a> 
+ <div id="c12107" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-12107" class="active">SUMBODY reply .. zzZZzz..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/neoahead">neoahead</a></strong>
+   <span style="color:#828282"> @ 30 Nov 2010 12:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>SUMBODY reply .. zzZZzz.. need to move on to next problem..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12498"></a> 
+ <div id="c12498" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-12498" class="active">Can u tell why i am getting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mygaurav">mygaurav</a></strong>
+   <span style="color:#828282"> @ 22 Dec 2010 12:17 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Can u tell why i am getting wrong answer: i hv run the program for the test cases given and others</p> 
+    <p>my code is</p> 
+    <p><a href="http://www.codechef.com/viewsolution/404848">http://www.codechef.com/viewsolution/404848</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12506"></a> 
+ <div id="c12506" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-12506" class="active">i got the answer : but i wish</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mygaurav">mygaurav</a></strong>
+   <span style="color:#828282"> @ 22 Dec 2010 01:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i got the answer : but i wish to ask that why i was getting wrong answer when i used gets() instead of scanf() in getting infix string as input</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12507"></a> 
+ <div id="c12507" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-12507" class="active">fflush(stdin) is undefined</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 22 Dec 2010 01:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>fflush(stdin) is undefined and should never be used. See <a href="http://c-faq.com/stdio/gets_flush2.html" title="http://c-faq.com/stdio/gets_flush2.html">http://c-faq.com/stdio/gets_flush2.html</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12533"></a> 
+ <div id="c12533" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-12533" class="active">#include&lt;stdio.h&gt;#include&lt;str</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vishaldonderia">vishaldonderia</a></strong>
+   <span style="color:#828282"> @ 25 Dec 2010 12:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>#include&lt;stdio.h&gt;<br>#include&lt;string.h&gt;<br>int stack[100];int top =0;<br>int push(int f)<br>{top++;stack[top] = f;}<br>int pop()<br>{top--;return(stack[top+1]);}<br>int pre1(int d){<br>switch(d){<br>case 43:<br>case 45:<br>return 1;<br>break;<br>case 42:<br>case 47:<br>return 3 ;<br>break;<br>case&nbsp; 94:<br>return 6;<br>break;<br>case 40:<br>return 9;<br>break;<br>case 41:<br>return 0;<br>break;<br>default:<br>return 7;<br>break;}}<br>int pre2(int d){<br>switch(d){<br>case 43:<br>case 45:<br>return 2;<br>break;<br>case 42:<br>case 47:<br>return 4;<br>break;<br>case&nbsp; 94:<br>return 5;<br>break;<br>case 40:<br>return 0;<br>break;<br>default:<br>return 8;<br>break;}}<br>int main()<br>{stack[top] = '(';<br>char a[400];<br>int l,n,i,j,u,k;<br>scanf("%d",&amp;n);<br>for(k=1;k&lt;=n;k++){<br>scanf("%s",&amp;a);<br>l = strlen(a);<br>a[l]=')';<br>for(i=0;i&lt;l;i++){<br>j =a[i];<br>if(pre1(j)&gt;pre2(stack[top])){push(j);}<br>else{ while(pre1(j)&lt;pre2(stack[top]))<br>{<br>printf("%c",pop());}<br>if(pre1(j) == pre2(stack[top]))<br>u = pop();<br>else<br>push(j);}}<br>printf("n");}<br>}<br><strong>error shown in this code is RUNTIME ERROR ,and run time error&nbsp; is due "</strong>The most common reasons are using too much memory or dividing by zero<strong>"..but my memory is 1.6 M and i did'nt divide by zero..can any one tell me whats the error in my code ..please.</strong></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12563"></a> 
+ <div id="c12563" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-12563" class="active">hey can somebody plzz tell me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codeur">codeur</a></strong>
+   <span style="color:#828282"> @ 27 Dec 2010 01:18 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>hey can somebody plzz tell me why m i getting a wrong ans! I have tried almost every possible test case , even (!a) and (a) as well. but stil I cant find d mistake.&nbsp;<a href="http://www.codechef.com/viewsolution/407705">http://www.codechef.com/viewsolution/407705</a> is my code</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12581"></a> 
+ <div id="c12581" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-12581" class="active">hey can somebody plzz tell me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codeur">codeur</a></strong>
+   <span style="color:#828282"> @ 27 Dec 2010 08:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><span>hey can somebody plzz tell me why m i getting a wrong ans! I have tried almost every possible test case , even (!a) and (a) as well. but stil I cant find d mistake.&nbsp;<a href="http://www.codechef.com/viewsolution/407705">http://www.codechef.com/viewsolution/407705</a> is my code</span></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12879"></a> 
+ <div id="c12879" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-12879" class="active">yeeh solved!!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/junan_chakma">junan_chakma</a></strong>
+   <span style="color:#828282"> @ 10 Jan 2011 10:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>yeeh solved!!!</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13575"></a> 
+ <div id="c13575" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-13575" class="active">#include&lt;stdio.h&gt;char</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/singh_637">singh_637</a></strong>
+   <span style="color:#828282"> @ 9 Feb 2011 12:18 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>#include&lt;stdio.h&gt;<br><br><br><br>char stack[200];<br>int Top=-1;<br>char infix[400],postfix[400];<br>void PUSH(char x)<br>{<br> if(Top==200-1)<br> printf("n Over flow in stack");<br> else<br> stack[++Top]=x;<br>}<br><br><br>char POP()<br>{<br> if(Top==-1)<br> {<br> return (' ');<br> }<br> else<br> return(stack[Top--]);<br>}<br><br>int precedence(char d)<br>{<br> int value=0;<br> switch(d)<br> {<br> case '^':value=5;<br> break;<br> case '*':<br> case '/':value=4;<br> break;<br> case '-':<br> case '+':value=3;<br> break;<br> }<br> return value;<br>}<br><br>int main()<br>{<br> char c;<br> int p1=0,p2=0,i=0,j=0,testcase,z=0;<br> <br> printf("n Enter the number of test cases=");<br> scanf("%d",&amp;testcase);<br> while(testcase--)<br> {<br> Top=-1;<br> p1=0;p2=0;i=0;j=0;<br> printf(" n Enter the infix statement=");<br> scanf("%s",&amp;infix);<br> while(infix[i]!=' ')<br> {<br> if( infix[i]&gt;='a' &amp;&amp; infix[i]&lt;='z')<br> {<br> postfix[j]=infix[i];<br> j++;<br> }<br> else if(infix[i]=='^'||infix[i]=='*' || infix[i]=='/' ||infix[i]=='+' || infix[i]=='-')<br> {<br> p1=precedence(infix[i]);<br> Y : p2=precedence(stack[Top]);<br> if(p1&lt;=p2)<br> {<br> c=POP();<br> postfix[j]=c;<br> j++;<br> goto Y;<br><br> }<br> else<br> PUSH(infix[i]);<br> }<br> else if( infix[i]=='(')<br> PUSH(infix[i]);<br> else if(infix[i]==')')<br> {<br> while((c=POP())!='(')<br> {<br> postfix[j]=c;<br> j++;<br> }<br> }<br> i++;<br> }<br> postfix[++j]=' ';<br> printf(" n %s",postfix);<br> z++;<br> }<br> <br> return 1;<br>}<br><br></p> 
+    <p>&nbsp;</p> 
+    <p>Why am i getting runtime error?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13701"></a> 
+ <div id="c13701" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-13701" class="active">Try returning 0 , return 1</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/alanexe">alanexe</a></strong>
+   <span style="color:#828282"> @ 12 Feb 2011 04:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Try returning 0 , return 1 means that something went wrong</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13702"></a> 
+ <div id="c13702" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-13702" class="active">Im getting runtime error with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/alanexe">alanexe</a></strong>
+   <span style="color:#828282"> @ 12 Feb 2011 04:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Im getting runtime error with this soultion&nbsp;<br><a href="http://www.codechef.com/viewsolution/455706">http://www.codechef.com/viewsolution/455706</a><br><br>It runs ok on my pc.</p> 
+    <p>Anyone have some advice ?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-14388"></a> 
+ <div id="c14388" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-14388" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahiakil">rahiakil</a></strong>
+   <span style="color:#828282"> @ 25 Feb 2011 02:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><a href="http://www.codechef.com/viewsolution/468651">http://www.codechef.com/viewsolution/468651</a></p> 
+    <p>&nbsp;</p> 
+    <p>I am getting this as wrogn answer. Any help</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-14393"></a> 
+ <div id="c14393" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-14393" class="active">nice problem.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/devendra">devendra</a></strong>
+   <span style="color:#828282"> @ 25 Feb 2011 04:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>nice problem.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15974"></a> 
+ <div id="c15974" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-15974" class="active">@Admin, why my program always</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harish_8080">harish_8080</a></strong>
+   <span style="color:#828282"> @ 18 Apr 2011 03:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Admin, why my program always takes 1.6M, no matter how much memory I use.</p> 
+    <p>Even if I submit that Life, Universe and everything problem which needs only one variable in the program and simple loop and if statement. Still I get 1.6M ?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16473"></a> 
+ <div id="c16473" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-16473" class="active">I skimmed through the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/eipie">eipie</a></strong>
+   <span style="color:#828282"> @ 31 May 2011 10:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I skimmed through the comments like I usually do. The only really useful question is if (m+(n*o)- p) is valid. And the answer is NO it isn't. it should be written as (m-p+(n*o)) = (m-p)+(n*o). (m+(n*o)-p) isn't well formed.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16716"></a> 
+ <div id="c16716" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-16716" class="active">@admin Tested for about 100</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/malaykeshav">malaykeshav</a></strong>
+   <span style="color:#828282"> @ 8 Jun 2011 04:22 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin Tested for about 100 cases,but still giving the wrong answer.Need to know which option is going wrong ?!?! 
+    <a href="http://ideone.com/eU9D7" title="http://ideone.com/eU9D7">http://ideone.com/eU9D7</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17163"></a> 
+ <div id="c17163" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-17163" class="active">Hi cOdeRS, you Don't Need to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bodmas">bodmas</a></strong>
+   <span style="color:#828282"> @ 26 Jun 2011 12:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi cOdeRS, you Don't Need to consideR operATor precedEnCe to sOlVe thIS problEm!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18160"></a> 
+ <div id="c18160" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-18160" class="active">@admin, Can you please post</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chaitanyav">chaitanyav</a></strong>
+   <span style="color:#828282"> @ 14 Aug 2011 03:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin, Can you please post why my program is getting WA?.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18214"></a> 
+ <div id="c18214" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-18214" class="active">my last post gave me run time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vedp1">vedp1</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2011 10:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my last post gave me run time error can sum1 specify the reason....asmin..pls check...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18215"></a> 
+ <div id="c18215" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-18215" class="active">my last post gave me run time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vedp1">vedp1</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2011 10:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my last post gave me run time error can sum1 specify the reason....admin..pls check...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18216"></a> 
+ <div id="c18216" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-18216" class="active">@vedp1: the length of the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vijay91">vijay91</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2011 11:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vedp1: the length of the expression is less then 400 and you are using array of 60 characters... read more here 
+    <a href="http://www.codechef.com/wiki/faq#Why_do_I_get_a_Runtime_exception" title="http://www.codechef.com/wiki/faq#Why_do_I_get_a_Runtime_exception">http://www.codechef.com/wiki/faq#Why_do_I_get_a_Runtime_exception</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18637"></a> 
+ <div id="c18637" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-18637" class="active">should we also define </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahul09it64">rahul09it64</a></strong>
+   <span style="color:#828282"> @ 8 Sep 2011 03:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    should we also define exceptional cases like: (a+b*(c-d), a+b(c*d), etc as errors???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19005"></a> 
+ <div id="c19005" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-19005" class="active">plz supply tutorial about</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rokon1cuet_51">rokon1cuet_51</a></strong>
+   <span style="color:#828282"> @ 27 Sep 2011 04:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plz supply tutorial about this problem.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-21554"></a> 
+ <div id="c21554" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-21554" class="active">for all those who are trying</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prabal03">prabal03</a></strong>
+   <span style="color:#828282"> @ 26 Jan 2012 05:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    for all those who are trying to solve in c/c++ and getting 'wrong answer'. the problem may be that you all are not terminating the string by NULL... this may help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-22408"></a> 
+ <div id="c22408" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-22408" class="active">import java.io.*; class</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prateekraj1988">prateekraj1988</a></strong>
+   <span style="color:#828282"> @ 13 Feb 2012 06:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    import java.io.*; class RPN1 { static char arr[]; static void readd()throws Exception { int l,k=0; String s; File f=new File("Input1.txt"); FileReader fr=new FileReader(f); BufferedReader br=new BufferedReader(fr); FileReader fr1=new FileReader(f); BufferedReader br1=new BufferedReader(fr1); l=Integer.parseInt(br.readLine()); if(l&lt;100) { br1.readLine(); while((s=br.readLine())!=null) { k++; } if(l==k) { while((s=br1.readLine())!=null &amp;&amp; s.toCharArray().length&lt;400) { compute(s); } } } fr.close(); fr1.close(); } public static void main(String args[])throws Exception { try { readd(); } catch(Exception e) { e.printStackTrace(); } } static void compute(String s) { int i=0,j,p=1,k,t=0,m=0,n=0; arr=s.toCharArray(); while(arr[0]=='(' &amp;&amp; arr[arr.length-1]==')') { for(j=n;j='a' &amp;&amp; arr[j+1]&lt;='z')) { k=j+1; m=k; while(arr[m]&gt;='a' &amp;&amp; arr[m]&lt;='z') { //t++; m++; } while(arr[k]!=')') { while(arr[m]&lt;'a' || arr[m]&gt;'z') { if(arr[m]=='(') { t=1; n=m; break; } m++; } if(t==1) { p=0; break; } p=1; k++; } if(p!=0) { transform(arr,m-1,k-1,j); n=0; break; } else { t=0; break; } } } //i++; } for(int l=0;l
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-22410"></a> 
+ <div id="c22410" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-22410" class="active">this code is working fine on</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prateekraj1988">prateekraj1988</a></strong>
+   <span style="color:#828282"> @ 13 Feb 2012 06:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    this code is working fine on my system but do not understand why it is giving run time error while submission
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-26798"></a> 
+ <div id="c26798" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-26798" class="active">If the expression written "3</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/makandriaco">makandriaco</a></strong>
+   <span style="color:#828282"> @ 15 May 2012 03:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    If the expression written "3 ? 4 + 5" would be written "3 4 ? 5 +" , shouldn't the expression (a+(b*c)) be written "bc*a+"? instead of abc*+
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27012"></a> 
+ <div id="c27012" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-27012" class="active">you skipped</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/husky">husky</a></strong>
+   <span style="color:#828282"> @ 22 May 2012 02:38 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    you skipped semicolons... (a+(b*c)) == abc*+ b*c+a == bc*a+
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27081"></a> 
+ <div id="c27081" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-27081" class="active">add some more testcases.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/madhupadikar">madhupadikar</a></strong>
+   <span style="color:#828282"> @ 26 May 2012 04:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    add some more testcases.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28037"></a> 
+ <div id="c28037" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-28037" class="active">I solved this problem with C</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pasqoo">pasqoo</a></strong>
+   <span style="color:#828282"> @ 5 Jun 2012 08:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I solved this problem with C language. I got problems getting my solution accepted because I was trying to save a short integer (short t;) with %d instead of %hd. It wasn't easy for me to detect it... I didn't notice the warnings in my compiler. I was getting a Runtime Error (SIGSEGV) for it. Hope it will help you :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29521"></a> 
+ <div id="c29521" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-29521" class="active">sir , despite showing a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/thprsnjslw">thprsnjslw</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2012 06:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    sir , despite showing a correct answer on my compiler , test ids giving me the wrong answer. could u please indicate the reason?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29665"></a> 
+ <div id="c29665" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-29665" class="active">think simple guys... y</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/panicker">panicker</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2012 01:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    think simple guys... y thinking so much...it's easy que..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29666"></a> 
+ <div id="c29666" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-29666" class="active">think simple guys... y</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/panicker">panicker</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2012 01:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    think simple guys... y thinking so much...it's easy que..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43197"></a> 
+ <div id="c43197" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-43197" class="active">Are all the operands in input</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajat_121292">rajat_121292</a></strong>
+   <span style="color:#828282"> @ 13 May 2013 02:12 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Are all the operands in input , small letters?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-44682"></a> 
+ <div id="c44682" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-44682" class="active">//wats wrong here plzz.. tell</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/callam2pm">callam2pm</a></strong>
+   <span style="color:#828282"> @ 8 Jun 2013 09:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    //wats wrong here plzz.. tell #include #include #include main() { int l,i,j=0,k=0,t; char a[400],b[400],c[400]; scanf("%d",&amp;t); while(t--) { scanf("%s",&amp;a); l=strlen(a); for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49072"></a> 
+ <div id="c49072" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-49072" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rakhisingh1">rakhisingh1</a></strong>
+   <span style="color:#828282"> @ 18 Jul 2013 01:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/2386518" title="http://www.codechef.com/viewsolution/2386518">http://www.codechef.com/viewsolution/2386518</a> y m gettng sigsegv error?? @admin plz help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-53922"></a> 
+ <div id="c53922" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-53922" class="active">What is the expected output</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/giovaneche">giovaneche</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2013 04:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What is the expected output for (-a + (b + c))?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-55691"></a> 
+ <div id="c55691" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-55691" class="active">@giovaneche, you expression</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/warrior107">warrior107</a></strong>
+   <span style="color:#828282"> @ 16 Sep 2013 01:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @giovaneche, you expression is invalid. There will be no such expression. It could be ((b+c)-a)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-56622"></a> 
+ <div id="c56622" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-56622" class="active">plz help me with this code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/neer1993">neer1993</a></strong>
+   <span style="color:#828282"> @ 29 Sep 2013 01:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plz help me with this code it is working for all case even all which is possible still not accepted plzz help... 
+    <a href="http://www.codechef.com/viewsolution/2724793" title="http://www.codechef.com/viewsolution/2724793">http://www.codechef.com/viewsolution/2724793</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-67737"></a> 
+ <div id="c67737" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-67737" class="active">can anyone check my code ? </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/goku321">goku321</a></strong>
+   <span style="color:#828282"> @ 14 Dec 2013 09:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone check my code ? why it is wrong?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68072"></a> 
+ <div id="c68072" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-68072" class="active">output in my computer is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vinayjn">vinayjn</a></strong>
+   <span style="color:#828282"> @ 18 Dec 2013 11:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    output in my computer is correct, but here on codechef it says "Wrong Answer"
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-72275"></a> 
+ <div id="c72275" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-72275" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/noonecatch_92">noonecatch_92</a></strong>
+   <span style="color:#828282"> @ 7 Feb 2014 01:02 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/3339018" title="http://www.codechef.com/viewsolution/3339018">http://www.codechef.com/viewsolution/3339018</a> for 3 test case their is run time error but dont know why ?? can any one check my code
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78545"></a> 
+ <div id="c78545" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-78545" class="active">pls help me, on submitting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pandeyiyer">pandeyiyer</a></strong>
+   <span style="color:#828282"> @ 27 May 2014 09:45 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    pls help me, on submitting solution it is showing wrong answer, while its running well in my pc and giving correct answer. check it : 
+    <a href="http://www.codechef.com/viewsolution/3947859" title="http://www.codechef.com/viewsolution/3947859">http://www.codechef.com/viewsolution/3947859</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83670"></a> 
+ <div id="c83670" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-83670" class="active">works fine on my computer,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vinayjn">vinayjn</a></strong>
+   <span style="color:#828282"> @ 13 Aug 2014 11:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    works fine on my computer, whats wrong with it ? 
+    <a href="http://www.codechef.com/viewsolution/4556741" title="http://www.codechef.com/viewsolution/4556741">http://www.codechef.com/viewsolution/4556741</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83776"></a> 
+ <div id="c83776" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-83776" class="active">I'm getting wrong answer on</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/fadia">fadia</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2014 03:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I'm getting wrong answer on submission but code is running nice in my lappy and also giving correct output. Please help....... 
+    <a href="http://www.codechef.com/viewsolution/4576311" title="http://www.codechef.com/viewsolution/4576311">http://www.codechef.com/viewsolution/4576311</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84096"></a> 
+ <div id="c84096" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-84096" class="active">Why do I get compilation</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/plegm">plegm</a></strong>
+   <span style="color:#828282"> @ 26 Aug 2014 12:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why do I get compilation errors for java diamond operators?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84097"></a> 
+ <div id="c84097" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-84097" class="active">So it's not javac 1.7 after</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/plegm">plegm</a></strong>
+   <span style="color:#828282"> @ 26 Aug 2014 12:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    So it's not javac 1.7 after all? lol
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84486"></a> 
+ <div id="c84486" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-84486" class="active">I am getting a runtime</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/adarshshah88">adarshshah88</a></strong>
+   <span style="color:#828282"> @ 3 Sep 2014 11:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting a runtime error(SIGABRT). I have tried using two different techniques. 
+    <a href="http://www.codechef.com/viewsolution/4694754" title="http://www.codechef.com/viewsolution/4694754">http://www.codechef.com/viewsolution/4694754</a> 
+    <a href="http://www.codechef.com/viewsolution/4694701" title="http://www.codechef.com/viewsolution/4694701">http://www.codechef.com/viewsolution/4694701</a> Please help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85501"></a> 
+ <div id="c85501" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-85501" class="active">I am getting Wrong Answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dragfire1">dragfire1</a></strong>
+   <span style="color:#828282"> @ 19 Sep 2014 06:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting Wrong Answer eventhough given test cases are working correctly 
+    <a href="http://www.codechef.com/viewsolution/4855165" title="http://www.codechef.com/viewsolution/4855165">http://www.codechef.com/viewsolution/4855165</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85937"></a> 
+ <div id="c85937" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-85937" class="active">I got compilation</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shashaa35">shashaa35</a></strong>
+   <span style="color:#828282"> @ 29 Sep 2014 12:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I got compilation error.. #include #include #include char s[400],pfx[400],op[400]; int top=-1; void p2ifx(void); void push(char); int isEmpty(); char pop(); int main() { int t; scanf("%dn",&amp;t); while(t--) { gets(s); p2ifx(); puts(pfx); } return(0); } void p2ifx(void) { int i=0,pos=0; char ch,temp; while((ch=s[i++])!=' ') { switch(ch) { case '(' :push(ch); break; case ')' : while((temp=pop())!='(') pfx[pos++]=temp; break; case '^' : case '+' : case '-' : case '*' : case '/' :while( !isEmpty() &amp;&amp; prec(op[top])&gt;=prec(ch)) pfx[pos++]=pop(); push(ch); break; default : pfx[pos++]=ch; break; } } while(!isEmpty()) pfx[pos++]=pop(); pfx[pos++]=' '; } int prec(char ch) { switch(ch) { case '^' :return(5); case '*' : case '/' :return(4); case '+' : case '-' :return(3); default :return(2); } } char pop() { if(top&gt;-1) return(op[top--]); return 0; } void push(char ch) { if(top&lt;401) op[++top]=ch; } int isEmpty() { if(top==-1) return 1; else return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85939"></a> 
+ <div id="c85939" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-85939" class="active">but it works on my compiler..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shashaa35">shashaa35</a></strong>
+   <span style="color:#828282"> @ 29 Sep 2014 12:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    but it works on my compiler..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86122"></a> 
+ <div id="c86122" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-86122" class="active">Please help What wrong with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/valc05">valc05</a></strong>
+   <span style="color:#828282"> @ 30 Sep 2014 11:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please help What wrong with my code i got write when i checked for specified input but got wrong answer 
+    <a href="http://www.codechef.com/viewsolution/4938635" title="http://www.codechef.com/viewsolution/4938635">http://www.codechef.com/viewsolution/4938635</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-87304"></a> 
+ <div id="c87304" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-87304" class="active">Can i get a C wizard to look</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/icthieves">icthieves</a></strong>
+   <span style="color:#828282"> @ 8 Oct 2014 03:17 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can i get a C wizard to look at my submission? it's a recursive descent parser that works for everything i've tried it on on my machine, but is getting the wrong answer on submission. works with (a+(c)) too. considers all non-lowercase, non parentheses characters to be operators as well. i just need a hint on where to look, or a test case that it fails on. i'm stumped.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-87305"></a> 
+ <div id="c87305" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-87305" class="active">I have also tried terminating</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/icthieves">icthieves</a></strong>
+   <span style="color:#828282"> @ 8 Oct 2014 03:21 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I have also tried terminating the output lines with NULL, newline and both, but still get a "wrong answer" error.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88235"></a> 
+ <div id="c88235" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-88235" class="active">for some retarded reason,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/icthieves">icthieves</a></strong>
+   <span style="color:#828282"> @ 14 Oct 2014 10:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    for some retarded reason, Chef only accepted the output once it was printed as a string. all changed was instead of printing one character at a time, i appended them to a string and printed that instead. somehow that got the right answer.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89591"></a> 
+ <div id="c89591" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-89591" class="active">please write algoritm postfix</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ahmadreza">ahmadreza</a></strong>
+   <span style="color:#828282"> @ 7 Nov 2014 04:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please write algoritm postfix to infix
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90975"></a> 
+ <div id="c90975" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-90975" class="active">ok... 9 wrong answer so</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/flyoff">flyoff</a></strong>
+   <span style="color:#828282"> @ 28 Nov 2014 10:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    ok... 9 wrong answer so far... I've changed and rechanged my code again and again, but nothing, I've also looked through several forums and all the test cases that they gave saying that those were probably the reason why we were getting WA, my code gives me the right answer ex: (a)*(b)+(d)/(g)^(s) or (f*(f*(f*(f*f)))) or (b)+(c)+(y*i)^(y)^(g*j)/(o-p) I get right outputs for those, I also compare the answer of some AC solutions with mine and the outputs are identical... so I'm at a loss here.. so if anyone could please help me understand why I'm getting wrong answer it would be great, :) here's my code 
+    <a href="http://www.codechef.com/viewsolution/5463545" title="http://www.codechef.com/viewsolution/5463545">http://www.codechef.com/viewsolution/5463545</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91133"></a> 
+ <div id="c91133" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-91133" class="active">Very easy one ......Can be a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nickzuck_007">nickzuck_007</a></strong>
+   <span style="color:#828282"> @ 4 Dec 2014 09:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Very easy one ......Can be a good question if we have to check for the operator's priority also
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91311"></a> 
+ <div id="c91311" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-91311" class="active">yesss, never mind I finally</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/flyoff">flyoff</a></strong>
+   <span style="color:#828282"> @ 6 Dec 2014 09:06 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    yesss, never mind I finally got the right answer xD and I did so without even knowing what stacks are hehe :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91695"></a> 
+ <div id="c91695" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-91695" class="active">I get the right answer on my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bgowder77">bgowder77</a></strong>
+   <span style="color:#828282"> @ 11 Dec 2014 07:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I get the right answer on my computer, but i get runtime error(NZEC). Can you please look into my solution? 
+    <a href="http://www.codechef.com/viewsolution/5563604" title="http://www.codechef.com/viewsolution/5563604">http://www.codechef.com/viewsolution/5563604</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91912"></a> 
+ <div id="c91912" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-91912" class="active">after compilation it goes</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ism_syed">ism_syed</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2014 06:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    after compilation it goes into infinite loop. help 
+    <a href="http://www.codechef.com/viewsolution/5606016" title="http://www.codechef.com/viewsolution/5606016">http://www.codechef.com/viewsolution/5606016</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91915"></a> 
+ <div id="c91915" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-91915" class="active">@admin Can anyone tell me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rgpt">rgpt</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2014 07:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin Can anyone tell me that will there be more than one operator inside the parenthesis because then i have to make a function which will check the priority of operators in the stack with operator we are dealing at current .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95078"></a> 
+ <div id="c95078" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-95078" class="active">Link to OPN</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aalok_sathe">aalok_sathe</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2015 09:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Link to OPN Editorial 
+    <a href="http://discuss.codechef.com/questions/63265/onp-editorial-transform-the-expression" title="http://discuss.codechef.com/questions/63265/onp-editorial-transform-the-expression">http://discuss.codechef.com/questions/63265/onp-editorial-transform-the-...</a> @admin see this please.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99906"></a> 
+ <div id="c99906" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-99906" class="active">i don't know where's the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhilashgupta">abhilashgupta</a></strong>
+   <span style="color:#828282"> @ 26 Mar 2015 07:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i don't know where's the problem since it's running well on my computer #include int main() {char c,a[100]; int i=0,j=100; p:while(j--) { scanf("%c",&amp;c); if(c=='('||c=='+'||c=='-'||c=='*'||c=='/'||c=='^') a[i++]=c; if(c!='('&amp;&amp; c!='+'&amp;&amp; c!='-'&amp;&amp; c!='*' &amp;&amp; c!='^'&amp;&amp; c!='/' &amp;&amp; c!=')') printf("%c",c); if(c==')') {while(a[--i]!='(') printf("%c",a[i]); } } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101786"></a> 
+ <div id="c101786" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-101786" class="active">Please someone tell the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cmohan">cmohan</a></strong>
+   <span style="color:#828282"> @ 13 Apr 2015 06:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please someone tell the mistake in my code 
+    <a href="http://codeviewer.org/view/code:4f0e" title="http://codeviewer.org/view/code:4f0e">http://codeviewer.org/view/code:4f0e</a> Thanks in advance
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102006"></a> 
+ <div id="c102006" class="comment clear-block"> 
+  <h3><a href="/problems/ONP#comment-102006" class="active">After getting WA for 3 times,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hemanth_1">hemanth_1</a></strong>
+   <span style="color:#828282"> @ 18 Apr 2015 03:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    After getting WA for 3 times, i finally found out that my gets() function was taking in the newline after entering the number of testcases.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

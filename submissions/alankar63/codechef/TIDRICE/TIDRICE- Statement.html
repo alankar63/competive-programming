@@ -1,0 +1,288 @@
+<div id="node-650999" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p align="justify"> Did you know that there are over 40,000 varieties of Rice in the world ? There are so many dishes that can be prepared with Rice too. A famous chef from Mumbai, Tid Gusto prepared a new dish and named it 'Tid Rice'. He posted the recipe in his newly designed blog for community voting, where a user can plus (+) or minus (-) the recipe. The final score is just the sum of all votes, where (+) and (-) are treated as +1 and -1 respectively. But, being just a chef ( and not a codechef ) he forgot to take care of multiple votes by the same user.</p> 
+  <p align="justify"> A user might have voted multiple times and Tid is worried that the final score shown is not the correct one. Luckily, he found the user logs, which had all the <b>N</b> votes in the order they arrived. Remember that, if a user votes more than once, the user's previous vote is first nullified before the latest vote is counted ( see explanation for more clarity ). Given these records in order ( and being a codechef yourself :) ), calculate the correct final score. </p> 
+  <h3>Input</h3> 
+  <p align="justify">First line contains T ( number of testcases, around 20 ). T cases follow. Each test case starts with N ( total number of votes, 1 &lt;= N &lt;= 100 ). Each of the next N lines is of the form "userid vote" ( quotes for clarity only ), where userid is a non-empty string of lower-case alphabets ( 'a' - 'z' ) not more than 20 in length and vote is either a + or - . See the sample cases below, for more clarity.</p> 
+  <h3>Output</h3> 
+  <p align="justify">For each test case, output the correct final score in a new line</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+3
+4
+tilak +
+tilak +
+tilak -
+tilak +
+3
+ratna +
+shashi -
+ratna -
+3
+bhavani -
+bhavani +
+bhavani -
+
+<b>Output:</b>
+1
+-2
+-1
+</pre>
+  <p> <b>Explanation</b></p> 
+  <pre>Case 1 : Initially score = 0. Updation of scores in the order of user tilak's votes is as follows,<br>
+( + ): +1 is added to the final score. This is the 1st vote by this user, so no previous vote to nullify. score = 1
+( + ):  0 should be added ( -1 to nullify previous (+) vote, +1 to count the current (+) vote ). score = 1
+( - ) : -2 should be added ( -1 to nullify previous (+) vote, -1 to count the current (-) vote ). score = -1
+( + ): +2 should be added ( +1 to nullify previous (-) vote, +1 to count the current (+) vote ). score = 1<br>
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/flying_ant">flying_ant</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/masked_zorro">masked_zorro</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/TIDRICE">http://discuss.codechef.com/problems/TIDRICE</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook10"> cook10 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/flying_ant"> flying_ant </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>21-04-2011</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/TIDRICE">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-21560"></a> 
+ <div id="c21560" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-21560" class="active">on submission my program it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubhammnnit">shubhammnnit</a></strong>
+   <span style="color:#828282"> @ 27 Jan 2012 12:22 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    on submission my program it was showing wrong answer,plz anyone give me some more test cases to test my program..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-32364"></a> 
+ <div id="c32364" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-32364" class="active">Is there any corner case that</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1h33p">s1h33p</a></strong>
+   <span style="color:#828282"> @ 30 Sep 2012 02:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Is there any corner case that i am missing?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-37538"></a> 
+ <div id="c37538" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-37538" class="active">some more test cases please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akshayaj">akshayaj</a></strong>
+   <span style="color:#828282"> @ 8 Feb 2013 01:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    some more test cases please
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46827"></a> 
+ <div id="c46827" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-46827" class="active">Is there a space present</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vigneshng">vigneshng</a></strong>
+   <span style="color:#828282"> @ 3 Jul 2013 11:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Is there a space present between userid and the vote?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68101"></a> 
+ <div id="c68101" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-68101" class="active">@vigneshng: yes,there is a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aditya1495">aditya1495</a></strong>
+   <span style="color:#828282"> @ 18 Dec 2013 06:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vigneshng: yes,there is a space.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68248"></a> 
+ <div id="c68248" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-68248" class="active">I changed the version of C++</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/satyam_m">satyam_m</a></strong>
+   <span style="color:#828282"> @ 22 Dec 2013 08:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I changed the version of C++ compiler and it got accepted!!! :-o
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75128"></a> 
+ <div id="c75128" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-75128" class="active">finally!!!!!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/krish728">krish728</a></strong>
+   <span style="color:#828282"> @ 13 Mar 2014 02:06 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    finally!!!!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80009"></a> 
+ <div id="c80009" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-80009" class="active">Passed all the above test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shreyas_ragit">shreyas_ragit</a></strong>
+   <span style="color:#828282"> @ 25 Jun 2014 07:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Passed all the above test cases but it still says wrong answer. Any corner case which i am missing?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80191"></a> 
+ <div id="c80191" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-80191" class="active">i developed a trie solution</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/k1shubham_3">k1shubham_3</a></strong>
+   <span style="color:#828282"> @ 2 Jul 2014 12:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i developed a trie solution here 
+    <a href="http://www.codechef.com/viewsolution/4171911" title="http://www.codechef.com/viewsolution/4171911">http://www.codechef.com/viewsolution/4171911</a> It clears all above test_cases, but shows wrong answer. Show me a way to get out of it...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85472"></a> 
+ <div id="c85472" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-85472" class="active">Java is not allowed for this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pizza_palace">pizza_palace</a></strong>
+   <span style="color:#828282"> @ 18 Sep 2014 04:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Java is not allowed for this problem ? But I see so many other submissions in Java . . .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91158"></a> 
+ <div id="c91158" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-91158" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/a1b73">a1b73</a></strong>
+   <span style="color:#828282"> @ 5 Dec 2014 12:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/5488998" title="http://www.codechef.com/viewsolution/5488998">http://www.codechef.com/viewsolution/5488998</a> this piece of code is not running properly....someone please help me on this one..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92876"></a> 
+ <div id="c92876" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-92876" class="active">Though this problem is easily</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bholagabbar">bholagabbar</a></strong>
+   <span style="color:#828282"> @ 4 Jan 2015 12:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Though this problem is easily solved by hashmaps..(and i still exactly know everthing about it), dont be discouraged. There are quite a few other ways. I used a really simple algo(just involves 2 for loops for traversing the array)and am still in he top 10 submissions in JAVA. So dont be discouraged! Just a message for people like who know this problem is easy but still struggle to find a way around it without hashmaps
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94933"></a> 
+ <div id="c94933" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-94933" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/don_rt">don_rt</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2015 06:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6028192" title="http://www.codechef.com/viewsolution/6028192">http://www.codechef.com/viewsolution/6028192</a> why it is giving wrong ..working correct in my computer for the given test cases and more
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95953"></a> 
+ <div id="c95953" class="comment clear-block"> 
+  <h3><a href="/problems/TIDRICE#comment-95953" class="active">im getting a wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rosyroopal">rosyroopal</a></strong>
+   <span style="color:#828282"> @ 7 Feb 2015 05:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    im getting a wrong answer everytime eventhough my code is giving right answer for the test cases given here ..someone please help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

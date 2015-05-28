@@ -1,0 +1,974 @@
+<div id="node-1605" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> Harry Potter has n mixtures in front of him, arranged in a row.Each mixture has one of 100 different colors (colors have numbers from 0 to 99).</p> 
+  <p> He wants to mix all these mixtures together. At each step, he is going to take two mixtures that stand next to each other and mix them together, and put the resulting mixture in their place.</p> 
+  <p> When mixing two mixtures of colors a and b, the resulting mixture will have the color (a+b) mod 100.</p> 
+  <p> Also, there will be some smoke in the process. The amount of smoke generated when mixing two mixtures of colors a and b is a*b.</p> 
+  <p> Find out what is the minimum amount of smoke that Harry can get when mixing all the ixtures together.</p> 
+  <h3>Input</h3> 
+  <p> There will be a number of test cases in the input.</p> 
+  <p> The first line of each test case will contain n, the number of mixtures, 1 &lt;= n &lt;= 100.</p> 
+  <p> The second line will contain n integers between 0 and 99 - the initial colors of the mixtures.</p> 
+  <h3>Output</h3> 
+  <p> For each test case, output the minimum amount of smoke.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+2
+18 19
+3
+40 60 20
+
+<b>Output:</b>
+342
+2400
+</pre>
+  <p> In the second test case, there are two possibilities:</p> 
+  <ul> 
+   <li> first mix 40 and 60 (smoke: 2400), getting 0, then mix 0 and 20 (smoke: 0); total amount of smoke is 2400 </li>
+   <li> first mix 60 and 20 (smoke: 1200), getting 80, then mix 40 and 80 (smoke: 3200); total amount of smoke is 4400 </li>
+  </ul> 
+  <p> The first scenario is the correct approach since it minimizes the amount of smoke produced.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/admin">admin</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/admin"> admin </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>1-12-2008</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>9 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/MIXTURES">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-243"></a> 
+ <div id="c243" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-243" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hrishi">hrishi</a></strong>
+   <span style="color:#828282"> @ 24 Jun 2009 08:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>how do we know the input limit??</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-244"></a> 
+ <div id="c244" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-244" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/i0exception">i0exception</a></strong>
+   <span style="color:#828282"> @ 24 Jun 2009 10:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@hrishikesh Read input until you encounter an EOF.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-438"></a> 
+ <div id="c438" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-438" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chang">chang</a></strong>
+   <span style="color:#828282"> @ 18 Jul 2009 10:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>how do I use EOF with scanf ?</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-446"></a> 
+ <div id="c446" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-446" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 20 Jul 2009 06:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>scanf() returns the number of characters successfully read from stdin. Use this information to use EOF with scanf.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-535"></a> 
+ <div id="c535" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-535" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/manib">manib</a></strong>
+   <span style="color:#828282"> @ 29 Jul 2009 05:47 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Can the color of the mixture repeat ?</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-536"></a> 
+ <div id="c536" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-536" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/manib">manib</a></strong>
+   <span style="color:#828282"> @ 29 Jul 2009 05:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I meant in a given set, could there be multiple mixtures of the same colors ?</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-541"></a> 
+ <div id="c541" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-541" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 29 Jul 2009 06:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>There might be test cases like that.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1221"></a> 
+ <div id="c1221" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-1221" class="active">Can the order of mixtures be</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/automaton_1">automaton_1</a></strong>
+   <span style="color:#828282"> @ 24 Aug 2009 03:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can the order of mixtures be circular? For instance, in the above example, can we mix 20 with 40 and the result with 60?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1222"></a> 
+ <div id="c1222" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-1222" class="active">No. They are in a line.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 24 Aug 2009 03:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>No. They are in a line.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1297"></a> 
+ <div id="c1297" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-1297" class="active">can we mix 40 and 20 skipping</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hemanthp">hemanthp</a></strong>
+   <span style="color:#828282"> @ 29 Aug 2009 02:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can we mix 40 and 20 skipping the 60 in between?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1298"></a> 
+ <div id="c1298" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-1298" class="active">I just answered that in the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 29 Aug 2009 02:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I just answered that in the comment directly above yours..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1306"></a> 
+ <div id="c1306" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-1306" class="active">Hello Stephen</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sumitb">sumitb</a></strong>
+   <span style="color:#828282"> @ 30 Aug 2009 09:30 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Hello Stephen</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-3136"></a> 
+ <div id="c3136" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-3136" class="active">can someone paste some tricky</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/naveeninkgp">naveeninkgp</a></strong>
+   <span style="color:#828282"> @ 10 Nov 2009 10:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can someone paste some tricky test case for this problem.Have broken my head but can't figure out the problem with my solution.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-3157"></a> 
+ <div id="c3157" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-3157" class="active">Have you checked your program</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 11 Nov 2009 02:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Have you checked your program for values of N for which you can verify the solution using brute-force?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4129"></a> 
+ <div id="c4129" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-4129" class="active">Is there a limit to the size</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yellow_agony">yellow_agony</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2009 11:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Is there a limit to the size in which final answer of smoke would fit in ?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4262"></a> 
+ <div id="c4262" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-4262" class="active">im using while(scanf("%d",&amp;n)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Dalchand">Dalchand</a></strong>
+   <span style="color:#828282"> @ 24 Dec 2009 12:56 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>im using</p> 
+    <p>while(scanf("%d",&amp;n) &gt; 0){&nbsp; // take n inputs and print output }</p> 
+    <p>i guess it should terminate when there is no input?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4885"></a> 
+ <div id="c4885" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-4885" class="active">anybody who has solved this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Geniusguy">Geniusguy</a></strong>
+   <span style="color:#828282"> @ 16 Jan 2010 07:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>anybody who has solved this problem using memoization or using simple recurssion without getting TLE ? ? ?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9043"></a> 
+ <div id="c9043" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-9043" class="active">@Ankush.. dude everyone has</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/raman bhatia">raman bhatia</a></strong>
+   <span style="color:#828282"> @ 23 Jun 2010 11:32 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Ankush.. dude everyone has solved the problem via DP.. and if you are getting TLE and u think that u have implemented the DP correctly, the only probable reason is that you are not detecting the EOF properly.. thats why your code is never able to stop!!</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10292"></a> 
+ <div id="c10292" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-10292" class="active">can ne1 post the solution of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahul gupta">rahul gupta</a></strong>
+   <span style="color:#828282"> @ 31 Aug 2010 05:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can ne1 post the solution of this prob...nt able to solve this...me a novice :(</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10925"></a> 
+ <div id="c10925" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-10925" class="active">i am learning dp could anyone</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dabbcomputers">dabbcomputers</a></strong>
+   <span style="color:#828282"> @ 25 Sep 2010 08:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i am learning dp could anyone tell that is this is dynamic problem or greedy problem and how can i check out that is this dynamic problem or greedy.....???</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11165"></a> 
+ <div id="c11165" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-11165" class="active">can u people pls tell me the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/khanaleemullah">khanaleemullah</a></strong>
+   <span style="color:#828282"> @ 6 Oct 2010 08:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can u people pls tell me the commands for taking the no if test cases pls...pls</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11986"></a> 
+ <div id="c11986" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-11986" class="active">Hey what will be the o/p of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dhiman_nikhil">dhiman_nikhil</a></strong>
+   <span style="color:#828282"> @ 23 Nov 2010 03:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Hey what will be the o/p of the following i/p</p> 
+    <p>5<br>40 60 20 9 10</p> 
+    <p>My ans is <b>2400</b></p> 
+    <p>Succesfull submitter answers <b>2870</b></p> 
+    <p>&nbsp;</p> 
+    <p>40*60 will be used first since (40+60)%100 gives us 0 that makes rest 0 , so the answer should be 2400</p> 
+    <p>&nbsp;</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11987"></a> 
+ <div id="c11987" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-11987" class="active">Yups answer is 2870 .. i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dhiman_nikhil">dhiman_nikhil</a></strong>
+   <span style="color:#828282"> @ 23 Nov 2010 05:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Yups answer is 2870 .. i forgot to add rest smoke..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12410"></a> 
+ <div id="c12410" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-12410" class="active">hint : matrix multiplication</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anujvermamnit">anujvermamnit</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2010 02:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>hint : matrix multiplication problem</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12493"></a> 
+ <div id="c12493" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-12493" class="active">please tell me for what input</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ravi_26011988">ravi_26011988</a></strong>
+   <span style="color:#828282"> @ 21 Dec 2010 08:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>please tell me for what input it will give incorrect answer.............??</p> 
+    <p>#include&lt;stdio.h&gt;<br><br>int main()<br>{<br> int n;<br> while(scanf("%d",&amp;n)!=EOF)<br> {<br> int col[n+1],i,j,min,temp,x,y,k;<br> unsigned int fume;&nbsp;&nbsp;&nbsp; <br> fume=0;<br> for(i=0;i&lt;n;i++)<br> {<br> scanf("%d",&amp;col[i]);<br> }<br> i=0;<br> j=1;<br> min=1000;<br><br> while(n&gt;1)<br> {<br> i=0;<br> j=1;<br> while(i!=n-1)<br> {<br> while(j!=n)<br> {<br> temp=(col[i]+col[j])%100;<br> if(temp&lt;min)<br> {<br> min=temp;<br> x=i;<br> y=j;<br> }<br> j++;<br> }<br> i++;<br> }<br> fume=fume+col[x]*col[y];<br> col[x]=min;<br> min=1000;<br> for(k=y;k&lt;n-1;k++)<br> {<br> col[k]=col[k+1];&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br> }<br> n--;<br> }<br> printf("%dn",fume);<br> }&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br> return 0;<br>}</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12494"></a> 
+ <div id="c12494" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-12494" class="active">sir, will u give me the input</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ravi_26011988">ravi_26011988</a></strong>
+   <span style="color:#828282"> @ 21 Dec 2010 08:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>sir,</p> 
+    <p>will u give me the input file for which it gives the incorrect answer............???</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13010"></a> 
+ <div id="c13010" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-13010" class="active">can anyone pls tell me if the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iiit">iiit</a></strong>
+   <span style="color:#828282"> @ 19 Jan 2011 10:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can anyone pls tell me if the following approaach is correct or not</p> 
+    <p>everytime we chose those two adjacent mixtures which giv least value of&nbsp; (a+b)mod 100 as compared to other pairs</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13023"></a> 
+ <div id="c13023" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-13023" class="active">Can you prove that will</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 20 Jan 2011 08:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Can you prove that will always lead to the best answer? If you can't prove it, it's normally wrong.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13034"></a> 
+ <div id="c13034" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-13034" class="active">thanx alot stephen ala got AC</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iiit">iiit</a></strong>
+   <span style="color:#828282"> @ 21 Jan 2011 11:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>thanx alot stephen ala got AC</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13153"></a> 
+ <div id="c13153" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-13153" class="active">@Stephen: Can you please give</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bipasaforu">bipasaforu</a></strong>
+   <span style="color:#828282"> @ 24 Jan 2011 09:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Stephen: Can you please give me a testcase where my solution is giving the incorrect result?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13154"></a> 
+ <div id="c13154" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-13154" class="active">Hi Stephen, I've tried many</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bipasaforu">bipasaforu</a></strong>
+   <span style="color:#828282"> @ 24 Jan 2011 10:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Hi Stephen, I've tried many testcases and all given correct answers. I'm not sure&nbsp;which one creating the problem. Can you please help me by providing a testcase?&nbsp;</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13156"></a> 
+ <div id="c13156" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-13156" class="active">Your code doesn't even work</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2011 09:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Your code doesn't even work on the sample input.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13157"></a> 
+ <div id="c13157" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-13157" class="active">Hi Stephen, In my end it is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bipasaforu">bipasaforu</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2011 09:55 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Hi Stephen, In my end it is perfectly work for the sample input as well as the inputs written in the comments. I also tried with 100 inputs and got the correct result. Can you please&nbsp;let me know the poblem testcase?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13159"></a> 
+ <div id="c13159" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-13159" class="active">Understood the problem. I've</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bipasaforu">bipasaforu</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2011 10:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Understood the problem. I've taken input from console instead of the file.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13160"></a> 
+ <div id="c13160" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-13160" class="active">Nothing is wrong with taking</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2011 10:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Nothing is wrong with taking the input from a console; but your program only outputs 342 for the sample input; it never gets to output 2400 as well.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-14770"></a> 
+ <div id="c14770" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-14770" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mayank_gupta">mayank_gupta</a></strong>
+   <span style="color:#828282"> @ 2 Mar 2011 06:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><a href="http://www.codechef.com/viewsolution/475504" title="http://www.codechef.com/viewsolution/475504">http://www.codechef.com/viewsolution/475504</a></p> 
+    <p>&nbsp;</p> 
+    <p>can sum1 tell what is wrong in my solution. It is giving correct answers for the sample input and also of the random inputs. I have checked it with solutions submitted by other persons. But on submitting my solution it shows wrong answer.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15069"></a> 
+ <div id="c15069" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-15069" class="active">Those who are getting wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/javadecoder">javadecoder</a></strong>
+   <span style="color:#828282"> @ 16 Mar 2011 05:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Those who are getting wrong answers,can check some test cases here:<a href="https://www.spoj.pl/forum/viewtopic.php?f=3&amp;t=4007&amp;p=16920&amp;hilit=MIXTURES#p16920">https://www.spoj.pl/forum/viewtopic.php?f=3&amp;t=4007&amp;p=16920&amp;hilit=MIXTURES#p16920</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15086"></a> 
+ <div id="c15086" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-15086" class="active">760 44 33 67 9 90 34 for this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/labham">labham</a></strong>
+   <span style="color:#828282"> @ 18 Mar 2011 02:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><span>7<br>60 44 33 67 9 90 34</span></p> 
+    <p><span>for this case on the mention site answer is&nbsp;8207</span></p> 
+    <p><span>and my ans is 6159</span></p> 
+    <p><span>60*44+33*67+0*4+4*9+13*90+3*34=6159</span></p> 
+    <p><span>it can cum as</span></p> 
+    <p><span>60 44 0 9 90 34</span></p> 
+    <p><span>04 0 9 90 34</span></p> 
+    <p><span>4 9 90 34</span></p> 
+    <p><span><span>13 90 34</span></span></p> 
+    <p><span><span>3 34</span></span></p> 
+    <p><span><span>37</span></span></p> 
+    <p>&nbsp;</p> 
+    <p><span><span>so explain this answer...</span></span></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15087"></a> 
+ <div id="c15087" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-15087" class="active">leave it i was checking from</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/labham">labham</a></strong>
+   <span style="color:#828282"> @ 18 Mar 2011 02:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>leave it i was checking from wrong soln by mistake..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18981"></a> 
+ <div id="c18981" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-18981" class="active">My solution working proper</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jignesh">jignesh</a></strong>
+   <span style="color:#828282"> @ 24 Sep 2011 07:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My solution working proper for all case given in above link. 
+    <a href="http://www.codechef.com/viewsolution/672323" title="http://www.codechef.com/viewsolution/672323">http://www.codechef.com/viewsolution/672323</a> But still I am getting wrong ans.....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-20480"></a> 
+ <div id="c20480" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-20480" class="active">same here. i am getting right</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tpawan">tpawan</a></strong>
+   <span style="color:#828282"> @ 18 Dec 2011 08:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    same here. i am getting right ans for above mentioned all test cases. dont know why its showing wrong answer. @admin : can you plz tell me for what input my code is giving wrong answer????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-20695"></a> 
+ <div id="c20695" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-20695" class="active">Hi.. My program is working</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/comvidyarthi">comvidyarthi</a></strong>
+   <span style="color:#828282"> @ 20 Dec 2011 12:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi.. My program is working fine for all the inputs given in the link above.. Also it is behaving as expected for input from a file as well.. But stil I am getting WA. for N=1 I have returned the number as it is for N=2 I simply return the product of the 2 numbers Can anyone tell me if there might be any other case I am missing?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-21053"></a> 
+ <div id="c21053" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-21053" class="active">Make sure you handle the case</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sugar.angel">sugar.angel</a></strong>
+   <span style="color:#828282"> @ 12 Jan 2012 07:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Make sure you handle the case when N=1. Return 0 in that case. Took a long time to figure out.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27384"></a> 
+ <div id="c27384" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-27384" class="active">hey guys...i used java to do</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/trojansmith">trojansmith</a></strong>
+   <span style="color:#828282"> @ 1 Jun 2012 01:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hey guys...i used java to do this ...am getting a runtime error..can anyone please help...?here is the code....It works perfectly in netbeans and output is also right...follow the link for code... 
+    <a href="http://www.codechef.com/viewsolution/1069344" title="http://www.codechef.com/viewsolution/1069344">http://www.codechef.com/viewsolution/1069344</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27387"></a> 
+ <div id="c27387" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-27387" class="active">i used recursion with Dynamic</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/trojansmith">trojansmith</a></strong>
+   <span style="color:#828282"> @ 1 Jun 2012 02:02 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i used recursion with Dynamic programming....can anyone please see this link...I AM GETTING A RUNTIME ERROR..........DONT KNOW WHY ...PLEASE HELP.... 
+    <a href="http://www.codechef.com/viewsolution/1069344" title="http://www.codechef.com/viewsolution/1069344">http://www.codechef.com/viewsolution/1069344</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29452"></a> 
+ <div id="c29452" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-29452" class="active">can anybuddy explain how the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/master_pk">master_pk</a></strong>
+   <span style="color:#828282"> @ 24 Jul 2012 11:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anybuddy explain how the output of 3 40 50 60 is 3400? and 7 60 44 33 67 9 90 34 is 6159?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29992"></a> 
+ <div id="c29992" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-29992" class="active">My submission ID is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gautam714">gautam714</a></strong>
+   <span style="color:#828282"> @ 7 Aug 2012 10:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My submission ID is 1232461.Please check my solution and suggest that why am I getting Runtime error.Thanks in advance. Solution link : 
+    <a href="http://www.codechef.com/viewsolution/1232461" title="http://www.codechef.com/viewsolution/1232461">http://www.codechef.com/viewsolution/1232461</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-30412"></a> 
+ <div id="c30412" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-30412" class="active">@master_pk I dont think it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/makandriaco">makandriaco</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2012 12:38 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @master_pk I dont think it is, should be 3550 for the first set I think.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-33709"></a> 
+ <div id="c33709" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-33709" class="active">@makandriaco How is the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atuljangra">atuljangra</a></strong>
+   <span style="color:#828282"> @ 3 Nov 2012 03:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @makandriaco How is the answer 3550? I am also getting 3400.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40752"></a> 
+ <div id="c40752" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-40752" class="active">How we endup taking</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/frankinstein">frankinstein</a></strong>
+   <span style="color:#828282"> @ 9 Apr 2013 02:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    How we endup taking inputs? There should be a symbol or something which describes EOF... If the answer is check and proceed, then what to check? There should be somthing to analyze, null? or carriage return?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-41512"></a> 
+ <div id="c41512" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-41512" class="active">for input 87 13 37 25 17</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vikrant1433">vikrant1433</a></strong>
+   <span style="color:#828282"> @ 27 Apr 2013 11:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    for input 87 13 37 25 17 answer will be coming as 3110 and for input 13 37 87 25 17 just changed the order I will be getting 4310. but for AC solution 4310 is the correct answer. What is wrong with this one?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-56755"></a> 
+ <div id="c56755" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-56755" class="active">@admin @triplem can anyone</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ankitstone">ankitstone</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2013 09:24 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin @triplem can anyone help me with my solution? i tested many cases on the accepted JAVA solutions as well Both giving the same answers. Please Help 
+    <a href="http://www.codechef.com/viewsolution/2735231" title="http://www.codechef.com/viewsolution/2735231">http://www.codechef.com/viewsolution/2735231</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68216"></a> 
+ <div id="c68216" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-68216" class="active">can anyone explain me how the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kushals616">kushals616</a></strong>
+   <span style="color:#828282"> @ 22 Dec 2013 01:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone explain me how the output of 30 40 50 60 70 is 7500? b coz i am getting the ans 9500
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68219"></a> 
+ <div id="c68219" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-68219" class="active">where will we put the new</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kushals616">kushals616</a></strong>
+   <span style="color:#828282"> @ 22 Dec 2013 01:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    where will we put the new colour that we will get after mixing two colours. anyone please tell me?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68926"></a> 
+ <div id="c68926" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-68926" class="active">Is there any standard</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vinod1054">vinod1054</a></strong>
+   <span style="color:#828282"> @ 31 Dec 2013 08:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Is there any standard algorithm for this?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68939"></a> 
+ <div id="c68939" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-68939" class="active">@vinod1054 It is a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/charizard">charizard</a></strong>
+   <span style="color:#828282"> @ 1 Jan 2014 01:30 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vinod1054 It is a variation of matrix chain multiplication problem which is a standard dynamic programming problem.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68942"></a> 
+ <div id="c68942" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-68942" class="active">@charizard..tanq</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vinod1054">vinod1054</a></strong>
+   <span style="color:#828282"> @ 1 Jan 2014 06:28 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @charizard..tanq
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83687"></a> 
+ <div id="c83687" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-83687" class="active">My program took :- Time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anil0004">anil0004</a></strong>
+   <span style="color:#828282"> @ 13 Aug 2014 09:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My program took :- Time :0.01 Mem :2.2M I think i have used less memory(**i used only array of 100 * 100,while others have used 2 array of 100*100 and 1 array of 100**). Others code took less time than my code. please help me to reduce time and memory In this i have use only 1 matrix of 100 *100 for both smoke and color , unlike others who have used different matrix for each of them . #include #include int main() { int m[100][100],n,i,j,k,q,l; while(scanf("%d",&amp;n)!=EOF) { for(i = 0;i &lt; n;i++) scanf("%d",&amp;m[i][i]); // taking inputs in principal diagonal if(n==1) { printf ("%dn",0); continue; } for(i = 0;i &lt; n-1;i++) { j = i+1; m[i][j] = (m[j][j] * m[i][i]) ; //color in lower side of principal diagonal (when only 2 mixtures are mixed) m[j][i] = (m[j][j] + m[i][i])% 100; //smoke in upper side of principal diagonal (when only 2 mixtures are mixed) } for(l = 3;l &lt;= n;l++) { //l = no of adjacent mixtures taken for( i = 0;i &lt;= n-l;i++) { j = i+l-1; k = i; //when mixing ith colour with other mixed l-1 colours m[i][j] = m[k+1][j] + m[k][k]*m[j][k+1]; for(k = i+1 ;k &lt; j-1;k++) { q = m[i][k]+m[k+1][j] + m[k][i]*m[j][k+1]; if(q &lt; m[i][j]) m[i][j] = q; } k = j - 1; //when mixing jth color with l-1 mixed color q = m[i][k] + m[k][i] * m[j][j]; if(q &lt; m[i][j]) m[i][j] = q; m[j][i] = (m[j][j] + m[j-1][i])%100; } } printf ("%dn",m[0][n-1]); } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83688"></a> 
+ <div id="c83688" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-83688" class="active">My program took :- Time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anil0004">anil0004</a></strong>
+   <span style="color:#828282"> @ 13 Aug 2014 09:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My program took :- Time :0.01 Mem :2.2M I think i have used less memory(**i used only array of 100 * 100,while others have used 2 array of 100*100 and 1 array of 100**). Others code took less time than my code. please help me to reduce time and memory In this i have use only 1 matrix of 100 *100 for both smoke and color , unlike others who have used different matrix for each of them . #include #include int main() { int m[100][100],n,i,j,k,q,l; while(scanf("%d",&amp;n)!=EOF) { for(i = 0;i &lt; n;i++) scanf("%d",&amp;m[i][i]); // taking inputs in principal diagonal if(n==1) { printf ("%dn",0); continue; } for(i = 0;i &lt; n-1;i++) { j = i+1; m[i][j] = (m[j][j] * m[i][i]) ; //color in lower side of principal diagonal (when only 2 mixtures are mixed) m[j][i] = (m[j][j] + m[i][i])% 100; //smoke in upper side of principal diagonal (when only 2 mixtures are mixed) } for(l = 3;l &lt;= n;l++) { //l = no of adjacent mixtures taken for( i = 0;i &lt;= n-l;i++) { j = i+l-1; k = i; //when mixing ith colour with other mixed l-1 colours m[i][j] = m[k+1][j] + m[k][k]*m[j][k+1]; for(k = i+1 ;k &lt; j-1;k++) { q = m[i][k]+m[k+1][j] + m[k][i]*m[j][k+1]; if(q &lt; m[i][j]) m[i][j] = q; } k = j - 1; //when mixing jth color with l-1 mixed color q = m[i][k] + m[k][i] * m[j][j]; if(q &lt; m[i][j]) m[i][j] = q; m[j][i] = (m[j][j] + m[j-1][i])%100; } } printf ("%dn",m[0][n-1]); } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83689"></a> 
+ <div id="c83689" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-83689" class="active">please help me to make code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anil0004">anil0004</a></strong>
+   <span style="color:#828282"> @ 13 Aug 2014 09:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please help me to make code efficient. link:http://discuss.codechef.com/questions/48998/help-me-please-mixture-problem
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83769"></a> 
+ <div id="c83769" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-83769" class="active">for this test case : 5 22 89</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ratul_besu">ratul_besu</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2014 12:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    for this test case : 5 22 89 6 40 98 the answer should be 3190 step-&gt; 1. mix 6 and 98 : smoke-&gt; 588 new colour -&gt; 4 2. mix 22 and 89 : smoke -&gt; 1958 new colour -&gt; 11 3. mix 11 and 4 : smoke -&gt; 44 new colour -&gt; 15 4. mix 15 and 40 : smoke-&gt; 600 new colour -&gt; 55 process ends. total smoke -&gt; 588+1958+44+600 = 3190 but the accpted code giving the o/p as -&gt; 6590 and the requirement is to minimize the generated smoke which is better in former case. am i doing something wrong ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94598"></a> 
+ <div id="c94598" class="comment clear-block"> 
+  <h3><a href="/problems/MIXTURES#comment-94598" class="active">@ratul_besu u can only mix a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rohanagarwal">rohanagarwal</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2015 11:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ratul_besu u can only mix a mixture with one which stands next to it. So u can't mix 6 with 98.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

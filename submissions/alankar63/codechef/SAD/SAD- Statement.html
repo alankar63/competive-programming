@@ -1,0 +1,258 @@
+<div id="node-1262577" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> Our Chef is very happy that his son was selected for training in one of the finest culinary schools of the world.<br> So he and his wife decide to buy a gift for the kid as a token of appreciation.<br> Unfortunately, the Chef hasn't been doing good business lately, and is in no mood on splurging money.<br> On the other hand, the boy's mother wants to buy something big and expensive.<br> To settle the matter like reasonable parents, they play a game. </p> 
+  <p> They spend the whole day thinking of various gifts and write them down in a huge matrix.<br> Each cell of the matrix contains the gift's cost.<br> Then they decide that the mother will choose a row number <b>r</b> while the father will choose a column number <b>c</b>,<br> the item from the corresponding cell will be gifted to the kid in a couple of days. </p> 
+  <p> The boy observes all of this secretly.<br> He is smart enough to understand that his parents will ultimately choose a gift whose cost is <b>smallest</b> in its <b>row</b>,<br> but <b>largest</b> in its <b>column</b>.<br> If no such gift exists, then our little chef has no option but to keep guessing.<br> As the matrix is huge, he turns to you for help. </p> 
+  <p> He knows that sometimes the gift is not determined uniquely even if a gift exists whose cost is smallest in its row,<br> but largest in its column.<br> However, since the boy is so smart, he realizes that the gift's <b>cost</b> is determined <b>uniquely</b>.<br> Your task is to tell him the gift's <b>cost</b> which is smallest in its row,<br> but largest in its column, or to tell him no such gift exists. </p> 
+  <h3>Input</h3> 
+  <p>First line contains two integers <b>R</b> and <b>C</b>, the number of rows and columns in the matrix respectively. Then follow <b>R</b> lines, each containing <b>C</b> space separated integers - the costs of different gifts. </p> 
+  <h3>Output</h3> 
+  <p> Print a single integer - a value in the matrix that is smallest in its row but highest in its column. If no such value exists, then print "GUESS" (without quotes of course) </p> 
+  <h3>Constraints</h3> 
+  <p> 1 &lt;= <b>R</b>, <b>C</b> &lt;= 100 </p> 
+  <p> All gift costs are positive and less than 100000000 (10^8) </p> 
+  <h3>Example 1</h3> 
+  <pre>
+<b>Input:</b>
+2 3
+9 8 8
+2 6 11
+
+<b>Output:</b>
+8
+</pre>
+  <h3>Example 2</h3> 
+  <pre>
+<b>Input:</b>
+3 3
+9 8 11
+2 6 34
+5 9 11
+
+<b>Output:</b>
+GUESS
+</pre>
+  <h3>Example 3</h3> 
+  <pre>
+<b>Input:</b>
+2 2
+10 10
+10 10
+
+<b>Output:</b>
+10
+</pre>
+  <h3>Explanation of Sample Cases</h3> 
+  <p><b>Example 1</b>: The first row contains 9, 8, 8. Observe that both 8 are the minimum. Considering the first 8, look at the corresponding column (containing 8 and 6). Here, 8 is the largest element in that column. So it will be chosen.</p> 
+  <p><b>Example 2</b>: There is no value in the matrix that is smallest in its row but largest in its column.</p> 
+  <p><b>Example 3</b>: The required gift in matrix is not determined uniquely, but the required cost is determined uniquely.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/shettynamit">shettynamit</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/SAD">http://discuss.codechef.com/problems/SAD</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/july12"> july12 </a><a class="problem-tag-small " href="/tags/problems/search"> search </a><a class="problem-tag-small " href="/tags/problems/shettynamit"> shettynamit </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>15-05-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/SAD">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-29310"></a> 
+ <div id="c29310" class="comment clear-block"> 
+  <h3><a href="/problems/SAD#comment-29310" class="active">such an awesome problem!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/goodfornothing">goodfornothing</a></strong>
+   <span style="color:#828282"> @ 11 Jul 2012 10:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    such an awesome problem!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36536"></a> 
+ <div id="c36536" class="comment clear-block"> 
+  <h3><a href="/problems/SAD#comment-36536" class="active">nice prob!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mjnovice">mjnovice</a></strong>
+   <span style="color:#828282"> @ 26 Jan 2013 02:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    nice prob!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40228"></a> 
+ <div id="c40228" class="comment clear-block"> 
+  <h3><a href="/problems/SAD#comment-40228" class="active">"However, since the boy is so</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ovimt">ovimt</a></strong>
+   <span style="color:#828282"> @ 3 Apr 2013 01:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    "However, since the boy is so smart, he realizes that the gift's cost is determined uniquely." Why do you have to return GUESS even if you find two different values that respect the condition. Shouldn't the input ensure that there will be only one value respecting the condition?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46399"></a> 
+ <div id="c46399" class="comment clear-block"> 
+  <h3><a href="/problems/SAD#comment-46399" class="active">@admin please do help i m</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aasthi">aasthi</a></strong>
+   <span style="color:#828282"> @ 23 Jun 2013 09:08 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin please do help i m getting wrong answer , but i m not getting at which it is failing......please help , here's my code...http://www.codechef.com/viewsolution/2284700
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68154"></a> 
+ <div id="c68154" class="comment clear-block"> 
+  <h3><a href="/problems/SAD#comment-68154" class="active">@admin plz check my code i am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tryingtocode">tryingtocode</a></strong>
+   <span style="color:#828282"> @ 20 Dec 2013 04:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin plz check my code i am getting wrong answer i a checked many testcases and also verified from the output of one of the accepted code
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71213"></a> 
+ <div id="c71213" class="comment clear-block"> 
+  <h3><a href="/problems/SAD#comment-71213" class="active">@trying to code check your</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saimadan">saimadan</a></strong>
+   <span style="color:#828282"> @ 19 Jan 2014 12:57 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @trying to code check your code for 2 3 9 8 8 2 11 6
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78522"></a> 
+ <div id="c78522" class="comment clear-block"> 
+  <h3><a href="/problems/SAD#comment-78522" class="active">@admin why am I getting wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bulbasaur">bulbasaur</a></strong>
+   <span style="color:#828282"> @ 25 May 2014 07:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin why am I getting wrong answer. Please help!!! 
+    <a href="http://www.codechef.com/viewsolution/3944333" title="http://www.codechef.com/viewsolution/3944333">http://www.codechef.com/viewsolution/3944333</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79733"></a> 
+ <div id="c79733" class="comment clear-block"> 
+  <h3><a href="/problems/SAD#comment-79733" class="active">i cannot understand why i am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sweetsammy">sweetsammy</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2014 12:22 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i cannot understand why i am getting run time error... please help... 
+    <a href="http://www.codechef.com/viewsolution/4117247" title="http://www.codechef.com/viewsolution/4117247">http://www.codechef.com/viewsolution/4117247</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80534"></a> 
+ <div id="c80534" class="comment clear-block"> 
+  <h3><a href="/problems/SAD#comment-80534" class="active">Can someone please check my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/garima7">garima7</a></strong>
+   <span style="color:#828282"> @ 6 Jul 2014 01:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone please check my code, I'm getting WA. 
+    <a href="http://www.codechef.com/viewsolution/4219820" title="http://www.codechef.com/viewsolution/4219820">http://www.codechef.com/viewsolution/4219820</a> Please suggest some test cases for which it maybe wrong. Thanks in advance.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92237"></a> 
+ <div id="c92237" class="comment clear-block"> 
+  <h3><a href="/problems/SAD#comment-92237" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jainshraddha">jainshraddha</a></strong>
+   <span style="color:#828282"> @ 24 Dec 2014 07:54 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/5641277" title="http://www.codechef.com/viewsolution/5641277">http://www.codechef.com/viewsolution/5641277</a> please suggest the changes.. i m getting WA
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93012"></a> 
+ <div id="c93012" class="comment clear-block"> 
+  <h3><a href="/problems/SAD#comment-93012" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aakshay_777">aakshay_777</a></strong>
+   <span style="color:#828282"> @ 4 Jan 2015 11:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/5748978" title="http://www.codechef.com/viewsolution/5748978">http://www.codechef.com/viewsolution/5748978</a> please suggest any corrections.....i a, getting wrong answer
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

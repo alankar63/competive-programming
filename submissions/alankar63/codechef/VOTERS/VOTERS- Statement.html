@@ -1,0 +1,1405 @@
+<div id="node-157491" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> As you might remember, the collector of Siruseri had ordered<br> a complete revision of the Voters List. He knew that constructing<br> the list of voters is a difficult task, prone to errors. Some<br> voters may have been away on vacation, others may have moved<br> during the enrollment and so on. </p> 
+  <p> To be as accurate as possible, he entrusted the task to three different<br> officials. Each of them was to independently record the list of voters and<br> send it to the collector. In Siruseri, every one has a ID number and<br> the list would only list the ID numbers of the voters and not their names.<br> The officials were expected to arrange the ID numbers in ascending order<br> in their lists. </p> 
+  <p> On receiving the lists, the Collector realised that there were<br> discrepancies - the three lists were not identical. He decided<br> to go with the majority. That is, he decided to construct the<br> final list including only those ID numbers that appeared in at<br> least 2 out of the 3 lists. For example if the three lists<br> were</p> 
+  <pre>
+23  30  42  57  90
+21  23  35  57  90  92
+21  23  30  57  90 
+</pre>
+  <p>then the final list compiled by the collector would be:</p> 
+  <pre>
+21  23  30  57  90
+</pre>
+  <p> The ID numbers 35, 42 and 92 which appeared in only one list<br> each do not figure in the final list.</p> 
+  <p> Your task is to help the collector by writing a program that<br> produces the final list from the three given lists.</p> 
+  <p>Input format</p> 
+  <p>The first line of the input contains 3 integers<br> <em>N</em><sub>1</sub>, <em>N</em><sub>2</sub> and<br> <em>N</em><sub>3</sub>. <em>N</em><sub>1</sub> is the number of<br> voters in the first list, <em>N</em><sub>2</sub> is the number of<br> voters in the second list and <em>N</em><sub>3</sub> is the number of<br> voters in the third list. The next <em>N</em><sub>1</sub> lines<br> (lines 2,...,<em>N</em><sub>1</sub>+1) contain one positive integer<br> each and describe the first list in ascending order. The following</p> 
+  <p><em>N</em><sub>2</sub> lines (lines<br> <em>N</em><sub>1</sub>+2,...,<em>N</em><sub>1</sub>+<em>N</em><sub>2</sub>+1)<br> describe the second list in ascending order and the final<br> <em>N</em><sub>3</sub> lines (lines</p> 
+  <p><em>N</em><sub>1</sub>+<em>N</em><sub>2</sub>+2,...,<em>N</em><sub>1</sub>+<em>N</em><sub>2</sub>+<em>N</em><sub>3</sub>+1)<br> describe the third list in ascending order.</p> 
+  <p>Output format</p> 
+  <p>The first line of the output should contain a single integer<br> <em>M</em> indicating the number voters in the final list. The next<br> <em>M</em> lines (lines 2,...,<em>M</em>+1) should contain one<br> positive integer each, describing the list of voters in the final<br> list, in ascending order.</p> 
+  <p>Test data</p> 
+  <p>You may assume that 1 ?<br> <em>N</em><sub>1</sub>,<em>N</em><sub>2</sub>,<em>N</em><sub>3</sub><br> ? 50000. </p> 
+  <p>Example</p> 
+  <p>Sample input:</p> 
+  <pre>
+5 6 5
+23
+30
+42
+57
+90
+21 
+23 
+35 
+57 
+90 
+92 
+21 
+23 
+30 
+57 
+90 
+</pre>
+  <p>Sample output:</p> 
+  <pre>
+5
+21 
+23 
+30 
+57 
+90
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/admin">admin</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/admin"> admin </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>30-07-2009</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/VOTERS">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-576"></a> 
+ <div id="c576" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-576" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bchoii">bchoii</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2009 07:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>What is the range of ID ?<br> 0 &lt;= ID &lt;= 50000 ?</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-583"></a> 
+ <div id="c583" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-583" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2009 07:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>No, ID can be any number that fits in a 4 byte signed integer.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-585"></a> 
+ <div id="c585" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-585" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chang">chang</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2009 10:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can a list have 2 same ids ?</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-586"></a> 
+ <div id="c586" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-586" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2009 10:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Nope.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1050"></a> 
+ <div id="c1050" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-1050" class="active">Which test cases are used ,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Sameer09">Sameer09</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2009 10:19 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Which test cases are used , my code runs pretty fast on my machine with the given sample test cases.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1051"></a> 
+ <div id="c1051" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-1051" class="active">There are test cases other</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2009 12:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>There are test cases other than the sample ones provided. </p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1060"></a> 
+ <div id="c1060" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-1060" class="active">See its kind of confusing you</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Sameer09">Sameer09</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2009 05:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    See its kind of confusing you have given time limit of 2 seconds where as some of the accepted code samples show more time taken. I realized that my code runs slow when a big data set is given but then what exactly is an acceptable time limit ?? If not the complete test cases can you at least show how much time it took and the data set size.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1061"></a> 
+ <div id="c1061" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-1061" class="active">The time shown is the sum of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2009 05:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The time shown is the sum of the times taken for all test cases. For each test case, the time limit is 2 seconds. </p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2473"></a> 
+ <div id="c2473" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-2473" class="active">I've optimized my Python code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Philanthropist">Philanthropist</a></strong>
+   <span style="color:#828282"> @ 14 Oct 2009 12:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I've optimized my Python code down to an absolute bare minimum. I've submitted progressively faster code 6 times now, and I'm still over the time limit. I've considered redoing it in C, but I really dislike the bias against script languages in problems like these.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4921"></a> 
+ <div id="c4921" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-4921" class="active">if my submission result to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dabbcomputers">dabbcomputers</a></strong>
+   <span style="color:#828282"> @ 18 Jan 2010 09:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>if my submission result to tle is it mean my code is correct but time limit increased or may be the code is incorrect....</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4922"></a> 
+ <div id="c4922" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-4922" class="active">@ admin if my submission</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dabbcomputers">dabbcomputers</a></strong>
+   <span style="color:#828282"> @ 18 Jan 2010 09:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@ admin</p> 
+    <p>if my submission result to tle is it mean my code is correct but time limit increased or may be the code is incorrect....</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4924"></a> 
+ <div id="c4924" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-4924" class="active">TLE means time limit</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 19 Jan 2010 02:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>TLE means time limit exceeded. If it didn't finish running, obviously it can't know whether it was going to be correct or not..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4926"></a> 
+ <div id="c4926" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-4926" class="active">@stephen can u tell me pls in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dabbcomputers">dabbcomputers</a></strong>
+   <span style="color:#828282"> @ 19 Jan 2010 10:24 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@stephen</p> 
+    <p>can u tell me pls in this algo is there require sorting or not ......</p> 
+    <p>because my algo first find number and then sort them and i got every tym tle</p> 
+    <p>so pls help me jst tell that is this possible to do without sorting....</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5776"></a> 
+ <div id="c5776" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-5776" class="active">Time limit in this question</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tarun91">tarun91</a></strong>
+   <span style="color:#828282"> @ 13 Feb 2010 08:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Time limit in this question is 2 sec and my code got accepted in 2.81 seconds in c++. shouldn't i get TLE?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5788"></a> 
+ <div id="c5788" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-5788" class="active">FAQ</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 14 Feb 2010 02:12 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><a href="/freelinking/FAQ" class="freelinking">FAQ</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5861"></a> 
+ <div id="c5861" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-5861" class="active">i have submitted it 4 times</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kush87">kush87</a></strong>
+   <span style="color:#828282"> @ 16 Feb 2010 11:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i have submitted it 4 times and all the times i have got TLE,could someone take a look at those code and tell me what is it that am i doing wrong. Not looking for a solution,just a nudge would help me a lot. Thanks
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8228"></a> 
+ <div id="c8228" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8228" class="active">I get compilation error at</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/johnnyg">johnnyg</a></strong>
+   <span style="color:#828282"> @ 3 May 2010 02:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I get compilation error at line : #include&lt;map&gt;</p> 
+    <p>/sources/tested.c:3:14: error: map: No such file or directory</p> 
+    <p>is MAP not a standard STL header?</p> 
+    <p>admin, please suggest if map or hash_map can be used in codes here.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8229"></a> 
+ <div id="c8229" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8229" class="active">it worked. dont bother</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/johnnyg">johnnyg</a></strong>
+   <span style="color:#828282"> @ 3 May 2010 02:17 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>it worked. dont bother please. i was chosing the wrong compiler. :P</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8299"></a> 
+ <div id="c8299" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8299" class="active">for those trying this problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubh09">shubh09</a></strong>
+   <span style="color:#828282"> @ 9 May 2010 01:04 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>for those trying this problem using java : java takes hell more time than c for this problem. i got 2 tle by using java, but when i implemented the same algo in c, i got correct answer almost instantaneously.</p> 
+    <p>but i dont understand the reason for this. can someone plz help me with this?</p> 
+    <p>&nbsp;</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8496"></a> 
+ <div id="c8496" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8496" class="active">runtime error :( .. again</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunjanbansal">gunjanbansal</a></strong>
+   <span style="color:#828282"> @ 20 May 2010 11:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>runtime error :( .. again looking for corner cases :( .</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8523"></a> 
+ <div id="c8523" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8523" class="active">Its a farily simple problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunjanbansal">gunjanbansal</a></strong>
+   <span style="color:#828282"> @ 22 May 2010 07:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Its a farily simple problem with simple solution , but i am getting a WA . Code running fr test case . Any corner case that i may be missing ??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8538"></a> 
+ <div id="c8538" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8538" class="active">I have tried to optimize my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/manjotpahwa">manjotpahwa</a></strong>
+   <span style="color:#828282"> @ 24 May 2010 05:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I have tried to optimize my code as much as I can but still I'm getting TLE. Can you please tell me how can I reduce the time further, I am not even sorting in my code. Here it is:</p> 
+    <p>#include&lt;stdio.h&gt;<br>#include&lt;stdlib.h&gt;<br>#define SIZE 50000<br><br>int max(int, int);<br>int main()<br>{<br>int i, j, n1, n2, n3, list1[SIZE], list2[SIZE], list3[SIZE], k = 0, temp, number, flag1, flag2, flag3;<br>int final[SIZE] = {0};<br><br>scanf("%d", &amp;n1);<br>scanf("%d", &amp;n2);<br>scanf("%d", &amp;n3);<br><br>for(i=0;i&lt;n1;i++)<br>scanf("%d", &amp;list1[i]);<br><br>for(i=0;i&lt;n2;i++)<br>scanf("%d", &amp;list2[i]);<br><br>for(i=0;i&lt;n3;i++)<br>scanf("%d", &amp;list3[i]);<br><br>flag1 = max(n1, n2);<br>if(flag1)<br>{<br>for(i=0;i&lt;n1;i++)<br> {<br> for(j=0;j&lt;n2;j++)<br> {<br> if(list1[i]==list2[j])<br> final[k++] = list1[i];<br> if(list1[i]&gt;list2[n2-1]) break;<br> }<br> }//for ends<br>}<br>else if(!flag1)<br>{<br>for(i=0;i&lt;n2;i++)<br> {<br> for(j=0;j&lt;n1;j++)<br> {<br> if(list2[i]==list1[j])<br> final[k++] = list2[i];<br> if(list2[i]&gt;list1[n1-1]) break;<br> }<br> }//for ends<br>}<br>flag2 = max(n2, n3);<br>if(flag2)<br>{<br>for(i=0;i&lt;n2;i++)<br> {<br> for(j=0;j&lt;n3;j++)<br> {<br> if(list2[i]==list3[j])<br> final[k++] = list2[i];<br> if(list2[i]&gt;list3[n3-1]) break;<br> }<br> }//for ends<br>}<br>else if(!flag2)<br>{<br>for(i=0;i&lt;n3;i++)<br> {<br> for(j=0;j&lt;n2;j++)<br> {<br> if(list3[i]==list2[j])<br> final[k++] = list3[i];<br> if(list3[i]&gt;list2[n2-1]) break;<br> }<br> }<br>}<br>flag3 = max(n1, n3);<br>if(flag3)<br>{<br>for(i=0;i&lt;n1;i++)<br> {<br> for(j=0;j&lt;n3;j++)<br> {<br> if(list1[i]==list3[j])<br> final[k++] = list1[i];<br> if(list1[i]&gt;list3[n3-1]) break;<br> }<br> }//for ends<br>}<br>else if(!flag3)<br>{<br>for(i=0;i&lt;n3;i++)<br> {<br> for(j=0;j&lt;n1;j++)<br> {<br> if(list3[i]==list1[j])<br> final[k++] = list3[i];<br> if(list3[i]&gt;list1[n1-1]) break;<br> }<br> }//for ends<br>}<br><br>number = k;<br>for(i=0;i&lt;k;i++)<br> {<br> for(j=0;j&lt;k;j++)<br> {<br> if(i!=j &amp;&amp; final[i]==final[j])<br> {<br> number--;<br> final[i]=-1;<br> }<br> }<br> }<br><br>printf("%dn", number);<br><br>for(i=0;i&lt;k;i++)<br> {<br> if(final[i]&gt;0)<br> printf("%dn", final[i]);<br> }<br>return 0;<br>}<br><br>int max(int n1, int n2)<br>{<br>return (n1&gt;n2)?1:0;<br>}</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8539"></a> 
+ <div id="c8539" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8539" class="active">@manjot you are using brute</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dabbcomputers">dabbcomputers</a></strong>
+   <span style="color:#828282"> @ 24 May 2010 10:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@manjot</p> 
+    <p>you are using brute force in your solution your algo complexity seems as O(n^2).</p> 
+    <p>optimize the code doesn't means that reduce the line of the code. it means that reduce complexity if u want got accepted reduce complexity to O(n). for your help i want to say that in more cases whenever u decrease complexity number of lines are increases.</p> 
+    <p>thanx</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8542"></a> 
+ <div id="c8542" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8542" class="active">@Amritpal: Thanks, I have</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/manjotpahwa">manjotpahwa</a></strong>
+   <span style="color:#828282"> @ 25 May 2010 12:53 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Amritpal: Thanks, I have another idea, I'll try that out.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8551"></a> 
+ <div id="c8551" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8551" class="active">Any hints for me ?? I am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunjanbansal">gunjanbansal</a></strong>
+   <span style="color:#828282"> @ 26 May 2010 07:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Any hints for me ??</p> 
+    <p>I am getting WA , code fine for test cases . I dnt seem to see any test cases.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8588"></a> 
+ <div id="c8588" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8588" class="active">@Admin: Though&nbsp;I've&nbsp;realized</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ChunChun">ChunChun</a></strong>
+   <span style="color:#828282"> @ 31 May 2010 03:08 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Admin:</p> 
+    <p>Though&nbsp;I've&nbsp;realized the error in my code(in this case not able to handle numbers greater that 10^6), your judge gives me a wrong result after running for .17 seconds. I wonder why it isn't giving a segmentation fault. Please shed some light.</p> 
+    <p>Here, PLEASE have a look</p> 
+    <p><a href="http://www.codechef.com/viewsolution/246755">http://www.codechef.com/viewsolution/246755</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8593"></a> 
+ <div id="c8593" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8593" class="active">I agree with AMIT , i worked</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunjanbansal">gunjanbansal</a></strong>
+   <span style="color:#828282"> @ 31 May 2010 10:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I agree with AMIT , i worked out the problem again , got correct answer . But the problem was with unitialised memory . It should give segmentation fault instead of wrong answer .</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8595"></a> 
+ <div id="c8595" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8595" class="active">@amit i think u got wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dabbcomputers">dabbcomputers</a></strong>
+   <span style="color:#828282"> @ 31 May 2010 11:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@amit</p> 
+    <p>i think u got wrong answer because the above mention program is not producing desire result for small tst cases and at admin sysstem when they got wrong answer they stop judging it over large inputs and show wrong answer.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8598"></a> 
+ <div id="c8598" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8598" class="active">@AMRIT : Yeah what you say is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ChunChun">ChunChun</a></strong>
+   <span style="color:#828282"> @ 1 Jun 2010 02:39 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@AMRIT : Yeah what you say is what i thought after getting the solution to the problem. I wasn't printing the No of Voters in the final list.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8647"></a> 
+ <div id="c8647" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-8647" class="active">i am again and again gettein</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/raman bhatia">raman bhatia</a></strong>
+   <span style="color:#828282"> @ 1 Jun 2010 08:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i am again and again gettein runtime error- segmentation faults.. i often use arrays of sizes 100000 (as is necessary acc to the problems) should i initialize them to zero in order to prevent this error from arising?? although they work absolutely fine at my pc<br>please help me out people, i am a new bee..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9609"></a> 
+ <div id="c9609" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-9609" class="active">@Stephen- sir please check my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anubhav.7nov">anubhav.7nov</a></strong>
+   <span style="color:#828282"> @ 21 Jul 2010 10:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Stephen-</p> 
+    <p>sir please check my code..it gives a rumtime error..</p> 
+    <p><a href="http://www.codechef.com/viewsolution/290101" title="http://www.codechef.com/viewsolution/290101">http://www.codechef.com/viewsolution/290101</a></p> 
+    <p>thank you.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10792"></a> 
+ <div id="c10792" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-10792" class="active">&nbsp; I suspect that your</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sapiens">sapiens</a></strong>
+   <span style="color:#828282"> @ 20 Sep 2010 10:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>&nbsp;</p> 
+    <p>I suspect that your compiler compiles</p> 
+    <p>fscanf(stdin, "format" , data1, data2);</p> 
+    <p>but gives runtime error when reading your inputfile presented as stdin.</p> 
+    <p>I am using DevC++, but usinig C language. Works fine in my machine, not yours. Always a run-time error.</p> 
+    <p>Reason?</p> 
+    <p>Using strtok token from string&nbsp; and atoi to split line into integers seems silly to me.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10798"></a> 
+ <div id="c10798" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-10798" class="active">That line has nothing to do</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 21 Sep 2010 07:04 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>That line has nothing to do with a runtime error (though I'm not sure why you're not using the simpler and identical scanf("format",data1,data2)).</p> 
+    <p>You are getting a runtime error because you are assuming all numbers in the input are less than 50000, which is not specified.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10799"></a> 
+ <div id="c10799" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-10799" class="active">&nbsp; Many thanks. Could you</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sapiens">sapiens</a></strong>
+   <span style="color:#828282"> @ 21 Sep 2010 08:19 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>&nbsp;</p> 
+    <p>Many thanks.</p> 
+    <p>Could you kindly explain the meaning of the lines:</p> 
+    <p>&nbsp;</p> 
+    <p>Test data</p> 
+    <p>You may assume that&nbsp; 1&nbsp;&nbsp; N1,N2,N3&nbsp;&nbsp; 50000</p> 
+    <p>&nbsp;</p> 
+    <p>I cannot see any inequality signs, but assumed them.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10800"></a> 
+ <div id="c10800" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-10800" class="active">Sorry, I know now. You mean</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sapiens">sapiens</a></strong>
+   <span style="color:#828282"> @ 21 Sep 2010 08:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Sorry, I know now. You mean the IDs theselves can be bigger than 50000. Right. Stupid me.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11203"></a> 
+ <div id="c11203" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-11203" class="active">#include&lt;iostream&gt;#include&lt;st</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/puneet_50">puneet_50</a></strong>
+   <span style="color:#828282"> @ 8 Oct 2010 01:51 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>#include&lt;iostream&gt;<br>#include&lt;stdio.h&gt;<br>#include&lt;list&gt;<br><br>using namespace std;<br><br>list&lt;unsigned int&gt; mylist;<br><br>void Check(int *P,int *Q,int &amp;l1,int &amp;l2)<br>{<br> register int i = 0 , j = 0;<br> while(i &lt; l1 &amp;&amp; j &lt; l2)<br> {<br> if(P[i++] == Q[j++])<br> mylist.push_back(P[i-1]);<br> else if(P[i] &lt; Q[j])<br> while(P[i] &lt; Q[j] &amp;&amp; i &lt; l1 &amp;&amp; j &lt; l2)<br> ++i;<br> else<br> while(P[i] &gt; Q[j] &amp;&amp; i &lt; l1 &amp;&amp; j &lt; l2)<br> ++j;<br> }<br>}<br><br>int main()<br>{<br> int N1,N2,N3;<br> scanf("%d%d%d",&amp;N1,&amp;N2,&amp;N3);<br> int P[N1],Q[N2],R[N3];<br><br> for(register int i = 0 ; i&lt;N1 ; ++i)<br> scanf("%d",&amp;P[i]);<br><br> for(register int i = 0 ; i&lt;N2 ; ++i)<br> scanf("%d",&amp;Q[i]);<br><br> for(register int i = 0 ; i&lt;N3 ; ++i)<br> scanf("%d",&amp;R[i]);<br><br> Check(P,Q,N1,N2);<br> Check(Q,R,N2,N3);<br> Check(P,R,N1,N3);<br><br> mylist.sort();<br> mylist.unique();<br> <br> printf("%dn",mylist.size());<br><br> for(register list&lt;unsigned int&gt;::iterator it = mylist.begin() ; it != mylist.end() ; ++it)<br> printf("%un",*it);<br> <br> return 0;<br>}</p> 
+    <p>&nbsp;</p> 
+    <p>Please give me some hint , what is the Problem with this code.I am getting wrong answer every time.But this code gives correct output for the given input.</p> 
+    <p>Thanks in advance</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11296"></a> 
+ <div id="c11296" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-11296" class="active">:( i am getting internal</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amangarg67">amangarg67</a></strong>
+   <span style="color:#828282"> @ 12 Oct 2010 04:09 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>:(</p> 
+    <p>i am getting internal error occured in system</p> 
+    <p>is this belong to codechef's computer or my program</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11550"></a> 
+ <div id="c11550" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-11550" class="active">C# always has disadvantage</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/avinash1">avinash1</a></strong>
+   <span style="color:#828282"> @ 26 Oct 2010 11:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>C# always has disadvantage since it takes longer time. For this problem the complixity of</p> 
+    <p>N1+N2+N3+(LengthOfFinalList*Log(LengthOfFinalList)) even exceed time limit, it looks I have to convert it into C++.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12517"></a> 
+ <div id="c12517" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-12517" class="active">Please see my solution at the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sudhanshu.tamhankar">sudhanshu.tamhankar</a></strong>
+   <span style="color:#828282"> @ 24 Dec 2010 12:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Please see my solution at the given link and tell me what went wrong....</p> 
+    <p>I tried everything &nbsp;i could think of...its still giving wrong answer !!</p> 
+    <p>&nbsp;</p> 
+    <p><a href="http://www.codechef.com/viewsolution/406147">http://www.codechef.com/viewsolution/406147</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13818"></a> 
+ <div id="c13818" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-13818" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jivibansal">jivibansal</a></strong>
+   <span style="color:#828282"> @ 17 Feb 2011 09:45 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><a href="http://www.codechef.com/viewsolution/459574" title="http://www.codechef.com/viewsolution/459574">http://www.codechef.com/viewsolution/459574</a></p> 
+    <p>The solution is giving TLE but as far as I know I am using time in O(n1+n2+n3) where n1, n2, n3 are lengths of the lists</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16455"></a> 
+ <div id="c16455" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-16455" class="active">plzzz lokk at ma code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aayush123">aayush123</a></strong>
+   <span style="color:#828282"> @ 31 May 2011 11:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plzzz lokk at ma code 
+    <a href="http://www.codechef.com/viewsolution/558807" title="http://www.codechef.com/viewsolution/558807">http://www.codechef.com/viewsolution/558807</a> i m using merging and binary search any 1???????????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16456"></a> 
+ <div id="c16456" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-16456" class="active">@aayush Input: 1 1</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/thechamp">thechamp</a></strong>
+   <span style="color:#828282"> @ 31 May 2011 12:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @aayush Input: 1 1 1 12 12 13 Expected output: 1 12 Your output: 0
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16457"></a> 
+ <div id="c16457" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-16457" class="active">@ the champ yaa i knw its</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aayush123">aayush123</a></strong>
+   <span style="color:#828282"> @ 31 May 2011 12:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ the champ yaa i knw its wrong.. thnks :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16459"></a> 
+ <div id="c16459" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-16459" class="active">can be repeating ID's in a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aayush123">aayush123</a></strong>
+   <span style="color:#828282"> @ 31 May 2011 01:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can be repeating ID's in a list ??????????????????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16785"></a> 
+ <div id="c16785" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-16785" class="active">can anyone put test input</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/lathi11">lathi11</a></strong>
+   <span style="color:#828282"> @ 12 Jun 2011 03:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone put test input here(I mean very large one)? My code seems to work fine on my machine. But when I try to post in on the web, it says runtime error.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16787"></a> 
+ <div id="c16787" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-16787" class="active">please help me in removing</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prakhar3agrwal">prakhar3agrwal</a></strong>
+   <span style="color:#828282"> @ 12 Jun 2011 09:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please help me in removing time exceeded in my code THANK YOU
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17090"></a> 
+ <div id="c17090" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-17090" class="active">#include #include int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/satish970">satish970</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2011 01:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include int main() { long int flag,temp,flag1,n,p,i,j,k=0,n1,n2,n3; long int* first; long int* final; scanf("%d%d%d",&amp;n1,&amp;n2,&amp;n3); n=n1+n2+n3; first=(int*) malloc(n*sizeof(int)); final=(int*) malloc(n*sizeof(int)); for(i=0;i0) { flag1=0; for(p=0;pfinal[j]) { temp=final[i]; final[i]=final[j]; final[j]=temp; } } } for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17091"></a> 
+ <div id="c17091" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-17091" class="active">#include #include int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/satish970">satish970</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2011 01:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include int main() { long int flag,temp,flag1,n,p,i,j,k=0,n1,n2,n3; long int* first; long int* final; scanf("%d%d%d",&amp;n1,&amp;n2,&amp;n3); n=n1+n2+n3; first=(int*) malloc(n*sizeof(int)); final=(int*) malloc(n*sizeof(int)); for(i=0;i0) { flag1=0; for(p=0;pfinal[j]) { temp=final[i]; final[i]=final[j]; final[j]=temp; } } } for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17092"></a> 
+ <div id="c17092" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-17092" class="active">anybody say in this code how</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/satish970">satish970</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2011 01:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    anybody say in this code how to reduce time limit its saying time limit exceeded
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17093"></a> 
+ <div id="c17093" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-17093" class="active">#include #include int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/satish970">satish970</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2011 01:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include int main() { long int flag,temp,flag1,n,p,i,j,k=0,n1,n2,n3; long int* first; long int* final; scanf("%d%d%d",&amp;n1,&amp;n2,&amp;n3); n=n1+n2+n3; first=(int*) malloc(n*sizeof(int)); final=(int*) malloc(n*sizeof(int)); for(i=0;i0) { flag1=0; for(p=0;pfinal[j]) { temp=final[i]; final[i]=final[j]; final[j]=temp; } } } for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17094"></a> 
+ <div id="c17094" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-17094" class="active">i cant paste code here</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/satish970">satish970</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2011 01:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i cant paste code here
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17095"></a> 
+ <div id="c17095" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-17095" class="active">#include #include int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/satish970">satish970</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2011 01:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include int main() { long int flag,temp,flag1,n,p,i,j,k=0,n1,n2,n3; long int* first; long int* final; scanf("%d%d%d",&amp;n1,&amp;n2,&amp;n3); n=n1+n2+n3; first=(int*) malloc(n*sizeof(int)); final=(int*) malloc(n*sizeof(int)); for(i=0;i0) { flag1=0; for(p=0;pfinal[j]) { temp=final[i]; final[i]=final[j]; final[j]=temp; } } } for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17120"></a> 
+ <div id="c17120" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-17120" class="active">Please tell me why i am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gaurav_saxena2000">gaurav_saxena2000</a></strong>
+   <span style="color:#828282"> @ 23 Jun 2011 12:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please tell me why i am getting wrong answer :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17590"></a> 
+ <div id="c17590" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-17590" class="active">@Admin or anyone else I have</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/trojan_horse">trojan_horse</a></strong>
+   <span style="color:#828282"> @ 17 Jul 2011 04:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin or anyone else I have solved the problem for various test cases and the boundary conditions (which don't seem to be any in this case)...I have got correct answer. But when I submit I get WA....I really can't find any test case for which it might give unexpected answer....Please check my code here 
+    <a href="http://www.codechef.com/viewsolution/600864" title="http://www.codechef.com/viewsolution/600864">http://www.codechef.com/viewsolution/600864</a> . I have really hit a dead end this time. Thanks
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17591"></a> 
+ <div id="c17591" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-17591" class="active">What can be the max value of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/trojan_horse">trojan_horse</a></strong>
+   <span style="color:#828282"> @ 17 Jul 2011 05:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What can be the max value of the ID??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17600"></a> 
+ <div id="c17600" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-17600" class="active">@admin I have removed the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/trojan_horse">trojan_horse</a></strong>
+   <span style="color:#828282"> @ 19 Jul 2011 03:54 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin I have removed the WA error but now I am getting a Run Time error... the memory taken by my solution if 3.6-3.7 MB which is less than some of the solutions given here yet why am I getting this error. I have checked the FAQ'a and the only possibility is large memory allocation. Please check 
+    <a href="http://www.codechef.com/viewsolution/601455" title="http://www.codechef.com/viewsolution/601455">http://www.codechef.com/viewsolution/601455</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17614"></a> 
+ <div id="c17614" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-17614" class="active">Solved :) some careless</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/trojan_horse">trojan_horse</a></strong>
+   <span style="color:#828282"> @ 22 Jul 2011 12:47 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Solved :) some careless mistakes had held me up :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17620"></a> 
+ <div id="c17620" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-17620" class="active">@trojan: The max value of ID</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prakash1529">prakash1529</a></strong>
+   <span style="color:#828282"> @ 22 Jul 2011 02:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @trojan: The max value of ID is any number that fits in to 4 byte signed integer. So if you are taking max ID as the array index, then its definitely gonna lead to SIGSEGV on a static array. And if you are thinking of dynamically allocating this huge array, then better think of another logic to do this problem :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19237"></a> 
+ <div id="c19237" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-19237" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amrendrakumar">amrendrakumar</a></strong>
+   <span style="color:#828282"> @ 4 Oct 2011 12:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/685224" title="http://www.codechef.com/viewsolution/685224">http://www.codechef.com/viewsolution/685224</a> guys, can u pls figure out why its reporting wrong answer, its running right on my machine
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19395"></a> 
+ <div id="c19395" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-19395" class="active">@Philanthropist : i answer a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cyberax">cyberax</a></strong>
+   <span style="color:#828282"> @ 10 Oct 2011 04:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Philanthropist : i answer a bit late, but anyway. maybe it'll be useful to the others as well. i'm using Python too, and i faced the same problem as you, before i noticed i did two very decisive mistakes. - the first one is to be very influenced by the problem statement. the fact the data is separated in 3 fictive lists should not influence your way of thinking. the description (as a customer in the real world) gives you the way he apprehends the data, not the way you should actually handle it. i made this mistake too, in my first code submission here : 
+    <a href="http://www.codechef.com/viewsolution/696063" title="www.codechef.com/viewsolution/696063">www.codechef.com/viewsolution/696063</a> i suddenly realized that i've been fooled by the problem statement, and i wrote another code, right here : 
+    <a href="http://www.codechef.com/viewsolution/696079" title="www.codechef.com/viewsolution/696079">www.codechef.com/viewsolution/696079</a> it wasn't successful anyway. - the second is to remember that if we can process the data without modifying it, it will always be a better solution : you won't need extra time for the modification operations, and you won't need extra memory for the very modifications involved. i then wrote that one : 
+    <a href="http://www.codechef.com/viewsolution/696081" title="http://www.codechef.com/viewsolution/696081">http://www.codechef.com/viewsolution/696081</a> which at last was successful. in Python, it is clearly not an easy problem, at least not so easy as it could have been expected regarding the category the problem is classified in.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19674"></a> 
+ <div id="c19674" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-19674" class="active">@all-- can ID be 0 ???????</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arpitgpt">arpitgpt</a></strong>
+   <span style="color:#828282"> @ 24 Oct 2011 05:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @all-- can ID be 0 ???????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28353"></a> 
+ <div id="c28353" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-28353" class="active">@admin pls help why this code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/agra_ankur">agra_ankur</a></strong>
+   <span style="color:#828282"> @ 10 Jun 2012 02:51 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin pls help why this code is giving runtime error? 
+    <a href="http://www.codechef.com/viewsolution/1114682" title="http://www.codechef.com/viewsolution/1114682">http://www.codechef.com/viewsolution/1114682</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28495"></a> 
+ <div id="c28495" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-28495" class="active">Hey guys could you pls help</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sierra">sierra</a></strong>
+   <span style="color:#828282"> @ 15 Jun 2012 04:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hey guys could you pls help me out...im getting WA... 
+    <a href="http://www.codechef.com/viewsolution/1128229" title="http://www.codechef.com/viewsolution/1128229">http://www.codechef.com/viewsolution/1128229</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31069"></a> 
+ <div id="c31069" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-31069" class="active">TLE??? How? My code is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 31 Aug 2012 03:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    TLE??? How? My code is O(n1+n2+n3)!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-32894"></a> 
+ <div id="c32894" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-32894" class="active">I have submitted my code six</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/u_n_o">u_n_o</a></strong>
+   <span style="color:#828282"> @ 8 Oct 2012 01:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I have submitted my code six to seven times...at first it was giving RE and after i modified and submitted again its showing WA...I'm new to codechef so can anyone help me out.....:)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38477"></a> 
+ <div id="c38477" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-38477" class="active">Plz tell me why it is giving</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rohitsinghal4u">rohitsinghal4u</a></strong>
+   <span style="color:#828282"> @ 21 Feb 2013 07:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Plz tell me why it is giving runtime error. I am unable to trace it. 
+    <a href="http://ideone.com/A2LYjN" title="http://ideone.com/A2LYjN">http://ideone.com/A2LYjN</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38478"></a> 
+ <div id="c38478" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-38478" class="active">@rohitsinghal4u : Just note</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 22 Feb 2013 12:06 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @rohitsinghal4u : Just note the sample input given with the problem statement . There N1 = 5 , N2 = 6 , N3 = 5 but actual id's are as big as 90 . So in bigger test cases at judge even though N1,N2,N3 &lt;= 50000 , the actual id's could be 10^9 ( say for example ). You are using the id as array index which will exceed the length of array . Just try a simple test case : 1 1 1 ( N1 , N2 , N3 ) 1000000000 ( the first id) 1000000000 ( the second id) 1000000000 ( the third id ) You will get a runtime error .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-45729"></a> 
+ <div id="c45729" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-45729" class="active">@vineetpaliwal-No man, read</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sahilpruthi92">sahilpruthi92</a></strong>
+   <span style="color:#828282"> @ 14 Jun 2013 07:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vineetpaliwal-No man, read the previous comments. The ID can fit in a four bit signed integer.:) And so this test case isn't required.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46219"></a> 
+ <div id="c46219" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-46219" class="active">@admin please tell me what is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ravikumar851">ravikumar851</a></strong>
+   <span style="color:#828282"> @ 17 Jun 2013 11:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin please tell me what is wrong with my code. i am getting wrong answer. 
+    <a href="http://www.codechef.com/viewsolution/2277385" title="http://www.codechef.com/viewsolution/2277385">http://www.codechef.com/viewsolution/2277385</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49348"></a> 
+ <div id="c49348" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-49348" class="active">@Admin Please Tell Me What Is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vicky_84">vicky_84</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2013 09:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin Please Tell Me What Is Wrong With My Code. I Am Getting Wrong Answer. I Have Checked All The Possible Cases And It Getting Right On My Compiler. 
+    <a href="http://www.codechef.com/viewsolution/2400219" title="http://www.codechef.com/viewsolution/2400219">http://www.codechef.com/viewsolution/2400219</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49436"></a> 
+ <div id="c49436" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-49436" class="active">Finally Accepted.........</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vicky_84">vicky_84</a></strong>
+   <span style="color:#828282"> @ 26 Jul 2013 10:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Finally Accepted......... :) Phewwwww...........
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-54756"></a> 
+ <div id="c54756" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-54756" class="active">@Admin: please correct the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/princewinner">princewinner</a></strong>
+   <span style="color:#828282"> @ 9 Sep 2013 01:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin: please correct the range of the input in this problem..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71514"></a> 
+ <div id="c71514" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-71514" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/thetailedbeast">thetailedbeast</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2014 10:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/3282347" title="http://www.codechef.com/viewsolution/3282347">http://www.codechef.com/viewsolution/3282347</a> Can someone please tell me what is wrong in this code?..it worked just fine in my compiler and gave me the correct output but here i get a WA.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71835"></a> 
+ <div id="c71835" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-71835" class="active">too easy!!!!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/krish728">krish728</a></strong>
+   <span style="color:#828282"> @ 29 Jan 2014 04:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    too easy!!!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-73077"></a> 
+ <div id="c73077" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-73077" class="active">import</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/agarwalnaimish">agarwalnaimish</a></strong>
+   <span style="color:#828282"> @ 14 Feb 2014 07:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    import java.util.Arrays; import java.util.Scanner; class VoterListDiscrepancy { public static void main(String args[]) { Scanner scanner = new Scanner(System.in); int n1, n2, n3; int v4[]; n1 = scanner.nextInt(); n2 = scanner.nextInt(); n3 = scanner.nextInt(); v4 = new int[n1 + n2 + n3]; for (int i = 0; i &lt; n1 + n2 + n3; i++) { v4[i] = scanner.nextInt(); } Arrays.sort(v4); collector(v4); } public static void collector(int v4[]) { int count = 1; int comp = v4[0]; int c = 0; String str = ""; for (int i = 1; i &lt; v4.length; i++) { if (v4[i] == comp &amp;&amp; count == 1) { count++; } else { count = 1; comp = v4[i]; } if (count &gt;= 2) { str += v4[i] + "n"; c++; } } System.out.println(str.split("n").length + "n" + str); } } Can anyone tell why the time limit exceeds here
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75661"></a> 
+ <div id="c75661" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-75661" class="active">@admin i got right answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chiragjn">chiragjn</a></strong>
+   <span style="color:#828282"> @ 23 Mar 2014 07:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin i got right answer but in 3.18 seconds but timelimit mentioned is 2 seconds any explanation?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78127"></a> 
+ <div id="c78127" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-78127" class="active">can anyone tell me range of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sachin_gupta3">sachin_gupta3</a></strong>
+   <span style="color:#828282"> @ 14 May 2014 11:59 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone tell me range of pids
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78671"></a> 
+ <div id="c78671" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-78671" class="active">please help!! why is it a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/uniquephase">uniquephase</a></strong>
+   <span style="color:#828282"> @ 3 Jun 2014 11:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please help!! why is it a runtime error?? 
+    <a href="http://www.codechef.com/viewsolution/3968142" title="http://www.codechef.com/viewsolution/3968142">http://www.codechef.com/viewsolution/3968142</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78688"></a> 
+ <div id="c78688" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-78688" class="active">I am getting a SIGSEGV ??</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anujverma3645">anujverma3645</a></strong>
+   <span style="color:#828282"> @ 4 Jun 2014 05:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting a SIGSEGV ?? Please Check 
+    <a href="http://www.codechef.com/viewsolution/3969913" title="http://www.codechef.com/viewsolution/3969913">http://www.codechef.com/viewsolution/3969913</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79701"></a> 
+ <div id="c79701" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-79701" class="active">@admin the ID value can be</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/uniquephase">uniquephase</a></strong>
+   <span style="color:#828282"> @ 18 Jun 2014 04:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin the ID value can be any number till 4Byte (as mentioned in second comment) , but many codes are being accepted that includes only upto 1000000 ID value, why so ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80211"></a> 
+ <div id="c80211" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-80211" class="active">Admin help me. It works fine</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sac5894_nitkkr">sac5894_nitkkr</a></strong>
+   <span style="color:#828282"> @ 3 Jul 2014 12:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Admin help me. It works fine on my comp. But showing wa here.my sol id is 4174892.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83751"></a> 
+ <div id="c83751" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-83751" class="active">Please look at my code. Its</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/thegooglerlm10">thegooglerlm10</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2014 12:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please look at my code. Its giving wrong answer. I have checked for all I could think :( 
+    <a href="http://www.codechef.com/viewsolution/4571934" title="http://www.codechef.com/viewsolution/4571934">http://www.codechef.com/viewsolution/4571934</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83799"></a> 
+ <div id="c83799" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-83799" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/singlas">singlas</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2014 06:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/4580237" title="http://www.codechef.com/viewsolution/4580237">http://www.codechef.com/viewsolution/4580237</a> i m getting runtime error please check my code and tell me what's the reason?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83881"></a> 
+ <div id="c83881" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-83881" class="active">@admin the ID value can be</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/surbhi23">surbhi23</a></strong>
+   <span style="color:#828282"> @ 24 Aug 2014 04:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin the ID value can be any number till 4Byte (as mentioned in second comment) , but many codes are being accepted that includes only upto 1000000 ID value, why so ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86129"></a> 
+ <div id="c86129" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-86129" class="active">Great Problem! :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/priyankpalod">priyankpalod</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2014 01:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Great Problem! :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92326"></a> 
+ <div id="c92326" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-92326" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ankit_patel11">ankit_patel11</a></strong>
+   <span style="color:#828282"> @ 27 Dec 2014 02:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/5652421" title="http://www.codechef.com/viewsolution/5652421">http://www.codechef.com/viewsolution/5652421</a> i am getting a memory space problem plz help i am using a single integer array
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94324"></a> 
+ <div id="c94324" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-94324" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/parijit">parijit</a></strong>
+   <span style="color:#828282"> @ 23 Jan 2015 01:55 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/5966170" title="http://www.codechef.com/viewsolution/5966170">http://www.codechef.com/viewsolution/5966170</a> I am getting SIGSEGV error in this solution. Help??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95115"></a> 
+ <div id="c95115" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-95115" class="active">can any1 find why codechef is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/keshav_1994">keshav_1994</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2015 08:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can any1 find why codechef is showing wrong ans to my solution ??? 
+    <a href="http://www.codechef.com/viewsolution/6047657" title="http://www.codechef.com/viewsolution/6047657">http://www.codechef.com/viewsolution/6047657</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103054"></a> 
+ <div id="c103054" class="comment clear-block"> 
+  <h3><a href="/problems/VOTERS#comment-103054" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ritubala">ritubala</a></strong>
+   <span style="color:#828282"> @ 6 May 2015 07:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6843521" title="http://www.codechef.com/viewsolution/6843521">http://www.codechef.com/viewsolution/6843521</a> m getting SIGSEGV error .... can smone pls help me ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

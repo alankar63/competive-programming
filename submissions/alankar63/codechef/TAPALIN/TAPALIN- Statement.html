@@ -1,0 +1,221 @@
+<div id="node-2038553" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> Do you know that The Chef has a special interest in palindromes? Yes he does! Almost all of the dishes in his restaurant is named by a palindrome strings. The problem is that a name of a dish should not be too long, so The Chef has only limited choices when naming a new dish. </p> 
+  <p> For the given positive integer <b>N</b>, your task is to calculate the number of palindrome strings of length not exceeding <b>N</b>, that contain only lowercase letters of English alphabet (letters from 'a' to 'z', inclusive). Recall that a palindrome is a string that reads the same left to right as right to left (as in "radar"). </p> 
+  <p> For example:</p> 
+  <ul> 
+   <li>For <b>N = 1</b>, we have <b>26</b> different palindromes of length not exceeding <b>N</b>:<br> "a", "b", ..., "z".<br></li> 
+   <li>For <b>N = 2</b> we have <b>52</b> different palindromes of length not exceeding <b>N</b>:<br> "a", "b", ..., "z",<br> "aa", "bb", ..., "zz".<br><br></li> 
+   <li>For <b>N = 3</b> we have <b>728</b> different palindromes of length not exceeding <b>N</b>:<br> "a", "b", ..., "z",<br> "aa", "bb", ..., "zz",<br> "aaa", "aba", ..., "aza",<br> "bab", "bbb", ..., "bzb",<br> ...,<br> "zaz", "zbz", ..., "zzz".<br><br><br><br><br><br></li> 
+  </ul> 
+  <p> Since the answer can be quite large you should output it modulo <b>1000000007</b> (<b>10<sup>9</sup> + 7</b>). Yes, we know, most of you already hate this modulo, but there is nothing we can do with it :) </p> 
+  <h3>Input</h3> 
+  <p> The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows. The only line of each test case contains a single integer <b>N</b>. </p> 
+  <h3>Output</h3> 
+  <p> For each test case, output a single line containing the answer for the corresponding test case. </p> 
+  <h3>Constrains</h3> 
+  <p></p>
+  <ul> 
+   <li><b>1</b> ? <b>T</b> ? <b>1000</b></li> 
+   <li><b>1</b> ? <b>N</b> ? <b>10<sup>9</sup></b></li> 
+  </ul> 
+  <p></p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+5
+1
+2
+3
+4
+100
+
+<b>Output:</b>
+26
+52
+728
+1404
+508533804
+</pre>
+  <h3>Explanation</h3> 
+  <p> The first three examples are explained in the problem statement above. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/tuananh93">tuananh93</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/anton_lunyov">anton_lunyov</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/TAPALIN">http://discuss.codechef.com/problems/TAPALIN</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook32"> cook32 </a><a class="problem-tag-small " href="/tags/problems/matrix-expo"> matrix-expo </a><a class="problem-tag-small " href="/tags/problems/modulo"> modulo </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a><a class="problem-tag-small " href="/tags/problems/simple-math"> simple-math </a><a class="problem-tag-small " href="/tags/problems/tuananh93"> tuananh93 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>26-01-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/TAPALIN">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-40137"></a> 
+ <div id="c40137" class="comment clear-block"> 
+  <h3><a href="/problems/TAPALIN#comment-40137" class="active">for the examples at the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/linguini">linguini</a></strong>
+   <span style="color:#828282"> @ 25 Mar 2013 06:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    for the examples at the bottom: shouldn't the inputs be {1, 2, 3} for outputs {26, 52, 728}? i think there is also a missing output.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40243"></a> 
+ <div id="c40243" class="comment clear-block"> 
+  <h3><a href="/problems/TAPALIN#comment-40243" class="active">someone can tell me where can</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nasan">nasan</a></strong>
+   <span style="color:#828282"> @ 5 Apr 2013 02:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    someone can tell me where can I see the solution in algo
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-42291"></a> 
+ <div id="c42291" class="comment clear-block"> 
+  <h3><a href="/problems/TAPALIN#comment-42291" class="active">for that you must toil and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rambhakt">rambhakt</a></strong>
+   <span style="color:#828282"> @ 6 May 2013 07:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    for that you must toil and try to extract the algo out of the programs of the people who have already solved the problem...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-42293"></a> 
+ <div id="c42293" class="comment clear-block"> 
+  <h3><a href="/problems/TAPALIN#comment-42293" class="active">by the way the basic concept</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rambhakt">rambhakt</a></strong>
+   <span style="color:#828282"> @ 6 May 2013 07:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    by the way the basic concept here is that you can choose only half of the palindrome, the other half is automatically decided
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-42294"></a> 
+ <div id="c42294" class="comment clear-block"> 
+  <h3><a href="/problems/TAPALIN#comment-42294" class="active">by the way the basic concept</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rambhakt">rambhakt</a></strong>
+   <span style="color:#828282"> @ 6 May 2013 07:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    by the way the basic concept here is that you can choose only half of the palindrome, the other half is automatically decided
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43525"></a> 
+ <div id="c43525" class="comment clear-block"> 
+  <h3><a href="/problems/TAPALIN#comment-43525" class="active">anybody plz help i am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/paramvi">paramvi</a></strong>
+   <span style="color:#828282"> @ 21 May 2013 01:39 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    anybody plz help i am submitting solution in java n it gives compile time error "Main.java:3: class Palindrome is public, should be declared in a file named Palindrome.java public class Palindrome ^ 1 error" How do i fix it?????????...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84474"></a> 
+ <div id="c84474" class="comment clear-block"> 
+  <h3><a href="/problems/TAPALIN#comment-84474" class="active">Here are some magic numbers</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/k1026501">k1026501</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2014 08:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Here are some magic numbers for this problem (I will leave it up to you to figure out how to use them): for odd n 560000032 for even n 560000006 in the end add 440000001 You might want this array too: 1, 26, 676, 456976, 827063120, 675900607, 345077060, 504696368, 89362470, 988601350, 380494146, 126838758, 418366074, 648962286, 702281481, 103158436, 843474462, 66045303, 17827935, 264139380, 578397123, 552874526, 360033003, 341831675, 215363374, 535994202, 566588330, 445032569, 84361859, 204117420
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85503"></a> 
+ <div id="c85503" class="comment clear-block"> 
+  <h3><a href="/problems/TAPALIN#comment-85503" class="active">why everyone multiplying with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/krodhking">krodhking</a></strong>
+   <span style="color:#828282"> @ 19 Sep 2014 08:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why everyone multiplying with 2800000002(or modulo of(25,N/2)) instead of dividing by 25
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85505"></a> 
+ <div id="c85505" class="comment clear-block"> 
+  <h3><a href="/problems/TAPALIN#comment-85505" class="active">I have done the code as</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nimishsinghal">nimishsinghal</a></strong>
+   <span style="color:#828282"> @ 19 Sep 2014 08:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I have done the code as follows 
+    <a href="http://ideone.com/yUlTvx" title="http://ideone.com/yUlTvx">http://ideone.com/yUlTvx</a> , but my solution fails for large input(say 100).I am not understanding the reason to divide with 25,PLEASE HELP..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

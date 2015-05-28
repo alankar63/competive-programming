@@ -1,0 +1,237 @@
+<div id="node-2324648" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p align="justify">Chef Ceil has some matchsticks in his kitchen.</p> 
+  <p align="justify"><b>Detail of matchsticks:</b><br> There are <b>N</b> matchsticks in total. They are numbered from to 0 to <b>N</b>-1 inclusive. All matchsticks have same length. But they may have different rates of burning. For <b>i<sup>th</sup></b> matchstick, we denote <b>b<sub>i</sub></b> as the time required for that matchstick to completely burn-down if lighted at one end. The matchsticks have uniform rate of burning.<br> If lighted at both ends simultaneously, the matchstick will take only half of the original time to burn down.</p> 
+  <p align="justify"><b>Arrangement:</b><br> He ties rear end of the all the matchsticks together at one point and the front end is kept free. The matchstick numbered <b>i</b> is adjacent to matchstick numbered <b>i+1</b> for all 0&lt;= <b>i</b> &lt;=<b>N</b>-2.<br> <i>Bodies of matchsticks do not touch each other, except at rear end.</i> All matchsticks are kept on the floor.</p> 
+  <p align="justify"><b>Task:</b><br> There are <b>Q</b> queries, in each query we ask:<br> If he lights the free end of all matchsticks numbered between <b>L</b> and <b>R</b> both inclusive, what will be the time needed for all matchsticks to get completely burnt.</p> 
+  <h3>Input</h3> 
+  <p align="justify">First line of input contains one integer <b>N</b>, total number of matchsticks. The next line contains <b>N</b> space separated integers <b>b<sub>i</sub></b>, where <b>b<sub>i</sub></b> is the <b>time</b> required for <b>i<sup>th</sup></b> matchstick to completely burn-down if lighted at one end.<br> Next line contains one integer <b>Q</b>, total number of queries you need to answer. Then there are <b>Q</b> queries in next <b>Q</b> lines. Each line has two space separated integers <b>L</b> and <b>R</b>.</p> 
+  <h3>Output</h3> 
+  <p align="justify">Print <b>Q</b> lines, one for each query, printing the answer for each query, that is, the time it will take for all the matchsticks to get completely burn down. Every time you must print your answer with 1 decimal place. </p> 
+  <h3>Constraints:</h3> 
+  <p>1 &lt;= <b>N</b> &lt;= 10<sup>5</sup> <br> 1&lt;=<b> b<sub>i</sub> </b>&lt;= 10<sup>8</sup><br> 1 &lt;= <b>Q</b> &lt;= 10<sup>5</sup><br> 0 &lt;= <b>L</b> &lt;= <b>R</b> &lt;= <b>N</b>-1</p> 
+  <h3>Example</h3> 
+  <pre>
+
+<b>Input</b>
+1
+5
+1
+0 0
+<b>Output</b>
+5.0
+
+<b>Input</b>
+2
+3 5
+1
+0 1
+<b>Output</b>
+4.0
+
+<b>Input</b>
+18
+3 4 2 1 5 7 9 7 10 5 12 3 1 1 2 1 3 2
+1
+4 10
+<b>Output</b>
+9.0
+</pre>
+  <p> <b>Explanation</b><br> <img height="491" width="390" src="http://www.codechef.com/download/matches.jpg"><br> For the last input, in figure yellow colored matches are lighted by a lighter simultaneously.<br> The numbers indicate the time required to burn that matchstick (if lighted at one end)<br> Now the first lighted matchstick will completely burn in 5 seconds. Then it will light up all the rest matches from the rear end.<br> Some matches will have fire at both ends and thus after 5 seconds, they will start burning with twice the original rate.<br> Thus time taken for matches to burn completely will be :<br> (from left to right): 8.0, 9.0, 7.0, 6.0, 5.0, 6.0, 7.0, 6.0, 7.5, 5.0, 8.5, 8.0, 6.0, 6.0, 7.0, 6.0, 8.0, 7.0.<br> So, the answer will be 9.0 (the maximum among these). </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/mkagenius">mkagenius</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/pieguy">pieguy</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/MSTICK">http://discuss.codechef.com/problems/MSTICK</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/may13"> may13 </a><a class="problem-tag-small " href="/tags/problems/mkagenius"> mkagenius </a><a class="problem-tag-small " href="/tags/problems/segment-tree"> segment-tree </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a><a class="problem-tag-small " href="/tags/problems/simple-math"> simple-math </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>22-06-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>3 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/MSTICK">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-43369"></a> 
+ <div id="c43369" class="comment clear-block"> 
+  <h3><a href="/problems/MSTICK#comment-43369" class="active">I am findink minimum in range</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mainak22793">mainak22793</a></strong>
+   <span style="color:#828282"> @ 15 May 2013 12:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am findink minimum in range and building new array and finding maximum.....its showing time limit exceeded is there any other approach??.......
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43395"></a> 
+ <div id="c43395" class="comment clear-block"> 
+  <h3><a href="/problems/MSTICK#comment-43395" class="active">You've to use advanced data</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/eh2arch">eh2arch</a></strong>
+   <span style="color:#828282"> @ 16 May 2013 02:59 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    You've to use advanced data structures. Check editorial.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46179"></a> 
+ <div id="c46179" class="comment clear-block"> 
+  <h3><a href="/problems/MSTICK#comment-46179" class="active">I have implemented the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/swap_coder">swap_coder</a></strong>
+   <span style="color:#828282"> @ 17 Jun 2013 05:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I have implemented the segment tree and correct approach , it is working for basic test cases but giving WA can somebody see 
+    <a href="http://www.codechef.com/viewsolution/2276619" title="http://www.codechef.com/viewsolution/2276619">http://www.codechef.com/viewsolution/2276619</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46360"></a> 
+ <div id="c46360" class="comment clear-block"> 
+  <h3><a href="/problems/MSTICK#comment-46360" class="active">Runtime Error. What might be</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/r93sachdeva55">r93sachdeva55</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2013 11:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Runtime Error. What might be wrong with my code?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46363"></a> 
+ <div id="c46363" class="comment clear-block"> 
+  <h3><a href="/problems/MSTICK#comment-46363" class="active">just write return 0; at end</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kashish55">kashish55</a></strong>
+   <span style="color:#828282"> @ 22 Jun 2013 12:17 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    just write return 0; at end
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81966"></a> 
+ <div id="c81966" class="comment clear-block"> 
+  <h3><a href="/problems/MSTICK#comment-81966" class="active">How can i optimize my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vinod10147">vinod10147</a></strong>
+   <span style="color:#828282"> @ 26 Jul 2014 11:09 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    How can i optimize my solution.. 
+    <a href="http://www.codechef.com/viewsolution/4377439" title="http://www.codechef.com/viewsolution/4377439">http://www.codechef.com/viewsolution/4377439</a> please help.. Thanks in advance...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94014"></a> 
+ <div id="c94014" class="comment clear-block"> 
+  <h3><a href="/problems/MSTICK#comment-94014" class="active">Can someone help me on this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aadi@09">aadi@09</a></strong>
+   <span style="color:#828282"> @ 19 Jan 2015 05:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone help me on this problem. My try link: 
+    <a href="https://ideone.com/KsiFlR" title="https://ideone.com/KsiFlR">https://ideone.com/KsiFlR</a> According to the tutorial i made two segment trees. One for minimum and other for maximum.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94016"></a> 
+ <div id="c94016" class="comment clear-block"> 
+  <h3><a href="/problems/MSTICK#comment-94016" class="active">Edit: Solved it . For others</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aadi@09">aadi@09</a></strong>
+   <span style="color:#828282"> @ 19 Jan 2015 06:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Edit: Solved it . For others having problem run this testcase: 7 1 2 3 4 5 6 7 1 1 6 Output: 4.5
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102901"></a> 
+ <div id="c102901" class="comment clear-block"> 
+  <h3><a href="/problems/MSTICK#comment-102901" class="active">The picture really helped in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anupam_codecs">anupam_codecs</a></strong>
+   <span style="color:#828282"> @ 4 May 2015 11:56 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The picture really helped in solving the problem
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103038"></a> 
+ <div id="c103038" class="comment clear-block"> 
+  <h3><a href="/problems/MSTICK#comment-103038" class="active">testcase: 7 1 2 3 4 5 6 7 1 1</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/santhosh2739">santhosh2739</a></strong>
+   <span style="color:#828282"> @ 5 May 2015 08:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    testcase: 7 1 2 3 4 5 6 7 1 1 6 Output: 4.5 I got the out put but compiler says Wrong answer 
+    <a href="http://www.codechef.com/viewsolution/6841594" title="http://www.codechef.com/viewsolution/6841594">http://www.codechef.com/viewsolution/6841594</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

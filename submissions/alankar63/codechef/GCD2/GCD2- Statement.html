@@ -1,0 +1,1937 @@
+<div id="node-124102" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>Frank explained its friend Felman the algorithm of Euclides to calculate the GCD<br> of two numbers. Then Felman implements it algorithm </p> 
+  <pre>
+int gcd(int a, int b)
+{
+	if (b==0)
+		return a;
+	else
+		return gcd(b,a%b);
+}
+</pre>
+  <p>and it proposes to Frank that makes it<br> but with a little integer and another integer that has up to 250 digits. </p>
+  <p> Your task is to help Frank programming an efficient code for the challenge of Felman.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input file contains a number representing the number of lines to follow.<br> Each line consists of two number A and B (0 &lt;= A &lt;= 40000 and A &lt;= B &lt; 10^250).</p> 
+  <h3>Output</h3> 
+  <p>Print for each pair (A,B) in the input one integer representing the GCD of A and B.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+2
+2 6
+10 11
+
+
+<b>Output:</b>
+2
+1
+
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/admin">admin</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/admin"> admin </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>1-12-2008</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>0.5 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>1000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, FORT, FS, GO, HASK, ICK, ICON, JS, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PIKE, PRLG, PYTH, PYTH 3.1.2, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/GCD2">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-383"></a> 
+ <div id="c383" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-383" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kamali">kamali</a></strong>
+   <span style="color:#828282"> @ 7 Jul 2009 07:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I swear I solve it correctly, but it says my answer is wrong! :(</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-386"></a> 
+ <div id="c386" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-386" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 7 Jul 2009 05:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Well, the test cases are proper. You might want to check your algorithm by checking it against smaller values, the answer to which you can find either manually or by bruteforce.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1099"></a> 
+ <div id="c1099" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-1099" class="active">those who solve it using</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajarshi99">rajarshi99</a></strong>
+   <span style="color:#828282"> @ 20 Aug 2009 10:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    those who solve it using c/c++ do they design a bigint class using fast fourier transform etc ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1105"></a> 
+ <div id="c1105" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-1105" class="active">No, the solution to this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 21 Aug 2009 06:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>No, the solution to this problem is far simpler than that.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1120"></a> 
+ <div id="c1120" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-1120" class="active">@Rajarshi You don't need fast</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 21 Aug 2009 01:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Rajarshi You don't need fast fourier transforms to solve this problem :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1341"></a> 
+ <div id="c1341" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-1341" class="active">What is the name of the input</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jineshgeorge">jineshgeorge</a></strong>
+   <span style="color:#828282"> @ 1 Sep 2009 11:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>What is the name of the input file ?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1343"></a> 
+ <div id="c1343" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-1343" class="active">You have to read input from</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 1 Sep 2009 01:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>You have to read input from standard input (stdin) and the output should be written to standard output (stdout)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1392"></a> 
+ <div id="c1392" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-1392" class="active">Can anyone point me to a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jshowa">jshowa</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2009 04:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Can anyone point me to a place that explains how to handle large numbers in C without arrays? I found some algorithms that will do this, but how do you handle an integer with 10^250 digits? Do you make a type in C or something? If someone can point some place where I can do some research, I would appreciate it.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1406"></a> 
+ <div id="c1406" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-1406" class="active">You would need an array to do</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2009 01:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>You would need an array to do that. </p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1472"></a> 
+ <div id="c1472" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-1472" class="active">actually i submitted the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shaileshbhat">shaileshbhat</a></strong>
+   <span style="color:#828282"> @ 3 Sep 2009 05:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>actually i submitted the solution,it shows solution is too long max limit is 1000bytes or sometimes it shows runtime error.i tested for both large n small inputs,workn fine.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1473"></a> 
+ <div id="c1473" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-1473" class="active">size of solution is actually</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shaileshbhat">shaileshbhat</a></strong>
+   <span style="color:#828282"> @ 3 Sep 2009 05:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>size of solution is actually around 750bytes.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1479"></a> 
+ <div id="c1479" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-1479" class="active">You are getting a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 3 Sep 2009 06:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>You are getting a segmentation fault. You are accessing some array value which you aren't supposed to. </p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1488"></a> 
+ <div id="c1488" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-1488" class="active">oh...is there any limit for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shaileshbhat">shaileshbhat</a></strong>
+   <span style="color:#828282"> @ 3 Sep 2009 07:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>oh...is there any limit for number of lines of input...? in problem not specified...also for code size is ther any limit....</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1506"></a> 
+ <div id="c1506" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-1506" class="active">i got it...!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shaileshbhat">shaileshbhat</a></strong>
+   <span style="color:#828282"> @ 4 Sep 2009 12:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i got it...!!</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2035"></a> 
+ <div id="c2035" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2035" class="active">oooooh.. i have solved it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rishbeck8">rishbeck8</a></strong>
+   <span style="color:#828282"> @ 26 Sep 2009 11:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>oooooh..</p> 
+    <p>i have solved it correctly..taken care of everything still can;t get it!!!!&nbsp;where i m <a href="mailto:wrong!@&nbsp;&nbsp; !!!!!help">wrong!@&nbsp;&nbsp; !!!!!help</a> needed...</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2037"></a> 
+ <div id="c2037" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2037" class="active">The range of A is 0&lt;=A&lt;=40000</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anujusit">anujusit</a></strong>
+   <span style="color:#828282"> @ 27 Sep 2009 02:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The range of A is 0&lt;=A&lt;=40000 , how can one find&nbsp; the GCD of zero and a number</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2040"></a> 
+ <div id="c2040" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2040" class="active">The same way you find the GCD</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 27 Sep 2009 09:17 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The same way you find the GCD of anything else. It is the largest number which divides evenly into both. Nothing special about 0.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2100"></a> 
+ <div id="c2100" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2100" class="active">can't i solve this using</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ajay">ajay</a></strong>
+   <span style="color:#828282"> @ 30 Sep 2009 11:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can't i solve this using Java...because when i submit the solution,its says you cant sue this language for this problem solution,but in the languages&nbsp;<span>JAR &nbsp;is allowed??</span></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2102"></a> 
+ <div id="c2102" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2102" class="active">I also would like to know why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/stolis">stolis</a></strong>
+   <span style="color:#828282"> @ 30 Sep 2009 07:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I also would like to know why Java is not allowed. JAR is allowed but the source limit 1000 makes it impossible to use.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2106"></a> 
+ <div id="c2106" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2106" class="active">BTW there is something odd</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/stolis">stolis</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2009 01:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>BTW there is something odd with the timestamps you are using for comments. I wrote the previous comment after 'Ajay Patel's comment but from the times of the comments it looks like I wrote it 4 hours before him.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2114"></a> 
+ <div id="c2114" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2114" class="active">The timestamp issue will be</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/i0exception">i0exception</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2009 01:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The timestamp issue will be fixed.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2117"></a> 
+ <div id="c2117" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2117" class="active">do we consider for case where</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aseem_pandey">aseem_pandey</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2009 04:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>do we consider for case where any of the num is 0 ???</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2119"></a> 
+ <div id="c2119" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2119" class="active">Yes</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2009 05:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Yes</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2197"></a> 
+ <div id="c2197" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2197" class="active">i implemented all the library</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gt">gt</a></strong>
+   <span style="color:#828282"> @ 3 Oct 2009 08:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i implemented all the library functions that i needed , myself ...code runs for 250 lines</p> 
+    <p>it is giving correct results , i&nbsp; cross checked many times... but the size of the code exceeds 1000 bytes :(</p> 
+    <p>is it better to use library functions ??? , does the included code (in case of a c program) contribute to the size of the code as well ???</p> 
+    <p>&nbsp;</p> 
+    <p>&nbsp;</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2199"></a> 
+ <div id="c2199" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2199" class="active">This problem can be solved</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 3 Oct 2009 11:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>This problem can be solved without using any library functions.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2234"></a> 
+ <div id="c2234" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2234" class="active">Could you, please, tell me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/stolis">stolis</a></strong>
+   <span style="color:#828282"> @ 5 Oct 2009 02:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Could you, please, tell me why JAVA is not allowed for this problem? Is it a bug or is it&nbsp;intentional? If it is a bug then, please, fix it. If it is intentional, please, give me some justification. Note that JAR is allowed but the source limit 1000 makes it impossible to use.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2237"></a> 
+ <div id="c2237" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2237" class="active">I presume the reason it is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 5 Oct 2009 05:04 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I presume the reason it is not allowed is because the problem is intended to be solved without big integer calculations, and a solution with BigInteger in Java would be trivial.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2253"></a> 
+ <div id="c2253" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2253" class="active">+1 at Stephen</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 5 Oct 2009 02:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>+1 at Stephen</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2257"></a> 
+ <div id="c2257" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2257" class="active">@Stephen and @Codechef: I</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/stolis">stolis</a></strong>
+   <span style="color:#828282"> @ 5 Oct 2009 03:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Stephen and @Codechef: I don't believe this explanation ;-). It doesn't explain why other languages like JAR and NICE are allowed. I just had to change the syntax of my JAVA program to fit the syntax of NICE. Moreover, it is quite easy to avoid BigInteger in this case, but it is very difficult in INSOMB1 (Primality Testing) problem where JAVA is allowed. Hence, there is some inconsistency, at least.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2351"></a> 
+ <div id="c2351" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2351" class="active">what's the output for case :</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aseem_pandey">aseem_pandey</a></strong>
+   <span style="color:#828282"> @ 9 Oct 2009 01:36 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>what's the output for case : a=0, b=0 ????</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2552"></a> 
+ <div id="c2552" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2552" class="active">http://en.wikipedia.org/wiki/</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahulakaneo">rahulakaneo</a></strong>
+   <span style="color:#828282"> @ 19 Oct 2009 11:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><a href="http://en.wikipedia.org/wiki/Greatest_common_divisor" title="http://en.wikipedia.org/wiki/Greatest_common_divisor">http://en.wikipedia.org/wiki/Greatest_common_divisor</a></p> 
+    <p>&nbsp;</p> 
+    <p>Greatest Common Divisor is defined only for non zero integers. And I don't understand as to how you define the greatest common divisor for 0 and 0.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2554"></a> 
+ <div id="c2554" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2554" class="active">There won't be a test like 0</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 19 Oct 2009 11:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>There won't be a test like 0 0</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2557"></a> 
+ <div id="c2557" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2557" class="active">WHY ARENT THEY ALLOWING JAVA</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Karan1337">Karan1337</a></strong>
+   <span style="color:#828282"> @ 20 Oct 2009 01:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>WHY ARENT THEY ALLOWING JAVA IN THIS PROBLEM?</p> 
+    <p>JUST FOR THE BIGINTEGER'S SAKE, I DOUBT.</p> 
+    <p>MY EFFECTIVE CODE IS JUST 23 LINES AND WORKS PERFECT.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-2558"></a> 
+ <div id="c2558" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-2558" class="active">@Karan: Yes, it is silly that</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/stolis">stolis</a></strong>
+   <span style="color:#828282"> @ 20 Oct 2009 03:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Karan: Yes, it is silly that Java is not allowed for this problem. The simplest solution for us, Java programmers, is to port your solution to NICE. It has almost the same syntax. Just remove the class stuff (e.g. leave just methods). Replace imports like java.math.BigInteger by java.math.* and remove public/private/protected keywords. You should end up with a valid NICE program that is allowed in GCD2.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-3126"></a> 
+ <div id="c3126" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-3126" class="active">i solved this problem in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shailendra_ameta">shailendra_ameta</a></strong>
+   <span style="color:#828282"> @ 10 Nov 2009 04:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i solved this problem in python but after submitting i got the message that i can not submit this problem in python. why????</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-3988"></a> 
+ <div id="c3988" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-3988" class="active">is this workable in ADA??</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/snavegeo87">snavegeo87</a></strong>
+   <span style="color:#828282"> @ 7 Dec 2009 04:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>is this workable in ADA??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4043"></a> 
+ <div id="c4043" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-4043" class="active">wen i try to submit soln it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akshay_4497mane">akshay_4497mane</a></strong>
+   <span style="color:#828282"> @ 10 Dec 2009 07:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <h3>wen i try to submit soln it shows this error</h3> 
+    <p>&nbsp;</p> 
+    <p>&nbsp;</p> 
+    <p>&nbsp;</p> 
+    <h3></h3> 
+    <h3>The requested URL is not supported</h3> 
+    <hr size="1"> 
+    <h3>The requested URL is not supported</h3> 
+    <hr size="1"> 
+    <p>[%S]</p> 
+    <p>&nbsp;</p> 
+    <p>&nbsp;</p> 
+    <p>&nbsp;</p> 
+    <p>&nbsp;</p> 
+    <p>whats this?????</p> 
+    <p>plz rply</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4499"></a> 
+ <div id="c4499" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-4499" class="active">is there a new line at the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Dalchand">Dalchand</a></strong>
+   <span style="color:#828282"> @ 4 Jan 2010 02:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>is there a new line at the end of input??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4979"></a> 
+ <div id="c4979" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-4979" class="active">@Jan: I guess JAR isn't</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jcomeau_ictx">jcomeau_ictx</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2010 01:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Jan: I guess JAR isn't impossible to use after all :^)</p> 
+    <p>The naive solution is very slow, however.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4980"></a> 
+ <div id="c4980" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-4980" class="active">some advantages of jarfiles:</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jcomeau_ictx">jcomeau_ictx</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2010 01:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>some advantages of jarfiles: they're compressed, you can name sources whatever you like (doesn't have to be Main.java), multiple sources and multiple data files are possible; and, if you're interested in keeping your algorithm a secret, it's not easy for people to read, though theoretically possible with a decompiler.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-6233"></a> 
+ <div id="c6233" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-6233" class="active">My code seems to work ok. But</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tlgylmz">tlgylmz</a></strong>
+   <span style="color:#828282"> @ 4 Mar 2010 03:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>My code seems to work ok. But i always get wrong answer here.I do not understand what is happening.And Stephen Merriman got a point about BigInteger class.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-6240"></a> 
+ <div id="c6240" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-6240" class="active">You don't handle A=0</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 4 Mar 2010 06:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>You don't handle A=0 properly, for one.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-6249"></a> 
+ <div id="c6249" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-6249" class="active">Thank you. I suppose gcd(0,x)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tlgylmz">tlgylmz</a></strong>
+   <span style="color:#828282"> @ 4 Mar 2010 02:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Thank you. I suppose gcd(0,x) where x&gt;=40000 suppose to give x. I must have forgetten the fact that atoi has a limit,of course:D</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-6257"></a> 
+ <div id="c6257" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-6257" class="active">I did what Mr.Merriman</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tlgylmz">tlgylmz</a></strong>
+   <span style="color:#828282"> @ 4 Mar 2010 06:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I did what Mr.Merriman suggested. It works perfectly for me but not for the judge. I still do not see what's wrong. Sorry for keeping this comment wall busy.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-7805"></a> 
+ <div id="c7805" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-7805" class="active">#include&lt;stdio.h&gt; &nbsp; int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/indraneel">indraneel</a></strong>
+   <span style="color:#828282"> @ 12 Apr 2010 10:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p> </p>
+    <p>#include&lt;stdio.h&gt;</p> 
+    <p>&nbsp;</p> 
+    <p>int gcd(int,int);</p> 
+    <p>int main()</p> 
+    <p>{</p> 
+    <p><span> </span>int a,b,g[10],n,i;</p> 
+    <p><span> </span>scanf("%d",&amp;n);</p> 
+    <p><span> </span>for(i=0;i&lt;n;i++)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>scanf("%d%d",&amp;a,&amp;b);</p> 
+    <p><span> </span>g[i]=gcd(a,b);</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>for(i=0;i&lt;n;i++)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>printf("%dn",g[i]);</p> 
+    <p><span> </span>}</p> 
+    <p>&nbsp;</p> 
+    <p><span> </span>return 0;</p> 
+    <p>}</p> 
+    <p>int gcd(int a,int b)</p> 
+    <p>{</p> 
+    <p><span> </span>if(a&lt;b)</p> 
+    <p><span> </span>return gcd(b,a);</p> 
+    <p><span> </span>else if(b==0)</p> 
+    <p><span> </span>return a;</p> 
+    <p><span> </span>else</p> 
+    <p><span> </span>return gcd(b,a%b);</p> 
+    <p>}</p> 
+    <div></div> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-7920"></a> 
+ <div id="c7920" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-7920" class="active">^ In case you are asking for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/f03nix">f03nix</a></strong>
+   <span style="color:#828282"> @ 18 Apr 2010 06:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>^ In case you are asking for a problem in your program. I'd recommend reading the input constraints again.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8232"></a> 
+ <div id="c8232" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-8232" class="active">@Antarpreet Singh should I</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/indraneel">indraneel</a></strong>
+   <span style="color:#828282"> @ 3 May 2010 03:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><span><b>@Antarpreet Singh</b></span></p> 
+    <p><span><span>should I give input into a file and then proceed?</span></span></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8235"></a> 
+ <div id="c8235" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-8235" class="active">No, you are supposed to read</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 3 May 2010 03:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>No, you are supposed to read from standard input and standard output like your program tries to do.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8238"></a> 
+ <div id="c8238" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-8238" class="active">then whats wrong with my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/indraneel">indraneel</a></strong>
+   <span style="color:#828282"> @ 3 May 2010 08:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>then whats wrong with my code?</p> 
+    <p>plz tell me, I'm new to codechef</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8246"></a> 
+ <div id="c8246" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-8246" class="active">You have lots of things</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 4 May 2010 03:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>You have lots of things wrong. For example, where does it say in the problem that there are less than 10 test cases? And have you looked at how big B can be?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8383"></a> 
+ <div id="c8383" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-8383" class="active">i am geting runtime error ,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunjanbansal">gunjanbansal</a></strong>
+   <span style="color:#828282"> @ 13 May 2010 05:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i am geting runtime error , anyhints y these occur ?? The program runs fine for large nums(tested within range of long int) and multiple test cases in my computer , its also working(cant check answer) for num &gt; 10^100 ..</p> 
+    <p>shouldnt more apt response be wrong answer than runtime error ??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8384"></a> 
+ <div id="c8384" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-8384" class="active">i am luving the corner cases</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunjanbansal">gunjanbansal</a></strong>
+   <span style="color:#828282"> @ 13 May 2010 06:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i am luving the corner cases ...</p> 
+    <p>but time limit exceeded , what is more faster input method than getchar() ?? , i dont have any computationaly intensive job in the program</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8385"></a> 
+ <div id="c8385" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-8385" class="active">@ gunjan i dont think we need</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/devendra088">devendra088</a></strong>
+   <span style="color:#828282"> @ 13 May 2010 07:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@ gunjan</p> 
+    <p>i dont think we need much faster input method to solve in time limit... i used simply scanf to take A as&nbsp; input and cin for B and it works fine with accepted time 0.00&nbsp; sec</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8386"></a> 
+ <div id="c8386" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-8386" class="active">i agree with devendra. though</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubh09">shubh09</a></strong>
+   <span style="color:#828282"> @ 13 May 2010 09:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i agree with devendra. though i used scanf for both A and B. (i used c)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8393"></a> 
+ <div id="c8393" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-8393" class="active">i am still getting TLE , my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunjanbansal">gunjanbansal</a></strong>
+   <span style="color:#828282"> @ 14 May 2010 11:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i am still getting TLE , my algo is O(Number of digits in B) . Number of flops is about 7*numdigits + of gcd(small_num,num&lt;small_num) any ideas y ? do we need a much better algo ??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8394"></a> 
+ <div id="c8394" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-8394" class="active">i am sorry , i had a grossly</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunjanbansal">gunjanbansal</a></strong>
+   <span style="color:#828282"> @ 14 May 2010 11:57 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i am sorry , i had a grossly wrong algo realised my mistake :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8582"></a> 
+ <div id="c8582" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-8582" class="active">I have tried my code for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/manjotpahwa">manjotpahwa</a></strong>
+   <span style="color:#828282"> @ 30 May 2010 11:56 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I have tried my code for about a 240 digits long B and its giving the right answer. I think I'm mistaking somewhere in representing my answer. My code is here <a href="http://www.codechef.com/viewsolution/246536" title="http://www.codechef.com/viewsolution/246536">http://www.codechef.com/viewsolution/246536</a>.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8597"></a> 
+ <div id="c8597" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-8597" class="active">Why doesnt minimum memory go</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunjanbansal">gunjanbansal</a></strong>
+   <span style="color:#828282"> @ 1 Jun 2010 12:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Why doesnt minimum memory go below 1.6mb ?? I tried my best it is still stuck at 1.6mb . Same code runs in about 2.5mb in g++ compiler . Does codechef attaches some sort of debugger ?? were can i get more on this ??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8961"></a> 
+ <div id="c8961" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-8961" class="active">hey , plz some 1 help</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Nikhil Agrawal">Nikhil Agrawal</a></strong>
+   <span style="color:#828282"> @ 14 Jun 2010 01:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>hey , plz some 1 help ....</p> 
+    <p>how could we take a number as an input whose number of digit is 10^250 in C programming.....</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9561"></a> 
+ <div id="c9561" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-9561" class="active">The language is unclear: "and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mcandre">mcandre</a></strong>
+   <span style="color:#828282"> @ 17 Jul 2010 01:37 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The language is unclear: "and it proposes to Frank that makes it but with".</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9630"></a> 
+ <div id="c9630" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-9630" class="active">@Jan Stola I know it's not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Karan1337">Karan1337</a></strong>
+   <span style="color:#828282"> @ 24 Jul 2010 09:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Jan Stola</p> 
+    <p>I know it's not right to paste code out here, but after making correctly in java, i'm really curious to convert my code to NICE, but i still keep getting errors</p> 
+    <p>JAVA CODE:-</p> 
+    <p>import java.io.*;<br>import java.util.*;<br>import java.math.*;<br>void main(String[] args)throws Exception<br>{<br>BufferedReader br=new BufferedReader(new InputStreamReader(System.in));<br><br>int n=Integer.parseInt(br.readLine());<br>String[] in=new String[1000];<br><br>for(int i=0;i&lt;n;i++)<br>in[i]=br.readLine();<br><br>for(int i=0;i&lt;n;i++){<br>StringTokenizer st=new StringTokenizer(in[i]);<br>BigInteger one=new BigInteger(st.nextToken());<br>BigInteger two=new BigInteger(st.nextToken());<br>System.out.println(one.gcd(two));<br>}<br><br>}</p> 
+    <p>&nbsp;</p> 
+    <p>Error:-</p> 
+    <p>C:Nicemainmain.nice: line 10, column 10:<br>Incorrect type in assignment to in<br>Found&nbsp;&nbsp; : ?java.lang.String[]<br>Expected: java.lang.String[]<br>compilation failed with 1 error</p> 
+    <p>&nbsp;</p> 
+    <p>Please could u help me out with the possible correcytions in the java code, i really want to complete this problem :)</p> 
+    <p>&nbsp;</p> 
+    <p>&nbsp;</p> 
+    <p>What i could possible convert by your comment:-</p> 
+    <p>import java.io.*;<br>import java.util.*;<br>import java.math.*;<br>class Main{<br>public static void main(String[] args)throws Exception<br>{<br>BufferedReader br=new BufferedReader(new InputStreamReader(System.in));<br><br>int n=Integer.parseInt(br.readLine());<br>String in[]=new String[1000];<br><br>for(int i=0;i&lt;n;i++)<br>in[i]=br.readLine();<br><br>for(int i=0;i&lt;n;i++){<br>StringTokenizer st=new StringTokenizer(in[i]);<br>BigInteger one=new BigInteger(st.nextToken());<br>BigInteger two=new BigInteger(st.nextToken());<br>System.out.println(one.gcd(two));<br>}<br><br>}}</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9631"></a> 
+ <div id="c9631" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-9631" class="active">CORRECTION:- Oops, in the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Karan1337">Karan1337</a></strong>
+   <span style="color:#828282"> @ 24 Jul 2010 09:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>CORRECTION:- Oops, in the Previous comment, the JAVA code is actually the NICE code :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10385"></a> 
+ <div id="c10385" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-10385" class="active">#include&lt;iostream&gt; using</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mukulbudania">mukulbudania</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2010 12:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>[code]#include&lt;iostream&gt;<br>using namespace std;<br><br>int gcd(int x,int y)<br>{if (y==0)return x;else return gcd(y,x%y);}<br>int gcdlarge(int a,char *b)<br>{<br> int val=0,i=0,y;<br> while(val&lt;a)<br> {<br> val= val*10 + *(b+i)-'0';i++;<br> }<br> y=val%a;<br> while(*(b+i)!=' ')<br> {<br> y=(y*10+*(b+i)-'0')%a;i++;<br> }<br> return gcd(a,y);<br>}<br> <br>int main()<br>{<br> int t,a,x,i;<br> char b[250];<br> cin&gt;&gt;t;<br> for(i=0;i&lt;t;i++)<br> {<br> scanf("%d %s",&amp;a,b);<br> x = gcdlarge(a,b);<br> cout&lt;&lt;x&lt;&lt;endl;<br> }<br>}<br>[/code]</p> 
+    <p>I am getting runtime exception. Its working on my machine. Can anyone tell whats the problem??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10399"></a> 
+ <div id="c10399" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-10399" class="active">One mistake is that the input</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2010 02:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>One mistake is that the input could have 250 digits, and your code only works for up to 249 digits.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10415"></a> 
+ <div id="c10415" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-10415" class="active">even making it 260 doesnt</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mukulbudania">mukulbudania</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2010 01:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>even making it 260 doesnt work??? i am getting runtime exception. can anyone suggest me a good input method..</p> 
+    <p>I have tried using string class. getline method and much more but nothing seems to be running.. everytime i have a runtime exception</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10418"></a> 
+ <div id="c10418" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-10418" class="active">Another mistake is that you</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2010 02:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Another mistake is that you haven't read the input bounds carefully.. your code fails on a rather easy test case.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10609"></a> 
+ <div id="c10609" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-10609" class="active">Can anyone give me some test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/algoritmus">algoritmus</a></strong>
+   <span style="color:#828282"> @ 9 Sep 2010 10:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Can anyone give me some test cases. i am always getting a wrong answer. :(</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10684"></a> 
+ <div id="c10684" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-10684" class="active">M gettin a runtime error of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/paarth">paarth</a></strong>
+   <span style="color:#828282"> @ 13 Sep 2010 01:13 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>M gettin a runtime error of type other i.e runtime(other)....can someone plz suggest me a solution of it.....asap.....m stuck to this prob...........</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10756"></a> 
+ <div id="c10756" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-10756" class="active">How 0 case should be handled?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/masud040201">masud040201</a></strong>
+   <span style="color:#828282"> @ 18 Sep 2010 05:59 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>How 0 case should be handled? I am assuming there wont be any output for A=0. also checking boundary for A. but getting WA. Can anybody help with that? Admin, can u give some hints?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10757"></a> 
+ <div id="c10757" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-10757" class="active">Ok assuming</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/masud040201">masud040201</a></strong>
+   <span style="color:#828282"> @ 18 Sep 2010 06:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Ok assuming gcd(A,B)=gcd(0,B)=B, but still getting&nbsp; wrong answer. What may be the trick?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10758"></a> 
+ <div id="c10758" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-10758" class="active">You have a pretty basic</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 18 Sep 2010 07:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>You have a pretty basic mistake in one of your scanf statements.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11314"></a> 
+ <div id="c11314" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-11314" class="active">How can we reduce the memory</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/javadecoder">javadecoder</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2010 04:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>How can we reduce the memory usage in a C program,(I always get a mem usage of 1.6M)?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11495"></a> 
+ <div id="c11495" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-11495" class="active">can any plez suggest how 2</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/lukka">lukka</a></strong>
+   <span style="color:#828282"> @ 20 Oct 2010 07:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can any plez suggest how 2 handle these huge inputs . please elaborate or atleast suggest some directions...</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11502"></a> 
+ <div id="c11502" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-11502" class="active">@admin Why is the source code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/singhseemant">singhseemant</a></strong>
+   <span style="color:#828282"> @ 21 Oct 2010 02:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin</p> 
+    <p>Why is the source code limit so less for this question? it's around 50000 for most problems but only 1000 for this one. I seem to have solved this question but my source code size is around 1700. What should I do?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11507"></a> 
+ <div id="c11507" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-11507" class="active">Write a program with less</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 21 Oct 2010 05:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Write a program with less code. It is deliberately set low to prevent some wrong methods passing.</p> 
+    <p>A correct solution should easily fit within 1000 bytes.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11720"></a> 
+ <div id="c11720" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-11720" class="active">Can someone please tell me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mayundo375">mayundo375</a></strong>
+   <span style="color:#828282"> @ 1 Nov 2010 10:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Can someone please tell me why my code to this problem is wrong?</p> 
+    <p>using System;<br>class Program<br>{<br>static int call_div(string str,int div)<br>{<br>int len=str.Length,temp=0;<br>for(int i=0;i&lt;len;i++)<br>{<br>temp=temp*10+(str[i]-48);<br>temp%=div;<br>}<br>return temp;<br>}<br>static int gcd(int x,int y)<br>{<br>if(x==0)<br>return y;<br>else<br>return gcd(y%x,x);<br>}<br>static void Main(string[] args)<br>{<br>int loop=int.Parse(Console.ReadLine());<br>int numb;<br>while(loop--&gt;0)<br>{<br>string[] Numbs=Console.ReadLine().Split(' ');<br>if (Numbs[0]=="0")<br>{<br>Console.WriteLine(Numbs[1]);<br>}<br>else if(Numbs[0]=="1")<br>{<br>Console.WriteLine("1");<br>}<br>else<br>{<br>numb = call_div(Numbs[1], int.Parse(Numbs[0]));<br>Console.WriteLine(gcd(int.Parse(Numbs[0]), numb));<br>}<br>}<br>}<br>}</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12135"></a> 
+ <div id="c12135" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-12135" class="active">can someone guide how to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/algomm">algomm</a></strong>
+   <span style="color:#828282"> @ 2 Dec 2010 04:04 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><b>can someone guide how to reduce size of this.</b></p> 
+    <p>&nbsp;</p> 
+    <p>#include&lt;iostream&gt;<br>using namespace std;<br>int main()<br>{<br> int t;<br> int i,rem;<br> char string[251];<br> int num;<br> scanf("%d",&amp;t);<br> while(t--)<br> {<br> scanf("%d",&amp;num);<br> scanf("%s",&amp;string);&nbsp; <br> if(num!=0)<br> {&nbsp;&nbsp;&nbsp; i=0;&nbsp;&nbsp;&nbsp; rem=0;<br> while(1)<br> {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(string[i]==' ')<br> break;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> rem=rem*10+(string[i]-'0');&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> rem=rem%num;<br> i++;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> }<br> if(rem!=0)<br> {<br> while(1)<br> {<br> i=num%rem;<br> if(i==0)<br> {<br> break;<br> }<br> num=rem;<br> rem=i;<br><br> }<br> }<br> else<br> rem=num;<br> printf("%dn",rem);<br> }<br> else<br> {<br> printf("%sn",string);<br> }<br> }<br> <br> return 0;<br> <br>}</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12504"></a> 
+ <div id="c12504" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-12504" class="active">i am getting runtime error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iiit">iiit</a></strong>
+   <span style="color:#828282"> @ 22 Dec 2010 11:50 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i am getting runtime error but i am unable to find any mistake</p> 
+    <p>pls admin can you have alook at my code</p> 
+    <p>#include&lt;stdio.h&gt;<br>#include&lt;string.h&gt;<br>int main()<br>{<br> int divisor,number,remainder,len,l,test,array[251],i;<br> char extra[252];<br> scanf("%d",&amp;test);<br> for(l=0;l&lt;test;l++)<br> {<br> scanf("%d",&amp;divisor);scanf("%s",extra);len=strlen(extra);<br> for(i=0;i&lt;len;i++)array[i]=extra[i]-48;<br> int counter=0,flag=0;number=0;<br> while(1)<br> {<br> if(counter==len)<br> break;<br> while(number&lt;divisor)<br> {<br><br> if(counter==len)<br> {<br> remainder=number;<br> flag=1;<br> break;<br> }<br> if(counter!=0)<br> number=number*10;<br> number=number+array[counter];<br> counter++;<br> }<br> if(flag==1)<br> break;<br> remainder=number-(number/divisor)*divisor;<br> number=remainder;<br> }<br> printf("%dn",gcd(divisor,remainder));<br> <br> }<br> <br> return 0;<br> }<br>int gcd(int a,int b)<br>{<br> if(b==0)<br> return a;<br> else<br> return gcd(b,a%b);<br>}</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12505"></a> 
+ <div id="c12505" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-12505" class="active">i m soory to post the code in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iiit">iiit</a></strong>
+   <span style="color:#828282"> @ 22 Dec 2010 12:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i m soory to post the code in comments section</p> 
+    <p>anyway i got the mistake i was dividing by 0</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12590"></a> 
+ <div id="c12590" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-12590" class="active">Can you please provide any</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Gaurav Jain">Gaurav Jain</a></strong>
+   <span style="color:#828282"> @ 28 Dec 2010 10:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Can you please provide any special case.. I am getting right output for above sample input and also for all of my entered inputs.. still getting wrong answer.. Please have a look at my code..http://www.codechef.com/viewsolution/408371</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12594"></a> 
+ <div id="c12594" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-12594" class="active">just ignore my comment.. the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Gaurav Jain">Gaurav Jain</a></strong>
+   <span style="color:#828282"> @ 29 Dec 2010 01:44 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>just ignore my comment.. the question had confused me.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15026"></a> 
+ <div id="c15026" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-15026" class="active">Can you tell me what the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pmll">pmll</a></strong>
+   <span style="color:#828282"> @ 12 Mar 2011 06:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Can you tell me what the exact runtime error is for this c# solution?</p> 
+    <p><a href="http://www.codechef.com/viewsolution/485812" title="http://www.codechef.com/viewsolution/485812">http://www.codechef.com/viewsolution/485812</a></p> 
+    <p>I have tried installing Mono 2.01 (albeit, Windows) and throwing huge amounts of data at that solution but I can't break it. When I submit it fails with run time error (other).</p> 
+    <p>&nbsp;</p> 
+    <p>Thanks</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15258"></a> 
+ <div id="c15258" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-15258" class="active">Hi Admin, One thing I would</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sachinpkale">sachinpkale</a></strong>
+   <span style="color:#828282"> @ 25 Mar 2011 10:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Hi Admin,</p> 
+    <p>One thing I would like to say that the source limit constraint should not be so strict.</p> 
+    <p>I wrote the program and the size of program was 1KB and this problem requires &lt;= 1000 Bytes.</p> 
+    <p>So, I just shortened the variable names which were otherwise readable and appropriate, for example I shortened 'length' to 'l'.</p> 
+    <p>By the way, a good problem.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16334"></a> 
+ <div id="c16334" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-16334" class="active">Umm seems like the server's</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/theslavemaster">theslavemaster</a></strong>
+   <span style="color:#828282"> @ 14 May 2011 04:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Umm seems like the server's down or something... &nbsp;Nobody's problems are running at the moment..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17810"></a> 
+ <div id="c17810" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-17810" class="active">#include #include int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhashjain">abhashjain</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2011 12:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include int gcd(int,int); int main() { int n,a,b,i; int *p; scanf("%d",&amp;n); p=(int*)malloc(sizeof(int)*n); for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17811"></a> 
+ <div id="c17811" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-17811" class="active">#include #include int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhashjain">abhashjain</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2011 12:08 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include int gcd(int,int); int main() { int n,a,b,i; int *p; scanf("%d",&amp;n); p=(int*)malloc(sizeof(int)*n); for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18230"></a> 
+ <div id="c18230" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-18230" class="active">I m getting runtime error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/navin25">navin25</a></strong>
+   <span style="color:#828282"> @ 21 Aug 2011 04:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I m getting runtime error although i have taken care of boundaries Please help me out 
+    <a href="http://www.codechef.com/viewsolution/630250" title="http://www.codechef.com/viewsolution/630250">http://www.codechef.com/viewsolution/630250</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18994"></a> 
+ <div id="c18994" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-18994" class="active">where is runtime</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codingguru">codingguru</a></strong>
+   <span style="color:#828282"> @ 26 Sep 2011 12:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    where is runtime error #include int gcd(int a,int b) { if(b==0) return a; else return gcd(b,a%b); } int main() { int a; int T,rem,n,digits,val;char num[252]; scanf("%d",&amp;T); while(T--){ scanf("%d%s",&amp;a,num); rem=n=val=0; while(num[n]!=' '){ val=val*10+(num[n]-'0'); if(val&gt;=a) { rem=val%a; val=rem; } n++; } printf("%dn",gcd(a,rem)); } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-20672"></a> 
+ <div id="c20672" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-20672" class="active">Why on earth is Java not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/qbtim">qbtim</a></strong>
+   <span style="color:#828282"> @ 19 Dec 2011 01:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why on earth is Java not allowed for this problem??? It doesn't make any sense, especially if NICE is still allowed!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-23482"></a> 
+ <div id="c23482" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-23482" class="active">runtime error?? It's runnin</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anirudhacoder">anirudhacoder</a></strong>
+   <span style="color:#828282"> @ 28 Feb 2012 06:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    runtime error?? It's runnin fine in my system...... :O
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-26440"></a> 
+ <div id="c26440" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-26440" class="active">Well it turns out that damn</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sushantrocks">sushantrocks</a></strong>
+   <span style="color:#828282"> @ 5 May 2012 11:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Well it turns out that damn \n was responsible for the wrong answer.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27053"></a> 
+ <div id="c27053" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-27053" class="active">Can ny1 tel y my solution is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prateeksinghal">prateeksinghal</a></strong>
+   <span style="color:#828282"> @ 24 May 2012 07:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can ny1 tel y my solution is giving compile time error but it is running perfectly fine on my system........ def gcd(a,b): if b==0: return a else: return gcd(b,a%b) n=input() i=1 while i&lt;=n: a,b=map(int, raw_input().split()) x=gcd(a,b) print x i+=1
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-34949"></a> 
+ <div id="c34949" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-34949" class="active">Why do i get SIGFPE error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kiara20">kiara20</a></strong>
+   <span style="color:#828282"> @ 9 Dec 2012 06:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why do i get SIGFPE error ?? and it says that my code is too long. The maximum limit is 1000 bytes.. Cant figure out the problem in the code.. Please help...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35215"></a> 
+ <div id="c35215" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-35215" class="active">Please don't give logically</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/imdeepakg">imdeepakg</a></strong>
+   <span style="color:#828282"> @ 26 Dec 2012 05:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please don't give logically incorrect input. gcd is only valid for two non-zero numbers (In mathematics, the greatest common divisor (gcd), also known as the greatest common factor (gcf), or highest common factor (hcf), of two or more non-zero integers, is the largest positive integer that divides the numbers without a remainder. : Wiki). One of your test case has 'a' as zero in input, it doesn't make any sense to me.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-37368"></a> 
+ <div id="c37368" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-37368" class="active">How to take input for B ???</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sonuk7">sonuk7</a></strong>
+   <span style="color:#828282"> @ 5 Feb 2013 02:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    How to take input for B ??? Plz Help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40166"></a> 
+ <div id="c40166" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-40166" class="active">i cant submit in java? mind</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aichemzee">aichemzee</a></strong>
+   <span style="color:#828282"> @ 27 Mar 2013 11:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i cant submit in java? mind telling me why the hell?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40196"></a> 
+ <div id="c40196" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-40196" class="active">@ admin, can u check the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vigneshng">vigneshng</a></strong>
+   <span style="color:#828282"> @ 30 Mar 2013 02:20 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ admin, can u check the solution, i am getting a wrong anwer in the solution 
+    <a href="http://www.codechef.com/viewsolution/1970933" title="http://www.codechef.com/viewsolution/1970933">http://www.codechef.com/viewsolution/1970933</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40200"></a> 
+ <div id="c40200" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-40200" class="active">@vigneshng : The number that</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 30 Mar 2013 12:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vigneshng : The number that comes first is the smaller number and the number that comes later is the bigger number . Your code makes just the opposite assumption . Change the order of reading numbers a and b then it should work fine .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40202"></a> 
+ <div id="c40202" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-40202" class="active">@vineetpaliwal: Thanks for it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vigneshng">vigneshng</a></strong>
+   <span style="color:#828282"> @ 30 Mar 2013 04:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vineetpaliwal: Thanks for it
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46293"></a> 
+ <div id="c46293" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-46293" class="active">@admin why java language is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cool_shubham">cool_shubham</a></strong>
+   <span style="color:#828282"> @ 18 Jun 2013 11:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin why java language is not there.. i solved it but can't submit..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49450"></a> 
+ <div id="c49450" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-49450" class="active">Suggestion: Mathematically,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/checkaayush">checkaayush</a></strong>
+   <span style="color:#828282"> @ 27 Jul 2013 01:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Suggestion: Mathematically, HCF of zero and any other number is zero. But the test cases you have prepared suggest the HCF to be the other number. Kindly see to it.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-52741"></a> 
+ <div id="c52741" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-52741" class="active">hey admin i didnt use</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/code_billmark">code_billmark</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2013 08:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hey admin i didnt use division throughout my prog why m i getting the SIGFPE error..!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-52743"></a> 
+ <div id="c52743" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-52743" class="active">here's the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/code_billmark">code_billmark</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2013 08:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    here's the code..!! 
+    <a href="http://www.codechef.com/viewsolution/2554937" title="http://www.codechef.com/viewsolution/2554937">http://www.codechef.com/viewsolution/2554937</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65372"></a> 
+ <div id="c65372" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-65372" class="active">Encrypted Hint: SGDAH FFDRS</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/k1026501">k1026501</a></strong>
+   <span style="color:#828282"> @ 25 Nov 2013 08:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Encrypted Hint: SGDAH FFDRS OQNOD QCHUH RNQNE ZMTLA DQZMC YDQNH RSGDM NMYDQ NMTLA DQHSR DKE
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68087"></a> 
+ <div id="c68087" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-68087" class="active">Ha y!en B@chch0!!!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chiragvashist">chiragvashist</a></strong>
+   <span style="color:#828282"> @ 18 Dec 2013 02:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Ha y!en B@chch0!!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68089"></a> 
+ <div id="c68089" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-68089" class="active">my solution are way more</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chiragvashist">chiragvashist</a></strong>
+   <span style="color:#828282"> @ 18 Dec 2013 03:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my solution are way more simple and eas, yet not accepted
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68147"></a> 
+ <div id="c68147" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-68147" class="active">Why java is not supported ???</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/punfabi">punfabi</a></strong>
+   <span style="color:#828282"> @ 20 Dec 2013 12:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why java is not supported ???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71680"></a> 
+ <div id="c71680" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-71680" class="active">@admin why python 2.7.2 is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saptarshi1994">saptarshi1994</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2014 10:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin why python 2.7.2 is not supprted whereas python3 is supported?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-73397"></a> 
+ <div id="c73397" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-73397" class="active">For those with the 1000 bytes</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/marcjordana">marcjordana</a></strong>
+   <span style="color:#828282"> @ 20 Feb 2014 09:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    For those with the 1000 bytes issue, remove the identation in your code! It will shorten the size to almost the half :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78567"></a> 
+ <div id="c78567" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-78567" class="active">@admin Answer plz ... </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/k1i011">k1i011</a></strong>
+   <span style="color:#828282"> @ 28 May 2014 10:59 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin Answer plz ... 
+    <a href="http://discuss.codechef.com/questions/43580/why-code-chef-has-stopped-support-for-python-version-below-312" title="http://discuss.codechef.com/questions/43580/why-code-chef-has-stopped-support-for-python-version-below-312">http://discuss.codechef.com/questions/43580/why-code-chef-has-stopped-su...</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79980"></a> 
+ <div id="c79980" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-79980" class="active">No use of bigint, store it as</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/brobear1995">brobear1995</a></strong>
+   <span style="color:#828282"> @ 24 Jun 2014 07:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    No use of bigint, store it as a string then, build the number from scratch calculating mod. remove leading zeros. simple one
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80024"></a> 
+ <div id="c80024" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-80024" class="active">0 &lt;= A &lt;= 40000 and A &lt;= B &lt;</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/insaynasasin">insaynasasin</a></strong>
+   <span style="color:#828282"> @ 26 Jun 2014 02:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    0 &lt;= A &lt;= 40000 and A &lt;= B &lt; 10^250. Now since A&lt;=B and maximum value of A is 40000 shouldn't it be that B also lies in the range 0&lt;=B&lt;=40000
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80181"></a> 
+ <div id="c80181" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-80181" class="active">@insaynasasin - no. rehearse</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aragar">aragar</a></strong>
+   <span style="color:#828282"> @ 1 Jul 2014 05:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @insaynasasin - no. rehearse your math. What is the remainder when dividing a smaller number to a larger one?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80570"></a> 
+ <div id="c80570" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-80570" class="active">can anyone please tell me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ak1a2">ak1a2</a></strong>
+   <span style="color:#828282"> @ 6 Jul 2014 12:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone please tell me what is the reason of compliation error in my code?? 
+    <a href="http://www.codechef.com/viewsolution/4225006" title="http://www.codechef.com/viewsolution/4225006">http://www.codechef.com/viewsolution/4225006</a> it's compiling on my system..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81894"></a> 
+ <div id="c81894" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-81894" class="active">what if the test case is zero</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dpmittal">dpmittal</a></strong>
+   <span style="color:#828282"> @ 22 Jul 2014 04:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what if the test case is zero
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83694"></a> 
+ <div id="c83694" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-83694" class="active">Is the range of int large</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/swati4star">swati4star</a></strong>
+   <span style="color:#828282"> @ 13 Aug 2014 10:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Is the range of int large enough to hold a value of 250 digits????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90621"></a> 
+ <div id="c90621" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-90621" class="active">In Python it is tooooo easy!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mb95">mb95</a></strong>
+   <span style="color:#828282"> @ 18 Nov 2014 11:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    In Python it is tooooo easy! Feel sorry for C/C++ users :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90716"></a> 
+ <div id="c90716" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-90716" class="active">Don't worry... Its too easy</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pranjalranjan">pranjalranjan</a></strong>
+   <span style="color:#828282"> @ 19 Nov 2014 09:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Don't worry... Its too easy for c/c++ as well. You just need common sense.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91951"></a> 
+ <div id="c91951" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-91951" class="active">what is wrong in this code it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Vaibhav Saini">Vaibhav Saini</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2014 06:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is wrong in this code it works perfectly on code::blocks 13.12 ???????? #include int main() { int N,i,x,y,m; scanf("%d",&amp;N); while(N!=0) { scanf("%d %d",&amp;x,&amp;y); if (x&gt;y) m=y; else m=x; for(i=m;i&gt;=1;i--) if(x%i==0 &amp;&amp; y%i==0) { printf("%dn",i); break; } N--; } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94579"></a> 
+ <div id="c94579" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-94579" class="active">@admin can you please tell me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vaibhav1994">vaibhav1994</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2015 03:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin can you please tell me why java submission is not allowed for this program??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95607"></a> 
+ <div id="c95607" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-95607" class="active">what is output of 0 and 5??</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Gourav2906">Gourav2906</a></strong>
+   <span style="color:#828282"> @ 5 Feb 2015 10:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is output of 0 and 5??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95609"></a> 
+ <div id="c95609" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-95609" class="active">pls help?? #include using</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Gourav2906">Gourav2906</a></strong>
+   <span style="color:#828282"> @ 5 Feb 2015 10:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    pls help?? #include using namespace std; long long int fun(char b[100000],int a) { int m,n,d=0,j; n=strlen(b); m=b[0]-48; d=(b[0]-48)%a; for(j=0;j&gt;t; for(i=0;i&gt;a; cin&gt;&gt;b; if(a==0) { cout&lt;
+    <b else="" n="=1)" d="gcd(a,n);"></b>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95610"></a> 
+ <div id="c95610" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-95610" class="active">help</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Gourav2906">Gourav2906</a></strong>
+   <span style="color:#828282"> @ 5 Feb 2015 10:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    help please. #include using namespace std; long long int fun(char b[100000],int a) { int m,n,d=0,j; n=strlen(b); m=b[0]-48; d=(b[0]-48)%a; for(j=0;j&gt;t; for(i=0;i&gt;a; cin&gt;&gt;b; if(a==0) { cout&lt;
+    <b else="" n="=1)" d="gcd(a,n);"></b>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101340"></a> 
+ <div id="c101340" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-101340" class="active">why not java</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akash781994">akash781994</a></strong>
+   <span style="color:#828282"> @ 7 Apr 2015 10:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why not java
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102062"></a> 
+ <div id="c102062" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-102062" class="active">wats wrg in my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rac11">rac11</a></strong>
+   <span style="color:#828282"> @ 19 Apr 2015 03:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    wats wrg in my code??#include int main() { int r,t,m,n; scanf("%d",&amp;t); while(t--) { r=0; scanf("%d%d",&amp;m,&amp;n); while(n!=0) { r=m%n; m=n; n=r; } printf("%dn",m); } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103438"></a> 
+ <div id="c103438" class="comment clear-block"> 
+  <h3><a href="/problems/GCD2#comment-103438" class="active">in c programming using which</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dhavalmehta">dhavalmehta</a></strong>
+   <span style="color:#828282"> @ 10 May 2015 07:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    in c programming using which data type you will enter upto 10^250 ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

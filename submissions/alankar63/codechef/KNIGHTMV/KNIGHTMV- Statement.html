@@ -1,0 +1,817 @@
+<div id="node-672704" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> Chef develops his own computer program for playing chess. He is at the very beginning. At first he needs to write the module that will receive moves written by the players and analyze it. The module will receive a string and it should report at first whether this string represents the correct pair of cells on the chess board (we call such strings correct) and then report whether it represents the correct move depending on the situation on the chess board. Chef always has troubles with analyzing <a href="//en.wikipedia.org/wiki/Knight_%28chess%29">knight moves</a>. So at first he needs a test program that can say whether a given string is correct and then whether it represents a correct knight move (irregardless of the situation on the chess board). The cell on the chessboard is represented as a string of two characters: first character is a lowercase Latin letter from <b>a</b> to <b>h</b> and the second character is a digit from <b>1</b> to <b>8</b>. The string represents the correct pair of cells on the chess board if it composed of 5 characters where first two characters represent the cell where chess figure was, 3rd character is the dash <b>"-"</b> and the last two characters represent the destination cell.</p> 
+  <h3>Input</h3> 
+  <p> The first line contains a single integer <b>T &lt;= 50000</b>, the number of test cases. <b>T</b> test cases follow. The only line of each test case contains a non-empty string composed the characters with ASCII-codes from 32 to 126. The length of the string is not greater than <b>10</b>.</p> 
+  <h3>Output</h3> 
+  <p> For each test case, output a single line containing the word <b>"Error"</b> if the corresponding string does not represent the correct pair of cells on the chess board. Otherwise output <b>"Yes"</b> if this pair of cells represents the correct knight move and <b>"No"</b> otherwise.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+4
+a1-b3
+d2-h8
+a3 c4
+ErrorError
+
+<b>Output:</b>
+Yes
+No
+Error
+Error
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/anton_lunyov">anton_lunyov</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/rajivka">rajivka</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/KNIGHTMV">http://discuss.codechef.com/problems/KNIGHTMV</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/anton_lunyov"> anton_lunyov </a><a class="problem-tag-small " href="/tags/problems/cook11"> cook11 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>13-06-2011</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/KNIGHTMV">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-17058"></a> 
+ <div id="c17058" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17058" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chhabraamit">chhabraamit</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 02:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/579918" title="http://www.codechef.com/viewsolution/579918">http://www.codechef.com/viewsolution/579918</a> can anyone please tell me, at what boundary cases my program is failing .. i am getting WA though i have tried a lot cases . thanks in advace
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17059"></a> 
+ <div id="c17059" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17059" class="active">Chhabraamit: your wrong is if</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/eather">eather</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 08:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Chhabraamit: your wrong is if you give input with trailing Zero, its do no effect to the output. But Trailing Zero can be the inputs. Try it: a1-b3 your solution gives "Yes" but it is "Error"
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17060"></a> 
+ <div id="c17060" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17060" class="active">Sorry, Trailing Zero meant</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/eather">eather</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 08:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Sorry, Trailing Zero meant Trailing Space
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17062"></a> 
+ <div id="c17062" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17062" class="active">@chhabraamit try g4-d4</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cracker2excel">cracker2excel</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 08:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @chhabraamit try g4-d4 answer should be "No"
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17063"></a> 
+ <div id="c17063" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17063" class="active">@ eather &amp; cracker2excel</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chhabraamit">chhabraamit</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 10:26 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ eather &amp; cracker2excel ..thankyou for your help i have fixed that bug , but it is still giving the wrong answer can u look one more time , plz. 
+    <a href="http://www.codechef.com/viewsolution/580096" title="http://www.codechef.com/viewsolution/580096">http://www.codechef.com/viewsolution/580096</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17064"></a> 
+ <div id="c17064" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17064" class="active">My input is not working</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atris">atris</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 11:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My input is not working correctly....gets and fgets are not working in a loop.Please help. 
+    <a href="http://www.codechef.com/viewsolution/579632" title="http://www.codechef.com/viewsolution/579632">http://www.codechef.com/viewsolution/579632</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17066"></a> 
+ <div id="c17066" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17066" class="active">@chhabraamit: How about</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mukulgupta">mukulgupta</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 11:32 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @chhabraamit: How about testing your code for [space][enter]? Answer should be "Error".
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17067"></a> 
+ <div id="c17067" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17067" class="active">@atris: Use a getchar() after</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mukulgupta">mukulgupta</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 11:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @atris: Use a getchar() after scanf to trap buffered 'n'.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17068"></a> 
+ <div id="c17068" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17068" class="active">@mukulgupta...thanks a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atris">atris</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 11:47 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @mukulgupta...thanks a lot....but where will i store the input from getchar()???or should i discard it???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17069"></a> 
+ <div id="c17069" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17069" class="active">@mukulgupta ..thanks a lot</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chhabraamit">chhabraamit</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 12:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @mukulgupta ..thanks a lot for pointing out that bug.. but it is still giving WA after solving that. 
+    <a href="http://www.codechef.com/viewsolution/580159" title="http://www.codechef.com/viewsolution/580159">http://www.codechef.com/viewsolution/580159</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17070"></a> 
+ <div id="c17070" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17070" class="active">@atris: Discard. @amit: Very</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mukulgupta">mukulgupta</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 01:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @atris: Discard. @amit: Very silly mistake in the first condition, if((a[i][0]&gt;='a'&amp;&amp;a[i][1]&lt;='h'))
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17072"></a> 
+ <div id="c17072" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17072" class="active">@mukul. Thanks a lot !! you</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chhabraamit">chhabraamit</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 03:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @mukul. Thanks a lot !! you saved my day :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17073"></a> 
+ <div id="c17073" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17073" class="active">@mukul....i am not able to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atris">atris</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 03:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @mukul....i am not able to get exactly what you mean.Could you please give an example??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17074"></a> 
+ <div id="c17074" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17074" class="active">@atris.. he is saying after</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chhabraamit">chhabraamit</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 04:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @atris.. he is saying after taking value of no of test cases , use getchar() to deal with buffered 'n' i.e scanf("%d",&amp;test_cases); getchar(); // you dont need store this value .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17075"></a> 
+ <div id="c17075" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17075" class="active">@amit...its not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atris">atris</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 04:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @amit...its not working... scanf("%d",&amp;n); getchar(); scanf("%d",&amp;l); is not taking input in a single line..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17076"></a> 
+ <div id="c17076" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17076" class="active">i am repeatedly getting wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/assasin143">assasin143</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2011 05:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am repeatedly getting wrong answer. can anybody please tell me the problem.....http://www.codechef.com/viewsolution/580391
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17099"></a> 
+ <div id="c17099" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17099" class="active">please tell error in my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pprateek">pprateek</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2011 08:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please tell error in my program...... 
+    <a href="http://www.codechef.com/viewsolution/581209" title="http://www.codechef.com/viewsolution/581209">http://www.codechef.com/viewsolution/581209</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17131"></a> 
+ <div id="c17131" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17131" class="active">anyone pls tell me where my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vioky">vioky</a></strong>
+   <span style="color:#828282"> @ 23 Jun 2011 05:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    anyone pls tell me where my prog is failing... thanx in advance... 
+    <a href="http://www.codechef.com/viewsolution/582196" title="http://www.codechef.com/viewsolution/582196">http://www.codechef.com/viewsolution/582196</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17137"></a> 
+ <div id="c17137" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17137" class="active">Time Limit Exceeds It seems</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hoanglienson">hoanglienson</a></strong>
+   <span style="color:#828282"> @ 24 Jun 2011 07:38 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Time Limit Exceeds It seems Java can not beat. :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17203"></a> 
+ <div id="c17203" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17203" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/z_code">z_code</a></strong>
+   <span style="color:#828282"> @ 30 Jun 2011 08:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/586080" title="http://www.codechef.com/viewsolution/586080">http://www.codechef.com/viewsolution/586080</a> the code is absolutely fine as far as i think... many submitted solution has the exact same thing which i did...but still its showing WA..!!.... Is there anyone who can help? O_o
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17205"></a> 
+ <div id="c17205" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17205" class="active">@z_code: Try this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/imnewcoder">imnewcoder</a></strong>
+   <span style="color:#828282"> @ 1 Jul 2011 12:39 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @z_code: Try this case: 1 a1-b3
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17637"></a> 
+ <div id="c17637" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-17637" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Ahmedsaud">Ahmedsaud</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2011 11:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/603808" title="http://www.codechef.com/viewsolution/603808">http://www.codechef.com/viewsolution/603808</a> can anyone explain me what is wrong with this code
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19101"></a> 
+ <div id="c19101" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-19101" class="active">why cant i submit my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/moody">moody</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2011 02:55 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why cant i submit my solution????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-20844"></a> 
+ <div id="c20844" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-20844" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/juampa">juampa</a></strong>
+   <span style="color:#828282"> @ 2 Jan 2012 05:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/775230" title="http://www.codechef.com/viewsolution/775230">http://www.codechef.com/viewsolution/775230</a> I'm getting TLE error, although i checked with a 50.000 test case input and executing time was below 900ms. I know my computer could be faster than codechef's one, but beeing that JAVA is allowed a 2x time factor i think my code should be fast enough. Could you please tell me if there is any error in my code (im not asking for the error, would like to find it out myself) or is only a Java's time consuming problem? Thanks in advance
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25636"></a> 
+ <div id="c25636" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-25636" class="active">I've tried all the possible</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/avinash_jain">avinash_jain</a></strong>
+   <span style="color:#828282"> @ 13 Apr 2012 12:44 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I've tried all the possible test case but still don't know why I'm getting WA. Please help me. 
+    <a href="http://www.codechef.com/viewsolution/978153" title="http://www.codechef.com/viewsolution/978153">http://www.codechef.com/viewsolution/978153</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27258"></a> 
+ <div id="c27258" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-27258" class="active">what would the output should</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/makandriaco">makandriaco</a></strong>
+   <span style="color:#828282"> @ 29 May 2012 09:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what would the output should be if there are blank spaces after the five correct characters?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27360"></a> 
+ <div id="c27360" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-27360" class="active">@makandriaco- Error!! see</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shashank_jain">shashank_jain</a></strong>
+   <span style="color:#828282"> @ 30 May 2012 11:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @makandriaco- Error!! see anything that have length &gt;5 will be error blindly.. why worry so much !!! just put length check for that :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29482"></a> 
+ <div id="c29482" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-29482" class="active">i m getting NZEC eror dont</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/msehgal">msehgal</a></strong>
+   <span style="color:#828282"> @ 26 Jul 2012 09:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i m getting NZEC eror dont know why? Can Anybody help?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29483"></a> 
+ <div id="c29483" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-29483" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/msehgal">msehgal</a></strong>
+   <span style="color:#828282"> @ 26 Jul 2012 09:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/1195335" title="http://www.codechef.com/viewsolution/1195335">http://www.codechef.com/viewsolution/1195335</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29493"></a> 
+ <div id="c29493" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-29493" class="active">anybody please help me out</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/msehgal">msehgal</a></strong>
+   <span style="color:#828282"> @ 27 Jul 2012 10:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    anybody please help me out for above solution
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31586"></a> 
+ <div id="c31586" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-31586" class="active">WTH??? My java code is O(T)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 5 Sep 2012 12:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    WTH??? My java code is O(T) and it gives TLE! Guess the time limit is not enough for Java.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31588"></a> 
+ <div id="c31588" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-31588" class="active">@Mohit Sehgal Class which</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 5 Sep 2012 12:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Mohit Sehgal Class which contains main function should be named 'Main'
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-32020"></a> 
+ <div id="c32020" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-32020" class="active">why g4-d4 should be wrong?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/msrobin">msrobin</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2012 11:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why g4-d4 should be wrong?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-48384"></a> 
+ <div id="c48384" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-48384" class="active">why is a3-c4 an error? It is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/roshi">roshi</a></strong>
+   <span style="color:#828282"> @ 11 Jul 2013 12:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why is a3-c4 an error? It is a valid move for a knight.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-48970"></a> 
+ <div id="c48970" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-48970" class="active">Why is the code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ekta1994">ekta1994</a></strong>
+   <span style="color:#828282"> @ 15 Jul 2013 07:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why is the code 
+    <a href="http://www.codechef.com/viewsolution/2382782" title="http://www.codechef.com/viewsolution/2382782">http://www.codechef.com/viewsolution/2382782</a> Showing WA?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-63480"></a> 
+ <div id="c63480" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-63480" class="active">Why is this code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dakota">dakota</a></strong>
+   <span style="color:#828282"> @ 8 Nov 2013 01:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why is this code 
+    <a href="http://www.codechef.com/viewsolution/2958107" title="http://www.codechef.com/viewsolution/2958107">http://www.codechef.com/viewsolution/2958107</a> showing WA ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68112"></a> 
+ <div id="c68112" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-68112" class="active">Can someone please tell me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/keshashah">keshashah</a></strong>
+   <span style="color:#828282"> @ 19 Dec 2013 10:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone please tell me why is 
+    <a href="http://www.codechef.com/viewsolution/3111591" title="http://www.codechef.com/viewsolution/3111591">http://www.codechef.com/viewsolution/3111591</a> showing WA ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-77764"></a> 
+ <div id="c77764" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-77764" class="active">Careful about C++. If you</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kenden23">kenden23</a></strong>
+   <span style="color:#828282"> @ 6 May 2014 02:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Careful about C++. If you write scanf("%dn", &amp;T) for the first int, then you get WA. But I write scanf("%d", &amp;T), getchar(); then my code is AC. You can check my code; it is in the second place now.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78528"></a> 
+ <div id="c78528" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-78528" class="active">What is my code wrong? I</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/priyankpalod">priyankpalod</a></strong>
+   <span style="color:#828282"> @ 26 May 2014 05:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What is my code wrong? I can't see any mistake. please help! 
+    <a href="http://www.codechef.com/viewsolution/3946391" title="http://www.codechef.com/viewsolution/3946391">http://www.codechef.com/viewsolution/3946391</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79317"></a> 
+ <div id="c79317" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-79317" class="active">Please someone point out the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ksharma377">ksharma377</a></strong>
+   <span style="color:#828282"> @ 11 Jun 2014 12:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please someone point out the flaw in the solution It's giving WA, though I've checked it for various cases, and it gave me correct answer every time. Or please provide a fail case for this solution. 
+    <a href="http://www.codechef.com/viewsolution/4055152" title="http://www.codechef.com/viewsolution/4055152">http://www.codechef.com/viewsolution/4055152</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79692"></a> 
+ <div id="c79692" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-79692" class="active">Input is expected to be</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ab13123002">ab13123002</a></strong>
+   <span style="color:#828282"> @ 18 Jun 2014 12:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Input is expected to be within given constraints only. However , we have to check for the correct input also in this question.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82261"></a> 
+ <div id="c82261" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-82261" class="active">anyone please tell what is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nikhil_kataria">nikhil_kataria</a></strong>
+   <span style="color:#828282"> @ 1 Aug 2014 10:12 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    anyone please tell what is wrong with my code 
+    <a href="http://www.codechef.com/viewsolution/4411646" title="http://www.codechef.com/viewsolution/4411646">http://www.codechef.com/viewsolution/4411646</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82262"></a> 
+ <div id="c82262" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-82262" class="active">always getting NZEC</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nikhil_kataria">nikhil_kataria</a></strong>
+   <span style="color:#828282"> @ 1 Aug 2014 10:13 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    always getting NZEC
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82297"></a> 
+ <div id="c82297" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-82297" class="active">strange submitting the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nikhil_kataria">nikhil_kataria</a></strong>
+   <span style="color:#828282"> @ 1 Aug 2014 11:08 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    strange submitting the solution but always TLE copied one accepted solution and then submitted still TLE.....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82579"></a> 
+ <div id="c82579" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-82579" class="active">@ksharma.....use getchar();</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/swati4star">swati4star</a></strong>
+   <span style="color:#828282"> @ 1 Aug 2014 09:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ksharma.....use getchar(); after the scanf("%d",&amp;t); statement..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83163"></a> 
+ <div id="c83163" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-83163" class="active">@admin every submission is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nikhil_kataria">nikhil_kataria</a></strong>
+   <span style="color:#828282"> @ 5 Aug 2014 11:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin every submission is having TLE tried with accepted solution still TLE
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83199"></a> 
+ <div id="c83199" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-83199" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nil96">nil96</a></strong>
+   <span style="color:#828282"> @ 6 Aug 2014 01:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/4493609" title="http://www.codechef.com/viewsolution/4493609">http://www.codechef.com/viewsolution/4493609</a> can anyone please tell me, at what boundary cases my program is failing .. i am getting WA though i have tried a lot cases . thanks in advace
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92012"></a> 
+ <div id="c92012" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-92012" class="active">can the string have two '-'</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/santi1bot">santi1bot</a></strong>
+   <span style="color:#828282"> @ 20 Dec 2014 06:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can the string have two '-' ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94802"></a> 
+ <div id="c94802" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-94802" class="active">To all those getting WA, your</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iamkode_chef">iamkode_chef</a></strong>
+   <span style="color:#828282"> @ 26 Jan 2015 10:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    To all those getting WA, your program should print "Error" if string is anything other than a chessboard move.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97251"></a> 
+ <div id="c97251" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-97251" class="active">One of the easiest...dont</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coolsduy">coolsduy</a></strong>
+   <span style="color:#828282"> @ 22 Feb 2015 02:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    One of the easiest...dont know why it has so low accuracy !!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97517"></a> 
+ <div id="c97517" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-97517" class="active">Can someone pls help me!! i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sanghavibhavya">sanghavibhavya</a></strong>
+   <span style="color:#828282"> @ 24 Feb 2015 05:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone pls help me!! i am always getting tle! my solution 
+    <a href="http://www.codechef.com/viewsolution/6345170" title="http://www.codechef.com/viewsolution/6345170">http://www.codechef.com/viewsolution/6345170</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97563"></a> 
+ <div id="c97563" class="comment clear-block"> 
+  <h3><a href="/problems/KNIGHTMV#comment-97563" class="active">I am getting a Wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kantajitshaw">kantajitshaw</a></strong>
+   <span style="color:#828282"> @ 25 Feb 2015 08:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting a Wrong Answer.. please someone help... 
+    <a href="http://www.codechef.com/viewsolution/6347135" title="http://www.codechef.com/viewsolution/6347135">http://www.codechef.com/viewsolution/6347135</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

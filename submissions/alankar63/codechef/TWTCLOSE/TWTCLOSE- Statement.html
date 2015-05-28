@@ -1,0 +1,445 @@
+<div id="node-1219548" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p align="justify">Little kids, Jack and Evan like playing their favorite game Glass-and-Stone. Today they want to play something new and came across Twitter on their father's laptop.</p> 
+  <p align="justify">They saw it for the first time but were already getting bored to see a bunch of sentences having at most 140 characters each. The only thing they liked to play with it is, closing and opening tweets.</p> 
+  <p align="justify">There are <b>N</b> tweets on the page and each tweet can be opened by clicking on it, to see some statistics related to that tweet. Initially all the tweets are closed. Clicking on an open tweet closes it and clicking on a closed tweet opens it. There is also a button to close all the open tweets. Given a sequence of <b>K</b> clicks by Jack, Evan has to guess the total number of open tweets just after each click. Please help Evan in this game.</p> 
+  <h3>Input</h3> 
+  <p align="justify">First line contains two integers <b>N K</b>, the number of tweets (numbered 1 to <b>N</b>) and the number of clicks respectively (1 ? <b>N</b>, <b>K</b> ? 1000). Each of the following <b>K</b> lines has one of the following.</p> 
+  <ul> 
+   <li>CLICK <i>X</i> , where <i>X</i> is the tweet number (1 ? <i>X</i> ? N)</li> 
+   <li>CLOSEALL</li> 
+  </ul> 
+  <p></p> 
+  <h3>Output</h3> 
+  <p align="justify">Output <b>K</b> lines, where the <i>i</i><sup>th</sup> line should contain the number of open tweets just after the <i>i</i><sup>th</sup> click.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+3 6
+CLICK 1
+CLICK 2
+CLICK 3
+CLICK 2
+CLOSEALL
+CLICK 1
+
+<b>Output:</b>
+1
+2
+3
+2
+0
+1
+</pre>
+  <p> <b>Explanation:</b></p> 
+  <p>Let open[x] = 1 if the x<sup>th</sup> tweet is open and 0 if its closed.<br> Initially open[1..3] = { 0 , 0 , 0 }. Here is the state of open[1..3] after each click and corresponding count of open tweets.</p> 
+  <p>CLICK 1 : { 1, 0, 0 }, open count = 1<br> CLICK 2 : { 1, 1, 0 }, open count = 2<br> CLICK 3 : { 1, 1, 1 }, open count = 3<br> CLICK 2 : { 1, 0, 1 }, open count = 2<br> CLOSEALL : { 0, 0, 0 }, open count = 0<br> CLICK 1 : { 1, 0, 0 }, open count = 1</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/flying_ant">flying_ant</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/TWTCLOSE">http://discuss.codechef.com/problems/TWTCLOSE</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/array-string"> array-string </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/cook23"> cook23 </a><a class="problem-tag-small " href="/tags/problems/flying_ant"> flying_ant </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>6-06-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/TWTCLOSE">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-28643"></a> 
+ <div id="c28643" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-28643" class="active">could someone plz tell me how</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hpanwar35">hpanwar35</a></strong>
+   <span style="color:#828282"> @ 18 Jun 2012 12:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    could someone plz tell me how to insert a newline b/w outputs in the o/p file if redirection is being used? (Output is as expected if no redirection is used however the newline b/w outputs omits if redirection is used).
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28654"></a> 
+ <div id="c28654" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-28654" class="active">I used memset for filling 0s.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vikram535">vikram535</a></strong>
+   <span style="color:#828282"> @ 18 Jun 2012 01:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I used memset for filling 0s. My solution was showing wrong answer though I have implemented it same as mentioned in the editorial. 
+    <a href="http://www.codechef.com/viewsolution/1132512" title="http://www.codechef.com/viewsolution/1132512">http://www.codechef.com/viewsolution/1132512</a> Can't find what is the difference :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28693"></a> 
+ <div id="c28693" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-28693" class="active">@vikram535- i have used</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shashank_jain">shashank_jain</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2012 02:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vikram535- i have used memset too..memset(open,0,sizeof open); .. this doesn't create any problem..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28706"></a> 
+ <div id="c28706" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-28706" class="active">is the number of tweets</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/minutegovt">minutegovt</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2012 07:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    is the number of tweets called clicks, or is there just 3 (looking at the explanation) and k amount of clicks?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29142"></a> 
+ <div id="c29142" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-29142" class="active">memset doesn't work,i tried</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/raman92">raman92</a></strong>
+   <span style="color:#828282"> @ 7 Jul 2012 10:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    memset doesn't work,i tried with memset it gave wrong ans but then i removed it and wrote primitive function instead of memset it worked
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29143"></a> 
+ <div id="c29143" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-29143" class="active">nope ;) sorry memset works i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/raman92">raman92</a></strong>
+   <span style="color:#828282"> @ 7 Jul 2012 10:39 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    nope ;) sorry memset works i forgot to include its header file
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29637"></a> 
+ <div id="c29637" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-29637" class="active">Why is this in the medium</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rizwanhudda">rizwanhudda</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2012 04:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why is this in the medium problems? Can we move it to easy??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-41164"></a> 
+ <div id="c41164" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-41164" class="active">yeah please move this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anunay_arunav">anunay_arunav</a></strong>
+   <span style="color:#828282"> @ 18 Apr 2013 10:51 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    yeah please move this question to easy.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-41166"></a> 
+ <div id="c41166" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-41166" class="active">Yeah, editorial describes</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mecodesta">mecodesta</a></strong>
+   <span style="color:#828282"> @ 18 Apr 2013 03:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Yeah, editorial describes this as cakewalk and this is in the medium section !! move it pls..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43665"></a> 
+ <div id="c43665" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-43665" class="active">Instead of memset, I created</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nitsiiit">nitsiiit</a></strong>
+   <span style="color:#828282"> @ 27 May 2013 09:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Instead of memset, I created a loop to set all to zero, but its not working. "wrong answer".
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43889"></a> 
+ <div id="c43889" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-43889" class="active">@admin http://www.codechef.co</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/thecodebuster">thecodebuster</a></strong>
+   <span style="color:#828282"> @ 7 Jun 2013 03:27 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin 
+    <a href="http://www.codechef.com/viewsolution/2195329" title="http://www.codechef.com/viewsolution/2195329">http://www.codechef.com/viewsolution/2195329</a> On submission, it says WRONG ANSWER, could you suggest a test case when program fails. Thanks in advance
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-48328"></a> 
+ <div id="c48328" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-48328" class="active">this should be in easy</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shiv05">shiv05</a></strong>
+   <span style="color:#828282"> @ 10 Jul 2013 11:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    this should be in easy
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-52176"></a> 
+ <div id="c52176" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-52176" class="active">This was easy....</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mans_code">mans_code</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2013 04:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    This was easy....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-63018"></a> 
+ <div id="c63018" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-63018" class="active">Who put this in medium?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/absentia">absentia</a></strong>
+   <span style="color:#828282"> @ 4 Nov 2013 10:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Who put this in medium?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68129"></a> 
+ <div id="c68129" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-68129" class="active">What was this???memset</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rccroshan1">rccroshan1</a></strong>
+   <span style="color:#828282"> @ 19 Dec 2013 07:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What was this???memset doesn't work?y....at least if it doesn't....inform in the problem statement....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71241"></a> 
+ <div id="c71241" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-71241" class="active">i SOLVED IT USING SIMPLE</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dragonemperor">dragonemperor</a></strong>
+   <span style="color:#828282"> @ 19 Jan 2014 04:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i SOLVED IT USING SIMPLE BRUTEFORCE WITHOUT memset(), BUT STILL GOT ACCEPTED. ARE YOU SURE IT SHOULD BE IN MEDIUM???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-72061"></a> 
+ <div id="c72061" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-72061" class="active">Here is my code. Execution</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arcarchit">arcarchit</a></strong>
+   <span style="color:#828282"> @ 2 Feb 2014 01:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Here is my code. Execution time 0.05 and Memory 2.2M. I want to bring it down like upto 1.6M memory and 0.0 execution time (We can see it in top submission). Can anyone suggest me what is missing ? 
+    <a href="http://www.codechef.com/viewsolution/3324550" title="http://www.codechef.com/viewsolution/3324550">http://www.codechef.com/viewsolution/3324550</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80076"></a> 
+ <div id="c80076" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-80076" class="active">easy one :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/uniquephase">uniquephase</a></strong>
+   <span style="color:#828282"> @ 28 Jun 2014 03:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    easy one :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80198"></a> 
+ <div id="c80198" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-80198" class="active">Accepted without memset() but</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/varungambhir">varungambhir</a></strong>
+   <span style="color:#828282"> @ 2 Jul 2014 06:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Accepted without memset() but using memset() gives wrong answer.Why?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82231"></a> 
+ <div id="c82231" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-82231" class="active">Extremely Easy move it to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gaurav_786">gaurav_786</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2014 02:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Extremely Easy move it to Easy section!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86678"></a> 
+ <div id="c86678" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-86678" class="active">@admin-My code is running</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vishal7695">vishal7695</a></strong>
+   <span style="color:#828282"> @ 4 Oct 2014 10:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin-My code is running fine on codeblocks. But showing wrong answer on submission. Please help 
+    <a href="http://www.codechef.com/viewsolution/4971601" title="http://www.codechef.com/viewsolution/4971601">http://www.codechef.com/viewsolution/4971601</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-87161"></a> 
+ <div id="c87161" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-87161" class="active">don't follow the explanation</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/man_of_du">man_of_du</a></strong>
+   <span style="color:#828282"> @ 6 Oct 2014 11:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    don't follow the explanation technique. Think smartly, you may get better solution
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92462"></a> 
+ <div id="c92462" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-92462" class="active">Can Any one tell me why I am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/the_darklord">the_darklord</a></strong>
+   <span style="color:#828282"> @ 31 Dec 2014 01:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can Any one tell me why I am always getting NZEC for my java code ?? 
+    <a href="http://www.codechef.com/viewsolution/5673178" title="http://www.codechef.com/viewsolution/5673178">http://www.codechef.com/viewsolution/5673178</a> Thanks in advance
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101875"></a> 
+ <div id="c101875" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-101875" class="active">lol why is this even in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chhristov">chhristov</a></strong>
+   <span style="color:#828282"> @ 17 Apr 2015 07:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    lol why is this even in medium
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104072"></a> 
+ <div id="c104072" class="comment clear-block"> 
+  <h3><a href="/problems/TWTCLOSE#comment-104072" class="active">I need help with this problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yoplay8">yoplay8</a></strong>
+   <span style="color:#828282"> @ 19 May 2015 06:53 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I need help with this problem I keep on getting a runtime error SIGABRT and i dont know how to fix it. Heres my code 
+    <a href="http://www.codechef.com/viewsolution/6980208" title="http://www.codechef.com/viewsolution/6980208">http://www.codechef.com/viewsolution/6980208</a> I have looked at what the error means but i dont know how to fix it.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

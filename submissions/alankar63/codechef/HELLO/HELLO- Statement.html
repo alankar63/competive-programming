@@ -1,0 +1,197 @@
+<div id="node-3048408" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <p>Chef talks a lot on his mobile phone. As a result he exhausts his talk-value (in Rokdas) very quickly. One day at a mobile recharge shop, he noticed that his service provider gives add-on plans which can lower his calling rates (Rokdas/minute). One of the plans said "Recharge for 28 Rokdas and enjoy call rates of 0.50 Rokdas/min for one month". Chef was very pleased. His normal calling rate is 1 Rokda/min. And he talked for 200 minutes in last month, which costed him 200 Rokdas. If he had this plan activated, it would have costed him: 28 + 0.5*200 = 128 Rokdas only! Chef could have saved 72 Rokdas. But if he pays for this add-on and talks for very little in the coming month, he may end up saving nothing or even wasting money. Now, Chef is a simple guy and he doesn't worry much about future. He decides to choose the plan based upon his last month’s usage.</p> 
+  <p>There are numerous plans. Some for 1 month, some for 15 months. Some reduce call rate to 0.75 Rokdas/min, some reduce it to 0.60 Rokdas/min. And of course each of them differ in their activation costs. <b>Note</b> - If a plan is valid for <b>M</b> months, then we must pay for (re)activation after every <b>M</b> months (once in M months). Naturally, Chef is confused, and you (as always) are given the task to help him choose the best plan.</p> 
+  <h3>Input</h3> 
+  <p>First line contains <b>T</b>- the number of test cases. In each test case, first line contains <b>D</b>- the default rate (Rokdas/minute, real number), <b>U</b>- the number of minutes Chef talked in last month and <b>N</b>- the number of add-on plans available. Then <b>N</b> lines follow, each containing <b>M</b>- the number of months the plan is valid for, <b>R</b>- the calling rate for the plan (Rokdas/minute, real number) and <b>C</b>- the cost of the plan.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output one integer- the number of the best plan (from 1 to N). Output '0' if no plan is advantageous for Chef. No two plans are equally advantageous.</p> 
+  <h3>Constraints</h3> 
+  <p>1 ? <b>T</b> ? 100<br>0.5 ? <b>D</b> ? 10.0 (exactly 2 digits after the decimal point)<br>1 ? <b>U</b> ? 10000<br>1 ? <b>N</b> ? 100<br>1 ? <b>M</b> ? 36<br>0.05 ? <b>R</b> &lt; <b>D</b> (exactly 2 digits after the decimal point)<br>1 ? <b>C</b> ? 1000</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+4
+1.00 200 1
+1 0.50 28
+1.00 200 2
+1 0.75 40
+3 0.60 100
+1.00 50 2
+1 0.75 40
+3 0.60 100
+1.00 100 2
+3 0.50 10
+2 0.10 20
+
+<b>Output:</b>
+1
+2
+0
+2
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Test Case 1:</b> This test case is same as the example in the problem statement.<br><b>Test Case 2:</b> This is for you to work out!<br><b>Test Case 3:</b> Chef's monthly usage is only 50 Rokdas and none of the 2 plans are advantageous, hence the answer is zero '0'.<br><b>Test Case 4:</b> Again solve it yourself, but NOTE - if Chef had chosen plan 1, he would have to pay 10 Rokdas (Activation cost), after every 3 months and NOT every month. Similarly had he chosen plan 2, he would have to pay 20 Rokdas (Activation cost), after every 2 months.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/vinayak garg">vinayak garg</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/HELLO">http://discuss.codechef.com/problems/HELLO</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/aug13"> aug13 </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a><a class="problem-tag-small " href="/tags/problems/simple-math"> simple-math </a><a class="problem-tag-small " href="/tags/problems/vinayak garg"> vinayak garg </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>29-01-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/HELLO">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-59403"></a> 
+ <div id="c59403" class="comment clear-block"> 
+  <h3><a href="/problems/HELLO#comment-59403" class="active">My solution gets wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pssaravanan">pssaravanan</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2013 09:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My solution gets wrong answer , My solution works good for the sample input given here. it would be helpful, if i get the sample input for which my solution fails.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-69575"></a> 
+ <div id="c69575" class="comment clear-block"> 
+  <h3><a href="/problems/HELLO#comment-69575" class="active">similar problem code works</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kartik1993">kartik1993</a></strong>
+   <span style="color:#828282"> @ 4 Jan 2014 04:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    similar problem code works fine with the above inputs bt still getting wrong answer
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79572"></a> 
+ <div id="c79572" class="comment clear-block"> 
+  <h3><a href="/problems/HELLO#comment-79572" class="active">solution is correct but your</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/deviljinkazama">deviljinkazama</a></strong>
+   <span style="color:#828282"> @ 15 Jun 2014 11:28 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    solution is correct but your server doesnt accept it as right answer??? what the hell !
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81250"></a> 
+ <div id="c81250" class="comment clear-block"> 
+  <h3><a href="/problems/HELLO#comment-81250" class="active">Please take care of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/garima7">garima7</a></strong>
+   <span style="color:#828282"> @ 10 Jul 2014 01:57 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please take care of type-casting correctly. Got 3 WAs because of that.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-98294"></a> 
+ <div id="c98294" class="comment clear-block"> 
+  <h3><a href="/problems/HELLO#comment-98294" class="active">what's problem in this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aggarwalkeshav">aggarwalkeshav</a></strong>
+   <span style="color:#828282"> @ 4 Mar 2015 09:06 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what's problem in this code #include typedef struct { int month,cost; float rate; } t; int main(){ int test,nomin,noadplan; float orrate,norcost=0,adcost=0; scanf("%d",&amp;test); while(test--) { t t1; int m=0; scanf("%f%d%d",&amp;orrate,&amp;nomin,&amp;noadplan); norcost=orrate*nomin; while(noadplan--) { scanf("%d%f%d",&amp;(t1.month),&amp;(t1.rate),&amp;(t1.cost)); adcost=(t1.cost)+(t1.month)*(t1.rate)*(nomin); adcost=adcost/(t1.month); if(adcost
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103269"></a> 
+ <div id="c103269" class="comment clear-block"> 
+  <h3><a href="/problems/HELLO#comment-103269" class="active">Why getting WA????Gonna crazy</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ztoa1">ztoa1</a></strong>
+   <span style="color:#828282"> @ 9 May 2015 04:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why getting WA????Gonna crazy
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103648"></a> 
+ <div id="c103648" class="comment clear-block"> 
+  <h3><a href="/problems/HELLO#comment-103648" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hmnshgpt455">hmnshgpt455</a></strong>
+   <span style="color:#828282"> @ 13 May 2015 10:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6914314" title="http://www.codechef.com/viewsolution/6914314">http://www.codechef.com/viewsolution/6914314</a> why am I getting wrong ans...plzz anyone help :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103775"></a> 
+ <div id="c103775" class="comment clear-block"> 
+  <h3><a href="/problems/HELLO#comment-103775" class="active">I submitted two solutions</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hmnshgpt455">hmnshgpt455</a></strong>
+   <span style="color:#828282"> @ 14 May 2015 08:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I submitted two solutions with xactly the same code...but one in C lang(
+    <a href="http://www.codechef.com/viewsolution/6932230" title="http://www.codechef.com/viewsolution/6932230">http://www.codechef.com/viewsolution/6932230</a>) and one in C++ 4.9.2(
+    <a href="http://www.codechef.com/viewsolution/6932218" title="http://www.codechef.com/viewsolution/6932218">http://www.codechef.com/viewsolution/6932218</a>). I got correct ans in both the solutions but with different execution times and memories although the code was xactly same. The solution in C gave an execution time of 0.01 and memory 2M and that in C++4.9.2 gave 0.00 execution time and memory 3.1M. Can anybody tell me the reason of this difference its a bit surprising... Plzz anyone help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

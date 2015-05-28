@@ -1,0 +1,144 @@
+<div id="node-824429" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>Let's start from some definitions.</p> 
+  <p>Strings <b>A</b> and <b>B</b> are called <i>anagrams</i> if it's possible to rearrange the letters of string <b>A</b> using all the original letters exactly once and achieve string <b>B</b>; in other words <b>A</b> and <b>B</b> are permutations of each other. For example, <i>remote</i> and <i>meteor</i> are anagrams, <i>race</i> and <i>race</i> are anagrams as well, while <i>seat</i> and <i>tease</i> aren't anagrams as <i>tease</i> contains an extra <i>'e'</i>.</p> 
+  <p>String <b>A</b> is called a <i>subsequence</i> of string <b>B</b> if <b>A</b> can be obtained from <b>B</b> by removing some (possibly none) characters. For example, <i>cat</i> is a subsequence of <i>scratch</i>, <i>rage</i> is a subsequence of <i>rage</i>, and <i>tame</i> is not a subsequence of <i>steam</i>.</p> 
+  <p>String <b>A</b> is <i>lexicographically smaller</i> than string <b>B</b> of the same length if at the first position where <b>A</b> and <b>B</b> differ <b>A</b> contains a letter which is earlier in the alphabet than the corresponding letter in <b>B</b>.</p> 
+  <p>Recently, Ann received a set of strings consisting of small Latin letters <i>a</i>..<i>z</i>. 'What can I do with them?' -- she asked herself. 'What if I try to find the longest string which is a subsequence of every string from the set?'. Ann spent a lot of time trying to solve the problem... but all her attempts happened to be unsuccessful. She then decided to allow the sought string to be an anagram of some subsequence of every string from the set. This problem seemed to be easier to Ann, but she was too tired to solve it, so Ann asked for your help.</p> 
+  <p>So your task is, given a set of strings, to find the longest non-empty string which satisfies Ann. Moreover, if there are many such strings, choose the lexicographically smallest one.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input file contains one integer <b>N</b> -- the number of strings in the set (1 ? <b>N</b> ? 100). Each of the next <b>N</b> lines contains a non-empty string consisting only of small Latin letters <i>a</i>..<i>z</i> representing a string from the set. None of the strings contain more than 100 letters.</p> 
+  <h3>Output</h3> 
+  <p>Output the longest non-empty string satisfying Ann. If there are several such strings, output the lexicographically smallest one. If there are no such strings, output '<b>no such string</b>' (quotes for clarity).</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+3
+hope
+elephant
+path
+
+<b>Output:</b>
+hp
+
+<b>Input:</b>
+2
+wall
+step
+
+<b>Output:</b>
+no such string
+
+<b>Explanation:</b>
+</pre>
+  <p>In the first test case the longest string appears to be two characters long. String 'hp' satisfies the requirements as it's an anagram of 'hp' which is a subsequence of 'hope' and an anagram of 'ph' which is a subsequence of both 'elephant' and 'path'. Note that string 'ph' also satisfies the requirements, but 'hp' is lexicographically smaller.</p> 
+  <p>In the second test case there is no such string.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/gennady.korotkevich">gennady.korotkevich</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/anton_lunyov">anton_lunyov</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/SUBANAGR">http://discuss.codechef.com/problems/SUBANAGR</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook16"> cook16 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/gennady.korotkevich"> gennady.korotkevich </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>4-11-2011</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/SUBANAGR">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-20113"></a> 
+ <div id="c20113" class="comment clear-block"> 
+  <h3><a href="/problems/SUBANAGR#comment-20113" class="active">if w subsequences satisfies</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/architm">architm</a></strong>
+   <span style="color:#828282"> @ 27 Nov 2011 04:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    if w subsequences satisfies like cta &amp; tca the the output will be cta or the sorted form i.e act??????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-22210"></a> 
+ <div id="c22210" class="comment clear-block"> 
+  <h3><a href="/problems/SUBANAGR#comment-22210" class="active">one silly mistake can waste</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chan00">chan00</a></strong>
+   <span style="color:#828282"> @ 12 Feb 2012 12:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    one silly mistake can waste your 3 or 4 submissions. Be careful when n=1 :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78681"></a> 
+ <div id="c78681" class="comment clear-block"> 
+  <h3><a href="/problems/SUBANAGR#comment-78681" class="active">what will be the output when</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubham124">shubham124</a></strong>
+   <span style="color:#828282"> @ 4 Jun 2014 04:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what will be the output when it is one string ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79725"></a> 
+ <div id="c79725" class="comment clear-block"> 
+  <h3><a href="/problems/SUBANAGR#comment-79725" class="active">is the final output in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ekansh12">ekansh12</a></strong>
+   <span style="color:#828282"> @ 19 Jun 2014 06:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    is the final output in complete sorted order??? or just first letter is replaced??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

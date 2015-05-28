@@ -1,0 +1,247 @@
+<div id="node-1075431" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p align="justify">The electrical resistance is the opposition to the passage of electric current. If two resistors with resistance R1 and R2 are connected to each other, the resultant resistance R depends on how their ends are connected. If they are connected in Series, they simply add up to give R = R1 + R2. If they are connected in Parallel, its given by the equation 1/R = 1/R1 + 1/R2. This is shown below.</p> 
+  <p><img src="http://www.codechef.com/download/RESIST_img_1.png" width="550"></p> 
+  <p align="justify">We have a long circuit of resistors of one unit resistance each ( Ri = 1 ) having N blocks. Each block has 2 resistors as shown in the figure below. For a circuit with only one block (N=1), the equivalent resistance at the ends on left-side is R = 1 ( note that the right-most horizontally aligned resistor has no influence, as its not part of any simple path between the two left ends ). For a circuit with two blocks (N=2), its 2/3 units. This is shown in the figure below.</p> 
+  <p><img src="http://www.codechef.com/download/RESIST_img_2.png" width="550"></p> 
+  <p align="justify">Given N, find the resistance A/B at the left ends of the circuit having N blocks. The values can be huge, so reduce the fraction A/B to lowest terms P/Q, where greatest_common_divisor_of (P,Q) = 1 and print (P%M)/(Q%M) for a given modulo M.</p> 
+  <h3>Input</h3> 
+  <p align="justify">First line contains T ( number of test cases, 1 ? T ? 10 ). Each of the next T lines contains N M ( 1 &lt;= N &lt;= 10<sup>6</sup> and 2 &lt;=M &lt;= 2<sup>30</sup> )</p> 
+  <h3>Output</h3> 
+  <p align="justify">For each test case, output the equivalent resistance at the left ends, in the form (P%M)/(Q%M) as explained above, in a separate line.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+3
+1 10
+2 12
+100 10000
+
+<b>Output:</b>
+1/1
+2/3
+4301/9525
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/flying_ant">flying_ant</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/maksflow">maksflow</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/RESIST">http://discuss.codechef.com/problems/RESIST</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook21"> cook21 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/flying_ant"> flying_ant </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>3-04-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>5 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/RESIST">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-25983"></a> 
+ <div id="c25983" class="comment clear-block"> 
+  <h3><a href="/problems/RESIST#comment-25983" class="active">Does operation on 'unsigned</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chirayu">chirayu</a></strong>
+   <span style="color:#828282"> @ 23 Apr 2012 07:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Does operation on 'unsigned long int' is faster than 'unsigned long long int'??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25985"></a> 
+ <div id="c25985" class="comment clear-block"> 
+  <h3><a href="/problems/RESIST#comment-25985" class="active">what kind of question is that</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shashank_jain">shashank_jain</a></strong>
+   <span style="color:#828282"> @ 23 Apr 2012 11:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what kind of question is that ? they have different range of data holding capacity.. !
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-30328"></a> 
+ <div id="c30328" class="comment clear-block"> 
+  <h3><a href="/problems/RESIST#comment-30328" class="active">I don't get why I am getting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/agasheesh">agasheesh</a></strong>
+   <span style="color:#828282"> @ 15 Aug 2012 07:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I don't get why I am getting wrong answer. I created a input file having 100 test case with values in range as given in the question. I tried running successful submissions on this file and all of them produce output exactly same as mine. There also can't be any trick cases as N&gt;=1. Kindly check submission id 1259394. Thanks.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36675"></a> 
+ <div id="c36675" class="comment clear-block"> 
+  <h3><a href="/problems/RESIST#comment-36675" class="active">Why this is wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aditgupta100">aditgupta100</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2013 09:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why this is wrong answer 
+    <a href="http://www.codechef.com/viewsolution/1749097" title="http://www.codechef.com/viewsolution/1749097">http://www.codechef.com/viewsolution/1749097</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38308"></a> 
+ <div id="c38308" class="comment clear-block"> 
+  <h3><a href="/problems/RESIST#comment-38308" class="active">plz tell me whether we hv to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/divyank1">divyank1</a></strong>
+   <span style="color:#828282"> @ 16 Feb 2013 02:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plz tell me whether we hv to display the output along with the input or first scan all the values of input and then simultaneously display their outputs
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-41527"></a> 
+ <div id="c41527" class="comment clear-block"> 
+  <h3><a href="/problems/RESIST#comment-41527" class="active">this problem is weird i was</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abbas">abbas</a></strong>
+   <span style="color:#828282"> @ 28 Apr 2013 09:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    this problem is weird i was getting wrong answer because i was finding gcd. thats misleading...:(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-74413"></a> 
+ <div id="c74413" class="comment clear-block"> 
+  <h3><a href="/problems/RESIST#comment-74413" class="active">Getting errors when n becomes</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nuke">nuke</a></strong>
+   <span style="color:#828282"> @ 4 Mar 2014 11:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Getting errors when n becomes large. Can anyone please suggest some improvements ? 
+    <a href="http://www.codechef.com/viewsolution/3497356" title="http://www.codechef.com/viewsolution/3497356">http://www.codechef.com/viewsolution/3497356</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86184"></a> 
+ <div id="c86184" class="comment clear-block"> 
+  <h3><a href="/problems/RESIST#comment-86184" class="active">submitted problems while</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/krisalpha">krisalpha</a></strong>
+   <span style="color:#828282"> @ 2 Oct 2014 03:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    submitted problems while calculating gcd.. got WA everytime.,,,, did not calculate gcd got AC ....... whoa......
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91007"></a> 
+ <div id="c91007" class="comment clear-block"> 
+  <h3><a href="/problems/RESIST#comment-91007" class="active">please change this statement</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bala1074">bala1074</a></strong>
+   <span style="color:#828282"> @ 29 Nov 2014 04:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please change this statement "greatest_common_divisor_of (P,Q) = 1 "...for this problem no need to calculate gcd..just print P/Q..thank you..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91008"></a> 
+ <div id="c91008" class="comment clear-block"> 
+  <h3><a href="/problems/RESIST#comment-91008" class="active">please change this statement</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bala1074">bala1074</a></strong>
+   <span style="color:#828282"> @ 29 Nov 2014 04:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please change this statement "greatest_common_divisor_of (P,Q) = 1 "...for this problem no need to calculate gcd..just print P/Q..thank you..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92745"></a> 
+ <div id="c92745" class="comment clear-block"> 
+  <h3><a href="/problems/RESIST#comment-92745" class="active">Thanks @bala1074 for such a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kp_programmer">kp_programmer</a></strong>
+   <span style="color:#828282"> @ 3 Jan 2015 12:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Thanks @bala1074 for such a comment! You are absolutely right on that point!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95208"></a> 
+ <div id="c95208" class="comment clear-block"> 
+  <h3><a href="/problems/RESIST#comment-95208" class="active">test for n=5 @bala1074</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1x13">s1x13</a></strong>
+   <span style="color:#828282"> @ 31 Jan 2015 05:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    test for n=5 @bala1074 @kp_programmer
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

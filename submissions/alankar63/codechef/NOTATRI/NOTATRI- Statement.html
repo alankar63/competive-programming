@@ -1,0 +1,780 @@
+<div id="node-124130" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>You have N (3 ? N ? 2,000) wooden sticks, which are labeled from 1 to N. The i-th stick has a length of L<sub>i</sub> (1 ? L<sub>i</sub> ? 1,000,000). Your friend has challenged you to a simple game: you will pick three sticks at random, and if your friend can form a triangle with them (degenerate triangles included), he wins; otherwise, you win. You are not sure if your friend is trying to trick you, so you would like to determine your chances of winning by computing the number of ways you could choose three sticks (regardless of order) such that it is impossible to form a triangle with them.</p> 
+  <h3>Input</h3> 
+  <p>The input file consists of multiple test cases. Each test case starts with the single integer N, followed by a line with the integers L<sub>1</sub>, ..., L<sub>N</sub>. The input is terminated with N = 0, which should not be processed.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing the number of triples.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+3
+4 2 10
+3
+1 2 3
+4
+5 2 9 6
+0
+
+<b>Output:</b>
+1
+0
+2
+
+</pre>
+  <p>For the first test case, 4 + 2 &lt; 10, so you will win with the one available triple. For the second case, 1 + 2 is equal to 3; since degenerate triangles are allowed, the answer is 0.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/admin">admin</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/admin"> admin </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>1-12-2008</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/NOTATRI">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-402"></a> 
+ <div id="c402" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-402" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tarinbansal">tarinbansal</a></strong>
+   <span style="color:#828282"> @ 12 Jul 2009 06:15 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>What does M stand for in memory = 2.5M? Is it MB or what?</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-403"></a> 
+ <div id="c403" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-403" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chang">chang</a></strong>
+   <span style="color:#828282"> @ 12 Jul 2009 08:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can 2 sticks have same length ?</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-404"></a> 
+ <div id="c404" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-404" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chang">chang</a></strong>
+   <span style="color:#828282"> @ 12 Jul 2009 09:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>got it :D they can be same.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-405"></a> 
+ <div id="c405" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-405" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 13 Jul 2009 06:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@tarin Yes, it stands for MB</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-542"></a> 
+ <div id="c542" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-542" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gauravsharma">gauravsharma</a></strong>
+   <span style="color:#828282"> @ 29 Jul 2009 08:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Time 2s s== ?</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-543"></a> 
+ <div id="c543" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-543" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 29 Jul 2009 08:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Seconds..</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-603"></a> 
+ <div id="c603" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-603" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atulbansal128">atulbansal128</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2009 06:12 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can some sticks be of equal length. if yes then should we consider triplets like 1 2 4 and 1 2 4 different or same?</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-606"></a> 
+ <div id="c606" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-606" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2009 08:26 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@atul It seems you've figured that out yourself :)</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-616"></a> 
+ <div id="c616" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-616" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atulbansal128">atulbansal128</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2009 06:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i concluded answer is yes to my question</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1063"></a> 
+ <div id="c1063" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-1063" class="active">I am considering 2 triplet of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/udayabhanu">udayabhanu</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2009 10:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am considering 2 triplet of same members to be different, since, you are saying "at random" and "probability"?! Is that fine to assume so?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1068"></a> 
+ <div id="c1068" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-1068" class="active">Yes, if I understand you</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 20 Aug 2009 01:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Yes, if I understand you correctly, you are right in assuming so. :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1790"></a> 
+ <div id="c1790" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-1790" class="active">i want information about how</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gadige.siddharth">gadige.siddharth</a></strong>
+   <span style="color:#828282"> @ 15 Sep 2009 02:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i want information about how to improve my skills and al and i m MBA student so guide me plz</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4047"></a> 
+ <div id="c4047" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-4047" class="active">if degenrate triangles are</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunjanbansal">gunjanbansal</a></strong>
+   <span style="color:#828282"> @ 10 Dec 2009 11:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>if degenrate triangles are allowed , then y is ans of second test case 0 ??</p> 
+    <p>shouldnt it be 1 ??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4048"></a> 
+ <div id="c4048" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-4048" class="active">i got it , my mistake ,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunjanbansal">gunjanbansal</a></strong>
+   <span style="color:#828282"> @ 10 Dec 2009 11:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i got it , my mistake ,</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4070"></a> 
+ <div id="c4070" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-4070" class="active">i dnt seem to find y i am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunjanbansal">gunjanbansal</a></strong>
+   <span style="color:#828282"> @ 12 Dec 2009 08:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i dnt seem to find y i am getting wrong ans.. plz help</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-4071"></a> 
+ <div id="c4071" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-4071" class="active">what is the problem wid</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunjanbansal">gunjanbansal</a></strong>
+   <span style="color:#828282"> @ 12 Dec 2009 09:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>what is the problem wid foloowing search algo ..</p> 
+    <p>&nbsp;</p> 
+    <p>count=0;<br> for(i=0;i&lt;sortindex-2;i++)//0 1&nbsp; 2 5 6 9<br> {<br> for(tmp=i+1;tmp&lt;sortindex-1;tmp++)//1 2<br> {<br> n=sorted[i]+sorted[tmp];<br> lb=tmp+1;<br><br> ub=sortindex-1;<br> mid=(lb+ub)/2;<br> while(lb&lt;ub)<br> {<br> if(sorted[mid]&gt;n)<br> {<br> ub=mid-1;<br> mid=(lb+ub)/2;<br> }<br> else<br> if(sorted[mid]&lt;n)<br> {<br> lb=mid+1;<br> mid=(lb+ub)/2;<br> }<br> else<br> break;<br> }<br> while(sorted[mid]==n)<br> mid++;<br> if(sorted[mid]&gt;n)<br> count+=sortindex-mid;<br><br> }<br> }</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5072"></a> 
+ <div id="c5072" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-5072" class="active">plz help I wrote the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shaurya">shaurya</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2010 12:35 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>plz help</p> 
+    <p>I wrote the following code:</p> 
+    <p>#include&lt;stdio.h&gt;<br>void sort_merge_aux(int , int);<br>void sort_merge(int, int, int);<br>//int p=0;<br>long int arr[2000];<br>long int temp[1000];<br> <br>void sort_merge_aux(int low,int high)<br>{<br> int mid;<br> if(low!=high)<br> {<br> mid=(low+high)/2;<br> sort_merge_aux(low,mid);<br> sort_merge_aux(mid+1,high);<br> sort_merge(low,mid,high);<br> }<br>}<br>void sort_merge(int low,int mid,int high)<br>{<br> int i,j,k;<br> i=low;<br> j=mid+1;<br> k=low;<br> while((i&lt;=mid)&amp;&amp;(j&lt;=high))<br> {<br> if(arr[i]&gt;=arr[j])<br> temp[k++]=arr[j++];<br> else<br> temp[k++]=arr[i++];<br> }<br> while(i&lt;=mid)<br> temp[k++]=arr[i++];<br> while(j&lt;=high)<br> temp[k++]=arr[j++];<br> for(i=low;i&lt;=high;i++)<br> arr[i]=temp[i];<br>}<br>int search_number(long int k,int lower,int num)<br>{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> int mig,low,mid,high,found=0,var;<br> //var=-1;<br> // mig=0;<br> low=lower;<br> high=num-1;<br><br> while(low&lt;=high)<br> {<br> mid=(low+high)/2;<br> if(k&gt;arr[mid])<br> low=mid+1;<br> else if(k&lt;arr[mid])<br> high=mid-1;<br> else<br> {<br> //&nbsp;&nbsp;&nbsp; found=1;<br> //&nbsp;&nbsp;&nbsp; var=mid;<br> break;<br> }<br> }<br> if(high&lt;lower)<br> return (high+1);&nbsp;&nbsp;&nbsp; <br> if(low&gt;num-1)<br> return low;<br> if(low&lt;=high)<br> {<br> while(arr[mid]==k)<br> mid++;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> return mid;<br>}<br> else<br> {<br> if(arr[high]&gt;k&amp;&amp;arr[low]&gt;k)<br> return high-1;<br> else if(arr[high]&lt;k&amp;&amp;arr[low]&gt;k)<br> return (high+1);<br> //else if(arr[high]&gt;k&amp;&amp;arr[low]&lt;k)<br> //&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return&nbsp; ;<br> else if(arr[high]&lt;k&amp;&amp;arr[low]&lt;k)<br> return low+1;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>}<br><br>int main()<br>{<br> long nt,n,m,p,not_a_triangle;<br> int t,num;<br> register long int i,j,k;<br> scanf("%d",&amp;num);<br> while(num!=0)<br> {<br> t=0;<br> while(t&lt;num)<br> {<br> scanf("%d",&amp;arr[t]);<br> t++;<br>}<br> sort_merge_aux(0,num-1);<br> not_a_triangle=0;<br> for(i=0;i&lt;num-2;i++)<br> {<br> for(j=i+1;j&lt;num-1;j++)<br> {<br> not_a_triangle+=num-search_number(arr[i]+arr[j],j+1,num);<br> }<br> }<br> printf("%dn",not_a_triangle);<br> scanf("%d",&amp;num);<br>}<br>//getch();<br>return 0; <br>}</p> 
+    <p>but I get runtime error.i have checked for</p> 
+    <p>-memory limit is not exceeded if long int is of 8byte or less</p> 
+    <p>-array bounds are also not exceeded</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5075"></a> 
+ <div id="c5075" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-5075" class="active">please, fellow coders, do NOT</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jcomeau_ictx">jcomeau_ictx</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2010 11:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>please, fellow coders, do NOT post code here. besides it being hard to read, some people would rather solve the problems themselves without getting hints. see the <a href="/freelinking/FAQ" class="freelinking">FAQ</a> for how to post a link to your submission, and people who want to can then see it, properly formatted, there.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5083"></a> 
+ <div id="c5083" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-5083" class="active">plz help! ok! i read faqs but</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shaurya">shaurya</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2010 07:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>plz help!</p> 
+    <p>ok! i read faqs but from where can i get</p> 
+    <p>link to the solution i submit</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5084"></a> 
+ <div id="c5084" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-5084" class="active">from the problem page, say:</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jcomeau_ictx">jcomeau_ictx</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2010 09:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>from the problem page, say: <a href="http://www.codechef.com/problems/TEST/" title="http://www.codechef.com/problems/TEST/">http://www.codechef.com/problems/TEST/</a></p> 
+    <p>to the right of the headline "Life, the Universe, and Everything" you will see 3 buttons: "ALL SUBMISSIONS", "MY SUBMISSIONS", and "SUBMIT". Click "MY SUBMISSIONS".</p> 
+    <p>You will see a list of your submitted programs. Pick the one you want, and on the far right of the row, click "View Solution".</p> 
+    <p>Copy and paste the link from your browser into the Comment page: <a href="http://www.codechef.com/viewsolution/110651" title="http://www.codechef.com/viewsolution/110651">http://www.codechef.com/viewsolution/110651</a></p> 
+    <p>I'll review the FAQ, and add this info if needed.</p> 
+    <p>Anyway, I'm not clear on why anyone should help debug other people's, i.e. YOUR, programs. You don't learn nearly as much if someone does it for you. During a contest, nobody is allowed to assist you anyway, and if you have been getting help all along, you'll be, quite literally, helpless. Especially since it seems many contest problems are described incorrectly or the sample input/output is wrong. Do you remember the battleship problem, I think it was in November? The testcases were wrong, but someone solved it anyway before the admins fixed it. Now THAT was a real coder... he not only debugs his programs, he debugged the problem description itself, without assistance.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-6487"></a> 
+ <div id="c6487" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-6487" class="active">In first test case, in above</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Tanuja">Tanuja</a></strong>
+   <span style="color:#828282"> @ 9 Mar 2010 03:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>In first test case, in above Ex, how we get one triple? 4+2&lt;10</p> 
+    <p>actually length of largest side should be lesser than sum of other two sides.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-6488"></a> 
+ <div id="c6488" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-6488" class="active">Read the problem statement.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 9 Mar 2010 04:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Read the problem statement. You are not asked to print out the number of valid triples.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10242"></a> 
+ <div id="c10242" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-10242" class="active">Can anyone name&nbsp; a few</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kuarc">kuarc</a></strong>
+   <span style="color:#828282"> @ 27 Aug 2010 08:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Can anyone name&nbsp; a few boundary test cases where my prog could be failing :( &nbsp; i have tried a lot of em.. but passes here.. The overall result in judge is Wrong Answer</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10308"></a> 
+ <div id="c10308" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-10308" class="active">hiii</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sumit_lnmiit">sumit_lnmiit</a></strong>
+   <span style="color:#828282"> @ 1 Sep 2010 12:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>hiii</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10954"></a> 
+ <div id="c10954" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-10954" class="active">how to see the input output</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/keybo1312">keybo1312</a></strong>
+   <span style="color:#828282"> @ 27 Sep 2010 11:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>how to see the input output set used...</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12516"></a> 
+ <div id="c12516" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-12516" class="active">I have solved the problem as</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubh09">shubh09</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2010 11:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I have solved the problem as explained in the tutorial (I have used merge sort, by the way), but I am still geting TLE. Moreover, my code is running perfectly within the time limit of 2s on my computer (It gave the answer in 0.17 seconds for N=2000 and N random positive numbers less than 1000000 as input for the lengths of the sticks). I even compared the execution time with that of an accepted solution with the same input, and the accepted solution gave the answer in 0.18 seconds.</p> 
+    <p>Here is the link to my solution: <a href="http://www.codechef.com/viewsolution/406062" title="http://www.codechef.com/viewsolution/406062">http://www.codechef.com/viewsolution/406062</a>.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15061"></a> 
+ <div id="c15061" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-15061" class="active">Hi, How to figure out number</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sachinpkale">sachinpkale</a></strong>
+   <span style="color:#828282"> @ 15 Mar 2011 04:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Hi,</p> 
+    <p>How to figure out number of test cases in advance?</p> 
+    <p>or What is the max no. of test cases?</p> 
+    <p>It is required as I am using C and I have to create array to store results.</p> 
+    <p>It is giving me Runtime Error and I think it is because I was using array of 1000 to store the results.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16240"></a> 
+ <div id="c16240" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-16240" class="active">#include&lt;iostream&gt;#include&lt;co</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jatingulati25">jatingulati25</a></strong>
+   <span style="color:#828282"> @ 6 May 2011 04:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>#include&lt;iostream&gt;<br>#include&lt;conio.h&gt;<br>using namespace std;<br>int main(){<br> int i,j,k,n,count=0,a[10];<br> int sum2,sum3;<br> int max;<br> while(1){<br> cin&gt;&gt;n;<br> if(n==0)<br> return 0; <br> for(i=0;i&lt;n;i++)<br> cin&gt;&gt;a[i];<br> for(i=0;i&lt;n-2;i++){<br> max=a[i];<br> <br> for(j=i+1,sum2=0;j&lt;n-1;j++){<br> if(a[j]&gt;max){<br> <br> sum2=a[i];<br> max=a[j];<br> }<br> else sum2=a[j];<br> for(k=j+1,sum3=0;k&lt;n;k++){<br> if(a[k]&gt;max){<br> <br> sum3=sum2+max;<br> max=a[k];<br> }<br> else sum3=sum2+a[k];<br> if(sum3&gt;=max)<br> count++;<br> <br> <br> <br> }}}&nbsp; <br> cout&lt;&lt;count&lt;&lt;endl;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> }<br> <br> <br> getch();<br> return 0;<br><br>}</p> 
+    <p>I am getting a runtime error<br>Please tell me where I am wrong....<br><br>wat i am doing is calculating max of the 3 and putting other 2 in sum and comparing these two....</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16602"></a> 
+ <div id="c16602" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-16602" class="active">The time given is for all the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/salvo">salvo</a></strong>
+   <span style="color:#828282"> @ 4 Jun 2011 01:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The time given is for all the test cases combined or just for the worst case test case
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17570"></a> 
+ <div id="c17570" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-17570" class="active">why the program shows error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ayush1723">ayush1723</a></strong>
+   <span style="color:#828282"> @ 14 Jul 2011 01:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why the program shows error with quicksort ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19434"></a> 
+ <div id="c19434" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-19434" class="active">as far as i know, time limit</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cyberax">cyberax</a></strong>
+   <span style="color:#828282"> @ 12 Oct 2011 04:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    as far as i know, time limit is unreachable in Python. 
+    <a href="http://www.codechef.com/viewsolution/700638" title="http://www.codechef.com/viewsolution/700638">http://www.codechef.com/viewsolution/700638</a> Python users, don't loose your time. :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-23363"></a> 
+ <div id="c23363" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-23363" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kapilagarwal">kapilagarwal</a></strong>
+   <span style="color:#828282"> @ 26 Feb 2012 09:37 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/867333" title="http://www.codechef.com/viewsolution/867333">http://www.codechef.com/viewsolution/867333</a> @admin : pls check this out, it is solving every test case on my comp
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-24443"></a> 
+ <div id="c24443" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-24443" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/karthikthehun">karthikthehun</a></strong>
+   <span style="color:#828282"> @ 15 Mar 2012 04:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/915161" title="http://www.codechef.com/viewsolution/915161">http://www.codechef.com/viewsolution/915161</a> The program is working in my gcc compiler but is giving a runtime error in codechef.Pls help.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27082"></a> 
+ <div id="c27082" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-27082" class="active">where do we read input from?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/krieger87">krieger87</a></strong>
+   <span style="color:#828282"> @ 27 May 2012 05:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    where do we read input from?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29923"></a> 
+ <div id="c29923" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-29923" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cdhishna">cdhishna</a></strong>
+   <span style="color:#828282"> @ 5 Aug 2012 11:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/1225498" title="http://www.codechef.com/viewsolution/1225498">http://www.codechef.com/viewsolution/1225498</a> this solution works on CodeBlocks but it gives a runtime error on codechef.. please help..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-32024"></a> 
+ <div id="c32024" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-32024" class="active">How to minimise the time...</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/greatcoder88">greatcoder88</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2012 04:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    How to minimise the time... If N=2000 then there will 2000 C 3 choices for choosing a triplet , going through each and figuring whether it will form a triangle is very time taking
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35383"></a> 
+ <div id="c35383" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-35383" class="active">is any tutorial provided for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mitsdhawan">mitsdhawan</a></strong>
+   <span style="color:#828282"> @ 2 Jan 2013 01:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    is any tutorial provided for this problem?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36264"></a> 
+ <div id="c36264" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-36264" class="active">pls can anybody help my code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sid12">sid12</a></strong>
+   <span style="color:#828282"> @ 17 Jan 2013 01:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    pls can anybody help my code has almost 6*10^6 iterations bt shows tle i cnt understand why since time limit is 2 sec it should acc upto 2*10^7 shoudn't it??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38999"></a> 
+ <div id="c38999" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-38999" class="active">Why is my code getting 'time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harsha_badass">harsha_badass</a></strong>
+   <span style="color:#828282"> @ 5 Mar 2013 07:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why is my code getting 'time limit exceeded'? Please help. Here's my solution : 
+    <a href="http://www.codechef.com/viewsolution/1895904" title="http://www.codechef.com/viewsolution/1895904">http://www.codechef.com/viewsolution/1895904</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39048"></a> 
+ <div id="c39048" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-39048" class="active">admin, y u no reply??</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harsha_badass">harsha_badass</a></strong>
+   <span style="color:#828282"> @ 7 Mar 2013 12:08 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    admin, y u no reply??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40087"></a> 
+ <div id="c40087" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-40087" class="active">Getting a TLE in my solution</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gnissem">gnissem</a></strong>
+   <span style="color:#828282"> @ 24 Mar 2013 08:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Getting a TLE in my solution in Ruby and no obvious way to improve speed. I see no successful submissions for this problem in any languages other than C,C++,Java. No one submitting in Python or Ruby seems to have done better than TLE.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43025"></a> 
+ <div id="c43025" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-43025" class="active">if degenerate triangles are</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hitesh091">hitesh091</a></strong>
+   <span style="color:#828282"> @ 11 May 2013 09:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    if degenerate triangles are allowed, answer of second case should be 1... why this??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46430"></a> 
+ <div id="c46430" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-46430" class="active">awesome question....:)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/re_hash">re_hash</a></strong>
+   <span style="color:#828282"> @ 23 Jun 2013 05:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    awesome question....:)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-74511"></a> 
+ <div id="c74511" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-74511" class="active">#include int a[2000]; int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gargumesh">gargumesh</a></strong>
+   <span style="color:#828282"> @ 7 Mar 2014 10:06 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int a[2000]; int b[1000000]; int top=0 ; int main() { int n,i,j,sum,count=0,k ; scanf("%d",&amp;n); while(n!=0) { for(i=0;isum) count++ ; } } printf("%dn",count); count=0 ; top=0 ; scanf("%d",&amp;n); } return 0 ; } i am getting TLE for this code. any body plz help me out....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78338"></a> 
+ <div id="c78338" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-78338" class="active">i submitted the code with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/phoenix1312">phoenix1312</a></strong>
+   <span style="color:#828282"> @ 21 May 2014 01:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i submitted the code with input using getchar() and it gave 0.12s while when i replaced all getchar() with getchar_unlocked() it gave 0.13s, no other change. isn't getchar_unlocked() faster than getchar() ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83461"></a> 
+ <div id="c83461" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-83461" class="active">can anybody tell how the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chugh">chugh</a></strong>
+   <span style="color:#828282"> @ 10 Aug 2014 02:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anybody tell how the answer to the test case 6 1 2 4 4 4 4 the ans is 4.. how?????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91145"></a> 
+ <div id="c91145" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-91145" class="active">@chugh it is because 1+2&lt;4</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aaha97">aaha97</a></strong>
+   <span style="color:#828282"> @ 4 Dec 2014 09:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @chugh it is because 1+2&lt;4 happens 4 times...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94391"></a> 
+ <div id="c94391" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-94391" class="active">it feels so good when you see</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kainthabhishek">kainthabhishek</a></strong>
+   <span style="color:#828282"> @ 24 Jan 2015 12:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    it feels so good when you see a green tick after doing such question and spending hours in solving it ;)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103067"></a> 
+ <div id="c103067" class="comment clear-block"> 
+  <h3><a href="/problems/NOTATRI#comment-103067" class="active">i submitted n3 solution</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/thundergod009">thundergod009</a></strong>
+   <span style="color:#828282"> @ 7 May 2015 07:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i submitted n3 solution ..gave time exceeded ,then changed to n2logn giving me wrong answer...can somebody give me more test cases..resolve this?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

@@ -1,0 +1,553 @@
+<div id="node-1723322" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> Now that Chef has finished baking and frosting his cupcakes, it's time to package them. Chef has <b>N</b> cupcakes, and needs to decide how many cupcakes to place in each package. Each package must contain the same number of cupcakes. Chef will choose an integer <b>A</b> between 1 and <b>N</b>, inclusive, and place exactly <b>A</b> cupcakes into each package. Chef makes as many packages as possible. Chef then gets to eat the remaining cupcakes. Chef enjoys eating cupcakes very much. Help Chef choose the package size <b>A</b> that will let him eat as many cupcakes as possible. </p> 
+  <h3>Input</h3> 
+  <p> Input begins with an integer <b>T</b>, the number of test cases. Each test case consists of a single integer <b>N</b>, the number of cupcakes. </p> 
+  <h3>Output</h3> 
+  <p> For each test case, output the package size that will maximize the number of leftover cupcakes. If multiple package sizes will result in the same number of leftover cupcakes, print the largest such size. </p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li>1 ? <b>T</b> ? 1000</li> 
+   <li>2 ? <b>N</b> ? 100000000 (10<sup>8</sup>)</li> 
+  </ul> 
+  <h3>Sample Input</h3> 
+  <pre>2
+2
+5
+</pre>
+  <h3>Sample Output</h3> 
+  <pre>2
+3
+</pre>
+  <h3>Explanation</h3> 
+  <p> In the first test case, there will be no leftover cupcakes regardless of the size Chef chooses, so he chooses the largest possible size. In the second test case, there will be 2 leftover cupcakes. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/pieguy">pieguy</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/anton_lunyov">anton_lunyov</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/MUFFINS3">http://discuss.codechef.com/problems/MUFFINS3</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/cook29"> cook29 </a><a class="problem-tag-small " href="/tags/problems/pieguy"> pieguy </a><a class="problem-tag-small " href="/tags/problems/simple-math"> simple-math </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>26-11-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/MUFFINS3">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-46319"></a> 
+ <div id="c46319" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-46319" class="active">Holy shit! This is so easy i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harsha_badass">harsha_badass</a></strong>
+   <span style="color:#828282"> @ 19 Jun 2013 10:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Holy shit! This is so easy i actually thought i was missing something.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-63341"></a> 
+ <div id="c63341" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-63341" class="active">Can someone explain the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/linux_devil">linux_devil</a></strong>
+   <span style="color:#828282"> @ 7 Nov 2013 12:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone explain the sample output ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65634"></a> 
+ <div id="c65634" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-65634" class="active">only 2 lines of code is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bendakai">bendakai</a></strong>
+   <span style="color:#828282"> @ 6 Dec 2013 12:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    only 2 lines of code is enough /m
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71045"></a> 
+ <div id="c71045" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-71045" class="active">no it can't be</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/randomizer">randomizer</a></strong>
+   <span style="color:#828282"> @ 14 Jan 2014 06:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    no it can't be
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71502"></a> 
+ <div id="c71502" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-71502" class="active">Could it be? :D</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arindam93">arindam93</a></strong>
+   <span style="color:#828282"> @ 21 Jan 2014 08:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Could it be? :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75063"></a> 
+ <div id="c75063" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-75063" class="active">finally!!!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/krish728">krish728</a></strong>
+   <span style="color:#828282"> @ 11 Mar 2014 10:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    finally!!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78109"></a> 
+ <div id="c78109" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-78109" class="active">Hey admin.. I'm not able to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dcpkrp">dcpkrp</a></strong>
+   <span style="color:#828282"> @ 13 May 2014 10:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hey admin.. I'm not able to climb up the 2.2M memory mark for my solutions. Even though my code is exactly similar to codes of various users which have 1.6M memory, my memory always limits at 2.2M. Why so?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78677"></a> 
+ <div id="c78677" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-78677" class="active">Can someone explain why i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cloudyskies">cloudyskies</a></strong>
+   <span style="color:#828282"> @ 4 Jun 2014 04:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone explain why i consistently got an error using Bufferedstream and Printwriter, but when i did the exact same thing using System.out.println() and Scanner it worked?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79357"></a> 
+ <div id="c79357" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-79357" class="active">Why is the solution giving</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kideinstein">kideinstein</a></strong>
+   <span style="color:#828282"> @ 12 Jun 2014 01:36 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why is the solution giving the output as 1 for 0 cupcakes being considered correct by the judge?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80004"></a> 
+ <div id="c80004" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-80004" class="active">whenever i submit code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/karankapoor">karankapoor</a></strong>
+   <span style="color:#828282"> @ 25 Jun 2014 03:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    whenever i submit code without checking constraints, it runs bt not with checking constraints.. why ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80059"></a> 
+ <div id="c80059" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-80059" class="active">Chef makes as many packages</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/krishmakochhar">krishmakochhar</a></strong>
+   <span style="color:#828282"> @ 28 Jun 2014 12:08 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Chef makes as many packages as possible. what does this mean ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80077"></a> 
+ <div id="c80077" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-80077" class="active">@krishmakocharr it means that</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sachi123">sachi123</a></strong>
+   <span style="color:#828282"> @ 28 Jun 2014 07:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @krishmakocharr it means that there is no limit on the number of packages given the size of each package. :-)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81661"></a> 
+ <div id="c81661" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-81661" class="active">Merlin's *beard !</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhyudayar">abhyudayar</a></strong>
+   <span style="color:#828282"> @ 18 Jul 2014 05:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Merlin's *beard !
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81980"></a> 
+ <div id="c81980" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-81980" class="active">^_^ Okay that was a morale</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shaswatrungta">shaswatrungta</a></strong>
+   <span style="color:#828282"> @ 26 Jul 2014 10:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    ^_^ Okay that was a morale booster. ^_^
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82190"></a> 
+ <div id="c82190" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-82190" class="active">if there are more .. print</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saroj">saroj</a></strong>
+   <span style="color:#828282"> @ 29 Jul 2014 06:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    if there are more .. print the largest. lol...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82201"></a> 
+ <div id="c82201" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-82201" class="active">kideinstein : that is not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/subham_pasari">subham_pasari</a></strong>
+   <span style="color:#828282"> @ 30 Jul 2014 02:44 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    kideinstein : that is not within the constraints so the judge will not check your answer against that test case.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83634"></a> 
+ <div id="c83634" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-83634" class="active">Damn easy :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codophobia">codophobia</a></strong>
+   <span style="color:#828282"> @ 11 Aug 2014 07:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Damn easy :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83806"></a> 
+ <div id="c83806" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-83806" class="active">very simple..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chaitan">chaitan</a></strong>
+   <span style="color:#828282"> @ 20 Aug 2014 12:35 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    very simple..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84128"></a> 
+ <div id="c84128" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-84128" class="active">invoking the close() function</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/plegm">plegm</a></strong>
+   <span style="color:#828282"> @ 27 Aug 2014 11:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    invoking the close() function to close the PrintWriter and BufferedReader resources causes NZEC error. Oh come'on, you guys must tell Sphere about this.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85456"></a> 
+ <div id="c85456" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-85456" class="active">someone plz explain the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/barsha_aiub">barsha_aiub</a></strong>
+   <span style="color:#828282"> @ 18 Sep 2014 11:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    someone plz explain the output.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85508"></a> 
+ <div id="c85508" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-85508" class="active">@barsha_aiub In the first</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/igor_mael">igor_mael</a></strong>
+   <span style="color:#828282"> @ 19 Sep 2014 10:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @barsha_aiub In the first case, if the output was 1, the chef would have 2 packages and 0 leftovers. If the output was 2, the chef would have 1 package and 0 leftovers. So he chose the largest one. In the second case. if output was 1 = 5 packages and 0 leftovers , output 2 = 2 packages and 1 leftover, output = 3 1 package and 2 leftovers, output 4 = 1 package and 1 leftovers,output 5 = 1 package and 0 leftovers. So he chooses the one with most leftovers(3).
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85921"></a> 
+ <div id="c85921" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-85921" class="active">n/2+1</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ktignites">ktignites</a></strong>
+   <span style="color:#828282"> @ 28 Sep 2014 08:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    n/2+1
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86190"></a> 
+ <div id="c86190" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-86190" class="active">"chef then gets to eat</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Jshree">Jshree</a></strong>
+   <span style="color:#828282"> @ 2 Oct 2014 06:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    "chef then gets to eat remaining cupcakes"what does dat mean?what are the left over cupcakes?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86196"></a> 
+ <div id="c86196" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-86196" class="active">lol problem! :D</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mansigupta19">mansigupta19</a></strong>
+   <span style="color:#828282"> @ 2 Oct 2014 08:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    lol problem! :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-87728"></a> 
+ <div id="c87728" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-87728" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nikhil_152">nikhil_152</a></strong>
+   <span style="color:#828282"> @ 10 Oct 2014 04:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/5086038" title="http://www.codechef.com/viewsolution/5086038">http://www.codechef.com/viewsolution/5086038</a> why is this an incorrect answer??? It is working completely fine. Please help!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89655"></a> 
+ <div id="c89655" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-89655" class="active">I wanna tel u something .....</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/manveersingh">manveersingh</a></strong>
+   <span style="color:#828282"> @ 7 Nov 2014 10:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I wanna tel u something ..... Correct in first attempt, Feels gr8...!! :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90737"></a> 
+ <div id="c90737" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-90737" class="active">Can some explain to me why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sarslanhan">sarslanhan</a></strong>
+   <span style="color:#828282"> @ 21 Nov 2014 02:12 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can some explain to me why Java uses too much memory (1399M in my case 
+    <a href="http://www.codechef.com/viewsolution/5441219" title="http://www.codechef.com/viewsolution/5441219">http://www.codechef.com/viewsolution/5441219</a>) in this problem? At first, I thought it is about the BufferedReader and BufferedWriter used in my solution but then I noticed that they are using 8192 bytes for the default buffer size. So, if that is not the case i wonder what it is. Thanks in advance.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91301"></a> 
+ <div id="c91301" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-91301" class="active">very easy !!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gaurav796">gaurav796</a></strong>
+   <span style="color:#828282"> @ 6 Dec 2014 01:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    very easy !!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92175"></a> 
+ <div id="c92175" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-92175" class="active">can someone please give some</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aakashroy007">aakashroy007</a></strong>
+   <span style="color:#828282"> @ 22 Dec 2014 04:54 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can someone please give some more examples or test cases !!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92225"></a> 
+ <div id="c92225" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-92225" class="active">@aakashroy007 for n=7 output</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saket9450">saket9450</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2014 07:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @aakashroy007 for n=7 output will be 4 and for 11 is 6 for 12 is 7
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94900"></a> 
+ <div id="c94900" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-94900" class="active">Is this question for real?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ibinaydas">ibinaydas</a></strong>
+   <span style="color:#828282"> @ 27 Jan 2015 12:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Is this question for real? This shouldn't even exist.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95334"></a> 
+ <div id="c95334" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-95334" class="active">please explain the logic</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/apoorv241">apoorv241</a></strong>
+   <span style="color:#828282"> @ 1 Feb 2015 08:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please explain the logic
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95346"></a> 
+ <div id="c95346" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-95346" class="active">@appprv241 Very simple</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hitmankaran">hitmankaran</a></strong>
+   <span style="color:#828282"> @ 1 Feb 2015 09:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @appprv241 Very simple logic. Just divide the total number of cupcakes by a number so that you get the maximum remainder. So if we have 5 cupcakes, starting from 1, divide the number of cupcakes(5) till we get max remainder. That number is the answer.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103863"></a> 
+ <div id="c103863" class="comment clear-block"> 
+  <h3><a href="/problems/MUFFINS3#comment-103863" class="active">What is wrong with my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/knikou">knikou</a></strong>
+   <span style="color:#828282"> @ 15 May 2015 03:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What is wrong with my code? T=int(raw_input()) a=0 while T&gt;0: N=int(raw_input()) for x in range(N): count = N%(x+1) if count&gt;a: a=count continue print N-a T-=1
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

@@ -1,0 +1,343 @@
+<div id="node-2008693" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>Chef has been constantly expanding his chain of restaurants. It was getting too difficult for him to manage the finances of so many businesses all by himself. So he has opened up a new accounts office and hired people to help him with this task. There are <b>N</b> people working in this building and each one works in a separate cabin. Chef employees are numbered by integers from <b>1</b> to <b>N</b>, inclusive. Chef wants to ensure the safety of his employees. He wants to have fire escapes in the building and wants to train the employees to use these by conducting mock drills.</p> 
+  <p>Chef knows that the number of people working in his office can be very large. In order to avoid crowding of a common fire escape route during emergency, Chef has decided to build multiple fire escapes. For the safety of every employee, each cabin has a fire exit which is connected to one of the fire escape routes.</p> 
+  <p>A lot of employees are friends with each other. The friendship is mutual. This means that if employee <b><i>i</i></b> is a friend of employee <b><i>j</i></b> then employee <b><i>j</i></b> is a friend of employee <b><i>i</i></b> as well. But friendship is NOT necessarily transitive. This means that if employee <b><i>i</i></b> is a friend of employee <b><i>j</i></b> AND employee <b><i>j</i></b> is a friend of employee <b><i>k</i></b>, then employee <b><i>i</i></b> and employee <b><i>k</i></b> need not necessarily be friends.</p> 
+  <p><b>If two employees are friends, they do not want to escape through different routes.</b></p> 
+  <p>This complicates the task for the Chef. As already mentioned, he wants to have the maximum number of fire escape routes to ensure maximum safety. Also, for every escape route, one of the employees using that route needs to be appointed as the fire drill captain. The captain will be responsible for conducting the mock drills and train all the employees using that route. Your task is simple. Given the number of employees and the friendship list, you need to tell the Chef the maximum number of fire escape routes that he can have in the building and the number of ways of selecting the captains for every route. Since the number of ways can be really large, output this value modulo <b>10<sup>9</sup> + 7</b>.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains a single integer <b>T</b>, denoting the number of test cases. The description of <b>T</b> test cases follows. The first line of each test case contains two space-separated integers <b>N</b> and <b>M</b>, denoting the number of employees and the number of friendship relations, respectively. Each of the following <b>M</b> lines contains two space-separated integers <b>i</b> and <b>j</b>, denoting employee <b><i>i</i></b> and employee <b><i>j</i></b> are friends.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing two space separated integers, denoting the maximum number of distinct fire escape routes that can be constructed and the number of ways of selecting the captains modulo <b>10<sup>9</sup> + 7</b>.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ? <b>T</b> ? <b>5</b></li> 
+   <li><b>1</b> ? <b>N</b> ? <b>100000</b> (<b>10<sup>5</sup></b>)</li> 
+   <li><b>0</b> ? <b>M</b> ? <b>100000</b> (<b>10<sup>5</sup></b>)</li> 
+   <li><b>1</b> ? <b>i</b>, <b>j</b> ? <b>N</b></li> 
+   <li><b>i</b> ? <b>j</b></li> 
+   <li>For any pair of employees <b><i>i</i></b> and <b><i>j</i></b> such that <b>1</b> ? <b>i</b> &lt; <b>j</b> ? <b>N</b>, at most one pair among (<b>i</b>, <b>j</b>) and (<b>j</b>, <b>i</b>) will appear in the input</li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+3
+4 2
+1 2
+2 3
+5 3
+1 2
+2 3
+1 3
+6 3
+1 2
+3 4
+5 6
+
+<b>Output:</b>
+2 3
+3 3
+3 8
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Example case 1.</b> Here employees 1 and 2 are friends and should share the same fire escape. Also employees 2 and 3 share the same fire escape. This means employees 1, 2 and 3 will have a common route. But to maximize number of routes Chef could assign another route to employee 4 since it is not a friend of other employee. So we have two escape routes with the following distribution of employees by routes: {1, 2, 3}, {4}. Therefore, there are 3 ways to chose drill captains: (1, 4), (2, 4), (3, 4), where first element in the pair denotes the captain for the first route and second element denotes the captain for the second route.</p> 
+  <p><b>Example case 2.</b> Here the optimal distribution of employees by routes is {1, 2, 3}, {4}, {5}. Therefore, there are 3 ways to chose drill captains: (1, 4, 5), (2, 4, 5), (3, 4, 5).</p> 
+  <p><b>Example case 3.</b> Here the optimal distribution of employees by routes is {1, 2}, {3, 4}, {5, 6}. Therefore, there are 8 ways to chose drill captains:<br> (1, 3, 5), (1, 3, 6), (1, 4, 5), (1, 4, 6), (2, 3, 5), (2, 3, 6), (2, 4, 5), (2, 4, 6).<br></p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/vamsi_kavala">vamsi_kavala</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/anton_lunyov">anton_lunyov</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/FIRESC">http://discuss.codechef.com/problems/FIRESC</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/dfs"> dfs </a><a class="problem-tag-small " href="/tags/problems/march13"> march13 </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a><a class="problem-tag-small " href="/tags/problems/union-find"> union-find </a><a class="problem-tag-small " href="/tags/problems/vamsi_kavala"> vamsi_kavala </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>3-02-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>3 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/FIRESC">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-40238"></a> 
+ <div id="c40238" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-40238" class="active">please suggest me in whatcase</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hellboy_86">hellboy_86</a></strong>
+   <span style="color:#828282"> @ 4 Apr 2013 07:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please suggest me in whatcase my code giving wrong answer.....http://www.codechef.com/viewsolution/1976048
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43522"></a> 
+ <div id="c43522" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-43522" class="active">@hellboy_86 hey buddy i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/paramvi">paramvi</a></strong>
+   <span style="color:#828282"> @ 21 May 2013 01:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @hellboy_86 hey buddy i havn't read your code but suggest u sth change the output ie no. of ways, to long long int. May be it helps atleast happened with me , took me a month to figure this out. Good Luck .....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68505"></a> 
+ <div id="c68505" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-68505" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/activatedgeek">activatedgeek</a></strong>
+   <span style="color:#828282"> @ 24 Dec 2013 09:47 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/3127167" title="http://www.codechef.com/viewsolution/3127167">http://www.codechef.com/viewsolution/3127167</a> Can someone explain me the wrong in above solution. I've done a simple dfs traversal. Given test cases give correct answer.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75111"></a> 
+ <div id="c75111" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-75111" class="active">directed or undirected graph</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ajayrfhp">ajayrfhp</a></strong>
+   <span style="color:#828282"> @ 12 Mar 2014 10:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    directed or undirected graph .make sure to use appropriate one !
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78427"></a> 
+ <div id="c78427" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-78427" class="active">Help me find a wrong case for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/adityabhagat95">adityabhagat95</a></strong>
+   <span style="color:#828282"> @ 24 May 2014 06:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Help me find a wrong case for my solution 
+    <a href="http://www.codechef.com/viewsolution/3937375" title="http://www.codechef.com/viewsolution/3937375">http://www.codechef.com/viewsolution/3937375</a> . Its giving right answers for every case I have tried locally.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78634"></a> 
+ <div id="c78634" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-78634" class="active">Please suggest me some test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sahil2132">sahil2132</a></strong>
+   <span style="color:#828282"> @ 2 Jun 2014 11:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please suggest me some test cases for which I am getting WA 
+    <a href="http://www.codechef.com/viewsolution/3963686" title="http://www.codechef.com/viewsolution/3963686">http://www.codechef.com/viewsolution/3963686</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79713"></a> 
+ <div id="c79713" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-79713" class="active">please help me in finding bug</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/falku">falku</a></strong>
+   <span style="color:#828282"> @ 19 Jun 2014 01:51 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please help me in finding bug 
+    <a href="http://www.codechef.com/viewsolution/4114121" title="http://www.codechef.com/viewsolution/4114121">http://www.codechef.com/viewsolution/4114121</a> i tried this ques using BFS
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80044"></a> 
+ <div id="c80044" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-80044" class="active">for the number of ways part</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/black_horse">black_horse</a></strong>
+   <span style="color:#828282"> @ 27 Jun 2014 01:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    for the number of ways part :- we have to print ((total number of ways) % (10^9 + 7)) and this result can be represented using an "int" type instead of "long long" type. So why does it give wrong answer when we use "int" type if algorithm is correct.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80627"></a> 
+ <div id="c80627" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-80627" class="active">i am having runtime error in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rb08">rb08</a></strong>
+   <span style="color:#828282"> @ 6 Jul 2014 01:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am having runtime error in my C++ code plz help as i am unable to find whats wrong...heres my code 
+    <a href="http://ideone.com/M8I31u" title="http://ideone.com/M8I31u">http://ideone.com/M8I31u</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80629"></a> 
+ <div id="c80629" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-80629" class="active">i forgot to display o/p</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rb08">rb08</a></strong>
+   <span style="color:#828282"> @ 6 Jul 2014 02:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i forgot to display o/p as1000000000+7 in the code in above link hence i replaced cout&lt;
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90282"></a> 
+ <div id="c90282" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-90282" class="active">why is my code giving me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pppery">pppery</a></strong>
+   <span style="color:#828282"> @ 14 Nov 2014 06:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why is my code giving me wrong answer? It works on all the sample problems 
+    <a href="http://www.codechef.com/viewsolution/5376912" title="http://www.codechef.com/viewsolution/5376912">http://www.codechef.com/viewsolution/5376912</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90284"></a> 
+ <div id="c90284" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-90284" class="active">Silly me, i failed to put a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pppery">pppery</a></strong>
+   <span style="color:#828282"> @ 14 Nov 2014 07:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Silly me, i failed to put a do_loop call at the end of the code. but know it's giving me time limit exceded.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91731"></a> 
+ <div id="c91731" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-91731" class="active">If any one have any idea</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sidhantkumar">sidhantkumar</a></strong>
+   <span style="color:#828282"> @ 12 Dec 2014 12:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    If any one have any idea about the test cases where the program may fail ? Please Please Please comment .....!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92448"></a> 
+ <div id="c92448" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-92448" class="active">My name is Nikhil Padman</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chiragvashist">chiragvashist</a></strong>
+   <span style="color:#828282"> @ 31 Dec 2014 12:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My name is Nikhil Padman
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94922"></a> 
+ <div id="c94922" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-94922" class="active">could anyone please explain</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pranav0897">pranav0897</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2015 02:21 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    could anyone please explain why my program is generating a sigsegv error? also could you please explain what i can do to get rid of this error? Here's my code: 
+    <a href="http://www.codechef.com/viewsolution/6024287" title="http://www.codechef.com/viewsolution/6024287">http://www.codechef.com/viewsolution/6024287</a> Thanks!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101597"></a> 
+ <div id="c101597" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-101597" class="active">instead of doing</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/glow">glow</a></strong>
+   <span style="color:#828282"> @ 10 Apr 2015 08:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    instead of doing ways=(ways*cnt)%1000000007;//ways and cnt are long do-&gt; ways=(long long )way*cnt%1000000007;
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101599"></a> 
+ <div id="c101599" class="comment clear-block"> 
+  <h3><a href="/problems/FIRESC#comment-101599" class="active">Giving me TLE. Possible</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/daiict218">daiict218</a></strong>
+   <span style="color:#828282"> @ 10 Apr 2015 08:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Giving me TLE. Possible reasons? My solution is 
+    <a href="http://www.codechef.com/viewsolution/6743440" title="http://www.codechef.com/viewsolution/6743440">http://www.codechef.com/viewsolution/6743440</a>. I have implemented this using union-find in log(n) time.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

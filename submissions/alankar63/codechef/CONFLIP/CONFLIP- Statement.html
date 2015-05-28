@@ -1,0 +1,439 @@
+<div id="node-1628904" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> <b>Little Elephant</b> was fond of inventing new games. After a lot of research, Little Elephant came to know that most of the animals in the forest were showing less interest to play the multi-player games.Little Elephant had started to invent single player games, and succeeded in inventing the new single player game named <b>COIN FLIP</b>. </p> 
+  <p> In this game the player will use <b>N</b> coins numbered from <b>1</b> to <b>N</b>, and all the coins will be facing in "Same direction" (Either <b>Head</b> or <b>Tail</b>),which will be decided by the player before starting of the game. </p> 
+  <p> The player needs to play <b>N</b> rounds.In the <b>k</b>-th round the player will flip the face of the all coins whose number is less than or equal to <b>k</b>. That is, the face of coin <b>i</b> will be reversed, from <b>Head</b> to <b>Tail</b>, or, from <b>Tail</b> to <b>Head</b>, for <b>i</b> ? <b>k</b>. </p> 
+  <p> Elephant needs to guess the total number of coins showing a particular face after playing <b>N</b> rounds. Elephant really becomes quite fond of this game <b>COIN FLIP</b>, so Elephant plays <b>G</b> times. Please help the Elephant to find out the answer. </p> 
+  <h3>Input</h3> 
+  <p> The first line of input contains an integer <b>T</b>, denoting the number of test cases.<br> Then <b>T</b> test cases follow. </p> 
+  <p> The first line of each test contains an integer <b>G</b>, denoting the number of games played by Elephant. Each of the following <b>G</b> lines denotes a single game, and contains 3 space separeted integers <b>I</b>, <b>N</b>, <b>Q</b>, where <b>I</b> denotes the initial state of the coins, <b>N</b> denotes the number of coins and rounds, and <b>Q</b>, which is either 1, or 2 as explained below.</p> 
+  <p> Here <b>I=1</b> means all coins are showing <b>Head</b> in the start of the game, and <b>I=2</b> means all coins are showing <b>Tail</b> in the start of the game. <b>Q=1</b> means Elephant needs to guess the total number of coins showing <b>Head</b> in the end of the game, and <b>Q=2</b> means Elephant needs to guess the total number of coins showing <b>Tail</b> in the end of the game. </p> 
+  <h3>Output</h3> 
+  <p> For each game, output one integer denoting the total number of coins showing the particular face in the end of the game. </p> 
+  <h3>Constraints</h3> 
+  <p> <b>1 ? T ? 10</b></p> 
+  <p><b>1 ? G ? 20000</b></p> 
+  <p><b>1 ? N ? 10<sup>9</sup></b></p> 
+  <p><b>1 ? I ? 2</b></p> 
+  <p><b>1 ? Q ? 2</b> </p> 
+  <pre>
+<h3>Example</h3>
+<b>Input:</b>
+1
+2
+1 5 1
+1 5 2
+
+<b>Output:</b>
+2
+3
+</pre>
+  <h3>Explanation:</h3> 
+  <p> <b>In the 1st game in Example:</b><br> <b>I=1</b>, so initial arrangement of coins are H H H H H,<br> and now Elephant will play 5 rounds and coin faces will be changed as follows</p> 
+  <p>After the 1st Round: <b>T</b> H H H H</p> 
+  <p>After the 2nd Round: <b>H T</b> H H H</p> 
+  <p>After the 3rd Round: <b>T H T</b> H H</p> 
+  <p>After the 4th Round: <b>H T H T</b> H</p> 
+  <p>After the 5th Round: <b>T H T H T</b> </p> 
+  <p> Finally <b>Q=1</b>, so we need to find the total number of coins showing <b>Head</b>, which is <b>2</b>. </p> 
+  <p> <b>In the 2nd game in Example:</b><br> This is similar to the 1st game, except Elephant needs to find the total number of coins showing <b>Tail</b>.<br> So the Answer is <b>3</b>. (Please see the final state of the coins in the 1st game) </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/khadarbasha">khadarbasha</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CONFLIP">http://discuss.codechef.com/problems/CONFLIP</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/khadarbasha"> khadarbasha </a><a class="problem-tag-small " href="/tags/problems/nov12"> nov12 </a><a class="problem-tag-small " href="/tags/problems/simple-math"> simple-math </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>2-09-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>5 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CONFLIP">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-36428"></a> 
+ <div id="c36428" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-36428" class="active">Please tell why this code is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aditgupta100">aditgupta100</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2013 11:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please tell why this code is coming run time error 
+    <a href="http://www.codechef.com/viewsolution/1745184" title="http://www.codechef.com/viewsolution/1745184">http://www.codechef.com/viewsolution/1745184</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36500"></a> 
+ <div id="c36500" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-36500" class="active">@aditgupta100 : I have</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2013 09:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @aditgupta100 : I have answered you here in comment . 
+    <a href="http://www.codechef.com/viewsolution/1745184" title="http://www.codechef.com/viewsolution/1745184">http://www.codechef.com/viewsolution/1745184</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-37215"></a> 
+ <div id="c37215" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-37215" class="active">my program shows RUNTIME</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dinesh_for_u">dinesh_for_u</a></strong>
+   <span style="color:#828282"> @ 3 Feb 2013 01:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my program shows RUNTIME ERROR but i didn't use much memory ! can anyone tell whats the cause? My solution: 
+    <a href="http://www.codechef.com/viewsolution/1781390" title="http://www.codechef.com/viewsolution/1781390">http://www.codechef.com/viewsolution/1781390</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40014"></a> 
+ <div id="c40014" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-40014" class="active">Isn't the use of both G and T</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ovimt">ovimt</a></strong>
+   <span style="color:#828282"> @ 22 Mar 2013 08:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Isn't the use of both G and T redundant?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40140"></a> 
+ <div id="c40140" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-40140" class="active">@vineetpaliwal can u pls mail</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aditgupta100">aditgupta100</a></strong>
+   <span style="color:#828282"> @ 25 Mar 2013 10:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vineetpaliwal can u pls mail me the code of this and bytelandian coin using dynamic programming
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40146"></a> 
+ <div id="c40146" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-40146" class="active">@aditgupta100 : I dont have</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 26 Mar 2013 11:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @aditgupta100 : I dont have your email address . However you can view my solution of this problem at the following link : 
+    <a href="http://www.codechef.com/viewsolution/1504652" title="http://www.codechef.com/viewsolution/1504652">http://www.codechef.com/viewsolution/1504652</a> and my solution of bytelandian gold coins at : 
+    <a href="http://www.codechef.com/viewsolution/1745483" title="http://www.codechef.com/viewsolution/1745483">http://www.codechef.com/viewsolution/1745483</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43409"></a> 
+ <div id="c43409" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-43409" class="active">Why is this wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amaniitian">amaniitian</a></strong>
+   <span style="color:#828282"> @ 16 May 2013 11:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why is this wrong ? 
+    <a href="http://www.codechef.com/viewsolution/2165405" title="http://www.codechef.com/viewsolution/2165405">http://www.codechef.com/viewsolution/2165405</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49453"></a> 
+ <div id="c49453" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-49453" class="active">@amanitian replace this line</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cool_shubham">cool_shubham</a></strong>
+   <span style="color:#828282"> @ 27 Jul 2013 03:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @amanitian replace this line :- printf("%ld/n", (N-1)/2 ); to printf("%ldn",N/2);
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-51490"></a> 
+ <div id="c51490" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-51490" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/code2codekill">code2codekill</a></strong>
+   <span style="color:#828282"> @ 9 Aug 2013 10:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/2495420" title="http://www.codechef.com/viewsolution/2495420">http://www.codechef.com/viewsolution/2495420</a> can anyone please check this solution? wen i try it in linux, it runs fyn. but codechef is showing "wrong answer".
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-52186"></a> 
+ <div id="c52186" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-52186" class="active">I don't know whats wrong with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anm1331">anm1331</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2013 10:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I don't know whats wrong with my code. It is giving runtime errors everytime i try to run it here. Can anyone please help? 
+    <a href="http://www.codechef.com/viewsolution/2540287" title="http://www.codechef.com/viewsolution/2540287">http://www.codechef.com/viewsolution/2540287</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68228"></a> 
+ <div id="c68228" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-68228" class="active">@ovimt yes you are right</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/k1026501">k1026501</a></strong>
+   <span style="color:#828282"> @ 22 Dec 2013 12:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ovimt yes you are right
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-72263"></a> 
+ <div id="c72263" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-72263" class="active">what is the problem with my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akki16">akki16</a></strong>
+   <span style="color:#828282"> @ 6 Feb 2014 05:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is the problem with my code :/ plz help 
+    <a href="http://www.codechef.com/viewsolution/3337651" title="http://www.codechef.com/viewsolution/3337651">http://www.codechef.com/viewsolution/3337651</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80002"></a> 
+ <div id="c80002" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-80002" class="active">Same code, written in pascal</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/brobear1995">brobear1995</a></strong>
+   <span style="color:#828282"> @ 25 Jun 2014 01:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Same code, written in pascal wrong answer, but written in C, correct answer. but languages allowed says PAS fpc allowed. -_-
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80151"></a> 
+ <div id="c80151" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-80151" class="active">how to create an array of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/subbi935">subbi935</a></strong>
+   <span style="color:#828282"> @ 29 Jun 2014 09:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    how to create an array of size 10^9?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89050"></a> 
+ <div id="c89050" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-89050" class="active">No array needed...just find</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nikhil_152">nikhil_152</a></strong>
+   <span style="color:#828282"> @ 28 Oct 2014 06:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    No array needed...just find another logic...try on some small test cases...its easy...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92177"></a> 
+ <div id="c92177" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-92177" class="active">Why use both G and T? Don't</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/farmers_rice">farmers_rice</a></strong>
+   <span style="color:#828282"> @ 22 Dec 2014 08:23 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why use both G and T? Don't they just convey the same meaning of more test cases?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94288"></a> 
+ <div id="c94288" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-94288" class="active">Why would I get wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arpan_">arpan_</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2015 10:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why would I get wrong answer for this code? 
+    <a href="http://www.codechef.com/viewsolution/5963715" title="http://www.codechef.com/viewsolution/5963715">http://www.codechef.com/viewsolution/5963715</a> could someone tell me the corner cases?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94289"></a> 
+ <div id="c94289" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-94289" class="active">Why would I get wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arpan_">arpan_</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2015 10:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why would I get wrong answer for this code? 
+    <a href="http://www.codechef.com/viewsolution/5963715" title="http://www.codechef.com/viewsolution/5963715">http://www.codechef.com/viewsolution/5963715</a> could someone tell me the corner cases?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94562"></a> 
+ <div id="c94562" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-94562" class="active">@arpan_ : The sample test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yo23">yo23</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2015 12:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @arpan_ : The sample test case is not working correctly on your code. It gives output 3 for test case 1, instead of 2.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95931"></a> 
+ <div id="c95931" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-95931" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rohit2811995">rohit2811995</a></strong>
+   <span style="color:#828282"> @ 7 Feb 2015 03:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6133714" title="http://www.codechef.com/viewsolution/6133714">http://www.codechef.com/viewsolution/6133714</a> whats wrong in my code.please help me.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-98017"></a> 
+ <div id="c98017" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-98017" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rishu97kr">rishu97kr</a></strong>
+   <span style="color:#828282"> @ 1 Mar 2015 09:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6373512" title="http://www.codechef.com/viewsolution/6373512">http://www.codechef.com/viewsolution/6373512</a> hey can some one one tell me what's wrong in this code. i think problem is in taking the input but can't figure out what?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99772"></a> 
+ <div id="c99772" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-99772" class="active">why am I getting run time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/krithisowb">krithisowb</a></strong>
+   <span style="color:#828282"> @ 22 Mar 2015 10:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why am I getting run time error for this solution? 
+    <a href="http://www.codechef.com/viewsolution/6563994" title="http://www.codechef.com/viewsolution/6563994">http://www.codechef.com/viewsolution/6563994</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102719"></a> 
+ <div id="c102719" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-102719" class="active">https://ideone.com/39gxOx :</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/absharma92">absharma92</a></strong>
+   <span style="color:#828282"> @ 28 Apr 2015 12:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="https://ideone.com/39gxOx" title="https://ideone.com/39gxOx">https://ideone.com/39gxOx</a> : Can someone help why it is showing wrong answer.?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103223"></a> 
+ <div id="c103223" class="comment clear-block"> 
+  <h3><a href="/problems/CONFLIP#comment-103223" class="active">SIGSEGV error! Use of T and G</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/markroxor">markroxor</a></strong>
+   <span style="color:#828282"> @ 9 May 2015 10:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    SIGSEGV error! Use of T and G is redundant ! HELP!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

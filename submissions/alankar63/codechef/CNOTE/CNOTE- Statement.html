@@ -1,0 +1,119 @@
+<div id="node-7758816" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/MARCH15/mandarin/CNOTE.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/MARCH15/russian/CNOTE.pdf">Russian</a>.</h3> 
+  <p>Chef likes to write poetry. Today, he has decided to write a <b>X</b> pages long poetry, but unfortunately his notebook has only <b>Y</b> pages left in it. Thus he decided to buy a new CHEFMATE notebook and went to the stationary shop. Shopkeeper showed him some <b>N</b> notebooks, where the number of pages and price of the <b>i</b><sup>th</sup> one are <b>P<sub>i</sub></b> pages and <b>C<sub>i</sub></b> rubles respectively. Chef has spent some money preparing for Ksen's birthday, and then he has only <b>K</b> rubles left for now.</p> 
+  <p>Chef wants to buy a single notebook such that the price of the notebook should not exceed his budget and he is able to complete his poetry.</p> 
+  <p>Help Chef accomplishing this task. You just need to tell him whether he can buy such a notebook or not. Note that Chef can use all of the <b>Y</b> pages in the current notebook, and Chef can buy only one notebook because Chef doesn't want to use many notebooks.</p> 
+  <h3>Input</h3> 
+  <p>The first line of input contains an integer <b>T</b>, denoting the number of test cases. Then <b>T</b> test cases are follow.</p> 
+  <p>The first line of each test case contains four space-separated integers <b>X</b>, <b>Y</b>, <b>K</b> and <b>N</b>, described in the statement. The <b>i</b><sup>th</sup> line of the next <b>N</b> lines contains two space-separated integers <b>P<sub>i</sub></b> and <b>C<sub>i</sub></b>, denoting the number of pages and price of the <b>i</b><sup>th</sup> notebook respectively.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, Print "<b>LuckyChef</b>" if Chef can select such a notebook, otherwise print "<b>UnluckyChef</b>" (quotes for clarity).</p> 
+  <h3>Constraints and Subtasks</h3> 
+  <ul> 
+   <li><b>1 ? T ? 10<sup>5</sup></b></li> 
+   <li><b>1 ? Y &lt; X ? 10<sup>3<sup></sup></sup></b></li> 
+   <li><b>1 ? K ? 10<sup>3</sup></b></li> 
+   <li><b>1 ? N ? 10<sup>5</sup></b></li> 
+   <li><b>1 ? P<sub>i</sub>, C<sub>i</sub> ? 10<sup>3</sup></b></li> 
+  </ul> 
+  <p></p> 
+  <p><b>Subtask 1: 40 points</b></p> 
+  <ul> 
+   <li>Sum of <b>N</b> over all test cases in one test file does not exceed <b>10<sup>4</sup></b>.</li> 
+  </ul> 
+  <p></p> 
+  <p><b>Subtask 2: 60 points</b></p> 
+  <ul> 
+   <li>Sum of <b>N</b> over all test cases in one test file does not exceed <b>10<sup>6</sup></b>.</li> 
+  </ul> 
+  <h3>Sample</h3> 
+  <pre>
+<b>Input</b>
+3
+3 1 2 2
+3 4
+2 2    
+3 1 2 2
+2 3
+2 3    
+3 1 2 2
+1 1
+1 2
+
+<b>Output</b>
+LuckyChef
+UnluckyChef
+UnluckyChef
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Example case 1.</b> In this case, Chef wants to write <b>X = 3</b> pages long poetry, but his notebook has only <b>Y = 1</b> page. And his budget is <b>K = 2</b> rubles, and there are <b>N = 2</b> notebooks in the shop. The first notebook has <b>P<sub>1</sub> = 3</b> pages, but Chef cannot buy it, because its price is <b>C<sub>1</sub> = 4</b> rubles. The second notebook has <b>P<sub>2</sub> = 2</b> pages, and its price is <b>C<sub>2</sub> = 2</b> rubles. Thus Chef can select the second notebook to accomplish the task. He will write <b>1</b> page of poetry in the old notebook, and <b>2</b> page of poetry in the new notebook.</p> 
+  <p><b>Example case 2.</b> Chef cannot buy any notebook, because the prices exceed the Chef's budget.</p> 
+  <p><b>Example case 3.</b> No notebook contains sufficient number of pages required to write poetry.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/ma5termind">ma5termind</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CNOTE">http://discuss.codechef.com/problems/CNOTE</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/ma5termind"> ma5termind </a><a class="problem-tag-small " href="/tags/problems/march15"> march15 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>29-09-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CNOTE">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-99341"></a> 
+ <div id="c99341" class="comment clear-block"> 
+  <h3><a href="/problems/CNOTE#comment-99341" class="active">My code giving wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nucleus432">nucleus432</a></strong>
+   <span style="color:#828282"> @ 16 Mar 2015 04:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My code giving wrong answer plss help..couldnt find why its wrong #include int main() { unsigned int t; int x,y,n,k,i,p,c,flag1=0; scanf("%d",&amp;t); while(t--) { scanf("%d%d%d%d",&amp;x,&amp;y,&amp;k,&amp;n); for(i=1;i&lt;=n;i++) { scanf("%d%d",&amp;p,&amp;c); if((p&gt;=(x-y))&amp;&amp; c&lt;=k) { printf("LuckyChefn"); flag1=1; break; } } if(flag1==0) printf("UnluckyChefn"); flag1=0; } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

@@ -1,0 +1,202 @@
+<div id="node-4890504" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/MARCH14/mandarin/WALK.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/MARCH14/russian/WALK.pdf">Russian</a>.</h3> 
+  <p>Chef and his girlfriend are going to have a promenade. They are walking along the straight road which consists of segments placed one by one. Before walking Chef and his girlfriend stay at the beginning of the first segment, they want to achieve the end of the last segment. </p> 
+  <p>There are few problems: </p> 
+  <ul> 
+   <li> At the beginning Chef should choose constant integer - the velocity of mooving. It can't be changed inside one segment. </li> 
+   <li> The velocity should be decreased by at least 1 after achieving the end of some segment. </li> 
+   <li> There is exactly one shop on each segment. Each shop has an attractiveness. If it's attractiveness is <b>W</b> and Chef and his girlfriend move with velocity <b>V</b> then if <b>V</b> &lt; <b>W</b> girlfriend will run away into the shop and the promenade will become ruined. </li> 
+  </ul> 
+  <p> Chef doesn't want to lose her girl in such a way, but he is an old one, so you should find the minimal possible velocity at the first segment to satisfy all conditions.</p> 
+  <p>&nbsp; </p> 
+  <h3>Input</h3> 
+  <ul> 
+   <li>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows.</li> 
+   <li>The first line of each test case contains a single integer <b>N</b> denoting the number of segments. The second line contains <b>N</b> space-separated integers <b>W<sub>1</sub></b>, <b>W<sub>2</sub></b>, ..., <b>W<sub>N</sub></b> denoting the attractiveness of shops. </li> 
+  </ul> 
+  <p>&nbsp;</p> 
+  <h3>Output</h3> 
+  <ul> 
+   <li>For each test case, output a single line containing the minimal possible velocity at the beginning.</li> 
+  </ul> 
+  <p>&nbsp;</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ? <b>T</b> ? <b>10</b></li> 
+   <li><b>1</b> ? <b>N</b> ? <b>10^5</b></li> 
+   <li><b>1</b> ? <b>W<sub>i</sub></b> ? <b>10^6</b></li> 
+  </ul> 
+  <p>&nbsp;</p> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+
+2
+5
+6 5 4 3 2
+5
+3 4 3 1 1
+
+<b>Output:</b>
+
+6
+5
+</pre>
+  <p>&nbsp;</p> 
+  <h3>Explanation</h3> 
+  <p><b>Example case 1.</b> </p> 
+  <p> If we choose velocity 6, on the first step we have 6 &gt;= 6 everything is OK, then we should decrease the velocity to 5 and on the 2nd segment we'll receive 5 &gt;= 5, again OK, and so on. </p> 
+  <p><b>Example case 2.</b> </p> 
+  <p> If we choose velocity 4, the promanade will be ruined on the 2nd step (we sould decrease our velocity, so the maximal possible will be 3 which is less than 4). </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/berezin">berezin</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/whiteking">whiteking</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/WALK">http://discuss.codechef.com/problems/WALK</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/berezin"> berezin </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/march14"> march14 </a><a class="problem-tag-small " href="/tags/problems/programming"> programming </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>21-01-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/WALK">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-75741"></a> 
+ <div id="c75741" class="comment clear-block"> 
+  <h3><a href="/problems/WALK#comment-75741" class="active">Please give me some test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sumit6b">sumit6b</a></strong>
+   <span style="color:#828282"> @ 24 Mar 2014 02:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please give me some test cases. to test
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82167"></a> 
+ <div id="c82167" class="comment clear-block"> 
+  <h3><a href="/problems/WALK#comment-82167" class="active">#include int main() { int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akashverma1990">akashverma1990</a></strong>
+   <span style="color:#828282"> @ 29 Jul 2014 11:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int main() { int t,attr[100],max,minvel[10],j=0,i=0; int segs; scanf("%d",&amp;t); while(t--) { scanf("%d",&amp;segs); for(i=0;i=0;i--) { if (attr[i]&gt;max) max=attr[i]; else max++; } minvel[j++]=max; }//while for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89044"></a> 
+ <div id="c89044" class="comment clear-block"> 
+  <h3><a href="/problems/WALK#comment-89044" class="active">#include #include int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kushagradude">kushagradude</a></strong>
+   <span style="color:#828282"> @ 28 Oct 2014 12:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include int main() { short int t,k; unsigned long long int n,*w,g,p,i; scanf("%hd",&amp;t); for(k=0;k
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94667"></a> 
+ <div id="c94667" class="comment clear-block"> 
+  <h3><a href="/problems/WALK#comment-94667" class="active">getting wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dhruvsinghal">dhruvsinghal</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2015 02:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    getting wrong answers...please help...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95456"></a> 
+ <div id="c95456" class="comment clear-block"> 
+  <h3><a href="/problems/WALK#comment-95456" class="active">1 7 9 44 11 12 13 54 2 Answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saket9450">saket9450</a></strong>
+   <span style="color:#828282"> @ 4 Feb 2015 04:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    1 7 9 44 11 12 13 54 2 Answer will be -&gt;59
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95459"></a> 
+ <div id="c95459" class="comment clear-block"> 
+  <h3><a href="/problems/WALK#comment-95459" class="active">@dhruvsinghal just start with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saket9450">saket9450</a></strong>
+   <span style="color:#828282"> @ 4 Feb 2015 04:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @dhruvsinghal just start with first total=a[0] and compare with other element if total will be less the add in overall total with a[i]-count and also in count and you will get require answer int count=a[0],overallTotal=a[0]; in loop if(count
+    <a temp="a[i]-count;"></a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-96292"></a> 
+ <div id="c96292" class="comment clear-block"> 
+  <h3><a href="/problems/WALK#comment-96292" class="active">@saket9450 can u please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dhruvsinghal">dhruvsinghal</a></strong>
+   <span style="color:#828282"> @ 9 Feb 2015 10:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @saket9450 can u please explain the test case? according to this test case choosing 59 as the initial velocity will not ruin the promenade... while if we keep subtracting 1 from 59 as we go further we get 52 on reaching the segment with shop of attractiveness 54. Clearly 52&lt;54, the promenade will be ruined... I'm not able to get how the answer is 59...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

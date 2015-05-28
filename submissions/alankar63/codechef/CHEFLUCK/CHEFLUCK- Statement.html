@@ -1,0 +1,595 @@
+<div id="node-1126472" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <p><i>Every great chef knows that lucky numbers are positive integers whose decimal representations contain only the lucky digits 4 and 7. For example, numbers 47, 744, 4 are lucky and 5, 17, 467 are not. </i> </p> 
+  <p>Our chef has recently returned from the Lucky country. He observed that every restaurant in the Lucky country had a lucky number as its name.<br> He believes that having a lucky number as a restaurant name can indeed turn out to be very lucky. </p> 
+  <p>Our chef believes that it is possible to make a lucky number having N digits even luckier. Any number following the rules below is called Lucky lucky number - </p> 
+  <p> 1. The number contains only digits 4 and 7. <br> 2. Count of digit 4 in the number should be divisible by 7. <br> 3. Count of digit 7 in the number should be divisible by 4. </p> 
+  <p>Help our chef to compute the count of digit 4 in the <b>smallest</b> Lucky lucky number having N digits. </p> 
+  <h3>Input</h3> 
+  <p> First line contains T, number of test cases. Each of the next T lines contains a number N, the number of digits in the Lucky lucky number to be formed. </p> 
+  <p>1&lt;=T&lt;=1000 <br> 1&lt;=N&lt;=1000000000 (10^9) </p> 
+  <h3>Output</h3> 
+  <p> If it is not possible to form a Lucky lucky number having N digits, output -1.<br> Otherwise, output the count of digit 4 in the smallest Lucky lucky number having N digits.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+5
+7
+4
+11
+1
+15
+
+<b>Output:</b>
+7
+0
+7
+-1
+7
+
+<b>Explanation</b>
+For the last test case, N = 15, the smallest lucky lucky number is
+444444477777777. The count of digit 4 is 7.
+
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/rosyish">rosyish</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/subra">subra</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CHEFLUCK">http://discuss.codechef.com/problems/CHEFLUCK</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/may12"> may12 </a><a class="problem-tag-small " href="/tags/problems/rosyish"> rosyish </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>1-03-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CHEFLUCK">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-26741"></a> 
+ <div id="c26741" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-26741" class="active">how to optimize the code in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jigsaw004">jigsaw004</a></strong>
+   <span style="color:#828282"> @ 11 May 2012 11:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    how to optimize the code in java to C/C++ levels? The time of execution of my program in JAVA is 2.55. The same code in C-format gives 0.01 time of execution.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-26906"></a> 
+ <div id="c26906" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-26906" class="active">Are you sure they're the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/untitled1234">untitled1234</a></strong>
+   <span style="color:#828282"> @ 20 May 2012 08:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Are you sure they're the exact same?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27083"></a> 
+ <div id="c27083" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-27083" class="active">Can a lucky lucky number</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kuruma">kuruma</a></strong>
+   <span style="color:#828282"> @ 27 May 2012 05:13 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can a lucky lucky number contain only digits 4 or digits 7? That is, is 4444444 a valid lucky lucky number?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28499"></a> 
+ <div id="c28499" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-28499" class="active">@kuruma..........yes 44444444</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/satya_patel">satya_patel</a></strong>
+   <span style="color:#828282"> @ 15 Jun 2012 05:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @kuruma..........yes 44444444 is lucky number............!!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28720"></a> 
+ <div id="c28720" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-28720" class="active">I asked if it was a lucky</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kuruma">kuruma</a></strong>
+   <span style="color:#828282"> @ 22 Jun 2012 09:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I asked if it was a lucky lucky number..... Because it is not a lucky number...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31623"></a> 
+ <div id="c31623" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-31623" class="active">why is my code giving wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/green_scarf">green_scarf</a></strong>
+   <span style="color:#828282"> @ 5 Sep 2012 11:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why is my code giving wrong answer?? i am not getting it. #include int main() { int s=0,count=0,t,n; scanf("%d",&amp;t); while(t--) { scanf("%d",&amp;n); if(n==0||n==1||n==2||n==3) printf("-1n"); else if(n%4==0&amp;&amp;n%7!=0) printf("0n"); else if(n%4==0&amp;&amp;n%7==0) printf("%dn",n); else { do { count++; n=n-7; }while(n%4!=0&amp;&amp;n&gt;=7); if(n%4==0) s=1; if(s==1) printf("%dn",count*7); else printf("-1n"); } count=0; s=0; } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39713"></a> 
+ <div id="c39713" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-39713" class="active">explain all test cases in the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jitendrabafna">jitendrabafna</a></strong>
+   <span style="color:#828282"> @ 13 Mar 2013 06:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    explain all test cases in the given problem....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43605"></a> 
+ <div id="c43605" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-43605" class="active">all the inputs given in the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/fast">fast</a></strong>
+   <span style="color:#828282"> @ 24 May 2013 02:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    all the inputs given in the questions gave the correct output on running then why i am getting the wrong answer comment while submitting
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49447"></a> 
+ <div id="c49447" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-49447" class="active">@admin what should be output</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cool_shubham">cool_shubham</a></strong>
+   <span style="color:#828282"> @ 27 Jul 2013 03:38 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin what should be output for 28 i think it should be 0 when 7 occurs 28 times and 28 is divisible by 4 ..... i am getting wrong answer..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-56748"></a> 
+ <div id="c56748" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-56748" class="active">Could you please explain why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aeshu92">aeshu92</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2013 01:09 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Could you please explain why for input N=15, 444444444444444 (containing only 4) is NOT the SMALLEST Lucky Lucky number, while for N=4 output is 0 implying the number is 7777 (containing only 7) ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-64110"></a> 
+ <div id="c64110" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-64110" class="active">@aeshu92 because then, count</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sunnynia">sunnynia</a></strong>
+   <span style="color:#828282"> @ 12 Nov 2013 02:17 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @aeshu92 because then, count of digit 4 will be 15, not divisible by 7. hence, 444444477777777.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-64114"></a> 
+ <div id="c64114" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-64114" class="active">there is a mistake in some of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sunnynia">sunnynia</a></strong>
+   <span style="color:#828282"> @ 12 Nov 2013 02:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    there is a mistake in some of the submissions that i've checked, for the value N=8 some solutions give the answer as 0 , while some are giving it -1. @admin please look into it.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68602"></a> 
+ <div id="c68602" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-68602" class="active">#include int main() { int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mohd_arif">mohd_arif</a></strong>
+   <span style="color:#828282"> @ 27 Dec 2013 05:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int main() { int t; long int n; scanf("%d",&amp;t); while(t--) { scanf("%ld",&amp;n); if(n%4==0&amp;&amp;n%7!=0) printf("0n"); else if(n%7==0) printf("%ldn",n); else if(n%7!=0&amp;&amp;n%4!=0) { while((n-4)%7!=0&amp;&amp;n&gt;1) n=n-4; if(n%7==0) printf("%ldn",n); else if((n-4)%7==0) printf("%ldn",(n-4)); else printf("-1n"); } } return 0; } why it gives wrong answer?????????? please explain....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78593"></a> 
+ <div id="c78593" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-78593" class="active">I don't think there is any</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/priyankpalod">priyankpalod</a></strong>
+   <span style="color:#828282"> @ 29 May 2014 08:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I don't think there is any problem in my code. it has a very simple and easy to understand algorithm still I am not able to know what is wrong in it.. tried with all kinds of input..Someone PLEASE HELP 
+    <a href="http://www.codechef.com/viewsolution/3955044" title="http://www.codechef.com/viewsolution/3955044">http://www.codechef.com/viewsolution/3955044</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79426"></a> 
+ <div id="c79426" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-79426" class="active">provide some more test cases</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bishwo">bishwo</a></strong>
+   <span style="color:#828282"> @ 13 Jun 2014 10:56 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    provide some more test cases or the entire input file so that i can find where my code is going wrong
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81902"></a> 
+ <div id="c81902" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-81902" class="active">Can someone check what's</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/leharb">leharb</a></strong>
+   <span style="color:#828282"> @ 22 Jul 2014 10:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone check what's wrong with my code? 
+    <a href="http://www.codechef.com/viewsolution/4367463" title="http://www.codechef.com/viewsolution/4367463">http://www.codechef.com/viewsolution/4367463</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81903"></a> 
+ <div id="c81903" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-81903" class="active">I get a WA!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/leharb">leharb</a></strong>
+   <span style="color:#828282"> @ 22 Jul 2014 10:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I get a WA!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81910"></a> 
+ <div id="c81910" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-81910" class="active">Yes! Finally got an AC!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akashjain619">akashjain619</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2014 11:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Yes! Finally got an AC!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83804"></a> 
+ <div id="c83804" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-83804" class="active">i'm getting WA .... can u plz</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sharma7">sharma7</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2014 10:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i'm getting WA .... can u plz help me out.. my sol... 
+    <a href="http://www.codechef.com/viewsolution/4581032" title="http://www.codechef.com/viewsolution/4581032">http://www.codechef.com/viewsolution/4581032</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84081"></a> 
+ <div id="c84081" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-84081" class="active">what should be the answer of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tourani123">tourani123</a></strong>
+   <span style="color:#828282"> @ 25 Aug 2014 11:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what should be the answer of 28 in the above problem? logically it should be 0 .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84129"></a> 
+ <div id="c84129" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-84129" class="active">im getting a wrong ans. can</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jemjazz">jemjazz</a></strong>
+   <span style="color:#828282"> @ 27 Aug 2014 04:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    im getting a wrong ans. can anybody help me out my sol:http://www.codechef.com/viewsolution/4654461
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84199"></a> 
+ <div id="c84199" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-84199" class="active">What is meant by smallest</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/niteshks30">niteshks30</a></strong>
+   <span style="color:#828282"> @ 30 Aug 2014 12:32 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What is meant by smallest lucky lucky number? Does it mean minimum number of 4
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85257"></a> 
+ <div id="c85257" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-85257" class="active">Please reword the question to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pizza_palace">pizza_palace</a></strong>
+   <span style="color:#828282"> @ 12 Sep 2014 10:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please reword the question to 4 OR 7 instead of 4 AND 7 in point number 1 that describes what a lucky lucky number is. The description can be misleading.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89260"></a> 
+ <div id="c89260" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-89260" class="active">i m so confused how can 2</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubhamsingh iertian">shubhamsingh iertian</a></strong>
+   <span style="color:#828282"> @ 1 Nov 2014 12:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i m so confused how can 2 for loops takes more than 1 sec. my source code is: #include main(){ long long int n,i; int t,j,l=0,p=0; scanf("%d",&amp;t); for(j=0;j
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89261"></a> 
+ <div id="c89261" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-89261" class="active">i m so confused how can 2 for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubhamsingh iertian">shubhamsingh iertian</a></strong>
+   <span style="color:#828282"> @ 1 Nov 2014 12:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i m so confused how can 2 for loops takes more than 1 sec. source code link 
+    <a href="http://www.codechef.com/viewsolution/5248303" title="http://www.codechef.com/viewsolution/5248303">http://www.codechef.com/viewsolution/5248303</a> please help someone please!!!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90269"></a> 
+ <div id="c90269" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-90269" class="active">what would be the output if n</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sainiarpit12">sainiarpit12</a></strong>
+   <span style="color:#828282"> @ 14 Nov 2014 02:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what would be the output if n = 28 is it 28 or 0 ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91013"></a> 
+ <div id="c91013" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-91013" class="active">hello admin why my code got</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/layzrabbit">layzrabbit</a></strong>
+   <span style="color:#828282"> @ 30 Nov 2014 08:36 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hello admin why my code got accepted for n = 13 for which i'm printing blank output please explain
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91989"></a> 
+ <div id="c91989" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-91989" class="active">check my latest code for this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1x13">s1x13</a></strong>
+   <span style="color:#828282"> @ 19 Dec 2014 01:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    check my latest code for this problem admin... I'll keep thinking but sinceriously, it makes no sense as to why my solution just got rejected.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92279"></a> 
+ <div id="c92279" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-92279" class="active">what will be the answer for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kiran__">kiran__</a></strong>
+   <span style="color:#828282"> @ 25 Dec 2014 02:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what will be the answer for n=5,6,8
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94874"></a> 
+ <div id="c94874" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-94874" class="active">//why this code is giving</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sauravs">sauravs</a></strong>
+   <span style="color:#828282"> @ 26 Jan 2015 10:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    //why this code is giving wrong answer??? #include int main(void) { int t,i,j,a=0; long int n[1001]; scanf("%d",&amp;t); for(i=0; i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94906"></a> 
+ <div id="c94906" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-94906" class="active">@kiran__ : Answer for 5,6,8</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yo23">yo23</a></strong>
+   <span style="color:#828282"> @ 27 Jan 2015 04:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @kiran__ : Answer for 5,6,8 will be -1,-1 and 0 respectively.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95381"></a> 
+ <div id="c95381" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-95381" class="active">what is the special case</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/piyush9620">piyush9620</a></strong>
+   <span style="color:#828282"> @ 3 Feb 2015 04:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is the special case please someone comment i have tried all numbers even the big ones but i am getting wa
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95383"></a> 
+ <div id="c95383" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-95383" class="active">i got it check for 10124 ans</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/piyush9620">piyush9620</a></strong>
+   <span style="color:#828282"> @ 3 Feb 2015 06:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i got it check for 10124 ans is 10108
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99509"></a> 
+ <div id="c99509" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-99509" class="active">please give some more test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jazz0002295">jazz0002295</a></strong>
+   <span style="color:#828282"> @ 18 Mar 2015 11:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please give some more test cases
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99856"></a> 
+ <div id="c99856" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-99856" class="active">can any one tell what is d</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shibli786">shibli786</a></strong>
+   <span style="color:#828282"> @ 25 Mar 2015 04:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can any one tell what is d logic of this problem
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101743"></a> 
+ <div id="c101743" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLUCK#comment-101743" class="active">can anyone tell me what's</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bhansali95">bhansali95</a></strong>
+   <span style="color:#828282"> @ 12 Apr 2015 06:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone tell me what's wrong in my code 
+    <a href="http://www.codechef.com/viewsolution/6762173" title="http://www.codechef.com/viewsolution/6762173">http://www.codechef.com/viewsolution/6762173</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

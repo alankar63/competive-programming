@@ -1,0 +1,144 @@
+<div id="node-4890507" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/MARCH14/mandarin/PROSUM.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/MARCH14/russian/PROSUM.pdf">Russian</a>.</h3> 
+  <p>Little chef has just been introduced to the world of numbers! While experimenting with addition and multiplication operations, the little chef came up with the following problem:<br> </p>
+  <p></p> 
+  <p></p>
+  <p> Given an array <b>A</b> of non-negative integers, how many pairs of indices <b>i</b> and <b>j</b> exist such that <b> A[i]*A[j] &gt; A[i]+A[j] </b> where <b> i &lt; j </b>.</p> 
+  <p> Now being a learner, little chef isn't able to solve this problem efficiently and hence turns to you for help. </p> 
+  <h3>Input</h3> 
+  <p>First line of input contains an integer <b>T</b> denoting the number of test cases. For each test case, the first line contains an integer <b>N</b> denoting the number of integers in the array. The next line contains <b>N</b> space separated integers where the <b>i<sup>th</sup></b> integer represents <b>A[i]</b>. </p> 
+  <p><b> Note : There may be trailing spaces on each line of input. </b></p> 
+  <h3>Output</h3> 
+  <p>For each test, print the required number of pairs in a single line.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li> <b>1</b> ? <b>T</b> ? <b>10</b> </li> 
+   <li> <b>2</b> ? <b>N</b> ? <b>100000 (10<sup>5</sup>)</b> </li> 
+   <li> <b>0</b> ? <b>A[i]</b> ? <b>1000000 (10<sup>6</sup>)</b> </li>
+  </ul> 
+  <p><br></p> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+2
+3
+3 4 5
+4
+1 1 1 1
+
+<b>Output:</b>
+3
+0
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Example case 1.</b><br><br> All pairs of numbers satisfy the criteria. Total number of pairs equals <b>3</b>. </p> 
+  <p><b>Example case 2.</b><br><br> No pair of numbers satisfy the criteria. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/viv001">viv001</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/whiteking">whiteking</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/PROSUM">http://discuss.codechef.com/problems/PROSUM</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/march14"> march14 </a><a class="problem-tag-small " href="/tags/problems/simple-math"> simple-math </a><a class="problem-tag-small " href="/tags/problems/viv001"> viv001 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>26-01-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>0.5 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/PROSUM">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-82235"></a> 
+ <div id="c82235" class="comment clear-block"> 
+  <h3><a href="/problems/PROSUM#comment-82235" class="active">#include main() { int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sanyamjain">sanyamjain</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2014 06:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include main() { int t,m,n,a[100000],i; scanf("%d",&amp;t); while(t--) { int prosum=0,l=0,prominus=0; scanf("%d",&amp;n); m=n; for(i=1;i&lt;=n;i++) { scanf("%d",&amp;a[i]); if(a[i]==0 || a[i]==1) { m--; } if(a[i]==2) { l++; } } for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85831"></a> 
+ <div id="c85831" class="comment clear-block"> 
+  <h3><a href="/problems/PROSUM#comment-85831" class="active">http://ideone.com/Mc6M68 why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vickycod">vickycod</a></strong>
+   <span style="color:#828282"> @ 28 Sep 2014 12:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://ideone.com/Mc6M68" title="http://ideone.com/Mc6M68">http://ideone.com/Mc6M68</a> why i am getting tle plz help me....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89289"></a> 
+ <div id="c89289" class="comment clear-block"> 
+  <h3><a href="/problems/PROSUM#comment-89289" class="active">I have test many cases and it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mystogan7_001">mystogan7_001</a></strong>
+   <span style="color:#828282"> @ 1 Nov 2014 05:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I have test many cases and it gives correct answer but on submission it shows wrong answer
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102780"></a> 
+ <div id="c102780" class="comment clear-block"> 
+  <h3><a href="/problems/PROSUM#comment-102780" class="active">is there a test case where we</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/michael007">michael007</a></strong>
+   <span style="color:#828282"> @ 30 Apr 2015 10:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    is there a test case where we should consider array having equal integers?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

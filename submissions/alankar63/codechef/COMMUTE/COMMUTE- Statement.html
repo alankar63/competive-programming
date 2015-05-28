@@ -1,0 +1,185 @@
+<div id="node-498197" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> The Chef commutes to work every day using the city's underground metro. The schedule for the trains has recently been changed and he wants to know how long it will take to travel from the station nearest to his house and the station nearest to his restaurant.</p> 
+  <p> The Chef doesn't want to change the route he took before, so he simply has to find out how long it will take to reach his restaurant along his usual route. This route is given by a sequence of stations s<sub>0</sub>, s<sub>1</sub>, ..., s<sub>n</sub> where s<sub>0</sub> is the station where the Chef enters the metro and s<sub>n</sub> is the station where the Chef exits the metro.</p> 
+  <p> Trains are scheduled to run between every two consecutive stations s<sub>i-1</sub> and s<sub>i</sub>. Such a schedule is specified by three integers x<sub>i</sub>, l<sub>i</sub>, and f<sub>i</sub>. This means that the first train on this line starts operating at time x<sub>i</sub>. The time it takes this train to travel from s<sub>i-1</sub> and s<sub>i</sub> is exactly l<sub>i</sub> units. Finally, a train departs from station s<sub>i-1</sub> every f<sub>i</sub> minutes following the previous train. That is, a train departs at time x<sub>i</sub>, x<sub>i</sub>+f<sub>i</sub>, x<sub>i</sub>+2f<sub>i</sub>, and so on.</p> 
+  <p> The Chef is very experienced at navigating the metro so the time it takes him to transfer between trains at a given station is essentially zero. Thus, if the Chef arrives at a station, say s<sub>i</sub>, the moment that the train from s<sub>i</sub> to s<sub>i+1</sub> is scheduled to depart, he skillfully hops on this next train. However, if the Chef arrives when no train to s<sub>i+1</sub> is scheduled to depart, he must wait until the scheduled departure time.</p> 
+  <p> Help the Chef figure out how long it will take him to travel from station s<sub>0</sub> to station s<sub>n</sub>. You may assume that the Chef is already at station s<sub>0</sub> at time 0.</p> 
+  <h3>Input</h3> 
+  <p> The first line consists of a single integer denoting the number of test cases (at most 50). Each test case begins with a line containing a single integer n between 1 and 1000 indicating the number of lines the Chef must traverse (so there are n+1 stations s<sub>0</sub>, s<sub>1</sub>, ..., s<sub>n</sub>). The next n lines describe the train schedules between stations, one per line. The i'th such line gives the values x<sub>i</sub>, l<sub>i</sub>, and f<sub>i</sub> for the train that travels between stations s<sub>i-1</sub> and s<sub>i</sub>.</p> 
+  <p> The x<sub>i</sub> values will be between 0 and 1000 and the l<sub>i</sub> and f<sub>i</sub> values will be between 1 and 1000.</p> 
+  <h3>Output</h3> 
+  <p> For each test case you are to output a single integer denoting the minimum time t for which the Chef can reach station s<sub>n</sub> using the given route. Remember, the Chef starts at s<sub>0</sub> at time 0.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+3
+2
+0 4 7
+0 6 5
+2
+0 1 2
+6 2 10
+2
+1 2 3
+0 2 3
+
+
+<b>Output:</b>
+11
+8
+5
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/friggstad">friggstad</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/rajivka">rajivka</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/COMMUTE">http://discuss.codechef.com/problems/COMMUTE</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook05"> cook05 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/friggstad"> friggstad </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>4-12-2010</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>3 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/COMMUTE">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-12835"></a> 
+ <div id="c12835" class="comment clear-block"> 
+  <h3><a href="/problems/COMMUTE#comment-12835" class="active">this is my code...dont knw</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abeyy">abeyy</a></strong>
+   <span style="color:#828282"> @ 7 Jan 2011 07:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>this is my code...dont knw why m getting wrong ans...chck on many cases...please help admin</p> 
+    <p>&nbsp;</p> 
+    <p>#include&lt;stdio.h&gt;<br>#include&lt;iostream&gt;<br>using namespace std;<br>int main()<br>{<br> int t=0,x[1000],l[1000],f[1000],n,i=0,tt=0,j,p;<br> cin&gt;&gt;p;<br> int m;<br> while(p&gt;0)<br> {<br> i=0;<br> cin&gt;&gt;n;m=n;<br> while(n&gt;0)<br> {<br> cin&gt;&gt;x[i]&gt;&gt;l[i]&gt;&gt;f[i];<br> i=i+1;<br> --n;<br> }<br> <br> t=0;<br> tt=l[0];<br> for(j=1;j&lt;m;++j)<br> {<br> t=0;<br> if(x[j]&gt;=tt)<br> {<br> <br> tt=tt+x[j]-tt+l[j];<br> }<br> else<br> {<br> t=f[j]+x[j]+t;<br><br> while(t&lt;tt)<br> {<br> t=t+f[j];<br> <br> }<br> tt=tt+t-tt+l[j];<br> //l[j]=t+l[j]-x[j];<br> }<br> }<br> printf("%dn",tt);<br> <br> --p;<br> }<br> return 0;<br> <br>}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> <br> <br><br></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-37537"></a> 
+ <div id="c37537" class="comment clear-block"> 
+  <h3><a href="/problems/COMMUTE#comment-37537" class="active">if the starting station time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coda">coda</a></strong>
+   <span style="color:#828282"> @ 8 Feb 2013 12:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    if the starting station time is 0 ""Remember, the Chef starts at s0 at time 0."" then why is the time at starting of test case 3 1? this cost 2 wrong soln to me
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-55146"></a> 
+ <div id="c55146" class="comment clear-block"> 
+  <h3><a href="/problems/COMMUTE#comment-55146" class="active">He seems to be a frickin</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pale_rider">pale_rider</a></strong>
+   <span style="color:#828282"> @ 12 Sep 2013 01:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    He seems to be a frickin ninja to be able to hop into trains like that :P
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-70887"></a> 
+ <div id="c70887" class="comment clear-block"> 
+  <h3><a href="/problems/COMMUTE#comment-70887" class="active">@pale_rider LOL</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/garakchy">garakchy</a></strong>
+   <span style="color:#828282"> @ 12 Jan 2014 07:54 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @pale_rider LOL
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79580"></a> 
+ <div id="c79580" class="comment clear-block"> 
+  <h3><a href="/problems/COMMUTE#comment-79580" class="active">@pale_rider ofc, every chef</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhishek971">abhishek971</a></strong>
+   <span style="color:#828282"> @ 15 Jun 2014 01:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @pale_rider ofc, every chef has this pre-requisite ninja training included in their cooking class :P
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83600"></a> 
+ <div id="c83600" class="comment clear-block"> 
+  <h3><a href="/problems/COMMUTE#comment-83600" class="active">Can someone please tell why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dazzshins">dazzshins</a></strong>
+   <span style="color:#828282"> @ 11 Aug 2014 01:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone please tell why it is producing the wrong answer ? Its working for all the above test cases on my PC .... import java.util.Scanner; class Commute { public static void main(String[] args)//throws IOException { //BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); Scanner sc = new Scanner(System.in); // System.out.println(); int t = sc.nextInt();//Integer.parseInt(br.readLine()); for(int i=0;i1000) break;//Integer.parseInt(br.readLine()); Ii[j]=sc.nextInt(); if(Ii[j]&lt;1||Ii[j]&gt;1000) break;//Integer.parseInt(br.readLine()); fi[j]=sc.nextInt(); if(fi[j]&lt;1||fi[j]&gt;1000) break;//Integer.parseInt(br.readLine()); } int wait = check(xi,Ii,fi); System.out.println(wait); } } static int check(int[] xi,int[] Ii,int[] fi) { int s=0,t=Ii[0]; for(int i=1;it) { s=ff[y]+xi[i];//System.out.print(s); break; } } t=s+Ii[i];//System.out.print(" t:"+t+" "); } return t; } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85649"></a> 
+ <div id="c85649" class="comment clear-block"> 
+  <h3><a href="/problems/COMMUTE#comment-85649" class="active">#include int main(){ int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prasad.gone1">prasad.gone1</a></strong>
+   <span style="color:#828282"> @ 25 Sep 2014 02:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int main(){ int t,n,x,l,f,ans,temp,i; scanf("%d",&amp;t); while(t--){ scanf("%d",&amp;n); ans = 0; for(i = 0;i x){ ans=x+f; } ans += l; } printf("%dn",ans); } return 0; } Can anyone correct it plzz when i execute this code in my pc it gives correct output but here it shows wrong answer. :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

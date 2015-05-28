@@ -1,0 +1,766 @@
+<div id="node-407634" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> After a long and successful day of preparing food for the banquet, it is time to clean up. There is a list of n jobs to do before the kitchen can be closed for the night. These jobs are indexed from 1 to n.</p> 
+  <p> Most of the cooks have already left and only the Chef and his assistant are left to clean up. Thankfully, some of the cooks took care of some of the jobs before they left so only a subset of the n jobs remain. The Chef and his assistant divide up the remaining jobs in the following manner. The Chef takes the unfinished job with least index, the assistant takes the unfinished job with the second least index, the Chef takes the unfinished job with the third least index, etc. That is, if the unfinished jobs were listed in increasing order of their index then the Chef would take every other one starting with the first job in the list and the assistant would take every other one starting with the second job on in the list.</p> 
+  <p> The cooks logged which jobs they finished before they left. Unfortunately, these jobs were not recorded in any particular order. Given an unsorted list<br> of finished jobs, you are to determine which jobs the Chef must complete and which jobs his assitant must complete before closing the kitchen for the<br> evening.</p> 
+  <h3>Input</h3> 
+  <p> The first line contains a single integer T ? 50 indicating the number of test cases to follow. Each test case consists of two lines. The first line contains two numbers n,m satisfying 0 ? m ? n ? 1000. Here, n is the total number of jobs that must be completed before closing and m is the number of jobs that have already been completed. The second line contains a list of m distinct integers between 1 and n. These are the indices of the jobs that have already been completed. Consecutive integers are separated by a single space.</p> 
+  <h3>Output</h3> 
+  <p> The output for each test case consists of two lines. The first line is a list of the indices of the jobs assigned to the Chef. The second line is a list of the indices of the jobs assigned to his assistant. Both lists must appear in increasing order of indices and consecutive integers should be separated by a single space. If either the Chef or the assistant is not assigned any jobs, then their corresponding line should be blank.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+3
+6 3
+2 4 1
+3 2
+3 2
+8 2
+3 8
+
+<b>Output:</b>
+3 6
+5
+1
+
+1 4 6
+2 5 7
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/friggstad">friggstad</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/pieguy">pieguy</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CLEANUP">http://discuss.codechef.com/problems/CLEANUP</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook02"> cook02 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/friggstad"> friggstad </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>9-08-2010</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>5 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CLEANUP">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-11658"></a> 
+ <div id="c11658" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-11658" class="active">why C# not allowed for this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/avinash1">avinash1</a></strong>
+   <span style="color:#828282"> @ 30 Oct 2010 05:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>why C# not allowed for this problem</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12405"></a> 
+ <div id="c12405" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-12405" class="active">#include&lt;stdio.h&gt;#include&lt;str</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ankitbits">ankitbits</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2010 10:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>#include&lt;stdio.h&gt;<br>#include&lt;string.h&gt;<br>#include&lt;memory.h&gt;<br>typedef enum { false, true } bool;<br>int main()<br>{<br> int tc;<br> scanf("%d",&amp;tc);<br> for(int testcase=0; testcase&lt;tc; testcase++)<br> {<br> int m,n,x;<br> bool a[1001];<br> memset(a,0,sizeof(a));&nbsp;&nbsp; //Sets the first num bytes of the block<br> // of memory pointed by ptr to the specified value<br> scanf("%d %d",&amp;n, &amp;m);<br> for(int i=0;i&lt;m; i++)<br> {<br> scanf("%d", &amp;x);<br> a[x]=true;<br> }<br> int cnt=0;<br> for(int j=1; j&lt;=n; j++)<br> {<br> if(!a[j])<br> {<br> if(!(cnt%2))<br> {<br> printf("%d ",j);<br> a[j]=true;<br> }<br> cnt++;<br> }<br> }<br> printf("n");<br> for(int k=1; k&lt;=n; k++)<br> {<br> if(!a[k])<br> {<br> printf("%d ",k);<br> a[k]=true;<br> }<br> }<br> printf("n");<br> }<br> return 0;<br>}<br><br></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12406"></a> 
+ <div id="c12406" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-12406" class="active">this code is giving desired</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ankitbits">ankitbits</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2010 11:22 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    this code is giving desired o/p on my pc but here its ce??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12407"></a> 
+ <div id="c12407" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-12407" class="active">memory.h is a nonstandard</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2010 12:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>memory.h is a nonstandard header file, which is why it won't compile.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16761"></a> 
+ <div id="c16761" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-16761" class="active">please help me in removing</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prakhar3agrwal">prakhar3agrwal</a></strong>
+   <span style="color:#828282"> @ 10 Jun 2011 02:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please help me in removing error from my code as the result shown here was runtime error!!! THANK YOU
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17577"></a> 
+ <div id="c17577" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-17577" class="active">Why can't we submit in C#?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chengzhao41">chengzhao41</a></strong>
+   <span style="color:#828282"> @ 14 Jul 2011 07:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why can't we submit in C#? Can this be fixed?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17759"></a> 
+ <div id="c17759" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-17759" class="active">@Admin please tell me why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gagangupt16">gagangupt16</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2011 01:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin please tell me why Runtime error is occuring.... Here's the link to my solution... 
+    <a href="http://www.codechef.com/viewsolution/610313" title="http://www.codechef.com/viewsolution/610313">http://www.codechef.com/viewsolution/610313</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19104"></a> 
+ <div id="c19104" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-19104" class="active">@Admin: When I try to submit</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ambeco">ambeco</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2011 04:51 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin: When I try to submit a C++ answer to this or other questions the "submission" page shows the "running" forever (90+ seconds), and my answers do not appear in my submissions nor user recent activity.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19776"></a> 
+ <div id="c19776" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-19776" class="active">i am getting wrong ans every</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amy_vivacious">amy_vivacious</a></strong>
+   <span style="color:#828282"> @ 30 Oct 2011 11:59 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am getting wrong ans every time.....i ve tested my code on numerous inputs &amp; getting the o/p as desired ....can any1 help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-22243"></a> 
+ <div id="c22243" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-22243" class="active">Getting run time error.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rbkr">rbkr</a></strong>
+   <span style="color:#828282"> @ 12 Feb 2012 06:15 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Getting run time error. Program working fine on my system. I am using Python.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-30391"></a> 
+ <div id="c30391" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-30391" class="active">Getting runtime error. Using</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2012 01:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Getting runtime error. Using java &amp; its working fine on my system.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-30392"></a> 
+ <div id="c30392" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-30392" class="active">Here's the link to my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2012 02:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Here's the link to my solution: 
+    <a href="http://www.codechef.com/viewsolution/1263716" title="http://www.codechef.com/viewsolution/1263716">http://www.codechef.com/viewsolution/1263716</a> Can't find anything wrong with it.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36677"></a> 
+ <div id="c36677" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-36677" class="active">Hi, Tried solving the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mohit2088">mohit2088</a></strong>
+   <span style="color:#828282"> @ 29 Jan 2013 01:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi, Tried solving the problem. But, got the NZEC exception for 1755709. Can anyone suggest any solution.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-37342"></a> 
+ <div id="c37342" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-37342" class="active">giving wa..wts wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ayushrocker92">ayushrocker92</a></strong>
+   <span style="color:#828282"> @ 4 Feb 2013 08:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    giving wa..wts wrong 
+    <a href="http://www.codechef.com/viewsolution/572990" title="http://www.codechef.com/viewsolution/572990">http://www.codechef.com/viewsolution/572990</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43701"></a> 
+ <div id="c43701" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-43701" class="active">I cannot understand the test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/plutonium1991">plutonium1991</a></strong>
+   <span style="color:#828282"> @ 29 May 2013 08:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I cannot understand the test cases.... Please help me...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43703"></a> 
+ <div id="c43703" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-43703" class="active">@plutonium1991: 6 3 2 4</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhiabhishek">abhiabhishek</a></strong>
+   <span style="color:#828282"> @ 29 May 2013 11:47 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @plutonium1991: 6 3 2 4 1 n=6(total no of jobs) m=3(finished jobs) 1,4,2 have been completed According to rule 3,6 goes to chef (as 1 &amp;2 completed next unfinished goes to chef) and 5 to asst (after 3 next unfinished 5 goes to asst.) If either chef or asst. are not assigned any job leave blank line.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46124"></a> 
+ <div id="c46124" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-46124" class="active">i am getting wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cool_shubham">cool_shubham</a></strong>
+   <span style="color:#828282"> @ 17 Jun 2013 10:51 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am getting wrong answer every time i submit.. is there any output formatting problem ...pls help... my code 
+    <a href="http://www.codechef.com/viewsolution/2272771" title="http://www.codechef.com/viewsolution/2272771">http://www.codechef.com/viewsolution/2272771</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46308"></a> 
+ <div id="c46308" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-46308" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/edorado93">edorado93</a></strong>
+   <span style="color:#828282"> @ 19 Jun 2013 04:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/2279687" title="http://www.codechef.com/viewsolution/2279687">http://www.codechef.com/viewsolution/2279687</a> Hey admin m gettin wron answer everytime . The test cases are workin just fine . Please nyone help me out
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-51821"></a> 
+ <div id="c51821" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-51821" class="active">NZEC error in python and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sp1rs">sp1rs</a></strong>
+   <span style="color:#828282"> @ 15 Aug 2013 03:28 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    NZEC error in python and java. Any guess plz help?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-56018"></a> 
+ <div id="c56018" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-56018" class="active">gettting runtime error but it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vicky2135">vicky2135</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2013 10:36 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    gettting runtime error but it works on my system and even on ideone please help!!1 here is my link 
+    <a href="http://www.codechef.com/viewsolution/2694638" title="http://www.codechef.com/viewsolution/2694638">http://www.codechef.com/viewsolution/2694638</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-56765"></a> 
+ <div id="c56765" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-56765" class="active">my code is giving w/a every</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yagyank">yagyank</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2013 11:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my code is giving w/a every time even though it passes sample output here is my link 
+    <a href="http://www.codechef.com/viewsolution/2736488" title="http://www.codechef.com/viewsolution/2736488">http://www.codechef.com/viewsolution/2736488</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-58173"></a> 
+ <div id="c58173" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-58173" class="active">@admin.."wrong answer"</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aatzz_11">aatzz_11</a></strong>
+   <span style="color:#828282"> @ 7 Oct 2013 06:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin.."wrong answer" evrytym..help!! #include #include #include int main() { int *arr,i,j,k,n,t,x; scanf("%d",&amp;t); for(k=0;k
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-61978"></a> 
+ <div id="c61978" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-61978" class="active">I am getting RE. What's</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aj_jaswanth">aj_jaswanth</a></strong>
+   <span style="color:#828282"> @ 28 Oct 2013 01:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting RE. What's wrong? I test all corner cases like m = 0 and also n = 0
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65447"></a> 
+ <div id="c65447" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-65447" class="active">i am getting a run time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ankit10000">ankit10000</a></strong>
+   <span style="color:#828282"> @ 30 Nov 2013 01:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am getting a run time error,everything is working fine on my system..here is the link to my codehttp://www.codechef.com/viewsolution/3013561
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65450"></a> 
+ <div id="c65450" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-65450" class="active">#include int main(void) { </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sh1994">sh1994</a></strong>
+   <span style="color:#828282"> @ 30 Nov 2013 04:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int main(void) { long long int t,n,i,num,m; int flag=0; scanf("%lld",&amp;t); while(t--) { flag=0; scanf("%lld%lld",&amp;n,&amp;m); int a[n+1]; for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65499"></a> 
+ <div id="c65499" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-65499" class="active">getting WA, plz</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jaggery">jaggery</a></strong>
+   <span style="color:#828282"> @ 2 Dec 2013 10:28 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    getting WA, plz help! 
+    <a href="http://www.codechef.com/viewsolution/3016385" title="http://www.codechef.com/viewsolution/3016385">http://www.codechef.com/viewsolution/3016385</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65637"></a> 
+ <div id="c65637" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-65637" class="active">Is there any test case where</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pagol_pola">pagol_pola</a></strong>
+   <span style="color:#828282"> @ 6 Dec 2013 01:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Is there any test case where m=0 ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-67302"></a> 
+ <div id="c67302" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-67302" class="active">Code:http://www.codechef.com/</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/axuma">axuma</a></strong>
+   <span style="color:#828282"> @ 12 Dec 2013 05:32 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Code:http://www.codechef.com/viewsolution/3075025 , solved in java. Getting RE(NZEC), can't see the problem.Any suggestions? Thx
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68915"></a> 
+ <div id="c68915" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-68915" class="active">@Admin or anyone else please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gagarwal2812">gagarwal2812</a></strong>
+   <span style="color:#828282"> @ 31 Dec 2013 02:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin or anyone else please help me out with this code. it is giving wrong output acccording to codechef. Thanks in advance!!! 
+    <a href="http://www.codechef.com/viewsolution/3146404" title="http://www.codechef.com/viewsolution/3146404">http://www.codechef.com/viewsolution/3146404</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-70037"></a> 
+ <div id="c70037" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-70037" class="active">plz help getting wa again and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anshkhanna7">anshkhanna7</a></strong>
+   <span style="color:#828282"> @ 5 Jan 2014 06:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plz help getting wa again and again works fine on my compiler 
+    <a href="http://www.codechef.com/viewsolution/3188690" title="http://www.codechef.com/viewsolution/3188690">http://www.codechef.com/viewsolution/3188690</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-73066"></a> 
+ <div id="c73066" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-73066" class="active">Can we use queues for this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nikhil162">nikhil162</a></strong>
+   <span style="color:#828282"> @ 14 Feb 2014 04:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can we use queues for this problem? if so how would we store the value of the indices? Please suggest a solution..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-74099"></a> 
+ <div id="c74099" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-74099" class="active">plz....... help me.. i am not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashish1120054">ashish1120054</a></strong>
+   <span style="color:#828282"> @ 1 Mar 2014 01:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plz....... help me.. i am not getting why i m getting wrong answer ... my all the test cases run perfectly.... 
+    <a href="http://www.codechef.com/viewsolution/3483766" title="http://www.codechef.com/viewsolution/3483766">http://www.codechef.com/viewsolution/3483766</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-76570"></a> 
+ <div id="c76570" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-76570" class="active">what should b the o/p if</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rbishnoi">rbishnoi</a></strong>
+   <span style="color:#828282"> @ 13 Apr 2014 01:57 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what should b the o/p if overseas the conditions given for....m &amp; n.? ex... if m =9 and n=0 ? @admin plz reply...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78117"></a> 
+ <div id="c78117" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-78117" class="active">Piece of Cake</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/fast">fast</a></strong>
+   <span style="color:#828282"> @ 13 May 2014 05:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Piece of Cake
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78574"></a> 
+ <div id="c78574" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-78574" class="active">what if m=0 and n!=0, will</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/epslon">epslon</a></strong>
+   <span style="color:#828282"> @ 29 May 2014 06:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what if m=0 and n!=0, will the second line following the line containing n and m of input go blank or it will not be present at all?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78575"></a> 
+ <div id="c78575" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-78575" class="active">oh, got it!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/epslon">epslon</a></strong>
+   <span style="color:#828282"> @ 29 May 2014 06:50 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    oh, got it!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79087"></a> 
+ <div id="c79087" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-79087" class="active">Guyz please check why am i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hmnshgpt455">hmnshgpt455</a></strong>
+   <span style="color:#828282"> @ 8 Jun 2014 04:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Guyz please check why am i getting wrong answer...i am getting right answer with the sample 
+    <a href="http://www.codechef.com/viewsolution/4020007" title="http://www.codechef.com/viewsolution/4020007">http://www.codechef.com/viewsolution/4020007</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79650"></a> 
+ <div id="c79650" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-79650" class="active">Easy one.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amitdoshi313">amitdoshi313</a></strong>
+   <span style="color:#828282"> @ 16 Jun 2014 05:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Easy one.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79705"></a> 
+ <div id="c79705" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-79705" class="active">could somebdy please tell how</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/taurus007">taurus007</a></strong>
+   <span style="color:#828282"> @ 18 Jun 2014 08:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    could somebdy please tell how to remove a nzec error in java.. 
+    <a href="http://www.codechef.com/viewsolution/4113255" title="http://www.codechef.com/viewsolution/4113255">http://www.codechef.com/viewsolution/4113255</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80149"></a> 
+ <div id="c80149" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-80149" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sachi123">sachi123</a></strong>
+   <span style="color:#828282"> @ 29 Jun 2014 08:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/4163371" title="http://www.codechef.com/viewsolution/4163371">http://www.codechef.com/viewsolution/4163371</a> I have tried almost all the possible test cases and it executes right on my pc. but I am getting a WRONG ANS msg here. could someone help me?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83861"></a> 
+ <div id="c83861" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-83861" class="active">can someone provide the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/roamingraptor">roamingraptor</a></strong>
+   <span style="color:#828282"> @ 23 Aug 2014 03:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can someone provide the testcase where my code may possibily go wrong?????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85241"></a> 
+ <div id="c85241" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-85241" class="active">This code is giving NZEC</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gurav">gurav</a></strong>
+   <span style="color:#828282"> @ 12 Sep 2014 02:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    This code is giving NZEC error and I dont understand why: 
+    <a href="http://www.codechef.com/viewsolution/4804420" title="http://www.codechef.com/viewsolution/4804420">http://www.codechef.com/viewsolution/4804420</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85779"></a> 
+ <div id="c85779" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-85779" class="active">do printing an extra space</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bhaskarmitra5">bhaskarmitra5</a></strong>
+   <span style="color:#828282"> @ 27 Sep 2014 10:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    do printing an extra space gives wrong answer??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92418"></a> 
+ <div id="c92418" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-92418" class="active">@bhaskarmitra5 Yes, your</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/noble_mushtak">noble_mushtak</a></strong>
+   <span style="color:#828282"> @ 29 Dec 2014 11:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @bhaskarmitra5 Yes, your output needs to be exact.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92419"></a> 
+ <div id="c92419" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-92419" class="active">@gurav My guess is that your</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/noble_mushtak">noble_mushtak</a></strong>
+   <span style="color:#828282"> @ 30 Dec 2014 12:06 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @gurav My guess is that your program takes up too much memory. People usually write algorithms in C and C++ and while it's perfectly OK to write algorithms in dynamically typed languages like Python where memory is handled behind the scenes, it's important to write your algorithm in a way that is independent of the language. Don't use things like the in operator, str, or .strip() because those things might take up unnecessary memory or space. I would suggest using two lists of numbers instead of a string, and make an array of Booleans telling whether or not a job is done from done_list instead of using the in operator.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92420"></a> 
+ <div id="c92420" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-92420" class="active">Easy and good</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhinav_rai">abhinav_rai</a></strong>
+   <span style="color:#828282"> @ 30 Dec 2014 12:08 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Easy and good
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99935"></a> 
+ <div id="c99935" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-99935" class="active">first I declared my array</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/elite_hacker">elite_hacker</a></strong>
+   <span style="color:#828282"> @ 28 Mar 2015 12:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    first I declared my array size with 1000... but I didn't use the first element... and so got a wrong answer. There must be a test case in which n = 1000. Silly me :-) But now works fine after increasing size to 1005 (just to make sure). For those with runtime error or wa, please check your array size so as to avoid similar silly mistake :-)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104620"></a> 
+ <div id="c104620" class="comment clear-block"> 
+  <h3><a href="/problems/CLEANUP#comment-104620" class="active">Can anyone tell me why this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arpit_gupta_12">arpit_gupta_12</a></strong>
+   <span style="color:#828282"> @ 26 May 2015 08:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone tell me why this code does not work for taking inputs in this case: inline int readInt() { int n = 0; char c; while (1) { c=GETCHAR(); if(c=='n'||c==' ') break; n = n * 10 + c - '0'; } return n; } and this code works fine int readInt() { int cc = getc(stdin); for (;cc &lt; '0' || cc &gt; '9';) cc = getc(stdin); int ret = 0; for (;cc &gt;= '0' &amp;&amp; cc &lt;= '9';) { ret = ret * 10 + cc - '0'; cc = getc(stdin); } return ret; } why?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

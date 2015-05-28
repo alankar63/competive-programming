@@ -1,0 +1,177 @@
+<div id="node-3456296" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <p> Chef likes cooking. But more than that, he likes to give gifts. And now he wants to give his girlfriend an unforgettable gift. But unfortunately he forgot the password to the safe where the money he saved for the gift is kept. </p> 
+  <p>But he knows how to hack the safe. To do this, you need to correctly answer questions asked by the embedded computer. The computer is very strange, and asks special questions, sometimes it can ask about <b>10000</b> question (really weird). Because of this, Chef wants you to write a program that will help him to crack the safe. </p> 
+  <p>The questions are different, but there is only one type of question. Several numbers are given and between them one of three characters: <b>*, +, -</b> can be inserted. Note that in this case there is no priority for the operators, that is, if + is the before multiplication, you must first execute the operation of addition, and then multiplication (1 - 2 * 3 must be interpreted as (1 - 2) * 3 = -3 and not -5). The computer asks the minimum possible value of any valid expression. </p> 
+  <p>&nbsp;</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The first line of each test case contains a positive integer <b>N</b>. The second line contains <b>N</b> space separated integers <b>A<sub>1</sub></b>, <b>A<sub>2</sub></b>, ..., <b>A<sub>N</sub></b> denoting the expression without the operators.</p> 
+  <p>&nbsp;</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing the minimal value of given expression. </p> 
+  <p>&nbsp;</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1 ? T ? 10<sup>5</sup></b></li> 
+   <li><b>1 ? N ? 10</b></li> 
+   <li><b>-9 ? A<sub>i</sub> ? 9</b> </li> 
+   <p>. </p>
+  </ul> 
+  <p>&nbsp;</p> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+2
+3
+1 2 3
+1
+9
+
+<b>Output:</b>
+-4
+9
+</pre>
+  <p>&nbsp;</p> 
+  <h3>Explanation</h3> 
+  <p>Example case 1: <b>1-2-3 = -4</b></p> 
+  <h3> Scoring </h3> 
+  <p>Subtask 1 (15 points): <b> 1 ? T ? 10 </b> <br><br> Subtask 2 (10 points): <b> 1 ? N ? 3 </b> <br><br> Subtask 3 (20 points): <b> 1 ? A<sub>i</sub> ? 5</b>. <br><br> Subtask 4 (35 points): <b>1 ? T ? 10<sup>4</sup> </b> <br><br> Subtask 5 (20 points): Look at constraints. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/furko">furko</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/ balajiganapath"> balajiganapath</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CHGIFT1">http://discuss.codechef.com/problems/CHGIFT1</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/dp"> dp </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/furko"> furko </a><a class="problem-tag-small " href="/tags/problems/ltime04"> ltime04 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>6-09-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CHGIFT1">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-72868"></a> 
+ <div id="c72868" class="comment clear-block"> 
+  <h3><a href="/problems/CHGIFT1#comment-72868" class="active">what is wrong with this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/viveksedani">viveksedani</a></strong>
+   <span style="color:#828282"> @ 11 Feb 2014 08:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is wrong with this solution? It is giving me 'wrong answer'. Thank you in Advance. link:http://www.codechef.com/viewsolution/3388674
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78642"></a> 
+ <div id="c78642" class="comment clear-block"> 
+  <h3><a href="/problems/CHGIFT1#comment-78642" class="active">can anyone tell me why is my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pratik1016">pratik1016</a></strong>
+   <span style="color:#828282"> @ 2 Jun 2014 05:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone tell me why is my solution giving wrong answer? -_- link : 
+    <a href="http://www.codechef.com/viewsolution/3964525" title="http://www.codechef.com/viewsolution/3964525">http://www.codechef.com/viewsolution/3964525</a> plz ASAP
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80073"></a> 
+ <div id="c80073" class="comment clear-block"> 
+  <h3><a href="/problems/CHGIFT1#comment-80073" class="active">why is it showing</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mohitac">mohitac</a></strong>
+   <span style="color:#828282"> @ 28 Jun 2014 03:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why is it showing error? please help 
+    <a href="http://www.codechef.com/viewsolution/4151199" title="http://www.codechef.com/viewsolution/4151199">http://www.codechef.com/viewsolution/4151199</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81627"></a> 
+ <div id="c81627" class="comment clear-block"> 
+  <h3><a href="/problems/CHGIFT1#comment-81627" class="active">I need an experienced</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sajjad670">sajjad670</a></strong>
+   <span style="color:#828282"> @ 16 Jul 2014 07:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I need an experienced programmer who can train me (a novice) . I would be greatly obliged :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85612"></a> 
+ <div id="c85612" class="comment clear-block"> 
+  <h3><a href="/problems/CHGIFT1#comment-85612" class="active">what is wrong in this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vipulsharda">vipulsharda</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2014 12:49 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is wrong in this solution?? Can anyone help me.. link: 
+    <a href="http://www.codechef.com/viewsolution/4883655" title="http://www.codechef.com/viewsolution/4883655">http://www.codechef.com/viewsolution/4883655</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85631"></a> 
+ <div id="c85631" class="comment clear-block"> 
+  <h3><a href="/problems/CHGIFT1#comment-85631" class="active">In an expression we have to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/13parulverma">13parulverma</a></strong>
+   <span style="color:#828282"> @ 24 Sep 2014 12:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    In an expression we have to use a single operator at a time Or we can use all 3 of them...?? can the expression be like 3-5*3 ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

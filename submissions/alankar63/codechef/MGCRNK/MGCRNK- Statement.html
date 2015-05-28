@@ -1,0 +1,154 @@
+<div id="node-1702237" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>Everybody loves magic, especially magicians who compete for glory on the Byteland Magic Tournament. Magician Cyael is one such magician.</p> 
+  <p>Cyael has been having some issues with her last performances and today she’ll have to perform for an audience of some judges, who will change her tournament ranking, possibly increasing it. As she is a great magician she managed to gather a description of the fixed judges’ disposition on the room (which is represented as an <b>N</b> × <b>N</b> square matrix), such that she knows in advance the fixed points each judge will provide. She also knows that the room is divided into several parallel corridors, such that we will denote the <b>j</b>-th cell on corridor <b>i</b>, as <b>[i][j]</b>. Note that some judges can award Cyael, zero points or negative points, as they are never pleased with her performance.</p> 
+  <p>There is just one judge at each cell of the matrix, except the cells <b>[1][1]</b> and <b>[N][N]</b>.</p> 
+  <p>To complete her evaluation, she must start on the top leftmost corner of the room (cell <b>[1][1]</b>), and finish on the bottom right corner (cell <b>[N][N]</b>), moving either to the cell directly in front of her on the same corridor (that is, moving from cell <b>[r][c]</b> to cell <b>[r][c+1]</b>, where <b>c+1</b> ? <b>N</b>) or to the cell in the next corridor directly in front of where she is (that is, moving from cell <b>[r][c]</b> to cell <b>[r+1][c]</b>, where <b>r+1</b> ? <b>N</b>). She will keep doing this until she reaches the end point of the room, i.e. last cell <b>[N][N]</b> on the last corridor. Cyael will be judged at all visited cells with a judge.</p> 
+  <p> Cyael wants to maximize her average score at end of her performance. More specifically, if she passes <b>K</b> judges, each being on cell <b>[i<sub>1</sub>][j<sub>1</sub>]</b>, cell <b>[i<sub>2</sub>][j<sub>2</sub>]</b>, ..., cell <b>[i<sub>K</sub>][j<sub>K</sub>]</b> respectively, then she wants to maximize (<b>S[i<sub>1</sub>][j<sub>1</sub>]</b> + <b>S[i<sub>2</sub>][j<sub>2</sub>]</b> + ... + <b>S[i<sub>K</sub>][j<sub>K</sub>]</b>) / <b>K</b>, where <b>S[i][j]</b> denotes the points that the judge will give her on the cell <b>[i][j]</b>.</p> 
+  <p>Help her determine the best path she has to follow in order to maximize her average points.</p> 
+  <h3>Input</h3> 
+  <p>The first line contains a single integer <b>T</b> denoting the number of test cases. The description for <b>T</b> test cases follows. For each test case, the first line contains a single integer <b>N</b>. Each of the next <b>N</b> lines contains <b>N</b> space-separated integers.<br> The j-th integer <b>S[i][j]</b> in i-th line denotes the points awarded by the judge at cell <b>[i][j]</b>.<br> Note that the cells <b>[1][1]</b> and <b>[N][N]</b> have no judges, so <b>S[1][1]</b> and <b>S[N][N]</b> will be 0.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, if the maximum possible average points Cyael can obtain is negative, output a single line containing "Bad Judges" (quotes for clarity). Otherwise, output the maximum possible average points. The answer will be considered correct if it has an absolute error no more than <b>10<sup>-6</sup></b>.</p> 
+  <h3>Constraints</h3> 
+  <p>1 ? <b>T</b> ? 20<br>2 ? <b>N</b> ? 100<br>-2500 ? <b>S[i][j]</b> ? 2500<br><b>S[1][1]</b> = <b>S[N][N]</b> = 0</p> 
+  <p>Your code will be judged against several input files. </p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+2
+2
+0 -4
+8 0
+2
+0 -45
+-3  0
+
+
+<b>Output:</b>
+8.000000
+Bad Judges
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/kuruma">kuruma</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/MGCRNK">http://discuss.codechef.com/problems/MGCRNK</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/dec12"> dec12 </a><a class="problem-tag-small " href="/tags/problems/dpmgc"> dpmgc </a><a class="problem-tag-small " href="/tags/problems/kuruma"> kuruma </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>19-09-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/MGCRNK">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-35097"></a> 
+ <div id="c35097" class="comment clear-block"> 
+  <h3><a href="/problems/MGCRNK#comment-35097" class="active">hey this was the code i wrote</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/charchit">charchit</a></strong>
+   <span style="color:#828282"> @ 19 Dec 2012 03:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hey this was the code i wrote when contest was on, 2day i saw the tutorial can't figure out where my algo gets different... getting WA here please help main(){ int T; scanf("%d",&amp;T); while (T--){ int N; scanf("%d",&amp;N); int matrix[N+1][N+1]; for (int j=0; j&lt;=N; j++){ matrix[0][j]=-1000000; matrix[j][0]=-1100000; } for (int i=1; i&lt;=N; i++){ for (int j=1; j&lt;=N; j++){ scanf("%d",&amp;matrix[i][j]); if (i&gt;1 || j&gt;1) matrix[i][j]=matrix[i][j] + max(matrix[i-1][j], matrix[i][j-1]); } } float x= matrix[N][N]/float(2*N - 3); cout.precision(6); if (x&gt;=0) cout&lt;
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35583"></a> 
+ <div id="c35583" class="comment clear-block"> 
+  <h3><a href="/problems/MGCRNK#comment-35583" class="active">use matrix[i][j]+=</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhinav92003">abhinav92003</a></strong>
+   <span style="color:#828282"> @ 4 Jan 2013 10:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    use matrix[i][j]+= max(matrix[i-1][j], matrix[i][j-1]); instead of matrix[i][j]=matrix[i][j] + max(matrix[i-1][j], matrix[i][j-1]); i have no idea why this change makes it work. The same problem happened to me.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65531"></a> 
+ <div id="c65531" class="comment clear-block"> 
+  <h3><a href="/problems/MGCRNK#comment-65531" class="active">can anyone please explain the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/raj01104">raj01104</a></strong>
+   <span style="color:#828282"> @ 3 Dec 2013 06:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone please explain the first test case ...i think answer should be 8/3=2.666666
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68572"></a> 
+ <div id="c68572" class="comment clear-block"> 
+  <h3><a href="/problems/MGCRNK#comment-68572" class="active">O damn, remember the result</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/activatedgeek">activatedgeek</a></strong>
+   <span style="color:#828282"> @ 26 Dec 2013 11:23 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    O damn, remember the result =0 case, it is not a "Bad Judge" case, cost me 3 submissions..:/
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80173"></a> 
+ <div id="c80173" class="comment clear-block"> 
+  <h3><a href="/problems/MGCRNK#comment-80173" class="active">You get a WA if you print 8</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dhruvmullick">dhruvmullick</a></strong>
+   <span style="color:#828282"> @ 1 Jul 2014 01:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    You get a WA if you print 8 instead of 8.000000
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

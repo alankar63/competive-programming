@@ -1,0 +1,238 @@
+<div id="node-2765038" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <p>Chef, Artem and Eugene are the best of friends and teammates. Recently, they won a lot of money at the Are You Feeling Lucky Cup. Having put their fortune to test and emerging victorious, they are now busy enjoying their wealth. Eugene wanted to drink it all away. Chef and Artem had better plans. </p> 
+  <p>Chef and Artem decided to go to Las Vegas and put more of their fortune to test! Eugene stayed at home and continues drinking.</p> 
+  <p> In Vegas, Chef and Artem found lots of interesting games. The most interesting one to them was the game of Lucky Tickets. </p> 
+  <p>Lucky Tickets is played using <strong>three</strong> kinds of tickets</p> 
+  <p> </p>
+  <ul> 
+   <li><strong>Type-1</strong> called the winning ticket.</li> 
+   <li><strong>Type-2</strong> called the losing ticket.</li> 
+   <li><strong>Type-3</strong> called the try again ticket.</li> 
+  </ul> 
+  <p></p> 
+  <p><strong>Lucky Tickets</strong> is played as follows</p> 
+  <p>You know there are <strong>T1</strong> tickets of <strong>Type-1</strong>, <strong>T2</strong> tickets of <strong>Type 2</strong> and <strong>T3</strong> tickets of <strong>Type-3</strong> before the game begins.</p> 
+  <p>All the tickets are placed in a sealed box. You are allowed to take out only one ticket from the box. Of course, you cannot see inside the box while choosing the ticket.</p> 
+  <p> </p>
+  <ul> 
+   <li>If you choose a <strong>Type-1</strong> ticket, you are declared winner of Lucky Tickets and double your money.</li> 
+   <li>If you choose a <strong>Type-2</strong> ticket, you are declared loser of Lucky Tickets and lose all your money.</li> 
+   <li>If you choose a <strong>Type-3</strong> ticket, you have to try your fortune again and pick another ticket from the box and the selection process starts all over again.</li> 
+  </ul> 
+  <p></p> 
+  <p>Chef was able to convince the organizers of Lucky Tickets to let him go first and discard <strong>T4</strong> tickets. This means that Chef makes <strong>T4</strong> turns to choose exactly one ticket every turn, and despite what ticket he chose, he simply discards it. Chef also convinced the organizers to let Artem go right after he is finished.</p> 
+  <p>What is the probability that Artem will win?</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <strong>T</strong> denoting the number of test cases. The description of <strong>T</strong> test cases follows. Each test case will consist of four space separeted integers <strong>T1, T2, T3 and T4</strong>, respectively.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing the probability that Artem will win. Your answer will be considered correct if it has an absolute error less then <strong>10<sup>-6</sup></strong>.</p> 
+  <h3>Constraints</h3> 
+  <p><strong>1 ? T ? 10000</strong><br> <strong>1 ? T1, T2, T3 ? 1000000000</strong><br> <strong>0 ? T4 &lt; T1 + T2</strong></p> 
+  <h3>Sample</h3> 
+  <pre>
+<strong>Input</strong>
+2
+2 2 1 2
+2 3 4 1
+
+<strong>Output</strong>
+0.5
+0.4
+
+</pre>
+  <h3>Explanation</h3> 
+  <p><strong>In the first test case</strong>, the <strong>5</strong> possible outcomes after Chef discards 2 tickets is</p> 
+  <p> </p>
+  <ul> 
+   <li><strong>(0,2,1)</strong> with probability <strong>(1/10)</strong>. Probability of winning is <strong>0</strong> - since there are no winning tickets!</li> 
+   <li><strong>(2,0,1)</strong> with probability <strong>(1/10)</strong>. Probability of winning is <strong>1</strong> - since there are no losing tickets!</li> 
+   <li><strong>(2,1,0)</strong> with probability <strong>(1/5)</strong>. Probability of winning is <strong>(2/3)</strong> - there are no second chances!</li> 
+   <li><strong>(1,2,0)</strong> with probability <strong>(1/5)</strong>. Probability of winning is <strong>(1/3)</strong> - there are no second chances!</li> 
+   <li><strong>(1,1,1)</strong> with probability <strong>(2/5)</strong>. Probability of winning is <strong>(1/3) + (1/3)*(1/2) = (1/2)</strong>. This is calculated by considering the two cases 
+    <ul> 
+     <li>The winning ticket is picked in the first turn - probability <strong>(1/3)</strong>.</li> 
+     <li>A <strong>Type-3</strong> ticket is picked in first turn, followed by the winning ticket - probability <strong>(1/3)*(1/2)</strong>.</li> 
+    </ul> </li> 
+  </ul> 
+  <p></p> 
+  <p>The over-all probability of winning is <strong>(1/10) + (2/15) + (1/15) + (1/5) = (1/2)</strong>.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/ballon_ziq">ballon_ziq</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/gamabunta">gamabunta</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/PROB">http://discuss.codechef.com/problems/PROB</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ballon_ziq"> ballon_ziq </a><a class="problem-tag-small " href="/tags/problems/july13"> july13 </a><a class="problem-tag-small " href="/tags/problems/probability"> probability </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a><a class="problem-tag-small " href="/tags/problems/simple-math"> simple-math </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>28-04-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/PROB">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-49076"></a> 
+ <div id="c49076" class="comment clear-block"> 
+  <h3><a href="/problems/PROB#comment-49076" class="active">Ha Ha ... nice one .... Think</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/krooonal">krooonal</a></strong>
+   <span style="color:#828282"> @ 18 Jul 2013 02:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Ha Ha ... nice one .... Think about how the chef convinced the organizers ....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-60966"></a> 
+ <div id="c60966" class="comment clear-block"> 
+  <h3><a href="/problems/PROB#comment-60966" class="active">I went the hard way to code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/derekzh">derekzh</a></strong>
+   <span style="color:#828282"> @ 23 Oct 2013 11:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I went the hard way to code an argorithm, but then saw people's answers were extremely simple - am I missing something? my code is 70 lines, the successful codes are ten lines or less... I am using Python,
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75484"></a> 
+ <div id="c75484" class="comment clear-block"> 
+  <h3><a href="/problems/PROB#comment-75484" class="active">how it can be so simple what</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/asvikr">asvikr</a></strong>
+   <span style="color:#828282"> @ 21 Mar 2014 08:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    how it can be so simple what the logic behind this
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78390"></a> 
+ <div id="c78390" class="comment clear-block"> 
+  <h3><a href="/problems/PROB#comment-78390" class="active">successful submissions</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/snehasiv">snehasiv</a></strong>
+   <span style="color:#828282"> @ 24 May 2014 12:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    successful submissions include solutiions where simply the user has printed t1/(t1+t2) .. i am not able to understand how that satisfies every possibility ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80445"></a> 
+ <div id="c80445" class="comment clear-block"> 
+  <h3><a href="/problems/PROB#comment-80445" class="active">what is the logic please???</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/debugg">debugg</a></strong>
+   <span style="color:#828282"> @ 5 Jul 2014 04:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is the logic please???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80446"></a> 
+ <div id="c80446" class="comment clear-block"> 
+  <h3><a href="/problems/PROB#comment-80446" class="active">what is the logic please???</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/debugg">debugg</a></strong>
+   <span style="color:#828282"> @ 5 Jul 2014 04:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is the logic please???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80475"></a> 
+ <div id="c80475" class="comment clear-block"> 
+  <h3><a href="/problems/PROB#comment-80475" class="active">its a question of Baye's</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ayush_1019295">ayush_1019295</a></strong>
+   <span style="color:#828282"> @ 5 Jul 2014 09:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    its a question of Baye's Theorem in probability look it up
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83649"></a> 
+ <div id="c83649" class="comment clear-block"> 
+  <h3><a href="/problems/PROB#comment-83649" class="active">By linearity of expectation,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kaq1">kaq1</a></strong>
+   <span style="color:#828282"> @ 12 Aug 2014 07:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    By linearity of expectation, the expected amount of each ticket type removed is proportional to the original amount of each ticket type, so the ratio of the tickets on average is still the same. The chance of winning is T1/t and the chance of losing is T2/t (t is the # of tickets), and you can either win or lose. The ratio of the chance to win to lose is T1:T2 and the sum of the probabilities of the probability to win and the probability to lose equals 1, which is why the answer is T1/(T1+T2).
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85688"></a> 
+ <div id="c85688" class="comment clear-block"> 
+  <h3><a href="/problems/PROB#comment-85688" class="active">Awesome! :-D So simple and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pranjalranjan">pranjalranjan</a></strong>
+   <span style="color:#828282"> @ 26 Sep 2014 09:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Awesome! :-D So simple and yet so tough :p
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

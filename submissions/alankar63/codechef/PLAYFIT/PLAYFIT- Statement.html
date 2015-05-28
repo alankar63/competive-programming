@@ -1,0 +1,316 @@
+<div id="node-1062849" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p><i>Who's interested in football?</i></p> 
+  <p>Rayne Wooney has been one of the top players for his football club for the last few years. But unfortunately, he got injured during a game a few months back and has been out of play ever since.</p> 
+  <p>He's got proper treatment and is eager to go out and play for his team again. Before doing that, he has to prove to his fitness to the coach and manager of the team. Rayne has been playing practice matches for the past few days. He's played N practice matches in all.</p> 
+  <p>He wants to convince the coach and the manager that he's improved over time and that his injury no longer affects his game. To increase his chances of getting back into the team, he's decided to show them stats of any 2 of his practice games. The coach and manager will look into the goals scored in both the games and see how much he's improved. If the number of goals scored in the 2nd game(the game which took place later) is greater than that in 1st, then he has a chance of getting in. Tell Rayne what is the maximum improvement in terms of goal difference that he can show to maximize his chances of getting into the team. If he hasn't improved over time, he's not fit to play. Scoring equal number of goals in 2 matches will not be considered an improvement. Also, he will be declared unfit if he doesn't have enough matches to show an improvement.</p> 
+  <p> </p>
+  <h3>Input:</h3> 
+  <p></p>
+  <p>The first line of the input contains a single integer T, the number of test cases.<br> Each test case begins with a single integer N, the number of practice matches Rayne has played.<br> The next line contains N integers. The ith integer, gi, on this line represents the number of goals Rayne scored in his ith practice match. The matches are given in chronological order i.e. j &gt; i means match number j took place after match number i.</p> 
+  <p> </p>
+  <h3>Output:</h3> 
+  <p></p>
+  <p>For each test case output a single line containing the maximum goal difference that Rayne can show to his coach and manager. If he's not fit yet, print "UNFIT".</p> 
+  <p> </p>
+  <h3>Constraints:</h3> 
+  <p></p>
+  <p>1&lt;=T&lt;=10<br> 1&lt;=N&lt;=100000<br> 0&lt;=gi&lt;=1000000 (Well, Rayne's a legend! You can expect him to score so many goals!)</p> 
+  <h3>Example:</h3> 
+  <p><b>Input:</b><br> 3<br> 6<br> 3 7 1 4 2 4<br> 5<br> 5 4 3 2 1<br> 5<br> 4 3 2 2 3</p> 
+  <p><b>Output:</b><br> 4<br> UNFIT<br> 1</p> 
+  <p><b>Explanation:</b><br> In the first test case, Rayne can choose the first and second game. Thus he gets a difference of 7-3=4 goals. Any other pair would give him a lower improvement.<br> In the second test case, Rayne has not been improving in any match. Thus he's declared UNFIT.</p> 
+  <p><b><i>Note:</i></b> Large input data. Use faster I/O methods. Prefer scanf,printf over cin/cout.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/vamsi_kavala">vamsi_kavala</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/PLAYFIT">http://discuss.codechef.com/problems/PLAYFIT</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/april12"> april12 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/vamsi_kavala"> vamsi_kavala </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>20-01-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/PLAYFIT">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-25631"></a> 
+ <div id="c25631" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-25631" class="active">I submitted my solution as</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ajayram">ajayram</a></strong>
+   <span style="color:#828282"> @ 12 Apr 2012 05:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I submitted my solution as part of the contest but kept getting WA. I dont know why I am getting WA, I have tried all possible test cases, including the ones given in the problem statement above, and I seem to be getting correct answer. Is it possible to show the test cases where my code is giving WA ? My submission Id is 977080
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-34241"></a> 
+ <div id="c34241" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-34241" class="active">hi this is my code..i have</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vgshetty">vgshetty</a></strong>
+   <span style="color:#828282"> @ 14 Nov 2012 05:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hi this is my code..i have tried with all the border testcases on my local machine..i am getting the right answers.but wen i submit it online i am getting WA..please plaese help me with this..what is input i might be going wrong with?? this is my code 
+    <a href="http://www.codechef.com/viewsolution/1555602" title="http://www.codechef.com/viewsolution/1555602">http://www.codechef.com/viewsolution/1555602</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39780"></a> 
+ <div id="c39780" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-39780" class="active">before submitting try the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coda">coda</a></strong>
+   <span style="color:#828282"> @ 16 Mar 2013 12:15 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    before submitting try the case 1 2 3 4 5 ans should be 5-1=4 and not 5-4=1
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-41429"></a> 
+ <div id="c41429" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-41429" class="active">Even the previously accepted</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tusharmakkar08">tusharmakkar08</a></strong>
+   <span style="color:#828282"> @ 23 Apr 2013 11:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Even the previously accepted python solution is giving TLE now.Admin look into this .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46604"></a> 
+ <div id="c46604" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-46604" class="active">1st got AC at 6 seconds</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harsha_badass">harsha_badass</a></strong>
+   <span style="color:#828282"> @ 26 Jun 2013 11:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    1st got AC at 6 seconds runtime. Then used fast input instead of scanf n got AC at 0.79 seconds.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-55997"></a> 
+ <div id="c55997" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-55997" class="active">time limit is 2 sec and im</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/code_billmark">code_billmark</a></strong>
+   <span style="color:#828282"> @ 21 Sep 2013 07:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    time limit is 2 sec and im getting accepted at 5.53 my code works in O(n)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-76350"></a> 
+ <div id="c76350" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-76350" class="active">Yeah, even the previously</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sahil2305dua">sahil2305dua</a></strong>
+   <span style="color:#828282"> @ 7 Apr 2014 06:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Yeah, even the previously accepted PYTH solution gives TLE now. Please look into this, @Admin
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78560"></a> 
+ <div id="c78560" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-78560" class="active">i have try all the cases it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aeon_stark">aeon_stark</a></strong>
+   <span style="color:#828282"> @ 27 May 2014 10:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i have try all the cases it works correctly even the case 12345 also but still it shows wrong answer
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85628"></a> 
+ <div id="c85628" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-85628" class="active">will please somebody check my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mohitsuppal">mohitsuppal</a></strong>
+   <span style="color:#828282"> @ 24 Sep 2014 08:57 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    will please somebody check my code , my program output matches with the given output. here is my code 
+    <a href="http://ideone.com/zx0fyC" title="http://ideone.com/zx0fyC">http://ideone.com/zx0fyC</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85629"></a> 
+ <div id="c85629" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-85629" class="active">it is showing wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mohitsuppal">mohitsuppal</a></strong>
+   <span style="color:#828282"> @ 24 Sep 2014 08:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    it is showing wrong answer
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89249"></a> 
+ <div id="c89249" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-89249" class="active">Well even if rooney is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1.shubham">s1.shubham</a></strong>
+   <span style="color:#828282"> @ 31 Oct 2014 09:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Well even if rooney is unfit(wooney i mean) then too he is great! :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89256"></a> 
+ <div id="c89256" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-89256" class="active">@s1.shubham Actually Rooney</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubham1532">shubham1532</a></strong>
+   <span style="color:#828282"> @ 31 Oct 2014 10:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @s1.shubham Actually Rooney Sucks :P
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89530"></a> 
+ <div id="c89530" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-89530" class="active">https://www.youtube.com/watch</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1.shubham">s1.shubham</a></strong>
+   <span style="color:#828282"> @ 6 Nov 2014 06:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="https://www.youtube.com/watch?v=IlWZx419E-w" title="https://www.youtube.com/watch?v=IlWZx419E-w">https://www.youtube.com/watch?v=IlWZx419E-w</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90165"></a> 
+ <div id="c90165" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-90165" class="active">It works fine. If you're</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/niranjj95">niranjj95</a></strong>
+   <span style="color:#828282"> @ 12 Nov 2014 11:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    It works fine. If you're genius point out why error occurs ***** #include int main() { int t,i,j,k; unsigned long goal[1001],max,result,n; scanf("%d",&amp;t); for(i=0;i=0;j--) scanf("%lu",&amp;goal[j]); result=0; for(j=0;jresult) result=max; } } if(result&gt;0) printf("%lun",result); else printf("UNFITn"); } return 0; } Guys please !
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94645"></a> 
+ <div id="c94645" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-94645" class="active">O(n) solution will be</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iamkode_chef">iamkode_chef</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2015 12:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    O(n) solution will be accepted.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99310"></a> 
+ <div id="c99310" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-99310" class="active">what should i do for n=1??</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/manit1212">manit1212</a></strong>
+   <span style="color:#828282"> @ 15 Mar 2015 11:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what should i do for n=1?? plzz
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-100047"></a> 
+ <div id="c100047" class="comment clear-block"> 
+  <h3><a href="/problems/PLAYFIT#comment-100047" class="active">why my code is accepted when</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ravi140">ravi140</a></strong>
+   <span style="color:#828282"> @ 29 Mar 2015 04:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why my code is accepted when the time limit of 2 sec is exceeded???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

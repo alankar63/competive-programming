@@ -1,0 +1,458 @@
+<div id="node-613620" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>Alice and Bob play the following game.They choose a number N to play with.The runs are as follows :</p> 
+  <p>1.Bob plays first and the two players alternate.</p> 
+  <p>2.In his/her turn ,a player can subtract from N any prime number(including 1) less than N.The number thus obtained is the new N.</p> 
+  <p>3.The person who cannot make a move in his/her turn loses the game.</p> 
+  <p>Assuming both play optimally,who wins the game ?</p> 
+  <h3>Input format:</h3> 
+  <p>The first line contains the number of test cases T.Each of the next lines contains an integer N.</p> 
+  <h3>Output format:</h3> 
+  <p>Output T lines one for each test case,containing "ALICE" if Alice wins the game ,or "BOB" if Bob wins the game.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Sample Input:</b>
+2
+1
+2
+<br>
+<b>Sample Output:</b>
+ALICE
+BOB
+<br>
+<b>Constraints:</b>
+1 &lt;= T &lt;= 1000000
+1 &lt;= N &lt;= 1000000000
+</pre>
+  <p> Note : For the first test case, Bob cannot make any move and hence Alice wins the game. For the second test case, Bob subtracts 1 from N. Now, Alice cannot make a move and loses the game.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/nssprogrammer">nssprogrammer</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/rajivka">rajivka</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/NUMGAME2">http://discuss.codechef.com/problems/NUMGAME2</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/april11"> april11 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/nssprogrammer"> nssprogrammer </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>23-11-2010</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/NUMGAME2">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-19400"></a> 
+ <div id="c19400" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-19400" class="active">how is the if(n%4==1)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/navneet604779">navneet604779</a></strong>
+   <span style="color:#828282"> @ 10 Oct 2011 02:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    how is the if(n%4==1) ===&gt;alice else ===&gt;bob is true cause for values like 7,11,15,19,23 alice should be winning but the result given is bob????? also I did not understand what property is used???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19403"></a> 
+ <div id="c19403" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-19403" class="active">i got IT how it works!!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/navneet604779">navneet604779</a></strong>
+   <span style="color:#828282"> @ 10 Oct 2011 03:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i got IT how it works!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19520"></a> 
+ <div id="c19520" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-19520" class="active">Where can I get more Test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vanwilder">vanwilder</a></strong>
+   <span style="color:#828282"> @ 16 Oct 2011 01:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Where can I get more Test cases to check my problem against them?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28282"></a> 
+ <div id="c28282" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-28282" class="active">Please explain me this....</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashu1">ashu1</a></strong>
+   <span style="color:#828282"> @ 8 Jun 2012 12:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please explain me this....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29076"></a> 
+ <div id="c29076" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-29076" class="active">Any one can please explain me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mihirnanavati">mihirnanavati</a></strong>
+   <span style="color:#828282"> @ 4 Jul 2012 08:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Any one can please explain me this mod 4 logic?????thnx in advance
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29315"></a> 
+ <div id="c29315" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-29315" class="active">hey can anyone tell me dat</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sid12">sid12</a></strong>
+   <span style="color:#828282"> @ 12 Jul 2012 04:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hey can anyone tell me dat does optimal solution means number of steps shud be least???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29926"></a> 
+ <div id="c29926" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-29926" class="active">hey...cn u plz tell tht how</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anick_gemini">anick_gemini</a></strong>
+   <span style="color:#828282"> @ 6 Aug 2012 01:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hey...cn u plz tell tht how the %4 logic is working... take n = 7 bob hits first... he subtracts 5...(a prime) n=2; alice subtracts 1; now, n=1; bob loses... then hws %4 logic working ???? plz explain
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-30308"></a> 
+ <div id="c30308" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-30308" class="active">@anick_gemini Both players</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 15 Aug 2012 09:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @anick_gemini Both players play optimally. For n=7, Bob will choose 2 first. n=5, no matter what Alice chooses, Bob will win. You have to work it out for n=1,2,3,5. The rest follows automatically.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31921"></a> 
+ <div id="c31921" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-31921" class="active">@adm why 1 cant be choosen as</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/justme686">justme686</a></strong>
+   <span style="color:#828282"> @ 17 Sep 2012 07:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @adm why 1 cant be choosen as the first prime no to be removed.....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-33787"></a> 
+ <div id="c33787" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-33787" class="active">I am not getting the logic of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cnatka">cnatka</a></strong>
+   <span style="color:#828282"> @ 4 Nov 2012 12:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am not getting the logic of %4. Please tell me the logic behind it. It seems working but the reason i am unable to understand!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-34251"></a> 
+ <div id="c34251" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-34251" class="active">If you try to solve the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/farazahmad">farazahmad</a></strong>
+   <span style="color:#828282"> @ 16 Nov 2012 06:35 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    If you try to solve the problem by playing optimally, you will see that if N = 1,5,9,13,17,....., the first player will lose, otherwise first player will win. e.g., if N = 10,11, or 12 on first player's turn, he can subtract 1,2, and 3 (all primes or 1) respectively to convert it to 9 for other player. Working backwards, 9 will work out to be a losing scenario. 1,5,9,13,17,..... turn out to be (multiples of 4) + 1. That's where the logic of %4 is coming.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35085"></a> 
+ <div id="c35085" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-35085" class="active">How to get to the reasoning</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/programme">programme</a></strong>
+   <span style="color:#828282"> @ 18 Dec 2012 10:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    How to get to the reasoning of n%4 intuitively?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36460"></a> 
+ <div id="c36460" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-36460" class="active">Please dont post answers...</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codersrikant">codersrikant</a></strong>
+   <span style="color:#828282"> @ 24 Jan 2013 09:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please dont post answers...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-51774"></a> 
+ <div id="c51774" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-51774" class="active">Nice one :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sapatcoding">sapatcoding</a></strong>
+   <span style="color:#828282"> @ 13 Aug 2013 03:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Nice one :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-64003"></a> 
+ <div id="c64003" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-64003" class="active">what do you mean optimally?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vinaybagade">vinaybagade</a></strong>
+   <span style="color:#828282"> @ 10 Nov 2013 09:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what do you mean optimally?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71503"></a> 
+ <div id="c71503" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-71503" class="active">can somebody explain me the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/samridhi">samridhi</a></strong>
+   <span style="color:#828282"> @ 21 Jan 2014 09:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can somebody explain me the case for n=4? if bob chooses 1 alice will choose 3 and win if bob chooses 2 alice will choose 2 and win if bob chooses 3 alice will choose 1 and win so ALICE should win, right?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-72051"></a> 
+ <div id="c72051" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-72051" class="active">^No you got to choose a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/a1k24">a1k24</a></strong>
+   <span style="color:#828282"> @ 2 Feb 2014 03:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    ^No you got to choose a number less than N. If BOB chooses 3 ALICE can't choose a number as N becomes 1. Hence ALICE loses,
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-72940"></a> 
+ <div id="c72940" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-72940" class="active">how do u define optimal moves</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nishantlakhara">nishantlakhara</a></strong>
+   <span style="color:#828282"> @ 12 Feb 2014 04:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    how do u define optimal moves in this?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-73056"></a> 
+ <div id="c73056" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-73056" class="active">I like this problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kush14">kush14</a></strong>
+   <span style="color:#828282"> @ 14 Feb 2014 01:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I like this problem
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78312"></a> 
+ <div id="c78312" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-78312" class="active">for test case 100 and 101</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashsasi">ashsasi</a></strong>
+   <span style="color:#828282"> @ 19 May 2014 01:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    for test case 100 and 101 nearest prime no. is 97 now n will be 3 and 4, nearest prime no will be 2 and 3 so now botth n will be 1 and alice will win in both cases but using condition n%4==1 alice wins only in 101 not in 100 please someone explain..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79746"></a> 
+ <div id="c79746" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-79746" class="active">not getting the %4 logic ,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/uniquephase">uniquephase</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2014 05:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    not getting the %4 logic , please somebody explain how people get this logic
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79756"></a> 
+ <div id="c79756" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-79756" class="active">@uniquephase if you will try</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/adi_raj">adi_raj</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2014 10:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @uniquephase if you will try u will find out that when the number is of form n%4==1 like 1,5,9,13,17 the first player loses, otherwise anynumber taken suppose 22 BoB will subtract 1 and its of form n%4==1 and hence Alice loses. work on that u will find out....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81653"></a> 
+ <div id="c81653" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-81653" class="active">Given any n%4 != 1 and it's</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kaq1">kaq1</a></strong>
+   <span style="color:#828282"> @ 18 Jul 2014 06:14 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Given any n%4 != 1 and it's your turn, you can make the other person's turn have n%4 == 1 by subtracting 1, 2, or 3. That person can't make your turn have n%4 == 1 since no prime is a multiple of 4. If you continue with forcing the other person to have n%4 == 1 on their turn, it'll soon decrease to n = 1 (since n always decreases) on their turn, so you win.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81654"></a> 
+ <div id="c81654" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-81654" class="active">For these problems in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kaq1">kaq1</a></strong>
+   <span style="color:#828282"> @ 18 Jul 2014 06:19 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    For these problems in general, try working with small cases. Start with n = 1 and work your way up (n++). For every n, write it on a piece of paper (or anywhere, doesn't really matter). Circle that value if you lose if it's your turn and n = that value. You lose if you can't send the other person to a value with a circle around it. Ex: If n = 1, you lose automatically so circle 1. If n = 2, you can subtract 1 and send the other person to n = 1. For n = 3 and 4, you can subtract 2 and 3 respectively. For n = 5, you can only subtract 1, 2, or 3, so you're forced to let the other person start with a winning number, making your number a losing number. For n = 6, 7, and 8, you can subtract 1, 2, or 3, etc. After doing this, you should try to generalize your observations and figure out why it's true.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83635"></a> 
+ <div id="c83635" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-83635" class="active">If number selected at the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/singh_abhinav">singh_abhinav</a></strong>
+   <span style="color:#828282"> @ 11 Aug 2014 08:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    If number selected at the start is 4... then there can be two cases... 1.First Bob subtracts 2.... new number is 2... then alice subtracts 1 and Bob looses... 2.First Bob subtracts 3.... and alice looses... Please help! does the word "optimally" has something to do with this???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84939"></a> 
+ <div id="c84939" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-84939" class="active">@singh_abhinav playing</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/eisenhover">eisenhover</a></strong>
+   <span style="color:#828282"> @ 7 Sep 2014 08:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @singh_abhinav playing optimally means playing to win, if possible.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102215"></a> 
+ <div id="c102215" class="comment clear-block"> 
+  <h3><a href="/problems/NUMGAME2#comment-102215" class="active">BOB can't win for any N whose</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shreyas_r_k">shreyas_r_k</a></strong>
+   <span style="color:#828282"> @ 21 Apr 2015 01:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    BOB can't win for any N whose mod 4 is 1 (i.e. no matter how BOB plays ALICE always wins ). Apparently, BOB wins in all other cases. So, the only optimal strategy that gives this answer is "BOB wins whenever it is possible for him to win". Though it doesn't sound like an optimal strategy it is in this case.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

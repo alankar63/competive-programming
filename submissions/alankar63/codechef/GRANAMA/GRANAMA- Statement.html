@@ -1,0 +1,229 @@
+<div id="node-1702240" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>Chef has learned a new technique for comparing two recipes. A recipe contains a list of ingredients in increasing order of the times they will be processed. An ingredient is represented by a letter 'a'-'z'. The <b>i</b>-th letter in a recipe denotes the <b>i</b>-th ingredient. An ingredient can be used multiple times in a recipe.</p> 
+  <p>The technique is as follows. Compare two recipes by comparing their respective lists. If the sets of ingredients used in both recipes are equal and each ingredient is used the same number of times in both of them (processing order does not matter), they are declared as <b>granama</b> recipes. ("granama" is the Chef-ian word for "similar".)</p> 
+  <p>Chef took two recipes he invented yesterday. He wanted to compare them using the technique. Unfortunately, Chef forgot to keep track of the number of times each ingredient has been used in a recipe. He only compared the ingredients but NOT their frequencies. More precisely, Chef considers two recipes as granama if there are no ingredients which are used in one recipe and not used in the other recipe.</p> 
+  <p>Your task is to report whether Chef has correctly classified the two recipes (as granama or not granama) although he forgot to keep track of the frequencies.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains a single integer <b>T</b> denoting the number of test cases. The description for <b>T</b> test cases follows. Each test case consists of a single line containing two space-separated strings <b>R</b> and <b>S</b> denoting the two recipes.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing "YES" (quotes for clarity) if Chef correctly classified the two recipes as granama or not granama. Otherwise, output a single line containing "NO" (quotes for clarity) if Chef declared two recipes as granama when they actually are not.</p> 
+  <h3>Constraints</h3> 
+  <p> 1 ? <b>T</b> ? 100<br>1 ? |<b>R</b>|, |<b>S</b>| ? 1000</p> 
+  <h3>Example</h3> 
+  <p><b>Input:</b><br><br></p> 
+  <pre>
+3
+alex axle
+paradise diapers
+alice bob
+
+</pre>
+  <p> <b>Output:</b><br><br></p> 
+  <pre>
+YES
+NO
+YES
+
+</pre>
+  <p> <b>Explanation:</b><br><br></p> 
+  <p>Example case 1: Chef declared them as granama recipes. They are actually granama because the sets of ingredients and the number of times each ingredient has been used are equal. The Chef got it right!</p> 
+  <p>Example case 2: Chef declared them as granama recipes because both sets of ingredients are equal. But they are NOT granama since ingredient 'a' has been used twice in the first recipe but only once in the second. The Chef was incorrect!</p> 
+  <p>Example case 3: Chef declare them as not granama. They are not granama as the sets of ingredients are different. Hence, the Chef was right!</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/vamsi_kavala">vamsi_kavala</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/GRANAMA">http://discuss.codechef.com/problems/GRANAMA</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/dec12"> dec12 </a><a class="problem-tag-small " href="/tags/problems/simple-math"> simple-math </a><a class="problem-tag-small " href="/tags/problems/vamsi_kavala"> vamsi_kavala </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>28-08-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/GRANAMA">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-35885"></a> 
+ <div id="c35885" class="comment clear-block"> 
+  <h3><a href="/problems/GRANAMA#comment-35885" class="active">Can anyone check why I am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/trial2013">trial2013</a></strong>
+   <span style="color:#828282"> @ 9 Jan 2013 10:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone check why I am getting wrong answer as i am implementing the correct logic. Here is my submission 
+    <a href="http://www.codechef.com/viewsolution/1697846" title="http://www.codechef.com/viewsolution/1697846">http://www.codechef.com/viewsolution/1697846</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35886"></a> 
+ <div id="c35886" class="comment clear-block"> 
+  <h3><a href="/problems/GRANAMA#comment-35886" class="active">Solved one silly mistake can</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/trial2013">trial2013</a></strong>
+   <span style="color:#828282"> @ 9 Jan 2013 10:55 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Solved one silly mistake can ruin ur hour :P
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36422"></a> 
+ <div id="c36422" class="comment clear-block"> 
+  <h3><a href="/problems/GRANAMA#comment-36422" class="active">Hi, Can anyone look into my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bhb88">bhb88</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2013 07:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi, Can anyone look into my code and see why my submission is generating wrong answer? 
+    <a href="http://www.codechef.com/viewsolution/1744205" title="http://www.codechef.com/viewsolution/1744205">http://www.codechef.com/viewsolution/1744205</a> As far as I know, I have the logic implemented correctly. Maybe there is a corner case that I am missing. Any help would be very much appreciated. Thanks.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43413"></a> 
+ <div id="c43413" class="comment clear-block"> 
+  <h3><a href="/problems/GRANAMA#comment-43413" class="active">what does the third input</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/fig12_yo">fig12_yo</a></strong>
+   <span style="color:#828282"> @ 17 May 2013 12:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what does the third input mean? how do we know that chef does not consider it granama?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46345"></a> 
+ <div id="c46345" class="comment clear-block"> 
+  <h3><a href="/problems/GRANAMA#comment-46345" class="active">@fig12_yo: Chef considers the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/doubleo">doubleo</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2013 02:19 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @fig12_yo: Chef considers the words 'not granama' if he knows that the words contain different characters.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-72281"></a> 
+ <div id="c72281" class="comment clear-block"> 
+  <h3><a href="/problems/GRANAMA#comment-72281" class="active">Hi,can anyone check why i am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vicky2135">vicky2135</a></strong>
+   <span style="color:#828282"> @ 7 Feb 2014 11:47 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi,can anyone check why i am getting Wrong Answer..Here is My Submission 
+    <a href="http://www.codechef.com/viewsolution/3339598" title="http://www.codechef.com/viewsolution/3339598">http://www.codechef.com/viewsolution/3339598</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86849"></a> 
+ <div id="c86849" class="comment clear-block"> 
+  <h3><a href="/problems/GRANAMA#comment-86849" class="active">how can one make one optimize</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mansigupta19">mansigupta19</a></strong>
+   <span style="color:#828282"> @ 5 Oct 2014 01:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    how can one make one optimize the use of memory in a code? I reduced no. of arrays from 4 to 2, and made some other data type changes but still memory remained 2.2M ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92313"></a> 
+ <div id="c92313" class="comment clear-block"> 
+  <h3><a href="/problems/GRANAMA#comment-92313" class="active">Can someone please tell me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sanyayadav">sanyayadav</a></strong>
+   <span style="color:#828282"> @ 26 Dec 2014 03:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone please tell me why my code is getting a wa. the link to my code is 
+    <a href="http://www.codechef.com/viewsolution/5650186" title="http://www.codechef.com/viewsolution/5650186">http://www.codechef.com/viewsolution/5650186</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101584"></a> 
+ <div id="c101584" class="comment clear-block"> 
+  <h3><a href="/problems/GRANAMA#comment-101584" class="active">Weird problem statement. Took</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bholagabbar">bholagabbar</a></strong>
+   <span style="color:#828282"> @ 10 Apr 2015 04:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Weird problem statement. Took me 3 WAs to realize i was missing 'not granama'. But nice problem (sort of). Makes you cross a street after looking both ways ;)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103811"></a> 
+ <div id="c103811" class="comment clear-block"> 
+  <h3><a href="/problems/GRANAMA#comment-103811" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hmnshgpt455">hmnshgpt455</a></strong>
+   <span style="color:#828282"> @ 15 May 2015 12:30 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6936378" title="http://www.codechef.com/viewsolution/6936378">http://www.codechef.com/viewsolution/6936378</a> why the hell I am getting WA plzz anybody help getting frustrated
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

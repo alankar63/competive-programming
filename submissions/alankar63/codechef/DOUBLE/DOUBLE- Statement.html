@@ -1,0 +1,939 @@
+<div id="node-1062842" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>The <b>palindrome</b> is a string that can be read the same way from left to right and from right to left. For example, strings "aaaaa", "1221", "bbaabb" are <b>palindromes</b>, however the string "chef" is <b>not a palindrome</b> because if we read it from right to left, we will obtain "fehc" that is not the same as "chef".</p> 
+  <p>We call a string a "<b>double string</b>" if it has an even length and the first half of this string is equal to the second half of this string, for example "abab" is a <b>double string</b> because the first half "ab" is equal to the second half "ab", however the string "abba" is <b>not a double string</b> because the first half "ab" is not equal to the second half "ba". The empty string "" is a <b>double string</b>, and its length is <b>0</b>.</p> 
+  <p>Chef doesn't like palindromes, however he likes "double strings". He often likes to change the order of letters in some palindrome and sometimes to remove some symbols from it. Now he wonders: if a <b>palindrome</b> of length <b>N</b> is given, what is the maximal possible number of characters in a "double string"<br> that can be obtained by removing and changing the order of symbols in it?</p> 
+  <h3>Input</h3> 
+  <p>Several test cases are given.<br> The first line of the sample input contains an integer <b>T</b> - the number of test cases.<br> Then, <b>T</b> lines follow.<br> Each line consists of a single integer <b>N</b> - the length of a palindrome.</p> 
+  <h3>Output</h3> 
+  <p>For each test case output a single integer - answer to the problem.</p> 
+  <h3>Constraints</h3> 
+  <p> </p>
+  <ul> 
+   <li>1&lt;=<b>T</b>&lt;=10000</li> 
+   <li>1&lt;=<b>N</b>&lt;=1000000000</li> 
+  </ul> 
+  <p></p>
+  <p></p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+2
+2
+4
+
+<b>Output:</b>
+2
+4
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/xcwgf666">xcwgf666</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/DOUBLE">http://discuss.codechef.com/problems/DOUBLE</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/april12"> april12 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/xcwgf666"> xcwgf666 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>26-02-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/DOUBLE">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-31590"></a> 
+ <div id="c31590" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-31590" class="active">Why isn't anyone doing the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 5 Sep 2012 12:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why isn't anyone doing the simplest thing here? People are using convoluted code for a simple problem.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-34061"></a> 
+ <div id="c34061" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-34061" class="active">can we remove and change the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/desktop">desktop</a></strong>
+   <span style="color:#828282"> @ 9 Nov 2012 07:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can we remove and change the order of letters any no. of times?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35201"></a> 
+ <div id="c35201" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-35201" class="active">wats wrong wid this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gc_nit">gc_nit</a></strong>
+   <span style="color:#828282"> @ 24 Dec 2012 12:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    wats wrong wid this soln??? 
+    <a href="http://www.codechef.com/viewsolution/1647838" title="http://www.codechef.com/viewsolution/1647838">http://www.codechef.com/viewsolution/1647838</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38461"></a> 
+ <div id="c38461" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-38461" class="active">@rahullak : exactly</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sourcewizard">sourcewizard</a></strong>
+   <span style="color:#828282"> @ 20 Feb 2013 02:38 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @rahullak : exactly
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39055"></a> 
+ <div id="c39055" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-39055" class="active">easiest and dumbest question</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sobhagya">sobhagya</a></strong>
+   <span style="color:#828282"> @ 7 Mar 2013 10:56 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    easiest and dumbest question of codechef
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46193"></a> 
+ <div id="c46193" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-46193" class="active">I admit this problem is easy</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harsha_badass">harsha_badass</a></strong>
+   <span style="color:#828282"> @ 17 Jun 2013 10:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I admit this problem is easy as hell once u understand the logic. But some people might not get the point that easily.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46808"></a> 
+ <div id="c46808" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-46808" class="active">@sobhagya Nonsense - there</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/danjmacintyre">danjmacintyre</a></strong>
+   <span style="color:#828282"> @ 2 Jul 2013 08:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @sobhagya Nonsense - there are questions that are even easier and dumber than this - you just need to keep looking!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46809"></a> 
+ <div id="c46809" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-46809" class="active">@rahullak, many of those are</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/danjmacintyre">danjmacintyre</a></strong>
+   <span style="color:#828282"> @ 2 Jul 2013 08:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @rahullak, many of those are missing the point of this exercise. However, some are actually trying to find the solution that uses the least time and smallest amount of memory. For them, optimization is more important than simplicity.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46811"></a> 
+ <div id="c46811" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-46811" class="active">@gc_nit - your solution puts</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/danjmacintyre">danjmacintyre</a></strong>
+   <span style="color:#828282"> @ 2 Jul 2013 09:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @gc_nit - your solution puts all the results on one line. The problem clearly states that each number goes on its own line.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-53926"></a> 
+ <div id="c53926" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-53926" class="active">Feel so confident after doing</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sachinmenezes">sachinmenezes</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2013 10:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Feel so confident after doing this
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-53962"></a> 
+ <div id="c53962" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-53962" class="active">i dont understand this logic.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sks156324">sks156324</a></strong>
+   <span style="color:#828282"> @ 4 Sep 2013 01:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i dont understand this logic. why did they string[length - 1] -=1? plz reply
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-59496"></a> 
+ <div id="c59496" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-59496" class="active">Did I just solve a question</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mitshubh">mitshubh</a></strong>
+   <span style="color:#828282"> @ 14 Oct 2013 10:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Did I just solve a question on CODECHEF in a fraction of a second! @admin - Can there exist a simpler question that this? o_O
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-60518"></a> 
+ <div id="c60518" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-60518" class="active">this is the moooost difficult</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhishek00711">abhishek00711</a></strong>
+   <span style="color:#828282"> @ 18 Oct 2013 06:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    this is the moooost difficult problem on codechef...!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-60882"></a> 
+ <div id="c60882" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-60882" class="active">solution was accepted at</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ganesh1693">ganesh1693</a></strong>
+   <span style="color:#828282"> @ 21 Oct 2013 06:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    solution was accepted at single attempt......feels good.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-60885"></a> 
+ <div id="c60885" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-60885" class="active">solution was accepted at</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ganesh1693">ganesh1693</a></strong>
+   <span style="color:#828282"> @ 21 Oct 2013 06:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    solution was accepted at single attempt......feels good.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-62544"></a> 
+ <div id="c62544" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-62544" class="active">what a shame. It isnt</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cheffe">cheffe</a></strong>
+   <span style="color:#828282"> @ 2 Nov 2013 05:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what a shame. It isnt possible to solve a problem in clojure within the given time
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-67106"></a> 
+ <div id="c67106" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-67106" class="active">"what is the maximal possible</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/axuma">axuma</a></strong>
+   <span style="color:#828282"> @ 11 Dec 2013 06:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    "what is the maximal possible number of characters in a "double string" that can be obtained by removing and changing the order of symbols in it?" This kinda tells you the answer..obviously.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-67772"></a> 
+ <div id="c67772" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-67772" class="active">the problem is the most</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/piyushmahatkar">piyushmahatkar</a></strong>
+   <span style="color:#828282"> @ 15 Dec 2013 12:20 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    the problem is the most easiest. if anyone is able to understand the problem. test cases are not sufficient.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68069"></a> 
+ <div id="c68069" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-68069" class="active">The answer is correct if</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jobinar">jobinar</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2013 10:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The answer is correct if there is a newline at the end of each answer and wrong if a newline isn't present. Why is that so?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71058"></a> 
+ <div id="c71058" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-71058" class="active">clearly read last line and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/krish8764">krish8764</a></strong>
+   <span style="color:#828282"> @ 15 Jan 2014 01:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    clearly read last line and solve ques.....easy ques
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-73955"></a> 
+ <div id="c73955" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-73955" class="active">why do i have to use</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sonam22">sonam22</a></strong>
+   <span style="color:#828282"> @ 28 Feb 2014 03:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why do i have to use getchar_unlocked????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-73956"></a> 
+ <div id="c73956" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-73956" class="active">please someone check my code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sonam22">sonam22</a></strong>
+   <span style="color:#828282"> @ 28 Feb 2014 03:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please someone check my code and tell me why this is not working.. please....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-74505"></a> 
+ <div id="c74505" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-74505" class="active">i got it !!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashish1120054">ashish1120054</a></strong>
+   <span style="color:#828282"> @ 6 Mar 2014 05:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i got it !!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75802"></a> 
+ <div id="c75802" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-75802" class="active">I can't think of any problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mrigank">mrigank</a></strong>
+   <span style="color:#828282"> @ 29 Mar 2014 12:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I can't think of any problem simpler than this!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-76558"></a> 
+ <div id="c76558" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-76558" class="active">Oh! My god what a simple</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sohamlive">sohamlive</a></strong>
+   <span style="color:#828282"> @ 12 Apr 2014 12:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Oh! My god what a simple problem! *Feels happiness*
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-76572"></a> 
+ <div id="c76572" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-76572" class="active">lol! why is this on codechef?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/paralizedgost2">paralizedgost2</a></strong>
+   <span style="color:#828282"> @ 13 Apr 2014 09:35 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    lol! why is this on codechef?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78654"></a> 
+ <div id="c78654" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-78654" class="active">seriously??</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/emo_rs93">emo_rs93</a></strong>
+   <span style="color:#828282"> @ 3 Jun 2014 11:22 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    seriously??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78656"></a> 
+ <div id="c78656" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-78656" class="active">Havent seen an easier problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hmnshgpt455">hmnshgpt455</a></strong>
+   <span style="color:#828282"> @ 3 Jun 2014 01:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Havent seen an easier problem than this
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82202"></a> 
+ <div id="c82202" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-82202" class="active">How is the execution time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vish689">vish689</a></strong>
+   <span style="color:#828282"> @ 30 Jul 2014 03:49 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    How is the execution time calculated? I am a beginner and I tried logics from already submitted programs to minimize the time. I reached 0.06. Then I copied the code submited by another one and jst submited. The original code gave a runtime of 0.00, but when I copied and submited(without any edits) it gave 0.05 for me....?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82222"></a> 
+ <div id="c82222" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-82222" class="active">Question is not clear.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/surendra114">surendra114</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2014 12:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Question is not clear.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83230"></a> 
+ <div id="c83230" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-83230" class="active">stupid waste of time...</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aa996">aa996</a></strong>
+   <span style="color:#828282"> @ 6 Aug 2014 10:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    stupid waste of time...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83254"></a> 
+ <div id="c83254" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-83254" class="active">Got this on second try...</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nixeagle">nixeagle</a></strong>
+   <span style="color:#828282"> @ 7 Aug 2014 12:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Got this on second try... turns out that palindrome of length 1 has 0 possible double strings, not 1 (the empty string) as I thought. Note the specification states that an empty string counts as a double string and that you may remove letters. Thus it *should* be possible to remove the only letter in a palindrome of length 1 and get the empty string.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83745"></a> 
+ <div id="c83745" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-83745" class="active">Toughest problem ever..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/surajeet001">surajeet001</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2014 12:54 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Toughest problem ever.. LOL... :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84288"></a> 
+ <div id="c84288" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-84288" class="active">I thought we have to count</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/haque56">haque56</a></strong>
+   <span style="color:#828282"> @ 31 Aug 2014 03:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I thought we have to count the number of double strings that could be made by given palindrome of length N.if that's the question how it would be solved
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84327"></a> 
+ <div id="c84327" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-84327" class="active">Easiest problem ever seen!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/notforcoding">notforcoding</a></strong>
+   <span style="color:#828282"> @ 31 Aug 2014 11:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Easiest problem ever seen!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84380"></a> 
+ <div id="c84380" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-84380" class="active">i am not able to understand</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/new_bie">new_bie</a></strong>
+   <span style="color:#828282"> @ 1 Sep 2014 11:18 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am not able to understand the question. can anyone please help me ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84494"></a> 
+ <div id="c84494" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-84494" class="active">why it is giving wrong . plx</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tasleem93">tasleem93</a></strong>
+   <span style="color:#828282"> @ 3 Sep 2014 05:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why it is giving wrong . plx explain admin 
+    <a href="http://ideone.com/omgpEh" title="http://ideone.com/omgpEh">http://ideone.com/omgpEh</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84495"></a> 
+ <div id="c84495" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-84495" class="active">how many double string in a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/himesh">himesh</a></strong>
+   <span style="color:#828282"> @ 3 Sep 2014 05:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    how many double string in a palindrome of length 7 ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85129"></a> 
+ <div id="c85129" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-85129" class="active">can anyone explain for 3</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/juggernaut_9w">juggernaut_9w</a></strong>
+   <span style="color:#828282"> @ 10 Sep 2014 10:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone explain for 3 length pal aba 1=aa 2=?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85654"></a> 
+ <div id="c85654" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-85654" class="active">I know this is coming really</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pizza_palace">pizza_palace</a></strong>
+   <span style="color:#828282"> @ 25 Sep 2014 03:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I know this is coming really late but I have some difficulty understanding and input case where N = 4. Lets say, the palindrome of this length is abba. So aa, bb, abab, baba and the empty string "" are all possible outcomes, bringing the output to 5. Why is it 4 instead in the example, could somebody please clarify ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-87387"></a> 
+ <div id="c87387" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-87387" class="active">@pizza_palace the question is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nikhil_152">nikhil_152</a></strong>
+   <span style="color:#828282"> @ 8 Oct 2014 06:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @pizza_palace the question is to find the maximum length of a double string and not the number of double strings formed! :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90417"></a> 
+ <div id="c90417" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-90417" class="active">The toughest problem I ever</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vaiagarwal96@gmail.com">vaiagarwal96@gmail.com</a></strong>
+   <span style="color:#828282"> @ 16 Nov 2014 10:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The toughest problem I ever saw anywhere..... :P
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91091"></a> 
+ <div id="c91091" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-91091" class="active">easiest problem ever seen</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yogicode">yogicode</a></strong>
+   <span style="color:#828282"> @ 2 Dec 2014 06:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    easiest problem ever seen ........ i don't believe this ques. is on codechef...:D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91377"></a> 
+ <div id="c91377" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-91377" class="active">What is wrong with this code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hrishyank_27">hrishyank_27</a></strong>
+   <span style="color:#828282"> @ 7 Dec 2014 12:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What is wrong with this code ? 
+    <a href="http://www.codechef.com/viewsolution/5510594" title="http://www.codechef.com/viewsolution/5510594">http://www.codechef.com/viewsolution/5510594</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91832"></a> 
+ <div id="c91832" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-91832" class="active">OMG... why this question on</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/theencoder">theencoder</a></strong>
+   <span style="color:#828282"> @ 14 Dec 2014 11:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    OMG... why this question on codechef ! easiest !
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91952"></a> 
+ <div id="c91952" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-91952" class="active">I expect it to be at second</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/geeky159">geeky159</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2014 06:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I expect it to be at second last place...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92271"></a> 
+ <div id="c92271" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-92271" class="active">This problem mocks one's self</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/noble_mushtak">noble_mushtak</a></strong>
+   <span style="color:#828282"> @ 25 Dec 2014 04:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    This problem mocks one's self by making it so easy that you will rush through the problem and need multiple tries to get it right... @hrishyank_27 Add newlines to your printf() statements.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92867"></a> 
+ <div id="c92867" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-92867" class="active">woopdidou!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ron1gerbi24">ron1gerbi24</a></strong>
+   <span style="color:#828282"> @ 3 Jan 2015 11:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    woopdidou!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93200"></a> 
+ <div id="c93200" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-93200" class="active">Question is easy and it even</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ivan1981">ivan1981</a></strong>
+   <span style="color:#828282"> @ 7 Jan 2015 05:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Question is easy and it even doesn't have to be said, but quostion is also not clear. Someone could understand it wrong and it wouldn't be because of that person's lack of inteligence or something like that, the qouestion is simply very poor written..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93487"></a> 
+ <div id="c93487" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-93487" class="active">A palindrome cant be an odd</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bailliejr">bailliejr</a></strong>
+   <span style="color:#828282"> @ 12 Jan 2015 02:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    A palindrome cant be an odd length, so I think the input test cases are wrong for this problem?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-96247"></a> 
+ <div id="c96247" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-96247" class="active">wow this is like the third</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anukul">anukul</a></strong>
+   <span style="color:#828282"> @ 9 Feb 2015 02:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    wow this is like the third problem that i'm attempting on codechef and i got it right in the first attempt, took me 5 seconds to code :P @bailliejr : it can be, e.g. racecar
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97130"></a> 
+ <div id="c97130" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-97130" class="active">Is there a bug in the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gavin1dmello23">gavin1dmello23</a></strong>
+   <span style="color:#828282"> @ 19 Feb 2015 08:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Is there a bug in the system?, 'coz my execution time says 2 secs and the time constraint in the problem statement is 1 sec
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97619"></a> 
+ <div id="c97619" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-97619" class="active">Super sexy...</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dhingrachirag">dhingrachirag</a></strong>
+   <span style="color:#828282"> @ 26 Feb 2015 12:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Super sexy...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-98465"></a> 
+ <div id="c98465" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-98465" class="active">someone explain this by</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/suraj95_jain">suraj95_jain</a></strong>
+   <span style="color:#828282"> @ 5 Mar 2015 04:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    someone explain this by taking n=3
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99420"></a> 
+ <div id="c99420" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-99420" class="active">I don't understand the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bkarthikeyan27">bkarthikeyan27</a></strong>
+   <span style="color:#828282"> @ 17 Mar 2015 07:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I don't understand the problem :( please explain what we have to find
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101031"></a> 
+ <div id="c101031" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-101031" class="active">why it is wrong?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/puneet3821">puneet3821</a></strong>
+   <span style="color:#828282"> @ 6 Apr 2015 01:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why it is wrong? 
+    <a href="http://www.codechef.com/viewsolution/6679198" title="http://www.codechef.com/viewsolution/6679198">http://www.codechef.com/viewsolution/6679198</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101695"></a> 
+ <div id="c101695" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-101695" class="active">problem is so easy, we can</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/faiz_bly">faiz_bly</a></strong>
+   <span style="color:#828282"> @ 12 Apr 2015 12:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    problem is so easy, we can not take the n=3 or odd no, because it is clearly mentioned in the problem statement, so problem is so easy just return the length of palindrome, which is always the maximum double string length, aabbaa is palindrome, now its double string is aabaab. so just return the length. one of the easiest problem here.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102704"></a> 
+ <div id="c102704" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-102704" class="active">@FAIZ_bly, why cant we take</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vir_mis">vir_mis</a></strong>
+   <span style="color:#828282"> @ 27 Apr 2015 10:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @FAIZ_bly, why cant we take n=3? aba is a palindrome of length 3
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102705"></a> 
+ <div id="c102705" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-102705" class="active">@FAIZ_bly, why cant we take</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vir_mis">vir_mis</a></strong>
+   <span style="color:#828282"> @ 27 Apr 2015 10:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @FAIZ_bly, why cant we take n=3? aba is a palindrome of length 3
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102706"></a> 
+ <div id="c102706" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-102706" class="active">@bkarthikeyan27 faiz, is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vir_mis">vir_mis</a></strong>
+   <span style="color:#828282"> @ 27 Apr 2015 10:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @bkarthikeyan27 faiz, is nearly correct, but not completely. If the length of palindrome is even, then obviously, the max possible length of double srting has to be equal to the entered length (as the double string has to be formed by either changing order or REMOVING characters) and so if length of palindrome is odd, the ans shud be length-1. Hope its clear now :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102721"></a> 
+ <div id="c102721" class="comment clear-block"> 
+  <h3><a href="/problems/DOUBLE#comment-102721" class="active">much easier than problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sueruan012">sueruan012</a></strong>
+   <span style="color:#828282"> @ 28 Apr 2015 03:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    much easier than problem TEST... but i got AC in the second time :3
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

@@ -1,0 +1,338 @@
+<div id="node-1008133" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> Recently, chef Ciel often hears about <i>lucky numbers</i>. </p> 
+  <hr> 
+  <div align="center"> 
+   <i><br> Everybody knows that lucky numbers are positive integers<br> whose decimal representation contains only the lucky digits 4 and 7.<br> For example, numbers 47, 744, 4 are lucky and 5, 17, 467 are not.<br> </i> 
+  </div> 
+  <hr> 
+  <p> Ciel decides to make <i>Ciel numbers</i>.<br> As you know, Ciel likes the digit 8 very much.<br> And then, Ciel likes the digits 5 and 3.<br> So Ciel defines Ciel numbers as the positive integers <strong>k</strong> such that <strong>d</strong>(<strong>k</strong>, 8) ? <strong>d</strong>(<strong>k</strong>, 5) ? <strong>d</strong>(<strong>k</strong>, 3) and <strong>d</strong>(<strong>k</strong>, <strong>i</strong>) = 0 for all <strong>i</strong> = 0, 1, 2, 4, 6, 7, 9,<br> where <strong>d</strong>(<strong>k</strong>, <strong>i</strong>) denotes the number of the digit <strong>i</strong> in the decimal representation of the integer <strong>k</strong>.<br> For example, the first few Ciel numbers are 8, 58, 85, 88, 358, 385, 538, 583, 588, 835, 853, 858, 885, 888, .... </p> 
+  <p> Ciel's restaurant has <strong>N</strong> menus.<br> And Ciel want to know how many menus have Ciel numbers as their price.<br> Your task is to find it. </p> 
+  <h3>Input</h3> 
+  <p> The first line contains an integer <strong>N</strong>.<br> Then <strong>N</strong> lines follow.<br> Each line has the name <strong>S<sub>i</sub></strong> of the menu and its price <strong>P<sub>i</sub></strong> separated by a single space. </p> 
+  <h3>Output</h3> 
+  <p> Print the number of menus whose prices are one of Ciel numbers. </p> 
+  <h3>Constraints</h3> 
+  <p> 1 ? <strong>N</strong> ? 1000<br> 1 ? |<strong>S<sub>i</sub></strong>| ? 100, where |<strong>S<sub>i</sub></strong>| denotes the length of <strong>S<sub>i</sub></strong><br> Each letter of <strong>S<sub>i</sub></strong> is either an alphabetical letter or a digit or a single quotation mark or a space.<br> 1 ? <strong>P<sub>i</sub></strong> &lt; 1000000 (10<sup>6</sup>)<br> <strong>P<sub>i</sub></strong> contains no leading zeros. </p> 
+  <h3>Sample Input</h3> 
+  <pre>6
+milk 58
+Ciel's Drink 80
+The curry 2nd edition 888888
+rice omelet 85855
+unagi 1
+   The first    and last letters can be a space    358</pre>
+  <h3>Sample Output</h3> 
+  <pre>3</pre>
+  <h3>Output details</h3> 
+  <p> 58 and 888888 and 358 are Ciel numbers.<br> 80 and 85855 and 1 are not Ciel numbers. </p> 
+  <h3>Notes</h3> 
+  <p> Different operating systems have different ways of representing a newline; do not assume one particular way will be used. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/rajivka">rajivka</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CIELNUM2">http://discuss.codechef.com/problems/CIELNUM2</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook20"> cook20 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/laycurse"> laycurse </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>27-02-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CIELNUM2">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-24635"></a> 
+ <div id="c24635" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-24635" class="active">It has not been told that</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sandy_singh">sandy_singh</a></strong>
+   <span style="color:#828282"> @ 19 Mar 2012 01:39 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    It has not been told that there can be space after the price also ??? I got correct answer by rectifying only that mistake.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-24645"></a> 
+ <div id="c24645" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-24645" class="active">I am getting wa and here is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aman05">aman05</a></strong>
+   <span style="color:#828282"> @ 19 Mar 2012 02:18 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting wa and here is my solution:http://www.codechef.com/viewsolution/922287 I am unable to think of a case where it can go wrong. Can somebody tell what is the mistake I am making.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-24669"></a> 
+ <div id="c24669" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-24669" class="active">Just tell me one single test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/swaprocks123">swaprocks123</a></strong>
+   <span style="color:#828282"> @ 19 Mar 2012 10:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Just tell me one single test case where the solution will fail..... 
+    <a href="http://www.codechef.com/viewsolution/923357" title="http://www.codechef.com/viewsolution/923357">http://www.codechef.com/viewsolution/923357</a> tried all possibilities.....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-24671"></a> 
+ <div id="c24671" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-24671" class="active">i did scanf("%d",&amp;T); to get</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/singh_637">singh_637</a></strong>
+   <span style="color:#828282"> @ 19 Mar 2012 10:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i did scanf("%d",&amp;T); to get no. of menus ....was getting wrong answer in contest got correct answer after scanf("%dn",&amp;T);
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-24681"></a> 
+ <div id="c24681" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-24681" class="active">@singh_637 I think in the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aman05">aman05</a></strong>
+   <span style="color:#828282"> @ 20 Mar 2012 05:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @singh_637 I think in the earlier case you missed the newline character which is at the end of the first line and that messed up the whole input for you. If this answers your question can you tell what is wrong with my code 2 comments above.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-24685"></a> 
+ <div id="c24685" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-24685" class="active">@aman05 : i guess your logic</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/swaprocks123">swaprocks123</a></strong>
+   <span style="color:#828282"> @ 21 Mar 2012 03:06 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @aman05 : i guess your logic is also to start from end of string till first space and check for ciel number.....i have also done the same....and just wanna know why it is not working......
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25653"></a> 
+ <div id="c25653" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-25653" class="active">i think there is a bug in the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/temp">temp</a></strong>
+   <span style="color:#828282"> @ 14 Apr 2012 01:18 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i think there is a bug in the testing program.. just try to optimize the accepted ones and u'll surprised to see it will show a WA.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28730"></a> 
+ <div id="c28730" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-28730" class="active">i used this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nitish712">nitish712</a></strong>
+   <span style="color:#828282"> @ 24 Jun 2012 06:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i used this logic....while(cin&gt;&gt;a &amp;&amp; cin.get(t) &amp;&amp; t!='n'){ } where a is string and t is char.... after this loop it stores the number.... exactly.... but thats not working.... are there any spaces aftter the price also????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-32657"></a> 
+ <div id="c32657" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-32657" class="active">why my code is wrong , please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sonesh">sonesh</a></strong>
+   <span style="color:#828282"> @ 4 Oct 2012 03:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why my code is wrong , please help....!!!!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-33118"></a> 
+ <div id="c33118" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-33118" class="active">this was a bitch</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/swas_99">swas_99</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2012 06:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    this was a bitch
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-33469"></a> 
+ <div id="c33469" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-33469" class="active">y am i getting a runtime</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vemprala1992">vemprala1992</a></strong>
+   <span style="color:#828282"> @ 28 Oct 2012 11:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    y am i getting a runtime error! can anyone pls check my code? 
+    <a href="http://www.codechef.com/viewsolution/1500551" title="http://www.codechef.com/viewsolution/1500551">http://www.codechef.com/viewsolution/1500551</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40171"></a> 
+ <div id="c40171" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-40171" class="active">@swas_99 totally agree,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ovimt">ovimt</a></strong>
+   <span style="color:#828282"> @ 28 Mar 2013 09:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @swas_99 totally agree, complete waste of time
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49103"></a> 
+ <div id="c49103" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-49103" class="active">Waste of time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sobhagya">sobhagya</a></strong>
+   <span style="color:#828282"> @ 19 Jul 2013 04:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Waste of time
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-56235"></a> 
+ <div id="c56235" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-56235" class="active">waste of time..!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/code_billmark">code_billmark</a></strong>
+   <span style="color:#828282"> @ 25 Sep 2013 09:09 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    waste of time..!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-76025"></a> 
+ <div id="c76025" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-76025" class="active">Any idea what I am doing</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/k1026501">k1026501</a></strong>
+   <span style="color:#828282"> @ 3 Apr 2014 07:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Any idea what I am doing wrong? 
+    <a href="http://www.codechef.com/viewsolution/3660771" title="http://www.codechef.com/viewsolution/3660771">http://www.codechef.com/viewsolution/3660771</a> I literally copied the program structure from one of the accepted programs... It was driving me mad...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-76961"></a> 
+ <div id="c76961" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-76961" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/devenderissar">devenderissar</a></strong>
+   <span style="color:#828282"> @ 20 Apr 2014 12:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/3781391" title="http://www.codechef.com/viewsolution/3781391">http://www.codechef.com/viewsolution/3781391</a> please tell me what is wrong with my code..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78393"></a> 
+ <div id="c78393" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-78393" class="active">TO ALL THOSE PEOPLE WHO ARE</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/empty_life">empty_life</a></strong>
+   <span style="color:#828282"> @ 24 May 2014 01:54 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    TO ALL THOSE PEOPLE WHO ARE SOLVING THIS QUESTION READ BELOW : 1.THIS QUESTION TEST CASES HAVE ERRORS. ERROR IS IN 'N'. IN ONE TEST CASE N IS SPECIFIED ALONG WITH 2 CHARACTERS FURTHER. HENCE :scanf("%d",&amp;n); WILL GIVE YOU ALL WRONG ANSWER. HENCE USE : scanf("%d",&amp;n); getchar(); getchar(); YES , USE THEM 2 TIMES TO GET THE RIGHT INPUT OR USE gets(string) TO ELIMINATE ERROR . @LAYCURSE PLEASE RECTIFY THIS ERROR AND DO NOT POST SUCH QUESTIONS WHICH HAVE WRONG TEST CASES.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89510"></a> 
+ <div id="c89510" class="comment clear-block"> 
+  <h3><a href="/problems/CIELNUM2#comment-89510" class="active">a \\n at the end of scanf(N)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ajinkya1p3">ajinkya1p3</a></strong>
+   <span style="color:#828282"> @ 5 Nov 2014 03:54 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    a \n at the end of scanf(N) gave the AC!! -_-
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

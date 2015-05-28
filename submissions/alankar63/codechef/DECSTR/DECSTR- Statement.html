@@ -1,0 +1,547 @@
+<div id="node-433490" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <h3> Statement </h3> 
+  <p> You need to find a string which has exactly K positions in it such that the character at that position comes alphabetically later than the character immediately after it. If there are many such strings, print the one which has the shortest length. If there is still a tie, print the string which comes the lexicographically earliest (would occur earlier in a dictionary). </p> 
+  <h3>Input</h3> 
+  <p>The first line contains the number of test cases T. Each test case contains an integer K (? 100).</p> 
+  <h3>Output</h3> 
+  <p>Output T lines, one for each test case, containing the required string. Use only lower-case letters a-z.</p> 
+  <h3>Sample Input </h3> 
+  <pre>
+2
+1
+2
+</pre>
+  <h3>Sample Output</h3> 
+  <pre>
+ba
+cba
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/anshuman_singh">anshuman_singh</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/anshuman_singh"> anshuman_singh </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>10-09-2010</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/DECSTR">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-11050"></a> 
+ <div id="c11050" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-11050" class="active">If 'K' doesn't exceed 100 how</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/zingoba">zingoba</a></strong>
+   <span style="color:#828282"> @ 2 Oct 2010 02:45 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>If 'K' doesn't exceed 100 how can the following code produce runtime error?</p> 
+    <p><br>#include&lt;iostream&gt;<br>#include&lt;string&gt;<br>using namespace std;<br><br>int main()<br>{<br> int t;<br> string s="zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba",s2;<br> scanf("%d",&amp;t);<br> while( scanf("%d",&amp;t))<br> {<br> s2.clear();<br> t+=t/26;<br> s2.assign(s.end()-t-1,s.end());<br> cout&lt;&lt;s2;<br> printf("n");<br> }<br> return 0;<br>}</p> 
+    <p>Thought this code would be faster than the other one which exceeded the time limit. Does "time limit exceeded" mean the code has produced the correct/required output but not in time or is it just that the program</p> 
+    <p>stopped after the time limit not necessarily producing the correct output?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11052"></a> 
+ <div id="c11052" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-11052" class="active">Time limit exceeded means</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 2 Oct 2010 03:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Time limit exceeded means your program exceeded the time limit. Nothing else. (See the <a href="/freelinking/FAQ" class="freelinking">FAQ</a>).</p> 
+    <p>You are getting a runtime exception since your while loop will never finish. You should read up documentation on what scanf returns.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11055"></a> 
+ <div id="c11055" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-11055" class="active">I have used while with cin</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/zingoba">zingoba</a></strong>
+   <span style="color:#828282"> @ 2 Oct 2010 03:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I have used <em>while</em> with <em>cin</em> that way before which on submission gave correct answer, thought <em>scanf</em> would do the same in lesser time. sorry, my bad! Thanks for <em>TLE</em> clarification.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11321"></a> 
+ <div id="c11321" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-11321" class="active">wat happens wen K&gt;26..please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bharathgowri">bharathgowri</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2010 07:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>wat happens wen K&gt;26..please give me a testcase..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11437"></a> 
+ <div id="c11437" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-11437" class="active">Somebody please tell me why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/javadecoder">javadecoder</a></strong>
+   <span style="color:#828282"> @ 16 Oct 2010 07:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Somebody please tell me why am I getting a wrong answer!!,please help!!</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11469"></a> 
+ <div id="c11469" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-11469" class="active">I m not able to understand</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ish7">ish7</a></strong>
+   <span style="color:#828282"> @ 19 Oct 2010 10:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I m not able to understand the problem correctly regarding to what output pattern it shud print for K&gt;26?...if somebody understood, plz explain....</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11470"></a> 
+ <div id="c11470" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-11470" class="active">I m not able to understand</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ish7">ish7</a></strong>
+   <span style="color:#828282"> @ 19 Oct 2010 10:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I m not able to understand the problem correctly regarding to what output pattern it shud print for K&gt;26?...if somebody understood, plz explain....</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11476"></a> 
+ <div id="c11476" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-11476" class="active">Exactly the same as you would</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 20 Oct 2010 01:53 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Exactly the same as you would print if K &lt;= 26.. there's no difference. Perhaps you have misread what K is; it is nothing to do with the number of different characters.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11490"></a> 
+ <div id="c11490" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-11490" class="active">Thnx!!..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ish7">ish7</a></strong>
+   <span style="color:#828282"> @ 20 Oct 2010 02:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Thnx!!..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16410"></a> 
+ <div id="c16410" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-16410" class="active">i guess i m unable to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ronakag">ronakag</a></strong>
+   <span style="color:#828282"> @ 26 May 2011 12:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i guess i m unable to undertand...Pls elaborate what k is and what the qns is actally askin
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16421"></a> 
+ <div id="c16421" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-16421" class="active">Oh got it... If k = 2 the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ronakag">ronakag</a></strong>
+   <span style="color:#828282"> @ 28 May 2011 11:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Oh got it... If k = 2 the output shall be cba as it gives two pairs c&gt;b &amp;&amp; b&gt;a x[2]&gt;x[1] &amp;&amp; x[1]&gt;x[0]
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17115"></a> 
+ <div id="c17115" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-17115" class="active">Hi.My code always gives</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/karan_k">karan_k</a></strong>
+   <span style="color:#828282"> @ 22 Jun 2011 08:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi.My code always gives RUNTIME ERROR(OTHER).But it runs fine on my PC.Could anyone help me out here.This is a copy of the code: import java.util.*; class findkstr { String sample="abcdefghijklmnopqrstuvwxyz"; int n; int tc[]; String ans[]; String rev_sample=""; void read() { Scanner s=new Scanner(System.in); n=s.nextInt(); tc=new int[n]; ans=new String[n]; for(int i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17757"></a> 
+ <div id="c17757" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-17757" class="active">#include int main(){ int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sanjeet">sanjeet</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2011 12:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int main(){ int t, k, c, i, count; scanf("%d", &amp;t); while(t--){ scanf("%d", &amp;k); count = k; c = 96; for( i=0; i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17758"></a> 
+ <div id="c17758" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-17758" class="active">#include int main(){ int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sanjeet">sanjeet</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2011 12:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int main(){ int t, k, c, i, count; scanf("%d", &amp;t); while(t--){ scanf("%d", &amp;k); count = k; c = 96; for( i=0; i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-21580"></a> 
+ <div id="c21580" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-21580" class="active">@admin Cannot answer to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashishnegi001">ashishnegi001</a></strong>
+   <span style="color:#828282"> @ 29 Jan 2012 11:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin Cannot answer to second test case be baba since it is lexicographically before cba and there are only 2 cases: [2] &lt; [1] (a
+    <b please="" help=""></b>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-21581"></a> 
+ <div id="c21581" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-21581" class="active">@admin Cannot answer to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashishnegi001">ashishnegi001</a></strong>
+   <span style="color:#828282"> @ 29 Jan 2012 11:12 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin Cannot answer to second test case be " baba " since it is lexicographically before "cba" and there are only 2 cases: [2] &lt; [1] (a smaller than b) [4] &lt; [3] (a smaller than b)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27001"></a> 
+ <div id="c27001" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-27001" class="active">main() { int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mjnovice">mjnovice</a></strong>
+   <span style="color:#828282"> @ 21 May 2012 06:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    main() { int t,p,k,noa; scanf("%d",&amp;t); while(t--) { scanf("%d",&amp;k); noa=(k%26)?(k/26+1):(k/26); k+=noa; p=k%26; while(k--) { if(p==0) {p=26;} printf("%c",96+p); p--; }printf("n"); } return 0; } wats wrong in this?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27002"></a> 
+ <div id="c27002" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-27002" class="active">@ashish first we look for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mjnovice">mjnovice</a></strong>
+   <span style="color:#828282"> @ 21 May 2012 06:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ashish first we look for shortest answer then we apply the lexicographc rule
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-33223"></a> 
+ <div id="c33223" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-33223" class="active">@admin - when K &gt; 26 &amp;&amp; the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/narutouzumaki">narutouzumaki</a></strong>
+   <span style="color:#828282"> @ 20 Oct 2012 04:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin - when K &gt; 26 &amp;&amp; the condition that "character at that position comes alphabetically later than the character immediately after it." satisfies with substring 'ba' and 'az'.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-41443"></a> 
+ <div id="c41443" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-41443" class="active">@admin - when K &gt; 26 &amp;&amp; the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akshaymanihar">akshaymanihar</a></strong>
+   <span style="color:#828282"> @ 25 Apr 2013 03:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin - when K &gt; 26 &amp;&amp; the condition that "character at that position comes alphabetically later than the character immediately after it." satisfies with substring 'ba' and 'az'.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-41577"></a> 
+ <div id="c41577" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-41577" class="active">in the case that a is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/classius95">classius95</a></strong>
+   <span style="color:#828282"> @ 2 May 2013 06:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    in the case that a is considered greater than z, why couldn't the example output "az" and "azy"?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46409"></a> 
+ <div id="c46409" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-46409" class="active">what is my error my program</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codelearner20">codelearner20</a></strong>
+   <span style="color:#828282"> @ 23 Jun 2013 11:24 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is my error my program is showing all the output correctly .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49062"></a> 
+ <div id="c49062" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-49062" class="active">What is the output for k=29</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ekta1994">ekta1994</a></strong>
+   <span style="color:#828282"> @ 17 Jul 2013 09:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What is the output for k=29 and 30??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-51810"></a> 
+ <div id="c51810" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-51810" class="active">@question setter if we go</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chalubhalu">chalubhalu</a></strong>
+   <span style="color:#828282"> @ 14 Aug 2013 11:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @question setter if we go lexicographically then should the given out put for 2 1 2 be az azy
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65568"></a> 
+ <div id="c65568" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-65568" class="active">#include #include </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arushi1011">arushi1011</a></strong>
+   <span style="color:#828282"> @ 5 Dec 2013 02:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include int main() { int t; scanf("%d",&amp;t); while(t--) { int k; scanf("%d",&amp;k); if(k!=0) { int p=0,i; int u=k/26; char *a=(char*)malloc((u+k+1)*sizeof(char)); for(i=0;i&lt;=k+u;i++) { a[i]='a'+p; if('a'+p=='z') { p=-1; } p++; } for(i=k+u;i&gt;=0;i--) { printf("%c",a[i]); } printf("n"); } } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-66702"></a> 
+ <div id="c66702" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-66702" class="active">I don't have this clear.When</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/axuma">axuma</a></strong>
+   <span style="color:#828282"> @ 9 Dec 2013 06:57 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I don't have this clear.When k=26 if we have zyxwv.... then k=27 like azyxwv... is not valid, or am i wrong?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71886"></a> 
+ <div id="c71886" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-71886" class="active">what is the test output for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gargumesh">gargumesh</a></strong>
+   <span style="color:#828282"> @ 1 Feb 2014 12:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is the test output for k&gt;=26 ?..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75754"></a> 
+ <div id="c75754" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-75754" class="active">for k=26 the output</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cool_techie">cool_techie</a></strong>
+   <span style="color:#828282"> @ 24 Mar 2014 04:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    for k=26 the output is bazyxwvutsrqponmlkjihgfedcba for k=27 cbazyxwvutsrqponmlkjihgfedcba
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78587"></a> 
+ <div id="c78587" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-78587" class="active">I have tested for almost all</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/priyankpalod">priyankpalod</a></strong>
+   <span style="color:#828282"> @ 29 May 2014 03:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I have tested for almost all inputs, I have confirmed the correctness of my logic, but still it is giving it as wrong answer.. Please Help! 
+    <a href="http://www.codechef.com/viewsolution/3954350" title="http://www.codechef.com/viewsolution/3954350">http://www.codechef.com/viewsolution/3954350</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85958"></a> 
+ <div id="c85958" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-85958" class="active">will you please tell what's</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kantshri20">kantshri20</a></strong>
+   <span style="color:#828282"> @ 29 Sep 2014 09:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    will you please tell what's wrong with my code? #include void main() { int t,n,a; char c; scanf("%d", &amp;t); while(t--) { printf("n"); scanf("%d", &amp;n); for(a=97+n;a&gt;=97;a--) { c=(char)a; printf("%c", c); } } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91003"></a> 
+ <div id="c91003" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-91003" class="active">every one should check out</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mb13mb13_1995">mb13mb13_1995</a></strong>
+   <span style="color:#828282"> @ 29 Nov 2014 02:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    every one should check out their programs for the inputs of 25,26,27,49,50,51.... Best of luck everyone...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91542"></a> 
+ <div id="c91542" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-91542" class="active">Can anyone please tell the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kp_programmer">kp_programmer</a></strong>
+   <span style="color:#828282"> @ 9 Dec 2014 07:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone please tell the output when k=0? Is it "a" or null?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92322"></a> 
+ <div id="c92322" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-92322" class="active">plz tell me the error in my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dev987">dev987</a></strong>
+   <span style="color:#828282"> @ 26 Dec 2014 09:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plz tell me the error in my code 
+    <a href="http://www.codechef.com/viewsolution/5651562" title="http://www.codechef.com/viewsolution/5651562">http://www.codechef.com/viewsolution/5651562</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104122"></a> 
+ <div id="c104122" class="comment clear-block"> 
+  <h3><a href="/problems/DECSTR#comment-104122" class="active">int main() { int t; </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bhawin91">bhawin91</a></strong>
+   <span style="color:#828282"> @ 21 May 2015 04:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    int main() { int t; cin&gt;&gt;t; for(int n=0;n&gt;k; int rem = k % 26; int div = k / 26; do { cout&lt;&lt;(char)(97+rem); }while(rem--); while(div--) { cout&lt;&lt;"zyxwvutsrqponmlkjihgfedcba"; } cout&lt;
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

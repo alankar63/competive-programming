@@ -1,0 +1,133 @@
+<div id="node-3407158" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <p> Given two matrices <b>A</b> and <b>B</b>. Both have <b>N</b> rows and <b>M</b> columns. In the matrix <b>A</b>, numbers from <b>1</b> to <b>MN</b> have been written in row major order. Row major order numbers cells from left to right, and top to bottom. That is,</p> 
+  <pre>
+           1                  2                 3             ...     M
+A  =    M+1             M+2            M+3        ...     2M
+          2M+1           2M+2          2M+3       ...   3M
+           .                   .                  .              ...      .
+           .                   .                  .               ...      .
+         (N-1)M+1    (N-1)M+2    (N-1)M+3   ...   NM
+</pre> 
+  <p> Similarly, in the matrix <b>B</b>, numbers from <b>1</b> to <b>MN</b> have been written in column major order. Column major order numbers cells from top to bottom and left to right.</p> 
+  <p>You are to count number of pairs <b>(i,j)</b> such that <b>A<sub>i,j</sub>=B<sub>i,j</sub></b>.</p> 
+  <p></p>
+  <h3>Input</h3> 
+  <p></p>
+  <p>The input consists of multiple test cases. The first line of input contains a single integer <b>T</b>, the number of test cases. <b>T</b> test cases follow. Each test case is described by one line containing two space separated integers, <b>N</b> and <b>M</b></p> 
+  <p></p>
+  <h3>Output</h3> 
+  <p></p>
+  <p>Output <b>T</b> lines, i<sup>th</sup> line containing answer of the i<sup>th</sup> test case.</p> 
+  <p></p>
+  <h3>Constraints</h3> 
+  <ul> 
+   <b></b>
+  </ul>
+  <p></p> 
+  <li> 1 ? T ? 10<sup>5</sup> </li>
+  <li> 1 ? N, M ? 10<sup>9</sup> <p></p><h3>Example</h3> <pre><b>Input:</b>
+1
+4 5
+<p>
+
+<b>Output:</b>
+2
+</p></pre><p></p><p></p><h3>Explanation</h3> <p></p><p>For the first case two matrices look as follows:<br> <br><br> <b>A</b>=<br><br> 1 2 3 4 5<br><br> 6 7 8 9 10<br><br> 11 12 13 14 15<br><br> 16 17 18 19 20<br></p> <p><b>B</b>=<br><br> 1 5 9 13 17<br><br> 2 6 10 14 18<br><br> 3 7 11 15 19<br><br> 4 8 12 16 20<br></p> <p> <b>A<sub>1,1</sub>=B<sub>1,1</sub></b><br><br> <b>A<sub>4,5</sub>=B<sub>4,5</sub></b> </p> </li> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/Rubanenko">Rubanenko</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/utkarsh_lath">utkarsh_lath</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/RRMATRIX">http://discuss.codechef.com/problems/RRMATRIX</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/Rubanenko"> Rubanenko </a><a class="problem-tag-small " href="/tags/problems/basic-maths"> basic-maths </a><a class="problem-tag-small " href="/tags/problems/cook38"> cook38 </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>4-09-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/RRMATRIX">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-56184"></a> 
+ <div id="c56184" class="comment clear-block"> 
+  <h3><a href="/problems/RRMATRIX#comment-56184" class="active">I am getting SIGSEGV runtime</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahulgr8888">rahulgr8888</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2013 12:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting SIGSEGV runtime error while the program runs awesomly on 
+    <a href="http://www.ideone.com" title="www.ideone.com">www.ideone.com</a> What do I do? 
+    <a href="http://www.codechef.com/viewsolution/2706357" title="http://www.codechef.com/viewsolution/2706357">http://www.codechef.com/viewsolution/2706357</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-56190"></a> 
+ <div id="c56190" class="comment clear-block"> 
+  <h3><a href="/problems/RRMATRIX#comment-56190" class="active">@rahulgr8888 &gt;&gt; the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saikiranboga11">saikiranboga11</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2013 12:55 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @rahulgr8888 &gt;&gt; the constraints for N and M are very large, u can't create a matrix/array of that large size(matrix/array of 10^18 size). You are declaring only 100 size matrices A and B which would work only for N&lt;=10 and M&lt;=10.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-98884"></a> 
+ <div id="c98884" class="comment clear-block"> 
+  <h3><a href="/problems/RRMATRIX#comment-98884" class="active">There is a typo in the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/deckeresq">deckeresq</a></strong>
+   <span style="color:#828282"> @ 10 Mar 2015 12:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    There is a typo in the prompt. A should be going to NM, not MN.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

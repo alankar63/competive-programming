@@ -1,0 +1,666 @@
+<div id="node-2008696" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>A tourist is visiting Byteland. The tourist knows English very well. The language of Byteland is rather different from English. To be exact it differs in following points:</p> 
+  <ul> 
+   <li>Bytelandian alphabet has the same letters as English one, but possibly different in meaning. Like 'A' in Bytelandian may be 'M' in English. However this does <b>not</b> mean that 'M' in Bytelandian must be 'A' in English. More formally, Bytelindian alphabet is a permutation of English alphabet. It will be given to you and could be any possible permutation. Don't assume any other condition.</li> 
+   <li>People of Byteland don't like to use invisible character for separating words. Hence instead of space (' ') they use underscore ('_'). Other punctuation symbols, like '?', '!' remain the same as in English.</li> 
+  </ul> 
+  <p>The tourist is carrying "The dummies guide to Bytelandian", for translation. The book is serving his purpose nicely. But he is addicted to sharing on BaceFook, and shares his numerous conversations in Byteland on it. The conversations are rather long, and it is quite tedious to translate for his English friends, so he asks you to help him by writing a program to do the same.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b>, denoting the length of the conversation, and the string <b>M</b>, denoting the English translation of Bytelandian string <b>"abcdefghijklmnopqrstuvwxyz"</b>. <b>T</b> and <b>M</b> are separated by exactly one space. Then <b>T</b> lines follow, each containing a Bytelandian sentence <b>S</b> which you should translate into English. See constraints for details.</p> 
+  <h3>Output</h3> 
+  <p>For each of the sentence in the input, output its English translation on a separate line. Replace each underscores ('_') with a space (' ') in the output. Each punctuation symbol (see below) should remain the same. Note that the uppercase letters in Bytelandian remain uppercase in English, and lowercase letters remain lowercase. See the example and its explanation for clarity.</p> 
+  <h3>Constraints</h3> 
+  <p></p>
+  <ul> 
+   <li><b>1</b> ? <b>T</b> ? <b>100</b></li> 
+   <li><b>M</b> is a permutation of <b>"abcdefghijklmnopqrstuvwxyz"</b></li> 
+   <li>Each sentence is non-empty and contains at most <b>100</b> characters</li> 
+   <li>Each sentence may contain only lowercase letters ('a'-'z'), uppercase letters ('A'-'Z'), underscores ('_') and punctuation symbols: dot ('.'), comma (','), exclamation ('!'), question-mark('?')</li> 
+  </ul> 
+  <p></p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+5 qwertyuiopasdfghjklzxcvbnm
+Ph
+Pcssi
+Bpke_kdc_epclc_jcijsc_mihyo?
+Epcf_kdc_liswhyo_EIED_hy_Vimcvpcn_Zkdvp_siyo_viyecle.
+Ipp!
+
+<b>Output:</b>
+Hi
+Hello
+What are these people doing?
+They are solving TOTR in Codechef March long contest.
+Ohh!
+</pre>
+  <h3>Explanation</h3> 
+  <p>The string "qwertyuiopasdfghjklzxcvbnm" means that 'a' in Bytelandian is 'q' in English, 'b' in Bytelandian is 'w' in English, 'c' in Bytelandian is 'e' in English and so on.<br>Thus to translate "Ph" (first sentence in example) to English:<br>1) We find that 'p' in Bytelandian means 'h' in English. So we replace 'P' with 'H'.<br>2) Then we see that 'h' in Bytelandian means 'i' in English. So we replace 'h' with 'i'.<br>3) Therefore, the translation is "Hi".<br><br><br><br></p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/vinayak garg">vinayak garg</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/anton_lunyov">anton_lunyov</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/TOTR">http://discuss.codechef.com/problems/TOTR</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/march13"> march13 </a><a class="problem-tag-small " href="/tags/problems/permutation"> permutation </a><a class="problem-tag-small " href="/tags/problems/vinayak garg"> vinayak garg </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>7-09-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/TOTR">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-39719"></a> 
+ <div id="c39719" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-39719" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/guptakeshav94">guptakeshav94</a></strong>
+   <span style="color:#828282"> @ 13 Mar 2013 10:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/1938835" title="http://www.codechef.com/viewsolution/1938835">http://www.codechef.com/viewsolution/1938835</a> Please help me. Why am I getting wrong answer with this?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39720"></a> 
+ <div id="c39720" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-39720" class="active">@guptakeshav94 : Change the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 13 Mar 2013 11:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @guptakeshav94 : Change the line scanf("%[^n]s", str); to scanf("%s",str) and then it works fine .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39723"></a> 
+ <div id="c39723" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-39723" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/obmjo">obmjo</a></strong>
+   <span style="color:#828282"> @ 14 Mar 2013 12:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/1934107" title="http://www.codechef.com/viewsolution/1934107">http://www.codechef.com/viewsolution/1934107</a> getting WA somebody please check it!!! help highly required ..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39729"></a> 
+ <div id="c39729" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-39729" class="active">@vineetpaliwal Thanks. Got</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/guptakeshav94">guptakeshav94</a></strong>
+   <span style="color:#828282"> @ 14 Mar 2013 06:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vineetpaliwal Thanks. Got correct answer. :) I didnt read carefully that we cannot accept an "invisible character".
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39735"></a> 
+ <div id="c39735" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-39735" class="active">@obmjo : There are two errors</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 14 Mar 2013 11:18 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @obmjo : There are two errors in your code . 1. You are not printing the characters . You are missing this at 3 places . i. if(ch=='_') { ch=' '; printf("%c",ch); } ii. ch=toupper(ch); printf("%c",ch); iii. } ch=b[i]; printf("%c",ch); These are three places you should add printf statement to output your decision . I have put 1 or two lines before printf also so that you can recognize which place i am talking about . 2. printf("n"); This line should be just below or above t-- . This statement should be last statement of this while loop : while(t!=0) . Currently it is the last statement of the other while loop . After both these corrections your code works fine as I have checked .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39764"></a> 
+ <div id="c39764" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-39764" class="active">@vineetpaliwal:thanx at least</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/obmjo">obmjo</a></strong>
+   <span style="color:#828282"> @ 14 Mar 2013 08:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vineetpaliwal:thanx at least there are people like u who help others....but still WA......i m just fedup with this and i m leaving this problem.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39766"></a> 
+ <div id="c39766" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-39766" class="active">@obmjo : Give me a link to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 14 Mar 2013 10:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @obmjo : Give me a link to your submission . I will have a look .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39775"></a> 
+ <div id="c39775" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-39775" class="active">@obmjo: your code is giving</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/himanshujaju">himanshujaju</a></strong>
+   <span style="color:#828282"> @ 15 Mar 2013 06:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @obmjo: your code is giving four lines output instead of five. 
+    <a href="http://ideone.com/nkOITu" title="http://ideone.com/nkOITu">http://ideone.com/nkOITu</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40156"></a> 
+ <div id="c40156" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-40156" class="active">WA. Why? it runs perfectly on</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/avonnadozie1">avonnadozie1</a></strong>
+   <span style="color:#828282"> @ 27 Mar 2013 01:27 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    WA. Why? it runs perfectly on my PC. 
+    <a href="http://www.codechef.com/viewsolution/1967108" title="http://www.codechef.com/viewsolution/1967108">http://www.codechef.com/viewsolution/1967108</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40158"></a> 
+ <div id="c40158" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-40158" class="active">@avonnadozie1 : You class in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineetpaliwal">vineetpaliwal</a></strong>
+   <span style="color:#828282"> @ 27 Mar 2013 11:44 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @avonnadozie1 : You class in named TT , you should name it as "Main" . You need to name your class "Main" for all your Java language submissions .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40164"></a> 
+ <div id="c40164" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-40164" class="active">@vineetpaliwal: that is not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aichemzee">aichemzee</a></strong>
+   <span style="color:#828282"> @ 27 Mar 2013 09:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vineetpaliwal: that is not necessary as long as you don't use public for class declaration. i.e. class TT should work fine.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40179"></a> 
+ <div id="c40179" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-40179" class="active">@vineetpaliwal: Can you tell</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sambuddha">sambuddha</a></strong>
+   <span style="color:#828282"> @ 29 Mar 2013 06:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vineetpaliwal: Can you tell me why its giving wrong answer??? 
+    <a href="http://www.codechef.com/viewsolution/1970340" title="http://www.codechef.com/viewsolution/1970340">http://www.codechef.com/viewsolution/1970340</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40181"></a> 
+ <div id="c40181" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-40181" class="active">@sambuddha: Your char</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vinayak garg">vinayak garg</a></strong>
+   <span style="color:#828282"> @ 29 Mar 2013 06:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @sambuddha: Your char array(s) should have space for null ' ' as well. So instead of eng_small[26] it should be eng_small[27] and "temp" should be 101 chars.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40182"></a> 
+ <div id="c40182" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-40182" class="active">@vinayak: Thanks a ton... it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sambuddha">sambuddha</a></strong>
+   <span style="color:#828282"> @ 29 Mar 2013 07:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vinayak: Thanks a ton... it works :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-45060"></a> 
+ <div id="c45060" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-45060" class="active">Can someone point the error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sanyamgarg93">sanyamgarg93</a></strong>
+   <span style="color:#828282"> @ 10 Jun 2013 04:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone point the error in this code 
+    <a href="http://www.codechef.com/viewsolution/2223448" title="http://www.codechef.com/viewsolution/2223448">http://www.codechef.com/viewsolution/2223448</a> It works perfectly on my PC
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-45766"></a> 
+ <div id="c45766" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-45766" class="active">please help! it runs</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sanchitkashyap">sanchitkashyap</a></strong>
+   <span style="color:#828282"> @ 15 Jun 2013 01:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please help! it runs perfectly well on my pc, but here it is reporting an error 
+    <a href="http://www.codechef.com/viewsolution/2254049/" title="http://www.codechef.com/viewsolution/2254049/">http://www.codechef.com/viewsolution/2254049/</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46403"></a> 
+ <div id="c46403" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-46403" class="active">size of first input string-27</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashishtilokani">ashishtilokani</a></strong>
+   <span style="color:#828282"> @ 23 Jun 2013 09:26 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    size of first input string-27 instead of 26 is really a catch
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-53836"></a> 
+ <div id="c53836" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-53836" class="active">The exactly same solution</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mans_code">mans_code</a></strong>
+   <span style="color:#828282"> @ 30 Aug 2013 12:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The exactly same solution gave a WA in first run &amp; got AC in second run... This is really strange!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71194"></a> 
+ <div id="c71194" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-71194" class="active">BaceFook? LOL</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/wannabehacker">wannabehacker</a></strong>
+   <span style="color:#828282"> @ 18 Jan 2014 05:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    BaceFook? LOL
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71217"></a> 
+ <div id="c71217" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-71217" class="active">SIS(in bytelandian) :D</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/garakchy">garakchy</a></strong>
+   <span style="color:#828282"> @ 19 Jan 2014 08:35 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    SIS(in bytelandian) :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71237"></a> 
+ <div id="c71237" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-71237" class="active">Hey, my code is running right</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jaggery">jaggery</a></strong>
+   <span style="color:#828282"> @ 19 Jan 2014 03:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hey, my code is running right for the given example case, but WA when i submit. Can somebody plz check? 
+    <a href="http://www.codechef.com/viewsolution/3269202" title="http://www.codechef.com/viewsolution/3269202">http://www.codechef.com/viewsolution/3269202</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71238"></a> 
+ <div id="c71238" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-71238" class="active">I have added return 0, but</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jaggery">jaggery</a></strong>
+   <span style="color:#828282"> @ 19 Jan 2014 03:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I have added return 0, but its still not running.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-72639"></a> 
+ <div id="c72639" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-72639" class="active">why is my code giving wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/djr_jsr">djr_jsr</a></strong>
+   <span style="color:#828282"> @ 9 Feb 2014 03:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why is my code giving wrong answer? i have done it correctly? 
+    <a href="http://www.codechef.com/viewsolution/3369711" title="http://www.codechef.com/viewsolution/3369711">http://www.codechef.com/viewsolution/3369711</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75782"></a> 
+ <div id="c75782" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-75782" class="active">Last test case is wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nams">nams</a></strong>
+   <span style="color:#828282"> @ 27 Mar 2014 03:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Last test case is wrong man....:P
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78425"></a> 
+ <div id="c78425" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-78425" class="active">I think the last test case is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ekansh12">ekansh12</a></strong>
+   <span style="color:#828282"> @ 24 May 2014 03:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I think the last test case is wrong. It should be Shh! rather than Ohh!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78555"></a> 
+ <div id="c78555" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-78555" class="active">why is my python3 code being</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/zhirzh">zhirzh</a></strong>
+   <span style="color:#828282"> @ 27 May 2014 08:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why is my python3 code being evaluated WRONG? i tried it on IDLE several times and it ran ecerytime but codechef won't accept it any reasons as to why this is happening? code ::: 
+    <a href="http://www.codechef.com/viewsolution/3949574" title="http://www.codechef.com/viewsolution/3949574">http://www.codechef.com/viewsolution/3949574</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84207"></a> 
+ <div id="c84207" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-84207" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mastain_3002">mastain_3002</a></strong>
+   <span style="color:#828282"> @ 30 Aug 2014 05:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/4667728" title="http://www.codechef.com/viewsolution/4667728">http://www.codechef.com/viewsolution/4667728</a> this code show run time error , pls explain it to me..?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84470"></a> 
+ <div id="c84470" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-84470" class="active">@Admin: Does Runtime(NZEC)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajesh171289">rajesh171289</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2014 05:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin: Does Runtime(NZEC) shows up, other than memory limit and throwing exception in java?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86195"></a> 
+ <div id="c86195" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-86195" class="active">Can somebody plea post some</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Unchained">Unchained</a></strong>
+   <span style="color:#828282"> @ 2 Oct 2014 08:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can somebody plea post some other test case too? My code works fine for the given test case but still gives WA. My code: 
+    <a href="http://www.codechef.com/viewsolution/4948324" title="http://www.codechef.com/viewsolution/4948324">http://www.codechef.com/viewsolution/4948324</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89223"></a> 
+ <div id="c89223" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-89223" class="active">Last output is wrong.. it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/swagoverflow">swagoverflow</a></strong>
+   <span style="color:#828282"> @ 30 Oct 2014 09:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Last output is wrong.. it should be "shh"
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89328"></a> 
+ <div id="c89328" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-89328" class="active">Getting WA.please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/biprotip">biprotip</a></strong>
+   <span style="color:#828282"> @ 2 Nov 2014 02:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Getting WA.please help 
+    <a href="http://www.codechef.com/viewsolution/5256818" title="http://www.codechef.com/viewsolution/5256818">http://www.codechef.com/viewsolution/5256818</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91994"></a> 
+ <div id="c91994" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-91994" class="active">check my code admin... </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1x13">s1x13</a></strong>
+   <span style="color:#828282"> @ 19 Dec 2014 04:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    check my code admin... 
+    <a href="http://www.codechef.com/viewsolution/5617430" title="http://www.codechef.com/viewsolution/5617430">http://www.codechef.com/viewsolution/5617430</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93404"></a> 
+ <div id="c93404" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-93404" class="active">can anybody tell me error in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/keshav947">keshav947</a></strong>
+   <span style="color:#828282"> @ 10 Jan 2015 04:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anybody tell me error in this code 
+    <a href="http://www.codechef.com/viewsolution/5836052" title="http://www.codechef.com/viewsolution/5836052">http://www.codechef.com/viewsolution/5836052</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94413"></a> 
+ <div id="c94413" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-94413" class="active">I cant choose language during</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineethvinu">vineethvinu</a></strong>
+   <span style="color:#828282"> @ 24 Jan 2015 12:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I cant choose language during submission? what is the problem ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94926"></a> 
+ <div id="c94926" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-94926" class="active">last test case is wrong it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubham1412">shubham1412</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2015 02:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    last test case is wrong it should be shh!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94929"></a> 
+ <div id="c94929" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-94929" class="active">@shubham1412 Its right, the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gaurav93">gaurav93</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2015 05:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @shubham1412 Its right, the input is beginning with I(as in ice) and not l(as in lion).
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95632"></a> 
+ <div id="c95632" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-95632" class="active">Can you please help me. I am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shivam270896">shivam270896</a></strong>
+   <span style="color:#828282"> @ 6 Feb 2015 01:23 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can you please help me. I am getting wrong anwer when I run it.. 
+    <a href="http://www.codechef.com/viewsolution/6096401" title="http://www.codechef.com/viewsolution/6096401">http://www.codechef.com/viewsolution/6096401</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97698"></a> 
+ <div id="c97698" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-97698" class="active">Fellow coders... don't forget</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/newjeetu93">newjeetu93</a></strong>
+   <span style="color:#828282"> @ 27 Feb 2015 06:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Fellow coders... don't forget the Comma (,) like me :p
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102367"></a> 
+ <div id="c102367" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-102367" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shivam_97">shivam_97</a></strong>
+   <span style="color:#828282"> @ 23 Apr 2015 07:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6809251" title="http://www.codechef.com/viewsolution/6809251">http://www.codechef.com/viewsolution/6809251</a> Please help.Why I have a wrong answer
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102880"></a> 
+ <div id="c102880" class="comment clear-block"> 
+  <h3><a href="/problems/TOTR#comment-102880" class="active">yhvc_jdixscz! :-)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/code_hard123">code_hard123</a></strong>
+   <span style="color:#828282"> @ 2 May 2015 11:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    yhvc_jdixscz! :-) (qwertyuiopasdfghjklzxcvbnm)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

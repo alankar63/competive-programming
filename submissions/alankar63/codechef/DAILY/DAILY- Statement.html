@@ -1,0 +1,121 @@
+<div id="node-944414" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>A daily train consists of <b>N</b> cars. Let's consider one particular car. It has 54 places numbered consecutively from 1 to 54, some of which are already booked and some are still free. The places are numbered in the following fashion:<br> <img src="http://www.codechef.com/download/daily.jpg" width="100%"> </p> 
+  <p>The car is separated into 9 compartments of 6 places each, as shown in the picture. So, the 1st compartment consists of places 1, 2, 3, 4, 53 and 54, the 2nd compartment consists of places 5, 6, 7, 8, 51 and 52, and so on.</p> 
+  <p>A group of <b>X</b> friends wants to buy tickets for free places, all of which are in one compartment (it's much funnier to travel together). You are given the information about free and booked places in each of the <b>N</b> cars. Find the number of ways to sell the friends exactly <b>X</b> tickets in one compartment (note that the order in which the tickets are sold doesn't matter).</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains two integers <b>X</b> and <b>N</b> (1 ? <b>X</b> ? 6, 1 ? <b>N</b> ? 10) separated by a single space. Each of the following <b>N</b> lines contains the information about one car which is a string of length 54 consisting of '0' and '1'. The <b>i</b>-th character (numbered from 1) is '0' if place <b>i</b> in the corresponding car is free, and is '1' if place <b>i</b> is already booked.</p> 
+  <h3>Output</h3> 
+  <p>Output just one integer -- the requested number of ways.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+1 3
+100101110000001011000001111110010011110010010111000101
+001010000000101111100000000000000111101010101111111010
+011110011110000001010100101110001011111010001001111010
+
+<b>Output:</b>
+85
+
+<b>Input:</b>
+6 3
+100101110000001011000001111110010011110010010111000101
+001010000000101111100000000000000111101010101111111010
+011110011110000001010100101110001011111010001001111010
+
+<b>Output:</b>
+1
+
+<b>Input:</b>
+3 2
+000000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000
+
+<b>Output:</b>
+360
+
+<b>Explanation:</b>
+</pre>
+  <p>In the first test case, any of the free places can be sold. In the second test case, the only free compartment in the train is compartment 3 in the first car (places 9, 10, 11, 12, 49 and 50 are all free). In the third test case, the train is still absolutely free; as there are 20 ways to sell 3 tickets in an empty compartment, the answer is 2 * 9 * 20 = 360.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/gennady.korotkevich">gennady.korotkevich</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/chmel_tolstiy">chmel_tolstiy</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/DAILY">http://discuss.codechef.com/problems/DAILY</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook19"> cook19 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/gennady.korotkevich"> gennady.korotkevich </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>24-01-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>3 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/DAILY">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-23009"></a> 
+ <div id="c23009" class="comment clear-block"> 
+  <h3><a href="/problems/DAILY#comment-23009" class="active">:( coudnt solve it on FEB12</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tj91">tj91</a></strong>
+   <span style="color:#828282"> @ 23 Feb 2012 03:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    :( coudnt solve it on FEB12 short contest well now solved it @ 0.00s
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97156"></a> 
+ <div id="c97156" class="comment clear-block"> 
+  <h3><a href="/problems/DAILY#comment-97156" class="active">Wow! Awesome problem. Really</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bholagabbar">bholagabbar</a></strong>
+   <span style="color:#828282"> @ 20 Feb 2015 12:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Wow! Awesome problem. Really enjoyed solving it. And the test cases are really strong too!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

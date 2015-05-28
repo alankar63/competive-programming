@@ -1,0 +1,719 @@
+<div id="node-851765" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> In Ciel's restaurant, a waiter is training.<br> Since the waiter isn't good at arithmetic, sometimes he gives guests wrong change.<br> Ciel gives him a simple problem.<br> What is <strong>A</strong>-<strong>B</strong> (<strong>A</strong> minus <strong>B</strong>) ? </p> 
+  <p> Surprisingly, his answer is wrong.<br> To be more precise, his answer has exactly one wrong digit.<br> Can you imagine this?<br> Can you make the same mistake in this problem? </p> 
+  <h3>Input</h3> 
+  <p> An input contains 2 integers <strong>A</strong> and <strong>B</strong>. </p> 
+  <h3>Output</h3> 
+  <p> Print a wrong answer of <strong>A</strong>-<strong>B</strong>.<br> Your answer must be a <em>positive</em> integer containing the same number of digits as the correct answer, and exactly one digit must differ from the correct answer.<br> Leading zeros are not allowed.<br> If there are multiple answers satisfying the above conditions, anyone will do. </p> 
+  <h3>Constraints</h3> 
+  <p> 1 ? <strong>B</strong> &lt; <strong>A</strong> ? 10000 </p> 
+  <h3>Sample Input</h3> 
+  <pre>5858 1234</pre>
+  <h3>Sample Output</h3> 
+  <pre>1624</pre>
+  <h3>Output details</h3> 
+  <p> The correct answer of 5858-1234 is 4624.<br> So, for instance, 2624, 4324, 4623, 4604 and 4629 will be accepted, but 0624, 624, 5858, 4624 and 04624 will be rejected. </p> 
+  <h3>Notes</h3> 
+  <p> The problem setter is also not good at arithmetic. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/Shangjingbo">Shangjingbo</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CIELAB">http://discuss.codechef.com/problems/CIELAB</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook17"> cook17 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/laycurse"> laycurse </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>22-11-2011</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CIELAB">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-29342"></a> 
+ <div id="c29342" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-29342" class="active">#include long int print(long</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cdamo57">cdamo57</a></strong>
+   <span style="color:#828282"> @ 15 Jul 2012 05:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include long int print(long int); int main() { int t; long int a,b,c; scanf("%d",&amp;t); while(t--) { scanf("%ld%ld",&amp;a,&amp;b); if(a-b&lt;=0) { c=b-a; } else { c=a-b; } c=print(c); printf("%ldn",c); } return 0; } long int print(long int x) { if(x%10==9) { return x-1; } else { return x+1; } } what's wrong in this ? please help me......
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-30361"></a> 
+ <div id="c30361" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-30361" class="active">I keep getting runtime error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 16 Aug 2012 02:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I keep getting runtime error but there is nothing wrong with my code! import java.io.BufferedReader; import java.io.InputStreamReader; public class Main{ public static void main(String args[]) throws Exception { BufferedReader br = new BufferedReader (new InputStreamReader(System.in)); String[] inps= br.readLine().split(" "); int A=Integer.parseInt(inps[0]); int B = Integer.parseInt(inps[1]); int C = A-B; if(C%10==9) C-=1; else C+=1; System.out.print(C); } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35010"></a> 
+ <div id="c35010" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-35010" class="active">i think the problem should</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kiara20">kiara20</a></strong>
+   <span style="color:#828282"> @ 11 Dec 2012 10:36 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i think the problem should specify that a &gt;=b here ;
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36747"></a> 
+ <div id="c36747" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-36747" class="active">If we map last digit from 0</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ffanzhang">ffanzhang</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2013 02:53 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    If we map last digit from 0 to 9, 1 to 8...2 to 7....4 to 5, does that work?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38320"></a> 
+ <div id="c38320" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-38320" class="active">@cdamo57 You are reading an</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bondoc73">bondoc73</a></strong>
+   <span style="color:#828282"> @ 16 Feb 2013 08:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @cdamo57 You are reading an extra variable the doesn't exist in the input ... u shouldn't read t because when u do he'll consider that u didn't take b which means the answer will definitely be wrong.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38321"></a> 
+ <div id="c38321" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-38321" class="active">@ffanzhang The mapping u r</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bondoc73">bondoc73</a></strong>
+   <span style="color:#828282"> @ 16 Feb 2013 08:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ffanzhang The mapping u r using would cause one problem which is mapping 9 -&gt; 0. For ex: A = 10 B = 1 then A - B = 9 which will be mapped to 0. It's a wrong answer since the output should be positive.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-48339"></a> 
+ <div id="c48339" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-48339" class="active">Havent seen any easier</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/samkit">samkit</a></strong>
+   <span style="color:#828282"> @ 11 Jul 2013 01:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Havent seen any easier problem than this..:-D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-53232"></a> 
+ <div id="c53232" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-53232" class="active">Why am i getting an internal</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/navkiran mahajan">navkiran mahajan</a></strong>
+   <span style="color:#828282"> @ 23 Aug 2013 08:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why am i getting an internal error ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-53997"></a> 
+ <div id="c53997" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-53997" class="active">My solution is running for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/n1n8_3">n1n8_3</a></strong>
+   <span style="color:#828282"> @ 6 Sep 2013 01:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My solution is running for more than 30 mins without TLE or Wrong answer,can anyone tell what could be going wrong. What is this internal error?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-55716"></a> 
+ <div id="c55716" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-55716" class="active">the most easiest problem i ve</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhishek00711">abhishek00711</a></strong>
+   <span style="color:#828282"> @ 16 Sep 2013 09:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    the most easiest problem i ve ever solved
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-55730"></a> 
+ <div id="c55730" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-55730" class="active">My solution is running for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anushakurra">anushakurra</a></strong>
+   <span style="color:#828282"> @ 17 Sep 2013 04:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My solution is running for more than 30 mins without TLE or Wrong answer,can anyone tell what could be going wrong.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-55732"></a> 
+ <div id="c55732" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-55732" class="active">why this is wrong ...can any</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anushakurra">anushakurra</a></strong>
+   <span style="color:#828282"> @ 17 Sep 2013 04:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why this is wrong ...can any one tell whre is the mistake #include #include int main() { int a; int b; int c=0; scanf("%d",&amp;a); scanf("%d",&amp;b); printf("%dn",a); printf("%dn",b); c=a-b; c=c-1; printf("%dn",c);
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-57750"></a> 
+ <div id="c57750" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-57750" class="active">@anusha if the last digit in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gtpraveen">gtpraveen</a></strong>
+   <span style="color:#828282"> @ 6 Oct 2013 02:04 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @anusha if the last digit in 'c' is zero subracting 1 will change two digits
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-58180"></a> 
+ <div id="c58180" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-58180" class="active">#include #include int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aatzz_11">aatzz_11</a></strong>
+   <span style="color:#828282"> @ 7 Oct 2013 06:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include int main() { int i,j,k,m,n,x; scanf("%d%d",&amp;m,&amp;n); x=m-n; k=x%10; x=x/10; if(k==0) {k++;} else {k--;} x=x*10+k; printf("%d",x); getch(); return(0); } watz wrong wid dis one??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-62023"></a> 
+ <div id="c62023" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-62023" class="active">Really easy problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aswinm">aswinm</a></strong>
+   <span style="color:#828282"> @ 29 Oct 2013 11:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Really easy problem
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-63513"></a> 
+ <div id="c63513" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-63513" class="active">really easy one!!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rac_1">rac_1</a></strong>
+   <span style="color:#828282"> @ 8 Nov 2013 06:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    really easy one!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65034"></a> 
+ <div id="c65034" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-65034" class="active">Really easy one but a minor</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dragonemperor">dragonemperor</a></strong>
+   <span style="color:#828282"> @ 17 Nov 2013 03:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Really easy one but a minor mistake made it wrong.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65538"></a> 
+ <div id="c65538" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-65538" class="active">is a zero at the end not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/fig12_yo">fig12_yo</a></strong>
+   <span style="color:#828282"> @ 3 Dec 2013 06:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    is a zero at the end not allowed either? e.g if last digit of a-b was 9, its accepting if i changed last digit to 8 or 1, but its not accepting for 0! This is not mentioned in the problem statement!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-73863"></a> 
+ <div id="c73863" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-73863" class="active">what if A=100 and B=10</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dhruvsinghal">dhruvsinghal</a></strong>
+   <span style="color:#828282"> @ 25 Feb 2014 07:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what if A=100 and B=10 ?....In this case the correct difference is 90...so will 91 be accepted?...In other words, what if the correct ans is not of the same digits as of A?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-76477"></a> 
+ <div id="c76477" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-76477" class="active">Please help ! This pity</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/markroxor">markroxor</a></strong>
+   <span style="color:#828282"> @ 10 Apr 2014 01:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please help ! This pity problem keep giving me WA. 
+    <a href="http://ideone.com/m7X4CL" title="http://ideone.com/m7X4CL">http://ideone.com/m7X4CL</a>. A bit of help will really be appreciated.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78423"></a> 
+ <div id="c78423" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-78423" class="active">nt able to understand y</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/r_raghuvanshi">r_raghuvanshi</a></strong>
+   <span style="color:#828282"> @ 24 May 2014 01:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    nt able to understand y getting runtime error in c..http://www.codechef.com/viewsolution/3936812..but the same code works in c++...http://www.codechef.com/viewsolution/3936806
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78608"></a> 
+ <div id="c78608" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-78608" class="active">@markroxor-- suppose this is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/surya545">surya545</a></strong>
+   <span style="color:#828282"> @ 31 May 2014 01:20 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @markroxor-- suppose this is the number 2009.. acc 2 u the answer will be 2090.. This answer is not accepted by chef... the lst digit should be in between 1 to 9...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78726"></a> 
+ <div id="c78726" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-78726" class="active">Either zeroes at the end are</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/lokirex">lokirex</a></strong>
+   <span style="color:#828282"> @ 6 Jun 2014 10:38 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Either zeroes at the end are not allowed, which is not mentioned in the problem statement, or it's counting a return of "0" as having no digits, which i suppose makes conceptual sense, but is pretty questionable considering the wording above.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79590"></a> 
+ <div id="c79590" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-79590" class="active">Can I do EXOR of (A-B) with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amitdoshi313">amitdoshi313</a></strong>
+   <span style="color:#828282"> @ 15 Jun 2014 07:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can I do EXOR of (A-B) with 0x000000001 ? I tried it, but its giving error. Handled the zero case separately.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80202"></a> 
+ <div id="c80202" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-80202" class="active">Confirmed, zeroes at the end,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ttqwerty">ttqwerty</a></strong>
+   <span style="color:#828282"> @ 2 Jul 2014 10:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Confirmed, zeroes at the end, ex. if in the sample output we print 4620, it will not be accepted.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81964"></a> 
+ <div id="c81964" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-81964" class="active">Confirmed, Zeros at the end..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kamransiddique">kamransiddique</a></strong>
+   <span style="color:#828282"> @ 26 Jul 2014 01:12 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Confirmed, Zeros at the end.. AC after so many wrong
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84147"></a> 
+ <div id="c84147" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-84147" class="active">the problem statement is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aakanchha">aakanchha</a></strong>
+   <span style="color:#828282"> @ 28 Aug 2014 12:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    the problem statement is wrong..zeroes at the end are also not allowed
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85742"></a> 
+ <div id="c85742" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-85742" class="active">i thot there was some trick</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vibhor1611">vibhor1611</a></strong>
+   <span style="color:#828282"> @ 27 Sep 2014 01:15 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i thot there was some trick in the question ... but no , it was as straight as an arrow ! Bulls eye !
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-87679"></a> 
+ <div id="c87679" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-87679" class="active">#include int main() { int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/RahulTryHarder">RahulTryHarder</a></strong>
+   <span style="color:#828282"> @ 10 Oct 2014 04:09 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int main() { int a,b; scanf("%d%d",&amp;a,&amp;b); if((a-b)%10!=0) a=a-b-1; else a=a-b+1; printf("%d",a); return 0; } why is this giving wrong answer,please help?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89505"></a> 
+ <div id="c89505" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-89505" class="active">There's a glaring omission in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/icthieves">icthieves</a></strong>
+   <span style="color:#828282"> @ 4 Nov 2014 11:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    There's a glaring omission in the description that's been mentioned several time already, but trailing zeros are also unaccepted.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90008"></a> 
+ <div id="c90008" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-90008" class="active">Hello Guys.To Everyone who is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sanal05_">sanal05_</a></strong>
+   <span style="color:#828282"> @ 11 Nov 2014 08:18 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hello Guys.To Everyone who is getting a WRONG ANSWER. May be your logic is correct according to you,but not according to the question. Read the question again.The difference must be a positive integer.So if A-B=1,then you must output something other than 0 and of single digit.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91303"></a> 
+ <div id="c91303" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-91303" class="active">easy stuff</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gaurav796">gaurav796</a></strong>
+   <span style="color:#828282"> @ 6 Dec 2014 01:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    easy stuff
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91307"></a> 
+ <div id="c91307" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-91307" class="active">why java solution is taking</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gaurav796">gaurav796</a></strong>
+   <span style="color:#828282"> @ 6 Dec 2014 03:24 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why java solution is taking 177 MB and 5 seconds ... although C takes fraction of seconds and 2 MB
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91701"></a> 
+ <div id="c91701" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-91701" class="active">really aweosome que....</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prakhargurawa">prakhargurawa</a></strong>
+   <span style="color:#828282"> @ 11 Dec 2014 09:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    really aweosome que....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91796"></a> 
+ <div id="c91796" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-91796" class="active">one of the easiest problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/limasdf">limasdf</a></strong>
+   <span style="color:#828282"> @ 14 Dec 2014 12:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    one of the easiest problem
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91923"></a> 
+ <div id="c91923" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-91923" class="active">OPEN CHALLENGE TO ALL FIND</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhinav_rai">abhinav_rai</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2014 11:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    OPEN CHALLENGE TO ALL FIND THE MISTAKE IN MY SOLUTION OR TELL A CASE IN WHICH IT GIVES WRONG ANSWER. Link : 
+    <a href="http://www.codechef.com/viewsolution/5607375" title="http://www.codechef.com/viewsolution/5607375">http://www.codechef.com/viewsolution/5607375</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91927"></a> 
+ <div id="c91927" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-91927" class="active">hey abhinav....try with a=50</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/angad_coder">angad_coder</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2014 01:47 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hey abhinav....try with a=50 b=1....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91938"></a> 
+ <div id="c91938" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-91938" class="active">Thanks @angad_coder, silly</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhinav_rai">abhinav_rai</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2014 03:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Thanks @angad_coder, silly mistake.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94603"></a> 
+ <div id="c94603" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-94603" class="active">can anyone tell problem in my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/keshav_1994">keshav_1994</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2015 11:39 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone tell problem in my code ??? 
+    <a href="http://www.codechef.com/viewsolution/5986619" title="http://www.codechef.com/viewsolution/5986619">http://www.codechef.com/viewsolution/5986619</a>.... i am just changing last digit of the answer by 1 ..... if the last digit is 9 then i m changing the last digit to zero
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94672"></a> 
+ <div id="c94672" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-94672" class="active">I think trailing zeroes are</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yo23">yo23</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2015 03:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I think trailing zeroes are also not allowed as mentioned above.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94755"></a> 
+ <div id="c94755" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-94755" class="active">am I missing something here? </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amateurcoder19">amateurcoder19</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2015 10:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    am I missing something here? 
+    <a href="http://www.codechef.com/viewsolution/6001674" title="http://www.codechef.com/viewsolution/6001674">http://www.codechef.com/viewsolution/6001674</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94812"></a> 
+ <div id="c94812" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-94812" class="active">@amateurcoder19: One of the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yo23">yo23</a></strong>
+   <span style="color:#828282"> @ 26 Jan 2015 04:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @amateurcoder19: One of the things is that 'a' can be equal to 10000.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94817"></a> 
+ <div id="c94817" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-94817" class="active">@yo23 Thanks!! got ac :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amateurcoder19">amateurcoder19</a></strong>
+   <span style="color:#828282"> @ 26 Jan 2015 05:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @yo23 Thanks!! got ac :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95159"></a> 
+ <div id="c95159" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-95159" class="active">easiest one :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rgpt">rgpt</a></strong>
+   <span style="color:#828282"> @ 31 Jan 2015 11:50 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    easiest one :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-96633"></a> 
+ <div id="c96633" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-96633" class="active">anyone give me more test case</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/manit1212">manit1212</a></strong>
+   <span style="color:#828282"> @ 13 Feb 2015 03:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    anyone give me more test case
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102057"></a> 
+ <div id="c102057" class="comment clear-block"> 
+  <h3><a href="/problems/CIELAB#comment-102057" class="active">#include int main() { </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anonymous_1">anonymous_1</a></strong>
+   <span style="color:#828282"> @ 19 Apr 2015 12:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int main() { int A,B; scanf("%d %d",&amp;A,&amp;B); if(((A-B)%10)==0) printf("%d",(A-B)+1); else printf("%d",(A-B)-1); return 0; } what's the problem with my code WA is encountered
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

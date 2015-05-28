@@ -1,0 +1,214 @@
+<div id="node-1925619" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>Consider the following dialog.</p> 
+  <p>- Father, what is the lack of logic?<br>- Bunny.<br>- Where?<br> - Day.<br><br><br></p> 
+  <p>As you see, father's answers have no logic demonstrating the son the notion of "lack of logic" using live example :D</p> 
+  <p>Let's try to formalize things. Note that both father's answers have no common letters with the corresponding questions. Probably this is the reason. <b>Let's say that the answer has no logic if it has no common letters with the question.</b> Your task is to write a bot that will answer annoying comments of contestants at codechef using this definition. Note that letter denotes a lowercase or uppercase English alphabet (ASCII code from 65 to 90 or from 97 to 122).</p> 
+  <p>Namely, you will be given several questions and you need to produce answers to these questions that have no logic. Note that lowercase and uppercase letters are considered the same when treating "no common letters" rule. Also note that this rule concerns only letters. <b>The answer should contain at least one letter.</b> If it is impossible to produce such answer then output "~" (tilde sign, quotes are for clarity).</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows. The only line of each test case contains the question. The question is a non-empty string where each character has ASCII code from 32 to 126, inclusive (refer to <a href="http://www.ascii.cl/">this</a>).</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing the answer to this question that has no logic or "~" (quotes for clarity) if it is impossible to find such answer. Each character in the answer should be either a space (ASCII code 32), or the letter of English alphabet (lowercase or uppercase). Recall that the answer should contain at least one letter. The number of characters in the answer should not exceed 314. You can output any answer satisfying these constraints that has no logic.</p> 
+  <p><b>Note!</b> Special judge is very strict for this problem and check your output character-by-character. Be sure that you follow the mentioned output format precisely. For instance, your output should contain exactly <b>T</b> new-line characters (ASCII code 10) - one after each answer.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ? <b>T</b> ? <b>314</b></li> 
+   <li><b>1</b> ? <b>the number of characters in the question</b> ? <b>314</b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+4
+Father, what is the lack of logic?
+Where?
+The quick brown fox jumps over the lazy dog.
+!!!
+
+<b>Output:</b>
+Bunny
+Day
+~
+You Can output aLoMsT anytihng HERE
+</pre>
+  <h3>Explanation</h3> 
+  <p>Example cases 1 and 2 correspond to the dialog in the problem statement. Note that we don't print dots since it is allowed to have only spaces and letters in the answer.</p> 
+  <p>In example case 3 each letter of English alphabet is used in the question. Hence we can't produce the answer that has no logic.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/anton_lunyov">anton_lunyov</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/NOLOGIC">http://discuss.codechef.com/problems/NOLOGIC</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/anton_lunyov"> anton_lunyov </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/cook31"> cook31 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>6-02-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>C, CPP 4.9.2, CPP14, JAVA</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/NOLOGIC">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-38428"></a> 
+ <div id="c38428" class="comment clear-block"> 
+  <h3><a href="/problems/NOLOGIC#comment-38428" class="active">why i am not able to use</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saurabh3240">saurabh3240</a></strong>
+   <span style="color:#828282"> @ 18 Feb 2013 08:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why i am not able to use strlwr in submission it says compilation error,but it runs successfully on my pc.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38468"></a> 
+ <div id="c38468" class="comment clear-block"> 
+  <h3><a href="/problems/NOLOGIC#comment-38468" class="active">hi ppl, I thought in codechef</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tanujrastogi">tanujrastogi</a></strong>
+   <span style="color:#828282"> @ 20 Feb 2013 11:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hi ppl, I thought in codechef submissions we don't need this cin.igone()/getchar() after scanf(). but why do we need it in this question?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38469"></a> 
+ <div id="c38469" class="comment clear-block"> 
+  <h3><a href="/problems/NOLOGIC#comment-38469" class="active">one reason maybe to put the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tanujrastogi">tanujrastogi</a></strong>
+   <span style="color:#828282"> @ 20 Feb 2013 11:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    one reason maybe to put the newline char after no. of test cases input. but doesn't hitting enter after scanf() do it?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-62024"></a> 
+ <div id="c62024" class="comment clear-block"> 
+  <h3><a href="/problems/NOLOGIC#comment-62024" class="active">editorials helped me in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vinayawsm">vinayawsm</a></strong>
+   <span style="color:#828282"> @ 30 Oct 2013 12:19 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    editorials helped me in getting correct ans :))
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-72233"></a> 
+ <div id="c72233" class="comment clear-block"> 
+  <h3><a href="/problems/NOLOGIC#comment-72233" class="active">Sir I'm not able to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/avinashbaldi93">avinashbaldi93</a></strong>
+   <span style="color:#828282"> @ 3 Feb 2014 10:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Sir I'm not able to understand the question. Please elaborate it a bit more...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85980"></a> 
+ <div id="c85980" class="comment clear-block"> 
+  <h3><a href="/problems/NOLOGIC#comment-85980" class="active">Why does binary search fail</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cloudyskies">cloudyskies</a></strong>
+   <span style="color:#828282"> @ 30 Sep 2014 06:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why does binary search fail while linear search passes? Shouldn't both outputs fall under the requirements?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90915"></a> 
+ <div id="c90915" class="comment clear-block"> 
+  <h3><a href="/problems/NOLOGIC#comment-90915" class="active">Can anyone tell me why only</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/infiniticoder">infiniticoder</a></strong>
+   <span style="color:#828282"> @ 26 Nov 2014 02:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone tell me why only 314 is used as the input size constraint. Is it special in any context.????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91608"></a> 
+ <div id="c91608" class="comment clear-block"> 
+  <h3><a href="/problems/NOLOGIC#comment-91608" class="active">when I used 'scanf("%d,&amp;t);'</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/madcracker">madcracker</a></strong>
+   <span style="color:#828282"> @ 10 Dec 2014 10:57 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    when I used 'scanf("%d,&amp;t);' I got WA but when I used 'int v;char t[320]; gets(t); v=atoi(t);' I got CA..can anyone please help me out?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99744"></a> 
+ <div id="c99744" class="comment clear-block"> 
+  <h3><a href="/problems/NOLOGIC#comment-99744" class="active">@madcracker ... you used </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tadpatri">tadpatri</a></strong>
+   <span style="color:#828282"> @ 22 Mar 2015 01:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @madcracker ... you used scanf("%d,&amp;t); but I think it should be scanf("%d",&amp;t); .... may be that is why you got WA previously ...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

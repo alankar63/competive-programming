@@ -1,0 +1,457 @@
+<div id="node-559225" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> The Chef likes to stay in touch with his staff. So, the Chef, the head server, and the sous-chef all carry two-way transceivers so they can stay in constant contact. Of course, these transceivers have a limited range so if two are too far apart, they cannot communicate directly.</p> 
+  <p> The Chef invested in top-of-the-line transceivers which have a few advanced features. One is that even if two people cannot talk directly because they are out of range, if there is another transceiver that is close enough to both, then the two transceivers can still communicate with each other using the third transceiver as an intermediate device.</p> 
+  <p> There has been a minor emergency in the Chef's restaurant<br> and he needs to communicate with both the head server and the sous-chef right away. Help the Chef determine if it is possible for all three people to communicate with each other, even if two must communicate through the third because they are too far apart.</p> 
+  <h3>Input</h3> 
+  <p> The first line contains a single positive integer T ? 100 indicating the number of test cases to follow. The first line of each test case contains a positive integer R ? 1,000 indicating that two transceivers can communicate directly without an intermediate transceiver if they are at most R meters away from each other. The remaining three lines of the test case describe the current locations of the Chef, the head server, and the sous-chef, respectively. Each such line contains two integers X,Y (at most 10,000 in absolute value) indicating that the respective person is located at position X,Y.</p> 
+  <h3>Output</h3> 
+  <p> For each test case you are to output a single line containing a single string. If it is possible for all three to communicate then you should output "yes". Otherwise, you should output "no".</p> 
+  <p> To be clear, we say that two transceivers are close enough to communicate directly if the length of the straight line connecting their X,Y coordinates is at most R.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+3
+1
+0 1
+0 0
+1 0
+2
+0 1
+0 0
+1 0
+2
+0 0
+0 2
+2 1
+
+
+<b>Output:</b>
+yes
+yes
+no
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/friggstad">friggstad</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/pieguy">pieguy</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/COMM3">http://discuss.codechef.com/problems/COMM3</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook07"> cook07 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/friggstad"> friggstad </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>2-02-2011</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>3 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/COMM3">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-21063"></a> 
+ <div id="c21063" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-21063" class="active">@admin..is direct as well as</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vedp1">vedp1</a></strong>
+   <span style="color:#828282"> @ 13 Jan 2012 11:22 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin..is direct as well as the communication through the third that are too far apart is also to be considered???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39710"></a> 
+ <div id="c39710" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-39710" class="active">What is reason for wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/devrajjaiman">devrajjaiman</a></strong>
+   <span style="color:#828282"> @ 13 Mar 2013 06:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What is reason for wrong answer in my code?? 
+    <a href="http://www.codechef.com/viewsolution/1938507" title="http://www.codechef.com/viewsolution/1938507">http://www.codechef.com/viewsolution/1938507</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40183"></a> 
+ <div id="c40183" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-40183" class="active">@devrajjaiman give a '\n' at</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ram_nath_j">ram_nath_j</a></strong>
+   <span style="color:#828282"> @ 29 Mar 2013 07:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @devrajjaiman give a 'n' at the end of yes and no in ur printf statements
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40184"></a> 
+ <div id="c40184" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-40184" class="active">i mean newline character</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ram_nath_j">ram_nath_j</a></strong>
+   <span style="color:#828282"> @ 29 Mar 2013 07:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i mean newline character
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43427"></a> 
+ <div id="c43427" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-43427" class="active">can anyone tell whats</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ayushjha">ayushjha</a></strong>
+   <span style="color:#828282"> @ 17 May 2013 03:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone tell whats wrong......http://www.codechef.com/viewsolution/2166209
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46597"></a> 
+ <div id="c46597" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-46597" class="active">i am trying to post my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anm1331">anm1331</a></strong>
+   <span style="color:#828282"> @ 26 Jun 2013 07:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am trying to post my solution for this problem but it is giving a run time error which i am not able to figure out. please help. The link for my code follows- 
+    <a href="http://www.codechef.com/viewsolution/2297543" title="http://www.codechef.com/viewsolution/2297543">http://www.codechef.com/viewsolution/2297543</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49129"></a> 
+ <div id="c49129" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-49129" class="active">Plzzzz tell why WA </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ekta1994">ekta1994</a></strong>
+   <span style="color:#828282"> @ 20 Jul 2013 04:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Plzzzz tell why WA 
+    <a href="http://www.codechef.com/viewsolution/2390308" title="http://www.codechef.com/viewsolution/2390308">http://www.codechef.com/viewsolution/2390308</a> ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49345"></a> 
+ <div id="c49345" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-49345" class="active">Why is the code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ekta1994">ekta1994</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2013 05:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why is the code 
+    <a href="http://www.codechef.com/viewsolution/2400307" title="http://www.codechef.com/viewsolution/2400307">http://www.codechef.com/viewsolution/2400307</a> showing wrong answer..??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-50225"></a> 
+ <div id="c50225" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-50225" class="active">@ekta1994, I have not gone</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sap88coder">sap88coder</a></strong>
+   <span style="color:#828282"> @ 3 Aug 2013 12:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ekta1994, I have not gone through your logic but one issue is you are outputting "Yes" and not "yes". Similalry with "No" instead of "no" as instructed in the problem. I faced the same, hence :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-53933"></a> 
+ <div id="c53933" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-53933" class="active">@ayushjha you did not square</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1h33p">s1h33p</a></strong>
+   <span style="color:#828282"> @ 3 Sep 2013 12:08 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ayushjha you did not square root, see the reply at ur solution.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68938"></a> 
+ <div id="c68938" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-68938" class="active">This is my first submission</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/reetawwsum">reetawwsum</a></strong>
+   <span style="color:#828282"> @ 1 Jan 2014 01:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    This is my first submission of 2014.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78691"></a> 
+ <div id="c78691" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-78691" class="active">I was printing "YES" and "NO"</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/samewal">samewal</a></strong>
+   <span style="color:#828282"> @ 4 Jun 2014 05:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I was printing "YES" and "NO" instead of "yes' and "no", go wrong answer. I think we should be allowed to print in upper case as well as lower case.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78738"></a> 
+ <div id="c78738" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-78738" class="active">haha simple question of YES</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/uniquephase">uniquephase</a></strong>
+   <span style="color:#828282"> @ 6 Jun 2014 03:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    haha simple question of YES and NO :p :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79618"></a> 
+ <div id="c79618" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-79618" class="active">Can anyone tell me why this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iwanna4get">iwanna4get</a></strong>
+   <span style="color:#828282"> @ 16 Jun 2014 11:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone tell me why this is a wrong answer? 
+    <a href="http://www.codechef.com/viewsolution/4102621" title="http://www.codechef.com/viewsolution/4102621">http://www.codechef.com/viewsolution/4102621</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79982"></a> 
+ <div id="c79982" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-79982" class="active">dist between x3 y3 x1 x2 i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/brobear1995">brobear1995</a></strong>
+   <span style="color:#828282"> @ 24 Jun 2014 08:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    dist between x3 y3 x1 x2 i wrote instead of x1 y1 : &gt;:(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81484"></a> 
+ <div id="c81484" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-81484" class="active">what's</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akshat3001">akshat3001</a></strong>
+   <span style="color:#828282"> @ 13 Jul 2014 03:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what's wrong? 
+    <a href="http://www.codechef.com/viewsolution/4313746" title="http://www.codechef.com/viewsolution/4313746">http://www.codechef.com/viewsolution/4313746</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-82233"></a> 
+ <div id="c82233" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-82233" class="active">Please help, can't find out</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kesagar94">kesagar94</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2014 04:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please help, can't find out the problem with my code: 
+    <a href="http://www.codechef.com/viewsolution/4408930" title="http://www.codechef.com/viewsolution/4408930">http://www.codechef.com/viewsolution/4408930</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85920"></a> 
+ <div id="c85920" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-85920" class="active">#include #include main() { i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ktignites">ktignites</a></strong>
+   <span style="color:#828282"> @ 28 Sep 2014 08:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include main() { int x,y,x1,y1,x2,y2,t,r; double s=0.0,s1=0.0; scanf("%d",&amp;t); while(t--) { scanf("%d %d %d %d %d %d %d",&amp;r,&amp;x,&amp;y,&amp;x1,&amp;y1,&amp;x2,&amp;y2); s=sqrt(((x-x1)*(x-x1))+((y-y1)*(y-y1))); s1=sqrt(((x-x2)*(x-x2))+((y-y2)*(y-y2))); if(s&lt;=r&amp;&amp;s1&lt;=r) printf("nyesn"); else printf("nnon"); s=0.0;s1=0.0; } return 0;} what is wrong?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85925"></a> 
+ <div id="c85925" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-85925" class="active">what is the problem with this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hellow_ankur">hellow_ankur</a></strong>
+   <span style="color:#828282"> @ 28 Sep 2014 11:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is the problem with this damn easy problem.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92336"></a> 
+ <div id="c92336" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-92336" class="active">i am not getting problem plz</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harendra123">harendra123</a></strong>
+   <span style="color:#828282"> @ 27 Dec 2014 03:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am not getting problem plz help admin and describe properly take some more test case..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92453"></a> 
+ <div id="c92453" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-92453" class="active">easy one.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhinav_rai">abhinav_rai</a></strong>
+   <span style="color:#828282"> @ 31 Dec 2014 02:47 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    easy one.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95779"></a> 
+ <div id="c95779" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-95779" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rohit2811995">rohit2811995</a></strong>
+   <span style="color:#828282"> @ 6 Feb 2015 09:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6113188" title="http://www.codechef.com/viewsolution/6113188">http://www.codechef.com/viewsolution/6113188</a> why isn't my code working please help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97038"></a> 
+ <div id="c97038" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-97038" class="active">this Yes/yes No/no thing is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/newjeetu93">newjeetu93</a></strong>
+   <span style="color:#828282"> @ 18 Feb 2015 09:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    this Yes/yes No/no thing is frustrating :p
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-100120"></a> 
+ <div id="c100120" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-100120" class="active">hello admin i am using c</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shivgarg5676">shivgarg5676</a></strong>
+   <span style="color:#828282"> @ 31 Mar 2015 01:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hello admin i am using c language n math.h library to solve this problem. the problem is that in gcc compiler to include pow method we need to run gcc code.c -o code -lm thats why answer is turning wrong. what should i do
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102887"></a> 
+ <div id="c102887" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-102887" class="active">Easy one :-) Got AC in first</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/laksh007">laksh007</a></strong>
+   <span style="color:#828282"> @ 3 May 2015 10:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Easy one :-) Got AC in first go :-)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103320"></a> 
+ <div id="c103320" class="comment clear-block"> 
+  <h3><a href="/problems/COMM3#comment-103320" class="active">http://www.codechef.com/submi</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hmnshgpt455">hmnshgpt455</a></strong>
+   <span style="color:#828282"> @ 9 May 2015 10:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/submit/complete/532363-6545--554e399328349" title="http://www.codechef.com/submit/complete/532363-6545--554e399328349">http://www.codechef.com/submit/complete/532363-6545--554e399328349</a> why is it coming wrong answer?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

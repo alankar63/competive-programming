@@ -1,0 +1,552 @@
+<div id="node-433489" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <h3> Statement </h3> 
+  <p> Given N,A,B,C, find how many solutions exist to the equation : a + b + c ? N, such that 0 ? a ? A, 0 ? b ? B, 0 ? c ? C. </p> 
+  <h3>Input </h3> 
+  <p> The first line contains the number of test cases T. Each test case contains 4 integers, N,A,B,C. 0 ? N,A,B,C ? 2500 </p> 
+  <h3>Output </h3> 
+  <p> Output T lines, one for each test case. </p> 
+  <h3>Sample Input </h3> 
+  <pre>
+2
+4 3 2 1
+1 1 1 1
+</pre>
+  <h3>Sample Output </h3> 
+  <pre>
+20
+4
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/anshuman_singh">anshuman_singh</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/anshuman_singh"> anshuman_singh </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>10-09-2010</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/EQUATION">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-10914"></a> 
+ <div id="c10914" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-10914" class="active">O(n^2) is not giving TLE</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mkagenius">mkagenius</a></strong>
+   <span style="color:#828282"> @ 25 Sep 2010 02:30 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>O(n^2) is not giving TLE ..actually C is slow.....changed to C++ and wallah!!</p> 
+    <p>and found 4.3.2 slower than 4.0.0 &nbsp;... ne1 tell why</p> 
+    <p>??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12496"></a> 
+ <div id="c12496" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-12496" class="active">Sir, what if A+B+C&lt;N</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saurabheights">saurabheights</a></strong>
+   <span style="color:#828282"> @ 21 Dec 2010 11:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Sir,</p> 
+    <p>what if A+B+C&lt;N</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13337"></a> 
+ <div id="c13337" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-13337" class="active">i hav submitted d solution</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/insipid_tawfiq">insipid_tawfiq</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2011 05:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i hav submitted d solution given below and i got TLE. What should i do??</p> 
+    <p>#include&lt;stdio.h&gt;</p> 
+    <p>int main(void)<br>{<br> int i,j,k, a,b,c,n,count=0,t;<br> scanf("%d",&amp;t);<br> while(t!=0)<br> {<br> scanf("%d %d %d %d",&amp;n,&amp;a,&amp;b,&amp;c);<br> for(i=0;i&lt;=a;i++)<br> for(j=0;j&lt;=b;j++)<br> for(k=0;k&lt;=c;k++)<br> if(i+j+k&lt;=n)<br> count++;<br> printf("%dn",count);<br> t--;<br> count=0;<br> }<br><br> return 0;<br>}</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13371"></a> 
+ <div id="c13371" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-13371" class="active">Do you think</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 31 Jan 2011 02:55 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Do you think 50*2500*2500*2500 is going to run within one second? Nope. You'll need to start again.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13583"></a> 
+ <div id="c13583" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-13583" class="active">@Admin: http://www.codechef</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajneesh2k10">rajneesh2k10</a></strong>
+   <span style="color:#828282"> @ 9 Feb 2011 08:35 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Admin:</p> 
+    <p> <a href="http://www.codechef.com/viewsolution/450377">http://www.codechef.com/viewsolution/450377</a></p> 
+    <p>This code seems to be perfect. Why am I getting wrong answer???</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13584"></a> 
+ <div id="c13584" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-13584" class="active">It gives the wrong answer on</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 9 Feb 2011 09:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>It gives the wrong answer on a test case you really should have checked..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13589"></a> 
+ <div id="c13589" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-13589" class="active">Thank you!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajneesh2k10">rajneesh2k10</a></strong>
+   <span style="color:#828282"> @ 9 Feb 2011 11:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Thank you!</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15864"></a> 
+ <div id="c15864" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-15864" class="active">2</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/avinash5">avinash5</a></strong>
+   <span style="color:#828282"> @ 15 Apr 2011 05:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>2</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17723"></a> 
+ <div id="c17723" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-17723" class="active">Can someone think of a case</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anshk">anshk</a></strong>
+   <span style="color:#828282"> @ 28 Jul 2011 02:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone think of a case that would make the following code give wrong answer? #include #define min(a,b) (a)&gt;(b)?(b):(a) #define max(a,b) (a)&lt;(b)?(b):(a) main(){ int t; scanf("%dn",&amp;t); for(int loop=0;loop
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17724"></a> 
+ <div id="c17724" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-17724" class="active">oops soething</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anshk">anshk</a></strong>
+   <span style="color:#828282"> @ 28 Jul 2011 02:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    oops soething wrong 
+    <a href="http://www.codechef.com/viewsolution/608446" title="http://www.codechef.com/viewsolution/608446">http://www.codechef.com/viewsolution/608446</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18288"></a> 
+ <div id="c18288" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-18288" class="active">Could anyone plz explain the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dpraveen">dpraveen</a></strong>
+   <span style="color:#828282"> @ 23 Aug 2011 11:13 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Could anyone plz explain the logic to solve it
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18349"></a> 
+ <div id="c18349" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-18349" class="active">i m getting run time error...</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tarunkeswani">tarunkeswani</a></strong>
+   <span style="color:#828282"> @ 31 Aug 2011 11:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i m getting run time error... please some1 help... its working in notepad++ #include void main() { int n,a,b,c,t,i,j,k,m; scanf("%d n",&amp;t); for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19304"></a> 
+ <div id="c19304" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-19304" class="active">@admin: i always face the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahulkumar7887">rahulkumar7887</a></strong>
+   <span style="color:#828282"> @ 6 Oct 2011 01:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin: i always face the time limit problem, my solution is of 10 lines,how can i minimise it further.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-21588"></a> 
+ <div id="c21588" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-21588" class="active">@admin: Pls check</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/r00k1e2k11">r00k1e2k11</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2012 02:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin: Pls check 
+    <a href="http://www.codechef.com/viewsolution/812145" title="http://www.codechef.com/viewsolution/812145">http://www.codechef.com/viewsolution/812145</a> i am getting WA.. please provide the test cases for which my code is failing..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-21589"></a> 
+ <div id="c21589" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-21589" class="active">never mind .. got it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/r00k1e2k11">r00k1e2k11</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2012 10:28 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    never mind .. got it
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25632"></a> 
+ <div id="c25632" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-25632" class="active">any buddy let me know the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/avinash_jain">avinash_jain</a></strong>
+   <span style="color:#828282"> @ 12 Apr 2012 07:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    any buddy let me know the logic behind this problem.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25919"></a> 
+ <div id="c25919" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-25919" class="active">plz any body check my code as</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubhammnnit">shubhammnnit</a></strong>
+   <span style="color:#828282"> @ 19 Apr 2012 03:21 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plz any body check my code as i couldn't get why it is giving wa....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25920"></a> 
+ <div id="c25920" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-25920" class="active">@admin : plz give me some</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubhammnnit">shubhammnnit</a></strong>
+   <span style="color:#828282"> @ 19 Apr 2012 03:22 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin : plz give me some test cases to figure out where things r going wrong..?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27058"></a> 
+ <div id="c27058" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-27058" class="active">Am I the only one who sees</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saikat_roy">saikat_roy</a></strong>
+   <span style="color:#828282"> @ 25 May 2012 01:23 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Am I the only one who sees this in the question?? 0 ? a ? A, 0 ? b ? B, 0 ? c ? C.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27062"></a> 
+ <div id="c27062" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-27062" class="active">Saikat, the "?" are supposed</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yuichiotsuka">yuichiotsuka</a></strong>
+   <span style="color:#828282"> @ 25 May 2012 02:59 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Saikat, the "?" are supposed to be &lt;= symbols. I also had the same problems.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27069"></a> 
+ <div id="c27069" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-27069" class="active">ah ty!! :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saikat_roy">saikat_roy</a></strong>
+   <span style="color:#828282"> @ 25 May 2012 06:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    ah ty!! :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28754"></a> 
+ <div id="c28754" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-28754" class="active">can ny1 tell me wich test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shiv05">shiv05</a></strong>
+   <span style="color:#828282"> @ 27 Jun 2012 02:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can ny1 tell me wich test case i'm missing?? 
+    <a href="http://www.codechef.com/viewsolution/1142444" title="http://www.codechef.com/viewsolution/1142444">http://www.codechef.com/viewsolution/1142444</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31002"></a> 
+ <div id="c31002" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-31002" class="active">Can we do binary search on</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kuruma">kuruma</a></strong>
+   <span style="color:#828282"> @ 26 Aug 2012 05:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can we do binary search on N-c, to find value of c and brute force a and b?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38242"></a> 
+ <div id="c38242" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-38242" class="active">what is the value of T?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anubhav914">anubhav914</a></strong>
+   <span style="color:#828282"> @ 14 Feb 2013 03:08 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is the value of T?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-41155"></a> 
+ <div id="c41155" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-41155" class="active">I question if this can be</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gnissem">gnissem</a></strong>
+   <span style="color:#828282"> @ 16 Apr 2013 10:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I question if this can be done in Ruby without getting a TLE
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43617"></a> 
+ <div id="c43617" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-43617" class="active">I am not able to figure out</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jain13">jain13</a></strong>
+   <span style="color:#828282"> @ 25 May 2013 11:20 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am not able to figure out why I am getting wrong answer . someone please help me. my solution is 
+    <a href="http://www.codechef.com/viewsolution/2178993" title="http://www.codechef.com/viewsolution/2178993">http://www.codechef.com/viewsolution/2178993</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43767"></a> 
+ <div id="c43767" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-43767" class="active">can someone please explain</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dkrdharmesh">dkrdharmesh</a></strong>
+   <span style="color:#828282"> @ 2 Jun 2013 12:08 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can someone please explain how the answer of the first test case has come ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-52950"></a> 
+ <div id="c52950" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-52950" class="active">what's the constraint on T, I</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codeup444">codeup444</a></strong>
+   <span style="color:#828282"> @ 21 Aug 2013 10:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what's the constraint on T, I see the constraint on A,B,C,N but nothing is mentioned about T
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-52957"></a> 
+ <div id="c52957" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-52957" class="active">no constrains just take t as</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chomu1850">chomu1850</a></strong>
+   <span style="color:#828282"> @ 22 Aug 2013 01:44 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    no constrains just take t as int type
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-77084"></a> 
+ <div id="c77084" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-77084" class="active">took a few hours but got it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/affiszerv">affiszerv</a></strong>
+   <span style="color:#828282"> @ 23 Apr 2014 08:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    took a few hours but got it to run in O(N) in python :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92817"></a> 
+ <div id="c92817" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-92817" class="active">Why am I getting a TLE?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dimi">dimi</a></strong>
+   <span style="color:#828282"> @ 3 Jan 2015 05:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why am I getting a TLE? help! #include int main() { int N, A, B, C, i, j, k, l, c[100]={0}, t; l=0; scanf("%d", &amp;t); while(l
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93589"></a> 
+ <div id="c93589" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-93589" class="active">Why i am getting TLE?? My</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arunkr9088">arunkr9088</a></strong>
+   <span style="color:#828282"> @ 13 Jan 2015 10:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why i am getting TLE?? My code: #include #include int main() { int N, A,B,C,n; scanf("%d",&amp;n); while(n) { scanf("%d%d%d%d",&amp;N,&amp;A,&amp;B,&amp;C); int a,b,c; long long count =0; for(a=0;a&lt;=A;a++) { if((a&gt;N)) break; for(b=0;b&lt;=B;b++) { if((a+b&gt;N)) { if(b) a=A; break; } for(c=0;c&lt;=C;c++) { if(a+b+c&gt;N) { if(b) b=B; break; } count++; } } } printf("%dn",count); n--; } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99110"></a> 
+ <div id="c99110" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-99110" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/grb47">grb47</a></strong>
+   <span style="color:#828282"> @ 13 Mar 2015 11:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6486288" title="http://www.codechef.com/viewsolution/6486288">http://www.codechef.com/viewsolution/6486288</a> any body pls tel me any input whose give wrong answer i think this is correct but compiler give wrong answer
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99111"></a> 
+ <div id="c99111" class="comment clear-block"> 
+  <h3><a href="/problems/EQUATION#comment-99111" class="active">also this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/grb47">grb47</a></strong>
+   <span style="color:#828282"> @ 13 Mar 2015 11:17 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    also this 
+    <a href="http://www.codechef.com/viewsolution/6485128" title="http://www.codechef.com/viewsolution/6485128">http://www.codechef.com/viewsolution/6485128</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

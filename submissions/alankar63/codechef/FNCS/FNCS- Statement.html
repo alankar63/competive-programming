@@ -1,0 +1,148 @@
+<div id="node-6654384" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/NOV14/mandarin/FNCS.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/NOV14/russian/FNCS.pdf">Russian</a>.</h3> 
+  <p>Chef has recently learnt Function and Addition. He is too exited to teach this to his friend Churu. Chef and Churu are very fast friends, they share their knowledge whenever they meet. Chef use to give a lot of exercises after he teaches some concept to Churu. </p> 
+  <p>Chef has an array of <b>N</b> numbers. He also has <b>N</b> functions. Each function will return the sum of all numbers in the array from <b>L<sub>i</sub></b> to <b>R<sub>i</sub></b>. So Chef asks churu a lot of queries which are of two types.</p> 
+  <li> Type 1: Change the <b>x<sup>th</sup></b> element of the array to <b>y</b>. <br> </li> 
+  <li> Type 2: Return the sum of all functions from <b>m</b> to <b>n</b>.<br> </li> 
+  <p><br></p> 
+  <p>Now Churu has started to solve, but Chef realize that it is tough for him to decide whether Churu is correct or not. So he needs your help , will you help him out ?</p> 
+  <h3>Input Format</h3> 
+  <p>First Line is the size of the array i.e. <b>N</b> <br><br> Next Line contains <b>N</b> space separated numbers <b>A<sub>i</sub></b> denoting the array<br><br> Next N line follows denoting <b>L<sub>i</sub></b> and <b>R<sub>i</sub></b> for each functions.<br><br> Next Line contains an integer <b>Q</b> , number of queries to follow.<br><br> Next <b>Q</b> line follows , each line containing a query of Type 1 or Type 2.<br><br> 1 <b>x y</b> : denotes a type 1 query,where <b>x</b> and <b>y</b> are integers<br><br> 2 <b>m n</b> : denotes a type 2 query where <b>m</b> and <b>n</b> are integers<br></p> 
+  <h3>Output Format</h3> 
+  <p>For each query of type 2 , output as asked above.<br></p> 
+  <h3>Constraints</h3> 
+  <p>1 ? N ? 10<sup>5</sup><br><br> 1 ? A<sub>i</sub> ? 10<sup>9</sup><br><br> 1 ? L<sub>i</sub> ? N<br><br> L<sub>i</sub> ? R<sub>i</sub> ? N<br><br> 1 ? Q ? 10<sup>5</sup><br><br> 1 ? x ? N<br><br> 1 ? y ? 10<sup>9</sup><br><br> 1 ? m ? N<br><br> m ? n ? N<br></p> 
+  <h3>Subtask</h3> 
+  <ul> 
+   <li>Subtask 1: N ? 1000 , Q ? 1000 , 10 points</li> 
+   <li>Subtask 2: R-L ? 10 , all x will be distinct ,10 points</li> 
+   <li>Subtask 3: Refer to constraints above , 80 points</li> 
+  </ul> 
+  <h3>Sample Input</h3> 
+  <p>5<br><br> 1 2 3 4 5<br><br> 1 3<br><br> 2 5<br><br> 4 5<br><br> 3 5<br><br> 1 2<br><br> 4<br><br> 2 1 4<br><br> 1 3 7<br><br> 2 1 4<br><br> 2 3 5<br></p> 
+  <h3>Sample Output</h3> 
+  <p>41<br><br> 53<br><br> 28<br></p> 
+  <h3>Explanation</h3> 
+  <p>Functions values initially : <br><br> F[1] = 1+ 2 + 3 = 6<br><br> F[2] = 2 + 3 + 4 + 5 = 14<br><br> F[3] = 4+5 = 9<br><br> F[4] = 3+4+5 = 12<br><br> F[5] = 1+2 = 3<br><br> Query 1: F[1] + F[2] + F[3] + F[4] = 41<br><br> After Update , the Functions are :<br><br> F[1] = 10 , F[2] = 18 , F[3] = 9 , F[4] = 16 , F[5] = 3<br><br> Query 3: F[1] + F[2] + F[3] + F[4] = 53<br><br> Query 4: F[3]+F[4]+F[5] = 28<br></p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/devuy11">devuy11</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/FNCS">http://discuss.codechef.com/problems/FNCS</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/data-structure"> data-structure </a><a class="problem-tag-small " href="/tags/problems/devuy11"> devuy11 </a><a class="problem-tag-small " href="/tags/problems/fenwick"> fenwick </a><a class="problem-tag-small " href="/tags/problems/medium-hard"> medium-hard </a><a class="problem-tag-small " href="/tags/problems/nov14"> nov14 </a><a class="problem-tag-small " href="/tags/problems/segment-tree"> segment-tree </a><a class="problem-tag-small " href="/tags/problems/sqrt-decomp"> sqrt-decomp </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>6-10-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2.5 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/FNCS">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-90699"></a> 
+ <div id="c90699" class="comment clear-block"> 
+  <h3><a href="/problems/FNCS#comment-90699" class="active">After a lot of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/satya01">satya01</a></strong>
+   <span style="color:#828282"> @ 19 Nov 2014 09:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    After a lot of attempts,finally 100pts!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90720"></a> 
+ <div id="c90720" class="comment clear-block"> 
+  <h3><a href="/problems/FNCS#comment-90720" class="active">i m not able to find the bug.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/master635">master635</a></strong>
+   <span style="color:#828282"> @ 20 Nov 2014 04:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i m not able to find the bug. so plz help me. 
+    <a href="https://www.dropbox.com/s/g6jyu0weqjvfkh1/churu.c?dl=0" title="https://www.dropbox.com/s/g6jyu0weqjvfkh1/churu.c?dl=0">https://www.dropbox.com/s/g6jyu0weqjvfkh1/churu.c?dl=0</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91074"></a> 
+ <div id="c91074" class="comment clear-block"> 
+  <h3><a href="/problems/FNCS#comment-91074" class="active">Getting WA in Subtask 1 and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/omerjerk">omerjerk</a></strong>
+   <span style="color:#828282"> @ 1 Dec 2014 07:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Getting WA in Subtask 1 and AC in Subtask 2, 3. Dafuq!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-96844"></a> 
+ <div id="c96844" class="comment clear-block"> 
+  <h3><a href="/problems/FNCS#comment-96844" class="active">Error in this? Getting WA in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anukul">anukul</a></strong>
+   <span style="color:#828282"> @ 15 Feb 2015 08:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Error in this? Getting WA in all three 
+    <a href="http://pastebin.com/AP4iePCr" title="http://pastebin.com/AP4iePCr">http://pastebin.com/AP4iePCr</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-98491"></a> 
+ <div id="c98491" class="comment clear-block"> 
+  <h3><a href="/problems/FNCS#comment-98491" class="active">Use Unsigned long long ,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajat1603">rajat1603</a></strong>
+   <span style="color:#828282"> @ 5 Mar 2015 09:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Use Unsigned long long , answer does not fit in long long for 1st testcase of 3rd subtask
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

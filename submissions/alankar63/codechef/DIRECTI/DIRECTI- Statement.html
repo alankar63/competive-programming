@@ -1,0 +1,255 @@
+<div id="node-1723310" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>Chef recently printed directions from his home to a hot new restaurant across the town, but forgot to print the directions to get back home. Help Chef to transform the directions to get home from the restaurant.</p> 
+  <p>A set of directions consists of several instructions. The first instruction is of the form "Begin on XXX", indicating the street that the route begins on. Each subsequent instruction is of the form "Left on XXX" or "Right on XXX", indicating a turn onto the specified road.</p> 
+  <p>When reversing directions, all left turns become right turns and vice versa, and the order of roads and turns is reversed. See the sample input for examples.</p> 
+  <h3>Input</h3> 
+  <p>Input will begin with an integer <b>T</b>, the number of test cases that follow. Each test case begins with an integer <b>N</b>, the number of instructions in the route. <b>N</b> lines follow, each with exactly one instruction in the format described above.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, print the directions of the reversed route, one instruction per line. Print a blank line after each test case.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li>1 ? <b>T</b> ? 15</li> 
+   <li>2 ? <b>N</b> ? 40</li> 
+   <li>Each line in the input will contain at most 50 characters, will contain only alphanumeric characters and spaces and will not contain consecutive spaces nor trailing spaces. By alphanumeric characters we mean digits and letters of the English alphabet (lowercase and uppercase).</li> 
+  </ul> 
+  <h3>Sample Input</h3> 
+  <pre>2
+4
+Begin on Road A
+Right on Road B
+Right on Road C
+Left on Road D
+6
+Begin on Old Madras Road
+Left on Domlur Flyover
+Left on 100 Feet Road
+Right on Sarjapur Road
+Right on Hosur Road
+Right on Ganapathi Temple Road
+</pre>
+  <h3>Sample Output</h3> 
+  <pre>Begin on Road D
+Right on Road C
+Left on Road B
+Left on Road A
+
+Begin on Ganapathi Temple Road
+Left on Hosur Road
+Left on Sarjapur Road
+Left on 100 Feet Road
+Right on Domlur Flyover
+Right on Old Madras Road
+
+</pre>
+  <h3>Explanation</h3> 
+  <p>In the first test case, the destination lies on Road D, hence the reversed route begins on Road D. The final turn in the original route is turning left from Road C onto Road D. The reverse of this, turning right from Road D onto Road C, is the first turn in the reversed route.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/pieguy">pieguy</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/anton_lunyov">anton_lunyov</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/DIRECTI">http://discuss.codechef.com/problems/DIRECTI</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/cook29"> cook29 </a><a class="problem-tag-small " href="/tags/problems/pieguy"> pieguy </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>26-11-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/DIRECTI">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-35332"></a> 
+ <div id="c35332" class="comment clear-block"> 
+  <h3><a href="/problems/DIRECTI#comment-35332" class="active">My program is running</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kahini_1">kahini_1</a></strong>
+   <span style="color:#828282"> @ 1 Jan 2013 09:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My program is running successfully &amp; output is coming same as given here .But still it is giving "Wrong Answer" upon submitting. How to debug it ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43550"></a> 
+ <div id="c43550" class="comment clear-block"> 
+  <h3><a href="/problems/DIRECTI#comment-43550" class="active">@kahini_1 dude do check even</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aka_007">aka_007</a></strong>
+   <span style="color:#828282"> @ 21 May 2013 11:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @kahini_1 dude do check even for lower "left" and "right"
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-47916"></a> 
+ <div id="c47916" class="comment clear-block"> 
+  <h3><a href="/problems/DIRECTI#comment-47916" class="active">Please help me out with my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hko1">hko1</a></strong>
+   <span style="color:#828282"> @ 8 Jul 2013 06:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please help me out with my code,I am getting Wrong Answer but unable to find the mistake. 
+    <a href="http://www.codechef.com/viewsolution/2339314" title="http://www.codechef.com/viewsolution/2339314">http://www.codechef.com/viewsolution/2339314</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71969"></a> 
+ <div id="c71969" class="comment clear-block"> 
+  <h3><a href="/problems/DIRECTI#comment-71969" class="active">accepted in first</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/krish728">krish728</a></strong>
+   <span style="color:#828282"> @ 1 Feb 2014 08:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    accepted in first attempt...!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75447"></a> 
+ <div id="c75447" class="comment clear-block"> 
+  <h3><a href="/problems/DIRECTI#comment-75447" class="active">ACed in 2nd go. ^_^ take care</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ana1nd_9">ana1nd_9</a></strong>
+   <span style="color:#828282"> @ 19 Mar 2014 01:23 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    ACed in 2nd go. ^_^ take care of spaces
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79765"></a> 
+ <div id="c79765" class="comment clear-block"> 
+  <h3><a href="/problems/DIRECTI#comment-79765" class="active">ac in 1st attempt....</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rock_nik">rock_nik</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2014 09:56 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    ac in 1st attempt....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80012"></a> 
+ <div id="c80012" class="comment clear-block"> 
+  <h3><a href="/problems/DIRECTI#comment-80012" class="active">1 WA due to damn extra</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhishek971">abhishek971</a></strong>
+   <span style="color:#828282"> @ 25 Jun 2014 08:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    1 WA due to damn extra whitesapce! :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80078"></a> 
+ <div id="c80078" class="comment clear-block"> 
+  <h3><a href="/problems/DIRECTI#comment-80078" class="active">Please help me to check why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/d11ps08">d11ps08</a></strong>
+   <span style="color:#828282"> @ 28 Jun 2014 08:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please help me to check why my solution is giving wrong answer. I had run locally with the given example it is was working, but when I submit it is wrong:-http://www.codechef.com/viewsolution/4151966
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91980"></a> 
+ <div id="c91980" class="comment clear-block"> 
+  <h3><a href="/problems/DIRECTI#comment-91980" class="active">Are there some corner cases</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cool_techie">cool_techie</a></strong>
+   <span style="color:#828282"> @ 18 Dec 2014 09:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Are there some corner cases to consider?? Because I am getting WA and I don't seem to find any problem with my code.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92305"></a> 
+ <div id="c92305" class="comment clear-block"> 
+  <h3><a href="/problems/DIRECTI#comment-92305" class="active">@admin This question is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kp_programmer">kp_programmer</a></strong>
+   <span style="color:#828282"> @ 26 Dec 2014 08:21 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin This question is misleading! When it is written that first line will be of the form "Begin on XXX", then the test for "begin on XXX" is wrong as it doesn't adhere to the limitations of the question , and same is the case for "Left on XXX" and "Right on XXX"... Even the solution given by the author in the editorial gives a different answer as compared to that of tester!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93277"></a> 
+ <div id="c93277" class="comment clear-block"> 
+  <h3><a href="/problems/DIRECTI#comment-93277" class="active">hey admin please help me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jains5781">jains5781</a></strong>
+   <span style="color:#828282"> @ 8 Jan 2015 01:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hey admin please help me out....dont knw y i m getting WA...while it is showing correct output and running succesfully ... 
+    <a href="http://www.codechef.com/viewsolution/5811671" title="http://www.codechef.com/viewsolution/5811671">http://www.codechef.com/viewsolution/5811671</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

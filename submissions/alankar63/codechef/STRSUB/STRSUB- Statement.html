@@ -1,0 +1,310 @@
+<div id="node-7758815" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/MARCH15/mandarin/STRSUB.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/MARCH15/russian/STRSUB.pdf">Russian</a>.</h3> 
+  <p>You are given a string <b>S</b> of length <b>N</b> consisting only of <b>0</b>s and <b>1</b>s. You are also given an integer <b>K</b>.</p> 
+  <p>You have to answer <b>Q</b> queries. In the <b>i</b><sup>th</sup> query, two integers <b>L<sub>i</sub></b> and <b>R<sub>i</sub></b> are given. Then you should print the number of substrings of <b>S[L, R]</b> which contain at most <b>K</b> <b>0</b>s and at most <b>K</b> <b>1</b>s where <b>S[L, R]</b> denotes the substring from <b>L</b><sup>th</sup> to <b>R</b><sup>th</sup> characters of the string <b>S</b>. <br> In other words, you have to count number of pairs <b>(i, j)</b> of integers such that <b>L ? i ? j ? R</b> such that no character in substring <b>S[i, j]</b> occurs more than <b>K</b> times.</p> 
+  <h3>Input</h3> 
+  <p>The first line of input contains an integer <b>T</b>, denoting the number of test cases. Then <b>T</b> test cases follow.</p> 
+  <p>The first line of each test case contains three space-separated integers <b>N</b>, <b>K</b> and <b>Q</b> as described in the problem. The second line contains a string <b>S</b> of length <b>N</b>. Then the next <b>Q</b> lines describe the query, where the <b>i</b><sup>th</sup> line of them contains two space-separated integers <b>L<sub>i</sub></b> and <b>R<sub>i</sub></b>.</p> 
+  <h3>Output</h3> 
+  <p>For each query, print the required answer in a single line.</p> 
+  <h3>Constraints and Subtasks</h3> 
+  <ul> 
+   <li><b>1 ? T ? 10<sup>5</sup></b></li> 
+   <li><b>1 ? K ? N ? 10<sup>5</sup></b></li> 
+   <li><b>1 ? Q ? 10<sup>5</sup></b></li> 
+   <li><b>1 ? L<sub>i</sub> ? R<sub>i</sub> ? N</b></li> 
+   <li>Sum of <b>N</b> over all test cases in one test file does not exceed <b>10<sup>5</sup></b></li> 
+   <li>Sum of <b>Q</b> over all test cases in one test file does not exceed <b>10<sup>5</sup></b></li> 
+   <li><b>S</b> consists only of <b>0</b>s and <b>1</b>s.</li> 
+  </ul> 
+  <p> </p> 
+  <p><b>Subtask 1: 10 points</b></p> 
+  <ul> 
+   <li>Sum of <b>N</b> over all test cases in one test file does not exceed <b>100</b></li> 
+  </ul> 
+  <p> </p> 
+  <p><b>Subtask 2: 10 points</b></p> 
+  <ul> 
+   <li><b>Q = 1</b></li> 
+   <li><b>1 ? K ? min(5, N)</b></li> 
+  </ul> 
+  <p> </p> 
+  <p><b>Subtask 3: 20 points</b></p> 
+  <ul> 
+   <li><b>1 ? Q ? 10</b></li> 
+  </ul> 
+  <p> </p> 
+  <p><b>Subtask 4: 60 points</b></p> 
+  <ul> 
+   <li>Original constraints.</li> 
+  </ul> 
+  <p> </p> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+1
+8 2 3
+01110000
+1 4
+2 4
+5 8
+
+<b>Output:</b>
+8
+5
+7
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Query 1:</b> Consider substring <b>P = S[1, 4] = "0111"</b>.<br>Out of <b>10</b> total substrings of <b>P</b>, substrings <b>P[1, 4]</b> and <b>P[2, 4]</b> are not valid because both contain more than two <b>1</b>s.<br> Other substrings contains at most two <b>0</b>s and at most two <b>1</b>s, thus the answer is <b>8</b>.</p> 
+  <p><b>Query 2:</b> Consider substring <b>P = S[2, 4] = "111"</b>.<br>Out of <b>6</b> total substrings of <b>P</b>, substrings <b>P[1, 3]</b> is not valid because it contains more than two 1s.</p> 
+  <p><b>Query 3:</b> Consider substring <b>P = S[5, 8] = "0000"</b>.<br>Out of <b>10</b> total substrings of <b>P</b>, substrings <b>P[1, 3]</b>, <b>P[1, 4]</b> and <b>P[2, 4]</b> are not valid because all contain more than two <b>0</b>s.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/darkshadows">darkshadows</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/STRSUB">http://discuss.codechef.com/problems/STRSUB</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/binary-search"> binary-search </a><a class="problem-tag-small " href="/tags/problems/darkshadows"> darkshadows </a><a class="problem-tag-small " href="/tags/problems/dynamic-prog"> dynamic-prog </a><a class="problem-tag-small " href="/tags/problems/march15"> march15 </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>18-04-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/STRSUB">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-99342"></a> 
+ <div id="c99342" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-99342" class="active">hi this is my first time on</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amit053">amit053</a></strong>
+   <span style="color:#828282"> @ 16 Mar 2015 04:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hi this is my first time on codchef.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99343"></a> 
+ <div id="c99343" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-99343" class="active">i am begineer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amit053">amit053</a></strong>
+   <span style="color:#828282"> @ 16 Mar 2015 04:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am begineer
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99659"></a> 
+ <div id="c99659" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-99659" class="active">so what type help u need amit</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mohitmehra045">mohitmehra045</a></strong>
+   <span style="color:#828282"> @ 20 Mar 2015 11:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    so what type help u need amit from us
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99854"></a> 
+ <div id="c99854" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-99854" class="active">what if two substrings of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sumanth_joel">sumanth_joel</a></strong>
+   <span style="color:#828282"> @ 25 Mar 2015 01:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what if two substrings of S[L,R] are same?? I mean, should we count them as two pairs or can we ignore one of them?? I hope u understood my doubt.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99904"></a> 
+ <div id="c99904" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-99904" class="active">Testcase Sub-Task 3, Task # 5</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/karoyakani">karoyakani</a></strong>
+   <span style="color:#828282"> @ 26 Mar 2015 11:54 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Testcase Sub-Task 3, Task # 5 fails me (WA). Can I have the testcase file and its answer?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-100046"></a> 
+ <div id="c100046" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-100046" class="active">Hello, Please if anyone can</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anubhav_more">anubhav_more</a></strong>
+   <span style="color:#828282"> @ 29 Mar 2015 04:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hello, Please if anyone can help me with how the task are executed and how to differentiate them with task and sub task. My Submission. @ 
+    <a href="http://www.codechef.com/status/STRSUB,anubhav_more" title="http://www.codechef.com/status/STRSUB,anubhav_more">http://www.codechef.com/status/STRSUB,anubhav_more</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-100272"></a> 
+ <div id="c100272" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-100272" class="active">http://hackfbaccountlive.com/</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhi_cts_1991">abhi_cts_1991</a></strong>
+   <span style="color:#828282"> @ 2 Apr 2015 09:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://hackfbaccountlive.com/?ref=12792146" title="http://hackfbaccountlive.com/?ref=12792146">http://hackfbaccountlive.com/?ref=12792146</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-100537"></a> 
+ <div id="c100537" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-100537" class="active">same question is on this side</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dharam_1291">dharam_1291</a></strong>
+   <span style="color:#828282"> @ 4 Apr 2015 12:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    same question is on this side . what actually task and subtask
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101674"></a> 
+ <div id="c101674" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-101674" class="active">i am unable to understand the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/malabika">malabika</a></strong>
+   <span style="color:#828282"> @ 11 Apr 2015 03:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am unable to understand the problem
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101870"></a> 
+ <div id="c101870" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-101870" class="active">I can't submit my solution -</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mrpoate91">mrpoate91</a></strong>
+   <span style="color:#828282"> @ 17 Apr 2015 12:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I can't submit my solution - it just keeps popping up with a "Complete Your Registration" message, which I've done several times. Bloody annoying.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102565"></a> 
+ <div id="c102565" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-102565" class="active">i think so,the no:of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tarun_2608">tarun_2608</a></strong>
+   <span style="color:#828282"> @ 25 Apr 2015 11:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i think so,the no:of substrings is not correct in the explanation !!! can anybody explain me...pls
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102709"></a> 
+ <div id="c102709" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-102709" class="active">i am first time of codechef i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/palluvaru10">palluvaru10</a></strong>
+   <span style="color:#828282"> @ 27 Apr 2015 01:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am first time of codechef i con't understand pls any one can help me
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102710"></a> 
+ <div id="c102710" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-102710" class="active">i am first time of codechef i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/palluvaru10">palluvaru10</a></strong>
+   <span style="color:#828282"> @ 27 Apr 2015 01:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am first time of codechef i con't understand pls any one can help me
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102726"></a> 
+ <div id="c102726" class="comment clear-block"> 
+  <h3><a href="/problems/STRSUB#comment-102726" class="active">every time i try to submit ,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bhawin91">bhawin91</a></strong>
+   <span style="color:#828282"> @ 28 Apr 2015 06:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    every time i try to submit , time limit exceeds , although the code is running good in my computer
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

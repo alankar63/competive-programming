@@ -1,0 +1,1332 @@
+<div id="node-369499" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> Given n numbers, you can perform the following operation any number of times : Choose any subset of the numbers (possibly empty), none of which are 0. Decrement the numbers in the subset by 1, and increment the numbers not in the subset by K. </p> 
+  <p> Is it possible to perform operations such that exactly n - 1 numbers become 0 ? </p> 
+  <p> Input : </p> 
+  <p> The first line contains the number of test cases T. 2*T lines follow, 2 for each case. The first line of a test case contains the numbers n and K. The next line contains n numbers, a_1...a_n. </p> 
+  <p> Output : </p> 
+  <p> Output T lines, one corresponding to each test case. For a test case, output "YES" if there is a sequence of operations as described, and "NO" otherwise. </p> 
+  <pre>
+Sample Input :
+3
+2 1
+10 10
+3 2
+1 2 2
+3 2
+1 2 3
+
+</pre>
+  <pre>
+Sample Output :
+YES
+YES
+NO
+
+</pre>
+  <pre>
+Constraints :
+1 &lt;= T &lt;= 1000
+2 &lt;= n &lt;= 100
+1 &lt;= K &lt;= 10
+0 &lt;= a_i &lt;= 1000
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/syco">syco</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/syco"> syco </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>9-04-2010</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/ARRAYTRM">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-10057"></a> 
+ <div id="c10057" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-10057" class="active">can&nbsp; anyone put some more</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nee87">nee87</a></strong>
+   <span style="color:#828282"> @ 15 Aug 2010 12:57 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can&nbsp; anyone put some more sample input and output cases of this problem</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10555"></a> 
+ <div id="c10555" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-10555" class="active">what should be the out output</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gunesaurabh">gunesaurabh</a></strong>
+   <span style="color:#828282"> @ 6 Sep 2010 09:04 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>what should be the out output for following test case?</p> 
+    <p>3 2</p> 
+    <p>0 0 1</p> 
+    <p>&nbsp;</p> 
+    <p>It is "YES" initially. But if we do a single operation, it will become "NO". So is "YES" possible with initial set without doing operation?</p> 
+    <p>&nbsp;</p> 
+    <p>Thanks,</p> 
+    <p>Saurabh</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10556"></a> 
+ <div id="c10556" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-10556" class="active">"Any number of times"</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 6 Sep 2010 10:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>"Any number of times" includes 0 times.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10952"></a> 
+ <div id="c10952" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-10952" class="active">@admin, can you please give</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kushal154">kushal154</a></strong>
+   <span style="color:#828282"> @ 27 Sep 2010 08:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin, can you please give me a test case where <a target="_blank" href="/viewsolution/340573">solution</a> is failing. I think my logic is correct.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10969"></a> 
+ <div id="c10969" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-10969" class="active">An extra test case would make</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 29 Sep 2010 06:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>An extra test case would make things too easy. Your logic is not correct; check it thoroughly and you should be able to come up with a test case yourself.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10971"></a> 
+ <div id="c10971" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-10971" class="active">@Stephen, got it. Just one</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kushal154">kushal154</a></strong>
+   <span style="color:#828282"> @ 29 Sep 2010 11:14 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Stephen, got it. Just one silly mistake. Thanks.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11553"></a> 
+ <div id="c11553" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-11553" class="active">@admin can you tell me a test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anurag_aggarwal">anurag_aggarwal</a></strong>
+   <span style="color:#828282"> @ 26 Oct 2010 08:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin</p> 
+    <p>can you tell me a test case where my <a href="/viewsolution/365651">solution</a> is falling i think my logic is correct</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11554"></a> 
+ <div id="c11554" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-11554" class="active">12 32 1 That should be 'YES';</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 27 Oct 2010 10:12 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><code>1</code><br><code>2 3</code><br><code>2 1</code></p> 
+    <p>That should be 'YES'; choose everything as the subset and you immediately are done.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11557"></a> 
+ <div id="c11557" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-11557" class="active">i didnt considered this case</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anurag_aggarwal">anurag_aggarwal</a></strong>
+   <span style="color:#828282"> @ 27 Oct 2010 04:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i didnt considered this case ...</p> 
+    <p>when k can be greater than n...</p> 
+    <p>&nbsp;</p> 
+    <p>thanks Stephen...</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11559"></a> 
+ <div id="c11559" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-11559" class="active">wasn't reading the problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anurag_aggarwal">anurag_aggarwal</a></strong>
+   <span style="color:#828282"> @ 27 Oct 2010 05:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>wasn't reading the problem statement correctly...</p> 
+    <p>but still stuck at same point.....</p> 
+    <p>can anyone look at it....</p> 
+    <p><a href="http://www.codechef.com/viewsolution/365982" title="http://www.codechef.com/viewsolution/365982">http://www.codechef.com/viewsolution/365982</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11568"></a> 
+ <div id="c11568" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-11568" class="active">I'm afraid you're still</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 28 Oct 2010 03:47 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I'm afraid you're still giving the wrong answer most of the time. For example:</p> 
+    <p><code>1<br>3 1<br>2 3 4</code></p> 
+    <p>Correct answer is YES. There are other types of input which you are also getting wrong, but since coming up with these test cases is half the work of solving the problem, I won't be giving you any more ;)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11579"></a> 
+ <div id="c11579" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-11579" class="active">thans Stephen &nbsp; I think I am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anurag_aggarwal">anurag_aggarwal</a></strong>
+   <span style="color:#828282"> @ 28 Oct 2010 07:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>thans Stephen</p> 
+    <p>&nbsp;</p> 
+    <p>I think I am unable to come up with test cases that is why I am unable to solve many problems of the coechef despite&nbsp; kowing on algorithm....</p> 
+    <p>i will try it...</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12413"></a> 
+ <div id="c12413" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-12413" class="active">@stephen all the test cases</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gauravsc">gauravsc</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2010 07:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@stephen all the test cases you have told above , My code works for all of them ? but I am still getting wrong answer :( Can you please throw some light :-/</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12417"></a> 
+ <div id="c12417" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-12417" class="active">@admin how could this case 13</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abeyy">abeyy</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2010 09:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin</p> 
+    <p>how could this case</p> 
+    <p><code>1<br>3 1<br>2 3 4</code></p> 
+    <p>be yes...?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12420"></a> 
+ <div id="c12420" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-12420" class="active">Choose the second and third</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 18 Dec 2010 02:02 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Choose the second and third numbers:</p> 
+    <p>3 2 3</p> 
+    <p>Choose the first and third numbers three times:</p> 
+    <p>0 5 0</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12438"></a> 
+ <div id="c12438" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-12438" class="active">Somebody Plz look at this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coolnaveen90">coolnaveen90</a></strong>
+   <span style="color:#828282"> @ 19 Dec 2010 04:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Somebody Plz look at this solution also. ...</p> 
+    <p><a href="http://www.codechef.com/viewsolution/402392" title="http://www.codechef.com/viewsolution/402392">http://www.codechef.com/viewsolution/402392</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12440"></a> 
+ <div id="c12440" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-12440" class="active">Sorry, plz look this soln.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coolnaveen90">coolnaveen90</a></strong>
+   <span style="color:#828282"> @ 19 Dec 2010 04:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Sorry, plz look this soln. and ignore the previous post ...</p> 
+    <p><a href="http://www.codechef.com/viewsolution/402406" title="http://www.codechef.com/viewsolution/402406">http://www.codechef.com/viewsolution/402406</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12572"></a> 
+ <div id="c12572" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-12572" class="active">@Stephen: My solution works</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/patelatharva">patelatharva</a></strong>
+   <span style="color:#828282"> @ 27 Dec 2010 12:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Stephen:</p> 
+    <p>My solution works for all test cases including those in the comments but while submitting I get a run time error.</p> 
+    <p>Faqs says that it may be due to memory overhead.</p> 
+    <p>But I have only used dynamic memory allocations as required by the values of n in the problem statement.</p> 
+    <p>The code works completely fine on my machine</p> 
+    <p>So what should be the problem ?!</p> 
+    <p>Should I try long static arrays instead of small Dynamic arrays ?!</p> 
+    <p>&nbsp;</p> 
+    <p>&nbsp;</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12574"></a> 
+ <div id="c12574" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-12574" class="active">That's only one possibility</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 27 Dec 2010 01:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>That's only one possibility for runtime error.. another one it mentions is that a main function must always return 0.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12575"></a> 
+ <div id="c12575" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-12575" class="active">OK I got my error it was</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/patelatharva">patelatharva</a></strong>
+   <span style="color:#828282"> @ 27 Dec 2010 01:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <pre>OK I got my error it was NZEC. Meaning return 0 was missing !! :S<br></pre>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12626"></a> 
+ <div id="c12626" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-12626" class="active">guys it will really kind of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhinavatul">abhinavatul</a></strong>
+   <span style="color:#828282"> @ 31 Dec 2010 08:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>guys it will really kind of you if you could take a look at <a href="http://discussed.codechef.com/showthread.php?p=3667#post3667" title="http://discussed.codechef.com/showthread.php?p=3667#post3667">http://discussed.codechef.com/showthread.php?p=3667#post3667</a> , why am i getting wrong answer even though I have a mathematical proof of my logic , it works for all above test cases including those mentioned in comments</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13026"></a> 
+ <div id="c13026" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13026" class="active">can some one please check my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mendax">mendax</a></strong>
+   <span style="color:#828282"> @ 20 Jan 2011 06:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can some one please check my submission ....?http://www.codechef.com/viewsolution/427187.... i did the same thing which abhinav atul mentioned in the post <a href="http://discussed.codechef.com/showthread.php?p=3667#post3667" title="http://discussed.codechef.com/showthread.php?p=3667#post3667">http://discussed.codechef.com/showthread.php?p=3667#post3667</a>....please help me..&nbsp;&nbsp; :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13027"></a> 
+ <div id="c13027" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13027" class="active">can some one please check my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mendax">mendax</a></strong>
+   <span style="color:#828282"> @ 20 Jan 2011 06:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can some one please check my submission ....? <a href="http://www.codechef.com/viewsolution/427187" title="http://www.codechef.com/viewsolution/427187">http://www.codechef.com/viewsolution/427187</a> .... i did the same thing which abhinav atul mentioned in the post <a href="http://discussed.codechef.com/showthread.php?p=3667#post3667" title="http://discussed.codechef.com/showthread.php?p=3667#post3667">http://discussed.codechef.com/showthread.php?p=3667#post3667</a>....please help me..&nbsp;&nbsp; :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13049"></a> 
+ <div id="c13049" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13049" class="active">@admin: Can you give me a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bipasaforu">bipasaforu</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2011 03:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin:</p> 
+    <p>Can you give me a test case where my&nbsp;solution is giving the wrong answer?&nbsp;</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13051"></a> 
+ <div id="c13051" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13051" class="active">is this logic correct that if</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iiit">iiit</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2011 04:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>is this logic correct that if i can find any subset of n-1 numbers such that all get converted into a number x after some operations then the ans is yes</p> 
+    <p>pls respond as soon as possible</p> 
+    <p>thank you</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13055"></a> 
+ <div id="c13055" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13055" class="active">alas got AC</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iiit">iiit</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2011 11:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>alas got AC</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13065"></a> 
+ <div id="c13065" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13065" class="active">@admin I've tried all the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/parighagupta">parighagupta</a></strong>
+   <span style="color:#828282"> @ 23 Jan 2011 11:23 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin</p> 
+    <p>I've tried all the test cases u said above and the answer is right. Still its saying 'wrong answer'... can u tell me a test case where my solution fails?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13068"></a> 
+ <div id="c13068" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13068" class="active">my id is 428976</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/parighagupta">parighagupta</a></strong>
+   <span style="color:#828282"> @ 23 Jan 2011 11:57 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>my id is 428976</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13074"></a> 
+ <div id="c13074" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13074" class="active">@parigha i guess u hav</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iiit">iiit</a></strong>
+   <span style="color:#828282"> @ 23 Jan 2011 01:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@parigha</p> 
+    <p>i guess u hav followed the approach given by abhinav which is wrong</p> 
+    <p>if u hav then respond so that i can tell the mistake in that approach</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13102"></a> 
+ <div id="c13102" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13102" class="active">@garima i haven't fully used</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/parighagupta">parighagupta</a></strong>
+   <span style="color:#828282"> @ 23 Jan 2011 10:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@garima</p> 
+    <p>i haven't fully used abhinav's algorithm... just till d mathematical part (i.e. till finding the remainders)... is something wrong till there?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13139"></a> 
+ <div id="c13139" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13139" class="active">@parigha there is a mistake</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iiit">iiit</a></strong>
+   <span style="color:#828282"> @ 24 Jan 2011 12:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@parigha</p> 
+    <p>there is a mistake in it</p> 
+    <p>as given in the forum m%(k+1)=a_i%(k+1)</p> 
+    <p>from here we conclude that n-1 numbers must hav same remainder and the left one can hav same or different rem</p> 
+    <p>so we conclude there should be 1 or 2 distinct remainders</p> 
+    <p>if there are 1 or 2 distinct rem we say yes but it has a mistake, consider only n-2 numbres out of n can be made 0 at at time and all of them giv same rem say x the rest of the two numbers can giv x or something else as rem if they also giv x</p> 
+    <p>we get 1 distinct rem and we output yes which is wrong</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13141"></a> 
+ <div id="c13141" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13141" class="active">@Parigha I'm not sure what</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 24 Jan 2011 02:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Parigha</p> 
+    <p>I'm not sure what garima is talking about, but your issue occurs when the first three elements of c are all the same.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13162"></a> 
+ <div id="c13162" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13162" class="active">are a_i s always</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/architgupta">architgupta</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2011 05:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>are a_i s always positive</p> 
+    <p>initiallly as well as during the transformation</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13176"></a> 
+ <div id="c13176" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13176" class="active">The initial constraints are</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 26 Jan 2011 09:57 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The initial constraints are mentioned in the problem. It doesn't say anywhere they can't become negative at any point.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13303"></a> 
+ <div id="c13303" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13303" class="active">I am facing some trouble</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Gaurav Jain">Gaurav Jain</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 11:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I am facing some trouble understanding the problem.. Can someone explain why the answer is NO for the following sample case:</p> 
+    <p>3 2</p> 
+    <p>1 2 3</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13304"></a> 
+ <div id="c13304" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13304" class="active">Sorry.. I did not read the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Gaurav Jain">Gaurav Jain</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 11:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Sorry.. I did not read the problem statement carefully.. Ignore my above comment!</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13321"></a> 
+ <div id="c13321" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13321" class="active">could anyone help me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vi269">vi269</a></strong>
+   <span style="color:#828282"> @ 29 Jan 2011 06:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>could anyone help me please<a href="http://www.codechef.com/viewsolution/437720">http://www.codechef.com/viewsolution/437720</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13326"></a> 
+ <div id="c13326" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13326" class="active">@admin what will be answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mayank_gupta">mayank_gupta</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2011 12:27 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin</p> 
+    <p>what will be answer for these sequences:</p> 
+    <p>1. 3 4 6 9 11 12 15</p> 
+    <p>2. 4 6 9 11 14 17</p> 
+    <p>3. 4 6 9 11 12 15</p> 
+    <p>4. 3 6 9 11 12 15</p> 
+    <p>5. 3 6 9 10 11 15</p> 
+    <p>Pls. give me the answers..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13327"></a> 
+ <div id="c13327" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13327" class="active">In which language I should</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mayank_gupta">mayank_gupta</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2011 12:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>In which language I should submit the program:</p> 
+    <p>C(gcc-4,3,2), C99 strict(gcc 4.3.2), C++(gcc-4.0.0-8) or C++(gcc-4.3.2)</p> 
+    <p>&nbsp;</p> 
+    <p>I dont know why it is giving answer to both of my solutions:</p> 
+    <p>1. <a href="http://www.codechef.com/viewsolution/438058" title="http://www.codechef.com/viewsolution/438058">http://www.codechef.com/viewsolution/438058</a></p> 
+    <p>2. <a href="http://www.codechef.com/viewsolution/438041" title="http://www.codechef.com/viewsolution/438041">http://www.codechef.com/viewsolution/438041</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13328"></a> 
+ <div id="c13328" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13328" class="active">To admin @above comment.. it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mayank_gupta">mayank_gupta</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2011 12:53 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>To admin</p> 
+    <p>@above comment..</p> 
+    <p>it is giving wrong answer after submitting the solution</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13332"></a> 
+ <div id="c13332" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13332" class="active">@Mayank : At codechef you</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/manoharsingh23">manoharsingh23</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2011 03:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Mayank : At codechef you dont have to print messages to ask for input in your soln . You should assume that Judge knows when to input what values and in what format.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13333"></a> 
+ <div id="c13333" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13333" class="active">to admin, could you please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/esha_c">esha_c</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2011 03:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>to admin,</p> 
+    <p>could you please tell me at what case my solution is giving a wrong answer, as it is running fine on m machine</p> 
+    <p><a href="http://www.codechef.com/viewsolution/438389" title="http://www.codechef.com/viewsolution/438389">http://www.codechef.com/viewsolution/438389</a></p> 
+    <p>also should an input all zeroes generate yes or no?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13334"></a> 
+ <div id="c13334" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13334" class="active">@Admin Getting a wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pilania">pilania</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2011 04:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Admin</p> 
+    <p>Getting a wrong answer for this solution <a href="http://www.codechef.com/viewsolution/438432" title="http://www.codechef.com/viewsolution/438432">http://www.codechef.com/viewsolution/438432</a></p> 
+    <p>All the test cases are working fine.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13335"></a> 
+ <div id="c13335" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13335" class="active">to admin, could you please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ankitagarwal98">ankitagarwal98</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2011 05:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p> <span> </span></p>
+    <p>to admin,</p> 
+    <p>could you please tell me at what case my solution is giving a wrong answer, as it is running fine on my machine</p> 
+    <p><a title="http://www.codechef.com/viewsolution/438389" href="http://www.codechef.com/viewsolution/438389">http://www.codechef.com/viewsolution/438478</a></p> 
+    <p></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13336"></a> 
+ <div id="c13336" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13336" class="active">@Manmohar: Thanks for the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mayank_gupta">mayank_gupta</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2011 05:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Manmohar: Thanks for the suggestion. So after removing that line will my code work correctly??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13338"></a> 
+ <div id="c13338" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13338" class="active">@admin Please tell why my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ankitagarwal98">ankitagarwal98</a></strong>
+   <span style="color:#828282"> @ 30 Jan 2011 05:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin</p> 
+    <p>Please tell why my code is showing wrong output? even when all test cases are working.</p> 
+    <p> <a href="http://www.codechef.com/viewsolution/438495">http://www.codechef.com/viewsolution/438495</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13377"></a> 
+ <div id="c13377" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13377" class="active">@admin please tell why my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rocker.da">rocker.da</a></strong>
+   <span style="color:#828282"> @ 31 Jan 2011 04:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin</p> 
+    <p>please tell why my <a target="_blank" title="solution" href="/viewsolution/440201">solution</a> failing? I have consider all test cases including in comments section.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13479"></a> 
+ <div id="c13479" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13479" class="active">@admin &nbsp; what's wrong in my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prattsishunk">prattsishunk</a></strong>
+   <span style="color:#828282"> @ 4 Feb 2011 01:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin</p> 
+    <p>&nbsp;</p> 
+    <p>what's wrong in my code?</p> 
+    <p>why am I getting Wrong Answer Error?</p> 
+    <p>&nbsp;</p> 
+    <p><a href="http://www.codechef.com/viewsolution/443565">http://www.codechef.com/viewsolution/443565</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13522"></a> 
+ <div id="c13522" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13522" class="active">@admin what is the answer of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahuldutta">rahuldutta</a></strong>
+   <span style="color:#828282"> @ 5 Feb 2011 01:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin</p> 
+    <p>what is the answer of this?</p> 
+    <p>2 0</p> 
+    <p>0 0</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13565"></a> 
+ <div id="c13565" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-13565" class="active">@admin- could you tell me for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vinayk24">vinayk24</a></strong>
+   <span style="color:#828282"> @ 8 Feb 2011 04:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin- could you tell me for what input my code fails?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-14049"></a> 
+ <div id="c14049" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-14049" class="active">@Rahul: K&gt;=1</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/newuser">newuser</a></strong>
+   <span style="color:#828282"> @ 19 Feb 2011 09:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Rahul: K&gt;=1</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-14142"></a> 
+ <div id="c14142" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-14142" class="active">@Sami: For the example you</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/newuser">newuser</a></strong>
+   <span style="color:#828282"> @ 20 Feb 2011 11:39 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Sami: For the example you provided, the algorithm gives correct answer..</p> 
+    <p>Please can you provide some test case..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-14153"></a> 
+ <div id="c14153" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-14153" class="active">Where's my code failing,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/newuser">newuser</a></strong>
+   <span style="color:#828282"> @ 20 Feb 2011 11:51 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Where's my code failing, please somebody help...</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15059"></a> 
+ <div id="c15059" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-15059" class="active">@Admin: I have two doubts:</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vishal_dhiman">vishal_dhiman</a></strong>
+   <span style="color:#828282"> @ 15 Mar 2011 03:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Admin: I have two doubts: Very important I think should be added to problem statement to make it clearer.</p> 
+    <p>1. exactly one should be left not equal to zero or all may become zero. (i guess exactly one)</p> 
+    <p>2. A subset as per definition can have all elements and also no element of set, is this the same for this problem also?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15062"></a> 
+ <div id="c15062" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-15062" class="active">@admin : please reply admin.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vishal_dhiman">vishal_dhiman</a></strong>
+   <span style="color:#828282"> @ 15 Mar 2011 06:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin : please reply admin.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15066"></a> 
+ <div id="c15066" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-15066" class="active">please reply...</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vishal_dhiman">vishal_dhiman</a></strong>
+   <span style="color:#828282"> @ 16 Mar 2011 01:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>please reply...</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15091"></a> 
+ <div id="c15091" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-15091" class="active">@Stephen Merriman :Please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vishal_dhiman">vishal_dhiman</a></strong>
+   <span style="color:#828282"> @ 18 Mar 2011 08:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <div class="content"> 
+     <p>@<b>Stephen Merriman </b>:Please reply......</p> 
+     <p>I have two doubts: Very important I think should be added to problem statement to make it clearer.</p> 
+     <p>1. exactly one should be left not equal to zero or all may become zero. (i guess exactly one)</p> 
+     <p>2. A subset as per definition can have all elements and also no element of set, is this the same for this problem also?</p> 
+    </div>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15092"></a> 
+ <div id="c15092" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-15092" class="active">@Stephen Merriman :Please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vishal_dhiman">vishal_dhiman</a></strong>
+   <span style="color:#828282"> @ 18 Mar 2011 08:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <div class="content"> 
+     <p>@<b>Stephen Merriman </b>:Please reply......</p> 
+     <p>I have two doubts: Very important I think should be added to problem statement to make it clearer.</p> 
+     <p>1. exactly one should be left not equal to zero or all may become zero. (i guess exactly one)</p> 
+     <p>2. A subset as per definition can have all elements and also no element of set, is this the same for this problem also?</p> 
+    </div>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15096"></a> 
+ <div id="c15096" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-15096" class="active">Ohh it was so easy i cant</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vishal_dhiman">vishal_dhiman</a></strong>
+   <span style="color:#828282"> @ 19 Mar 2011 02:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Ohh it was so easy i cant believe... :P</p> 
+    <p>and answers that i got to my above comment..</p> 
+    <p>1. all can be zero also</p> 
+    <p>2. it can have all elements and also no need of no element case in subset...</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16377"></a> 
+ <div id="c16377" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-16377" class="active">can som1 please mail me the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jatingulati25">jatingulati25</a></strong>
+   <span style="color:#828282"> @ 20 May 2011 03:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can som1 please mail me the algo for this prob @jatin.gulati25@gmail.com fed up of Compilation error !!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17165"></a> 
+ <div id="c17165" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-17165" class="active">I am getting wrong answer in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arnab_das">arnab_das</a></strong>
+   <span style="color:#828282"> @ 26 Jun 2011 07:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting wrong answer in spite all test cases mentioned here are giving correct results. Please help!! Here's my solution: 
+    <a href="http://www.codechef.com/viewsolution/583793" title="http://www.codechef.com/viewsolution/583793">http://www.codechef.com/viewsolution/583793</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18079"></a> 
+ <div id="c18079" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-18079" class="active">hi</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kittu638">kittu638</a></strong>
+   <span style="color:#828282"> @ 10 Aug 2011 04:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hi
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18162"></a> 
+ <div id="c18162" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-18162" class="active">i am getting wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/khush">khush</a></strong>
+   <span style="color:#828282"> @ 14 Aug 2011 08:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am getting wrong answer inspite of getting correct results of all the test cases even those mentioned in comments ...can some one help me ....please provide some very good test case which helps me to check whether my solution is correct or not.....please help me
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18352"></a> 
+ <div id="c18352" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-18352" class="active">admin plz check my soln</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amnsinghl">amnsinghl</a></strong>
+   <span style="color:#828282"> @ 31 Aug 2011 09:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    admin plz check my soln getting wrong answer again and again 
+    <a href="http://www.codechef.com/viewsolution/640630" title="http://www.codechef.com/viewsolution/640630">http://www.codechef.com/viewsolution/640630</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19000"></a> 
+ <div id="c19000" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-19000" class="active">wrong testcases!!!!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pikku">pikku</a></strong>
+   <span style="color:#828282"> @ 27 Sep 2011 12:26 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    wrong testcases!!!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19034"></a> 
+ <div id="c19034" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-19034" class="active">please expalin how to get</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhilash123">abhilash123</a></strong>
+   <span style="color:#828282"> @ 28 Sep 2011 01:27 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please expalin how to get yes or no
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19041"></a> 
+ <div id="c19041" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-19041" class="active">can we choose a single number</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jayee">jayee</a></strong>
+   <span style="color:#828282"> @ 28 Sep 2011 02:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can we choose a single number at a time ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19420"></a> 
+ <div id="c19420" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-19420" class="active">I am still not getting why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/digs2digi">digs2digi</a></strong>
+   <span style="color:#828282"> @ 11 Oct 2011 11:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I am still not getting why are these two statements not equal: these n-1 numbers must give the same remainder when divided by k+1 and the number not reduced to zero can give same or some other remainder and so the answer is "YES" if number of distinct remainder is &lt;=2 and "NO" otherwise .admin wrote this on:http://discussed.codechef.com/showthread.php?p=3667#post3667</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-20124"></a> 
+ <div id="c20124" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-20124" class="active">Can you add some more test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chandu_333">chandu_333</a></strong>
+   <span style="color:#828282"> @ 28 Nov 2011 10:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can you add some more test cases...Not understood question properly
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-20719"></a> 
+ <div id="c20719" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-20719" class="active">Everyone is using the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anujkaliaiitd">anujkaliaiitd</a></strong>
+   <span style="color:#828282"> @ 21 Dec 2011 02:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Everyone is using the algorithm: xi%(k+1)==0 for all xi (except maybe 1 xi). This condition is necessary but how is it sufficient?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-21576"></a> 
+ <div id="c21576" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-21576" class="active">Can anyone please answer my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ankit0311">ankit0311</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2012 11:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Can anyone please answer my query in the following thread in the discussion forum? <a href="http://discussed.codechef.com/showthread.php?t=1722" title="http://discussed.codechef.com/showthread.php?t=1722">http://discussed.codechef.com/showthread.php?t=1722</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-24495"></a> 
+ <div id="c24495" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-24495" class="active">give me a test case where I'm</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aaks_bhardwaj">aaks_bhardwaj</a></strong>
+   <span style="color:#828282"> @ 17 Mar 2012 01:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    give me a test case where I'm wrong
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-24496"></a> 
+ <div id="c24496" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-24496" class="active">anyone there motherfuckers??</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aaks_bhardwaj">aaks_bhardwaj</a></strong>
+   <span style="color:#828282"> @ 17 Mar 2012 01:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    anyone there motherfuckers??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25936"></a> 
+ <div id="c25936" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-25936" class="active">Can anyone please answer my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/binodkumars">binodkumars</a></strong>
+   <span style="color:#828282"> @ 22 Apr 2012 08:13 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone please answer my query..whats wrong with the following code..it working fine in ideone.com ( 
+    <a href="http://ideone.com/xnfEy" title="http://ideone.com/xnfEy">http://ideone.com/xnfEy</a> ) but showing wrong answer in codechef
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28489"></a> 
+ <div id="c28489" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-28489" class="active">is it reallt required for the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nitish1099">nitish1099</a></strong>
+   <span style="color:#828282"> @ 14 Jun 2012 11:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    is it reallt required for the 2 inputs to be in the same line?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31875"></a> 
+ <div id="c31875" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-31875" class="active">whats wrong with the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/uwenice">uwenice</a></strong>
+   <span style="color:#828282"> @ 13 Sep 2012 12:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    whats wrong with the following code
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-51756"></a> 
+ <div id="c51756" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-51756" class="active">can somebody explain me what</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/n1a3">n1a3</a></strong>
+   <span style="color:#828282"> @ 12 Aug 2013 08:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can somebody explain me what does this line mean--------------&gt; " Choose any subset of the numbers (possibly empty), none of which are 0"
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-60918"></a> 
+ <div id="c60918" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-60918" class="active">3 2 0 3 6 it should be yes</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aqua_laguna">aqua_laguna</a></strong>
+   <span style="color:#828282"> @ 22 Oct 2013 03:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    3 2 0 3 6 it should be yes
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-74513"></a> 
+ <div id="c74513" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-74513" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shivamd22">shivamd22</a></strong>
+   <span style="color:#828282"> @ 7 Mar 2014 01:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/3504048" title="http://www.codechef.com/viewsolution/3504048">http://www.codechef.com/viewsolution/3504048</a> Whats the problem with this code??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80145"></a> 
+ <div id="c80145" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-80145" class="active">Solved in the first go! :D</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vsethuooo">vsethuooo</a></strong>
+   <span style="color:#828282"> @ 29 Jun 2014 03:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Solved in the first go! :D YaY!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88571"></a> 
+ <div id="c88571" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-88571" class="active">Anyone who got success .</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/smathuriya">smathuriya</a></strong>
+   <span style="color:#828282"> @ 19 Oct 2014 06:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Anyone who got success . Please write wthat is the apporoach? Thanks.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97409"></a> 
+ <div id="c97409" class="comment clear-block"> 
+  <h3><a href="/problems/ARRAYTRM#comment-97409" class="active">what is the function of k</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sarique">sarique</a></strong>
+   <span style="color:#828282"> @ 23 Feb 2015 11:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is the function of k
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

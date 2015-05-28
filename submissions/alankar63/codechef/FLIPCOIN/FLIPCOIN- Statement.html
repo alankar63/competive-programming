@@ -1,0 +1,1447 @@
+<div id="node-369502" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> There are N coins kept on the table, numbered from 0 to N - 1. Initially, each coin is kept tails up. You have to perform two types of operations : </p> 
+  <p> 1) Flip all coins numbered between A and B inclusive. This is represented by the command "0 A B" </p> 
+  <p> 2) Answer how many coins numbered between A and B inclusive are heads up. This is represented by the command "1 A B". </p> 
+  <p> Input : </p> 
+  <p> The first line contains two integers, N and Q. Each of the next Q lines are either of the form "0 A B" or "1 A B" as mentioned above. </p> 
+  <p> Output : </p> 
+  <p> Output 1 line for each of the queries of the form "1 A B" containing the required answer for the corresponding query. </p> 
+  <pre>
+Sample Input :
+4 7
+1 0 3
+0 1 2
+1 0 1
+1 0 0
+0 0 3
+1 0 3 
+1 3 3
+
+</pre>
+  <pre>
+Sample Output :
+0
+1
+0
+2
+1
+
+</pre>
+  <pre>
+Constraints :
+1 &lt;= N &lt;= 100000
+1 &lt;= Q &lt;= 100000
+0 &lt;= A &lt;= B &lt;= N - 1
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/syco">syco</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/syco"> syco </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>11-04-2010</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 - 2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/FLIPCOIN">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-9698"></a> 
+ <div id="c9698" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-9698" class="active">admin please tell me what is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/v_new.c">v_new.c</a></strong>
+   <span style="color:#828282"> @ 26 Jul 2010 12:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>admin please tell me what is wrong with it</p> 
+    <p>it gives correct answer for the given case</p> 
+    <p>but on sumission it says wrong answer.</p> 
+    <p>please!</p> 
+    <p>&nbsp;</p> 
+    <p>#include &lt;iostream&gt;<br>#include &lt;stdio.h&gt;<br>#include &lt;vector&gt;<br>#include &lt;string&gt;<br><br><br>using namespace std;<br><br><br>int main()<br>{<br> vector&lt;int&gt; sol;<br> int n,q, count=0;<br> string s;<br> getline(cin,s);<br> n=s[0]-'0';<br> q=s[2]-'0';<br> vector&lt;bool&gt; v;<br> for(int j=0; j&lt;n; j++){<br> v.push_back(0);<br> }<br> for(int k=0; k&lt;q; k++){<br> getline(cin,s);<br> switch(s[0]){<br> case '0': for(int l=s[2]-'0'; l&lt;=s[4]-'0'; l++){<br> v[l]=!v[l];<br> }<br> break;<br> case '1': for(int m=s[2]-'0'; m&lt;=s[4]-'0'; m++){<br> count=count+v[m];<br> }<br> sol.push_back(count);<br> count =0;<br> break;<br> }<br> }<br> for(int i=0; i&lt;sol.size(); i++){<br> cout&lt;&lt;sol[i]&lt;&lt;"rn";<br> }<br> return 0;<br>}<br> <br></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9812"></a> 
+ <div id="c9812" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-9812" class="active">ADMIN my submission gives</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nasrullah">nasrullah</a></strong>
+   <span style="color:#828282"> @ 3 Aug 2010 11:56 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>ADMIN</p> 
+    <p>my submission gives time limit exceeded...</p> 
+    <p>can scanf and printf cause time limit exceed......</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9818"></a> 
+ <div id="c9818" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-9818" class="active">#include&lt;iostream</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kotturisathish">kotturisathish</a></strong>
+   <span style="color:#828282"> @ 3 Aug 2010 04:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>#include&lt;iostream</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-9843"></a> 
+ <div id="c9843" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-9843" class="active">to ADMIN : My submission</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajni033">rajni033</a></strong>
+   <span style="color:#828282"> @ 4 Aug 2010 01:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>to ADMIN :</p> 
+    <p>My submission gives wrong answer .Allthough for the given test case it works fine ..can you plz give some more test cases out there ?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10273"></a> 
+ <div id="c10273" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-10273" class="active">I am seeing that almost all</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akashag1001">akashag1001</a></strong>
+   <span style="color:#828282"> @ 29 Aug 2010 07:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I am seeing that almost <b>all the successful submission are taking more than 2 seconds</b>. Why am I always getting&nbsp;<span><b>Time Limit Exceeded </b>error?</span></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10283"></a> 
+ <div id="c10283" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-10283" class="active">Because your code does not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 30 Aug 2010 03:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Because your code does not complete one of the test cases in under 2 seconds, while the other solutions do.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10486"></a> 
+ <div id="c10486" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-10486" class="active">there will be just one query</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jayesh02">jayesh02</a></strong>
+   <span style="color:#828282"> @ 4 Sep 2010 03:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>there will be just one query right? that is value of n and q will be given only once?....plz confirm</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10678"></a> 
+ <div id="c10678" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-10678" class="active">Hi i am new to this site so</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/strive001">strive001</a></strong>
+   <span style="color:#828282"> @ 12 Sep 2010 05:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Hi i am new to this site so need little guidance.My code works fine in my machine for various testcases, but throws runtime exception when i submit.i have certain doubts,when i am using java, can i throw exceptions for invalid conditions and how should i supply input to my program,can i use Scanner or it should be supplied through command line ,can i paas input one by one or all the data at once as specified in question.If someone wants to see my code may ask.</p> 
+    <p>can any1 help???</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10687"></a> 
+ <div id="c10687" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-10687" class="active">Every one of those questions</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 13 Sep 2010 02:36 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Every one of those questions is explained in the <a href="/freelinking/FAQ" class="freelinking">FAQ</a>.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10788"></a> 
+ <div id="c10788" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-10788" class="active">dear sir This program running</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sanjay1988">sanjay1988</a></strong>
+   <span style="color:#828282"> @ 20 Sep 2010 07:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>dear sir</p> 
+    <p>This program running successfully in my machine but and also from your side it doent give any error but shows time limit exceeded... can u help me in this program please...</p> 
+    <p>&nbsp;</p> 
+    <p>import java.util.Scanner;<br><br>class Main<br>{<br> public static void main(String args[])<br> {<br> int n,q,count=0,i,j;<br> Scanner in = new Scanner(System.in);<br><br> n = in.nextInt();<br> q = in.nextInt();<br> <br> int a[][] = new int[q][3];<br> int coin[] = new int[n];<br><br> for(i=0;i&lt;n;i++)<br> coin[i]=0;<br><br> for(i=0;i&lt;q;i++)<br> {<br> a[i][0] =&nbsp; in.nextInt();<br> a[i][1] =&nbsp; in.nextInt();<br> a[i][2] =&nbsp; in.nextInt();<br> }<br> <br> for(i=0;i&lt;q;i++)&nbsp;&nbsp;&nbsp; <br> {<br> if(a[i][0] == 0)<br> {<br> for(j=a[i][1];j&lt;=a[i][2];j++)<br> {<br> if(coin[j]==0)<br> coin[j]=1;<br> else<br> coin[j]=0;<br> }<br> }<br> <br> else<br> {<br> for(j=a[i][1];j&lt;=a[i][2];j++)<br> {<br> if(coin[j]==1)<br> count++;<br> }<br> <br> System.out.println("n"+count);<br> count = 0;<br> }<br> }<br> }<br>}</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10795"></a> 
+ <div id="c10795" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-10795" class="active">You could have 100000 queries</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 21 Sep 2010 06:44 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>You could have 100000 queries of the form 1 1 100000. A brute force approach like you are trying will never work within the time limit; you have to come up with a better algorithm.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11464"></a> 
+ <div id="c11464" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-11464" class="active">internal error :/... any idea</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Cybertooth">Cybertooth</a></strong>
+   <span style="color:#828282"> @ 19 Oct 2010 12:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>internal error :/... any idea y??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11465"></a> 
+ <div id="c11465" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-11465" class="active">":( internal error occurred</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Cybertooth">Cybertooth</a></strong>
+   <span style="color:#828282"> @ 19 Oct 2010 12:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><span><strong>":( internal error occurred in the system" is the error i get..</strong></span></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12267"></a> 
+ <div id="c12267" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-12267" class="active">How ma accepted solution in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/theeporithirumugam">theeporithirumugam</a></strong>
+   <span style="color:#828282"> @ 7 Dec 2010 04:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>How ma accepted solution in spoj</p> 
+    <p>for this same problem is getting WA here</p> 
+    <p><a href="http://www.spoj.pl/problems/LITE"></a>http://www.spoj.pl/problems/LITE/</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12275"></a> 
+ <div id="c12275" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-12275" class="active">Presumably because your</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 8 Dec 2010 08:44 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Presumably because your program fails on some inputs provided here that aren't provided at SPOJ.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12339"></a> 
+ <div id="c12339" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-12339" class="active">my log(n) time algo gives</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/thechamp">thechamp</a></strong>
+   <span style="color:#828282"> @ 13 Dec 2010 11:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>my log(n) time algo gives TLE, do their exist still better methods</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12441"></a> 
+ <div id="c12441" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-12441" class="active">can i use gets(s) and fflush</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pawank">pawank</a></strong>
+   <span style="color:#828282"> @ 19 Dec 2010 06:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>can i use gets(s) and fflush fuctions are they part of the standard c++ library?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12444"></a> 
+ <div id="c12444" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-12444" class="active">@admin - please help....how</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jimmy valentine">jimmy valentine</a></strong>
+   <span style="color:#828282"> @ 19 Dec 2010 07:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@admin - please help....how to optimize??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12541"></a> 
+ <div id="c12541" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-12541" class="active">0 1 2 means the coins between</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Gaurav Jain">Gaurav Jain</a></strong>
+   <span style="color:#828282"> @ 25 Dec 2010 06:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>0 1 2 means the coins between 1 and 2 should be flipped. So which coin will be flipped 1 or 2 or both</p> 
+    <p>and what are we expected to print for 1 0 0 or 1 2 2 .. Please clarify.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12542"></a> 
+ <div id="c12542" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-12542" class="active">ignore my previous comment..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Gaurav Jain">Gaurav Jain</a></strong>
+   <span style="color:#828282"> @ 25 Dec 2010 07:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>ignore my previous comment.. i got my mistake</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12609"></a> 
+ <div id="c12609" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-12609" class="active">mine also is getting accepted</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nikku">nikku</a></strong>
+   <span style="color:#828282"> @ 29 Dec 2010 09:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>mine also is getting accepted at SPOJ</p> 
+    <p><a href="https://www.spoj.pl/problems/LITE/" title="https://www.spoj.pl/problems/LITE/">https://www.spoj.pl/problems/LITE/</a></p> 
+    <p>nick is nikku.</p> 
+    <p>i think its more rigourous testing here</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12974"></a> 
+ <div id="c12974" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-12974" class="active">The time limit is too strict.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nivedita_arora">nivedita_arora</a></strong>
+   <span style="color:#828282"> @ 17 Jan 2011 10:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The time limit is too strict. I have written the code in Java and i am pretty sure the algorithm is good enough (O(n)). I think the limit should be relaxed for languages other than cpp as they are slower.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12979"></a> 
+ <div id="c12979" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-12979" class="active">What do you mean by O(N)? If</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 18 Jan 2011 04:51 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>What do you mean by O(N)? If you mean O(N) per query, then that is of course too slow as there could be 100000 queries with N=100000. You can't have meant O(N) in total since it has to depend on Q.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13289"></a> 
+ <div id="c13289" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-13289" class="active">hi, &nbsp; i just wanted to know,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arya5691">arya5691</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 01:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>hi,</p> 
+    <p>&nbsp;</p> 
+    <p>i just wanted to know, why is it that there are no successful submissions for this problem in java ?? is it that java is too slow... in that case shouldn't the time limit be scaled accordingly ??</p> 
+    <p>because i am taking round about O( logn ) per query n i have optimized for several cases as well... i don't think i can optimize it further. can some one pls take a look ??</p> 
+    <p><a href="http://www.codechef.com/viewsolution/436611" title="http://www.codechef.com/viewsolution/436611">http://www.codechef.com/viewsolution/436611</a></p> 
+    <p>thanks :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13290"></a> 
+ <div id="c13290" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-13290" class="active">sorry, correction, according</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arya5691">arya5691</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 01:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>sorry, correction, according to this submission :</p> 
+    <p><a href="http://www.codechef.com/viewsolution/436627" title="http://www.codechef.com/viewsolution/436627">http://www.codechef.com/viewsolution/436627</a></p> 
+    <p>every flip operation takes O( b-a )</p> 
+    <p>every display sum operation takes O( ( b-a ) log n ) in the WORST CASE</p> 
+    <p>i am not sure... can this be optimized further ???</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13299"></a> 
+ <div id="c13299" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-13299" class="active">sorry pls ignore above</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arya5691">arya5691</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 05:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>sorry pls ignore above comments.... i have obviously gone mad :P</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13300"></a> 
+ <div id="c13300" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-13300" class="active">you are sane enough to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/flying_ant">flying_ant</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 10:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>you are sane enough to calculate complexities and post (relatively) good comments :)...</p> 
+    <p>Yes, it can be further improved to make only O(log n) per query.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13302"></a> 
+ <div id="c13302" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-13302" class="active">and also, its possible to get</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/flying_ant">flying_ant</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2011 10:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>and also, its possible to get AC in Java too, I have just verified. Don't use slow input methods like scanner, use BufferedReader for input and PrintWriter for output ( and flush at the end ). Though there are other fast ways of i/o in java, these will do almost always.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13318"></a> 
+ <div id="c13318" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-13318" class="active">respected sir/madam, upon</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/full_throttle">full_throttle</a></strong>
+   <span style="color:#828282"> @ 29 Jan 2011 03:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p> </p>
+    <p>respected sir/madam,</p> 
+    <p>upon submission, it is showing a runtime error message. but the program is working here without any syntax errors in my laptop. could you please help me with this problem. i even tested the program for the output and its working well enough here.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13389"></a> 
+ <div id="c13389" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-13389" class="active">are all the inputs SPACE</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prattsishunk">prattsishunk</a></strong>
+   <span style="color:#828282"> @ 1 Feb 2011 12:59 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>are all the inputs SPACE separated?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13783"></a> 
+ <div id="c13783" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-13783" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aaditprasad">aaditprasad</a></strong>
+   <span style="color:#828282"> @ 13 Feb 2011 04:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><a href="http://www.codechef.com/viewsolution/456911" title="http://www.codechef.com/viewsolution/456911">http://www.codechef.com/viewsolution/456911</a></p> 
+    <p>Could anyone please have a look at this solution and give me a hint as to how I could optimize it further? Thanks in advance.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-13945"></a> 
+ <div id="c13945" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-13945" class="active">@Admin &nbsp; What is the TIME</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/moshu123">moshu123</a></strong>
+   <span style="color:#828282"> @ 18 Feb 2011 07:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Admin</p> 
+    <p>&nbsp;</p> 
+    <p>What is the TIME LIMIT for java? Please tell us.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-14175"></a> 
+ <div id="c14175" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-14175" class="active">LANGUAGE USED:-&nbsp; RUBY QUERY</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/skpralav">skpralav</a></strong>
+   <span style="color:#828282"> @ 20 Feb 2011 12:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>LANGUAGE USED:-&nbsp; RUBY</p> 
+    <p>QUERY :-&nbsp;&nbsp; Does using Array.sort&nbsp; has larger Run-tine or ,&nbsp; that for a ritten code for sorting an array ???</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-14297"></a> 
+ <div id="c14297" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-14297" class="active">Is there any log(n) algorithm</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/moshu123">moshu123</a></strong>
+   <span style="color:#828282"> @ 21 Feb 2011 11:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Is there any log(n) algorithm which runs in o(log(n)) time even in WORST CASE?????...Please tell</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15264"></a> 
+ <div id="c15264" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-15264" class="active">My code is giving a "run time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sukhoi">sukhoi</a></strong>
+   <span style="color:#828282"> @ 27 Mar 2011 01:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>My code is giving a "run time error(other)". Can someone plz tell me what does that mean.Thanx.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15306"></a> 
+ <div id="c15306" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-15306" class="active">my time limit exeeds...please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pcgoel">pcgoel</a></strong>
+   <span style="color:#828282"> @ 1 Apr 2011 04:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>my time limit exeeds...please help me out...</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15786"></a> 
+ <div id="c15786" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-15786" class="active">Admin Help &nbsp; On my local</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aadharshkannan">aadharshkannan</a></strong>
+   <span style="color:#828282"> @ 15 Apr 2011 01:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Admin Help</p> 
+    <p>&nbsp;</p> 
+    <p>On my local machine (an old Core2Duo with 1 GB ram) my C# program finishes in less than 5 seconds for fliping 10000 coins 50000 time and printing 100000 coins 50000 times (one flip and one count alternatively) but i keep getting time limit exceeded.</p> 
+    <p>&nbsp;</p> 
+    <p>Any explainations????</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-15980"></a> 
+ <div id="c15980" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-15980" class="active">i really dont know how i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aaa7755">aaa7755</a></strong>
+   <span style="color:#828282"> @ 18 Apr 2011 10:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i really dont know how i could make my code faster, could the admin plz tell us if its possible to write code for this in java and if it is wat on earth am i doing wrong.</p> 
+    <p>&nbsp;</p> 
+    <p> </p>
+    <p>import java.io.IOException;</p> 
+    <p>import java.util.BitSet;</p> 
+    <p>&nbsp;</p> 
+    <p>public class Main{</p> 
+    <p><span> </span>public static void main(String args[]){</p> 
+    <p><span> </span>//Scanner in = new Scanner(System.in);</p> 
+    <p><span> </span>java.io.BufferedReader r = new java.io.BufferedReader</p> 
+    <p><span> </span>(new java.io.InputStreamReader (System.in));</p> 
+    <p><span> </span>String s = null;</p> 
+    <p><span> </span>try {</p> 
+    <p><span> </span>s = r.readLine();</p> 
+    <p><span> </span>} catch (IOException e1) {</p> 
+    <p><span> </span>// TODO Auto-generated catch block</p> 
+    <p><span> </span>e1.printStackTrace();</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>int n = Integer.parseInt(s.split(" ")[0]);</p> 
+    <p><span> </span>int q = Integer.parseInt(s.split(" ")[1]);</p> 
+    <p><span> </span>int num1=0,num2,num3;</p> 
+    <p><span> </span></p> 
+    <p><span> </span>BitSet coin= new BitSet(n);</p> 
+    <p><span> </span>for(int i=0;i&lt;q;i++){</p> 
+    <p><span> </span>try {</p> 
+    <p><span> </span>s=r.readLine();</p> 
+    <p><span> </span>} catch (IOException e) {</p> 
+    <p><span> </span>// TODO Auto-generated catch block</p> 
+    <p><span> </span>e.printStackTrace();</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>num1=Integer.parseInt(s.split(" ")[0]);</p> 
+    <p><span> </span>num2=Integer.parseInt(s.split(" ")[1]);</p> 
+    <p><span> </span>num3=Integer.parseInt(s.split(" ")[2]);</p> 
+    <p><span> </span></p> 
+    <p><span> </span>if(num1==0){</p> 
+    <p><span> </span></p> 
+    <p><span> </span>coin.flip(num2,num3);</p> 
+    <p><span> </span></p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>else if(num1==1){</p> 
+    <p><span> </span></p> 
+    <p><span> </span>System.out.println(coin.get(num2,num3+1).cardinality());</p> 
+    <p><span> </span></p> 
+    <p><span> </span>}</p> 
+    <p><span> </span></p> 
+    <p><span> </span></p> 
+    <p><span> </span>}</p> 
+    <p><span> </span></p> 
+    <p><span> </span></p> 
+    <p><span> </span>}</p> 
+    <p>}</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16039"></a> 
+ <div id="c16039" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-16039" class="active">admin please tell me wat is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sir_amit">sir_amit</a></strong>
+   <span style="color:#828282"> @ 24 Apr 2011 01:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p> </p>
+    <p>admin please tell me wat is wrong with this code</p> 
+    <p>&nbsp;</p> 
+    <p>&nbsp;</p> 
+    <p>#include&lt;stdio.h&gt;</p> 
+    <p>int main()</p> 
+    <p>{</p> 
+    <p><span> </span>int m,n,q,i,j,k,c[5],h[100000],l;</p> 
+    <p><span> </span>scanf("%d%d",&amp;n,&amp;q);</p> 
+    <p><span> </span>for(i=1;i&lt;=q;i++)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>for(j=1;j&lt;=3;j++)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>scanf("%d",&amp;c[j]);</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>if(c[1]==1)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>l=0;</p> 
+    <p><span> </span>for(k=c[2];k&lt;=c[3];k++)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>if(h[k]==1)</p> 
+    <p><span> </span>l=l+1;</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>printf("%d",l);</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>else</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>for(k=c[2];k&lt;=c[3];k++)</p> 
+    <p><span> </span>{</p> 
+    <p><span> </span>if(h[k]==1)</p> 
+    <p><span> </span>h[k]=0;</p> 
+    <p><span> </span>else</p> 
+    <p><span> </span>h[k]=1;</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>}</p> 
+    <p><span> </span>return 0;</p> 
+    <p><span> </span>}</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16041"></a> 
+ <div id="c16041" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-16041" class="active">@siramit &nbsp; The Question is ,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mkagenius">mkagenius</a></strong>
+   <span style="color:#828282"> @ 24 Apr 2011 05:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@siramit &nbsp; The Question is , what is right with your code?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16668"></a> 
+ <div id="c16668" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-16668" class="active">@admin In the interest of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pastafari">pastafari</a></strong>
+   <span style="color:#828282"> @ 6 Jun 2011 02:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin In the interest of formality, can you make it clear in the problem statement that the range A B includes both A and B. Thanks!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17595"></a> 
+ <div id="c17595" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-17595" class="active">use binary index tree</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anujvermamnit">anujvermamnit</a></strong>
+   <span style="color:#828282"> @ 18 Jul 2011 04:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    use binary index tree
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17978"></a> 
+ <div id="c17978" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-17978" class="active">the following code is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sacrishi">sacrishi</a></strong>
+   <span style="color:#828282"> @ 6 Aug 2011 03:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    the following code is succesfu;;y running on my system but i dont know why it is giving run time error here..........please help # include main () { int N,p,v,Q,a[N],i,h,k,j,b[Q][3]; scanf("%d",&amp;N); for (i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17979"></a> 
+ <div id="c17979" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-17979" class="active">it is running successfully on</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sacrishi">sacrishi</a></strong>
+   <span style="color:#828282"> @ 6 Aug 2011 03:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    it is running successfully on my system then why it is giving run time error here # include main () { int N,p,v,Q,a[N],i,h,k,j,b[Q][3]; scanf("%d",&amp;N); for (i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18870"></a> 
+ <div id="c18870" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-18870" class="active">I am using segment tree to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/syst3mw0rm">syst3mw0rm</a></strong>
+   <span style="color:#828282"> @ 23 Sep 2011 11:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am using segment tree to solve the problem but still getting TLE. Time Complexity will be O(logN * Q) . Any better approach ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18997"></a> 
+ <div id="c18997" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-18997" class="active">a </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arvindpurohit">arvindpurohit</a></strong>
+   <span style="color:#828282"> @ 26 Sep 2011 02:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    a a
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19107"></a> 
+ <div id="c19107" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-19107" class="active">hi .. am getting runtime</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/muniyandi33">muniyandi33</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2011 12:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hi .. am getting runtime error for my solution here ... how can i know the specific error code ? 
+    <a href="http://www.codechef.com/viewsolution/673849" title="http://www.codechef.com/viewsolution/673849">http://www.codechef.com/viewsolution/673849</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19191"></a> 
+ <div id="c19191" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-19191" class="active">Someone plz provide sm test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/flexicoder">flexicoder</a></strong>
+   <span style="color:#828282"> @ 3 Oct 2011 08:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Someone plz provide sm test cases here.....m getting wrong answer.. :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19454"></a> 
+ <div id="c19454" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-19454" class="active">i got run-time error pls</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gouravsoni">gouravsoni</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2011 02:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i got run-time error pls tell me how can i get rid off that i made this code using nodes my code is:: #include #include int initialize(int , int); int change(int ,int); int result(int,int); struct node { int val; struct node *next; struct node *prev; }; struct node *head,*head1; int main() { time_t start,end; start=clock(); int N=0,Q=0,a,b,c; struct node *temp3,*temp4; scanf("%d %d",&amp;N,&amp;Q); if(N&lt;=0 || N&gt;100000) {return 0;} if(Q&lt;=0 || Q&gt;100000) {return 0;} head=malloc(sizeof(struct node)); head1=malloc(sizeof(struct node)); head1-&gt;prev=NULL; temp3=head1; initialize(N,Q); int i=0; temp4=malloc(sizeof(struct node)); for(i=0;ic) { return 0; } if(c&lt;0 || c&gt;N-1) { return 0; } if(a==1) { temp3-&gt;val=result(b,c); temp4-&gt;prev=temp3; temp3-&gt;next=temp4; temp3=temp4; temp4=malloc(sizeof(struct node)); } else if(a==0) { change(b,c); } } temp3-&gt;next=NULL; temp3=head1; while(temp3-&gt;next!=NULL) { printf("%dn",temp3-&gt;val); temp3=temp3-&gt;next; } free(temp4); free(temp3); free(head); free(head1); end=clock(); printf("n %f ",(end-start)/CLK_TCK); getch(); return 0; } int initialize(int a,int b) { int i=0; head-&gt;val=1; head-&gt;prev=NULL; head-&gt;next=NULL; struct node *temp,*temp1; temp=head; for(i=0;i
+    <a struct="" temp-="">next=temp1; temp1-&gt;val=1; temp1-&gt;prev=temp; temp=temp1; } temp-&gt;next=NULL; temp1=head; while(temp1!=NULL) { temp1=temp1-&gt;next; } free(temp1); return 0; } int change(int b,int c) { struct node *temp; temp=malloc(sizeof(struct node)); temp=head; int i=0; for(i=0;i<b temp="temp-">next; } for(i=b;i&lt;=c;i++) { if(temp-&gt;val==1) { temp-&gt;val=0; } else if(temp-&gt;val==0) { temp-&gt;val=1; } temp=temp-&gt;next; } temp=head; return 0; } int result(int b,int c) { struct node *temp; temp=malloc(sizeof(struct node)); temp=head; int i=0,count=0; for(i=0;i<b temp="temp-">next; } for(i=b;i&lt;=c;i++) { if(temp-&gt;val==0) { count=count+1; } temp=temp-&gt;next; } return count; }</b></b></a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19516"></a> 
+ <div id="c19516" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-19516" class="active">whats wrong with this code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/workhard">workhard</a></strong>
+   <span style="color:#828282"> @ 16 Oct 2011 03:38 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    whats wrong with this code .........can anyone tell me????? #include int gotr(int*,int); int main() {int n,q,i,r,a,j,b; scanf("%d%d",&amp;n,&amp;q); int arr[q]; for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19517"></a> 
+ <div id="c19517" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-19517" class="active">#include int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/workhard">workhard</a></strong>
+   <span style="color:#828282"> @ 16 Oct 2011 03:39 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int gotr(int*,int); int main() {int n,q,i,r,a,j,b; scanf("%d%d",&amp;n,&amp;q); int arr[q]; for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-20084"></a> 
+ <div id="c20084" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-20084" class="active">Hi, I am getting a Run Time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/neha22">neha22</a></strong>
+   <span style="color:#828282"> @ 22 Nov 2011 06:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi, I am getting a Run Time Error. Can't figure out why. Can you please take a look at my solution and guide me? 
+    <a href="http://www.codechef.com/viewsolution/737806" title="http://www.codechef.com/viewsolution/737806">http://www.codechef.com/viewsolution/737806</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-20348"></a> 
+ <div id="c20348" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-20348" class="active">can any one tell why i,m</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chaubey12">chaubey12</a></strong>
+   <span style="color:#828282"> @ 9 Dec 2011 09:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can any one tell why i,m getting TML while(Q&gt;0){ int C,A,B; cin&gt;&gt;C&gt;&gt;A&gt;&gt;B; if(C==1){ int j=0; for(int i=A;i&lt;=B;i++) if(a[i]==1) j++; cout&lt;
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-21008"></a> 
+ <div id="c21008" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-21008" class="active">Can anyone give a very mild</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/devrat43">devrat43</a></strong>
+   <span style="color:#828282"> @ 9 Jan 2012 07:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone give a very mild hint as to how we can go about doing a binary search in this?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-23006"></a> 
+ <div id="c23006" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-23006" class="active">why are solutions to this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vivek17geek">vivek17geek</a></strong>
+   <span style="color:#828282"> @ 22 Feb 2012 04:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why are solutions to this problem not available..??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-24892"></a> 
+ <div id="c24892" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-24892" class="active">its giving an internal error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arjit_nitb">arjit_nitb</a></strong>
+   <span style="color:#828282"> @ 1 Apr 2012 02:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    its giving an internal error what does that mean
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25240"></a> 
+ <div id="c25240" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-25240" class="active">Why am I getting Runtime</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prattsishunk">prattsishunk</a></strong>
+   <span style="color:#828282"> @ 4 Apr 2012 06:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why am I getting Runtime Error - NZEC when I am submitting my code in Java, again and again? I don't find any exception (according to FAQ) in my problem... Can you pls check my solution? 
+    <a href="http://www.codechef.com/viewsolution/954407" title="http://www.codechef.com/viewsolution/954407">http://www.codechef.com/viewsolution/954407</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25298"></a> 
+ <div id="c25298" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-25298" class="active">I am always getting time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ajayporwal">ajayporwal</a></strong>
+   <span style="color:#828282"> @ 5 Apr 2012 11:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am always getting time limit exceeded error, please help. 
+    <a href="http://www.codechef.com/viewsolution/956870" title="http://www.codechef.com/viewsolution/956870">http://www.codechef.com/viewsolution/956870</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28506"></a> 
+ <div id="c28506" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-28506" class="active">I was getting TLE using</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/alei">alei</a></strong>
+   <span style="color:#828282"> @ 16 Jun 2012 02:17 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I was getting TLE using segment tree with lazy propagation. but when I replace my cout's and cin's for scanf and printf i get accepted. What is the problem with cout and cin?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28695"></a> 
+ <div id="c28695" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-28695" class="active">Can someone please point out</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coder_12345">coder_12345</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2012 03:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone please point out a few test cases for which my solution will fail. Please.... 
+    <a href="http://www.codechef.com/viewsolution/1137036" title="http://www.codechef.com/viewsolution/1137036">http://www.codechef.com/viewsolution/1137036</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29072"></a> 
+ <div id="c29072" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-29072" class="active">can anyone tell me where to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coderishi">coderishi</a></strong>
+   <span style="color:#828282"> @ 4 Jul 2012 07:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone tell me where to find the programs of java all where i see c++ most of the times pls help me...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-30156"></a> 
+ <div id="c30156" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-30156" class="active">@admins : 1249664 !! RTE</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anick_gemini">anick_gemini</a></strong>
+   <span style="color:#828282"> @ 11 Aug 2012 10:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admins : 1249664 !! RTE !!????!!!! hw come
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-30353"></a> 
+ <div id="c30353" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-30353" class="active">Can you make solutions for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sukun007">sukun007</a></strong>
+   <span style="color:#828282"> @ 16 Aug 2012 03:32 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can you make solutions for this problem public?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31038"></a> 
+ <div id="c31038" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-31038" class="active">spoj version of this q has</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/SaladinII">SaladinII</a></strong>
+   <span style="color:#828282"> @ 28 Aug 2012 07:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    spoj version of this q has stricter time limit :|
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-32527"></a> 
+ <div id="c32527" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-32527" class="active">see ur soln works only for a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arvind_br">arvind_br</a></strong>
+   <span style="color:#828282"> @ 2 Oct 2012 04:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    see ur soln works only for a single digit number !!!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-33316"></a> 
+ <div id="c33316" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-33316" class="active">Why are the solutions not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/c0der">c0der</a></strong>
+   <span style="color:#828282"> @ 22 Oct 2012 08:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why are the solutions not public? Please make them so.....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-33455"></a> 
+ <div id="c33455" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-33455" class="active">The test run in daft. No</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/drunkard">drunkard</a></strong>
+   <span style="color:#828282"> @ 26 Oct 2012 04:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The test run in daft. No other solution other then c/c++ is getting validated and good solutions in languages like java/python are not getting excepted because of time out. They should adjust the time accordingly!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-34289"></a> 
+ <div id="c34289" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-34289" class="active">@admin : kindly make</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hjain">hjain</a></strong>
+   <span style="color:#828282"> @ 16 Nov 2012 10:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin : kindly make successful solutions visible to all
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35138"></a> 
+ <div id="c35138" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-35138" class="active">Having solved this question</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/msasha">msasha</a></strong>
+   <span style="color:#828282"> @ 22 Dec 2012 09:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Having solved this question in two completely different ways now, both of which took about 3 seconds to run, I'm really curious to see the 0.59s solution.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35216"></a> 
+ <div id="c35216" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-35216" class="active">Using a single 'if' for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/idontmakesense">idontmakesense</a></strong>
+   <span style="color:#828282"> @ 26 Dec 2012 05:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Using a single 'if' for checking command(0 or 1) and a 'for' to traverse from 'a' to 'b'. No other condition statements(for flipping coins and counting heads, ie.) Still TLE. Any help?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36067"></a> 
+ <div id="c36067" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-36067" class="active">codechef showing me run time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jerry17">jerry17</a></strong>
+   <span style="color:#828282"> @ 12 Jan 2013 12:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    codechef showing me run time error please help! class CoinFlip { public static void main(String args[]) throws IOException { BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); int testcases = Integer.parseInt(br.readLine()); String input = ""; String arr[]= new String[3]; int rounds = 0,initial=0, result = 1; //1 means head, 2 means tails(for initial as well as result)... long noOfCoins=0, finalAns=0; while(testcases-- &gt;=1) { rounds = Integer.parseInt(br.readLine()); while(rounds-- &gt;=1) { input = br.readLine(); arr = input.split(" "); initial = Integer.parseInt(arr[0]); noOfCoins = Integer.parseInt(arr[1]); result = Integer.parseInt(arr[2]); finalAns = noOfCoins/2; if(noOfCoins%2!=0) { finalAns = finalAns+1; } if(initial == result) { finalAns=noOfCoins-finalAns; } System.out.println(finalAns); } } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-37507"></a> 
+ <div id="c37507" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-37507" class="active">@admin, my solution - 1804405</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anur06">anur06</a></strong>
+   <span style="color:#828282"> @ 7 Feb 2013 06:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin, my solution - 1804405 is showing TLE though the submission report says that the time to run is 1.01 sec.Please look at it
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39742"></a> 
+ <div id="c39742" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-39742" class="active">@triplem y cant the solutions</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pushkarmishra">pushkarmishra</a></strong>
+   <span style="color:#828282"> @ 14 Mar 2013 01:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @triplem y cant the solutions be made public?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39856"></a> 
+ <div id="c39856" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-39856" class="active">finally... :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/manovagyanik">manovagyanik</a></strong>
+   <span style="color:#828282"> @ 16 Mar 2013 10:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    finally... :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40925"></a> 
+ <div id="c40925" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-40925" class="active">@admin, my solution - 2030022</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coding_guru">coding_guru</a></strong>
+   <span style="color:#828282"> @ 11 Apr 2013 08:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin, my solution - 2030022 is showing TLE though the submission report says that the time to run is 1.01 sec.Please look at it
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-59362"></a> 
+ <div id="c59362" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-59362" class="active">Why my solution is giving</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/code13">code13</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2013 06:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why my solution is giving time limit exceeding !! AdMIN Please help regarding this 
+    <a href="http://www.codechef.com/viewsolution/2815802" title="http://www.codechef.com/viewsolution/2815802">http://www.codechef.com/viewsolution/2815802</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-59508"></a> 
+ <div id="c59508" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-59508" class="active">Can someone help me with the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vermashubhang">vermashubhang</a></strong>
+   <span style="color:#828282"> @ 14 Oct 2013 01:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone help me with the submission in JAVA. I have applied the segment tree in JAVA but it says TLE every time I submit. Can someone guide me with the optimizations I can do to my solutions. My solution is present at this link. 
+    <a href="http://www.codechef.com/viewsolution/2826890" title="http://www.codechef.com/viewsolution/2826890">http://www.codechef.com/viewsolution/2826890</a>.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-67611"></a> 
+ <div id="c67611" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-67611" class="active">@admin,getting TLE at 1.01</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/raul1rnjn535_3">raul1rnjn535_3</a></strong>
+   <span style="color:#828282"> @ 14 Dec 2013 12:21 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin,getting TLE at 1.01 seconds.....plz explain
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68203"></a> 
+ <div id="c68203" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-68203" class="active">@admin a tutorial for this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubham12">shubham12</a></strong>
+   <span style="color:#828282"> @ 21 Dec 2013 01:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin a tutorial for this problem would be very helpful.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68473"></a> 
+ <div id="c68473" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-68473" class="active">Many people are complaining</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/epsilon_0">epsilon_0</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2013 02:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Many people are complaining about more inputs. I made an input generator in python, made made sure that there are more updates than queries. Generate the answer by running a correct code on it. from random import * k=int(input()) print(str(k)+" "+str(k)) for i in range(k): l=randint(1,k-2) i=random() if i&lt;0.3: print("1 "+str(l)+" "+str(randint(l,k-1))) else: print("0 "+str(l)+" "+str(randint(l,k-1)))
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78322"></a> 
+ <div id="c78322" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-78322" class="active">Is it just me or the time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/svineet">svineet</a></strong>
+   <span style="color:#828282"> @ 19 May 2014 09:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Is it just me or the time limit is -2 seconds?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79176"></a> 
+ <div id="c79176" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-79176" class="active">my code gives time limit</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/i_krit">i_krit</a></strong>
+   <span style="color:#828282"> @ 9 Jun 2014 02:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my code gives time limit exceed! could any body please help me with a more optimised soln
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80037"></a> 
+ <div id="c80037" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-80037" class="active">use segmented trees, lazy</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/brobear1995">brobear1995</a></strong>
+   <span style="color:#828282"> @ 26 Jun 2014 07:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    use segmented trees, lazy approach works here
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83692"></a> 
+ <div id="c83692" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-83692" class="active">What is the time limit ?? "-2</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/quan1aml3ap">quan1aml3ap</a></strong>
+   <span style="color:#828282"> @ 13 Aug 2014 10:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What is the time limit ?? "-2 secs" ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85223"></a> 
+ <div id="c85223" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-85223" class="active">Naive approach : O(n) -&gt;</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashishtilokani">ashishtilokani</a></strong>
+   <span style="color:#828282"> @ 12 Sep 2014 12:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Naive approach : O(n) -&gt; update time and O(n) -&gt; query time . Worst case scenario: O(qn). Segment tree approach: O(logn) -&gt; update time and O(logn) -&gt; query time . Worst case scenario: O(qlogn). For those getting TLE, read about segment trees first.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88564"></a> 
+ <div id="c88564" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-88564" class="active">Plz help why am i getting TLE</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/piyushjain1555">piyushjain1555</a></strong>
+   <span style="color:#828282"> @ 19 Oct 2014 02:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Plz help why am i getting TLE error ??? My solution is very simple still TLE error ..... WHY??? 
+    <a href="http://www.codechef.com/viewsolution/5175172" title="http://www.codechef.com/viewsolution/5175172">http://www.codechef.com/viewsolution/5175172</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88843"></a> 
+ <div id="c88843" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-88843" class="active">sir please take a look at my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/udhy">udhy</a></strong>
+   <span style="color:#828282"> @ 25 Oct 2014 05:19 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    sir please take a look at my code #include int main() { int n,test,i,bi,a,b,j,k;/*where n is no. count &amp; i&amp;j&amp;k is my counter , bi is representer of binary command 0 or 1&amp; a&amp;b are inclusive limits of our cases*/ scanf("%d%d",&amp;n,&amp;test); int arr[100000]; for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103687"></a> 
+ <div id="c103687" class="comment clear-block"> 
+  <h3><a href="/problems/FLIPCOIN#comment-103687" class="active">Learn to copy a problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/evil999man">evil999man</a></strong>
+   <span style="color:#828282"> @ 13 May 2015 07:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Learn to copy a problem correctly
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

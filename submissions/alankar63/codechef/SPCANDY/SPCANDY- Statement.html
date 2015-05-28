@@ -1,0 +1,243 @@
+<div id="node-3048429" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <p>Cyael is a teacher at a very famous school in Byteland and she is known by her students for being very polite to them and also to encourage them to get good marks on their tests.</p> 
+  <p>Then, if they get good marks she will reward them with candies :) However, she knows they are all very good at Mathematics, so she decided to split the candies evenly to all the students she considers worth of receiving them, so they don't fight with each other. </p> 
+  <p>She has a bag which initially contains <b>N</b> candies and she intends to split the candies evenly to <b>K</b> students. To do this she will proceed as follows: while she has more than <b>K</b> candies she will give exactly 1 candy to each student until she has less than <b>K</b> candies. On this situation, as she can't split candies equally among all students she will keep the remaining candies to herself.</p> 
+  <p>Your job is to tell how many candies will each student and the teacher<br> receive after the splitting is performed.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows.</p> 
+  <p>Each test case will consist of 2 space separated integers, <b>N</b> and <b>K</b> denoting the number of candies and the number of students as described above.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing two space separated integers, the first one being the number of candies each student will get, followed by the number of candies the teacher will get.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li> <b>T&lt;=100 in each test file</b> </li> 
+   <li><b>0 &lt;= N,K &lt;= 2<sup>33</sup> - 1 </b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <p><b>Input:</b></p> 
+  <pre>
+2
+10 2
+100 3
+</pre> 
+  <p><b>Output:</b></p> 
+  <pre>
+5 0
+33 1
+</pre>
+  <h3>Explanation</h3> 
+  <p>For the first test case, all students can get an equal number of candies and teacher receives no candies at all </p> 
+  <p>For the second test case, teacher can give 33 candies to each student and keep 1 candy to herself</p> 
+  <p><b>Update:</b></p> 
+  <p> There may be multiple whitespaces before, after or between the numbers in input.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/kuruma">kuruma</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/white_king">white_king</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/SPCANDY">http://discuss.codechef.com/problems/SPCANDY</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/aug13"> aug13 </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/kuruma"> kuruma </a><a class="problem-tag-small " href="/tags/problems/simple-math"> simple-math </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>3-07-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/SPCANDY">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-51766"></a> 
+ <div id="c51766" class="comment clear-block"> 
+  <h3><a href="/problems/SPCANDY#comment-51766" class="active">I couldn't find the mistake</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vamsi1">vamsi1</a></strong>
+   <span style="color:#828282"> @ 13 Aug 2013 11:30 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I couldn't find the mistake in my code.Plzz tell me if any CODE:: #include void main() { int n,c[100],s[100],i; scanf("%d",&amp;n); for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-51824"></a> 
+ <div id="c51824" class="comment clear-block"> 
+  <h3><a href="/problems/SPCANDY#comment-51824" class="active">What a weird mistake, if you</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nishad94">nishad94</a></strong>
+   <span style="color:#828282"> @ 15 Aug 2013 11:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What a weird mistake, if you output 0 as a long long , the answer goes wrong :/ For exact same code: Correct: 
+    <a href="http://www.codechef.com/viewsolution/2531575" title="http://www.codechef.com/viewsolution/2531575">http://www.codechef.com/viewsolution/2531575</a> Wrong: 
+    <a href="http://www.codechef.com/viewsolution/2531588" title="http://www.codechef.com/viewsolution/2531588">http://www.codechef.com/viewsolution/2531588</a> Atleast specify such things in the problem!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-64136"></a> 
+ <div id="c64136" class="comment clear-block"> 
+  <h3><a href="/problems/SPCANDY#comment-64136" class="active">thank you nishand94 :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coolvaibhav_94">coolvaibhav_94</a></strong>
+   <span style="color:#828282"> @ 13 Nov 2013 08:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    thank you nishand94 :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71207"></a> 
+ <div id="c71207" class="comment clear-block"> 
+  <h3><a href="/problems/SPCANDY#comment-71207" class="active">AC</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jaimal1147cse">jaimal1147cse</a></strong>
+   <span style="color:#828282"> @ 18 Jan 2014 11:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    AC
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71538"></a> 
+ <div id="c71538" class="comment clear-block"> 
+  <h3><a href="/problems/SPCANDY#comment-71538" class="active">Remember: There can be ZERO</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/k1026501">k1026501</a></strong>
+   <span style="color:#828282"> @ 24 Jan 2014 06:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Remember: There can be ZERO students!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-74260"></a> 
+ <div id="c74260" class="comment clear-block"> 
+  <h3><a href="/problems/SPCANDY#comment-74260" class="active">Can anyone please tell me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/surbhi26">surbhi26</a></strong>
+   <span style="color:#828282"> @ 2 Mar 2014 11:53 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone please tell me what is problem with this code ? #include int main() { int test,n,k,st=0,te=0; scanf("%d",&amp;test); while(test!=0) { scanf("%d",&amp;n); scanf("%d",&amp;k); st=n/k; te=n%k; test--; printf("%d %d",st,te); } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75454"></a> 
+ <div id="c75454" class="comment clear-block"> 
+  <h3><a href="/problems/SPCANDY#comment-75454" class="active">@surbhi26 integer overflow.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/scott11">scott11</a></strong>
+   <span style="color:#828282"> @ 20 Mar 2014 12:12 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @surbhi26 integer overflow.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-77105"></a> 
+ <div id="c77105" class="comment clear-block"> 
+  <h3><a href="/problems/SPCANDY#comment-77105" class="active">please tell me error in my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashish1120054">ashish1120054</a></strong>
+   <span style="color:#828282"> @ 24 Apr 2014 11:35 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please tell me error in my problem for all the test cases i hav checked.. 
+    <a href="http://www.codechef.com/viewsolution/3790240" title="http://www.codechef.com/viewsolution/3790240">http://www.codechef.com/viewsolution/3790240</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79463"></a> 
+ <div id="c79463" class="comment clear-block"> 
+  <h3><a href="/problems/SPCANDY#comment-79463" class="active">#include int main() { int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aaditya123">aaditya123</a></strong>
+   <span style="color:#828282"> @ 13 Jun 2014 10:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int main() { int t; scanf("%d",&amp;t); while(t--) { long long n,k,ns,nt; scanf("%lld",&amp;n); scanf("%lld",&amp;k); if(k==0) { printf("0 %lld",n); } else ns=n/k; nt=n%k; printf("%lld %lld",ns,nt); } return 0; } could not find the mistake,,,
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79464"></a> 
+ <div id="c79464" class="comment clear-block"> 
+  <h3><a href="/problems/SPCANDY#comment-79464" class="active">please help</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aaditya123">aaditya123</a></strong>
+   <span style="color:#828282"> @ 13 Jun 2014 10:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83772"></a> 
+ <div id="c83772" class="comment clear-block"> 
+  <h3><a href="/problems/SPCANDY#comment-83772" class="active">damn easy!!!!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/puneet17">puneet17</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2014 10:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    damn easy!!!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

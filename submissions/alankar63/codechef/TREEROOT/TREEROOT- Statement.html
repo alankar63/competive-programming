@@ -1,0 +1,317 @@
+<div id="node-1723315" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>Chef has a binary tree. The binary tree consists of 1 or more nodes. Each node has a unique integer id. Each node has up to 2 children, which are identified by their ids, and each node is the child of at most 1 other node. A node <b>X</b> is considered to be an ancestor of node <b>Y</b> if node <b>Y</b> is a child of node <b>X</b> or if there is some node <b>Z</b> for which <b>X</b> is an ancestor of <b>Z</b> and <b>Y</b> is a child of <b>Z</b>. No node is an ancestor of itself. A special node called the root node is an ancestor of all other nodes.</p> 
+  <p>Chef has forgotten which node of his tree is the root, and wants you to help him to figure it out. Unfortunately, Chef's knowledge of the tree is incomplete. He does not remember the ids of the children of each node, but only remembers the sum of the ids of the children of each node.</p> 
+  <h3>Input</h3> 
+  <p>Input begins with an integer <b>T</b>, the number of test cases. Each test case begins with an integer <b>N</b>, the number of nodes in the tree. <b>N</b> lines follow with 2 integers each: the id of a node, and the sum of the ids of its children. The second number will be 0 if the node has no children.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output on a line a space separated list of all possible values for the id of the root node in increasing order. <b>It is guaranteed that at least one such id exists for each test case.</b></p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li>1 ? <b>T</b> ? 50</li> 
+   <li>1 ? <b>N</b> ? 30</li> 
+   <li>All node ids are between 1 and 1000, inclusive</li> 
+  </ul> 
+  <h3>Sample Input</h3> 
+  <pre>2
+1
+4 0
+6
+1 5
+2 0
+3 0
+4 0
+5 5
+6 5
+</pre>
+  <h3>Sample Output</h3> 
+  <pre>4
+6
+</pre>
+  <h3>Explanation</h3> 
+  <p>In the first sample test case, there is only one node, which is clearly the root. In the second test case, there are two non-isomorphic trees that satisfy the constraints, as seen in the following picture:</p> 
+  <pre><code>  6           6
+   \         / \
+    5       1   4
+   / \       \
+  1   4       5
+ / \         / \
+2   3       2   3
+</code></pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/pieguy">pieguy</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/anton_lunyov">anton_lunyov</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/TREEROOT">http://discuss.codechef.com/problems/TREEROOT</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook29"> cook29 </a><a class="problem-tag-small " href="/tags/problems/pieguy"> pieguy </a><a class="problem-tag-small " href="/tags/problems/simple-easy"> simple-easy </a><a class="problem-tag-small " href="/tags/problems/simple-math"> simple-math </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>26-11-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/TREEROOT">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-46602"></a> 
+ <div id="c46602" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-46602" class="active">After seeing the solution I</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mainak22793">mainak22793</a></strong>
+   <span style="color:#828282"> @ 26 Jun 2013 11:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    After seeing the solution I understand that the solutio is unique,.....But can you tell how one can say solution will be unique without knowing about the approach to solve it.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49086"></a> 
+ <div id="c49086" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-49086" class="active">Can somebody tell me his</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahul04031023">rahul04031023</a></strong>
+   <span style="color:#828282"> @ 18 Jul 2013 06:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can somebody tell me his approach to solve this problem? How to start?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49136"></a> 
+ <div id="c49136" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-49136" class="active">gud question :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jay__coder">jay__coder</a></strong>
+   <span style="color:#828282"> @ 20 Jul 2013 07:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    gud question :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-52198"></a> 
+ <div id="c52198" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-52198" class="active">OMG.. see the editorial..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ggeek">ggeek</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2013 09:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    OMG.. see the editorial..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-61969"></a> 
+ <div id="c61969" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-61969" class="active">The answer give for the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vjain20">vjain20</a></strong>
+   <span style="color:#828282"> @ 28 Oct 2013 10:13 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The answer give for the second test case of the sample output appears to be incomplete. If in the sample output we swap 5 and 6, that would also be a valid tree for the given constraints. So the answer should be - 6 5 and not just 6. Am I right ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65379"></a> 
+ <div id="c65379" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-65379" class="active">@vjain20 if you 5 and 6 then</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gtpraveen">gtpraveen</a></strong>
+   <span style="color:#828282"> @ 26 Nov 2013 05:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vjain20 if you 5 and 6 then 5 will be the root, the sum of its children id has to be 5, in your case it will be 6 which would be wrong
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68930"></a> 
+ <div id="c68930" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-68930" class="active">@vjain20 sum of children for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1h33p">s1h33p</a></strong>
+   <span style="color:#828282"> @ 31 Dec 2013 10:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @vjain20 sum of children for 1 will become 6.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78139"></a> 
+ <div id="c78139" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-78139" class="active">Stunned ..AC.. :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ab13123002">ab13123002</a></strong>
+   <span style="color:#828282"> @ 15 May 2014 12:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Stunned ..AC.. :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78710"></a> 
+ <div id="c78710" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-78710" class="active">After seeing the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sandeeprockz">sandeeprockz</a></strong>
+   <span style="color:#828282"> @ 5 Jun 2014 07:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    After seeing the editorial... I don't want to live in this tricky planet any more
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83275"></a> 
+ <div id="c83275" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-83275" class="active">wow. I'm glad I looked at the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/adijo">adijo</a></strong>
+   <span style="color:#828282"> @ 7 Aug 2014 01:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    wow. I'm glad I looked at the editorial. I was thinking in a completely orthogonal direction.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85736"></a> 
+ <div id="c85736" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-85736" class="active">Tricky :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/THEcreationist">THEcreationist</a></strong>
+   <span style="color:#828282"> @ 27 Sep 2014 12:36 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Tricky :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86915"></a> 
+ <div id="c86915" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-86915" class="active">Evil Evil. Total Evil</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/reetawwsum">reetawwsum</a></strong>
+   <span style="color:#828282"> @ 5 Oct 2014 05:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Evil Evil. Total Evil Question.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91962"></a> 
+ <div id="c91962" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-91962" class="active">Superb Question...</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sudharsansai">sudharsansai</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2014 09:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Superb Question...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93278"></a> 
+ <div id="c93278" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-93278" class="active">nice question..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/brateeshkumar">brateeshkumar</a></strong>
+   <span style="color:#828282"> @ 8 Jan 2015 01:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    nice question..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99452"></a> 
+ <div id="c99452" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-99452" class="active">this question would cost me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ayushkumar">ayushkumar</a></strong>
+   <span style="color:#828282"> @ 18 Mar 2015 02:27 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    this question would cost me weeks, if some one didn't suggest to see the editorial.... I couldn't think anything else but brute force approach...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102891"></a> 
+ <div id="c102891" class="comment clear-block"> 
+  <h3><a href="/problems/TREEROOT#comment-102891" class="active">plz give some more test cases</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jaggiz">jaggiz</a></strong>
+   <span style="color:#828282"> @ 3 May 2015 04:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plz give some more test cases
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

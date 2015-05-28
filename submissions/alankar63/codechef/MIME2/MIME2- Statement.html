@@ -1,0 +1,402 @@
+<div id="node-625944" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>Many internet protocols these days include the option of associating a<br> media type with the content being sent.<br> The type is usually inferred from the file extension.<br> You are to write a program that facilitates the lookup of media types for<br> a number of files.</p> 
+  <p>You will be given a table of media type associations that associate a certain<br> file extension with a certain media type.<br> You will then be given a number of file names, and tasked to determine the correct<br> media type for each file.<br> A file extension is defined as the part of the file name after the final period.<br> If a file name has no periods, then it has no extension and the media type cannot<br> be determined.<br> If the file extension is not present in the table, then the media type cannot be<br> determined.<br> In such cases you will print "unknown" as the media type.<br> If the file extension does appear in the table (case matters), then print the associated<br> media type.</p> 
+  <h3>Input</h3> 
+  <p>Input begins with 2 integers N and Q on a line.<br> N is the number of media type associations, and Q is the number of file names.<br> Following this are N lines, each containing a file extension and a media type, separated by a space.<br> Finally, Q lines, each containing the name of a file.</p> 
+  <p>N and Q will be no greater than 100 each.<br> File extensions will consist only of alphanumeric characters, will have length at most 10, and will be distinct.<br> Media types will have length at most 50, and will contain only alphanumeric characters and punctuation.<br> File names will consist only of alphanumeric characters and periods and have length at most 50.</p> 
+  <h3>Output</h3> 
+  <p>For each of the Q file names, print on a line the media type of the file.<br> If there is no matching entry, print "unknown" (quotes for clarity).</p> 
+  <h3>Sample Input</h3> 
+  <pre>5 6
+html text/html
+htm text/html
+png image/png
+svg image/svg+xml
+txt text/plain
+index.html
+this.file.has.lots.of.dots.txt
+nodotsatall
+virus.exe
+dont.let.the.png.fool.you
+case.matters.TXT
+</pre>
+  <h3>Sample Output</h3> 
+  <pre>text/html
+text/plain
+unknown
+unknown
+unknown
+unknown
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/pieguy">pieguy</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/friggstad">friggstad</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/MIME2">http://discuss.codechef.com/problems/MIME2</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook09"> cook09 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/pieguy"> pieguy </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>12-04-2011</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/MIME2">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-16070"></a> 
+ <div id="c16070" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-16070" class="active">Just changed getline(cin,str)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/KK123">KK123</a></strong>
+   <span style="color:#828282"> @ 25 Apr 2011 03:30 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Just changed getline(cin,str) to cin &gt;&gt; str where str is string type and got ACC...</p> 
+    <p>Why so??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16071"></a> 
+ <div id="c16071" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-16071" class="active">I am getting WA and i am not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/syst3mw0rm">syst3mw0rm</a></strong>
+   <span style="color:#828282"> @ 25 Apr 2011 05:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I am getting WA and i am not able to figure out the test cases for which i am getting WA..</p> 
+    <p>My submission Link :&nbsp;http://www.codechef.com/viewsolution/532674</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-16091"></a> 
+ <div id="c16091" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-16091" class="active">What will be output in case</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hemant.adil">hemant.adil</a></strong>
+   <span style="color:#828282"> @ 25 Apr 2011 11:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>What will be output in case :-</p> 
+    <p>.png</p> 
+    <p>&nbsp;</p> 
+    <p>will it be unknown or image/png?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18012"></a> 
+ <div id="c18012" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-18012" class="active">i used c compiler and used</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ajayn_2">ajayn_2</a></strong>
+   <span style="color:#828282"> @ 7 Aug 2011 05:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i used c compiler and used strrev function in my prog... in mu computer it works fine...am using codeblocks but getting a compile time error when i run it here...says undefined refeence to strrev... any help here?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18194"></a> 
+ <div id="c18194" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-18194" class="active">Why is my program</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nvteja">nvteja</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2011 12:49 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why is my program wrong? 
+    <a href="http://www.codechef.com/viewsolution/627875" title="http://www.codechef.com/viewsolution/627875">http://www.codechef.com/viewsolution/627875</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18299"></a> 
+ <div id="c18299" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-18299" class="active">why is program giving a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sona12">sona12</a></strong>
+   <span style="color:#828282"> @ 26 Aug 2011 01:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why is program giving a runtime error?http://www.codechef.com/viewsolution/636284
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18305"></a> 
+ <div id="c18305" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-18305" class="active">Please check solution ID:</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sahilshah91">sahilshah91</a></strong>
+   <span style="color:#828282"> @ 26 Aug 2011 03:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please check solution ID: 636557 Its giving run time error and I'm unable ti figure out my error. Works fine on my comp. 
+    <a href="http://www.codechef.com/viewsolution/636557" title="http://www.codechef.com/viewsolution/636557">http://www.codechef.com/viewsolution/636557</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18319"></a> 
+ <div id="c18319" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-18319" class="active">To solve this, the most</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajatkhanduja">rajatkhanduja</a></strong>
+   <span style="color:#828282"> @ 27 Aug 2011 10:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    To solve this, the most common way would be to use a di*****ary (trying not to give away the solution). At least, that is the first thing that came to my mind and that's how I solved it. Is there another idea here ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19987"></a> 
+ <div id="c19987" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-19987" class="active">something is clearly not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cyberax">cyberax</a></strong>
+   <span style="color:#828282"> @ 13 Nov 2011 01:26 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    something is clearly not written in the problem statement. if the filename contains any space, the extension string HAS TO be looked up only before the first space. it's weird. 
+    <a href="http://www.codechef.com/viewsolution/732273" title="http://www.codechef.com/viewsolution/732273">http://www.codechef.com/viewsolution/732273</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-21264"></a> 
+ <div id="c21264" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-21264" class="active">can someone please point out</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harjot0212">harjot0212</a></strong>
+   <span style="color:#828282"> @ 15 Jan 2012 06:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can someone please point out the error 
+    <a href="http://www.codechef.com/viewsolution/796057" title="http://www.codechef.com/viewsolution/796057">http://www.codechef.com/viewsolution/796057</a> it has a runtime error with code:SIGSEGV
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25932"></a> 
+ <div id="c25932" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-25932" class="active">does matching extensions</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anubhav94">anubhav94</a></strong>
+   <span style="color:#828282"> @ 21 Apr 2012 01:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    does matching extensions need to be case sensitive?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31596"></a> 
+ <div id="c31596" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-31596" class="active">I just CANNOT figure out</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 5 Sep 2012 03:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I just CANNOT figure out what's wrong. Getting WA no matter what I do.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-34610"></a> 
+ <div id="c34610" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-34610" class="active">Well, finally got AC. Make</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/f3z0j">f3z0j</a></strong>
+   <span style="color:#828282"> @ 2 Dec 2012 11:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Well, finally got AC. Make sure you have all corner cases covered.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38336"></a> 
+ <div id="c38336" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-38336" class="active">WHAT IF the sample output is:</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/etcheng04">etcheng04</a></strong>
+   <span style="color:#828282"> @ 17 Feb 2013 08:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    WHAT IF the sample output is: N: 5 Q: 6 media 1: html text/html media 2: htm text/html media 3: png image/png media 4: svg image/svg+xml media 5: txt text/plain filename 1: index.html filename 2: this.file.has.lots.of.dots.txt filename 3: nodotsatall filename 4: virus.exe filename 5: dont.let.the.png.fool.you filename 6: case.matters.TXT file 1 is text/html file 2 is text/plain ile 3 is unknown file 4 is unknown file 5 is unknown file 6 is unknown
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-57067"></a> 
+ <div id="c57067" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-57067" class="active">@hemant.adil according to me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aristotle2">aristotle2</a></strong>
+   <span style="color:#828282"> @ 3 Oct 2013 04:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @hemant.adil according to me its answer should be image/png
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-57075"></a> 
+ <div id="c57075" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-57075" class="active">change from gets to scanf</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aristotle2">aristotle2</a></strong>
+   <span style="color:#828282"> @ 3 Oct 2013 05:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    change from gets to scanf give AC why???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68499"></a> 
+ <div id="c68499" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-68499" class="active">getting WA for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prkshverma09">prkshverma09</a></strong>
+   <span style="color:#828282"> @ 24 Dec 2013 01:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    getting WA for "http://www.codechef.com/viewsolution/3126715", please help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71481"></a> 
+ <div id="c71481" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-71481" class="active">@cyberax Thanks for pointing</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/felic92">felic92</a></strong>
+   <span style="color:#828282"> @ 20 Jan 2014 06:57 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @cyberax Thanks for pointing me in the right direction got it in Python after 3 WAs...I agree that the statement doesn't accurately depict the problem.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79368"></a> 
+ <div id="c79368" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-79368" class="active">Please check my solution.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ksharma377">ksharma377</a></strong>
+   <span style="color:#828282"> @ 12 Jun 2014 10:14 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please check my solution. It's giving me WA though I have checked it on my system and it's working perfectly fine. 
+    <a href="http://www.codechef.com/viewsolution/4065086" title="http://www.codechef.com/viewsolution/4065086">http://www.codechef.com/viewsolution/4065086</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79479"></a> 
+ <div id="c79479" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-79479" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/xyz177">xyz177</a></strong>
+   <span style="color:#828282"> @ 14 Jun 2014 02:30 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/4083168" title="http://www.codechef.com/viewsolution/4083168">http://www.codechef.com/viewsolution/4083168</a> pls check it i m getting wa again again i have checked almost all boundary cases.....pls help.. thanx in advance
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83287"></a> 
+ <div id="c83287" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-83287" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nil96">nil96</a></strong>
+   <span style="color:#828282"> @ 7 Aug 2014 04:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/4505154" title="http://www.codechef.com/viewsolution/4505154">http://www.codechef.com/viewsolution/4505154</a> getting SIGSEGV error and cant find out why is it occuring......plz help Thankyou in Advance
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99843"></a> 
+ <div id="c99843" class="comment clear-block"> 
+  <h3><a href="/problems/MIME2#comment-99843" class="active">My java code compiles and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rram93">rram93</a></strong>
+   <span style="color:#828282"> @ 24 Mar 2015 06:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My java code compiles and runs fine but i am getting a runtime NZEC error. Please let me know how to resolve it.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

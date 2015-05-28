@@ -1,0 +1,164 @@
+<div id="node-5880510" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/COOK49/mandarin2/PERMSUFF.pdf">Mandarin Chinese</a> and <a target="_blank" href="http://www.codechef.com/download/translated/COOK49/russian/PERMSUFF.pdf">Russian</a> as well.</h3> 
+  <p> You are given a permutation of natural integers from <b>1</b> to <b>N</b>, inclusive. Initially, the permutation is <b>1, 2, 3, ..., N</b>.</p> 
+  <p>You are also given <b>M</b> pairs of integers, where the <b>i</b>-th is (<b>L<sub>i</sub></b> <b>R<sub>i</sub></b>). In a single turn you can choose any of these pairs (let's say with the index <b>j</b>) and arbitrarily shuffle the elements of our permutation on the positions from <b>L<sub>j</sub></b> to <b>R<sub>j</sub></b>, inclusive (the positions are 1-based). You are not limited in the number of turns and you can pick any pair more than once.</p> 
+  <p> The goal is to obtain the permutation <b>P</b>, that is given to you. If it's possible, output "Possible", otherwise output "Impossible" (without quotes). </p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows.</p> 
+  <p>The first line of each test case contains two space separated integers <b>N</b> and <b>M</b> denoting the size of the permutation <b>P</b> and the number of pairs described above. </p> 
+  <p>The next line contains <b>N</b> integers - the permutation <b>P</b>.</p> 
+  <p>Each of the following <b>M</b> lines contain pair of integers <b>L<sub>i</sub></b> and <b>R<sub>i</sub></b>.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing the answer to the corresponding test case.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ? <b>T</b> ? <b>35</b></li> 
+   <li><b>1</b> ? <b>N</b>, <b>M</b> ? <b>100000</b></li> 
+   <li><b>1</b> ? <b>L<sub>i</sub></b> ? <b>R<sub>i</sub></b> ? <b>N</b></li> 
+  </ul> 
+  <p>&nbsp;</p> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+2
+7 4
+3 1 2 4 5 7 6
+1 2
+4 4
+6 7
+2 3
+4 2
+2 1 3 4
+2 4
+2 3
+
+<b>Output:</b>
+Possible
+Impossible
+
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/witua">witua</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/xcwgf666">xcwgf666</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/PERMSUFF">http://discuss.codechef.com/problems/PERMSUFF</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook49"> cook49 </a><a class="problem-tag-small " href="/tags/problems/scanline"> scanline </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a><a class="problem-tag-small " href="/tags/problems/sorting"> sorting </a><a class="problem-tag-small " href="/tags/problems/witua"> witua </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>21-04-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/PERMSUFF">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-84069"></a> 
+ <div id="c84069" class="comment clear-block"> 
+  <h3><a href="/problems/PERMSUFF#comment-84069" class="active">I don't get why I am getting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/techwiz911">techwiz911</a></strong>
+   <span style="color:#828282"> @ 25 Aug 2014 01:22 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I don't get why I am getting Wrong Answer. Can you please specify the test case for which this code fails? Or else could you atleast look at the code and see whats wrong? I've been stuck on this for 4 hours. Any help would be appreciated. Thanks. 
+    <a href="http://www.codechef.com/viewsolution/4621755" title="http://www.codechef.com/viewsolution/4621755">http://www.codechef.com/viewsolution/4621755</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84112"></a> 
+ <div id="c84112" class="comment clear-block"> 
+  <h3><a href="/problems/PERMSUFF#comment-84112" class="active">Same here. Can anyone help me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/charu2389">charu2389</a></strong>
+   <span style="color:#828282"> @ 27 Aug 2014 08:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Same here. Can anyone help me why I'm getting wrong answer for my code here: 
+    <a href="http://www.codechef.com/viewsolution/4653606" title="http://www.codechef.com/viewsolution/4653606">http://www.codechef.com/viewsolution/4653606</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84502"></a> 
+ <div id="c84502" class="comment clear-block"> 
+  <h3><a href="/problems/PERMSUFF#comment-84502" class="active">@techwiz911 You need to clear</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hidenoris">hidenoris</a></strong>
+   <span style="color:#828282"> @ 3 Sep 2014 09:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @techwiz911 You need to clear "perm".
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85235"></a> 
+ <div id="c85235" class="comment clear-block"> 
+  <h3><a href="/problems/PERMSUFF#comment-85235" class="active">@hidenoris : Thanks a lot</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/techwiz911">techwiz911</a></strong>
+   <span style="color:#828282"> @ 12 Sep 2014 12:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @hidenoris : Thanks a lot man. :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92314"></a> 
+ <div id="c92314" class="comment clear-block"> 
+  <h3><a href="/problems/PERMSUFF#comment-92314" class="active">i could not understand the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sh4716">sh4716</a></strong>
+   <span style="color:#828282"> @ 26 Dec 2014 03:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i could not understand the question properly. i tried to look at answers also, but couldnt understand that too. can some body please tell me question and answer with proper example?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>

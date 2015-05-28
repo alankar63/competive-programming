@@ -1,0 +1,344 @@
+<div id="node-407632" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> The Chef has prepared the appetizers in the shapes of letters to spell a special message for the guests. There are n appetizers numbered from 0 to n-1 such that if the appetizers are arrayed in this order, they will display the message. The Chef plans to display them in this order on a table that can be viewed by all guests as they enter. The appetizers will only be served once all guests are seated.</p> 
+  <p> The appetizers are not necessarily finished in the same order as they are numbered. So, when an appetizer is finished the Chef will write the number on a piece of paper and place it beside the appetizer on a counter between the kitchen and the restaurant. A server will retrieve this appetizer and place it in the proper location according to the number written beside it.</p> 
+  <p> The Chef has a penchant for binary numbers. The number of appetizers created is a power of 2, say n = 2<sup>k</sup>. Furthermore, he has written the number of the appetizer in binary with exactly k bits. That is, binary numbers with fewer than k bits are padded on the left with zeros so they are written with exactly k bits.</p> 
+  <p> Unfortunately, this has unforseen complications. A binary number still "looks" binary when it is written upside down. For example, the binary number "0101" looks like "1010" when read upside down and the binary number "110" looks like "011" (the Chef uses simple vertical lines to denote a 1 bit). The Chef didn't realize that the servers would read the numbers upside down so he doesn't rotate the paper when he places it on the counter. Thus, when the server picks up an appetizer they place it the location indexed by the binary number when it is read upside down.</p> 
+  <p> You are given the message the chef intended to display and you are to display the message that will be displayed after the servers move all appetizers to their locations based on the binary numbers they read.</p> 
+  <h3>Input</h3> 
+  <p> The first line consists of a single integer T ? 25 indicating the number of test cases to follow. Each test case consists of a single line beginning with an integer 1 ? k ? 16 followed by a string of precisely 2<sup>k</sup> characters. The integer and the string are separated by a single space. The string has no spaces and is composed only of lower case letters from `a` to `z`.</p> 
+  <h3>Output</h3> 
+  <p> For each test case you are to output the scrambled message on a single line.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+2
+2 chef
+4 enjoyourapplepie
+
+<b>Output:</b>
+cehf
+eayejpuinpopolre
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/friggstad">friggstad</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/pieguy">pieguy</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/ARRANGE">http://discuss.codechef.com/problems/ARRANGE</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook02"> cook02 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/friggstad"> friggstad </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>9-08-2010</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>5 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/ARRANGE">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-10767"></a> 
+ <div id="c10767" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-10767" class="active">M getting a wrong answer but</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/paarth">paarth</a></strong>
+   <span style="color:#828282"> @ 18 Sep 2010 05:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>M getting a wrong answer but i think its correct....its workin fine even for k=0......can anyone plz tell me where can it go wrong...??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10781"></a> 
+ <div id="c10781" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-10781" class="active">am getting an NZEC runtime</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ddmetro">ddmetro</a></strong>
+   <span style="color:#828282"> @ 20 Sep 2010 02:38 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>am getting an NZEC runtime error. I am using a BitSet with maximum of 65536 size when k=16. Is this the reason for this error. The same come works fine on my system for the above given sample inputs. Kindly help.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12579"></a> 
+ <div id="c12579" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-12579" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/indian_chiru">indian_chiru</a></strong>
+   <span style="color:#828282"> @ 27 Dec 2010 06:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p> <a href="http://www.codechef.com/viewsolution/407909">http://www.codechef.com/viewsolution/407909</a></p> 
+    <p>can anyone tell me wats wrong with my sol.....??</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17195"></a> 
+ <div id="c17195" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-17195" class="active">i think the output mentioned</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anubhav.iiitm">anubhav.iiitm</a></strong>
+   <span style="color:#828282"> @ 30 Jun 2011 06:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i think the output mentioned in the second test case is wrong!!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17211"></a> 
+ <div id="c17211" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-17211" class="active">2nd case output wrong?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ravinder_singh">ravinder_singh</a></strong>
+   <span style="color:#828282"> @ 1 Jul 2011 11:22 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    2nd case output wrong?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17212"></a> 
+ <div id="c17212" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-17212" class="active">yup.it is.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ravinder_singh">ravinder_singh</a></strong>
+   <span style="color:#828282"> @ 1 Jul 2011 11:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    yup.it is.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-17798"></a> 
+ <div id="c17798" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-17798" class="active">2nd case output still wrong?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/douglas">douglas</a></strong>
+   <span style="color:#828282"> @ 1 Aug 2011 10:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    2nd case output still wrong?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18161"></a> 
+ <div id="c18161" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-18161" class="active">the correct output for second</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/g4ur4v">g4ur4v</a></strong>
+   <span style="color:#828282"> @ 14 Aug 2011 06:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    the correct output for second case is:==&gt;eayejpuinpopolre
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-24788"></a> 
+ <div id="c24788" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-24788" class="active">can somebody please explain</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashishnegi001">ashishnegi001</a></strong>
+   <span style="color:#828282"> @ 25 Mar 2012 12:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can somebody please explain the output ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-27057"></a> 
+ <div id="c27057" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-27057" class="active">why i am getting wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cdev">cdev</a></strong>
+   <span style="color:#828282"> @ 25 May 2012 12:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why i am getting wrong answer. plzz admin help me out. My solution code is 1058670
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31916"></a> 
+ <div id="c31916" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-31916" class="active">How would i make my code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mrdv_rjgpl">mrdv_rjgpl</a></strong>
+   <span style="color:#828282"> @ 16 Sep 2012 08:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    How would i make my code faster? Try as i might, i can't get it below 0.03 s.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-32542"></a> 
+ <div id="c32542" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-32542" class="active">is there any pattern to be</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tusharxps">tusharxps</a></strong>
+   <span style="color:#828282"> @ 2 Oct 2012 07:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    is there any pattern to be followed while displaying the answer ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71493"></a> 
+ <div id="c71493" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-71493" class="active">both outputs are right imho</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/garakchy">garakchy</a></strong>
+   <span style="color:#828282"> @ 21 Jan 2014 09:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    both outputs are right imho
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75940"></a> 
+ <div id="c75940" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-75940" class="active">Hi! Can anyone please tell</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codedecode0111">codedecode0111</a></strong>
+   <span style="color:#828282"> @ 2 Apr 2014 03:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi! Can anyone please tell me any problem with my code? It works for the sample i/o and I too tried some test cases but it's failing. Please, help me out! Here's the link : 
+    <a href="http://www.codechef.com/viewsolution/3664754" title="http://www.codechef.com/viewsolution/3664754">http://www.codechef.com/viewsolution/3664754</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88750"></a> 
+ <div id="c88750" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-88750" class="active">can anyone pls explain output</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubhamkhande">shubhamkhande</a></strong>
+   <span style="color:#828282"> @ 20 Oct 2014 02:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone pls explain output
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92287"></a> 
+ <div id="c92287" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-92287" class="active">@shubhamkhande Here is the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kp_programmer">kp_programmer</a></strong>
+   <span style="color:#828282"> @ 25 Dec 2014 06:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @shubhamkhande Here is the explanation for the output! I will give you explanation regarding "chef"... Let the characters of "chef" be numbered as 0,1,2,3 whose binary equivalent is "00","01","10","11". Now, due to inafficiency of the server, the server will take it as upside down i.e. "00","10","01","11" whose decimal equivalent is 0,2,1,3... Now, the server will place the characters like this: It will place 'c' to 0 position, 'h' to 2 position, 'e' to 1 position and 'f' to 3 position... Hence, it gives output as "cehf"! For the next output, you can do it yourself!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94040"></a> 
+ <div id="c94040" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-94040" class="active">Thanks to kp_prograamer for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/fast">fast</a></strong>
+   <span style="color:#828282"> @ 21 Jan 2015 01:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Thanks to kp_prograamer for giving this explantion
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94941"></a> 
+ <div id="c94941" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-94941" class="active">Hi, my solution is accepted.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chintanshah">chintanshah</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2015 09:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi, my solution is accepted. Can anyone just help me out with finding out the complexity of the code? 
+    <a href="http://www.codechef.com/viewsolution/6028724" title="http://www.codechef.com/viewsolution/6028724">http://www.codechef.com/viewsolution/6028724</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94998"></a> 
+ <div id="c94998" class="comment clear-block"> 
+  <h3><a href="/problems/ARRANGE#comment-94998" class="active">thanx kp_programmer for this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saket9450">saket9450</a></strong>
+   <span style="color:#828282"> @ 29 Jan 2015 07:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    thanx kp_programmer for this explanation
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
